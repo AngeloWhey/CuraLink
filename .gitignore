@@ -1,0 +1,18 @@
+# Local/editor files
+.vscode/
+.idea/
+*.user
+*.swp
+
+# Build and generated artifacts
+build/
+dist/
+__pycache__/
+*.pyc
+
+# Measurement captures and local secrets
+*.bin
+*.elf
+*.hex
+*.map
+.env
