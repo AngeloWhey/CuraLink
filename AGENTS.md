@@ -20,3 +20,5 @@ The user requires completion within one month, has access to a lab's worth of eq
 Numerical planning examples are provisional allocations, not measured or approved performance requirements.
 
 The user also provided `outputs/CuraLink-8-channel-neural-input-fanout-test-fixture.md`. Keep it as a reference-only local text design note for a separate passive AWG-to-eight-channel fixture. It is preliminary and not fabrication-locked.
+
+The user provided `outputs/CuraLink-neural-input-signal-spec-v1-original.md`. Preserve it as the original source. Use `outputs/CuraLink-neural-input-signal-spec-review-v0.1.md` for the reviewed working envelope and AWG/test-fixture corrections.
