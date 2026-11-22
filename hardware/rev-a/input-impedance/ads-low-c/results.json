@@ -1,0 +1,107 @@
+[
+  {
+    "layout_pF": 0.6,
+    "driven": "ch1",
+    "min_Z_Mohm": 10.701413245345709,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8972087556768
+  },
+  {
+    "layout_pF": 0.6,
+    "driven": "ch2",
+    "min_Z_Mohm": 10.701413245347767,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8972093595914
+  },
+  {
+    "layout_pF": 0.6,
+    "driven": "ch3",
+    "min_Z_Mohm": 10.701413245348313,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8972083173875
+  },
+  {
+    "layout_pF": 0.6,
+    "driven": "ch4",
+    "min_Z_Mohm": 10.70141324534769,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8972092265662
+  },
+  {
+    "layout_pF": 0.6,
+    "driven": "ref",
+    "min_Z_Mohm": 10.701411703032354,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 974.5269904795086
+  },
+  {
+    "layout_pF": 0.75,
+    "driven": "ch1",
+    "min_Z_Mohm": 10.076079212419266,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8971819780791
+  },
+  {
+    "layout_pF": 0.75,
+    "driven": "ch2",
+    "min_Z_Mohm": 10.076079212413566,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8971831379598
+  },
+  {
+    "layout_pF": 0.75,
+    "driven": "ch3",
+    "min_Z_Mohm": 10.07607921241332,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.897182095753
+  },
+  {
+    "layout_pF": 0.75,
+    "driven": "ch4",
+    "min_Z_Mohm": 10.076079212413681,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.897183004933
+  },
+  {
+    "layout_pF": 0.75,
+    "driven": "ref",
+    "min_Z_Mohm": 10.076077624055106,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 974.5269642170713
+  },
+  {
+    "layout_pF": 1.0,
+    "driven": "ch1",
+    "min_Z_Mohm": 9.164878232489125,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8971351953355
+  },
+  {
+    "layout_pF": 1.0,
+    "driven": "ch2",
+    "min_Z_Mohm": 9.164878232482339,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8971352110068
+  },
+  {
+    "layout_pF": 1.0,
+    "driven": "ch3",
+    "min_Z_Mohm": 9.164878232482279,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8971341688018
+  },
+  {
+    "layout_pF": 1.0,
+    "driven": "ch4",
+    "min_Z_Mohm": 9.164878232482351,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 970.8971350779792
+  },
+  {
+    "layout_pF": 1.0,
+    "driven": "ref",
+    "min_Z_Mohm": 9.16487665983752,
+    "at_Hz": 7000.0,
+    "gain_1k_V_per_V": 974.5269162153061
+  }
+]

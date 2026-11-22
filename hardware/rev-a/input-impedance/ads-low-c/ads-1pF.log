@@ -1,0 +1,88 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 18:15:58 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\AppData\Local\Temp\tmpaqsyys2t"
+      Process ID: 26744
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim during netlist flattening.
+    Inductor `op_ch1' L=1e+09 is unusually large.
+
+
+Warning detected by hpeesofsim during netlist flattening.
+    Inductor `op_ch2' L=1e+09 is unusually large.
+
+
+Warning detected by hpeesofsim during netlist flattening.
+    Inductor `op_ch3' L=1e+09 is unusually large.
+
+
+Warning detected by hpeesofsim during netlist flattening.
+    Inductor `op_ch4' L=1e+09 is unusually large.
+
+
+Warning detected by hpeesofsim during netlist flattening.
+    Inductor `op_ref' L=1e+09 is unusually large.
+
+
+Warning detected by hpeesofsim during circuit set up.
+    Capacitor `p3_ref.Cmain' C=1 is unusually large.
+
+
+Warning detected by hpeesofsim during circuit set up.
+    Capacitor `p2_ref.Cmain' C=1 is unusually large.
+
+
+Warning detected by hpeesofsim during circuit set up.
+    Capacitor `p1_ref.Cmain' C=1 is unusually large.
+
+
+Warning detected by hpeesofsim during circuit set up.
+    Capacitor `p3_ch4.Cmain' C=1 is unusually large.
+
+
+Warning detected by hpeesofsim during circuit set up.
+    Capacitor `p2_ch4.Cmain' C=1 is unusually large.
+
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 112
+
+
+DC DC1[1] <afe.ckt>  
+
+CT Case[1] <afe.ckt>   AC_STIM=(0->4)
+
+AC Case[1].AC1[1/5] <afe.ckt>  AC_STIM=0  freq=(100 Hz->10 MHz)
+
+AC Case[1].AC1[2/5] <afe.ckt>  AC_STIM=1  freq=(100 Hz->10 MHz)
+
+AC Case[1].AC1[3/5] <afe.ckt>  AC_STIM=2  freq=(100 Hz->10 MHz)
+
+AC Case[1].AC1[4/5] <afe.ckt>  AC_STIM=3  freq=(100 Hz->10 MHz)
+
+AC Case[1].AC1[5/5] <afe.ckt>  AC_STIM=4  freq=(100 Hz->10 MHz)
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =    32.12 seconds.
+    Simulation stopwatch time =     8.74 seconds.
+    Total stopwatch time      =    10.68 seconds.
+
+    Memory used:  184 MBytes
+
+    Max threads used:  15
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Sun Nov 22 18:16:07 2026
+
+Command line dataset name afe

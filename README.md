@@ -1,29 +1,31 @@
 # CuraLink
 
-Eight-channel **benchtop neural-signal acquisition prototype** with a custom analog front end, STM32WBA52/BLE telemetry, and battery-buffered 13.56 MHz wireless charging. This repository is the engineering handoff for moving computers: editable schematics and PCB, ADS cells, circuit models, simulations, calculations, sourcing evidence and decision history belong together.
+Four-channel **benchtop neural-signal acquisition prototype** with a custom analog front end, STM32WBA52/BLE telemetry, and battery-buffered 13.56 MHz wireless charging. This repository is the engineering handoff for moving computers: editable schematics and PCB, ADS cells, circuit models, simulations, calculations, sourcing evidence and decision history belong together.
 
-**Migration handoff and follow-up ADS review: 2026-11-22, America/New_York.** The complete migration batch was pushed and verified through a fresh GitHub/LFS download. A subsequent [fresh ADS review](hardware/wpt/ads/review-2026-11-22/README.md) checks the fixed paper coils, nonlinear power demand and translated AFE DC/AC behavior. Physical PCB checks remain dated October; stock was not refreshed. The design is an engineering **Candidate**, with no fabrication release, completed firmware or recorded CuraLink hardware measurements.
+**Current build, 2026-11-22.** Use the [plain-text builder handoff](docs/BUILD-NEXT.txt), the [recommended low-capacitance electronics design](hardware/rev-a/bench-four-coax-low-c/README.md) and the [TX/RX matching schematics and parts](hardware/wpt/bench-rf/README.md). The revised bench board uses four U.FL inputs, a packaged rectifier and live BLE charger status. An externally charged qualified pack can power a signal-only test with WPT disconnected. The native designs and simulation evidence are engineering candidates. Routing, sourcing at order time, real-pack qualification, firmware and hardware validation govern release.
+
+**Migration handoff and follow-up ADS review: 2026-11-22, America/New_York.** The complete migration batch was pushed and verified through a fresh GitHub/LFS download. A subsequent [fresh ADS review](hardware/wpt/ads/review-2026-11-22/README.md) checks the fixed paper coils, nonlinear power demand and translated AFE DC/AC behavior. That review used the earlier eight-channel hardware. The four-channel handoff above includes fresh KiCad checks, a dated BOM/stock audit and packaged-bridge power simulations. The design is an engineering **Candidate**, with no fabrication release, completed firmware or recorded CuraLink hardware measurements.
 
 ## Start here
 
 1. Read the [engineering handbook](docs/engineering-handbook.md): accepted requirements, decision IDs, rationale and unresolved gates. Its status vocabulary governs the project.
 2. Follow [moving to a new computer](docs/moving-computers.md) for Git LFS, tool setup, dataset restoration and file paths.
-3. Open the [KiCad mainboard project](hardware/rev-a/curalink-rev-a.kicad_pro) for the current schematic/PCB candidate.
-4. Open [ads/MyWorkspace_wrk](ads/MyWorkspace_wrk) in ADS for the preserved coil, matching and rectifier cells.
+3. Open the [low-capacitance four-channel KiCad project](hardware/rev-a/bench-four-coax-low-c/curalink-rev-a.kicad_pro) to continue layout. Its [schematic PDF](hardware/rev-a/bench-four-coax-low-c/schematic.pdf) is readable without CAD. The TLV-only four-coax variant and original eight-channel board are comparison designs.
+4. Open [ads/MyWorkspace_wrk](ads/MyWorkspace_wrk) and select **MyLibrary_lib → CuraLink_RX_BAS4002A_HB → schematic** for the packaged receiver. The [schematic PDF and HB results](hardware/wpt/ads/native-packaged-bridge/) and [full load/sensitivity study](hardware/wpt/ads/receiver-ic-review-2026-11-22/) can be read without ADS.
 
 ## Where the work stands
 
 | Area | Current context |
 |---|---|
-| Signal specification | Eight channels plus shared REF; 200 µVpp nominal through nominal 47 kΩ source branches; approximately 300 Hz–7 kHz useful band. The separate DAC fixture fans one waveform out eight ways. |
+| Signal specification | Four U.FL channels plus local shared REF. Drive each coax from a low-impedance calibrated generator and place its nominal 47 kΩ emulator at the board end. The retained input baseline is 200 µVpp over approximately 300 Hz–7 kHz. |
 | Acquisition choice | The accepted historical baseline uses analog event detection with the MCU ADC unused. The current editable Rev A schematic **recommends ADC acquisition and digital detection** on the same STM32WBA52 family. That replacement remains Candidate under D-024; it is not a silently accepted requirement change. |
-| AFE candidate | Discrete TLV9004/TLV9054 stages, DC blocking, gain/filtering and local ADC interface. Nominal LTspice gain is approximately 970 V/V at 1 kHz. The existing ≥10 MΩ input-impedance requirement remains unmet; startup/offset recovery and shared VMID coupling need further work. |
+| AFE candidate | Five MAX44280 gain-11 preamps, four TLV-based filter chains and a separate high-value bias return. At 0.60 pF of added layout capacitance per input, the stressed model clears 10.70 MΩ across 300 Hz–7 kHz. At 1.00 pF it falls to 9.16 MΩ. Actual routed-board impedance is a release requirement. |
 | Telemetry | STM32WBA52 with a ceramic BLE antenna; firmware, ADC/BLE continuity, antenna/RF implementation and measured power remain open. |
-| Operating modes | **CHARGE:** WPT present, recording electronics off. **RUN:** WPT absent, battery powers the system. Charge completion while the field remains present does not enable recording. |
-| Charger/cell baseline | BQ25185DLHR, working 55 mAh Taisko cell, provisional 20 mA / 4.1 V charging. Cell global orderability, independent protection, temperature/current compatibility and usable runtime are unresolved. |
-| Wireless receiver | Published 13.56 MHz coil R/L/k model. A BAT54 simulation Candidate reaches 5.08853 V / 124.287 mW into 208.33 Ω at 23.5 dBm; near-open load reaches 11.915 V. These are nominal ADS predictions, not a qualified charger. |
-| Physical CAD | KiCad 9 source, 17 schematic pages and a provisional 80 × 74 mm four-layer PCB placement. Signal routing, plane fill, schematic-to-PCB relinking and merged MCU placement corrections are unfinished. No native Altium schematic/project/board was found in the recorded audit. |
-| Manufacturing | LCSC sourcing is required. Mainboard inventory evidence is dated 2026-10-02; the receiver BAT54 check is dated 2026-10-09. Stock is not reserved or current, the cell is unqualified, and the under-US$150 assembled objective is unproven. |
+| Operating modes | RECORD powers the AFE and MCU from a qualified battery or emulator. During a wireless charge test, the AFE is off and the MCU reports charging status over BLE when the receiver can sustain it. |
+| Charger/cell baseline | BQ25185 charger. The lab LiPo, connector and settings await identification. The historical 55 mAh cell and 20 mA/4.1 V example are separate from release limits. Battery-only tests can proceed independently. |
+| Wireless receiver | Published Luo 13.56 MHz coil geometry and nominal 10 mm gap, Infineon packaged bridge and TPS70950 5 V LDO. Fixed-coil HB, nonlinear load and regulator transient results are available as tables. RF power capability, off-axis delivery, RF capacitor loss and heating remain to be verified. |
+| Physical CAD | Separate four-channel KiCad schematic and 80 × 74 mm unrouted placement for the low-capacitance design, plus TX/RX matching/receiver sheets. Complete manual routing, RF and shield returns, antenna-edge clearance and assembly checks. |
+| Manufacturing | The low-capacitance BOM had 73 fitted SKUs stocked at LCSC for one electronics board. The TX/RX parts and four cables were checked separately. Combined minimum-order parts cost US$102.85 on 2026-11-22. Cell, delivered assembly price and hardware verification remain open. |
 
 ## Files to open
 
@@ -58,6 +60,6 @@ The engineering record and subsystem reports distinguish accepted choices, candi
 
 ## Resume engineering
 
-Start with the [remaining power work](hardware/wpt/ads/README.md#remaining-power-work-in-order), the [PCB gates](hardware/rev-a/pcb/README.md#remaining-engineering-gates), and the handbook's open-work table. The immediate power work is realistic charger loading, raw receiver OVP/regulation, practical tuning-component losses and heat, cell protection, mode transitions and runtime. The broader mainboard work includes input loading, shared-bias/crosstalk, ADC/BLE operation, RF layout and final CAD/assembly verification.
+Start with the [current build issues and verification sequence](docs/BUILD-NEXT.txt). Portable four-channel signal results are in the [AFE closeout](hardware/rev-a/ads-closeout-2026-11-22/README.md). Packaged-bridge and RF results are in the [receiver review](hardware/wpt/ads/receiver-ic-review-2026-11-22/README.md).
 
 Project assistants follow [AGENTS.md](AGENTS.md), preserve accepted baselines, and update the handbook when a material decision or verified result changes the design. The project has no hard completion deadline; the under-US$150 first-assembled-prototype and one-hour initial runtime remain objectives.

@@ -1,0 +1,4 @@
+(fp_lib_table (version 7)
+  (lib (name "CuraLink")(type "KiCad")(uri "${KIPRJMOD}/../pcb/footprints/CuraLink.pretty")(options "")(descr "CuraLink audited project land patterns"))
+  (lib (name "CuraLinkFour")(type "KiCad")(uri "${KIPRJMOD}/CuraLinkFour.pretty")(options "")(descr "Four-input variant land patterns"))
+)

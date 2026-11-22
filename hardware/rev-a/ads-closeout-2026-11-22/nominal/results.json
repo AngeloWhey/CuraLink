@@ -1,0 +1,22 @@
+{
+  "AC_rows": 288,
+  "frequencies_per_source_vector": 96,
+  "coherent_seven_max_equiv_uVpp_per_aggressor_1mVpp": 17.146484723926537,
+  "coherent_seven_worst_frequency_Hz": 300.0,
+  "single_worst_dB": -52.21845738001774,
+  "coherent_seven_worst_dB": -35.31649806226039,
+  "Z_7k_magnitude_ohm": 822538.3551631805,
+  "Z_7k_real_ohm": 24166.31192667792,
+  "Z_7k_imag_ohm": -822183.273414397,
+  "unity_loop_crossings": [
+    {
+      "frequency_Hz": 43712.42091309519,
+      "phase_margin_estimate_deg": 88.67695828871666
+    }
+  ],
+  "configuration": "nominal",
+  "R1149_ohm": 47,
+  "cable_pF": 20,
+  "source_sha256": "e93712bb82e710cde5dc18f138385b4ad01539538fb5a96ba9c5de71d4cbb6a8",
+  "deck_sha256": "a0ef33a3448beb7f34e65d0d22518c0293b4bd6434cc7d0aa66fe77fb128d88f"
+}

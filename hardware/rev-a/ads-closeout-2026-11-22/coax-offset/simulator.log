@@ -1,0 +1,54 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 17:56:00 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\AppData\Local\Temp\curalink_ads_offset_cljl8ips"
+      Process ID: 13320
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 140
+
+
+CT SweepOffset[1] <afe.ckt>   OFFSET=(-100e-03->100e-03)
+
+DC SweepOffset[1].DC1[1/9] <afe.ckt>  OFFSET=-100e-03 
+
+DC SweepOffset[1].DC1[2/9] <afe.ckt>  OFFSET=-75e-03 
+
+DC SweepOffset[1].DC1[3/9] <afe.ckt>  OFFSET=-50e-03 
+
+DC SweepOffset[1].DC1[4/9] <afe.ckt>  OFFSET=-25e-03 
+
+DC SweepOffset[1].DC1[5/9] <afe.ckt>  OFFSET=-6.93889e-18 
+
+DC SweepOffset[1].DC1[6/9] <afe.ckt>  OFFSET=25e-03 
+
+DC SweepOffset[1].DC1[7/9] <afe.ckt>  OFFSET=50e-03 
+
+DC SweepOffset[1].DC1[8/9] <afe.ckt>  OFFSET=75e-03 
+
+DC SweepOffset[1].DC1[9/9] <afe.ckt>  OFFSET=100e-03 
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =   539.22 seconds.
+    Simulation stopwatch time =   171.94 seconds.
+    Total stopwatch time      =   173.96 seconds.
+
+    Memory used:  161 MBytes
+
+    Max threads used:  14
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Sun Nov 22 17:58:52 2026
+
+Command line dataset name offset

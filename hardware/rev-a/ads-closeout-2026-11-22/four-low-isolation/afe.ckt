@@ -1,0 +1,1146 @@
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="CuraLink:AFE_20261122:schematic" Temp=27 DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes
+AC_STIM=0
+; Translated with ADS Netlist Translator (*) 640.shp Mar 23 2026
+;
+;Mapping SPICE functions file to the Netlist
+#ifndef SPCFUNCTIONS_FILE
+#define SPCFUNCTIONS_FILE
+#include "$HPEESOF_DIR/links/spice/spicefunctions.net"
+#endif
+;
+#uselib "pelib" , "Ind_L"
+#uselib "pelib" , "Cap_L"
+;
+; CuraLink Rev A: actual LTspice run with original TI family macro-model equations
+; BEGIN ORIGINAL INCLUDE hardware\rev-a\ltspice\afe\models\tlv9002-namespaced.lib
+; LTspice import: identifier prefixes only, original equations unchanged
+; TLV9002_TLV9002 - Rev. C
+; Created by Paul Goedeke; May 01, 2018 - Revised by GPAMPS Team; 2021-06-10
+; Created with Green-Williams-Lis Op Amp Macro-model Architecture
+; Copyright 2018 by Texas Instruments Corporation
+;*****************************************************
+; MACRO-MODEL SIMULATED PARAMETERS:
+;*****************************************************
+; OPEN-LOOP GAIN AND PHASE VS. FREQUENCY WITH RL, CL EFFECTS (Aol)
+; UNITY GAIN BANDWIDTH (GBW)
+; INPUT COMMON-MODE REJECTION RATIO VS. FREQUENCY (CMRR)
+; POWER SUPPLY REJECTION RATIO VS. FREQUENCY (PSRR)
+; DIFFERENTIAL INPUT IMPEDANCE (Zid)
+; COMMON-MODE INPUT IMPEDANCE (Zic)
+; OPEN-LOOP OUTPUT IMPEDANCE VS. FREQUENCY (Zo)
+; OUTPUT CURRENT THROUGH THE SUPPLY (Iout)
+; INPUT VOLTAGE NOISE DENSITY VS. FREQUENCY (en)
+; INPUT CURRENT NOISE DENSITY VS. FREQUENCY (in)
+; OUTPUT VOLTAGE SWING vs. OUTPUT CURRENT (Vo)
+; SHORT-CIRCUIT OUTPUT CURRENT (Isc)
+; QUIESCENT CURRENT (Iq)
+; SETTLING TIME VS. CAPACITIVE LOAD (ts)
+; SLEW RATE (SR)
+; SMALL SIGNAL OVERSHOOT VS. CAPACITIVE LOAD
+; LARGE SIGNAL RESPONSE
+; OVERLOAD RECOVERY TIME (tor)
+; INPUT BIAS CURRENT (Ib)
+; INPUT OFFSET CURRENT (Ios)
+; INPUT OFFSET VOLTAGE (Vos)
+; INPUT COMMON-MODE VOLTAGE RANGE (Vcm)
+; INPUT OFFSET VOLTAGE VS. INPUT COMMON-MODE VOLTAGE (Vos vs. Vcm)
+; INPUT/OUTPUT ESD CELLS (ESDin, ESDout)
+;*****************************************************
+define tlv9002_tlv9002 ( "in+" "in-" vcc vee out)
+;*****************************************************
+; MODEL DEFINITIONS:
+;.model tlv9002_bb_sw vswitch(ron=50 roff=1e12 von=700e-3 voff=0)
+;.model tlv9002_esd_sw vswitch(ron=50 roff=1e12 von=250e-3 voff=0)
+;.model tlv9002_ol_sw vswitch(ron=1e-3 roff=1e9 von=900e-3 voff=800e-3)
+;.model tlv9002_or_sw vswitch(ron=10e-3 roff=1e9 von=1e-3 voff=0)
+model tlv9002_r_noiseless R_Model TC1=0 TC2=0 Tnom=27
+;*****************************************************
+I_Source:i_os esdn mid Idc=3p
+I_Source:i_b _node33 mid Idc=5p
+V_Source:v_grp _node58 mid Vdc=180
+V_Source:v_grn _node59 mid Vdc=-180
+V_Source:v_iscp _node52 mid Vdc=42
+V_Source:v_iscn _node53 mid Vdc=-42
+V_Source:v_orn _node41 vclp Vdc=-1.22
+V_Source:v11 _node57 _node40 Vdc=0
+V_Source:v_orp _node39 vclp Vdc=1.22
+V_Source:v12 _node56 _node38 Vdc=0
+V_Source:v4 _node29 out Vdc=0
+V_Source:vcm_min _node79 vee_b Vdc=-100m
+V_Source:vcm_max _node80 vcc_b Vdc=100m
+I_Source:i_q vcc vee Idc=60u
+V_Source:v_os _node22 _node33 Vdc=396.11u
+tlv9002_vos_src_0:xvos_vcm _node21 _node22 vcc vee
+Cap_L:c30 _node23 _node24 C=15.92u
+tlv9002_r_noiseless:r85 _node24 mid R=30k
+tlv9002_r_noiseless:r84 _node24 _node23 R=10k
+tlv9002_r_noiseless:r83 _node23 mid R=1
+SDD:gvccs10 _node25 mid _node26 mid I[1,0]=0 I[2,0]=-1*_v1
+Cap_L:c29 _node27 mid C=19.89f
+tlv9002_r_noiseless:r82 _node25 _node27 R=10k
+tlv9002_r_noiseless:r81 _node25 _node28 R=70k
+tlv9002_r_noiseless:r80 _node28 mid R=1
+SDD:gvccs9 _node24 mid _node28 mid I[1,0]=0 I[2,0]=-3.8*_v1
+SDD:gvccs4 cl_clamp _node29 _node23 mid I[1,0]=0 I[2,0]=-87*_v1
+tlv9002_r_noiseless:r79 _node30 mid R=1
+tlv9002_vccs_lim_zo_0:xu1 _node31 mid mid _node30
+tlv9002_r_noiseless:r78 _node31 mid R=101
+Cap_L:c22 _node31 _node26 C=15.92f
+tlv9002_r_noiseless:r65 _node31 _node26 R=10k
+tlv9002_r_noiseless:r64 _node26 mid R=1
+tlv9002_r_noiseless:r63 _node29 _node30 R=400k
+"tlv9002_vccs_lim_claw-_0":xclawn mid vimon vee_b _node32
+tlv9002_vnse_0:xe_n esdp _node33
+tlv9002_femt_0_0:xi_nn esdn mid
+tlv9002_femt_0_0:xi_np mid _node33
+spice_vswitch:s5 vee esdp vee esdp ron=50 roff=1T von=500m voff=100m
+spice_vswitch:s4 vee esdn vee esdn ron=50 roff=1T von=500m voff=100m
+spice_vswitch:s2 esdn vcc esdn vcc ron=50 roff=1T von=500m voff=100m
+spice_vswitch:s3 esdp vcc esdp vcc ron=50 roff=1T von=500m voff=100m
+Cap_L:c28 _node34 mid C=1p
+tlv9002_r_noiseless:r77 _node35 _node34 R=100
+Cap_L:c27 _node36 mid C=1p
+tlv9002_r_noiseless:r76 _node37 _node36 R=100
+tlv9002_r_noiseless:r75 mid _node38 R=1
+SDD:gvccs8 _node39 mid _node38 mid I[1,0]=0 I[2,0]=-1*_v1
+tlv9002_r_noiseless:r74 _node40 mid R=1
+SDD:gvccs7 _node41 mid _node40 mid I[1,0]=0 I[2,0]=-1*_v1
+Cap_L:c25 _node42 mid C=25f
+tlv9002_r_noiseless:r69 mid _node42 R=1M
+SDD:gvccs6 vsense mid _node42 mid I[1,0]=0 I[2,0]=-1u*_v1
+Cap_L:c20 clamp mid C=151.6n
+tlv9002_r_noiseless:r68 mid clamp R=1M
+tlv9002_vccs_lim_2_0:xvccs_lim_2 _node43 mid mid clamp
+tlv9002_r_noiseless:r44 mid _node43 R=1M
+tlv9002_vccs_lim_1_0:xvccs_lim_1 _node44 _node45 mid _node43
+tlv9002_r_noiseless:rdummy mid _node29 R=40k
+tlv9002_r_noiseless:r61 mid _node46 R=273.3609
+Cap_L:c16 _node46 _node47 C=1.1018n
+tlv9002_r_noiseless:r58 _node47 _node46 R=100M
+SDD:gvccs2 vee_b mid _node47 mid I[1,0]=0 I[2,0]=-258.98m*_v1
+tlv9002_r_noiseless:r57 mid _node47 R=1
+tlv9002_r_noiseless:r56 mid _node48 R=273.3609
+Cap_L:c15 _node48 _node49 C=1.1018n
+tlv9002_r_noiseless:r55 _node49 _node48 R=100M
+SDD:gvccs1 vcc_b mid _node49 mid I[1,0]=0 I[2,0]=-258.98m*_v1
+tlv9002_r_noiseless:r54 mid _node49 R=1
+tlv9002_r_noiseless:r49 mid _node50 R=337.4k
+Cap_L:c14 _node50 _node51 C=591.7f
+tlv9002_r_noiseless:r48 _node51 _node50 R=100M
+SDD:g_adjust esdp mid _node51 mid I[1,0]=0 I[2,0]=-44.81m*_v1
+tlv9002_r_noiseless:rsrc mid _node51 R=1
+tlv9002_vccs_limit_iq_0:xiqpos vimon mid mid vcc
+tlv9002_vccs_limit_iq_0:xiqneg mid vimon vee mid
+Cap_L:c_diff esdp esdn C=1p
+tlv9002_clamp_amp_lo_0:xcl_amp _node52 _node53 vimon mid _node54 _node55
+spice_vswitch:sor_swp clamp _node56 clamp _node56 ron=10m roff=1T von=10m voff=0
+spice_vswitch:sor_swn _node57 clamp _node57 clamp ron=10m roff=1T von=10m voff=0
+tlv9002_clamp_amp_hi_0:xgr_amp _node58 _node59 _node60 mid _node61 _node62
+tlv9002_r_noiseless:r39 _node58 mid R=1T
+tlv9002_r_noiseless:r37 _node59 mid R=1T
+tlv9002_r_noiseless:r42 vsense _node60 R=1m
+Cap_L:c19 _node60 mid C=1f
+tlv9002_r_noiseless:r38 _node61 mid R=1
+tlv9002_r_noiseless:r36 mid _node62 R=1
+tlv9002_r_noiseless:r40 _node61 _node63 R=1m
+tlv9002_r_noiseless:r41 _node62 _node64 R=1m
+Cap_L:c17 _node63 mid C=1f
+Cap_L:c18 mid _node64 C=1f
+tlv9002_vccs_lim_gr_0:xgr_src _node63 _node64 clamp mid
+tlv9002_r_noiseless:r21 _node54 mid R=1
+tlv9002_r_noiseless:r20 mid _node55 R=1
+tlv9002_r_noiseless:r29 _node54 _node65 R=1m
+tlv9002_r_noiseless:r30 _node55 _node66 R=1m
+Cap_L:c9 _node65 mid C=1f
+Cap_L:c8 mid _node66 C=1f
+tlv9002_vccs_lim_4_0:xcl_src _node65 _node66 cl_clamp mid
+tlv9002_r_noiseless:r22 _node52 mid R=1T
+tlv9002_r_noiseless:r19 mid _node53 R=1T
+"tlv9002_vccs_lim_claw+_0":xclawp vimon mid _node67 vcc_b
+tlv9002_r_noiseless:r12 _node67 vcc_b R=1k
+tlv9002_r_noiseless:r16 _node67 _node68 R=1m
+tlv9002_r_noiseless:r13 vee_b _node32 R=1k
+tlv9002_r_noiseless:r17 _node69 _node32 R=1m
+Cap_L:c6 _node69 mid C=1f
+Cap_L:c5 mid _node68 C=1f
+SDD:g2 _node68 mid vcc_clp mid I[1,0]=0 I[2,0]=-1m*_v1
+tlv9002_r_noiseless:r15 vcc_clp mid R=1k
+SDD:g3 _node69 mid vee_clp mid I[1,0]=0 I[2,0]=-1m*_v1
+tlv9002_r_noiseless:r14 mid vee_clp R=1k
+tlv9002_clamp_amp_lo_0:xclaw_amp vcc_clp vee_clp vout_s mid _node70 _node71
+tlv9002_r_noiseless:r26 vcc_clp mid R=1T
+tlv9002_r_noiseless:r23 vee_clp mid R=1T
+tlv9002_r_noiseless:r25 _node70 mid R=1
+tlv9002_r_noiseless:r24 mid _node71 R=1
+tlv9002_r_noiseless:r27 _node70 _node72 R=1m
+tlv9002_r_noiseless:r28 _node71 _node73 R=1m
+Cap_L:c11 _node72 mid C=1f
+Cap_L:c10 mid _node73 C=1f
+tlv9002_vccs_lim_3_0:xclaw_src _node72 _node73 claw_clamp mid
+SDD:h2 _node37 mid F[1,0]=-(-1*_c1)+_v1 C[1]="v11"
+SDD:h3 _node35 mid F[1,0]=-(1*_c1)+_v1 C[1]="v12"
+Cap_L:c12 sw_ol mid C=100p
+tlv9002_r_noiseless:r32 _node74 sw_ol R=100
+tlv9002_r_noiseless:r31 _node74 mid R=1
+tlv9002_ol_sense_0:xol_sense mid _node74 _node36 _node34
+spice_vswitch:s1 _node23 _node24 sw_ol mid ron=1m roff=1T von=500m voff=100m
+SDD:h1 _node75 mid F[1,0]=-(1k*_c1)+_v1 C[1]="v4"
+spice_vswitch:s7 vee out vee out ron=50 roff=1T von=500m voff=100m
+spice_vswitch:s6 out vcc out vcc ron=50 roff=1T von=500m voff=100m
+tlv9002_r_noiseless:r11 mid _node76 R=1T
+tlv9002_r_noiseless:r18 _node76 vout_s R=100
+Cap_L:c7 vout_s mid C=1p
+SDD:e5 out mid _node76 mid I[1,0]=0 F[2,0]=(1*_v1)-_v2
+Cap_L:c13 vimon mid C=1n
+tlv9002_r_noiseless:r33 _node75 vimon R=100
+tlv9002_r_noiseless:r10 mid _node75 R=1T
+tlv9002_r_noiseless:r47 _node77 vclp R=100
+Cap_L:c24 vclp mid C=100p
+SDD:e4 cl_clamp mid _node77 mid I[1,0]=0 F[2,0]=(1*_v1)-_v2
+tlv9002_r_noiseless:r46 mid cl_clamp R=1k
+SDD:g9 claw_clamp mid cl_clamp mid I[1,0]=0 I[2,0]=-1m*_v1
+tlv9002_r_noiseless:r45 mid claw_clamp R=1k
+SDD:g8 _node42 mid claw_clamp mid I[1,0]=0 I[2,0]=-1m*_v1
+tlv9002_r_noiseless:r43 mid vsense R=1k
+SDD:g15 clamp mid vsense mid I[1,0]=0 I[2,0]=-1m*_v1
+Cap_L:c4 _node44 mid C=1f
+tlv9002_r_noiseless:r9 _node44 _node78 R=1m
+tlv9002_r_noiseless:r7 mid _node79 R=1T
+tlv9002_r_noiseless:r6 _node80 mid R=1T
+tlv9002_r_noiseless:r8 mid _node78 R=1
+tlv9002_vccs_ext_lim_0:xvcm_clamp _node81 mid _node78 mid _node80 _node79
+SDD:e1 _node82 0 mid 0 I[1,0]=0 F[2,0]=(1*_v1)-_v2
+tlv9002_r_noiseless:r89 vee_b 0 R=1
+tlv9002_r_noiseless:r5 _node83 vee_b R=1m
+Cap_L:c3 _node83 0 C=1f
+tlv9002_r_noiseless:r60 _node82 _node83 R=1M
+Cap_L:c1 _node82 0 C=100e-9
+tlv9002_r_noiseless:r3 _node82 0 R=1T
+tlv9002_r_noiseless:r59 _node84 _node82 R=1M
+Cap_L:c2 _node84 0 C=1f
+tlv9002_r_noiseless:r4 vcc_b _node84 R=1m
+tlv9002_r_noiseless:r88 vcc_b 0 R=1
+SDD:g17 vee 0 vee_b 0 I[1,0]=0 I[2,0]=-1*_v1
+SDD:g16 vcc 0 vcc_b 0 I[1,0]=0 I[2,0]=-1*_v1
+tlv9002_r_noiseless:r_psr _node85 _node81 R=1k
+SDD:g_psr _node48 _node46 _node81 _node85 I[1,0]=0 I[2,0]=-1m*_v1
+tlv9002_r_noiseless:r2 _node45 esdn R=1m
+tlv9002_r_noiseless:r1 _node85 _node86 R=1m
+tlv9002_r_noiseless:r_cmr _node21 _node86 R=1k
+SDD:g_cmr _node50 mid _node86 _node21 I[1,0]=0 I[2,0]=-1m*_v1
+Cap_L:c_cmn esdn mid C=5p
+Cap_L:c_cmp mid esdp C=5p
+tlv9002_r_noiseless:r53 esdn mid R=1T
+tlv9002_r_noiseless:r52 mid esdp R=1T
+tlv9002_r_noiseless:r35 "in-" esdn R=10m
+tlv9002_r_noiseless:r34 "in+" esdp R=10m
+;.model tlv9002_s_vswitch_1 vswitch (ron=50 roff=1t von=500m voff=100m)
+;.model tlv9002_s_vswitch_2 vswitch (ron=50 roff=1t von=500m voff=100m)
+;.model tlv9002_s_vswitch_3 vswitch (ron=50 roff=1t von=500m voff=100m)
+;.model tlv9002_s_vswitch_4 vswitch (ron=50 roff=1t von=500m voff=100m)
+;.model tlv9002_s_vswitch_5 vswitch (ron=10m roff=1t von=10m voff=0)
+;.model tlv9002_s_vswitch_6 vswitch (ron=10m roff=1t von=10m voff=0)
+;.model tlv9002_s_vswitch_7 vswitch (ron=1m roff=1t von=500m voff=100m)
+;.model tlv9002_s_vswitch_8 vswitch (ron=50 roff=1t von=500m voff=100m)
+;.model tlv9002_s_vswitch_9 vswitch (ron=50 roff=1t von=500m voff=100m)
+end tlv9002_tlv9002
+;
+define tlv9002_vos_src_0 ( "v+" "v-" "ref+" "ref-")
+SDD:e1 "v+" _node1 "ref+" "v-" F[1,0]=_efunc_1(((_v2)))-_v1 I[2,0]=0
+ _efunc_1(x)=pwl(x,0,0.8e-3,1,0.8e-3,1.3,0,5.5,0)
+SDD:e2 _node1 "v-" "v-" "ref-" F[1,0]=_efunc_2(((_v2)))-_v1 I[2,0]=0
+ _efunc_2(x)=pwl(x,-0.7,-2e-4,-0.5,-2e-4,-0.4,0,5.5,0)
+end tlv9002_vos_src_0
+;
+define tlv9002_vccs_lim_zo_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=100
+ ipos=35e3
+ ineg=-35e3
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9002_vccs_lim_zo_0
+;
+define "tlv9002_vccs_lim_claw-_0" ( "vc+" "vc-" "iout+" "iout-")
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=_efunc_3(abs(_v2)) I[2,0]=0
+ _efunc_3(x)=pwl(x,00.0000,0.00001,14.0000,0.000379,28.0000,0.000877,37.3333,0.001382,37.8000,0.00142,38.7333,0.001493,39.6667,0.001583,40.6000,0.001703,41.5333,0.00191,42.0000,0.00204)
+end "tlv9002_vccs_lim_claw-_0"
+;
+define tlv9002_vnse_0 ( _node1 _node2)
+ flw=10
+ nlf=115
+ nvr=27
+ glf=pow(flw,0.25)*nlf/1164
+ rnv=1.184*pow(nvr,2)
+model tlv9002_dvn Diode Kf=pow(flw,0.5)/1e11 Is=1.0e-16 Ibv=1e-10 Tnom=27 IkModel=1 Imax=1000 \
+      Trs1=0 Trs2=0
+I_Source:i1 0 _node7 Idc=10e-3
+I_Source:i2 0 _node8 Idc=10e-3
+tlv9002_dvn:d1 _node7 0 Mode=1
+tlv9002_dvn:d2 _node8 0 Mode=1
+SDD:e1 _node7 _node8 _node3 _node6 I[1,0]=0 F[2,0]=(glf*_v1)-_v2
+R:r1 _node3 0 R=1e9
+R:r2 _node3 0 R=1e9
+R:r3 _node3 _node6 R=1e9
+SDD:e2 _node5 0 _node6 _node4 I[1,0]=0 F[2,0]=(10*_v1)-_v2
+R:r4 _node5 0 R=rnv
+R:r5 _node5 0 R=rnv
+R:r6 _node3 _node4 R=1e9
+R:r7 _node4 0 R=1e9
+SDD:e3 _node3 _node4 _node1 _node2 I[1,0]=0 F[2,0]=(1*_v1)-_v2
+end tlv9002_vnse_0
+;
+define tlv9002_femt_0_0 ( _node1 _node2)
+ flwf=0.001
+ nlff=23
+ nvrf=23
+ glff=pow(flwf,0.25)*nlff/1164
+ rnvf=1.184*pow(nvrf,2)
+model tlv9002_dvnf Diode Kf=pow(flwf,0.5)/1e11 Is=1.0e-16 Ibv=1e-10 Tnom=27 IkModel=1 Imax=1000 \
+      Trs1=0 Trs2=0
+I_Source:i1 0 _node7 Idc=10e-3
+I_Source:i2 0 _node8 Idc=10e-3
+tlv9002_dvnf:d1 _node7 0 Mode=1
+tlv9002_dvnf:d2 _node8 0 Mode=1
+SDD:e1 _node7 _node8 _node3 _node6 I[1,0]=0 F[2,0]=(glff*_v1)-_v2
+R:r1 _node3 0 R=1e9
+R:r2 _node3 0 R=1e9
+R:r3 _node3 _node6 R=1e9
+SDD:e2 _node5 0 _node6 _node4 I[1,0]=0 F[2,0]=(10*_v1)-_v2
+R:r4 _node5 0 R=rnvf
+R:r5 _node5 0 R=rnvf
+R:r6 _node3 _node4 R=1e9
+R:r7 _node4 0 R=1e9
+SDD:g1 _node3 _node4 _node1 _node2 I[1,0]=0 I[2,0]=1e-6*_v1
+end tlv9002_femt_0_0
+;
+define tlv9002_vccs_lim_2_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=11.15e-3
+ ipos=0.352
+ ineg=-0.352
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9002_vccs_lim_2_0
+;
+define tlv9002_vccs_lim_1_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1e-4
+ ipos=.5
+ ineg=-.5
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9002_vccs_lim_1_0
+;
+define tlv9002_vccs_limit_iq_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1e-3
+SDD:g1 "iout-" "iout+" "vc+" "vc-" I[1,0]=(if((_v2<=0)) then (0) else (gain*_v2) endif) \
+      I[2,0]=0
+end tlv9002_vccs_limit_iq_0
+;
+define tlv9002_clamp_amp_lo_0 ( "vc+" "vc-" vin com "vo+" "vo-")
+ g=1
+SDD:gvox com "vo+" vin com "vc+" com I[1,0]=(if(_v2>_v3) then (((_v2-_v3)*g)) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+SDD:gvo1 com "vo-" vin com "vc-" com I[1,0]=(if(_v2<_v3) then (((_v3-_v2)*g)) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+end tlv9002_clamp_amp_lo_0
+;
+define tlv9002_clamp_amp_hi_0 ( "vc+" "vc-" vin com "vo+" "vo-")
+ g=10
+SDD:gvox com "vo+" vin com "vc+" com I[1,0]=(if(_v2>_v3) then (((_v2-_v3)*g)) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+SDD:gvo1 com "vo-" vin com "vc-" com I[1,0]=(if(_v2<_v3) then (((_v3-_v2)*g)) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+end tlv9002_clamp_amp_hi_0
+;
+define tlv9002_vccs_lim_gr_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1
+ ipos=0.7
+ ineg=-0.7
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9002_vccs_lim_gr_0
+;
+define tlv9002_vccs_lim_4_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1
+ ipos=0.8
+ ineg=-0.8
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9002_vccs_lim_4_0
+;
+define "tlv9002_vccs_lim_claw+_0" ( "vc+" "vc-" "iout+" "iout-")
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=_efunc_4(abs(_v2)) I[2,0]=0
+ _efunc_4(x)=pwl(x,00.00,0.000010,13.67,0.0003467,27.33,0.0007994,36.44,0.001309,36.90,0.001351,37.81,0.001455,38.72,0.001600,39.63,0.001812,40.54,0.002117,41.00,0.002292)
+end "tlv9002_vccs_lim_claw+_0"
+;
+define tlv9002_vccs_lim_3_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1
+ ipos=0.400
+ ineg=-0.400
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9002_vccs_lim_3_0
+;
+define tlv9002_ol_sense_0 ( com "sw+" oln olp)
+SDD:gswx com "sw+" oln com olp com I[1,0]=(if((_v2>10e-3||_v3>10e-3)) then (1) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+end tlv9002_ol_sense_0
+;
+define tlv9002_vccs_ext_lim_0 ( "vin+" "vin-" "iout-" "iout+" "vp+" "vp-")
+ gain=1
+SDD:g1 "iout+" "iout-" "vin+" "vin-" "vp-" "vin-" "vp+" "vin-" I[1,0]=limit_warn(gain*_v2,_v3,_v4) \
+      I[2,0]=0 I[3,0]=0 I[4,0]=0
+end tlv9002_vccs_ext_lim_0
+;
+; END ORIGINAL INCLUDE
+; BEGIN ORIGINAL INCLUDE hardware\rev-a\ltspice\afe\models\tlv9052-namespaced.lib
+; LTspice import: identifier prefixes only, original equations unchanged
+; TLV9052_TLV9052 - Rev. D
+; Created by Paul Goedeke, Bala Ravi; May 22, 2019 - Revised by GPAMPS Team; 2021-06-11
+; Created with Green-Williams-Lis Op Amp Macro-model Architecture
+; Copyright 2019 by Texas Instruments Corporation
+;*****************************************************
+; MACRO-MODEL SIMULATED PARAMETERS:
+;*****************************************************
+; OPEN-LOOP GAIN AND PHASE VS. FREQUENCY WITH RL, CL EFFECTS (Aol)
+; UNITY GAIN BANDWIDTH (GBW)
+; INPUT COMMON-MODE REJECTION RATIO VS. FREQUENCY (CMRR)
+; POWER SUPPLY REJECTION RATIO VS. FREQUENCY (PSRR)
+; DIFFERENTIAL INPUT IMPEDANCE (Zid)
+; COMMON-MODE INPUT IMPEDANCE (Zic)
+; OPEN-LOOP OUTPUT IMPEDANCE VS. FREQUENCY (Zo)
+; OUTPUT CURRENT THROUGH THE SUPPLY (Iout)
+; INPUT VOLTAGE NOISE DENSITY VS. FREQUENCY (en)
+; INPUT CURRENT NOISE DENSITY VS. FREQUENCY (in)
+; OUTPUT VOLTAGE SWING vs. OUTPUT CURRENT (Vo)
+; SHORT-CIRCUIT OUTPUT CURRENT (Isc)
+; QUIESCENT CURRENT (Iq)
+; SETTLING TIME VS. CAPACITIVE LOAD (ts)
+; SLEW RATE (SR)
+; SMALL SIGNAL OVERSHOOT VS. CAPACITIVE LOAD
+; LARGE SIGNAL RESPONSE
+; OVERLOAD RECOVERY TIME (tor)
+; INPUT BIAS CURRENT (Ib)
+; INPUT OFFSET CURRENT (Ios)
+; INPUT OFFSET VOLTAGE (Vos)
+; INPUT COMMON-MODE VOLTAGE RANGE (Vcm)
+; INPUT OFFSET VOLTAGE VS. INPUT COMMON-MODE VOLTAGE (Vos vs. Vcm)
+; INPUT/OUTPUT ESD CELLS (ESDin, ESDout)
+;*****************************************************
+define tlv9052_tlv9052 ( "in+" "in-" vcc vee out)
+;*****************************************************
+; MODEL DEFINITIONS:
+;.model tlv9052_bb_sw vswitch(ron=50 roff=1e12 von=700e-3 voff=0)
+;.model tlv9052_esd_sw vswitch(ron=50 roff=1e12 von=250e-3 voff=0)
+;.model tlv9052_ol_sw vswitch(ron=1e-3 roff=1e9 von=900e-3 voff=800e-3)
+;.model tlv9052_or_sw vswitch(ron=10e-3 roff=1e9 von=1e-3 voff=0)
+model tlv9052_r_noiseless R_Model TC1=0 TC2=0 Tnom=27
+;*****************************************************
+I_Source:i_os esdn mid Idc=1p
+I_Source:i_b _node30 mid Idc=2p
+V_Source:v_grp _node59 mid Vdc=310
+V_Source:v_grn _node60 mid Vdc=-310
+V_Source:v_iscp _node53 mid Vdc=50
+V_Source:v_iscn _node54 mid Vdc=-50
+V_Source:v_orn _node50 vclp Vdc=-2.6
+V_Source:v11 _node58 _node49 Vdc=0
+V_Source:v_orp _node48 vclp Vdc=2.6
+V_Source:v12 _node57 _node47 Vdc=0
+V_Source:v4 _node42 out Vdc=0
+V_Source:vcm_min _node79 vee_b Vdc=-100m
+V_Source:vcm_max _node80 vcc_b Vdc=100m
+I_Source:i_q vcc vee Idc=330u
+"tlv9052_vccs_lim_claw+_0":xclawp vimon mid _node21 vcc_b
+"tlv9052_vccs_lim_claw-_0":xclawn mid vimon vee_b _node22
+tlv9052_r_noiseless:r57 mid _node23 R=1.25k
+Cap_L:c16 _node23 _node24 C=6.366p
+tlv9052_r_noiseless:r56 _node24 _node23 R=10M
+SDD:g_adjust esdp mid _node24 mid I[1,0]=0 I[2,0]=-80m*_v1
+tlv9052_r_noiseless:rsrc mid _node24 R=1
+tlv9052_r_noiseless:r55 mid _node25 R=44.44
+Cap_L:c14 _node25 _node26 C=530.5p
+tlv9052_r_noiseless:r49 _node26 _node25 R=10M
+SDD:gvccs3 vcc_b mid _node26 mid I[1,0]=0 I[2,0]=-711.5m*_v1
+tlv9052_r_noiseless:r48 mid _node26 R=1
+tlv9052_r_noiseless:r54 mid _node27 R=20
+Cap_L:c15 _node27 _node28 C=397.9p
+tlv9052_r_noiseless:r51 _node28 _node27 R=10M
+SDD:gvccs1 vee_b mid _node28 mid I[1,0]=0 I[2,0]=-1.581*_v1
+tlv9052_r_noiseless:r50 mid _node28 R=1
+tlv9052_vos_drift_0:xu1 _node29 _node30
+tlv9052_vccs_lim_2_0:xvccs_lim_2 _node31 mid mid clamp
+tlv9052_vos_src_0:xvos_vcm _node32 _node29 vcc vee
+Cap_L:c25 _node33 mid C=13f
+Cap_L:c20 clamp mid C=115n
+tlv9052_r_noiseless:r94 _node34 mid R=1
+tlv9052_vccs_lim_zo_0:xzo _node35 mid mid _node34
+tlv9052_r_noiseless:r93 _node35 mid R=1.111k
+Cap_L:c33 _node35 _node36 C=1.59f
+tlv9052_r_noiseless:r92 _node35 _node36 R=10k
+tlv9052_r_noiseless:r91 _node36 mid R=1
+SDD:gvccs12 _node37 mid _node36 mid I[1,0]=0 I[2,0]=-1*_v1
+Cap_L:c32 _node38 mid C=15.92f
+tlv9052_r_noiseless:r90 _node37 _node38 R=10k
+tlv9052_r_noiseless:r87 _node37 _node39 R=40k
+tlv9052_r_noiseless:r86 _node39 mid R=1
+SDD:gvccs11 _node40 mid _node39 mid I[1,0]=0 I[2,0]=-18*_v1
+Cap_L:c31 _node41 _node40 C=15.92u
+tlv9052_r_noiseless:r85 _node40 mid R=588.2
+tlv9052_r_noiseless:r84 _node40 _node41 R=10k
+tlv9052_r_noiseless:rdummy mid _node42 R=40k
+tlv9052_r_noiseless:rx _node42 _node34 R=400k
+tlv9052_r_noiseless:r81 _node41 mid R=1
+SDD:gvccs10 cl_clamp _node42 _node41 mid I[1,0]=0 I[2,0]=-89*_v1
+tlv9052_vnse_0:xe_n esdp _node30
+spice_vswitch:s5 vee esdp vee esdp ron=50 roff=1T von=500m voff=450m
+spice_vswitch:s4 vee esdn vee esdn ron=50 roff=1T von=500m voff=450m
+spice_vswitch:s2 esdn vcc esdn vcc ron=50 roff=1T von=500m voff=450m
+spice_vswitch:s3 esdp vcc esdp vcc ron=50 roff=1T von=500m voff=450m
+Cap_L:c28 _node43 mid C=1p
+tlv9052_r_noiseless:r77 _node44 _node43 R=100
+Cap_L:c27 _node45 mid C=1p
+tlv9052_r_noiseless:r76 _node46 _node45 R=100
+tlv9052_r_noiseless:r75 mid _node47 R=1
+SDD:gvccs8 _node48 mid _node47 mid I[1,0]=0 I[2,0]=-1*_v1
+tlv9052_r_noiseless:r74 _node49 mid R=1
+SDD:gvccs7 _node50 mid _node49 mid I[1,0]=0 I[2,0]=-1*_v1
+tlv9052_femt_0:xi_nn esdn mid
+tlv9052_femt_0:xi_np mid _node30
+tlv9052_r_noiseless:r69 mid _node33 R=1M
+SDD:gvccs6 vsense mid _node33 mid I[1,0]=0 I[2,0]=-1u*_v1
+tlv9052_r_noiseless:r68 mid clamp R=1M
+tlv9052_r_noiseless:r44 mid _node31 R=1M
+tlv9052_vccs_lim_1_0:xvccs_lim_1 _node51 _node52 mid _node31
+tlv9052_vccs_limit_iq_0:xiqp vimon mid mid vcc
+tlv9052_vccs_limit_iq_0:xiqn mid vimon vee mid
+Cap_L:c_diff esdp esdn C=2p
+tlv9052_clamp_amp_lo_0:xcl_amp _node53 _node54 vimon mid _node55 _node56
+spice_vswitch:sor_swp clamp _node57 clamp _node57 ron=10m roff=1T von=10m voff=0
+spice_vswitch:sor_swn _node58 clamp _node58 clamp ron=10m roff=1T von=10m voff=0
+tlv9052_clamp_amp_hi_0:xgr_amp _node59 _node60 _node61 mid _node62 _node63
+tlv9052_r_noiseless:r39 _node59 mid R=1T
+tlv9052_r_noiseless:r37 _node60 mid R=1T
+tlv9052_r_noiseless:r42 vsense _node61 R=1m
+Cap_L:c19 _node61 mid C=1f
+tlv9052_r_noiseless:r38 _node62 mid R=1
+tlv9052_r_noiseless:r36 mid _node63 R=1
+tlv9052_r_noiseless:r40 _node62 _node64 R=1m
+tlv9052_r_noiseless:r41 _node63 _node65 R=1m
+Cap_L:c17 _node64 mid C=1f
+Cap_L:c18 mid _node65 C=1f
+tlv9052_vccs_lim_gr_0:xgr_src _node64 _node65 clamp mid
+tlv9052_r_noiseless:r21 _node55 mid R=1
+tlv9052_r_noiseless:r20 mid _node56 R=1
+tlv9052_r_noiseless:r29 _node55 _node66 R=1m
+tlv9052_r_noiseless:r30 _node56 _node67 R=1m
+Cap_L:c9 _node66 mid C=1f
+Cap_L:c8 mid _node67 C=1f
+tlv9052_vccs_lim_4_0:xcl_src _node66 _node67 cl_clamp mid
+tlv9052_r_noiseless:r22 _node53 mid R=1T
+tlv9052_r_noiseless:r19 mid _node54 R=1T
+tlv9052_r_noiseless:r12 _node21 vcc_b R=1k
+tlv9052_r_noiseless:r16 _node21 _node68 R=1m
+tlv9052_r_noiseless:r13 vee_b _node22 R=1k
+tlv9052_r_noiseless:r17 _node69 _node22 R=1m
+Cap_L:c6 _node69 mid C=1f
+Cap_L:c5 mid _node68 C=1f
+SDD:g2 _node68 mid vcc_clp mid I[1,0]=0 I[2,0]=-1m*_v1
+tlv9052_r_noiseless:r15 vcc_clp mid R=1k
+SDD:g3 _node69 mid vee_clp mid I[1,0]=0 I[2,0]=-1m*_v1
+tlv9052_r_noiseless:r14 mid vee_clp R=1k
+tlv9052_clamp_amp_lo_0:xclaw_amp vcc_clp vee_clp vout_s mid _node70 _node71
+tlv9052_r_noiseless:r26 vcc_clp mid R=1T
+tlv9052_r_noiseless:r23 vee_clp mid R=1T
+tlv9052_r_noiseless:r25 _node70 mid R=1
+tlv9052_r_noiseless:r24 mid _node71 R=1
+tlv9052_r_noiseless:r27 _node70 _node72 R=1m
+tlv9052_r_noiseless:r28 _node71 _node73 R=1m
+Cap_L:c11 _node72 mid C=1f
+Cap_L:c10 mid _node73 C=1f
+tlv9052_vccs_lim_3_0:xclaw_src _node72 _node73 claw_clamp mid
+SDD:h2 _node46 mid F[1,0]=-(-1*_c1)+_v1 C[1]="v11"
+SDD:h3 _node44 mid F[1,0]=-(1*_c1)+_v1 C[1]="v12"
+Cap_L:c12 sw_ol mid C=100p
+tlv9052_r_noiseless:r32 _node74 sw_ol R=100
+tlv9052_r_noiseless:r31 _node74 mid R=1
+tlv9052_ol_sense_0:xol_sense mid _node74 _node45 _node43
+spice_vswitch:s1 _node41 _node40 sw_ol mid ron=1m roff=1T von=500m voff=100m
+SDD:h1 _node75 mid F[1,0]=-(1k*_c1)+_v1 C[1]="v4"
+spice_vswitch:s7 vee out vee out ron=50 roff=1T von=500m voff=100m
+spice_vswitch:s6 out vcc out vcc ron=50 roff=1T von=500m voff=100m
+tlv9052_r_noiseless:r11 mid _node76 R=1T
+tlv9052_r_noiseless:r18 _node76 vout_s R=100
+Cap_L:c7 vout_s mid C=1p
+SDD:e5 out mid _node76 mid I[1,0]=0 F[2,0]=(1*_v1)-_v2
+Cap_L:c13 vimon mid C=100p
+tlv9052_r_noiseless:r33 _node75 vimon R=100
+tlv9052_r_noiseless:r10 mid _node75 R=1T
+tlv9052_r_noiseless:r47 _node77 vclp R=100
+Cap_L:c24 vclp mid C=100p
+SDD:e4 cl_clamp mid _node77 mid I[1,0]=0 F[2,0]=(1*_v1)-_v2
+tlv9052_r_noiseless:r46 mid cl_clamp R=1k
+SDD:g9 claw_clamp mid cl_clamp mid I[1,0]=0 I[2,0]=-1m*_v1
+tlv9052_r_noiseless:r45 mid claw_clamp R=1k
+SDD:g8 _node33 mid claw_clamp mid I[1,0]=0 I[2,0]=-1m*_v1
+tlv9052_r_noiseless:r43 mid vsense R=1k
+SDD:g15 clamp mid vsense mid I[1,0]=0 I[2,0]=-1m*_v1
+Cap_L:c4 _node51 mid C=1f
+tlv9052_r_noiseless:r9 _node51 _node78 R=1m
+tlv9052_r_noiseless:r7 mid _node79 R=1T
+tlv9052_r_noiseless:r6 _node80 mid R=1T
+tlv9052_r_noiseless:r8 mid _node78 R=1
+tlv9052_vccs_ext_lim_0:xvcm_clamp _node81 mid _node78 mid _node80 _node79
+SDD:e1 _node82 0 mid 0 I[1,0]=0 F[2,0]=(1*_v1)-_v2
+tlv9052_r_noiseless:r89 vee_b 0 R=1
+tlv9052_r_noiseless:r5 _node83 vee_b R=1m
+Cap_L:c3 _node83 0 C=1f
+tlv9052_r_noiseless:r60 _node82 _node83 R=1M
+Cap_L:c1 _node82 0 C=100e-9
+tlv9052_r_noiseless:r3 _node82 0 R=1T
+tlv9052_r_noiseless:r59 _node84 _node82 R=1M
+Cap_L:c2 _node84 0 C=1f
+tlv9052_r_noiseless:r4 vcc_b _node84 R=1m
+tlv9052_r_noiseless:r88 vcc_b 0 R=1
+SDD:g17 vee 0 vee_b 0 I[1,0]=0 I[2,0]=-1*_v1
+SDD:g16 vcc 0 vcc_b 0 I[1,0]=0 I[2,0]=-1*_v1
+tlv9052_r_noiseless:r_psr _node85 _node81 R=1k
+SDD:g_psr _node25 _node27 _node81 _node85 I[1,0]=0 I[2,0]=-1m*_v1
+tlv9052_r_noiseless:r2 _node52 esdn R=1m
+tlv9052_r_noiseless:r1 _node85 _node86 R=1m
+tlv9052_r_noiseless:r_cmr _node32 _node86 R=1k
+SDD:g_cmr _node23 mid _node86 _node32 I[1,0]=0 I[2,0]=-1m*_v1
+Cap_L:c_cmn esdn mid C=4p
+Cap_L:c_cmp mid esdp C=4p
+tlv9052_r_noiseless:r53 esdn mid R=1T
+tlv9052_r_noiseless:r52 mid esdp R=1T
+tlv9052_r_noiseless:r35 "in-" esdn R=10m
+tlv9052_r_noiseless:r34 "in+" esdp R=10m
+;.model tlv9052_s_vswitch_1 vswitch (ron=50 roff=1t von=500m voff=450m)
+;.model tlv9052_s_vswitch_2 vswitch (ron=50 roff=1t von=500m voff=450m)
+;.model tlv9052_s_vswitch_3 vswitch (ron=50 roff=1t von=500m voff=450m)
+;.model tlv9052_s_vswitch_4 vswitch (ron=50 roff=1t von=500m voff=450m)
+;.model tlv9052_s_vswitch_5 vswitch (ron=10m roff=1t von=10m voff=0)
+;.model tlv9052_s_vswitch_6 vswitch (ron=10m roff=1t von=10m voff=0)
+;.model tlv9052_s_vswitch_7 vswitch (ron=1m roff=1t von=500m voff=100m)
+;.model tlv9052_s_vswitch_8 vswitch (ron=50 roff=1t von=500m voff=100m)
+;.model tlv9052_s_vswitch_9 vswitch (ron=50 roff=1t von=500m voff=100m)
+end tlv9052_tlv9052
+;
+define "tlv9052_vccs_lim_claw+_0" ( "vc+" "vc-" "iout+" "iout-")
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=_efunc_5(abs(_v2)) I[2,0]=0
+ _efunc_5(x)=pwl(x,00,2.00e-5,02,3.00e-5,05,9.00e-5,10,1.80e-4,15,2.80e-4,20,3.80e-4,25,5.00e-4,30,6.35e-4,35,8.00e-4,40,1.01e-3,42,1.12e-3,45,1.37e-3,48,2.00e-3)
+end "tlv9052_vccs_lim_claw+_0"
+;
+define "tlv9052_vccs_lim_claw-_0" ( "vc+" "vc-" "iout+" "iout-")
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=_efunc_6(abs(_v2)) I[2,0]=0
+ _efunc_6(x)=pwl(x,00,2.00e-5,02,3.00e-5,05,7.50e-5,10,1.55e-4,15,2.35e-4,20,3.30e-4,25,4.30e-4,30,5.40e-4,35,6.75e-4,40,8.55e-4,42,9.50e-4,45,1.18e-3,47,1.53e-3,48,2.24e-3)
+end "tlv9052_vccs_lim_claw-_0"
+;
+define tlv9052_vos_drift_0 ( "vos+" "vos-")
+ dc=3.1261e-4
+ pol=-1
+ drift=0.5e-6
+SDD:e1 "vos+" "vos-" F[1,0]=(dc+pol*drift*(temp-27))-_v1
+end tlv9052_vos_drift_0
+;
+define tlv9052_vccs_lim_2_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=3.969e-2
+ ipos=2.8
+ ineg=-2.8
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9052_vccs_lim_2_0
+;
+define tlv9052_vos_src_0 ( "v+" "v-" "ref+" "ref-")
+SDD:e1 "v+" _node1 "ref+" "v-" F[1,0]=_efunc_7(((_v2)))-_v1 I[2,0]=0
+ _efunc_7(x)=pwl(x,0,0.0003,1,0.0003,1.3,0,5.5,0)
+SDD:e2 _node1 "v-" "v-" "ref-" F[1,0]=_efunc_8(((_v2)))-_v1 I[2,0]=0
+ _efunc_8(x)=pwl(x,-0.7,-2e-4,-0.5,-2e-4,-0.4,0,5.5,0)
+end tlv9052_vos_src_0
+;
+define tlv9052_vccs_lim_zo_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=10
+ ipos=45k
+ ineg=-45k
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9052_vccs_lim_zo_0
+;
+define tlv9052_vnse_0 ( _node1 _node2)
+ flw=10
+ nlf=116
+ nvr=12.5
+ glf=pow(flw,0.25)*nlf/1164
+ rnv=1.184*pow(nvr,2)
+model tlv9052_dvn Diode Kf=pow(flw,0.5)/1e11 Is=1.0e-16 Ibv=1e-10 Tnom=27 IkModel=1 Imax=1000 \
+      Trs1=0 Trs2=0
+I_Source:i1 0 _node7 Idc=10e-3
+I_Source:i2 0 _node8 Idc=10e-3
+tlv9052_dvn:d1 _node7 0 Mode=1
+tlv9052_dvn:d2 _node8 0 Mode=1
+SDD:e1 _node7 _node8 _node3 _node6 I[1,0]=0 F[2,0]=(glf*_v1)-_v2
+R:r1 _node3 0 R=1e9
+R:r2 _node3 0 R=1e9
+R:r3 _node3 _node6 R=1e9
+SDD:e2 _node5 0 _node6 _node4 I[1,0]=0 F[2,0]=(10*_v1)-_v2
+R:r4 _node5 0 R=rnv
+R:r5 _node5 0 R=rnv
+R:r6 _node3 _node4 R=1e9
+R:r7 _node4 0 R=1e9
+SDD:e3 _node3 _node4 _node1 _node2 I[1,0]=0 F[2,0]=(1*_v1)-_v2
+end tlv9052_vnse_0
+;
+define tlv9052_femt_0 ( _node1 _node2)
+ flwf=1e-3
+ nlff=18
+ nvrf=18
+ glff=pow(flwf,0.25)*nlff/1164
+ rnvf=1.184*pow(nvrf,2)
+model tlv9052_dvnf Diode Kf=pow(flwf,0.5)/1e11 Is=1.0e-16 Ibv=1e-10 Tnom=27 IkModel=1 Imax=1000 \
+      Trs1=0 Trs2=0
+I_Source:i1 0 _node7 Idc=10e-3
+I_Source:i2 0 _node8 Idc=10e-3
+tlv9052_dvnf:d1 _node7 0 Mode=1
+tlv9052_dvnf:d2 _node8 0 Mode=1
+SDD:e1 _node7 _node8 _node3 _node6 I[1,0]=0 F[2,0]=(glff*_v1)-_v2
+R:r1 _node3 0 R=1e9
+R:r2 _node3 0 R=1e9
+R:r3 _node3 _node6 R=1e9
+SDD:e2 _node5 0 _node6 _node4 I[1,0]=0 F[2,0]=(10*_v1)-_v2
+R:r4 _node5 0 R=rnvf
+R:r5 _node5 0 R=rnvf
+R:r6 _node3 _node4 R=1e9
+R:r7 _node4 0 R=1e9
+SDD:g1 _node3 _node4 _node1 _node2 I[1,0]=0 I[2,0]=1e-6*_v1
+end tlv9052_femt_0
+;
+define tlv9052_vccs_lim_1_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1e-4
+ ipos=.5
+ ineg=-.5
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9052_vccs_lim_1_0
+;
+define tlv9052_vccs_limit_iq_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1e-3
+SDD:g1 "iout-" "iout+" "vc+" "vc-" I[1,0]=(if((_v2<=0)) then (0) else (gain*_v2) endif) \
+      I[2,0]=0
+end tlv9052_vccs_limit_iq_0
+;
+define tlv9052_clamp_amp_lo_0 ( "vc+" "vc-" vin com "vo+" "vo-")
+ g=1
+SDD:gvox com "vo+" vin com "vc+" com I[1,0]=(if(_v2>_v3) then (((_v2-_v3)*g)) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+SDD:gvo1 com "vo-" vin com "vc-" com I[1,0]=(if(_v2<_v3) then (((_v3-_v2)*g)) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+end tlv9052_clamp_amp_lo_0
+;
+define tlv9052_clamp_amp_hi_0 ( "vc+" "vc-" vin com "vo+" "vo-")
+ g=10
+SDD:gvox com "vo+" vin com "vc+" com I[1,0]=(if(_v2>_v3) then (((_v2-_v3)*g)) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+SDD:gvo1 com "vo-" vin com "vc-" com I[1,0]=(if(_v2<_v3) then (((_v3-_v2)*g)) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+end tlv9052_clamp_amp_hi_0
+;
+define tlv9052_vccs_lim_gr_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1
+ ipos=4
+ ineg=-4
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9052_vccs_lim_gr_0
+;
+define tlv9052_vccs_lim_4_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1
+ ipos=1.8
+ ineg=-1.8
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9052_vccs_lim_4_0
+;
+define tlv9052_vccs_lim_3_0 ( "vc+" "vc-" "iout+" "iout-")
+ gain=1
+ ipos=740e-3
+ ineg=-740e-3
+SDD:g1 "iout+" "iout-" "vc+" "vc-" I[1,0]=limit_warn(gain*_v2,ineg,ipos) I[2,0]=0
+end tlv9052_vccs_lim_3_0
+;
+define tlv9052_ol_sense_0 ( com "sw+" oln olp)
+SDD:gswx com "sw+" oln com olp com I[1,0]=(if((_v2>10e-3||_v3>10e-3)) then (1) else (0) endif) \
+      I[2,0]=0 I[3,0]=0
+end tlv9052_ol_sense_0
+;
+define tlv9052_vccs_ext_lim_0 ( "vin+" "vin-" "iout-" "iout+" "vp+" "vp-")
+ gain=1
+SDD:g1 "iout+" "iout-" "vin+" "vin-" "vp-" "vin-" "vp+" "vin-" I[1,0]=limit_warn(gain*_v2,_v3,_v4) \
+      I[2,0]=0 I[3,0]=0 I[4,0]=0
+end tlv9052_vccs_ext_lim_0
+;
+; END ORIGINAL INCLUDE
+; BEGIN ORIGINAL INCLUDE hardware\rev-a\ltspice\afe\canonical-afe.lib
+; Exact canonical AFE passives/amplifier units + VMID divider/filter + MCU 150R/470pF interfaces
+R:r1001 ffc_ch1 ch1_limit R=5100
+Cap_L:c1001 ch1_limit ch1_plus C=1e-08
+R:r1002 ch1_plus vmid R=22000000
+R:r1003 ch1_minus vmid R=1000
+R:r1004 ch1_pre ch1_minus R=10000
+Cap_L:c1002 ch1_pre ch1_hp_ch C=1e-08
+R:r1005 ch1_hp_ch ch1_diff_minus R=51100
+R:r1006 ch1_hp ch1_diff_fb_mid R=909000
+R:r1007 ch1_diff_fb_mid ch1_diff_minus R=909000
+Cap_L:c1003 ref_pre ch1_hp_ref C=1e-08
+R:r1008 ch1_hp_ref ch1_diff_plus R=51100
+R:r1009 ch1_diff_plus ch1_diff_bal_mid R=909000
+R:r1010 ch1_diff_bal_mid vmid R=909000
+R:r1011 ch1_hp ch1_lp1_a R=22600
+R:r1012 ch1_lp1_a ch1_lp1_plus R=22600
+Cap_L:c1004 ch1_lp1_a ch1_lp1_out C=1e-09
+Cap_L:c1005 ch1_lp1_plus vmid C=1e-09
+R:r1013 ch1_lp1_minus vmid R=10000
+R:r1014 ch1_lp1_out ch1_lp1_minus R=1500
+R:r1015 ch1_lp1_out ch1_lp2_a R=22600
+R:r1016 ch1_lp2_a ch1_lp2_plus R=22600
+Cap_L:c1006 ch1_lp2_a afe_out_1 C=1e-09
+Cap_L:c1007 ch1_lp2_plus vmid C=1e-09
+R:r1017 ch1_lp2_minus vmid R=10000
+R:r1018 afe_out_1 ch1_lp2_minus R=12400
+R:r1019 ffc_ch2 ch2_limit R=5100
+Cap_L:c1008 ch2_limit ch2_plus C=1e-08
+R:r1020 ch2_plus vmid R=22000000
+R:r1021 ch2_minus vmid R=1000
+R:r1022 ch2_pre ch2_minus R=10000
+Cap_L:c1009 ch2_pre ch2_hp_ch C=1e-08
+R:r1023 ch2_hp_ch ch2_diff_minus R=51100
+R:r1024 ch2_hp ch2_diff_fb_mid R=909000
+R:r1025 ch2_diff_fb_mid ch2_diff_minus R=909000
+Cap_L:c1010 ref_pre ch2_hp_ref C=1e-08
+R:r1026 ch2_hp_ref ch2_diff_plus R=51100
+R:r1027 ch2_diff_plus ch2_diff_bal_mid R=909000
+R:r1028 ch2_diff_bal_mid vmid R=909000
+R:r1029 ch2_hp ch2_lp1_a R=22600
+R:r1030 ch2_lp1_a ch2_lp1_plus R=22600
+Cap_L:c1011 ch2_lp1_a ch2_lp1_out C=1e-09
+Cap_L:c1012 ch2_lp1_plus vmid C=1e-09
+R:r1031 ch2_lp1_minus vmid R=10000
+R:r1032 ch2_lp1_out ch2_lp1_minus R=1500
+R:r1033 ch2_lp1_out ch2_lp2_a R=22600
+R:r1034 ch2_lp2_a ch2_lp2_plus R=22600
+Cap_L:c1013 ch2_lp2_a afe_out_2 C=1e-09
+Cap_L:c1014 ch2_lp2_plus vmid C=1e-09
+R:r1035 ch2_lp2_minus vmid R=10000
+R:r1036 afe_out_2 ch2_lp2_minus R=12400
+R:r1037 ffc_ch3 ch3_limit R=5100
+Cap_L:c1015 ch3_limit ch3_plus C=1e-08
+R:r1038 ch3_plus vmid R=22000000
+R:r1039 ch3_minus vmid R=1000
+R:r1040 ch3_pre ch3_minus R=10000
+Cap_L:c1016 ch3_pre ch3_hp_ch C=1e-08
+R:r1041 ch3_hp_ch ch3_diff_minus R=51100
+R:r1042 ch3_hp ch3_diff_fb_mid R=909000
+R:r1043 ch3_diff_fb_mid ch3_diff_minus R=909000
+Cap_L:c1017 ref_pre ch3_hp_ref C=1e-08
+R:r1044 ch3_hp_ref ch3_diff_plus R=51100
+R:r1045 ch3_diff_plus ch3_diff_bal_mid R=909000
+R:r1046 ch3_diff_bal_mid vmid R=909000
+R:r1047 ch3_hp ch3_lp1_a R=22600
+R:r1048 ch3_lp1_a ch3_lp1_plus R=22600
+Cap_L:c1018 ch3_lp1_a ch3_lp1_out C=1e-09
+Cap_L:c1019 ch3_lp1_plus vmid C=1e-09
+R:r1049 ch3_lp1_minus vmid R=10000
+R:r1050 ch3_lp1_out ch3_lp1_minus R=1500
+R:r1051 ch3_lp1_out ch3_lp2_a R=22600
+R:r1052 ch3_lp2_a ch3_lp2_plus R=22600
+Cap_L:c1020 ch3_lp2_a afe_out_3 C=1e-09
+Cap_L:c1021 ch3_lp2_plus vmid C=1e-09
+R:r1053 ch3_lp2_minus vmid R=10000
+R:r1054 afe_out_3 ch3_lp2_minus R=12400
+R:r1055 ffc_ch4 ch4_limit R=5100
+Cap_L:c1022 ch4_limit ch4_plus C=1e-08
+R:r1056 ch4_plus vmid R=22000000
+R:r1057 ch4_minus vmid R=1000
+R:r1058 ch4_pre ch4_minus R=10000
+Cap_L:c1023 ch4_pre ch4_hp_ch C=1e-08
+R:r1059 ch4_hp_ch ch4_diff_minus R=51100
+R:r1060 ch4_hp ch4_diff_fb_mid R=909000
+R:r1061 ch4_diff_fb_mid ch4_diff_minus R=909000
+Cap_L:c1024 ref_pre ch4_hp_ref C=1e-08
+R:r1062 ch4_hp_ref ch4_diff_plus R=51100
+R:r1063 ch4_diff_plus ch4_diff_bal_mid R=909000
+R:r1064 ch4_diff_bal_mid vmid R=909000
+R:r1065 ch4_hp ch4_lp1_a R=22600
+R:r1066 ch4_lp1_a ch4_lp1_plus R=22600
+Cap_L:c1025 ch4_lp1_a ch4_lp1_out C=1e-09
+Cap_L:c1026 ch4_lp1_plus vmid C=1e-09
+R:r1067 ch4_lp1_minus vmid R=10000
+R:r1068 ch4_lp1_out ch4_lp1_minus R=1500
+R:r1069 ch4_lp1_out ch4_lp2_a R=22600
+R:r1070 ch4_lp2_a ch4_lp2_plus R=22600
+Cap_L:c1027 ch4_lp2_a afe_out_4 C=1e-09
+Cap_L:c1028 ch4_lp2_plus vmid C=1e-09
+R:r1071 ch4_lp2_minus vmid R=10000
+R:r1072 afe_out_4 ch4_lp2_minus R=12400
+R:r1145 ffc_ref ref_limit R=5100
+Cap_L:c1057 ref_limit ref_plus C=1e-08
+R:r1146 ref_plus vmid R=22000000
+R:r1147 ref_minus vmid R=1000
+R:r1148 ref_pre ref_minus R=10000
+R:r1149 vmid_buf vmid R=4.7
+Cap_L:c1058 vmid 0 C=4.7e-06
+tlv9002_tlv9002:xu101_1 ch1_plus ch1_minus avdd_3v0 0 ch1_pre
+tlv9002_tlv9002:xu101_2 ch2_plus ch2_minus avdd_3v0 0 ch2_pre
+tlv9002_tlv9002:xu101_3 ch3_plus ch3_minus avdd_3v0 0 ch3_pre
+tlv9002_tlv9002:xu101_4 ch4_plus ch4_minus avdd_3v0 0 ch4_pre
+Cap_L:c1059 avdd_3v0 0 C=1e-07
+tlv9002_tlv9002:xu103_1 ch1_diff_plus ch1_diff_minus avdd_3v0 0 ch1_hp
+tlv9002_tlv9002:xu103_2 ch2_diff_plus ch2_diff_minus avdd_3v0 0 ch2_hp
+tlv9002_tlv9002:xu103_3 ch3_diff_plus ch3_diff_minus avdd_3v0 0 ch3_hp
+tlv9002_tlv9002:xu103_4 ch4_diff_plus ch4_diff_minus avdd_3v0 0 ch4_hp
+Cap_L:c1061 avdd_3v0 0 C=1e-07
+tlv9002_tlv9002:xu105_1 ch1_lp1_plus ch1_lp1_minus avdd_3v0 0 ch1_lp1_out
+tlv9002_tlv9002:xu105_2 ch2_lp1_plus ch2_lp1_minus avdd_3v0 0 ch2_lp1_out
+tlv9002_tlv9002:xu105_3 ch3_lp1_plus ch3_lp1_minus avdd_3v0 0 ch3_lp1_out
+tlv9002_tlv9002:xu105_4 ch4_lp1_plus ch4_lp1_minus avdd_3v0 0 ch4_lp1_out
+Cap_L:c1063 avdd_3v0 0 C=1e-07
+tlv9052_tlv9052:xu107_1 ch1_lp2_plus ch1_lp2_minus avdd_3v0 0 afe_out_1
+tlv9052_tlv9052:xu107_2 ch2_lp2_plus ch2_lp2_minus avdd_3v0 0 afe_out_2
+tlv9052_tlv9052:xu107_3 ch3_lp2_plus ch3_lp2_minus avdd_3v0 0 afe_out_3
+tlv9052_tlv9052:xu107_4 ch4_lp2_plus ch4_lp2_minus avdd_3v0 0 afe_out_4
+Cap_L:c1065 avdd_3v0 0 C=1e-07
+tlv9002_tlv9002:xu109_1 ref_plus ref_minus avdd_3v0 0 ref_pre
+tlv9002_tlv9002:xu109_2 vmid_raw fb_sense avdd_3v0 0 vmid_buf
+tlv9002_tlv9002:xu109_3 vmid_raw afe_spare_c avdd_3v0 0 afe_spare_c
+tlv9002_tlv9002:xu109_4 vmid_raw afe_spare_d avdd_3v0 0 afe_spare_d
+Cap_L:c1067 avdd_3v0 0 C=1e-07
+Cap_L:c1068 avdd_3v0 0 C=4.7e-06
+R:r540 avdd_3v0 vmid_raw R=10000
+R:r541 vmid_raw 0 R=10000
+Cap_L:c529 vmid_raw 0 C=2.2e-06
+R:r401 afe_out_1 adc_in_1 R=150
+Cap_L:c413 adc_in_1 0 C=4.7e-10
+R:r402 afe_out_2 adc_in_2 R=150
+Cap_L:c414 adc_in_2 0 C=4.7e-10
+R:r403 afe_out_3 adc_in_3 R=150
+Cap_L:c415 adc_in_3 0 C=4.7e-10
+R:r404 afe_out_4 adc_in_4 R=150
+Cap_L:c416 adc_in_4 0 C=4.7e-10
+; External ESD clamp is capacitance-only; does not establish overvoltage/fault clamp behavior
+R:r_source_ch1 src_ch1 ffc_ch1 R=47k
+Cap_L:c_ffc_ch1 ffc_ch1 0 C=20p
+Cap_L:c_trace_ch1 ffc_ch1 0 C=2p
+Cap_L:c_esd_ch1 ffc_ch1 0 C=0.5p
+R:r_source_ch2 src_ch2 ffc_ch2 R=47k
+Cap_L:c_ffc_ch2 ffc_ch2 0 C=20p
+Cap_L:c_trace_ch2 ffc_ch2 0 C=2p
+Cap_L:c_esd_ch2 ffc_ch2 0 C=0.5p
+R:r_source_ch3 src_ch3 ffc_ch3 R=47k
+Cap_L:c_ffc_ch3 ffc_ch3 0 C=20p
+Cap_L:c_trace_ch3 ffc_ch3 0 C=2p
+Cap_L:c_esd_ch3 ffc_ch3 0 C=0.5p
+R:r_source_ch4 src_ch4 ffc_ch4 R=47k
+Cap_L:c_ffc_ch4 ffc_ch4 0 C=20p
+Cap_L:c_trace_ch4 ffc_ch4 0 C=2p
+Cap_L:c_esd_ch4 ffc_ch4 0 C=0.5p
+R:r_source_ref src_ref ffc_ref R=47k
+Cap_L:c_ffc_ref ffc_ref 0 C=20p
+Cap_L:c_trace_ref ffc_ref 0 C=2p
+Cap_L:c_esd_ref ffc_ref 0 C=0.5p
+; END ORIGINAL INCLUDE
+V_Source:vdd avdd_3v0 0 Vdc=3
+SINGLE=-(AC_STIM-1)*(AC_STIM-2)*(AC_STIM-3)/6
+MULTI=AC_STIM*(AC_STIM-2)*(AC_STIM-3)/2
+INJECT=-AC_STIM*(AC_STIM-1)*(AC_STIM-3)/2
+COMMON=AC_STIM*(AC_STIM-1)*(AC_STIM-2)/6
+V_Source:vinj fb_sense vmid_buf Vdc=0 Vac=polar(INJECT,0)
+V_Source:vref src_ref 0 Vdc=0 Vac=polar(COMMON,0)
+V_Source:vch1 src_ch1 0 Vdc=0 Vac=polar(SINGLE+COMMON,0)
+V_Source:vch2 src_ch2 0 Vdc=0 Vac=polar(MULTI+COMMON,0)
+V_Source:vch3 src_ch3 0 Vdc=0 Vac=polar(MULTI+COMMON,0)
+V_Source:vch4 src_ch4 0 Vdc=0 Vac=polar(MULTI+COMMON,0)
+
+OutputPlan:Out Type="Output" UseNodeNestLevel=yes NodeNestLevel=1 UseCurrentNestLevel=yes CurrentNestLevel=1
+DC:DC1 MaxIters=200 StatusLevel=1 OutputPlan="Out"
+AC:AC1 SweepVar="freq" SweepPlan="Freq" CalcNoise=no StatusLevel=1 OutputPlan="Out"
+SweepPlan:Stim Start=0 Stop=3 Step=1
+ParamSweep:Case SimInstanceName[1]="AC1" StatusLevel=1 SweepVar="AC_STIM" SweepPlan="Stim"
+SweepPlan:Freq SweepPlan[1]="p1" \
+SweepPlan[2]="p2" \
+SweepPlan[3]="p3" \
+SweepPlan[4]="p4" \
+SweepPlan[5]="p5" \
+SweepPlan[6]="p6" \
+SweepPlan[7]="p7" \
+SweepPlan[8]="p8" \
+SweepPlan[9]="p9" \
+SweepPlan[10]="p10" \
+SweepPlan[11]="p11" \
+SweepPlan[12]="p12" \
+SweepPlan[13]="p13" \
+SweepPlan[14]="p14" \
+SweepPlan[15]="p15" \
+SweepPlan[16]="p16" \
+SweepPlan[17]="p17" \
+SweepPlan[18]="p18" \
+SweepPlan[19]="p19" \
+SweepPlan[20]="p20" \
+SweepPlan[21]="p21" \
+SweepPlan[22]="p22" \
+SweepPlan[23]="p23" \
+SweepPlan[24]="p24" \
+SweepPlan[25]="p25" \
+SweepPlan[26]="p26" \
+SweepPlan[27]="p27" \
+SweepPlan[28]="p28" \
+SweepPlan[29]="p29" \
+SweepPlan[30]="p30" \
+SweepPlan[31]="p31" \
+SweepPlan[32]="p32" \
+SweepPlan[33]="p33" \
+SweepPlan[34]="p34" \
+SweepPlan[35]="p35" \
+SweepPlan[36]="p36" \
+SweepPlan[37]="p37" \
+SweepPlan[38]="p38" \
+SweepPlan[39]="p39" \
+SweepPlan[40]="p40" \
+SweepPlan[41]="p41" \
+SweepPlan[42]="p42" \
+SweepPlan[43]="p43" \
+SweepPlan[44]="p44" \
+SweepPlan[45]="p45" \
+SweepPlan[46]="p46" \
+SweepPlan[47]="p47" \
+SweepPlan[48]="p48" \
+SweepPlan[49]="p49" \
+SweepPlan[50]="p50" \
+SweepPlan[51]="p51" \
+SweepPlan[52]="p52" \
+SweepPlan[53]="p53" \
+SweepPlan[54]="p54" \
+SweepPlan[55]="p55" \
+SweepPlan[56]="p56" \
+SweepPlan[57]="p57" \
+SweepPlan[58]="p58" \
+SweepPlan[59]="p59" \
+SweepPlan[60]="p60" \
+SweepPlan[61]="p61" \
+SweepPlan[62]="p62" \
+SweepPlan[63]="p63" \
+SweepPlan[64]="p64" \
+SweepPlan[65]="p65" \
+SweepPlan[66]="p66" \
+SweepPlan[67]="p67" \
+SweepPlan[68]="p68" \
+SweepPlan[69]="p69" \
+SweepPlan[70]="p70" \
+SweepPlan[71]="p71" \
+SweepPlan[72]="p72" \
+SweepPlan[73]="p73" \
+SweepPlan[74]="p74" \
+SweepPlan[75]="p75" \
+SweepPlan[76]="p76" \
+SweepPlan[77]="p77" \
+SweepPlan[78]="p78" \
+SweepPlan[79]="p79" \
+SweepPlan[80]="p80" \
+SweepPlan[81]="p81" \
+SweepPlan[82]="p82" \
+SweepPlan[83]="p83" \
+SweepPlan[84]="p84" \
+SweepPlan[85]="p85" \
+SweepPlan[86]="p86" \
+SweepPlan[87]="p87" \
+SweepPlan[88]="p88" \
+SweepPlan[89]="p89" \
+SweepPlan[90]="p90" \
+SweepPlan[91]="p91" \
+SweepPlan[92]="p92" \
+SweepPlan[93]="p93" \
+SweepPlan[94]="p94" \
+SweepPlan[95]="p95" \
+SweepPlan[96]="p96"
+SweepPlan:p1 Pt=100
+SweepPlan:p2 Pt=113.64636663857
+SweepPlan:p3 Pt=129.15496650149
+SweepPlan:p4 Pt=146.77992676221
+SweepPlan:p5 Pt=166.81005372001
+SweepPlan:p6 Pt=189.57356524064
+SweepPlan:p7 Pt=215.44346900319
+SweepPlan:p8 Pt=244.84367468222
+SweepPlan:p9 Pt=278.25594022071
+SweepPlan:p10 Pt=300
+SweepPlan:p11 Pt=316.22776601684
+SweepPlan:p12 Pt=359.38136638046
+SweepPlan:p13 Pt=408.42386526745
+SweepPlan:p14 Pt=464.15888336128
+SweepPlan:p15 Pt=500
+SweepPlan:p16 Pt=527.49970637026
+SweepPlan:p17 Pt=599.48425031894
+SweepPlan:p18 Pt=681.29206905796
+SweepPlan:p19 Pt=774.26368268113
+SweepPlan:p20 Pt=879.92254356911
+SweepPlan:p21 Pt=1000
+SweepPlan:p22 Pt=1136.4636663857
+SweepPlan:p23 Pt=1291.5496650149
+SweepPlan:p24 Pt=1467.7992676221
+SweepPlan:p25 Pt=1668.1005372001
+SweepPlan:p26 Pt=1895.7356524064
+SweepPlan:p27 Pt=2000
+SweepPlan:p28 Pt=2154.4346900319
+SweepPlan:p29 Pt=2448.4367468222
+SweepPlan:p30 Pt=2782.5594022071
+SweepPlan:p31 Pt=3162.2776601684
+SweepPlan:p32 Pt=3593.8136638046
+SweepPlan:p33 Pt=4084.2386526745
+SweepPlan:p34 Pt=4641.5888336128
+SweepPlan:p35 Pt=5000
+SweepPlan:p36 Pt=5274.9970637026
+SweepPlan:p37 Pt=5994.8425031894
+SweepPlan:p38 Pt=6812.9206905796
+SweepPlan:p39 Pt=7000
+SweepPlan:p40 Pt=7742.6368268113
+SweepPlan:p41 Pt=8799.2254356911
+SweepPlan:p42 Pt=10000
+SweepPlan:p43 Pt=11364.636663857
+SweepPlan:p44 Pt=12915.496650149
+SweepPlan:p45 Pt=14677.992676221
+SweepPlan:p46 Pt=16681.005372001
+SweepPlan:p47 Pt=18957.356524064
+SweepPlan:p48 Pt=21544.346900319
+SweepPlan:p49 Pt=24484.367468222
+SweepPlan:p50 Pt=27825.594022071
+SweepPlan:p51 Pt=31622.776601684
+SweepPlan:p52 Pt=35938.136638046
+SweepPlan:p53 Pt=40842.386526745
+SweepPlan:p54 Pt=46415.888336128
+SweepPlan:p55 Pt=52749.970637026
+SweepPlan:p56 Pt=59948.425031894
+SweepPlan:p57 Pt=68129.206905796
+SweepPlan:p58 Pt=77426.368268113
+SweepPlan:p59 Pt=87992.254356911
+SweepPlan:p60 Pt=100000
+SweepPlan:p61 Pt=113646.36663857
+SweepPlan:p62 Pt=129154.96650149
+SweepPlan:p63 Pt=146779.92676221
+SweepPlan:p64 Pt=166810.05372001
+SweepPlan:p65 Pt=189573.56524064
+SweepPlan:p66 Pt=215443.46900319
+SweepPlan:p67 Pt=244843.67468222
+SweepPlan:p68 Pt=278255.94022071
+SweepPlan:p69 Pt=316227.76601684
+SweepPlan:p70 Pt=359381.36638046
+SweepPlan:p71 Pt=408423.86526745
+SweepPlan:p72 Pt=464158.88336128
+SweepPlan:p73 Pt=527499.70637026
+SweepPlan:p74 Pt=599484.25031894
+SweepPlan:p75 Pt=681292.06905796
+SweepPlan:p76 Pt=774263.68268113
+SweepPlan:p77 Pt=879922.54356911
+SweepPlan:p78 Pt=1000000
+SweepPlan:p79 Pt=1136463.6663857
+SweepPlan:p80 Pt=1291549.6650149
+SweepPlan:p81 Pt=1467799.2676221
+SweepPlan:p82 Pt=1668100.5372001
+SweepPlan:p83 Pt=1895735.6524064
+SweepPlan:p84 Pt=2154434.6900319
+SweepPlan:p85 Pt=2448436.7468222
+SweepPlan:p86 Pt=2782559.4022071
+SweepPlan:p87 Pt=3162277.6601684
+SweepPlan:p88 Pt=3593813.6638046
+SweepPlan:p89 Pt=4084238.6526745
+SweepPlan:p90 Pt=4641588.8336128
+SweepPlan:p91 Pt=5274997.0637026
+SweepPlan:p92 Pt=5994842.5031894
+SweepPlan:p93 Pt=6812920.6905796
+SweepPlan:p94 Pt=7742636.8268113
+SweepPlan:p95 Pt=8799225.4356911
+SweepPlan:p96 Pt=10000000

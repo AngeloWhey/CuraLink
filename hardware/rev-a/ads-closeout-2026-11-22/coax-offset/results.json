@@ -1,0 +1,19 @@
+{
+  "excitation": "CH1 DC offset, other inputs and REF quiet",
+  "source_offsets_V": [
+    -0.1,
+    -0.07500000000000001,
+    -0.05000000000000001,
+    -0.02500000000000001,
+    -6.938893903907228e-18,
+    0.024999999999999994,
+    0.049999999999999996,
+    0.075,
+    0.1
+  ],
+  "leakage_ohm_per_10nF_coupler": 10000000000.0,
+  "modeled_couplers": 13,
+  "adc1_change_full_sweep_uV": 18.52474708852192,
+  "preamp1_change_full_sweep_mV": 4.897101864732356,
+  "steady_state_only": true
+}

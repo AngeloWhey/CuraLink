@@ -1,0 +1,183 @@
+CuraLink | Four-channel bench board | Engineering handoff, 2026-11-22
+=====================================================================
+
+Start here on the other laptop. KiCad opens the designs. Read the exported
+CSV, JSON and plain-text simulation results without installing ADS.
+
+What to build
+-------------
+1. Electronics design for layout:
+   hardware/rev-a/bench-four-coax-low-c/curalink-rev-a.kicad_pro
+   This candidate includes five MAX44280 gain-11 input stages. Its separate
+   80 x 74 mm placement contains 334 footprints, 499 unrouted connections
+   and two antenna-edge findings. The four-coax TLV baseline is retained in
+   hardware/rev-a/bench-four-coax for comparison. The parent board has eight
+   channels and older power wiring. The low-C folder has a printable PDF.
+2. Generator-driven TX: hardware/wpt/bench-rf/tx/tx-matching.kicad_pro
+   Receiver: hardware/wpt/bench-rf/rx/rx-matching.kicad_pro
+   The two RF sheets terminate at the published spiral lands. Preserve Luo's
+   spiral geometry, approximately 0.8 mm FR-4, 1 oz copper and 10 mm nominal
+   spacing. Provide trim access. A nearby cell, plane or metal holder can
+   detune the link. Keep the TX return separate from receiver DC ground.
+   The selectable ADS schematic is MyLibrary_lib:CuraLink_RX_BAS4002A_HB
+   in ads/MyWorkspace_wrk. The four-pin package opens as BAS4002A_SOT143.
+3. Firmware and host: four indexed channels in RECORD; charger status only
+   in CHARGE. The same laptop receives BLE in both tests. Implement these
+   against the GPIO names and state table below. Validate with actual packets.
+
+Test A | Four coax inputs, wireless charging disconnected
+--------------------------------------------------------
+Use a current-limited battery emulator on the protected pack input J501.
+Begin at 4.0 V after checking the harness pinout. For signal-only testing
+leave the charger-to-pack link R501 open; R502 enables the protected RUN
+branch. Leave the wireless and external 5 V sources disconnected. A real
+externally charged 1S pack can replace the emulator after its identity,
+protection, polarity and discharge limits are verified. Use its compatible
+external charger with the pack disconnected from CuraLink.
+
+Each U.FL center feeds one channel. Return shields to board ground. Put the
+47 kΩ emulator near the AFE after any long low-impedance feed trace. Keep the
+shared REF on its own matched AC-coupled quiet-ground path. Calibrate generator
+amplitude after any external attenuator using the intended termination. Keep
+the generator offset at zero initially. A magnitude shown for a matched 50 Ω
+load can double on a high-impedance input. Keep an RF charging generator
+separate from the microvolt signal inputs.
+
+Start with one 200 µVpp, 1 kHz sine and the other three inputs held quiet.
+Expect roughly 194 mVpp on the active ADC pad centered near 1.503 V in the
+nominal model. Repeat on every connector, including the last lane. Then test
+three coherent aggressors, four separate input patterns, DC offset recovery,
+startup blanking, channel ordering, noise, ADC settling and uninterrupted BLE.
+One generator passively split four ways cannot establish channel independence.
+Record the actual cable capacitance, attenuator impedance and AFE input plane.
+The complete AFE must present at least 10 MΩ over 300 Hz through 7 kHz.
+Measure at the AFE side of the local 47 kΩ emulator with protection and bias
+installed. The TLV baseline models 2.96 MΩ at 7 kHz. The low-C candidate
+models at least 10.70 MΩ across the band in both ADS and LTspice with 0.60 pF
+additional layout capacitance per input. At 0.75 pF it gives 10.08 MΩ. At
+1.00 pF it gives only 9.16 MΩ. A 5.47 mm protected-net span already exists
+before routing. Re-place parts if needed, extract the full capacitance
+including pads and stubs, then measure the finished assembly. The five
+high-value inputs return to VMID_RAW, a bypassed divider. Keep the other
+gain-setting returns on VMID. The analog supply model draws 6.02 mA.
+
+To measure impedance without a VNA, drive one channel at a time with WPT off.
+Compare two known impedances placed at the board end, between the low-Z feed
+and protected AFE. Keep the input tone and other three channel terminations
+unchanged. Example total series values RA = 47 kΩ and RB = 1.047 MΩ (include
+the fixed resistor). Capture the complex fundamental output at the same
+low-impedance ADC pad in both cases, referenced to the generator. With
+q = output_A/output_B, Zin = (RB - q*RA)/(q - 1). Use calibrated complex RA
+and RB if fixture capacitance matters. Check the fixture first against known
+10 MΩ and parallel-RC standards. A probe directly on the high-impedance
+input can consume the entire capacitance budget. Sweep all four channels
+from 300 Hz to 7 kHz and bound instrument, fixture and resistor uncertainty.
+
+Test B | Wireless charging with live BLE
+---------------------------------------
+First power the protected 5 V interface from the current-limited bench input
+using R543 and open R542. Use a battery emulator rated to sink the test charge
+current. When switching to the receiver, open R543 before fitting R542.
+Connect the receiver DC return and regulated WPT_RX_DC to J502. Keep
+generator-grounded signal cables and debug leads disconnected for isolated
+wireless-power measurements. Use a differential probe on floating RF nodes.
+
+The TX generator drives the TX matching network at 13.56 MHz. Use a spacer
+for the published 10 mm reference before moving the coils by hand. Record
+distance and alignment. Verify the generator or amplifier can deliver the
+stated available power into 50 Ω at the coil fixture. 25 dBm is 316 mW or
+11.25 Vpp into matched 50 Ω. Power quoted at the generator can exceed what
+arrives at the board. Bench acceptance needs a usable range of positions.
+
+Bring up the receiver with a dummy load first. Start with low drive. Measure
+rectifier reservoir RECT_DC, regulated WPT_RX_DC, protected CHG_IN, both
+radio and analog rails, and signed current into the emulator. Test startup,
+full demand, taper, termination, open load, short/fault, and lift-off. Radio
+bursts count as load. Record delivered DC watts and the actual TX power.
+Observe bridge, capacitor, regulator, TVS, RX winding and pack temperatures.
+Limit drive and remove the field at idle if continuous thermal headroom is
+unproven. A disconnected eFuse can make the upstream receiver more lightly
+loaded. A pulse rating on a TVS gives no sustained-power guarantee.
+
+ADS with the fitted-coil model at nominal coupling gives these minimum raw
+reservoir voltages (24 / 29 / 39 mA total receiver demand). At 25 dBm:
+7.31 / 5.79 / 2.91 V. At 26 dBm: 9.20 / 7.66 / 4.69 V. Use 6 V raw as
+the regulator headroom screen. In the 26 dBm coupled RF startup transient,
+early radio demand held WPT_RX_DC below regulation. It first crossed 4.75 V
+at 0.980 ms after the load was reduced. Qualify power-good before enabling a
+radio burst and check restart after a weak field. These are simulated cases.
+After a staged startup, the ADS envelope at 26 dBm held 4.998 V at 24 mA
+and 4.997 V at 29 mA. A load seeking 39 mA at 5 V settled at 4.669 V and
+36.42 mA. At 27 dBm near open load the protection simulation predicts up to
+123 mW continuous TVS dissipation in the tested low-knee case. Establish a
+thermal limit before choosing a continuous generator power setting.
+
+Historical 20 mA and 4.1 V settings are emulator examples only. Before
+connecting a lab cell for charging, identify its manufacturer/model, rated
+charge voltage, charge/discharge current, allowed temperatures, protection
+and NTC details, connector and pin polarity. A two-pin connector alone cannot
+identify a cell. Set ILIM/VSET, ISET and thermal limits from the exact cell
+data. Confirm the cell can supply radio peaks and one hour of measured RUN.
+
+BLE mode and status
+-------------------
+RECORD: protected battery RUN enables the AFE, MCU and BLE.
+CHARGE: protected receiver DC can power the MCU and BLE; hardware disables
+the AFE. Acquisition stays stopped at charge completion until field removal.
+With a weak field the AFE can be disabled before sufficient energy reaches
+the radio. On the host, expire old reports on disconnect and say "status
+unavailable." Measure transfers without relying on a connection remaining up.
+The LTspice handover test drops DVDD through 1.71 V about 6.3 ms after loss
+of protected RF power with an assumed 86 ms RUN inhibit. Expect to reconnect.
+
+Read BQ25185 STAT1/STAT2 together with detected receiver DC and charge enable.
+In pin order STAT1, STAT2 (H = high from the MCU-domain pull-up):
+  H L    charger reports charging
+  L H    recoverable fault
+  L L    latched fault
+  H H    completed, asleep, or disabled; distinguish only with evidence
+Without a battery the charger can alternate between charging and completed.
+Expose ambiguous and stale states. These pins cannot report battery percent,
+actual charge current, or the specific cause within a fault class. Use a
+signed current measurement to prove charging. TI BQ25185 datasheet Table 6-2.
+https://www.ti.com/lit/ds/symlink/bq25185.pdf
+
+Remaining release work
+----------------------
+- Check the release status in the handbook and variant BOM before ordering.
+  Finish manual routing, schematic-to-board parity, planes/return paths, RF
+  feed, antenna keepout, crosstalk review, DRC, footprint/orientation and
+  assembly checks. Confirm land pattern and drill/mask/paste at the factory.
+- Qualify AFE loading, shared bias, recovery, powered-off injection and ADC
+  reference noise on the new powered digital rail. Simulated performance does
+  not include routing, connector leakage, ADC switching or RF burst pickup.
+- Qualify RF capacitor tolerance, RF current/loss and coil/TVS heating over
+  power, load, misalignment and intended continuous operating time. Fit final
+  trim values from measured DC delivery; use regulator headroom as well as
+  voltage at the charger. Compare available power to the generator rating.
+- Verify digital-rail dropout and restart with the added OR diode at minimum
+  protected pack voltage and during radio bursts. Check unit-to-unit behavior,
+  rail handover, AFE discharge, reverse leakage and lack of back-power.
+- Qualify exact battery and pack protection, charge configuration, firmware,
+  BLE status, total runtime and manufacturing cost. Sourcing snapshots do not
+  reserve inventory. No production order has been placed.
+
+On 2026-11-22 at 18:15 New York time, LCSC's minimum purchase quantities for
+the low-C board, one TX/RX pair and four pigtails cost US$102.85 across 83
+unique SKUs. All had stock for those quantities. Ten MAX44280s were available
+and five are needed per PCB. US$47.15 remains under the US$150 target for
+PCBs, cell, assembly, setup, shipping and tax. The earlier four-coax TLV
+basket was US$94.83. See procurement/bench-four-2026-11-22/low-c-basket.csv.
+
+Evidence
+--------
+hardware/wpt/bench-rf/population.csv                 RF pin/net and part map
+hardware/wpt/bench-rf/stock.json                     RF distributor stock
+hardware/wpt/ads/receiver-ic-review-2026-11-22/       ADS bridge/coil studies
+hardware/wpt/ads/regulator-2026-11-22/summary.json    TI regulator transient
+hardware/rev-a/ads-closeout-2026-11-22/README.md      Four-channel AFE results
+hardware/rev-a/bench-four-coax/                       Native board variant
+hardware/rev-a/bench-four-coax-low-c/                 Recommended layout candidate
+hardware/rev-a/input-impedance/ads-low-c/results.json Low-C ADS stress checks
+hardware/rev-a/input-impedance/max44280/results.json  Vendor-model LTspice results
+docs/engineering-handbook.md                          D-025 through D-028

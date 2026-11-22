@@ -1,0 +1,38 @@
+{
+  "AC_rows": 384,
+  "frequencies_per_source_vector": 96,
+  "adc_bias_V": [
+    1.5031191602864804,
+    1.5031191602864804,
+    1.5031191602864804,
+    1.5031191602864804
+  ],
+  "vmid_V": 1.500407132303066,
+  "analog_current_mA": 2.4309148518852477,
+  "nominal_operating_points_passed": 20,
+  "differential_gain_1kHz": 969.1597823100659,
+  "single_input_source_to_ADC_gain_at_7kHz": 705.8876127887079,
+  "source_to_board_input_7kHz_magnitude": 0.9983246524857972,
+  "source_to_board_input_7kHz_phase_deg": -0.9121864940233259,
+  "CMRR_1kHz_dB": 73.87335566983784,
+  "coherent_three_max_equiv_uVpp_per_aggressor_1mVpp": 2.2208439349052274,
+  "coherent_three_worst_frequency_Hz": 300.0,
+  "single_worst_dB": -62.612064299385956,
+  "coherent_three_worst_dB": -53.06963919004723,
+  "Z_7k_magnitude_ohm": 2977262.708395681,
+  "Z_7k_real_ohm": 292895.6479989898,
+  "Z_7k_imag_ohm": -2962820.50995109,
+  "unity_loop_crossings": [
+    {
+      "frequency_Hz": 10162.239077614411,
+      "phase_margin_estimate_deg": 71.7020764922509
+    }
+  ],
+  "configuration": "coax-board-end-10ohm-bias",
+  "R1149_ohm": 10,
+  "cable_pF": 100,
+  "source_sha256": "e93712bb82e710cde5dc18f138385b4ad01539538fb5a96ba9c5de71d4cbb6a8",
+  "deck_sha256": "c687e0913198b975b68a371a035da4400da8cc6142c11bdb50223e49d7046b31",
+  "connector": "U.FL",
+  "local_REF_shunt_cable_pF": 0
+}

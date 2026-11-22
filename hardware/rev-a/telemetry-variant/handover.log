@@ -1,0 +1,23 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\telemetry-variant\handover.cir
+Start Time: Sun Nov 22 17:53:49 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+dd: Emission coefficient, N=0.01, too small, this might lead to numerical problems.
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 2.993 seconds.
+
+Files loaded:
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\telemetry-variant\handover.cir
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\sources\tps7a20-spice\tps7a20-adj_trans.lib
+
+run_v: V(DVDD) =2.99971055984 at 0.0035
+charge_v: V(DVDD) =2.99987435341 at 0.0058
+burst_v: MIN(V(DVDD) )=2.99827980995 FROM 0.006 TO 0.007
+release_floor: MIN(V(DVDD) )=0.00022013905982 FROM 0.0101 TO 0.096
+recovered_v: V(DVDD) =2.99971055984 at 0.102
+below_1p71: V(DVDD)=1.71  AT 0.0164219083611

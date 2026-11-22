@@ -1,0 +1,193 @@
+* Unfitted four-channel gain-11 MAX44280 candidate; four coax inputs, shared reference.
+.include ../../ltspice/afe/models/tlv9002-namespaced.lib
+.include ../../ltspice/afe/models/tlv9052-namespaced.lib
+.options numdgt=8 plotwinsize=0
+.temp 27
+r1001 ffc_ch1 ch1_limit 5100
+c1001 ch1_limit ch1_plus 1e-08
+r1002 ch1_plus vmid_raw 21780000
+r1003 ch1_minus vmid 1000
+r1004 ch1_pre ch1_minus 10000
+c1002 ch1_pre ch1_hp_ch 1e-08
+r1005 ch1_hp_ch ch1_diff_minus 51100
+r1006 ch1_hp ch1_diff_fb_mid 910000
+r1007 ch1_diff_fb_mid ch1_diff_minus 910000
+c1003 ref_pre ch1_hp_ref 1e-08
+r1008 ch1_hp_ref ch1_diff_plus 51100
+r1009 ch1_diff_plus ch1_diff_bal_mid 910000
+r1010 ch1_diff_bal_mid vmid 910000
+r1011 ch1_hp ch1_lp1_a 22600
+r1012 ch1_lp1_a ch1_lp1_plus 22600
+c1004 ch1_lp1_a ch1_lp1_out 1e-09
+c1005 ch1_lp1_plus vmid 1e-09
+r1013 ch1_lp1_minus vmid 10000
+r1014 ch1_lp1_out ch1_lp1_minus 1500
+r1015 ch1_lp1_out ch1_lp2_a 22600
+r1016 ch1_lp2_a ch1_lp2_plus 22600
+c1006 ch1_lp2_a afe_out_1 1e-09
+c1007 ch1_lp2_plus vmid 1e-09
+r1017 ch1_lp2_minus vmid 10000
+r1018 afe_out_1 ch1_lp2_minus 12400
+r1019 ffc_ch2 ch2_limit 5100
+c1008 ch2_limit ch2_plus 1e-08
+r1020 ch2_plus vmid_raw 21780000
+r1021 ch2_minus vmid 1000
+r1022 ch2_pre ch2_minus 10000
+c1009 ch2_pre ch2_hp_ch 1e-08
+r1023 ch2_hp_ch ch2_diff_minus 51100
+r1024 ch2_hp ch2_diff_fb_mid 910000
+r1025 ch2_diff_fb_mid ch2_diff_minus 910000
+c1010 ref_pre ch2_hp_ref 1e-08
+r1026 ch2_hp_ref ch2_diff_plus 51100
+r1027 ch2_diff_plus ch2_diff_bal_mid 910000
+r1028 ch2_diff_bal_mid vmid 910000
+r1029 ch2_hp ch2_lp1_a 22600
+r1030 ch2_lp1_a ch2_lp1_plus 22600
+c1011 ch2_lp1_a ch2_lp1_out 1e-09
+c1012 ch2_lp1_plus vmid 1e-09
+r1031 ch2_lp1_minus vmid 10000
+r1032 ch2_lp1_out ch2_lp1_minus 1500
+r1033 ch2_lp1_out ch2_lp2_a 22600
+r1034 ch2_lp2_a ch2_lp2_plus 22600
+c1013 ch2_lp2_a afe_out_2 1e-09
+c1014 ch2_lp2_plus vmid 1e-09
+r1035 ch2_lp2_minus vmid 10000
+r1036 afe_out_2 ch2_lp2_minus 12400
+r1037 ffc_ch3 ch3_limit 5100
+c1015 ch3_limit ch3_plus 1e-08
+r1038 ch3_plus vmid_raw 21780000
+r1039 ch3_minus vmid 1000
+r1040 ch3_pre ch3_minus 10000
+c1016 ch3_pre ch3_hp_ch 1e-08
+r1041 ch3_hp_ch ch3_diff_minus 51100
+r1042 ch3_hp ch3_diff_fb_mid 910000
+r1043 ch3_diff_fb_mid ch3_diff_minus 910000
+c1017 ref_pre ch3_hp_ref 1e-08
+r1044 ch3_hp_ref ch3_diff_plus 51100
+r1045 ch3_diff_plus ch3_diff_bal_mid 910000
+r1046 ch3_diff_bal_mid vmid 910000
+r1047 ch3_hp ch3_lp1_a 22600
+r1048 ch3_lp1_a ch3_lp1_plus 22600
+c1018 ch3_lp1_a ch3_lp1_out 1e-09
+c1019 ch3_lp1_plus vmid 1e-09
+r1049 ch3_lp1_minus vmid 10000
+r1050 ch3_lp1_out ch3_lp1_minus 1500
+r1051 ch3_lp1_out ch3_lp2_a 22600
+r1052 ch3_lp2_a ch3_lp2_plus 22600
+c1020 ch3_lp2_a afe_out_3 1e-09
+c1021 ch3_lp2_plus vmid 1e-09
+r1053 ch3_lp2_minus vmid 10000
+r1054 afe_out_3 ch3_lp2_minus 12400
+r1055 ffc_ch4 ch4_limit 5100
+c1022 ch4_limit ch4_plus 1e-08
+r1056 ch4_plus vmid_raw 21780000
+r1057 ch4_minus vmid 1000
+r1058 ch4_pre ch4_minus 10000
+c1023 ch4_pre ch4_hp_ch 1e-08
+r1059 ch4_hp_ch ch4_diff_minus 51100
+r1060 ch4_hp ch4_diff_fb_mid 910000
+r1061 ch4_diff_fb_mid ch4_diff_minus 910000
+c1024 ref_pre ch4_hp_ref 1e-08
+r1062 ch4_hp_ref ch4_diff_plus 51100
+r1063 ch4_diff_plus ch4_diff_bal_mid 910000
+r1064 ch4_diff_bal_mid vmid 910000
+r1065 ch4_hp ch4_lp1_a 22600
+r1066 ch4_lp1_a ch4_lp1_plus 22600
+c1025 ch4_lp1_a ch4_lp1_out 1e-09
+c1026 ch4_lp1_plus vmid 1e-09
+r1067 ch4_lp1_minus vmid 10000
+r1068 ch4_lp1_out ch4_lp1_minus 1500
+r1069 ch4_lp1_out ch4_lp2_a 22600
+r1070 ch4_lp2_a ch4_lp2_plus 22600
+c1027 ch4_lp2_a afe_out_4 1e-09
+c1028 ch4_lp2_plus vmid 1e-09
+r1071 ch4_lp2_minus vmid 10000
+r1072 afe_out_4 ch4_lp2_minus 12400
+r1145 ffc_ref ref_limit 5100
+c1057 ref_limit ref_plus 1e-08
+r1146 ref_plus vmid_raw 21780000
+r1147 ref_minus vmid 1000
+r1148 ref_pre ref_minus 10000
+r1149 vmid_buf vmid 47
+c1058 vmid 0 4.7e-06
+xu101_1 ch1_plus ch1_minus avdd_3v0 0 ch1_pre avdd_3v0 MAX44280
+xu101_2 ch2_plus ch2_minus avdd_3v0 0 ch2_pre avdd_3v0 MAX44280
+xu101_3 ch3_plus ch3_minus avdd_3v0 0 ch3_pre avdd_3v0 MAX44280
+xu101_4 ch4_plus ch4_minus avdd_3v0 0 ch4_pre avdd_3v0 MAX44280
+c1059 avdd_3v0 0 1e-07
+xu103_1 ch1_diff_plus ch1_diff_minus avdd_3v0 0 ch1_hp tlv9002_tlv9002
+xu103_2 ch2_diff_plus ch2_diff_minus avdd_3v0 0 ch2_hp tlv9002_tlv9002
+xu103_3 ch3_diff_plus ch3_diff_minus avdd_3v0 0 ch3_hp tlv9002_tlv9002
+xu103_4 ch4_diff_plus ch4_diff_minus avdd_3v0 0 ch4_hp tlv9002_tlv9002
+c1061 avdd_3v0 0 1e-07
+xu105_1 ch1_lp1_plus ch1_lp1_minus avdd_3v0 0 ch1_lp1_out tlv9002_tlv9002
+xu105_2 ch2_lp1_plus ch2_lp1_minus avdd_3v0 0 ch2_lp1_out tlv9002_tlv9002
+xu105_3 ch3_lp1_plus ch3_lp1_minus avdd_3v0 0 ch3_lp1_out tlv9002_tlv9002
+xu105_4 ch4_lp1_plus ch4_lp1_minus avdd_3v0 0 ch4_lp1_out tlv9002_tlv9002
+c1063 avdd_3v0 0 1e-07
+xu107_1 ch1_lp2_plus ch1_lp2_minus avdd_3v0 0 afe_out_1 tlv9052_tlv9052
+xu107_2 ch2_lp2_plus ch2_lp2_minus avdd_3v0 0 afe_out_2 tlv9052_tlv9052
+xu107_3 ch3_lp2_plus ch3_lp2_minus avdd_3v0 0 afe_out_3 tlv9052_tlv9052
+xu107_4 ch4_lp2_plus ch4_lp2_minus avdd_3v0 0 afe_out_4 tlv9052_tlv9052
+c1065 avdd_3v0 0 1e-07
+xu109_1 ref_plus ref_minus avdd_3v0 0 ref_pre avdd_3v0 MAX44280
+xu109_2 vmid_raw vmid_buf avdd_3v0 0 vmid_buf tlv9002_tlv9002
+xu109_3 vmid_raw afe_spare_c avdd_3v0 0 afe_spare_c tlv9002_tlv9002
+xu109_4 vmid_raw afe_spare_d avdd_3v0 0 afe_spare_d tlv9002_tlv9002
+c1067 avdd_3v0 0 1e-07
+c1068 avdd_3v0 0 4.7e-06
+r540 avdd_3v0 vmid_raw 10000
+r541 vmid_raw 0 10000
+c529 vmid_raw 0 2.2e-06
+r401 afe_out_1 adc_in_1 150
+c413 adc_in_1 0 4.7e-10
+r402 afe_out_2 adc_in_2 150
+c414 adc_in_2 0 4.7e-10
+r403 afe_out_3 adc_in_3 150
+c415 adc_in_3 0 4.7e-10
+r404 afe_out_4 adc_in_4 150
+c416 adc_in_4 0 4.7e-10
+r_gen_ch1 src_ch1 genout_ch1 50 noiseless
+r_source_ch1 genout_ch1 sense_ch1 47k noiseless
+c_coax_ch1 genout_ch1 0 100p
+c_trace_ch1 ffc_ch1 0 0.75p
+c_esd_ch1 ffc_ch1 0 0.65p
+r_gen_ch2 src_ch2 genout_ch2 50 noiseless
+r_source_ch2 genout_ch2 ffc_ch2 47k noiseless
+c_coax_ch2 genout_ch2 0 100p
+c_trace_ch2 ffc_ch2 0 0.75p
+c_esd_ch2 ffc_ch2 0 0.65p
+r_gen_ch3 src_ch3 genout_ch3 50 noiseless
+r_source_ch3 genout_ch3 ffc_ch3 47k noiseless
+c_coax_ch3 genout_ch3 0 100p
+c_trace_ch3 ffc_ch3 0 0.75p
+c_esd_ch3 ffc_ch3 0 0.65p
+r_gen_ch4 src_ch4 genout_ch4 50 noiseless
+r_source_ch4 genout_ch4 ffc_ch4 47k noiseless
+c_coax_ch4 genout_ch4 0 100p
+c_trace_ch4 ffc_ch4 0 0.75p
+c_esd_ch4 ffc_ch4 0 0.65p
+r_source_ref src_ref ffc_ref 47k noiseless
+c_trace_ref ffc_ref 0 0.75p
+c_esd_ref ffc_ref 0 0.65p
+VDD avdd_3v0 0 3
+VREF src_ref 0 0
+VCH1 src_ch1 0 DC 0 AC 1
+VCH2 src_ch2 0 0
+VCH3 src_ch3 0 0
+VCH4 src_ch4 0 0
+.lib MAX44280.sub
+Vplane sense_ch1 ffc_ch1 0
+C_extra_ch1 ch1_plus 0 0.2p
+C_extra_ch2 ch2_plus 0 0.2p
+C_extra_ch3 ch3_plus 0 0.2p
+C_extra_ch4 ch4_plus 0 0.2p
+C_extra_ref ref_plus 0 0.2p
+Xspare_a vmid_raw spare_a avdd_3v0 0 spare_a tlv9002_tlv9002
+C_local_0 avdd_3v0 0 100n
+C_local_1 avdd_3v0 0 100n
+C_local_2 avdd_3v0 0 100n
+C_local_3 avdd_3v0 0 100n
+.ac dec 80 7 70Meg
+.save V(ffc_ch1) I(Vplane) V(adc_in_1) V(adc_in_2) V(adc_in_3) V(adc_in_4) V(ch1_pre)
+.end

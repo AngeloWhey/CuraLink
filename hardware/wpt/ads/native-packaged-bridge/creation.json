@@ -1,0 +1,13 @@
+{
+  "cells": {
+    "BAS4002A_SOT143": "%B%A%S4002%A_%S%O%T143",
+    "CuraLink_RX_BAS4002A_HB": "%Cura%Link_%R%X_%B%A%S4002%A_%H%B"
+  },
+  "preceding_five_oa_sha256": {
+    "MyLibrary_lib/cell_2/schematic/sch.oa": "43b3e9444cd944fc927b75e39c2351adacc60ad58018be05f483a7c414b91de5",
+    "MyLibrary_lib/cell_1/schematic/sch.oa": "b68eb23f7db0625bd8e18c6b21e31c6d6f7abed9c2ff6dee5c7c2f9d216d3749",
+    "MyLibrary_lib/%R%X_%Load%Sweep_20261009/schematic/sch.oa": "31a3a1dea789b6b4c96826bd3368671c6e75af07568aee931cdb514ad26c345d",
+    "MyLibrary_lib/%R%X_%Charger%Load_20261009/schematic/sch.oa": "1449738887ee67a0c4343db0308a32c963c457a491d3b8fd6a6d0c1b1166b248",
+    "MyLibrary_lib/%R%X_%B%A%T54_%Load%Sweep_20261009/schematic/sch.oa": "48b6db429034635d509473bafdb5f7d206d576e1b04f181e0a39d3059b63103b"
+  }
+}

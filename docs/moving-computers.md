@@ -1,5 +1,7 @@
 # Moving CuraLink to another computer
 
+For the current four-channel design use [BUILD-NEXT.txt](BUILD-NEXT.txt). It points to the four-coax KiCad schematic/placement, packaged-bridge RF sheets and portable outputs from the simulations completed before the move. Older eight-channel calculations below preserve design history.
+
 **Handoff prepared 2026-11-22, America/New_York.** This guide transfers the saved engineering state. It does not record new electrical verification, current component stock or a manufacturing release. The [engineering handbook](engineering-handbook.md) remains the authority for requirements, status and accepted decisions; [the root README](../README.md) is the project map.
 
 A separate [same-day follow-up ADS review](../hardware/wpt/ads/review-2026-11-22/README.md) adds fresh fixed-coil power and translated AFE DC/AC evidence after the verified migration batch. Read it for the latest results; it leaves receiver regulation, input loading, shared bias and physical build gates open.

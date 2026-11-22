@@ -1,0 +1,23 @@
+# Power and status for live charging telemetry
+
+The four-channel schematic powers the STM32WBA52/BLE during the charging test and inhibits the AFE in hardware. The analog and digital power paths must respond differently on field arrival. The previous shared shutdown would have made the laptop lose the very status it was meant to observe.
+
+| Condition | Digital source | AFE | Expected host behavior |
+|---|---|---|---|
+| Qualified, externally charged pack only | Protected RUN path via D610 | On after RUN and digital-good | Four indexed channels, battery-only test works independently of WPT |
+| Usable receiver voltage, charging | Protected CHG_IN via D611 | Off | Report field/charge-enable bits and BQ25185 states |
+| Receiver present, charging finished or disabled | Protected CHG_IN if still powered | Off | Report ambiguous idle/sleep/complete with the two extra indicators |
+| Receiver moves out of alignment | Either source may momentarily be insufficient during interlock delay | Off until qualified RUN restarts | Host expires stale reports and accepts a reconnect; scope DVDD and EN |
+| Battery low and receiver absent | Neither permitted | Off | Disconnected |
+
+**Power wiring.** D610 and D611 diode-OR two protected sources into R537 and U513. U513 EN tracks its own input. U401 pin 6 and its local C406/C407 bypasses track DVDD along with VDD/VDDRF/VDDRFPA. The AFE supply remains switched. U610 requires both RUN_ENABLE and DIGITAL_GOOD to enable U512. Q507 retains analog discharge. The variant removes Q508 and R539, which otherwise load an active digital rail by about 30 mA during charging. Removing the optional DVDD-to-AVDD bypass prevents accidental defeat of the interlock. ADC reference noise during radio activity, eFuse fault behavior, UVLO restart and finite reverse leakage require bench verification. [ST supply and pin definitions](https://www.st.com/resource/en/datasheet/stm32wba52cg.pdf)
+
+**Status.** BQ25185 pins 9/3 drive MCU pins 10/12 (STAT1/STAT2); their pull-ups R508/R509 run to DVDD. Open-drain readbacks isolate the always-on control rail from the digital GPIOs. MCU pin 13 indicates detected receiver DC, pin 14 indicates charge enabled. These readbacks are named RX_DC_PRESENT_MCU and CHG_ENABLED_MCU on the schematic. An enabled charger can be in another state, and WPT detection depends on available rectified voltage. Capture raw state bits, an update counter and time since last report. At no battery the status can toggle. Use the state table in [BUILD-NEXT.txt](../../../docs/BUILD-NEXT.txt). [TI status definition, section 6.3.10](https://www.ti.com/lit/ds/symlink/bq25185.pdf)
+
+**Power allowance.** The old 5 V / 24 mA full-load fixture consumes 120 mW before adding the status radio. With a linear digital supply, adding 5 or 15 mA at the receiver raises the corresponding board-input tests to 145 or 195 mW. These are load scenarios. Measure the real connection/advertising/startup current and pulse width in firmware. Use a scope across the current-observation links and check C527 and the digital LDO discharge/hold-up during handover. Test both full and complete states. Charge current and thermal limits must be determined from the identified pack.
+
+**Bound on battery-only operation.** To retain the 3.0 V regulator's 0.3 V precision headroom, the effective pack voltage under a pulse must exceed 3.30 V + D610 forward voltage + eFuse/switch/interconnect drop. At the historical 3.50 V nominal cutoff that leaves only 0.20 V for all series drops. The low UVLO tolerance case gives even less. Measure the boundary and revise power selection or the undervoltage set point if required. Increasing TX power cannot fix this battery-only path.
+
+**Mode-transfer simulation.** LTspice ran the [protected-source handover](handover.cir) with TI's TPS7A20 macro, 15 µF effective bypass, two modeled SS14 paths, 5 mA nominal digital load and a 1 ms extra 15 mA pulse. DVDD reached 3.000 V in RUN and CHARGE and stayed above 2.998 V during the pulse. With the modeled field removed at 10.1 ms and battery RUN inhibited until 96 ms, DVDD crossed 1.71 V at 16.42 ms and fell to 0.22 mV. It recovered to 3.000 V by 102 ms. Firmware and laptop acceptance must allow an MCU restart and BLE reconnect after field removal. The timing comes from imposed controlled-source boundaries. Measure the actual interlock delay, load and rail decay on hardware. [LTspice measurements](handover.log)
+
+The implementation script is consumed by the separate four-channel KiCad builder. The bench may use a current-limited pack emulator before an actual battery and can use an external charger with the verified pack disconnected from CuraLink. Recording and charging each require a separate bench test.

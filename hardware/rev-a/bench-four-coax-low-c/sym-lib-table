@@ -1,0 +1,1 @@
+(sym_lib_table (lib (name "CuraLink") (type "KiCad") (uri "${KIPRJMOD}/CuraLink.kicad_sym") (options "") (descr "Audited CuraLink pin-map symbols")))

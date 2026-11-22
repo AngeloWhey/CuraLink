@@ -1,0 +1,18 @@
+Reference,Change,MPN,LCSC,Existing nets,Candidate nets
+C1059,Modified,0603B104K500NT,C30926,"{""1"": ""AVDD_3V0"", ""2"": ""GND""}","{""1"": ""AVDD_3V0"", ""2"": ""GND""}"
+C632,Added,0402B104K160NT,C41851,null,"{""1"": ""AVDD_3V0"", ""2"": ""GND""}"
+C633,Added,0402B104K160NT,C41851,null,"{""1"": ""AVDD_3V0"", ""2"": ""GND""}"
+C634,Added,0402B104K160NT,C41851,null,"{""1"": ""AVDD_3V0"", ""2"": ""GND""}"
+C635,Added,0402B104K160NT,C41851,null,"{""1"": ""AVDD_3V0"", ""2"": ""GND""}"
+R1002,Modified,0402WGF2205TCE,C407703,"{""1"": ""CH1_PLUS"", ""2"": ""VMID""}","{""1"": ""CH1_PLUS"", ""2"": ""VMID_RAW""}"
+R1020,Modified,0402WGF2205TCE,C407703,"{""1"": ""CH2_PLUS"", ""2"": ""VMID""}","{""1"": ""CH2_PLUS"", ""2"": ""VMID_RAW""}"
+R1038,Modified,0402WGF2205TCE,C407703,"{""1"": ""CH3_PLUS"", ""2"": ""VMID""}","{""1"": ""CH3_PLUS"", ""2"": ""VMID_RAW""}"
+R1056,Modified,0402WGF2205TCE,C407703,"{""1"": ""CH4_PLUS"", ""2"": ""VMID""}","{""1"": ""CH4_PLUS"", ""2"": ""VMID_RAW""}"
+R1146,Modified,0402WGF2205TCE,C407703,"{""1"": ""REF_PLUS"", ""2"": ""VMID""}","{""1"": ""REF_PLUS"", ""2"": ""VMID_RAW""}"
+U101,Removed,TLV9004IRUCR,C2058192,"{""3"": ""AVDD_3V0"", ""10"": ""GND"", ""2"": ""CH1_PLUS"", ""1"": ""CH1_MINUS"", ""14"": ""CH1_PRE"", ""4"": ""CH2_PLUS"", ""5"": ""CH2_MINUS"", ""6"": ""CH2_PRE"", ""9"": ""CH3_PLUS"", ""8"": ""CH3_MINUS"", ""7"": ""CH3_PRE"", ""11"": ""CH4_PLUS"", ""12"": ""CH4_MINUS"", ""13"": ""CH4_PRE""}",null
+U109,Modified,TLV9004IRUCR,C2058192,"{""3"": ""AVDD_3V0"", ""10"": ""GND"", ""2"": ""REF_PLUS"", ""1"": ""REF_MINUS"", ""14"": ""REF_PRE"", ""4"": ""VMID_RAW"", ""5"": ""VMID_BUF"", ""6"": ""VMID_BUF"", ""9"": ""VMID_RAW"", ""8"": ""AFE_SPARE_C"", ""7"": ""AFE_SPARE_C"", ""11"": ""VMID_RAW"", ""12"": ""AFE_SPARE_D"", ""13"": ""AFE_SPARE_D""}","{""3"": ""AVDD_3V0"", ""10"": ""GND"", ""2"": ""VMID_RAW"", ""1"": ""AFE_SPARE_A"", ""14"": ""AFE_SPARE_A"", ""4"": ""VMID_RAW"", ""5"": ""VMID_BUF"", ""6"": ""VMID_BUF"", ""9"": ""VMID_RAW"", ""8"": ""AFE_SPARE_C"", ""7"": ""AFE_SPARE_C"", ""11"": ""VMID_RAW"", ""12"": ""AFE_SPARE_D"", ""13"": ""AFE_SPARE_D""}"
+U631,Added,MAX44280AXT+T,C2058813,null,"{""1"": ""CH1_PLUS"", ""2"": ""GND"", ""3"": ""CH1_MINUS"", ""4"": ""CH1_PRE"", ""5"": ""AVDD_3V0"", ""6"": ""AVDD_3V0""}"
+U632,Added,MAX44280AXT+T,C2058813,null,"{""1"": ""CH2_PLUS"", ""2"": ""GND"", ""3"": ""CH2_MINUS"", ""4"": ""CH2_PRE"", ""5"": ""AVDD_3V0"", ""6"": ""AVDD_3V0""}"
+U633,Added,MAX44280AXT+T,C2058813,null,"{""1"": ""CH3_PLUS"", ""2"": ""GND"", ""3"": ""CH3_MINUS"", ""4"": ""CH3_PRE"", ""5"": ""AVDD_3V0"", ""6"": ""AVDD_3V0""}"
+U634,Added,MAX44280AXT+T,C2058813,null,"{""1"": ""CH4_PLUS"", ""2"": ""GND"", ""3"": ""CH4_MINUS"", ""4"": ""CH4_PRE"", ""5"": ""AVDD_3V0"", ""6"": ""AVDD_3V0""}"
+U635,Added,MAX44280AXT+T,C2058813,null,"{""1"": ""REF_PLUS"", ""2"": ""GND"", ""3"": ""REF_MINUS"", ""4"": ""REF_PRE"", ""5"": ""AVDD_3V0"", ""6"": ""AVDD_3V0""}"

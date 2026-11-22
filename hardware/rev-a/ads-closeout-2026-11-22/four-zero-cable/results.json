@@ -1,0 +1,36 @@
+{
+  "AC_rows": 384,
+  "frequencies_per_source_vector": 96,
+  "adc_bias_V": [
+    1.5031530146839298,
+    1.5031530146839298,
+    1.5031530146839298,
+    1.5031530146839298
+  ],
+  "vmid_V": 1.5004409610641485,
+  "analog_current_mA": 2.4309148335827855,
+  "nominal_operating_points_passed": 20,
+  "differential_gain_1kHz": 969.7045134414832,
+  "single_input_source_to_ADC_gain_at_7kHz": 705.8524057017006,
+  "source_to_board_input_7kHz_magnitude": 0.9981952593867457,
+  "source_to_board_input_7kHz_phase_deg": -0.9024481789310611,
+  "CMRR_1kHz_dB": 72.70099941694129,
+  "coherent_three_max_equiv_uVpp_per_aggressor_1mVpp": 8.402500741629929,
+  "coherent_three_worst_frequency_Hz": 300.0,
+  "single_worst_dB": -51.054256044069106,
+  "coherent_three_worst_dB": -41.51182881052698,
+  "Z_7k_magnitude_ohm": 2961917.4309762437,
+  "Z_7k_real_ohm": 314284.52676450426,
+  "Z_7k_imag_ohm": -2945196.1062308433,
+  "unity_loop_crossings": [
+    {
+      "frequency_Hz": 43710.57819865958,
+      "phase_margin_estimate_deg": 88.6778742506115
+    }
+  ],
+  "configuration": "four-zero-cable",
+  "R1149_ohm": 47,
+  "cable_pF": 0,
+  "source_sha256": "e93712bb82e710cde5dc18f138385b4ad01539538fb5a96ba9c5de71d4cbb6a8",
+  "deck_sha256": "cf3aecf467ee83c60e66cb4915694ba4accd2d21aab4e42e885bc545f9d9748a"
+}

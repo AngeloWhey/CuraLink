@@ -1,0 +1,142 @@
+[
+  {
+    "unit": "tlv9002_tlv9002:xu101_1",
+    "plus_V": 1.5000668958126202,
+    "minus_V": 1.500465133473675,
+    "output_V": 1.5007068977105424,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu101_2",
+    "plus_V": 1.5000668958126202,
+    "minus_V": 1.500465133473675,
+    "output_V": 1.5007068977105424,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu101_3",
+    "plus_V": 1.5000668958126202,
+    "minus_V": 1.500465133473675,
+    "output_V": 1.5007068977105424,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu101_4",
+    "plus_V": 1.5000668958126202,
+    "minus_V": 1.500465133473675,
+    "output_V": 1.5007068977105427,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu103_1",
+    "plus_V": 1.5004127372129166,
+    "minus_V": 1.5008110269216546,
+    "output_V": 1.500816496697931,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu103_2",
+    "plus_V": 1.5004127372129166,
+    "minus_V": 1.5008110269216546,
+    "output_V": 1.500816496697931,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu103_3",
+    "plus_V": 1.5004127372129166,
+    "minus_V": 1.5008110269216546,
+    "output_V": 1.500816496697931,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu103_4",
+    "plus_V": 1.5004127372129166,
+    "minus_V": 1.5008110269216546,
+    "output_V": 1.500816496697931,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu105_1",
+    "plus_V": 1.5008157955235757,
+    "minus_V": 1.501214145376812,
+    "output_V": 1.501330127686886,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu105_2",
+    "plus_V": 1.5008157955235757,
+    "minus_V": 1.501214145376812,
+    "output_V": 1.501330127686886,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu105_3",
+    "plus_V": 1.5008157955235757,
+    "minus_V": 1.501214145376812,
+    "output_V": 1.501330127686886,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu105_4",
+    "plus_V": 1.5008157955235757,
+    "minus_V": 1.501214145376812,
+    "output_V": 1.501330127686886,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9052_tlv9052:xu107_1",
+    "plus_V": 1.5013295618358866,
+    "minus_V": 1.5016516640209436,
+    "output_V": 1.5031529494678852,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9052_tlv9052:xu107_2",
+    "plus_V": 1.5013295618358866,
+    "minus_V": 1.5016516640209436,
+    "output_V": 1.5031529494678852,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9052_tlv9052:xu107_3",
+    "plus_V": 1.5013295618358866,
+    "minus_V": 1.5016516640209436,
+    "output_V": 1.5031529494678852,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9052_tlv9052:xu107_4",
+    "plus_V": 1.5013295618358866,
+    "minus_V": 1.5016516640209436,
+    "output_V": 1.5031529494678852,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu109_1",
+    "plus_V": 1.5000668958126184,
+    "minus_V": 1.5004651334736734,
+    "output_V": 1.5007068977105242,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu109_2",
+    "plus_V": 1.499999759970295,
+    "minus_V": 1.5003979891619816,
+    "output_V": 1.5003979891619816,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu109_3",
+    "plus_V": 1.499999759970295,
+    "minus_V": 1.5003979878388716,
+    "output_V": 1.5003979878388716,
+    "inside_nominal_limits": true
+  },
+  {
+    "unit": "tlv9002_tlv9002:xu109_4",
+    "plus_V": 1.499999759970295,
+    "minus_V": 1.5003979878388716,
+    "output_V": 1.5003979878388716,
+    "inside_nominal_limits": true
+  }
+]

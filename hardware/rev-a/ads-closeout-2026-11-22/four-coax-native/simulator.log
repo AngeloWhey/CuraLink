@@ -1,0 +1,46 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 17:58:57 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\AppData\Local\Temp\curalink_ads_signal_8ov9mlmp"
+      Process ID: 22536
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 140
+
+
+DC DC1[1] <afe.ckt>  
+
+CT Case[1] <afe.ckt>   AC_STIM=(0->3)
+
+AC Case[1].AC1[1/4] <afe.ckt>  AC_STIM=0  freq=(100 Hz->10 MHz)
+
+AC Case[1].AC1[2/4] <afe.ckt>  AC_STIM=1  freq=(100 Hz->10 MHz)
+
+AC Case[1].AC1[3/4] <afe.ckt>  AC_STIM=2  freq=(100 Hz->10 MHz)
+
+AC Case[1].AC1[4/4] <afe.ckt>  AC_STIM=3  freq=(100 Hz->10 MHz)
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =    57.08 seconds.
+    Simulation stopwatch time =    18.54 seconds.
+    Total stopwatch time      =    20.78 seconds.
+
+    Memory used:  195 MBytes
+
+    Max threads used:  12
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Sun Nov 22 17:59:16 2026
+
+Command line dataset name afe

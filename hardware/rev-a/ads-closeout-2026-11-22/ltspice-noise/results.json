@@ -1,0 +1,26 @@
+{
+  "family_follower_noise_5V": {
+    "9002": {
+      "300Hz_nV_per_rtHz": 33.916939119315806,
+      "1000Hz_nV_per_rtHz": 29.081450781987506,
+      "2000Hz_nV_per_rtHz": 27.936439246131183,
+      "10000Hz_nV_per_rtHz": 26.98524225358603
+    },
+    "9052": {
+      "300Hz_nV_per_rtHz": 24.41834184583105,
+      "1000Hz_nV_per_rtHz": 16.917987625324578,
+      "2000Hz_nV_per_rtHz": 14.8247791213312,
+      "10000Hz_nV_per_rtHz": 12.90794142029222
+    }
+  },
+  "four_coax_300Hz_7000Hz": {
+    "electronics": {
+      "input_integral_uV_rms": 3.4669834502059866,
+      "ADC_integral_mV_rms": 3.2965224310205024
+    },
+    "with-emulator": {
+      "input_integral_uV_rms": 4.741793901442369,
+      "ADC_integral_mV_rms": 4.510747974367842
+    }
+  }
+}

@@ -1,0 +1,76 @@
+; Top Design: "MyLibrary_lib:CuraLink_RX_BAS4002A_HB:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:CuraLink_RX_BAS4002A_HB:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: MyLibrary_lib
+; Cell Name: BAS4002A_SOT143
+; View Name: schematic
+define BAS4002A_SOT143 ( DCM  AC_A  AC_B  DCP ) 
+;parameters 
+L:Lead1  DCM P1 L=1 nH R=8 mOhm Noise=no  
+L:Lead2  AC_A P2 L=1 nH R=8 mOhm Noise=no  
+L:Lead3  AC_B P3 L=1 nH R=8 mOhm Noise=no  
+L:Lead4  P4 DCP L=1 nH R=8 mOhm Noise=no  
+model BASFIT Diode Is=1.16603251135e-10 A Rs=1.252429491587 Ohm N=0.8043801630717 Cjo=5.896543968227 pF Vj=0.65 V M=0.5 Fc=0.5 Imax=100 AllowScaling=0 Tnom=25 
+"BASFIT":D1  P1 P2 Temp=25 Mode=1 Noise=no 
+"BASFIT":D2  P2 P4 Temp=25 Mode=1 Noise=no 
+"BASFIT":D3  P1 P3 Temp=25 Mode=1 Noise=no 
+"BASFIT":D4  P3 P4 Temp=25 Mode=1 Noise=no 
+end BAS4002A_SOT143
+
+Port:TXsource  GEN 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(Pin_dBm),0) Freq[1]=13.56 MHz    Noise=no Pac=polar(dbmtow(0),0) 
+
+X=1.0
+Pin_dBm=25
+Iload_mA=24
+TXseries_pF=60
+TXshunt_pF=375
+RXseries_pF=1000
+RXshunt_pF=680
+Cap_Q=500
+Carrier_Hz=13.56e6
+HB:HB1 MaxOrder=31 Freq[1]=13.56 MHz Order[1]=31 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB1_Output" 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=13.56 MHz Order[1]=31 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+aele Vraw_DC=real(mix(RAW,{0}));Praw_mW=1000*Vraw_DC*real(mix(IDC.i,{0}));eta_available=(Praw_mW/1000)/dbmtow(Pin_dBm);Z_RX_fund=(mix(RXPLUS,{1})-mix(AC2,{1}))/mix(PRX.i,{1});
+Short:PTX  GEN TX Mode=0 SaveCurrent=yes 
+R:RTS  TX TS R=1/(2*pi*Carrier_Hz*TXseries_pF*1e-12*Cap_Q) Noise=no 
+C:CTS  TS TXCOIL C=TXseries_pF*1e-12 
+R:RTH  TX TH R=1/(2*pi*Carrier_Hz*TXshunt_pF*1e-12*Cap_Q) Noise=no 
+C:CTH  TH 0 C=TXshunt_pF*1e-12 
+L:L1  TXCOIL 0 L=2.49 uH R=1.8 Ohm Noise=no  
+L:L2  AC2 RXPLUS L=0.330 uH R=0.399 Ohm Noise=no  
+Mutual:Link  K=0.0662 Inductor1="L1" Inductor2="L2" 
+Short:PRX  RXPLUS RX Mode=0 SaveCurrent=yes 
+R:RRS  RX RS R=1/(2*pi*Carrier_Hz*RXseries_pF*1e-12*Cap_Q) Noise=no 
+C:CRS  RS AC1 C=RXseries_pF*1e-12 
+R:RRH  AC1 RH R=1/(2*pi*Carrier_Hz*RXshunt_pF*1e-12*Cap_Q) Noise=no 
+C:CRH  RH AC2 C=RXshunt_pF*1e-12 
+BAS4002A_SOT143:U_RX  0 AC1 AC2 RAW 
+L:LRES  RAW RESC L=0.7 nH R=50 mOhm Noise=no  
+C:CRES  RESC 0 C=1 uF 
+Short:IDC  RAW OUT Mode=0 SaveCurrent=yes 
+SDD:Load  OUT 0  I[1,0]=Iload_mA*1e-3*tanh(_v1/.2)  

@@ -1,0 +1,794 @@
+{
+  "xml_component_count": 326,
+  "checked_pins": 155,
+  "checks": [
+    {
+      "ref": "J601",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "J601",
+      "pin": "3",
+      "net": "GND"
+    },
+    {
+      "ref": "R601",
+      "pin": "1",
+      "net": "/Four coax inputs/COAX_CH1"
+    },
+    {
+      "ref": "R601",
+      "pin": "2",
+      "net": "FFC_CH1"
+    },
+    {
+      "ref": "U110",
+      "pin": "1",
+      "net": "FFC_CH1"
+    },
+    {
+      "ref": "R1001",
+      "pin": "1",
+      "net": "FFC_CH1"
+    },
+    {
+      "ref": "R1001",
+      "pin": "2",
+      "net": "CH1_LIMIT"
+    },
+    {
+      "ref": "C1001",
+      "pin": "1",
+      "net": "CH1_LIMIT"
+    },
+    {
+      "ref": "C1001",
+      "pin": "2",
+      "net": "CH1_PLUS"
+    },
+    {
+      "ref": "R1002",
+      "pin": "1",
+      "net": "CH1_PLUS"
+    },
+    {
+      "ref": "R1002",
+      "pin": "2",
+      "net": "VMID"
+    },
+    {
+      "ref": "R401",
+      "pin": "1",
+      "net": "AFE_OUT_1"
+    },
+    {
+      "ref": "R401",
+      "pin": "2",
+      "net": "ADC_IN_1"
+    },
+    {
+      "ref": "C413",
+      "pin": "1",
+      "net": "ADC_IN_1"
+    },
+    {
+      "ref": "C413",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "J602",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "J602",
+      "pin": "3",
+      "net": "GND"
+    },
+    {
+      "ref": "R602",
+      "pin": "1",
+      "net": "/Four coax inputs/COAX_CH2"
+    },
+    {
+      "ref": "R602",
+      "pin": "2",
+      "net": "FFC_CH2"
+    },
+    {
+      "ref": "U110",
+      "pin": "2",
+      "net": "FFC_CH2"
+    },
+    {
+      "ref": "R1019",
+      "pin": "1",
+      "net": "FFC_CH2"
+    },
+    {
+      "ref": "R1019",
+      "pin": "2",
+      "net": "CH2_LIMIT"
+    },
+    {
+      "ref": "C1008",
+      "pin": "1",
+      "net": "CH2_LIMIT"
+    },
+    {
+      "ref": "C1008",
+      "pin": "2",
+      "net": "CH2_PLUS"
+    },
+    {
+      "ref": "R1020",
+      "pin": "1",
+      "net": "CH2_PLUS"
+    },
+    {
+      "ref": "R1020",
+      "pin": "2",
+      "net": "VMID"
+    },
+    {
+      "ref": "R402",
+      "pin": "1",
+      "net": "AFE_OUT_2"
+    },
+    {
+      "ref": "R402",
+      "pin": "2",
+      "net": "ADC_IN_2"
+    },
+    {
+      "ref": "C414",
+      "pin": "1",
+      "net": "ADC_IN_2"
+    },
+    {
+      "ref": "C414",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "J603",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "J603",
+      "pin": "3",
+      "net": "GND"
+    },
+    {
+      "ref": "R603",
+      "pin": "1",
+      "net": "/Four coax inputs/COAX_CH3"
+    },
+    {
+      "ref": "R603",
+      "pin": "2",
+      "net": "FFC_CH3"
+    },
+    {
+      "ref": "U110",
+      "pin": "4",
+      "net": "FFC_CH3"
+    },
+    {
+      "ref": "R1037",
+      "pin": "1",
+      "net": "FFC_CH3"
+    },
+    {
+      "ref": "R1037",
+      "pin": "2",
+      "net": "CH3_LIMIT"
+    },
+    {
+      "ref": "C1015",
+      "pin": "1",
+      "net": "CH3_LIMIT"
+    },
+    {
+      "ref": "C1015",
+      "pin": "2",
+      "net": "CH3_PLUS"
+    },
+    {
+      "ref": "R1038",
+      "pin": "1",
+      "net": "CH3_PLUS"
+    },
+    {
+      "ref": "R1038",
+      "pin": "2",
+      "net": "VMID"
+    },
+    {
+      "ref": "R403",
+      "pin": "1",
+      "net": "AFE_OUT_3"
+    },
+    {
+      "ref": "R403",
+      "pin": "2",
+      "net": "ADC_IN_3"
+    },
+    {
+      "ref": "C415",
+      "pin": "1",
+      "net": "ADC_IN_3"
+    },
+    {
+      "ref": "C415",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "J604",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "J604",
+      "pin": "3",
+      "net": "GND"
+    },
+    {
+      "ref": "R604",
+      "pin": "1",
+      "net": "/Four coax inputs/COAX_CH4"
+    },
+    {
+      "ref": "R604",
+      "pin": "2",
+      "net": "FFC_CH4"
+    },
+    {
+      "ref": "U110",
+      "pin": "5",
+      "net": "FFC_CH4"
+    },
+    {
+      "ref": "R1055",
+      "pin": "1",
+      "net": "FFC_CH4"
+    },
+    {
+      "ref": "R1055",
+      "pin": "2",
+      "net": "CH4_LIMIT"
+    },
+    {
+      "ref": "C1022",
+      "pin": "1",
+      "net": "CH4_LIMIT"
+    },
+    {
+      "ref": "C1022",
+      "pin": "2",
+      "net": "CH4_PLUS"
+    },
+    {
+      "ref": "R1056",
+      "pin": "1",
+      "net": "CH4_PLUS"
+    },
+    {
+      "ref": "R1056",
+      "pin": "2",
+      "net": "VMID"
+    },
+    {
+      "ref": "R404",
+      "pin": "1",
+      "net": "AFE_OUT_4"
+    },
+    {
+      "ref": "R404",
+      "pin": "2",
+      "net": "ADC_IN_4"
+    },
+    {
+      "ref": "C416",
+      "pin": "1",
+      "net": "ADC_IN_4"
+    },
+    {
+      "ref": "C416",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "U110",
+      "pin": "3",
+      "net": "GND"
+    },
+    {
+      "ref": "U110",
+      "pin": "8",
+      "net": "GND"
+    },
+    {
+      "ref": "U112",
+      "pin": "1",
+      "net": "FFC_REF"
+    },
+    {
+      "ref": "U112",
+      "pin": "3",
+      "net": "GND"
+    },
+    {
+      "ref": "U112",
+      "pin": "8",
+      "net": "GND"
+    },
+    {
+      "ref": "R605",
+      "pin": "1",
+      "net": "GND"
+    },
+    {
+      "ref": "R605",
+      "pin": "2",
+      "net": "FFC_REF"
+    },
+    {
+      "ref": "R1145",
+      "pin": "1",
+      "net": "FFC_REF"
+    },
+    {
+      "ref": "R1145",
+      "pin": "2",
+      "net": "REF_LIMIT"
+    },
+    {
+      "ref": "C1057",
+      "pin": "1",
+      "net": "REF_LIMIT"
+    },
+    {
+      "ref": "C1057",
+      "pin": "2",
+      "net": "REF_PLUS"
+    },
+    {
+      "ref": "R1146",
+      "pin": "1",
+      "net": "REF_PLUS"
+    },
+    {
+      "ref": "R1146",
+      "pin": "2",
+      "net": "VMID"
+    },
+    {
+      "ref": "R1149",
+      "pin": "1",
+      "net": "VMID_BUF"
+    },
+    {
+      "ref": "R1149",
+      "pin": "2",
+      "net": "VMID"
+    },
+    {
+      "ref": "C1058",
+      "pin": "1",
+      "net": "VMID"
+    },
+    {
+      "ref": "C1058",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "U401",
+      "pin": "3",
+      "net": "ADC_IN_1"
+    },
+    {
+      "ref": "U401",
+      "pin": "4",
+      "net": "ADC_IN_2"
+    },
+    {
+      "ref": "U401",
+      "pin": "5",
+      "net": "ADC_IN_3"
+    },
+    {
+      "ref": "U401",
+      "pin": "7",
+      "net": "ADC_IN_4"
+    },
+    {
+      "ref": "U401",
+      "pin": "6",
+      "net": "DVDD_3V0"
+    },
+    {
+      "ref": "U401",
+      "pin": "10",
+      "net": "CHG_STAT1"
+    },
+    {
+      "ref": "U401",
+      "pin": "12",
+      "net": "CHG_STAT2"
+    },
+    {
+      "ref": "U401",
+      "pin": "13",
+      "net": "RX_DC_PRESENT_MCU"
+    },
+    {
+      "ref": "U401",
+      "pin": "14",
+      "net": "CHG_ENABLED_MCU"
+    },
+    {
+      "ref": "C406",
+      "pin": "1",
+      "net": "DVDD_3V0"
+    },
+    {
+      "ref": "C406",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "C407",
+      "pin": "1",
+      "net": "DVDD_3V0"
+    },
+    {
+      "ref": "C407",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "D610",
+      "pin": "1",
+      "net": "SYS_RAW"
+    },
+    {
+      "ref": "D610",
+      "pin": "2",
+      "net": "BLE_SOURCE_OR"
+    },
+    {
+      "ref": "D611",
+      "pin": "1",
+      "net": "CHG_IN"
+    },
+    {
+      "ref": "D611",
+      "pin": "2",
+      "net": "BLE_SOURCE_OR"
+    },
+    {
+      "ref": "R537",
+      "pin": "1",
+      "net": "BLE_SOURCE_OR"
+    },
+    {
+      "ref": "R537",
+      "pin": "2",
+      "net": "SYS_DIGITAL_IN"
+    },
+    {
+      "ref": "U513",
+      "pin": "1",
+      "net": "SYS_DIGITAL_IN"
+    },
+    {
+      "ref": "U513",
+      "pin": "3",
+      "net": "SYS_DIGITAL_IN"
+    },
+    {
+      "ref": "U513",
+      "pin": "5",
+      "net": "DVDD_3V0"
+    },
+    {
+      "ref": "U610",
+      "pin": "1",
+      "net": "RUN_ENABLE"
+    },
+    {
+      "ref": "U610",
+      "pin": "2",
+      "net": "DIGITAL_GOOD"
+    },
+    {
+      "ref": "U610",
+      "pin": "3",
+      "net": "GND"
+    },
+    {
+      "ref": "U610",
+      "pin": "4",
+      "net": "AFE_ENABLE"
+    },
+    {
+      "ref": "U610",
+      "pin": "5",
+      "net": "CTRL_3V0"
+    },
+    {
+      "ref": "U512",
+      "pin": "1",
+      "net": "SYS_ANALOG_IN"
+    },
+    {
+      "ref": "U512",
+      "pin": "3",
+      "net": "AFE_ENABLE"
+    },
+    {
+      "ref": "U512",
+      "pin": "5",
+      "net": "AVDD_3V0"
+    },
+    {
+      "ref": "R536",
+      "pin": "1",
+      "net": "SYS_RAW"
+    },
+    {
+      "ref": "R536",
+      "pin": "2",
+      "net": "SYS_ANALOG_IN"
+    },
+    {
+      "ref": "U511",
+      "pin": "1",
+      "net": "SYS_RAW"
+    },
+    {
+      "ref": "U511",
+      "pin": "4",
+      "net": "RUN_ENABLE"
+    },
+    {
+      "ref": "U511",
+      "pin": "6",
+      "net": "SYS_PRE"
+    },
+    {
+      "ref": "Q501",
+      "pin": "1",
+      "net": "SW_GATE"
+    },
+    {
+      "ref": "Q501",
+      "pin": "2",
+      "net": "PMOS_COMMON_SOURCE"
+    },
+    {
+      "ref": "Q501",
+      "pin": "3",
+      "net": "BAT_RUN"
+    },
+    {
+      "ref": "Q502",
+      "pin": "1",
+      "net": "SW_GATE"
+    },
+    {
+      "ref": "Q502",
+      "pin": "2",
+      "net": "PMOS_COMMON_SOURCE"
+    },
+    {
+      "ref": "Q502",
+      "pin": "3",
+      "net": "SYS_PRE"
+    },
+    {
+      "ref": "Q503",
+      "pin": "1",
+      "net": "RUN_ENABLE"
+    },
+    {
+      "ref": "Q503",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "Q503",
+      "pin": "3",
+      "net": "SW_GATE_PULL"
+    },
+    {
+      "ref": "R538",
+      "pin": "1",
+      "net": "AVDD_3V0"
+    },
+    {
+      "ref": "R538",
+      "pin": "2",
+      "net": "ANALOG_DISCHARGE"
+    },
+    {
+      "ref": "Q507",
+      "pin": "1",
+      "net": "NOT_RUN"
+    },
+    {
+      "ref": "Q507",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "Q507",
+      "pin": "3",
+      "net": "ANALOG_DISCHARGE"
+    },
+    {
+      "ref": "D502",
+      "pin": "1",
+      "net": "PACK+"
+    },
+    {
+      "ref": "D502",
+      "pin": "2",
+      "net": "CHG_IN"
+    },
+    {
+      "ref": "D502",
+      "pin": "3",
+      "net": "CTRL_INPUT"
+    },
+    {
+      "ref": "U505",
+      "pin": "1",
+      "net": "FIELD_ABSENT"
+    },
+    {
+      "ref": "U505",
+      "pin": "3",
+      "net": "WPT_THRESHOLD"
+    },
+    {
+      "ref": "U505",
+      "pin": "4",
+      "net": "WPT_SENSE"
+    },
+    {
+      "ref": "U505",
+      "pin": "6",
+      "net": "CTRL_3V0"
+    },
+    {
+      "ref": "R516",
+      "pin": "1",
+      "net": "WPT_RAW"
+    },
+    {
+      "ref": "R516",
+      "pin": "2",
+      "net": "WPT_SENSE"
+    },
+    {
+      "ref": "R517",
+      "pin": "1",
+      "net": "WPT_SENSE"
+    },
+    {
+      "ref": "R517",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "Q610",
+      "pin": "1",
+      "net": "FIELD_ABSENT"
+    },
+    {
+      "ref": "Q610",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "Q610",
+      "pin": "3",
+      "net": "RX_DC_PRESENT_MCU"
+    },
+    {
+      "ref": "Q611",
+      "pin": "1",
+      "net": "CHG_CE_N"
+    },
+    {
+      "ref": "Q611",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "ref": "Q611",
+      "pin": "3",
+      "net": "CHG_ENABLED_MCU"
+    },
+    {
+      "ref": "R508",
+      "pin": "1",
+      "net": "DVDD_3V0"
+    },
+    {
+      "ref": "R508",
+      "pin": "2",
+      "net": "CHG_STAT1"
+    },
+    {
+      "ref": "R509",
+      "pin": "1",
+      "net": "DVDD_3V0"
+    },
+    {
+      "ref": "R509",
+      "pin": "2",
+      "net": "CHG_STAT2"
+    },
+    {
+      "ref": "R610",
+      "pin": "1",
+      "net": "DVDD_3V0"
+    },
+    {
+      "ref": "R610",
+      "pin": "2",
+      "net": "RX_DC_PRESENT_MCU"
+    },
+    {
+      "ref": "R611",
+      "pin": "1",
+      "net": "DVDD_3V0"
+    },
+    {
+      "ref": "R611",
+      "pin": "2",
+      "net": "CHG_ENABLED_MCU"
+    },
+    {
+      "ref": "U501",
+      "pin": "3",
+      "net": "CHG_STAT2"
+    },
+    {
+      "ref": "U501",
+      "pin": "4",
+      "net": "CHG_CE_N"
+    },
+    {
+      "ref": "U501",
+      "pin": "9",
+      "net": "CHG_STAT1"
+    },
+    {
+      "ref": "U501",
+      "pin": "10",
+      "net": "CHG_IN"
+    }
+  ],
+  "four_channel_ADS_physical_passives_value_and_endpoints": 124,
+  "four_channel_ADS_five_terminal_units_pinchecked": 20,
+  "verify_removed": [
+    "Q508",
+    "R539",
+    "R544",
+    "J301",
+    "U102",
+    "U104",
+    "U106",
+    "U108",
+    "U111"
+  ]
+}

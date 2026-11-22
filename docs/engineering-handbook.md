@@ -1,9 +1,13 @@
 # CuraLink Engineering Handbook
 
 **Current design record · Created 2026-09-21 · Last updated 2026-11-22**  
-Dates use America/New_York. Version: 1.19 — fixed-coil ADS verification adds fresh passive-link, nonlinear charging-demand and translated AFE DC/AC evidence; raw regulation, input loading, shared bias and physical implementation still prevent build signoff.
+Dates use America/New_York. Version 1.21 includes the four-coax bench configuration, fixed-coil receiver and a low-capacitance AFE candidate for the retained 10 MΩ release requirement.
 
-**Fresh ADS review, 2026-11-22:** The user reaffirmed the published coils as a fixed constraint and requested power/signal bias/return verification before another agent builds the design. No coil, part or electrical value changed. Fresh ADS reproduces **71.87346% passive two-port transfer** and **2.38008 − j28.07827 Ω** transformed RX load at 13.56 MHz. A fresh BAT54 resistor fixture reproduces 5.08871 V / 124.2959 mW. The authored charger-demand law now passes a new DC sign/compliance check and **48 HB cases**: nominal 20 mA demand at 23 dBm gives RAW/CHG_IN 5.09684/4.81684 V, while 23.5 dBm raises RAW to 5.75144 V. All 32 taper/complete fixtures exceed the authored voltage domain, reinforcing the unresolved raw OVP/regulation gate. Equivalent standalone fixtures were run; a real BQ25185/cell/protection control loop was not. Fresh translated TI-family ADS AFE DC/AC checks give 36 valid nominal operating points, ADC bias approximately 1.50319 V, 969.742 V/V at 1 kHz, sampled shared-VMID coupling approximately −52.22 dB and input impedance approximately 0.823 MΩ at 7 kHz with declared cable parasitics. Internal macro-model DC-path corrections and excluded noise analysis remain explicit limits. See [the complete review](../hardware/wpt/ads/review-2026-11-22/README.md). The ≥10 MΩ requirement remains unmet; no fabrication release or buffer selection is implied.
+**Current bench build, 2026-11-22.** The user selected four generator inputs on the electronics PCB, one U.FL per channel, with BLE to the laptop. Wireless charging uses the fixed published coils and a 13.56 MHz generator. Acquisition stops during charging while the MCU reports status. A compatible externally charged 1S pack provides an independent signal-test path. The available lab cell and keyed connector await identification. Use the [plain-text builder handoff](BUILD-NEXT.txt) and D-025 through D-028 for current configuration. Earlier eight-channel, FFC, four-discrete-diode and all-electronics-off results below are dated engineering history.
+
+**Recommended layout candidate.** The [four-coax low-capacitance board](../hardware/rev-a/bench-four-coax-low-c/README.md) has a separately verified schematic and placement. With 0.60 pF additional board capacitance per input, ADS and LTspice both predict a stressed full-band minimum of 10.70 MΩ. At 1.00 pF both predict 9.16 MΩ. Silicon, routed geometry and measured charging remain unqualified. Open the new ADS workspace cell **CuraLink_RX_BAS4002A_HB** for the packaged rectifier. At 25 dBm and 24 mA its 7.31 V minimum raw output reproduces the standalone HB deck. A 26 dBm staged-load transient sustains about 5.0 V at 29 mA and drops to 4.67 V with the 39 mA-at-5 V load. [Native ADS verification](../hardware/wpt/ads/native-packaged-bridge/) · [Receiver study](../hardware/wpt/ads/receiver-ic-review-2026-11-22/)
+
+**Earlier eight-channel / discrete-bridge ADS review, 2026-11-22:** The user reaffirmed the published coils as a fixed constraint and requested power/signal bias/return verification before another agent builds the design. No coil, part or electrical value changed. Fresh ADS reproduces **71.87346% passive two-port transfer** and **2.38008 − j28.07827 Ω** transformed RX load at 13.56 MHz. A fresh BAT54 resistor fixture reproduces 5.08871 V / 124.2959 mW. The authored charger-demand law now passes a new DC sign/compliance check and **48 HB cases**: nominal 20 mA demand at 23 dBm gives RAW/CHG_IN 5.09684/4.81684 V, while 23.5 dBm raises RAW to 5.75144 V. All 32 taper/complete fixtures exceed the authored voltage domain, reinforcing the raw OVP/regulation gate for that discrete-bridge fixture. Equivalent standalone fixtures were run; a real BQ25185/cell/protection control loop was not. Fresh translated TI-family ADS AFE DC/AC checks give 36 valid nominal operating points, ADC bias approximately 1.50319 V, 969.742 V/V at 1 kHz, sampled shared-VMID coupling approximately −52.22 dB and input impedance approximately 0.823 MΩ at 7 kHz with declared cable parasitics. Internal macro-model DC-path corrections and excluded noise analysis remain explicit limits. See [the complete review](../hardware/wpt/ads/review-2026-11-22/README.md). The ≥10 MΩ requirement remains unmet; no fabrication release or buffer selection is implied.
 
 **Computer migration, 2026-11-22:** The user requested all CuraLink files and a context README on GitHub. The consolidated repository keeps the mainboard under `hardware/rev-a` and packages the five-cell native ADS workspace under `ads/MyWorkspace_wrk`. The two large original ADS datasets are losslessly compressed with source/transport SHA256 records and a restore script; Git LFS also carries large simulation results and the historical handoff ZIP. Unique secondary-folder CSVs, recovered scratch archives and supplied context texts are retained separately from current specifications. [The migration guide](moving-computers.md) records tool versions, clone/restore steps, active path overrides and unresolved dependencies; [the CAD/dependency audit](../migration/cad-audit.json) and [source consolidation manifest](../migration/consolidation-manifest.json) record coverage. Old application locks/downloaded runtimes and credentials are not design dependencies. This is a saved-file handoff: no Altium conversion, new electrical simulation, stock refresh, hardware validation or fabrication release is implied. Historical absolute source paths remain provenance; the repository-relative paths are the migration entry points.
 
@@ -41,7 +45,7 @@ The initial entries were imported from the user's project handoff on **2026-09-2
 
 ## 1. Purpose and governing objectives
 
-CuraLink is a compact, eight-channel **benchtop** prototype reproducing electrical and architectural challenges of intracortical extracellular neural acquisition. It is not intended for human or animal implantation. Its normal output is per-channel spike counts, with analog test access for waveform debugging and characterization using external instruments.
+CuraLink is a compact, four-channel **benchtop** prototype reproducing electrical and architectural challenges of intracortical extracellular neural acquisition. It is not intended for human or animal implantation. Its normal output is per-channel spike counts, with analog test access for waveform debugging and characterization using external instruments.
 
 The design must balance low input-referred noise, useful multichannel complexity, power, PCB area, manufacturability, and quantitative verification. A nominal 25–30 mm footprint is a design objective, subordinate to electrical feasibility and first-board reliability.
 
@@ -63,57 +67,52 @@ Assume Rev A may be the only main PCB revision. Problems must be observable and 
 ## 2. Current system at a glance
 
 ```text
-Laptop → USB/DAC fixture → one attenuated waveform → eight 47 kΩ branches
-    → FFC (CH1–CH8, REF, grounds)
-    → matched CH/REF connector ESD, current limiting, high-impedance AFE with DC rejection
-    → gain and nominal 300 Hz–7 kHz conditioning
-    → analog thresholds/comparators → per-channel event signals
-    → STM32WBA52 event capture and refractory/rearm handling (ADC unused)
-    → configurable spike-count bins → BLE → ceramic chip antenna → Python host
+Signal generator + calibrated attenuation → four U.FLs on the electronics PCB
+    → four local 47 kΩ source emulators + shared quiet reference
+    → matched input protection, AC coupling, amplification and filtering
+    → STM32WBA52 acquisition/event path → BLE → laptop
 
-Wireless power transmitter → RX coil/tuning/rectifier/reservoir/protection
-    → WPT_RAW (~5 V target) → 1S charger → battery
-                        └→ WPT_PRESENT detector → hardware system disable
-Battery → high-side isolation switch → SYS_RAW
-    → separate ~3.0 V analog and digital LDOs → AFE + MCU/BLE
+13.56 MHz generator → TX matching → fixed 40 mm TX / 10 mm RX coil pair
+    → RX matching → single packaged bridge → reservoir → 5 V regulation
+    → protected charger input → BQ25185 → compatible protected 1S pack
 
-CHARGE: WPT present, charger enabled, main system OFF.
-RUN: WPT absent, battery powers main system, charger inactive.
-Charging complete while WPT remains present does not start RUN.
+RECORD: field absent, valid battery → AFE and MCU/BLE on.
+CHARGE: receiver DC detected, AFE off, powered MCU/BLE reports charger state.
+SIGNAL-ONLY: externally charged pack or cell emulator, RX disconnected, field off.
 ```
 
-The USB/DAC fixture is a separate bench board; its DAC does not digitize neural signals on CuraLink. The diagram above records the accepted analog-event baseline. The 2026-10-01 [editable schematic recommendation](../hardware/rev-a/README.md) instead connects a matched, shared-REF discrete AFE to eight MCU ADC inputs for digital detection; D-024 records its proposed status and qualification boundaries. It is not a finalized PCB release.
+D-024 still identifies MCU ADC acquisition as a Candidate. Signal tests can use the battery-only path independently of receiver debugging.
 
 ### Requirements and working values
 
 | Item | Current value or approach | Status / qualification | Record |
 |---|---|---|---|
-| Channels | 8 recording channels + shared reference | Locked | D-001 |
+| Channels | 4 recording channels + local shared reference | Locked for current bench board | D-025 |
 | Modality | Intracortical extracellular-like acquisition | Locked; electrical bench model | D-001 |
 | Spike amplitude | 200 µVpp nominal; 100–300 µVpp primary region | Locked input baseline | D-002 |
 | Characterization envelope | 50–500 µVpp; approximately 0.5–2 ms | Locked input baseline; not a detection guarantee | D-002 |
 | Additional input tests | 20 µVpp stretch; 1 mVpp headroom; approximately 1 ms nominal duration | Stretch detection not guaranteed | D-002 |
 | Source model | 47 kΩ nominal series resistance; 30–70 kΩ normal, 20–100 kΩ extended characterization | Locked first-order model, not a complete electrode model | D-002 |
-| AFE input impedance | At least 10 MΩ across the useful band | Baseline target; includes the complete input network | D-003 |
+| AFE input impedance | At least 10 MΩ over 300 Hz–7 kHz at the protected AFE, after the board-side source emulator | Locked release requirement. TLV baseline gives 2.962 MΩ. Low-capacitance candidate predicts 10.70 MΩ at 0.60 pF of layout capacitance. Hardware verification open | D-003, D-025, D-028 |
 | Signal band | Approximately 300 Hz–7 kHz | Baseline; compare 5/7/10 kHz upper corners | D-003 |
 | Electronics noise | ≤6 µV RMS input-referred over approximately 300 Hz–7 kHz | Objective; source noise reported separately | D-003 |
 | Electrode offset | Approximately ±100 mV | Proposed robustness target; tolerance and recovery criteria open | D-003 |
-| Acquisition | Accepted analog-event baseline; new schematic recommends STM32WBA52CGU6 eight-channel ADC / digital detection | User authorized comparison and schematic recommendation; replacement remains Candidate pending adoption and ADC/BLE/timing qualification | D-012, D-013, D-024 |
+| Acquisition | Earlier analog-event baseline; four-channel schematic uses the proposed STM32WBA52 ADC | Pending firmware/ADC/BLE continuity | D-012, D-024, D-025 |
 | Event capture / acquisition timing | Accepted analog-event implementation open; ADC candidate prefers 50 kS/s/channel, 48 MHz kernel / 79.5-cycle acquisition | Candidate timing arithmetic, not firmware or continuity result; explicit BLE calibration service required | D-012, D-024 |
 | Total analog gain | Rev A candidate approximately 1008 V/V nominal (60.1 dB), 969 V/V at 1 kHz | Calculated and nominal TI-family LTspice gain/recovery checks; real signal/noise/PCB behavior unmeasured | D-003, D-024 |
-| Spike output | Eight-element count vector, configurable bin period | Selected normal-mode representation | D-005 |
+| Spike output | Four indexed counts in recording mode and charger status during the charge test | Bin period remains configurable; packet implementation open | D-005, D-025, D-026 |
 | Bin period | 25 ms reference/default | Baseline, configurable | D-005 |
 | Telemetry | BLE in STM32WBA52; ceramic chip antenna | Working baseline; matching/layout and package still open | D-006, D-013 |
-| Operating modes | CHARGE with WPT and system OFF; RUN from battery with WPT absent; no charge-and-run | Locked operating policy; transition and detection circuit open | D-007 |
-| Power path | Existing 1S / BQ25185 / exclusive RUN baseline; Rev A circuit proposes opposed PMOS, fault limiting, UVLO, cell NTC and rail sequencer | 20 mA / 4.1 V provisional; allocate ≥120 mW at qualified 5 V board input in new calculation. Cell-protection compatibility and receiver stress remain open; bench emulators are initial configuration | D-016, D-021, D-023, D-024 |
+| Operating modes | Battery recording or RF charge with AFE disabled and MCU/BLE status enabled | Locked test behavior; rail implementation and operation under a weak field need validation | D-026 |
+| Power path | BQ25185, protected 1S pack or emulator, independent battery-powered RUN | Lab pack and connector TBD. Historical 20 mA/4.1 V are emulator settings. Include radio load in WPT budget | D-021, D-023, D-026 |
 | Rails and bias | Separate 3.0 V TPS7A20 LDO candidates, analog enabled by digital-good supervisor; 1.5 V buffered midpoint | Partition baseline retained; nominal 1.53/1.43 V sequencer and 3.50/3.80 V battery UVLO are calculations; timing/injection/shutdown must be qualified | D-016, D-024 |
-| WPT simulation | Fixed published L/R/k → ADS passive link and nonlinear receiver / authored charger-demand envelope | Fresh 71.873% passive check, 48 HB demand cases and DC law check; loaded power feasible nominally, but taper/complete cases invalidate unregulated voltage. Real charger, raw OVP and hardware remain unqualified | D-017, D-018; [fresh review](../hardware/wpt/ads/review-2026-11-22/README.md) |
+| WPT simulation | Fixed R/L/k → carrier matching and packaged-bridge harmonic balance plus regulator transient | Review exported results and load/coupling limits in builder handoff | D-017, D-018, D-027 |
 | WPT coil geometry | 13.56 MHz square planar pair; 40 mm TX / 10 mm RX; 10 mm nominal coaxial separation; paper geometry in D-018 | Selected Rev A baseline; current constant-R/L/k model predicts useful loaded DC and consequential no-load heating; physical reproduction and thermal envelope unverified | D-018 / DEC-WPT-003 |
-| Rectifier diode model | Infineon BAT15-03W with public SPICE parameter set as the initial ADS candidate | Candidate only; four devices if testing a bridge; 4 V reverse rating is an explicit stress gate; exact topology/part remains open | Rectifier comparison |
+| Rectifier diode model | Infineon BAS4002A-RPP packaged bridge and TPS70950 5 V regulator | Selected engineering implementation, qualification pending | D-027 |
 | Footprint | Approximately 25–30 mm in XY | Objective, not a hard limit | D-008 |
-| Bench input | USB/DAC fixture board; one waveform split through eight 47 kΩ branches and FFC | User-confirmed two-board baseline; DAC/attenuator implementation proposed | D-014 |
-| Input protection | Match CH1–CH8 and REF; candidate low-C connector ESD, 5.1 kΩ series limit and AC coupling; no populated 4.7 nF electrode shunt | Reference-adapted proposal, not a verified fault/ESD design; input-impedance target still unmet | D-015 |
-| PCB electronic-part sourcing | All 80 Rev A BOM SKUs stocked on LCSC for one board on 2026-10-02, including DNP and off-board NTC | Exact inventory verified; no reservation or assembly quote. External cable stocked; accepted cell globally unconfirmed | D-020, D-024 |
+| Bench input | Calibrated generator → four U.FLs on electronics PCB → local source emulation | Selected; shielding, attenuation and loading require validation | D-025 |
+| Input protection | Matched protection, series limiting and AC coupling on CH1–4 and REF | Same full-band input-impedance requirement; emulator resistor on PCB after coax | D-015, D-025 |
+| PCB electronic-part sourcing | 73 distinct fitted low-capacitance electronics-board SKUs and 10 RF-board SKUs had LCSC stock for one assembly at the 2026-11-22 check | Main-board JLC availability checked separately. Cell unidentified, stock unreserved, delivered cost unverified | D-020, D-025, D-027 |
 
 ## 3. Decision register
 
@@ -121,20 +120,20 @@ D-001 through D-009 were **recorded 2026-09-21** from the supplied handoff; **or
 
 | ID | Decision | Status |
 |---|---|---|
-| D-001 | Eight-channel extracellular-like bench system | Locked |
+| D-001 | Original eight-channel extracellular-like bench system | Channel count superseded by D-025 |
 | D-002 | Neural signal envelope and first-order source model | Locked baseline |
 | D-003 | High-impedance spike-band AFE with substantial analog gain | Function selected; implementation open |
 | D-004 | Internal ADC and DMA for digital detection | Superseded by D-012 |
 | D-005 | Per-channel spike counts with configurable bins | Selected representation; algorithm open |
 | D-006 | BLE telemetry with wired debug and host tooling | Baseline |
-| D-007 | Mutually exclusive wireless CHARGE and battery RUN | Locked operating policy; implementation open |
+| D-007 | Original all-off CHARGE and battery RUN | Recording exclusion retained. Live status revises MCU/BLE policy under D-026 |
 | D-008 | Design for first-board success within a compact footprint | Selected design policy |
 | D-009 | Passive AWG-driven neural input fixture | Source generation superseded by D-014; source model and FFC preserved |
 | D-010 | Budget, runtime and scheduling constraints | User-confirmed 2026-09-21 |
 | D-011 | Reopen MCU vendor; evaluate gain and parts | MCU choice resolved by D-013; ADC assumptions corrected by D-012 |
 | D-012 | Remove waveform ADC; detect analog events and count in MCU | Baseline direction; implementation open |
 | D-013 | STM32WBA52 BLE controller and ceramic chip antenna | User-selected baseline; exact package/RF implementation open |
-| D-014 | Two-board DAC fixture with one waveform split eight ways | User-selected baseline; circuit and FFC implementation provisional |
+| D-014 | Original eight-way DAC/FFC fixture | Test interface superseded by D-025 |
 | D-015 | Adapt EGRA/Meower references for CuraLink protection and manual layout | Reference method accepted; values and qualification open |
 | D-016 | 1S charge path, hardware system isolation and split rails | Architecture baseline; implementation and coil-board partition open |
 | D-017 | WPT modeling and DC-power/efficiency evaluation method | DEC-WPT-002 revised by DEC-WPT-003; nominal ADS receiver study completed, charger/hardware qualification open |
@@ -145,8 +144,14 @@ D-001 through D-009 were **recorded 2026-09-21** from the supplied handoff; **or
 | D-022 | Assess PGEB201212 as the intended 1S cell candidate | Superseded as working cell by D-023; historical qualification unresolved |
 | D-023 | 55 mAh cell and provisional charging baseline; resume AFE | Baseline accepted; power circuit verification open |
 | D-024 | Rev A schematic recommendation after ADC/comparator comparison | Candidate implementation; reviewable CAD and sourcing checks passed; no fabrication release |
+| D-025 | Four U.FL generator inputs and shared reference | Locked bench interface; supersedes the eight-channel/FFC portions of D-001/D-014 |
+| D-026 | Live charge-status BLE and independent battery-only signal tests | Locked functions; supersedes the MCU-off portion of D-007/D-016 |
+| D-027 | Packaged bridge with separate 5 V regulator on the fixed-coil receiver | Baseline; CAD and simulation qualify an engineering candidate |
+| D-028 | Lower-capacitance gain stages and bypassed bias return | Engineering candidate for the locked full-band input impedance, pending extracted layout and bench verification |
 
 ### D-001 — Eight-channel extracellular-like bench system
+
+**Historical baseline.** See D-025 and D-026 for the current bench configuration.
 
 **Choice and status.** Use eight intracortical extracellular-like recording channels and one shared reference. Scope is locked.
 
@@ -180,7 +185,7 @@ D-001 through D-009 were **recorded 2026-09-21** from the supplied handoff; **or
 
 **Objective.** Preserve useful action potentials while reducing slow drift/LFP content and out-of-band noise, avoiding saturation, and resolving analog detection thresholds with a defensible error budget.
 
-**Constraints and calculations.** The working input-impedance target is ≥10 MΩ across the useful band. The electronics-noise objective is ≤6 µV RMS input-referred over approximately 300 Hz–7 kHz. Report source-resistor noise separately and also report total input-referred system noise; do not silently include source noise in an electronics-only limit.
+**Constraints and calculations.** The user reconfirmed ≥10 MΩ across 300 Hz–7 kHz as a release requirement for the four-coax board on 2026-11-22. Measure the complete protected AFE looking in immediately after the local source emulator. Include input protection, bias and layout parasitics. Report source-to-input voltage transfer separately. The electronics-noise objective is ≤6 µV RMS input-referred over approximately 300 Hz–7 kHz. Report source-resistor noise separately and also report total input-referred system noise; do not silently include source noise in an electronics-only limit.
 
 The earlier ADC-code gain calculation is superseded by D-012. Gain must now satisfy detector accuracy and analog headroom constraints. Illustrative relations are:
 
@@ -218,6 +223,8 @@ These bounds require explicit offset, threshold, hysteresis, noise, waveform, an
 
 ### D-005 — Spike-count vectors with configurable binning
 
+**Historical baseline.** See D-025 and D-026 for the current bench configuration.
+
 **Choice and status.** Normal telemetry carries eight per-channel spike counts over a configurable bin interval. A 25 ms interval is the current reference/default, not a fixed requirement. Threshold method, adaptation, polarity logic, refractory interval, and count width remain open.
 
 **Objective.** Deliver useful low-rate activity summaries while retaining software control over detection behavior.
@@ -251,6 +258,8 @@ This excludes framing and link overhead. Eight-bit counters are an example, not 
 **Verification / reopen when.** Measure radio peak/average current, packet loss, latency, range, and neural noise with BLE active. Verify host decoding and dropped-packet visibility. Verify event diagnostics without assuming onboard waveform capture.
 
 ### D-007 — Mutually exclusive CHARGE and RUN
+
+**Historical baseline.** See D-025 and D-026 for the current bench configuration.
 
 **Decision date: original battery-charge choice unknown; exclusive-mode revision 2026-09-22. Recorded: 2026-09-21; last revised: 2026-09-22. Status: Locked operating policy, circuit implementation open.**
 
@@ -357,6 +366,8 @@ ST's default WBA55 BLE example enables temperature-based radio calibration; its 
 
 ### D-014 — Separate USB/DAC stimulus and CuraLink boards
 
+**Historical baseline.** See D-025 and D-026 for the current bench configuration.
+
 **Decision date: 2026-09-22. Recorded: 2026-09-22. Status: User-selected architecture; implementation values proposed.**
 
 **Choice.** Use board 1 for laptop-controlled analog stimulus generation with one DAC waveform split eight ways through individually replaceable nominal 47 kΩ source resistors and an FFC. Board 2 is the battery-powered eight-channel AFE, analog detector, STM32WBA52 and BLE board. The user's “laptop → ADC” was explicitly clarified as **DAC** for waveform generation. D-009's AWG input is now a possible bring-up bypass, not the normal source.
@@ -388,6 +399,8 @@ ST's default WBA55 BLE example enables temperature-based radio calibration; its 
 **Verification / reopen when.** Resolve the input-impedance target or redesign the input; check full-cable capacitance and ESD/fault currents with worst-case tolerances; validate transient recovery, leakage and channel/reference noise; complete symbol/footprint/pin audits and KiCad ERC before manual layout, then DRC and assembled-board tests. Reopen the protection topology if those checks fail.
 
 ### D-016 — 1S charging path, hardware isolation and split rails
+
+**Historical baseline.** See D-025 and D-026 for the current bench configuration.
 
 **Decision date: 2026-09-22. Recorded: 2026-09-22; charger selection revised 2026-09-24 under D-021. Status: Architecture baseline; selected charger IC, other parts/electrical limits and board partition open.**
 
@@ -523,6 +536,8 @@ ST's default WBA55 BLE example enables temperature-based radio calibration; its 
 
 ### D-023 — 55 mAh cell and provisional charging baseline; resume AFE
 
+**Historical baseline.** See D-025 and D-026 for the current bench configuration.
+
 **Decision date: 2026-09-25. Recorded: 2026-09-25; evidence updated: 2026-11-22. Status: Baseline; hardware and sourcing qualification open.**
 
 **Choice.** Retain BQ25185DLHR / C19725033; adopt Taisko 401020-55mah / catalog C19632326 as the working cell (55 mAh typical, 50 mAh minimum, nominal 20 × 10 × 4 mm cell body). Use provisional 20 mA charging at qualified room temperature and 4.1 V regulation pending supplier clarification of the cell's 4.2 V upper-limit tolerance. Target approximately 5 V at 21 mA receiver output, or 105 mW before extra loads and tolerance margin. Evaluate 20, 23 and 26 dBm available RF input in ADS; these are sweep points, not a selected hardware operating power. Resume AFE design while retaining explicit power verification gates. Exact PMOS/detector parts remain candidates.
@@ -575,9 +590,39 @@ The preferred 50 kS/s periodic driver tests give ≤4.30 µV additional settling
 
 **Verification / reopen when.** The final CAD export contains 446 physical components; 1,089 connected and 48 intentional-NC pins match the source tables, with zero KiCad 9.0.9 ERC findings. This is a transfer check, not a behavioral or manufacturing release. Close loading and cell-protection requirements, audit Altium connectivity/land patterns, qualify nonlinear behavior across hardware/PVT conditions, complete PCB DRC and bring-up measurements, then prove detection/noise/aliasing/CMRR, BLE capture, rails/interlock, RF and one-hour runtime. Reopen topology/clock/parts when these checks fail. Detailed files remain linked rather than duplicating their specification here.
 
+### D-025 — Four-channel generator interface
+
+**Choice and status.** Locked 2026-11-22. Use CH1–CH4 on four U.FL inputs, with the generator as the test source and BLE as the laptop link. The design omits physical threads. The earlier eight-channel DAC/FFC configuration remains a comparison fixture.
+**Variant implementation.** The refreshed BOM uses STM32WBA52CEU6 in UFQFPN48 (512 KiB flash / 96 KiB SRAM), TLV9054IPWR in TSSOP-14, 910 kΩ feedback parts and a four-pad Johanson 2450AT18D0100001E antenna. These replace unavailable BOM items. Check the firmware memory map and retune the redesigned RF layout. [ST memory/package table](https://www.st.com/resource/en/application_note/an6159-migrating-from-the-stm32wba5xxx-to-the-stm32wba6xxx-mcus-stmicroelectronics.pdf).
+
+**Objective and tradeoff.** Four real channels retain indexing, gain and crosstalk tests while removing four analog channels and their connector wiring. Shared REF remains inside the board. Terminate the four coax shields at board ground. Feed REF through a matched quiet-source path and retain its coupling capacitor and VMID bias.
+**Verification and reopening.** Calibrate stimulus at the board and place the 47 kΩ emulator near the AFE. Exercise one channel, all four, and a quiet victim with three active neighbors. Meet the user-reconfirmed ≥10 MΩ magnitude from 300 Hz to 7 kHz at the protected AFE on all four channels. The final 910 kΩ-arm ADS fixture gives 2.962 MΩ at 7 kHz, 970.78 V/V at 1 kHz, a 1.50315 V ADC bias and −41.52 dB worst coherent coupling in its three-aggressor test. LTspice gives 3.467 µV RMS electronics noise over the band. The 99.82% voltage transfer with the local 47 kΩ resistor leaves the loading requirement open. See the [four-channel simulations](../hardware/rev-a/ads-closeout-2026-11-22/) and [impedance study](../hardware/rev-a/input-impedance/). Check ADC reference noise, protection and physical returns after routing.
+
+### D-026 — Live charge status and independent signal testing
+
+**Choice and status.** Locked test functions, 2026-11-22. The user will bring a generator-driven TX near the RX and read charging status over BLE. Keep recording disabled while charging. With the field off and receiver disconnected, the board must also record from a compatible externally charged pack or battery emulator. A lab LiPo is a candidate pending identification. D-023's historical 55 mAh pack and 20 mA / 4.1 V example do not set the limits for that pack.
+**Objective and tradeoff.** Live status costs power and requires independent digital and analog power enables. In the candidate circuit, protected RUN and charge inputs diode-OR into the digital regulator. MCU VDDA remains powered with VDD. Open-drain status uses digital-domain pull-ups. Under a weak or failed input the radio may lose power. The laptop needs a stale/disconnected indication.
+**Verification and reopening.** Exercise field arrival/removal, taper, faults, RF bursts and battery-only RUN with a current-limited emulator. Observe both rails, status pins and signed pack current. Confirm pack MPN, protection, connector polarity, current, CV and temperature limits before fitting charge links for a cell. Record pack identity, heat and usable runtime.
+
+### D-027 — Single packaged receiver bridge and separate regulation
+
+**Choice and status.** The user accepted a single packaged Schottky bridge with separate regulation on 2026-11-22. The engineering baseline is Infineon BAS4002ARPPE6327HTSA1 (C3589694) and TI TPS70950DBVR (C96028). Retain BQ25185 and the fixed Luo coil pair. Historical BAT54 runs remain simulation fixtures.
+**Objective and tradeoff.** A self-starting bridge accepts a 13.56 MHz generator without a charging protocol. Two junction drops and a subsequent linear regulator consume headroom. Label the pre-regulator reservoir RECT_DC and the regulated receiver output WPT_RX_DC. The LDO controls its output; input fault stress and sustained heating are separate checks. [Infineon](https://www.infineon.com/part/BAS4002A-RPP) · [TI](https://www.ti.com/lit/ds/symlink/tps709.pdf).
+**Verification and reopening.** Check matching and delivered power under charger and radio demand. Sweep coupling, tuning, light load and weak field. Measure reverse stress, capacitor currents, temperature, input transients and available generator power. Select final trim values after testing the assembled coils at the intended spacing and metal clearances. See the [builder handoff](BUILD-NEXT.txt) for data and release gates.
+
+### D-028 — Lower-capacitance input stages and quiet bias return
+
+**Choice and status.** Engineering Candidate, recorded 2026-11-22. The user kept the ≥10 MΩ magnitude requirement for all four inputs over 300 Hz–7 kHz. Recommend five MAX44280AXT+T gain-11 stages for CH1–4 and REF. Return their five 22 MΩ bias resistors to the bypassed VMID_RAW divider. Retain the 47 Ω isolator on the shared VMID follower. The separate low-capacitance native design is the proposed layout starting point.
+
+**Objective and alternatives.** Reduce AC input current while preserving DC rejection, the useful signal gain and the 6 µV RMS electronics noise objective. The existing TLV input loads the generator with 2.96 MΩ at 7 kHz. Sub-picofarad positive feedback can recover impedance at that frequency while still failing elsewhere and introducing negative input conductance. A lower-capacitance amplifier and a quieter bias return address the two observed causes independently. [Candidate comparison](../hardware/rev-a/input-impedance/README.md) · [ADI datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX44280.pdf)
+
+**Evidence and tradeoffs.** With 0.60 pF added board capacitance, −1% bias resistance, 0.65 pF ESD and 0.20 pF above modeled amplifier capacitance, the independently excited inputs present at least 10.70 MΩ in ADS and LTspice. At 0.75 pF the minimum is 10.08 MΩ, and at 1.00 pF it falls to 9.16 MΩ. LTspice gives 2.983 µV RMS electronics noise, 4.400 µV RMS including the emulator, approximately 971 V/V at 1 kHz and 6.016 mA modeled analog-rail draw versus 2.432 mA for the TLV input configuration. Ten units of C2058813 were available for five locations per PCB. [Vendor-model runs](../hardware/rev-a/input-impedance/max44280/) · [ADS corroboration](../hardware/rev-a/input-impedance/ads-low-c/)
+
+**Verification and reopening.** Keep the protection and high-impedance nodes close to each amplifier. Extract layout capacitance, include test lands, and measure the protected input plane without a shunting scope probe. Check all four channels across the whole band, the reference path, hot-plug recovery, noise, crosstalk, enabled current, rail stability and ADC/BLE continuity. Reopen placement or the input network if the measured minimum misses 10 MΩ or margins are inadequate. [Editable implementation and layout gates](../hardware/rev-a/bench-four-coax-low-c/README.md)
+
 ## 4. Open work and next design sequence
 
-The user resumed AFE work on 2026-09-25 and authorized detailed schematic work / ADC-comparator evaluation on 2026-10-01. The new [Rev A handoff](../hardware/rev-a/README.md) is the active candidate implementation; the initial two-board study remains historical context. Resolve loading and cell-protection compatibility before fabrication, then qualify signal, acquisition, power and PCB implementation. The steps below are not already accepted or measured results.
+The current release sequence is in [BUILD-NEXT.txt](BUILD-NEXT.txt). The following earlier engineering tasks remain applicable where their interfaces agree with D-025 through D-027.
 
 | Order | Work item | Required outcome before selection |
 |---|---|---|
@@ -729,3 +774,5 @@ Scale detail to consequence. Update Section 2 whenever a current value changes. 
 | 2026-10-09 | Added v1.17: corrected floating RX only in new native ADS test cells and verified original OA preservation. Ran actual HB load/power and finite joint-capacitor studies; recorded a 5.08853 V / 124.287 mW BAT54 Candidate point, native impedance/probe verification and harmonic convergence. Rejected the old diode's reverse-bound failure; quantified 11.915 V / 132 mW RX winding loss near no load and corrected external-control loading to 108.7/119.8 mW declared fixtures. Saved a third authored SDD load cell and standalone decks; their electrical checks remain unsolved after two license-limit failures | User requested ADS matching and remaining power work. Genuine manufacturer model, dated LCSC stock and saved ADS datasets/logs support simulation findings; raw OVP, real charging, cell protection/sourcing, thermal/tolerance and mode/runtime qualification remain open. No hardware part or tuning acceptance inferred |
 | 2026-11-22 | Added v1.18 migration entry points and full context README; consolidated mainboard/ADS/source evidence from both project folders, preserved unique captures and historical references, added Git LFS dataset restoration and portable runner-path configuration | User requested GitHub publication for moving computers. File/hash/dependency checks qualify the saved-file transfer only; design status, prior test dates, unqualified charger/cell/PCB gates and source provenance are retained |
 | 2026-11-22 | Added v1.19: user reaffirmed fixed published coils; fresh ADS passive check gives 71.873% / RX 2.380 − j28.078 Ω, new resistor point reproduces 124.296 mW, and authored-load DC plus 48 HB cases expose missing raw regulation. Translated AFE DC/AC and source/return checks reproduce nominal bias/gain, shared-bias coupling and failed input impedance. Preserve rejected first AC diagnostic and model-port/noise limits | User requested ADS power/signal verification before build-out and proposed a buffer. Coils and hardware values are unchanged; a buffer is not selected. Build gates remain open; a verified fresh GitHub/LFS recovery covers the separate migration batch |
+| 2026-11-22 | v1.20 adopts four on-board coax inputs, packaged rectifier, BLE charge telemetry and the externally charged pack fallback. Retains ≥10 MΩ across 300 Hz–7 kHz as a release requirement. Earlier eight-channel and all-off configurations are historical. | User changed the bench test interface and operating modes. Hardware release requires identified cell, board measurements and verified routing. |
+| 2026-11-22 | v1.21 records the full-band high-impedance recommendation, separate native schematic, ADS/LTspice stress results and remaining physical limits. | The user retained ≥10 MΩ. The original input fails, while the low-capacitance candidate passes only within a quantified layout budget. |

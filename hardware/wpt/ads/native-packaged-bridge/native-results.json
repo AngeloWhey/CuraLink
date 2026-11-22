@@ -1,0 +1,16 @@
+{
+  "ADS_cell": "MyLibrary_lib:CuraLink_RX_BAS4002A_HB:schematic",
+  "HB_order": 31,
+  "frequency_Hz": 13560000.0,
+  "mean_RAW_V": 7.344787615239626,
+  "minimum_RAW_V": 7.310405632613514,
+  "power_RAW_mW": 176.27490276575102,
+  "load_DC_mA": 24.0,
+  "Z_RX_ohm": [
+    1.6357676734773101,
+    -28.66831651171462
+  ],
+  "reference_matrix_label": "demand_25_full_120mW",
+  "matrix_RAW_V": 7.34478778471326,
+  "matrix_RAW_mW": 176.27490683311825
+}

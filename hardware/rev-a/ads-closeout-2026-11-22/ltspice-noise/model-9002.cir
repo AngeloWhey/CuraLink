@@ -1,0 +1,11 @@
+* CuraLink four-channel fixture; original TI-family equations.
+.include ../../ltspice/afe/models/tlv9002-namespaced.lib
+.include ../../ltspice/afe/models/tlv9052-namespaced.lib
+.options numdgt=8 plotwinsize=0
+.temp 27
+VDD vdd 0 5
+VIN in 0 DC 2.5 AC 1
+XBUF in out vdd 0 out TLV9002_TLV9002
+.noise V(out) VIN dec 100 300 10000
+.save V(inoise) V(onoise)
+.end
