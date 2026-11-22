@@ -1,0 +1,14 @@
+; Translated with ADS Netlist Translator (*) 640.shp Mar 23 2026
+;
+;Mapping SPICE functions file to the Netlist
+#ifndef SPCFUNCTIONS_FILE
+#define SPCFUNCTIONS_FILE
+#include "$HPEESOF_DIR/links/spice/spicefunctions.net"
+#endif
+;
+; BAT54 manufacturer-model ADS translation fixture only
+model bat54 Diode Is=649e-9 N=1.04 Rs=2.09 Ikf=20e-3 Xti=2 Eg=0.58 Cjo=12.4e-12 M=0.381 Vj=0.391 \
+      Bv=50 Ibv=100e-6 Isr=431e-9 Nr=4.99 Nbv=1.04 Tnom=27 IkModel=1 Imax=1000 Trs1=0 Trs2=0
+V_Source:vin vin 0 Vdc=1
+R:rtest vin anode R=100
+bat54:dtest anode 0 Mode=1

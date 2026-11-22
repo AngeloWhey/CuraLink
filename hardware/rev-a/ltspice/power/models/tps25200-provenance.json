@@ -1,0 +1,12 @@
+{
+  "original": "sources/tps25200-spice/SLVMA73/tps25200_trans.lib",
+  "original_sha256": "ae2cb4a057e1a8640e777572538051743f3d92ca3441649516ebc7fa06ddbb65",
+  "compatibility_copy": "models/tps25200-ltspice-compat.lib",
+  "compatibility_sha256": "f93c0bc50e5bf6f7345dc264b311ea57934fd33dab805afd92e1d836b7299fea",
+  "changes": [
+    "Two boolean XOR expressions in XOR2_BASIC_GEN/XNOR2_BASIC_GEN: PSpice ^ becomes parenthesized inequality !=; LTspice otherwise interprets ^ as exponentiation."
+  ],
+  "number_expressions_changed": 2,
+  "unchanged": "All electrical numerical parameters and all other model expressions.",
+  "limits": "This port is a vendor-derived macro, not manufacturer validation of LTspice behavior or guaranteed device safety. Thermal and statistical limits require datasheet/bench verification."
+}

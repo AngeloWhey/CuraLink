@@ -1,0 +1,318 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 17:01:24 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\bat54_best_convergence_R208.333_H31"
+      Process ID: 14168
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+HB HB1[1] <receiver.ckt>
+    Number of tones:   1.
+    Number of frequencies:   32.
+    Number of time samples:  64.
+    Number of HB equations (problem size): 1512.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	269.943 kA  	100.0             
+1.0 	4.32576 kA  	100.0	319.639 mV   
+1.1 	3.06085 kA  	100.0	221.162 mV   
+1.2*	2.43419 kA  	100.0	2.32382 V    
+2.0 	1.0105 kA   	100.0	75.1646 V    
+2.1 	791.526 A   	100.0	53.898 V     
+2.2 	656.986 A   	100.0	7.48946 V    
+2.3 	584.403 A   	100.0	4.77871 V    
+2.4*	535.847 A   	100.0	9.52967 V    
+3.0 	349.42 A    	100.0	676.257 mV   
+3.1 	301.952 A   	100.0	2.34867 V    
+3.2 	256.888 A   	100.0	744.067 mV   
+3.3 	211.557 A   	100.0	640.143 mV   
+3.4 	165.147 A   	100.0	470.575 mV   
+3.5 	116.662 A   	100.0	18.4837 V    
+        Samanskii-Newton iteration failed
+3.6*	116.662 A   	100.0	3.71793 V    
+4.0*	116.662 A   	 50.0	3.71793 V    
+5.0*	81.3866 A   	 12.5	4.7685 V     
+6.0*	70.8019 A   	 12.5	7.24918 V    
+7.0*	61.6112 A   	 12.5	3.8265 V     
+8.0*	53.7614 A   	 25.0	733.659 mV   
+9.0*	39.0188 A   	 50.0	725.356 mV   
+10.0*	15.5089 A   	100.0	567.193 mV   
+11.0 	6.43524 A   	100.0	386.772 mV   
+11.1 	5.03974 A   	100.0	378.035 mV   
+11.2*	4.37917 A   	 25.0	4.15073 V    
+12.0 	3.56025 A   	 25.0	3.24889 V    
+12.1 	3.01873 A   	 25.0	2.24261 V    
+12.2 	2.92309 A   	  1.6	17.4281 V    
+12.3*	2.67464 A   	  3.1	4.78716 V    
+13.0 	2.59169 A   	  3.1	4.33249 V    
+13.1*	2.50726 A   	  3.1	8.62799 V    
+14.0*	2.44856 A   	  6.2	17.4013 V    
+15.0*	2.30933 A   	  6.2	16.8457 V    
+16.0*	2.20581 A   	  3.1	7.9411 V     
+17.0*	2.12596 A   	  6.2	5.16431 V    
+18.0*	1.99728 A   	 12.5	6.14814 V    
+19.0*	1.76081 A   	 25.0	5.97656 V    
+20.0*	1.35663 A   	 25.0	4.23494 V    
+21.0*	1.13799 A   	 50.0	3.3333 V     
+22.0*	694.713 mA  	  6.2	8.97105 V    
+23.0 	656.393 mA  	100.0	8.43921 V    
+        Samanskii-Newton iteration failed
+23.1*	656.393 mA  	  6.2	8.6974 V     
+24.0*	621.008 mA  	  3.1	8.00474 V    
+25.0*	605.233 mA  	  3.1	7.84055 V    
+26.0*	591.11 mA   	  6.2	8.22382 V    
+27.0*	562.921 mA  	 12.5	7.10317 V    
+28.0*	537.347 mA  	 12.5	4.66079 V    
+29.0*	489.073 mA  	 25.0	4.51255 V    
+30.0*	439.452 mA  	  6.2	4.88989 V    
+31.0*	418.271 mA  	  6.2	4.37096 V    
+32.0*	398.51 mA   	  3.1	5.23408 V    
+33.0*	387.82 mA   	  6.2	4.06199 V    
+34.0*	370.591 mA  	 12.5	6.66456 V    
+35.0*	334.065 mA  	  6.2	6.77127 V    
+36.0*	315.24 mA   	 12.5	4.51385 V    
+37.0*	287.367 mA  	 25.0	3.58571 V    
+38.0*	244.016 mA  	 12.5	3.31808 V    
+39.0*	231.989 mA  	  6.2	5.59123 V    
+40.0*	223.575 mA  	  3.1	7.11336 V    
+41.0*	220.617 mA  	  6.2	6.69768 V    
+42.0*	213.24 mA   	  6.2	7.114 V      
+43.0*	203.885 mA  	 12.5	2.40562 V    
+44.0*	197.497 mA  	 25.0	2.07399 V    
+45.0*	164.229 mA  	  6.2	1.73961 V    
+46.0*	156.015 mA  	  6.2	2.72689 V    
+47.0*	146.963 mA  	 12.5	2.10211 V    
+48.0*	132.753 mA  	 25.0	2.6875 V     
+49.0*	129.486 mA  	 50.0	1.29642 V    
+    Switching to arc-length continuation...
+Fwd sourceLevel=15.3563e-03    1.54% 2/2  Step=0.5
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	303.043 uA  	100.0             
+1.0 	1.80457 uA  	100.0	53.2546 uV   
+1.1 	19.9472 nA  	100.0	586.708 nV   
+1.2 	220.367 pA  	100.0	6.48007 nV   
+    Arclength Newton-Raphson converged at 0.0155231 in 1 iters
+
+Fwd sourceLevel=38.1347e-03    3.81% 2/2  Step=0.7071067812
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	76.7556 mA  	100.0             
+1.0 	21.8993 mA  	100.0	26.2977 mV   
+1.1 	13.216 mA   	100.0	15.9111 mV   
+1.2 	9.03905 mA  	100.0	10.8846 mV   
+1.3*	6.55408 mA  	100.0	30.1037 mV   
+2.0 	934.361 uA  	100.0	4.13048 mV   
+2.1 	255.064 uA  	100.0	1.1187 mV    
+2.2 	73.5943 uA  	100.0	322.45 uV    
+2.3 	21.5593 uA  	100.0	94.4539 uV   
+2.4 	6.34435 uA  	100.0	27.7957 uV   
+2.5 	1.8695 uA   	100.0	8.19066 uV   
+2.6 	551.11 nA   	100.0	2.41453 uV   
+2.7 	162.481 nA  	100.0	711.865 nV   
+2.8 	47.9048 nA  	100.0	209.883 nV   
+2.9 	14.1241 nA  	100.0	61.8817 nV   
+    Arclength Newton-Raphson converged at 0.0408074 in 2 iters
+
+Fwd sourceLevel=73.9886e-03    7.40% 2/2  Step=1
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	32.8538 mA  	100.0             
+1.0 	5.45469 mA  	100.0	8.69695 mV   
+1.1 	1.96689 mA  	100.0	3.14627 mV   
+1.2 	785.069 uA  	100.0	1.25328 mV   
+1.3 	323.723 uA  	100.0	515.947 uV   
+1.4 	135.08 uA   	100.0	215.129 uV   
+1.5 	56.6296 uA  	100.0	90.1614 uV   
+1.6 	23.7861 uA  	100.0	37.8662 uV   
+1.7 	9.99872 uA  	100.0	15.9167 uV   
+1.8 	4.20441 uA  	100.0	6.69272 uV   
+1.9 	1.76815 uA  	100.0	2.81458 uV   
+1.10 	743.631 nA  	100.0	1.18372 uV   
+1.11 	312.754 nA  	100.0	497.84 nV    
+1.12 	131.537 nA  	100.0	209.381 nV   
+1.13 	55.3214 nA  	100.0	88.0612 nV   
+    Arclength Newton-Raphson converged at 0.073637 in 1 iters
+
+Fwd sourceLevel=119.626e-03   11.96% 2/2  Step=1.414213562
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	20.2667 mA  	100.0             
+1.0 	1.44355 mA  	100.0	1.79712 mV   
+1.1 	226.513 uA  	100.0	283.568 uV   
+1.2 	37.8684 uA  	100.0	47.234 uV    
+1.3 	6.40549 uA  	100.0	7.96367 uV   
+1.4 	1.08594 uA  	100.0	1.3472 uV    
+1.5 	184.071 nA  	100.0	228.13 nV    
+1.6 	31.1913 nA  	100.0	38.6411 nV   
+    Arclength Newton-Raphson converged at 0.119463 in 1 iters
+
+Fwd sourceLevel=184.102e-03   18.41% 2/2  Step=2
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	19.154 mA   	100.0             
+1.0 	778.191 uA  	100.0	668.509 uV   
+1.1 	69.1117 uA  	100.0	59.4354 uV   
+1.2 	6.4533 uA   	100.0	5.49214 uV   
+1.3 	606.469 nA  	100.0	512.32 nV    
+1.4 	56.9914 nA  	100.0	47.9524 nV   
+    Arclength Newton-Raphson converged at 0.183991 in 1 iters
+
+Fwd sourceLevel=275.124e-03   27.51% 2/2  Step=2.828427125
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	22.2429 mA  	100.0             
+1.0 	681.924 uA  	100.0	413.046 uV   
+1.1 	44.9669 uA  	100.0	27.388 uV    
+1.2 	3.09283 uA  	100.0	1.86586 uV   
+1.3 	213.199 nA  	100.0	127.83 nV    
+    Arclength Newton-Raphson converged at 0.275023 in 1 iters
+
+Fwd sourceLevel=403.645e-03   40.36% 2/2  Step=4
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	30.1417 mA  	100.0             
+1.0 	906.266 uA  	100.0	380.812 uV   
+1.1 	58.6133 uA  	100.0	24.0016 uV   
+1.2 	3.84072 uA  	100.0	1.54127 uV   
+1.3 	250.081 nA  	100.0	99.0798 nV   
+    Arclength Newton-Raphson converged at 0.403541 in 1 iters
+
+Fwd sourceLevel=585.173e-03   58.52% 2/2  Step=5.656854249
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	44.3775 mA  	100.0             
+1.0 	1.47174 mA  	100.0	416.2 uV     
+1.1 	100.232 uA  	100.0	27.7395 uV   
+1.2 	6.98663 uA  	100.0	1.87596 uV   
+1.3 	483.919 nA  	100.0	126.847 nV   
+    Arclength Newton-Raphson converged at 0.585055 in 1 iters
+
+Fwd sourceLevel=841.612e-03   84.16% 2/2  Step=8
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	65.8754 mA  	100.0             
+1.0 	2.33991 mA  	100.0	454.99 uV    
+1.1 	166.675 uA  	100.0	31.9615 uV   
+1.2 	12.0137 uA  	100.0	2.27114 uV   
+1.3 	866.704 nA  	100.0	161.399 nV   
+    Arclength Newton-Raphson converged at 0.841462 in 1 iters
+
+Fwd sourceLevel=1.20389      120.39% 2/2  Step=11.3137085
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	95.2526 mA  	100.0             
+1.0 	3.44304 mA  	100.0	477.696 uV   
+1.1 	252.15 uA   	100.0	34.1287 uV   
+1.2 	18.6564 uA  	100.0	2.46908 uV   
+1.3 	1.37505 uA  	100.0	178.761 nV   
+    Arclength Newton-Raphson converged at 1.2037 in 1 iters
+
+    Calculating solution at 1
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0 	16.5661 mA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.1 	4.00208 mA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.2 	944.888 uA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.3 	221.492 uA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.4 	51.9188 uA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.5 	12.1359 uA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.6 	2.83064 uA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.7 	659.189 nA  	100.0             
+    Newton-Raphson converged at 1
+
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+DIODE2.a                6.650e-06       >       3.075e-06
+DIODE4.a                6.650e-06       >       3.075e-06
+DIODE3.a                6.558e-06       >       1.034e-06
+DIODE1.a                6.558e-06       >       1.034e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 7 waveforms.
+o Estimated max HB truncation error: 6.650e-06 @ waveform DIODE2.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 3.075e-06 for this waveform.
+o A time-domain plot of the DIODE3.a waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     2.16 seconds.
+    Simulation stopwatch time =     0.70 seconds.
+    Total stopwatch time      =     2.11 seconds.
+
+    Memory used:  110 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

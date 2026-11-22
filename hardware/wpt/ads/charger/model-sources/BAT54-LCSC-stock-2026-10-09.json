@@ -1,0 +1,17 @@
+{
+  "recorded_local_date": "2026-10-09",
+  "timezone": "America/New_York",
+  "source_type": "Primary LCSC product page read using web tool",
+  "url": "https://www.lcsc.com/product-detail/C106920.html",
+  "manufacturer": "Diodes Incorporated",
+  "manufacturer_part_number": "BAT54-7-F",
+  "lcsc_order_code": "C106920",
+  "package": "SOT-23",
+  "observed_in_stock_pieces": 87360,
+  "minimum_order_pieces": 20,
+  "order_multiple_pieces": 20,
+  "stock_reserved": false,
+  "assembly_eligibility_confirmed": false,
+  "engineering_status": "Separate ADS rectifier simulation candidate; not accepted final receiver diode",
+  "limits": "Dated product-page observation; not an inventory reservation, quotation or assembly-service acceptance. Earlier October 2 BOM stock evidence is retained separately."
+}

@@ -1,0 +1,54 @@
+PACKAGE OPTION ADDENDUM
+www.ti.com 28-Apr-2026
+PACKAGING INFORMATION
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+TPD1E05U06DPYR Active Production X1SON (DPY) | 2 10000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (BK, C1, C6)
+C2
+TPD1E05U06DPYR.B Active Production X1SON (DPY) | 2 10000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (BK, C1, C6)
+C2
+TPD1E05U06DPYT Last
+Time Buy
+Production X1SON (DPY) | 2 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (BK, C1, C6)
+C2
+TPD1E05U06DPYT.B Last
+Time Buy
+Production X1SON (DPY) | 2 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (BK, C1, C6)
+C2
+TPD1E05U06DPYTG4 Active Production X1SON (DPY) | 2 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 C1
+C2
+TPD1E05U06DPYTG4.B Active Production X1SON (DPY) | 2 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 C1
+C2
+TPD1E05U06DYAR Active Production SOT-5X3 (DYA) | 2 3000 | LARGE T&R Yes SN Level-3-260C-168 HR -40 to 125 1KS
+TPD1E05U06DYAR.B Active Production SOT-5X3 (DYA) | 2 3000 | LARGE T&R Yes SN Level-3-260C-168 HR -40 to 125 1KS
+TPD4E05U06DQAR Active Production USON (DQA) | 10 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (BLG, BRG, DQA)
+BRY
+TPD4E05U06DQAR.B Active Production USON (DQA) | 10 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (BLG, BRG, DQA)
+BRY
+TPD4E05U06DQARG4 Active Production USON (DQA) | 10 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 DQA
+TPD4E05U06DQARG4.B Active Production USON (DQA) | 10 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 DQA
+TPD6E05U06RVZR Active Production USON (RVZ) | 14 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (BV, BVY)
+TPD6E05U06RVZR.B Active Production USON (RVZ) | 14 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (BV, BVY)
+TPD6E05U06RVZRG4 Active Production USON (RVZ) | 14 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 BV
+TPD6E05U06RVZRG4.B Active Production USON (RVZ) | 14 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 BV
+ 
+(1) Status:  For more details on status, see our product life cycle.
+ 
+(2) Material type:  When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+ 
+(3) RoHS values:  Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+Addendum-Page 1

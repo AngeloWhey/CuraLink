@@ -1,0 +1,28 @@
+{
+  "source": "https://www.ti.com/lit/ds/symlink/tps25200.pdf",
+  "section": "5.5 electrical characteristics; 40/83/130mA at1.1Meg; clamp5.25/5.4/5.55V; OVLO6.8/7.6/8.45V",
+  "corners": [
+    {
+      "name": "low",
+      "clamp": 5.25,
+      "ovlo": 6.8,
+      "uvlo": 2.45,
+      "ilim": 0.04
+    },
+    {
+      "name": "typ",
+      "clamp": 5.4,
+      "ovlo": 7.6,
+      "uvlo": 2.35,
+      "ilim": 0.083
+    },
+    {
+      "name": "high",
+      "clamp": 5.55,
+      "ovlo": 8.45,
+      "uvlo": 2.35,
+      "ilim": 0.13
+    }
+  ],
+  "limits": "Independent numerical bounds paired for illustration, not statistical correlation. Guaranteed response timing and all-voltage clamp behavior not established. Values at1.1Meg do not include resistor tolerance, and +1% RILIM exceeds the recommended1100k upper endpoint."
+}

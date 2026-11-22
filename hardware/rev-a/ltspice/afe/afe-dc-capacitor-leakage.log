@@ -1,0 +1,15 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\afe\afe-dc-capacitor-leakage.cir
+Start Time: Fri Oct  2 10:04:30 2026
+Options:numdgt=7 plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 25
+method = trap
+AsciiRawFile = true
+.step rleak=100000000000
+.step rleak=10000000000
+.step rleak=1000000000
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping

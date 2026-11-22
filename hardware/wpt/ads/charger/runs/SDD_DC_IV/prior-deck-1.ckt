@@ -1,0 +1,24 @@
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="CuraLink:charger_SDD_DC:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes
+VIN_SWEEP=0
+VBAT=3.7
+IPHASE=0.02
+IQACTIVE=0.00075
+IQSLEEP=0.00003
+CHARGE_ALLOWED=1
+VWAKE=max(3.0,VBAT+0.152)
+VSTART=max(3.15,VBAT+0.188)
+VDPM=max(3.6,VBAT+0.330)
+WNUM=0.020
+WDPM=0.15
+ICTRL=0.0008
+WOR=0.100
+VPATH=0.28
+
+V_Source:VTEST VIN 0 Vdc=VIN_SWEEP
+Short:Charger_Probe VIN CHG_IN Mode=0 SaveCurrent=yes
+SDD:Charger CHG_IN 0 I[1,0]=IQSLEEP*max(0,min(1,_v1/3.6))+(IQACTIVE-IQSLEEP)*max(0,min(1,(_v1-VWAKE)/WNUM))+CHARGE_ALLOWED*IPHASE*max(0,min(1,(_v1-VSTART)/WNUM))*max(0,min(1,(_v1-VDPM)/WDPM))
+Short:Control_Probe VIN CTRL_LOAD Mode=0 SaveCurrent=yes
+SDD:Control CTRL_LOAD 0 I[1,0]=ICTRL*max(0,min(1,(_v1-VBAT)/WOR))
+DC:DC1 SweepVar="VIN_SWEEP" SweepPlan="DCSweep" StatusLevel=0 OutputPlan="DC_Output"
+SweepPlan:DCSweep Start=0 Stop=5.5 Step=0.025
+OutputPlan:DC_Output Type="Output" UseNodeNestLevel=yes NodeNestLevel=2 UseEquationNestLevel=yes EquationNestLevel=2 UseSavedEquationNestLevel=yes SavedEquationNestLevel=2 UseDeviceCurrentNestLevel=yes DeviceCurrentNestLevel=2 DeviceCurrentDeviceType="All" DeviceCurrentSymSyntax=yes UseCurrentNestLevel=yes CurrentNestLevel=999 UseDeviceVoltageNestLevel=yes DeviceVoltageNestLevel=2 DeviceVoltageDeviceType="All"

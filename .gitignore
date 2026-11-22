@@ -1,18 +1,32 @@
-# Local/editor files
+# Local editor/cache state, never engineering evidence
 .vscode/
 .idea/
-*.user
-*.swp
-
-# Build and generated artifacts
-build/
-dist/
+.DS_Store
+Thumbs.db
 __pycache__/
 *.pyc
-
-# Measurement captures and local secrets
-*.bin
-*.elf
-*.hex
-*.map
+*.pyo
 .env
+.env.*
+!.env.example
+*.lck
+*.lock
+*.cdslck
+*.kicad_prl
+*-backups/
+
+# Downloaded tool runtimes; installation/provenance recipes are retained
+/tmp/pcb-tools/jre25/
+/tmp/pcb-tools/*.tar.gz
+/tmp/pcb-tools/*.jar
+
+# ADS migration: original large datasets are restored from verified LFS archives
+/ads/MyWorkspace_wrk/data/cell_1.ds
+/ads/MyWorkspace_wrk/data/__simdata125462.ds
+
+# Temporary files used only while verifying/reconstructing a migration
+*.restore-tmp
+*.restore-partial
+/migration/verification-clone/
+
+# Simulator/source files, raw measurements, PDFs and CAD are intentionally kept.

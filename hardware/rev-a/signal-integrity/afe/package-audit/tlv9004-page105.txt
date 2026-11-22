@@ -1,0 +1,24 @@
+www.ti.com
+EXAMPLE STENCIL DESIGN
+(5.8)
+6X (0.65)
+8X (0.45)
+8X (1.5)
+(R ) TYP0.05
+4221848/A   02/2015
+TSSOP - 1.2 mm max heightPW0008A
+SMALL OUTLINE PACKAGE
+NOTES: (continued)
+ 
+8. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+    design recommendations.   
+9. Board assembly site may have different recommendations for stencil design.
+ 
+SYMM
+SYMM
+1
+4 5
+8
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+SCALE:10X

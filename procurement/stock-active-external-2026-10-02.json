@@ -1,0 +1,5213 @@
+{
+  "audit_date_local": "2026-10-02",
+  "timezone": "America/New_York",
+  "completed_at_utc": "2026-10-02T13:20:59.368515+00:00",
+  "source_bom": "hardware/rev-a/bom.csv",
+  "source_bom_sha256": "7efee96822f07fdf54333c56ea29e61fa1c7fa8ffc2fcb18d3cb3d76811ef4e0",
+  "scope": "Every unique non-R/C Rev A BOM SKU, including DNP, plus accepted cell and FFC cable",
+  "inventory_meaning": "LCSC overseas immediate stock, exact MPN and overseas sale/display flags checked against one-board needs and minimum order quantity; stock is a snapshot, not a reservation or assembly allocation.",
+  "cost_basis": "Minimum-order USD line costs, excludes freight, tax, assembly, feeder losses, PCB and R/C items. DNP order shown separately.",
+  "summary": {
+    "unique_skus": 27,
+    "status_counts": {
+      "CATALOG_RECORD_UNAVAILABLE": 1,
+      "IN_STOCK_OVERSEAS": 26
+    },
+    "populated_quantity_bom": 50,
+    "dnp_quantity_bom": 4,
+    "external_quantity": 2,
+    "minimum_order_cost_populated_usd": 46.3313,
+    "minimum_order_cost_including_dnp_usd": 47.5611,
+    "cost_complete": false,
+    "cost_exclusion": "C19632326 price/minimum/orderability unconfirmed; reported cost totals cover only the 26 successfully audited SKUs.",
+    "lowest_active_stock": [
+      {
+        "lcsc": "C19626860",
+        "mpn": "STM32WBA52CGU6",
+        "overseas_immediate": 9
+      },
+      {
+        "lcsc": "C2057826",
+        "mpn": "TLV9054IRUCR",
+        "overseas_immediate": 88
+      },
+      {
+        "lcsc": "C22378853",
+        "mpn": "MLPF-WB-04D3",
+        "overseas_immediate": 192
+      },
+      {
+        "lcsc": "C3681751",
+        "mpn": "BQ29737DSER",
+        "overseas_immediate": 192
+      }
+    ]
+  },
+  "items": [
+    {
+      "lcsc": "C106920",
+      "requested_mpns": [
+        "BAT54-7-F"
+      ],
+      "references_populated": [
+        "D503",
+        "D504",
+        "D507",
+        "D508",
+        "D509"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 5,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SOT-23"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:54.700264+00:00",
+      "actual_mpn": "BAT54-7-F",
+      "mpn_exact_match": true,
+      "manufacturer": "DIODES",
+      "product_description": "Voltage: 30V Current: 200mA",
+      "package_actual": "SOT-23",
+      "stock_number": 88140,
+      "overseas_stock": {
+        "total": 88140,
+        "shipImmediately": 88140,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 88140,
+        "shipImmediately": 88140,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 20,
+      "order_multiple": 20,
+      "buy_quantity_populated_only": 20,
+      "buy_quantity_including_dnp": 20,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 20,
+          "unit_price_usd": 0.0357
+        },
+        {
+          "minimum_quantity": 200,
+          "unit_price_usd": 0.0278
+        },
+        {
+          "minimum_quantity": 600,
+          "unit_price_usd": 0.0235
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.0208
+        },
+        {
+          "minimum_quantity": 9000,
+          "unit_price_usd": 0.0185
+        },
+        {
+          "minimum_quantity": 21000,
+          "unit_price_usd": 0.0173
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 20,
+        "unit_price_usd": 0.0357,
+        "extended_usd": 0.714
+      },
+      "order_cost_including_dnp": {
+        "quantity": 20,
+        "unit_price_usd": 0.0357,
+        "extended_usd": 0.714
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C106920.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/fa527e1a225be4f92339b09795667d25.pdf?productCode=C106920",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C106920",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C106920.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_11055",
+          "paramName": "二极管配置",
+          "paramNameEn": "Diode Configuration",
+          "paramValue": "1个独立式",
+          "paramValueEn": "1 Independent",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_31702_s",
+          "paramName": "工作结温范围",
+          "paramNameEn": "Operating Junction Temperature Range",
+          "paramValue": "-65℃~+150℃",
+          "paramValueEn": "-65℃~+150℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_26",
+          "paramName": "直流反向耐压（Vr）",
+          "paramNameEn": "Voltage - DC Reverse (Vr) (Max)",
+          "paramValue": "30V",
+          "paramValueEn": "30V",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_11059_nt",
+          "paramName": "正向压降(Vf)",
+          "paramNameEn": "Voltage - Forward(Vf@If)",
+          "paramValue": "800mV@100mA",
+          "paramValueEn": "800mV@100mA",
+          "paramValueEnForSearch": 0.8,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_10919_nt",
+          "paramName": "反向电流(Ir)",
+          "paramNameEn": "Reverse Leakage Current (Ir)",
+          "paramValue": "2uA@25V",
+          "paramValueEn": "2uA@25V",
+          "paramValueEnForSearch": 2e-06,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_31793_n",
+          "paramName": "非重复峰值浪涌电流 (Ifsm)",
+          "paramNameEn": "Non-Repetitive Peak Forward Surge Current",
+          "paramValue": "600mA",
+          "paramValueEn": "600mA",
+          "paramValueEnForSearch": 0.6,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_11058_n",
+          "paramName": "整流电流",
+          "paramNameEn": "Current - Rectified",
+          "paramValue": "200mA",
+          "paramValueEn": "200mA",
+          "paramValueEnForSearch": 0.2,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C110499",
+      "requested_mpns": [
+        "DMP2035U-7"
+      ],
+      "references_populated": [
+        "Q501",
+        "Q502"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 2,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SOT-23"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:54.701263+00:00",
+      "actual_mpn": "DMP2035U-7",
+      "mpn_exact_match": true,
+      "manufacturer": "DIODES",
+      "product_description": "MOSFET P-CH 20V 3.6A SOT-23",
+      "package_actual": "SOT-23",
+      "stock_number": 108925,
+      "overseas_stock": {
+        "total": 108925,
+        "shipImmediately": 108925,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 108925,
+        "shipImmediately": 108925,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.1307
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.1044
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.0912
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.0813
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.0638
+        },
+        {
+          "minimum_quantity": 6000,
+          "unit_price_usd": 0.0599
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.1307,
+        "extended_usd": 0.6535
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.1307,
+        "extended_usd": 0.6535
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C110499.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/b8be3723f2a938ff1161496d64a5a119.pdf?productCode=C110499",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C110499",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C110499.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_26782",
+          "paramName": "配置",
+          "paramNameEn": "Configuration",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_15045_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-55℃~+150℃",
+          "paramValueEn": "-55℃~+150℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_11380_n",
+          "paramName": "漏源电压(Vdss)",
+          "paramNameEn": "Drain to Source Voltage",
+          "paramValue": "20V",
+          "paramValueEn": "20V",
+          "paramValueEnForSearch": 20.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_32500_n",
+          "paramName": "输出电容(Coss)",
+          "paramNameEn": "Output Capacitance(Coss)",
+          "paramValue": "157pF",
+          "paramValueEn": "157pF",
+          "paramValueEnForSearch": 157.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 11
+        },
+        {
+          "paramCode": "param_11381_n",
+          "paramName": "连续漏极电流(Id)",
+          "paramNameEn": "Current - Continuous Drain(Id)",
+          "paramValue": "3.6A",
+          "paramValueEn": "3.6A",
+          "paramValueEnForSearch": 3.6,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_11368_nt",
+          "paramName": "输入电容(Ciss)",
+          "paramNameEn": "Ciss-Input Capacitance",
+          "paramValue": "1.61nF",
+          "paramValueEn": "1.61nF",
+          "paramValueEnForSearch": 1610.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_11369_n",
+          "paramName": "耗散功率(Pd)",
+          "paramNameEn": "Pd - Power Dissipation",
+          "paramValue": "810mW",
+          "paramValueEn": "810mW",
+          "paramValueEnForSearch": 0.81,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_26793_n",
+          "paramName": "反向传输电容(Crss)",
+          "paramNameEn": "Reverse Transfer Capacitance (Crss)",
+          "paramValue": "145pF",
+          "paramValueEn": "145pF",
+          "paramValueEnForSearch": 145.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_14508_n",
+          "paramName": "导通电阻",
+          "paramNameEn": "RDS(on)",
+          "paramValue": "23mΩ@4.5V;30mΩ@2.5V;41mΩ@1.8V",
+          "paramValueEn": "23mΩ@4.5V;30mΩ@2.5V;41mΩ@1.8V",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_11379",
+          "paramName": "数量",
+          "paramNameEn": "Number",
+          "paramValue": "1个P沟道",
+          "paramValueEn": "1 P-Channel",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_11385_nt",
+          "paramName": "栅极电荷量(Qg)",
+          "paramNameEn": "Gate Charge(Qg)",
+          "paramValue": "15.4nC@4.5V",
+          "paramValueEn": "15.4nC@4.5V",
+          "paramValueEnForSearch": 1.54e-08,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_26878_n",
+          "paramName": "阈值电压(Vgs(th))",
+          "paramNameEn": "Gate Threshold Voltage (Vgs(th))",
+          "paramValue": "700mV",
+          "paramValueEn": "700mV",
+          "paramValueEnForSearch": 0.7,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_14503",
+          "paramName": "类型",
+          "paramNameEn": "Type",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C128401",
+      "requested_mpns": [
+        "TPS25200DRVR"
+      ],
+      "references_populated": [
+        "U502",
+        "U511"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 2,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "WSON-6-EP_2x2mm"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:54.702261+00:00",
+      "actual_mpn": "TPS25200DRVR",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "5V electronic fuse with high-precision adjustable current limit and overvoltage clamping",
+      "package_actual": "WSON-6-EP(2x2)",
+      "stock_number": 1466,
+      "overseas_stock": {
+        "total": 1466,
+        "shipImmediately": 1466,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 1466,
+        "shipImmediately": 1466,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 1,
+      "order_multiple": 1,
+      "buy_quantity_populated_only": 2,
+      "buy_quantity_including_dnp": 2,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 1,
+          "unit_price_usd": 0.4425
+        },
+        {
+          "minimum_quantity": 10,
+          "unit_price_usd": 0.354
+        },
+        {
+          "minimum_quantity": 30,
+          "unit_price_usd": 0.3163
+        },
+        {
+          "minimum_quantity": 100,
+          "unit_price_usd": 0.2705
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.2491
+        },
+        {
+          "minimum_quantity": 1000,
+          "unit_price_usd": 0.236
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 2,
+        "unit_price_usd": 0.4425,
+        "extended_usd": 0.885
+      },
+      "order_cost_including_dnp": {
+        "quantity": 2,
+        "unit_price_usd": 0.4425,
+        "extended_usd": 0.885
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C128401.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/7d1c2b76118347739f37c27df6bfcc2c.pdf?productCode=C128401",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C128401",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C128401.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_14054",
+          "paramName": "功能特性",
+          "paramNameEn": "Features",
+          "paramValue": "过流保护;短路保护;过温保护;过压保护;欠压锁定;反向电流阻断;输出放电功能;软启动",
+          "paramValueEn": "Overcurrent Protection;Short-Circuit  Protection;Over temperature protection;Overvoltage protection;Under-voltage lockout;Reverse current blocking;Output discharge function;Soft-start",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 95
+        },
+        {
+          "paramCode": "param_15208",
+          "paramName": "放大器数",
+          "paramNameEn": "Number of Channels",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_14527_s",
+          "paramName": "工作电压",
+          "paramNameEn": "Voltage - Supply",
+          "paramValue": "2.5V~6.5V",
+          "paramValueEn": "2.5V~6.5V",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 22
+        },
+        {
+          "paramCode": "param_14505",
+          "paramName": "输入控制逻辑",
+          "paramNameEn": "Control Input Logic",
+          "paramValue": "高电平有效",
+          "paramValueEn": "Active High",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 46
+        },
+        {
+          "paramCode": "param_14507_n",
+          "paramName": "最大连续电流",
+          "paramNameEn": "Maximum Continuous Current",
+          "paramValue": "2.5A",
+          "paramValueEn": "2.5A",
+          "paramValueEnForSearch": 2.5,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 58
+        },
+        {
+          "paramCode": "param_32955_n",
+          "paramName": "导通电阻(RDS(on))",
+          "paramNameEn": "RDS(on)",
+          "paramValue": "70mΩ",
+          "paramValueEn": "70mΩ",
+          "paramValueEnForSearch": 0.07,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 20
+        },
+        {
+          "paramCode": "param_14529_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+125℃",
+          "paramValueEn": "-40℃~+125℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 64
+        },
+        {
+          "paramCode": "param_14525",
+          "paramName": "类型",
+          "paramNameEn": "Type",
+          "paramValue": "高侧开关",
+          "paramValueEn": "High Side Switch",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C134405",
+      "requested_mpns": [
+        "BAT54C-7-F"
+      ],
+      "references_populated": [
+        "D502"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SOT-23"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:54.703262+00:00",
+      "actual_mpn": "BAT54C-7-F",
+      "mpn_exact_match": true,
+      "manufacturer": "DIODES",
+      "product_description": "DIODE ARR SCHOTTKY 30V SOT-23",
+      "package_actual": "SOT-23",
+      "stock_number": 17815,
+      "overseas_stock": {
+        "total": 17815,
+        "shipImmediately": 17815,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 17815,
+        "shipImmediately": 17815,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.1452
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.1184
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.1051
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.095
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.0767
+        },
+        {
+          "minimum_quantity": 6000,
+          "unit_price_usd": 0.0726
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.1452,
+        "extended_usd": 0.726
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.1452,
+        "extended_usd": 0.726
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C134405.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/fa527e1a225be4f92339b09795667d25.pdf?productCode=C134405",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C134405",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C134405.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_31920_n",
+          "paramName": "非重复峰值浪涌电流 (Ifsm)",
+          "paramNameEn": "Non-Repetitive Peak Forward Surge Current",
+          "paramValue": "600mA",
+          "paramValueEn": "600mA",
+          "paramValueEnForSearch": 0.6,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_11063",
+          "paramName": "二极管配置",
+          "paramNameEn": "Diode Configuration",
+          "paramValue": "1对共阴极",
+          "paramValueEn": "1 Pair Common Cathode",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_11045_n",
+          "paramName": "整流电流",
+          "paramNameEn": "Current - Rectified",
+          "paramValue": "200mA",
+          "paramValueEn": "200mA",
+          "paramValueEnForSearch": 0.2,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_31702_s",
+          "paramName": "工作结温范围",
+          "paramNameEn": "Operating Junction Temperature Range",
+          "paramValue": "-65℃~+150℃",
+          "paramValueEn": "-65℃~+150℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_10892_n",
+          "paramName": "直流反向耐压(Vr)",
+          "paramNameEn": "Voltage - DC Reverse(Vr)",
+          "paramValue": "30V",
+          "paramValueEn": "30V",
+          "paramValueEnForSearch": 30.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_10919_nt",
+          "paramName": "反向电流(Ir)",
+          "paramNameEn": "Reverse Leakage Current (Ir)",
+          "paramValue": "2uA@25V",
+          "paramValueEn": "2uA@25V",
+          "paramValueEnForSearch": 2e-06,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_10918_nt",
+          "paramName": "正向压降(Vf)",
+          "paramNameEn": "Voltage - Forward(Vf@If)",
+          "paramValue": "800mV@100mA",
+          "paramValueEn": "800mV@100mA",
+          "paramValueEnForSearch": 0.8,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C138714",
+      "requested_mpns": [
+        "TPD4E05U06DQAR"
+      ],
+      "references_populated": [
+        "U110",
+        "U111",
+        "U112"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 3,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "USON-10_DQA_1x2.5mm_P0.5mm"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:54.705263+00:00",
+      "actual_mpn": "TPD4E05U06DQAR",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "TVS DIODE 5.5VWM 14VC USON-10(1x2.5)",
+      "package_actual": "USON-10(1x2.5)",
+      "stock_number": 142330,
+      "overseas_stock": {
+        "total": 142330,
+        "shipImmediately": 142330,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 142330,
+        "shipImmediately": 142330,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.0847
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.067
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.0579
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.0505
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.0478
+        },
+        {
+          "minimum_quantity": 6000,
+          "unit_price_usd": 0.0461
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.0847,
+        "extended_usd": 0.4235
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.0847,
+        "extended_usd": 0.4235
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C138714.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/86fce5e377410b6c2d1b0526f306f55e.pdf?productCode=C138714",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C138714",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C138714.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_11219_n",
+          "paramName": "钳位电压",
+          "paramNameEn": "Clamping Voltage",
+          "paramValue": "14V",
+          "paramValueEn": "14V",
+          "paramValueEnForSearch": 14.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_13682_st",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+125℃",
+          "paramValueEn": "-40℃~+125℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 67
+        },
+        {
+          "paramCode": "param_13431_nt",
+          "paramName": "峰值脉冲电流(Ipp)",
+          "paramNameEn": "Peak Pulse Current (Ipp)",
+          "paramValue": "2.5A@8/20us",
+          "paramValueEn": "2.5A@8/20us",
+          "paramValueEnForSearch": 2.5,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 106
+        },
+        {
+          "paramCode": "param_13433_nt",
+          "paramName": "峰值脉冲功率(Ppp)",
+          "paramNameEn": "Peak Pulse Power Dissipation (Ppp)",
+          "paramValue": "40W@8/20us",
+          "paramValueEn": "40W@8/20us",
+          "paramValueEnForSearch": 40.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 40
+        },
+        {
+          "paramCode": "param_19236",
+          "paramName": "通道数",
+          "paramNameEn": "Number of Channels",
+          "paramValue": "四路",
+          "paramValueEn": "Four channels",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 84
+        },
+        {
+          "paramCode": "param_13428_nt",
+          "paramName": "击穿电压(VBR)",
+          "paramNameEn": "Voltage - Breakdown",
+          "paramValue": "8.5V",
+          "paramValueEn": "8.5V",
+          "paramValueEnForSearch": 8.5,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 77
+        },
+        {
+          "paramCode": "param_32540",
+          "paramName": "晶体管类型",
+          "paramNameEn": "type",
+          "paramValue": "ESD",
+          "paramValueEn": "ESD",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 34
+        },
+        {
+          "paramCode": "param_13188_nt",
+          "paramName": "反向电流(Ir)",
+          "paramNameEn": "Reverse Leakage Current (Ir)",
+          "paramValue": "10nA",
+          "paramValueEn": "10nA",
+          "paramValueEnForSearch": 1e-08,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 23
+        },
+        {
+          "paramCode": "param_19066",
+          "paramName": "极性",
+          "paramNameEn": "Polarity",
+          "paramValue": "单向",
+          "paramValueEn": "Unidirectional",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_14904_n",
+          "paramName": "反向截止电压(Vrwm)",
+          "paramNameEn": "Reverse Stand-Off Voltage (Vrwm)",
+          "paramValue": "5.5V",
+          "paramValueEn": "5.5V",
+          "paramValueEnForSearch": 5.5,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 74
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C17430588",
+      "requested_mpns": [
+        "2450AT18A0100001E"
+      ],
+      "references_populated": [
+        "AE401"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "1206 3.2x1.6x1.3mm"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:54.706260+00:00",
+      "actual_mpn": "2450AT18A0100001E",
+      "mpn_exact_match": true,
+      "manufacturer": "Johanson Dielectrics",
+      "product_description": "2.4GHz Mini Antenna, SMT",
+      "package_actual": "1206",
+      "stock_number": 656,
+      "overseas_stock": {
+        "total": 656,
+        "shipImmediately": 656,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 656,
+        "shipImmediately": 656,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 1,
+      "order_multiple": 1,
+      "buy_quantity_populated_only": 1,
+      "buy_quantity_including_dnp": 1,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 1,
+          "unit_price_usd": 0.6965
+        },
+        {
+          "minimum_quantity": 10,
+          "unit_price_usd": 0.5671
+        },
+        {
+          "minimum_quantity": 30,
+          "unit_price_usd": 0.5015
+        },
+        {
+          "minimum_quantity": 100,
+          "unit_price_usd": 0.4376
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.3999
+        },
+        {
+          "minimum_quantity": 1000,
+          "unit_price_usd": 0.3803
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 1,
+        "unit_price_usd": 0.6965,
+        "extended_usd": 0.6965
+      },
+      "order_cost_including_dnp": {
+        "quantity": 1,
+        "unit_price_usd": 0.6965,
+        "extended_usd": 0.6965
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C17430588.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/a26b6a969b12ca736f4a8557c693d947.pdf?productCode=C17430588",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C17430588",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C17430588.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_14360_n",
+          "paramName": "驻波比",
+          "paramNameEn": "VSWR",
+          "paramValue": "1.386;1.219",
+          "paramValueEn": "1.386;1.219",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 42
+        },
+        {
+          "paramCode": "param_14359_s",
+          "paramName": "增益",
+          "paramNameEn": "Peak Gain",
+          "paramValue": "0.5dBi",
+          "paramValueEn": "0.5dBi",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 19
+        },
+        {
+          "paramCode": "param_14356",
+          "paramName": "天线类型",
+          "paramNameEn": "Antenna Type",
+          "paramValue": "贴片天线",
+          "paramValueEn": "Patch Antenna",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_32983",
+          "paramName": "接口类型",
+          "paramNameEn": "Connector Type",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 58
+        },
+        {
+          "paramCode": "param_14358_n",
+          "paramName": "带宽",
+          "paramNameEn": "Bandwidth",
+          "paramValue": "100MHz",
+          "paramValueEn": "100MHz",
+          "paramValueEnForSearch": 100000000.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 13
+        },
+        {
+          "paramCode": "param_14364_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 48
+        },
+        {
+          "paramCode": "param_32987_n",
+          "paramName": "高度",
+          "paramNameEn": "Height",
+          "paramValue": "1.3mm",
+          "paramValueEn": "1.3mm",
+          "paramValueEnForSearch": 1.3,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 65
+        },
+        {
+          "paramCode": "param_32985_n",
+          "paramName": "长度",
+          "paramNameEn": "Length",
+          "paramValue": "3.2mm",
+          "paramValueEn": "3.2mm",
+          "paramValueEnForSearch": 3.2,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 62
+        },
+        {
+          "paramCode": "param_14357_n",
+          "paramName": "中心频率",
+          "paramNameEn": "Frequency(Center/Band)",
+          "paramValue": "2.4GHz",
+          "paramValueEn": "2.4GHz",
+          "paramValueEnForSearch": 2400000000.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_32984_n",
+          "paramName": "直径(φD)",
+          "paramNameEn": "Diameter (φD)",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 60
+        },
+        {
+          "paramCode": "param_14362_n",
+          "paramName": "阻抗",
+          "paramNameEn": "Impedance",
+          "paramValue": "50Ω",
+          "paramValueEn": "50Ω",
+          "paramValueEnForSearch": 50.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 30
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C19626860",
+      "requested_mpns": [
+        "STM32WBA52CGU6"
+      ],
+      "references_populated": [
+        "U401"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "UFQFPN-48 7x7mm P0.5mm EP5.6x5.6mm"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:55.427285+00:00",
+      "actual_mpn": "STM32WBA52CGU6",
+      "mpn_exact_match": true,
+      "manufacturer": "ST",
+      "product_description": "Multiprotocol wireless 32-bit MCU Arm-based Cortex-M33",
+      "package_actual": "UFQFPN-48(7x7)",
+      "stock_number": 9,
+      "overseas_stock": {
+        "total": 9,
+        "shipImmediately": 9,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 9,
+        "shipImmediately": 9,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 1,
+      "order_multiple": 1,
+      "buy_quantity_populated_only": 1,
+      "buy_quantity_including_dnp": 1,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 1,
+          "unit_price_usd": 5.4694
+        },
+        {
+          "minimum_quantity": 10,
+          "unit_price_usd": 5.3298
+        },
+        {
+          "minimum_quantity": 30,
+          "unit_price_usd": 5.2362
+        },
+        {
+          "minimum_quantity": 100,
+          "unit_price_usd": 5.1442
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 1,
+        "unit_price_usd": 5.4694,
+        "extended_usd": 5.4694
+      },
+      "order_cost_including_dnp": {
+        "quantity": 1,
+        "unit_price_usd": 5.4694,
+        "extended_usd": 5.4694
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C19626860.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/afde85730b53530427ab5a3f91af284d.pdf?productCode=C19626860",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C19626860",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C19626860.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_31018_n",
+          "paramName": "ADC(位数)",
+          "paramNameEn": "ADC (Bit)",
+          "paramValue": "12bit",
+          "paramValueEn": "12bit",
+          "paramValueEnForSearch": 12.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 29
+        },
+        {
+          "paramCode": "param_31013_n",
+          "paramName": "程序存储容量",
+          "paramNameEn": "Program Storage Size",
+          "paramValue": "1MB",
+          "paramValueEn": "1MB",
+          "paramValueEnForSearch": 1048576.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 16
+        },
+        {
+          "paramCode": "param_13056",
+          "paramName": "CPU内核",
+          "paramNameEn": "CPU Core",
+          "paramValue": "ARM Cortex-M33",
+          "paramValueEn": "ARM Cortex-M33",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_31012",
+          "paramName": "CPU位数",
+          "paramNameEn": "Core Size",
+          "paramValue": "32 Bit",
+          "paramValueEn": "32 Bit",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_14765_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+85℃",
+          "paramValueEn": "-40℃~+85℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 18
+        },
+        {
+          "paramCode": "param_14762_s",
+          "paramName": "工作电压",
+          "paramNameEn": "Voltage - Supply",
+          "paramValue": "1.71V~3.6V",
+          "paramValueEn": "1.71V~3.6V",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C19632326",
+      "requested_mpns": [
+        "401020-55mah"
+      ],
+      "references_populated": [],
+      "references_dnp": [],
+      "board_quantity_populated": 0,
+      "board_quantity_dnp": 0,
+      "external_quantity": 1,
+      "assembly": [
+        "OFFBOARD_MANUAL"
+      ],
+      "package_requested": [],
+      "scope": "EXTERNAL_ACCEPTED_ITEM",
+      "note": "Accepted working bare LiPo cell remains electrically/protection unqualified. Direct LCSC catalogue returned HTTP 200 with result=null on three requests: availability cannot be claimed. Primary JLCPCB listing identifies Taisko 401020-55mah but says parts-library purchases cannot ship separately. Global LCSC procurement remains unconfirmed; separate cell fallback/search being checked.",
+      "stock_status": "CATALOG_RECORD_UNAVAILABLE",
+      "attempt_errors": [
+        {
+          "attempt": 1,
+          "utc": "2026-10-02T13:20:55.449835+00:00",
+          "error": "API returned no successful product record: None"
+        },
+        {
+          "attempt": 2,
+          "utc": "2026-10-02T13:20:56.845355+00:00",
+          "error": "API returned no successful product record: None"
+        },
+        {
+          "attempt": 3,
+          "utc": "2026-10-02T13:20:59.121301+00:00",
+          "error": "API returned no successful product record: None"
+        }
+      ],
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C19632326",
+      "actual_mpn": null,
+      "mpn_exact_match": null,
+      "overseas_stock": null,
+      "is_foreign_onsale": null,
+      "is_foreign_display": null,
+      "raw_file": "procurement/raw-active-external-2026-10-02/C19632326.json",
+      "retrieved_at_utc": "2026-10-02T13:20:59.121301+00:00",
+      "stock_number": null,
+      "minimum_order_quantity": null,
+      "order_multiple": null,
+      "fallback_primary_source": {
+        "url": "https://jlcpcb.com/partdetail/Taisko-40102055mah/C19632326",
+        "checked_date_local": "2026-10-02",
+        "mpn": "401020-55mah",
+        "manufacturer": "Taisko",
+        "listing_limit": "Parts-library purchases for future PCBA only; cannot be shipped separately",
+        "listed_inventory": null
+      },
+      "additional_evidence": [
+        {
+          "path": "procurement/battery-raw-2026-10-02/search-C19632326.json",
+          "finding": "Global exact-code search returned no exact product result"
+        },
+        {
+          "path": "procurement/battery-raw-2026-10-02/search-401020_55mah.json",
+          "finding": "Model search returned unrelated fuzzy matches, not the requested cell"
+        },
+        {
+          "path": "procurement/battery-raw-2026-10-02/jlc-page.html",
+          "finding": "JLCPCB catalogue listing exists but standalone delivery is not established"
+        }
+      ],
+      "independent_check_note": "MCU sourcing agent independently reported global product URL HTTP 404 and exact-code search zero results. No compatible stocked global LCSC LiPo replacement was verified by the searches in battery-raw-2026-10-02."
+    },
+    {
+      "lcsc": "C19725033",
+      "requested_mpns": [
+        "BQ25185DLHR"
+      ],
+      "references_populated": [
+        "U501"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "WSON-10-EP_2.2x2.0mm"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:55.470137+00:00",
+      "actual_mpn": "BQ25185DLHR",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "1-Cell, 1-A Standalone Linear Battery Charger with PowerPath, Factory Mode, and Battery Tracking VINDPM",
+      "package_actual": "WSON-10-EP(2.2x2)",
+      "stock_number": 3809,
+      "overseas_stock": {
+        "total": 3809,
+        "shipImmediately": 3809,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 3809,
+        "shipImmediately": 3809,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 1,
+      "order_multiple": 1,
+      "buy_quantity_populated_only": 1,
+      "buy_quantity_including_dnp": 1,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 1,
+          "unit_price_usd": 1.7492
+        },
+        {
+          "minimum_quantity": 10,
+          "unit_price_usd": 1.4829
+        },
+        {
+          "minimum_quantity": 30,
+          "unit_price_usd": 1.3382
+        },
+        {
+          "minimum_quantity": 100,
+          "unit_price_usd": 1.1722
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 1.0999
+        },
+        {
+          "minimum_quantity": 1000,
+          "unit_price_usd": 1.067
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 1,
+        "unit_price_usd": 1.7492,
+        "extended_usd": 1.7492
+      },
+      "order_cost_including_dnp": {
+        "quantity": 1,
+        "unit_price_usd": 1.7492,
+        "extended_usd": 1.7492
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C19725033.html",
+      "datasheet_url": "https://www.ti.com.cn/cn/lit/ds/symlink/bq25185.pdf?ts=1739415017761&ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FBQ25185%253FkeyMatch%253Dbq25185%2526tisearch%253Duniversal_search",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C19725033",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C19725033.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_14523_n",
+          "paramName": "放电截止电压",
+          "paramNameEn": "End-Off Voltage",
+          "paramValue": "2.2V",
+          "paramValueEn": "2.2V",
+          "paramValueEnForSearch": 2.2,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_14521_s",
+          "paramName": "工作电压",
+          "paramNameEn": "Voltage - Supply",
+          "paramValue": "3V~18V",
+          "paramValueEn": "3V~18V",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_31468_n",
+          "paramName": "静态电流(Iq)",
+          "paramNameEn": "Quiescent Current",
+          "paramValue": "4uA",
+          "paramValueEn": "4uA",
+          "paramValueEnForSearch": 4e-06,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_33958_st",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+125℃",
+          "paramValueEn": "-40℃~+125℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_14519_s",
+          "paramName": "电池节数",
+          "paramNameEn": "Number of Cells",
+          "paramValue": "1",
+          "paramValueEn": "1",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_33954",
+          "paramName": "接口",
+          "paramNameEn": "Interface",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_33831",
+          "paramName": "功能特性",
+          "paramNameEn": "Features",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_31817",
+          "paramName": "电池温度检测",
+          "paramNameEn": "Battery Temperature Detection",
+          "paramValue": "支持",
+          "paramValueEn": "Support",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 9
+        },
+        {
+          "paramCode": "param_31818",
+          "paramName": "0V电池充电",
+          "paramNameEn": "0V Battery Charge",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_14517",
+          "paramName": "电池类型",
+          "paramNameEn": "Type of Battery",
+          "paramValue": "锂电池;磷酸铁锂电池",
+          "paramValueEn": "Lithium Battery;LiFePO4 Battery",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_14518",
+          "paramName": "芯片类型",
+          "paramNameEn": "The Chip Type",
+          "paramValue": "充电芯片",
+          "paramValueEn": "Charging IC",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_31820_n",
+          "paramName": "均衡电流",
+          "paramNameEn": "Balance Current",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 12
+        },
+        {
+          "paramCode": "param_14520_n",
+          "paramName": "最大充电电流",
+          "paramNameEn": "Charge Current - Max",
+          "paramValue": "1A",
+          "paramValueEn": "1A",
+          "paramValueEnForSearch": 1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_14522_n",
+          "paramName": "充电饱和电压",
+          "paramNameEn": "Charging Saturation Voltage",
+          "paramValue": "4.4V",
+          "paramValueEn": "4.4V",
+          "paramValueEnForSearch": 4.4,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C20345924",
+      "requested_mpns": [
+        "TLV3012BIDBVR"
+      ],
+      "references_populated": [
+        "U504",
+        "U505",
+        "U506",
+        "U507",
+        "U515"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 5,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SOT-23-6"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:55.479533+00:00",
+      "actual_mpn": "TLV3012BIDBVR",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "Low-Power Comparators With Integrated 1.24V Voltage Reference",
+      "package_actual": "SOT-23-6",
+      "stock_number": 2656,
+      "overseas_stock": {
+        "total": 2656,
+        "shipImmediately": 2656,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 2656,
+        "shipImmediately": 2656,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 1,
+      "order_multiple": 1,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 1,
+          "unit_price_usd": 2.8385
+        },
+        {
+          "minimum_quantity": 10,
+          "unit_price_usd": 2.4452
+        },
+        {
+          "minimum_quantity": 30,
+          "unit_price_usd": 2.1993
+        },
+        {
+          "minimum_quantity": 100,
+          "unit_price_usd": 1.9486
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 1.8339
+        },
+        {
+          "minimum_quantity": 1000,
+          "unit_price_usd": 1.7847
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 2.8385,
+        "extended_usd": 14.1925
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 2.8385,
+        "extended_usd": 14.1925
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C20345924.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/469f091b93e1da559cb5c8181397a91f.pdf?productCode=C20345924",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C20345924",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C20345924.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_97",
+          "paramName": "放大器数",
+          "paramNameEn": "Number of Channels",
+          "paramValue": "单路",
+          "paramValueEn": "1",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_29810_n",
+          "paramName": "输入失调电流(Ios)",
+          "paramNameEn": "Input Offset Current(Ios)",
+          "paramValue": "1pA",
+          "paramValueEn": "1pA",
+          "paramValueEnForSearch": 1e-12,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 9
+        },
+        {
+          "paramCode": "param_19375",
+          "paramName": "输出模式",
+          "paramNameEn": "Output Mode",
+          "paramValue": "CMOS",
+          "paramValueEn": "CMOS",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 9
+        },
+        {
+          "paramCode": "param_101_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+125℃",
+          "paramValueEn": "-40℃~+125℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 12
+        },
+        {
+          "paramCode": "param_28196_n",
+          "paramName": "输入偏置电流(Ib)",
+          "paramNameEn": "Ib - Input Bias Current",
+          "paramValue": "4.5pA",
+          "paramValueEn": "4.5pA",
+          "paramValueEnForSearch": 4.5e-12,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_15257_n",
+          "paramName": "输入失调电压温漂(Vos TC)",
+          "paramNameEn": "Input Offset Voltage Drift(Vos TC)",
+          "paramValue": "12uV/℃",
+          "paramValueEn": "12uV/℃",
+          "paramValueEnForSearch": 0.012,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_28200",
+          "paramName": "输出类型",
+          "paramNameEn": "Output Type",
+          "paramValue": "推挽",
+          "paramValueEn": "Push-pull",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_28198_n",
+          "paramName": "传播延迟(tpd)",
+          "paramNameEn": "Propagation Delay(tpd)",
+          "paramValue": "4us",
+          "paramValueEn": "4us",
+          "paramValueEnForSearch": 4e-06,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_15247_n",
+          "paramName": "共模抑制比(CMRR)",
+          "paramNameEn": "Common Mode Rejection Ratio(CMRR)",
+          "paramValue": "74dB",
+          "paramValueEn": "74dB",
+          "paramValueEnForSearch": 74.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_28197_n",
+          "paramName": "滞后电压(Vhys)",
+          "paramNameEn": "Input Hysteresis Voltage (Vhys)",
+          "paramValue": "8mV",
+          "paramValueEn": "8mV",
+          "paramValueEnForSearch": 0.008,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_14169_n",
+          "paramName": "静态电流(Iq)",
+          "paramNameEn": "Quiescent Current(Iq)",
+          "paramValue": "2.4uA",
+          "paramValueEn": "2.4uA",
+          "paramValueEnForSearch": 2.4e-06,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_15243_n",
+          "paramName": "输入失调电压(Vos)",
+          "paramNameEn": "Vos - Input Offset Voltage",
+          "paramValue": "300uV",
+          "paramValueEn": "300uV",
+          "paramValueEnForSearch": 0.0003,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_15248",
+          "paramName": "轨到轨",
+          "paramNameEn": "Rail to Rail",
+          "paramValue": "轨到轨输入",
+          "paramValueEn": "Rail-to-rail input",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_32218_n",
+          "paramName": "响应时间(tr)",
+          "paramNameEn": "Response Time (tr)",
+          "paramValue": "10ns",
+          "paramValueEn": "10ns",
+          "paramValueEnForSearch": 1e-08,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 19
+        },
+        {
+          "paramCode": "param_32213_s",
+          "paramName": "单电源",
+          "paramNameEn": "Single Supply",
+          "paramValue": "1.65V~5.5V",
+          "paramValueEn": "1.65V~5.5V",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 14
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C2057826",
+      "requested_mpns": [
+        "TLV9054IRUCR"
+      ],
+      "references_populated": [
+        "U107",
+        "U108"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 2,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:55.480531+00:00",
+      "actual_mpn": "TLV9054IRUCR",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "Quad, 5.5V, 5MHz, 15V/us slew rate, RRIO operational amplifier for cost-optimized applications",
+      "package_actual": "QFN-14(2x2)",
+      "stock_number": 88,
+      "overseas_stock": {
+        "total": 88,
+        "shipImmediately": 88,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 88,
+        "shipImmediately": 88,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 1,
+      "order_multiple": 1,
+      "buy_quantity_populated_only": 2,
+      "buy_quantity_including_dnp": 2,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 1,
+          "unit_price_usd": 1.6579
+        },
+        {
+          "minimum_quantity": 10,
+          "unit_price_usd": 1.4605
+        },
+        {
+          "minimum_quantity": 30,
+          "unit_price_usd": 1.3207
+        },
+        {
+          "minimum_quantity": 100,
+          "unit_price_usd": 1.1924
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 1.1332
+        },
+        {
+          "minimum_quantity": 1000,
+          "unit_price_usd": 1.1102
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 2,
+        "unit_price_usd": 1.6579,
+        "extended_usd": 3.3158
+      },
+      "order_cost_including_dnp": {
+        "quantity": 2,
+        "unit_price_usd": 1.6579,
+        "extended_usd": 3.3158
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C2057826.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/ce993b02a24efa1cc3fc9a9bd8d09abe.pdf?productCode=C2057826",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C2057826",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C2057826.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_13955_n",
+          "paramName": "输出电流",
+          "paramNameEn": "Output Current",
+          "paramValue": "5mA",
+          "paramValueEn": "5mA",
+          "paramValueEnForSearch": 0.005,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_97",
+          "paramName": "放大器数",
+          "paramNameEn": "Number of Channels",
+          "paramValue": "4",
+          "paramValueEn": "4",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_12852_n",
+          "paramName": "输入失调电压(Vos)",
+          "paramNameEn": "Vos - Input Offset Voltage",
+          "paramValue": "330uV",
+          "paramValueEn": "330uV",
+          "paramValueEnForSearch": 0.00033,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_15178_n",
+          "paramName": "压摆率(SR)",
+          "paramNameEn": "Slew Rate",
+          "paramValue": "15V/us",
+          "paramValueEn": "15V/us",
+          "paramValueEnForSearch": 15.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_29810_n",
+          "paramName": "输入失调电流(Ios)",
+          "paramNameEn": "Input Offset Current(Ios)",
+          "paramValue": "1pA",
+          "paramValueEn": "1pA",
+          "paramValueEnForSearch": 1e-12,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 9
+        },
+        {
+          "paramCode": "param_33958_st",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+125℃",
+          "paramValueEn": "-40℃~+125℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_15216_n",
+          "paramName": "共模抑制比(CMRR)",
+          "paramNameEn": "Common Mode Rejection Ratio(CMRR)",
+          "paramValue": "96dB",
+          "paramValueEn": "96dB",
+          "paramValueEnForSearch": 96.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_12848_n",
+          "paramName": "输入偏置电流(Ib)",
+          "paramNameEn": "Ib - Input Bias Current",
+          "paramValue": "2pA",
+          "paramValueEn": "2pA",
+          "paramValueEnForSearch": 2e-12,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_15258_s",
+          "paramName": "输入失调电压温漂(Vos TC)",
+          "paramNameEn": "Input Offset Voltage Drift(Vos TC)",
+          "paramValue": "500nV/℃",
+          "paramValueEn": "500nV/℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_15233_n",
+          "paramName": "静态电流(Iq)",
+          "paramNameEn": "Quiescent Current",
+          "paramValue": "330uA",
+          "paramValueEn": "330uA",
+          "paramValueEnForSearch": 0.00033,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_11882_n",
+          "paramName": "增益带宽积(GBW)",
+          "paramNameEn": "Gain Bandwidth Product",
+          "paramValue": "5MHz",
+          "paramValueEn": "5MHz",
+          "paramValueEnForSearch": 5000000.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_33831",
+          "paramName": "功能特性",
+          "paramNameEn": "Features",
+          "paramValue": "EMI滤波/RF抑制",
+          "paramValueEn": "EMI filtering/RF suppression",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_29812_nt",
+          "paramName": "输入电压噪声密度(eN)",
+          "paramNameEn": "Input Voltage Noise Density",
+          "paramValue": "15nV/√Hz@1kHz",
+          "paramValueEn": "15nV/√Hz@1kHz",
+          "paramValueEnForSearch": 15.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_31872_s",
+          "paramName": "双电源电压(Vee~Vcc)",
+          "paramNameEn": "Dual Supply",
+          "paramValue": "-2.75V~-900mV;900mV~2.75V",
+          "paramValueEn": "-2.75V~-900mV;900mV~2.75V",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_15248",
+          "paramName": "轨到轨",
+          "paramNameEn": "Rail to Rail",
+          "paramValue": "轨到轨输入,轨到轨输出",
+          "paramValueEn": "Rail-to-Rail Input, Rail-to-Rail Output",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_31871_s",
+          "paramName": "单电源电压",
+          "paramNameEn": "Single Supply",
+          "paramValue": "1.8V~5.5V",
+          "paramValueEn": "1.8V~5.5V",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 2
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C2058192",
+      "requested_mpns": [
+        "TLV9004IRUCR"
+      ],
+      "references_populated": [
+        "U101",
+        "U102",
+        "U103",
+        "U104",
+        "U105",
+        "U106",
+        "U109"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 7,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:55.628713+00:00",
+      "actual_mpn": "TLV9004IRUCR",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "Low-power, RRIO, 1MHz operational amplifier",
+      "package_actual": "QFN-14(2x2)",
+      "stock_number": 1209,
+      "overseas_stock": {
+        "total": 1209,
+        "shipImmediately": 1209,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 1209,
+        "shipImmediately": 1209,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 1,
+      "order_multiple": 1,
+      "buy_quantity_populated_only": 7,
+      "buy_quantity_including_dnp": 7,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 1,
+          "unit_price_usd": 0.7539
+        },
+        {
+          "minimum_quantity": 10,
+          "unit_price_usd": 0.6408
+        },
+        {
+          "minimum_quantity": 30,
+          "unit_price_usd": 0.5605
+        },
+        {
+          "minimum_quantity": 100,
+          "unit_price_usd": 0.495
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.4753
+        },
+        {
+          "minimum_quantity": 1000,
+          "unit_price_usd": 0.4622
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 7,
+        "unit_price_usd": 0.7539,
+        "extended_usd": 5.2773
+      },
+      "order_cost_including_dnp": {
+        "quantity": 7,
+        "unit_price_usd": 0.7539,
+        "extended_usd": 5.2773
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C2058192.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/3d7442df79b187b79de046e9a92a61ee.pdf?productCode=C2058192",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C2058192",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C2058192.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_13955_n",
+          "paramName": "输出电流",
+          "paramNameEn": "Output Current",
+          "paramValue": "40mA",
+          "paramValueEn": "40mA",
+          "paramValueEnForSearch": 0.04,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_97",
+          "paramName": "放大器数",
+          "paramNameEn": "Number of Channels",
+          "paramValue": "4",
+          "paramValueEn": "4",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_12852_n",
+          "paramName": "输入失调电压(Vos)",
+          "paramNameEn": "Vos - Input Offset Voltage",
+          "paramValue": "400uV",
+          "paramValueEn": "400uV",
+          "paramValueEnForSearch": 0.0004,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_15178_n",
+          "paramName": "压摆率(SR)",
+          "paramNameEn": "Slew Rate",
+          "paramValue": "2V/us",
+          "paramValueEn": "2V/us",
+          "paramValueEnForSearch": 2.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_29810_n",
+          "paramName": "输入失调电流(Ios)",
+          "paramNameEn": "Input Offset Current(Ios)",
+          "paramValue": "2pA",
+          "paramValueEn": "2pA",
+          "paramValueEnForSearch": 2e-12,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 9
+        },
+        {
+          "paramCode": "param_33958_st",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+125℃",
+          "paramValueEn": "-40℃~+125℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_15216_n",
+          "paramName": "共模抑制比(CMRR)",
+          "paramNameEn": "Common Mode Rejection Ratio(CMRR)",
+          "paramValue": "86dB",
+          "paramValueEn": "86dB",
+          "paramValueEnForSearch": 86.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_12848_n",
+          "paramName": "输入偏置电流(Ib)",
+          "paramNameEn": "Ib - Input Bias Current",
+          "paramValue": "5pA",
+          "paramValueEn": "5pA",
+          "paramValueEnForSearch": 5e-12,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_15258_s",
+          "paramName": "输入失调电压温漂(Vos TC)",
+          "paramNameEn": "Input Offset Voltage Drift(Vos TC)",
+          "paramValue": "600nV/℃",
+          "paramValueEn": "600nV/℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_15233_n",
+          "paramName": "静态电流(Iq)",
+          "paramNameEn": "Quiescent Current",
+          "paramValue": "60uA",
+          "paramValueEn": "60uA",
+          "paramValueEnForSearch": 6e-05,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_11882_n",
+          "paramName": "增益带宽积(GBW)",
+          "paramNameEn": "Gain Bandwidth Product",
+          "paramValue": "1MHz",
+          "paramValueEn": "1MHz",
+          "paramValueEnForSearch": 1000000.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_33831",
+          "paramName": "功能特性",
+          "paramNameEn": "Features",
+          "paramValue": "EMI滤波/RF抑制",
+          "paramValueEn": "EMI filtering/RF suppression",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_29812_nt",
+          "paramName": "输入电压噪声密度(eN)",
+          "paramNameEn": "Input Voltage Noise Density",
+          "paramValue": "27nV/√Hz@1kHz",
+          "paramValueEn": "27nV/√Hz@1kHz",
+          "paramValueEnForSearch": 27.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_31872_s",
+          "paramName": "双电源电压(Vee~Vcc)",
+          "paramNameEn": "Dual Supply",
+          "paramValue": "-2.75V~-900mV;900mV~2.75V",
+          "paramValueEn": "-2.75V~-900mV;900mV~2.75V",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_15248",
+          "paramName": "轨到轨",
+          "paramNameEn": "Rail to Rail",
+          "paramValue": "轨到轨输入,轨到轨输出",
+          "paramValueEn": "Rail-to-Rail Input, Rail-to-Rail Output",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_31871_s",
+          "paramName": "单电源电压",
+          "paramNameEn": "Single Supply",
+          "paramValue": "1.8V~5.5V",
+          "paramValueEn": "1.8V~5.5V",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 2
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C20917",
+      "requested_mpns": [
+        "AO3400A"
+      ],
+      "references_populated": [
+        "Q503",
+        "Q504",
+        "Q505",
+        "Q506",
+        "Q507",
+        "Q508"
+      ],
+      "references_dnp": [
+        "Q509",
+        "Q510"
+      ],
+      "board_quantity_populated": 6,
+      "board_quantity_dnp": 2,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SOT-23"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:55.856333+00:00",
+      "actual_mpn": "AO3400A",
+      "mpn_exact_match": true,
+      "manufacturer": "AOS",
+      "product_description": "MOSFET N-CH 30V SOT-23",
+      "package_actual": "SOT-23",
+      "stock_number": 539980,
+      "overseas_stock": {
+        "total": 539980,
+        "shipImmediately": 539980,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 539980,
+        "shipImmediately": 539980,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 10,
+      "buy_quantity_including_dnp": 10,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.0898
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.0724
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.0634
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.056
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.0534
+        },
+        {
+          "minimum_quantity": 6000,
+          "unit_price_usd": 0.0517
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 10,
+        "unit_price_usd": 0.0898,
+        "extended_usd": 0.898
+      },
+      "order_cost_including_dnp": {
+        "quantity": 10,
+        "unit_price_usd": 0.0898,
+        "extended_usd": 0.898
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C20917.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/130876b936da464599428c58fd8de8f6.pdf?productCode=C20917",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C20917",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C20917.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_32500_n",
+          "paramName": "输出电容(Coss)",
+          "paramNameEn": "Output Capacitance(Coss)",
+          "paramValue": "75pF",
+          "paramValueEn": "75pF",
+          "paramValueEnForSearch": 75.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 11
+        },
+        {
+          "paramCode": "param_11368_nt",
+          "paramName": "输入电容(Ciss)",
+          "paramNameEn": "Ciss-Input Capacitance",
+          "paramValue": "630pF",
+          "paramValueEn": "630pF",
+          "paramValueEnForSearch": 630.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_11369_n",
+          "paramName": "耗散功率(Pd)",
+          "paramNameEn": "Pd - Power Dissipation",
+          "paramValue": "1.4W",
+          "paramValueEn": "1.4W",
+          "paramValueEnForSearch": 1.4,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_26782",
+          "paramName": "配置",
+          "paramNameEn": "Configuration",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_15045_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-55℃~+150℃",
+          "paramValueEn": "-55℃~+150℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_11380_n",
+          "paramName": "漏源电压(Vdss)",
+          "paramNameEn": "Drain to Source Voltage",
+          "paramValue": "30V",
+          "paramValueEn": "30V",
+          "paramValueEnForSearch": 30.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_11381_n",
+          "paramName": "连续漏极电流(Id)",
+          "paramNameEn": "Current - Continuous Drain(Id)",
+          "paramValue": "5.7A",
+          "paramValueEn": "5.7A",
+          "paramValueEnForSearch": 5.7,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_26793_n",
+          "paramName": "反向传输电容(Crss)",
+          "paramNameEn": "Reverse Transfer Capacitance (Crss)",
+          "paramValue": "50pF",
+          "paramValueEn": "50pF",
+          "paramValueEnForSearch": 50.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_14508_n",
+          "paramName": "导通电阻",
+          "paramNameEn": "RDS(on)",
+          "paramValue": "48mΩ@2.5V",
+          "paramValueEn": "48mΩ@2.5V",
+          "paramValueEnForSearch": 0.048,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_11379",
+          "paramName": "数量",
+          "paramNameEn": "Number",
+          "paramValue": "1个N沟道",
+          "paramValueEn": "1 N-channel",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_11385_nt",
+          "paramName": "栅极电荷量(Qg)",
+          "paramNameEn": "Gate Charge(Qg)",
+          "paramValue": "7nC@10V",
+          "paramValueEn": "7nC@10V",
+          "paramValueEnForSearch": 7e-09,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_33353_s",
+          "paramName": "栅极电压(Vgs)",
+          "paramNameEn": "Vgs",
+          "paramValue": "±12V",
+          "paramValueEn": "±12V",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 14
+        },
+        {
+          "paramCode": "param_26878_n",
+          "paramName": "阈值电压(Vgs(th))",
+          "paramNameEn": "Gate Threshold Voltage (Vgs(th))",
+          "paramValue": "1.45V",
+          "paramValueEn": "1.45V",
+          "paramValueEnForSearch": 1.45,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_14503",
+          "paramName": "类型",
+          "paramNameEn": "Type",
+          "paramValue": "N沟道",
+          "paramValueEn": "N-Channel",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C22378853",
+      "requested_mpns": [
+        "MLPF-WB-04D3"
+      ],
+      "references_populated": [
+        "U402"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "CSPG-6 1.6x1.0mm P0.5mm"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:55.866704+00:00",
+      "actual_mpn": "MLPF-WB-04D3",
+      "mpn_exact_match": true,
+      "manufacturer": "ST",
+      "product_description": "2.4 GHz low pass filter matched to STM32WBA QFN and BGA series",
+      "package_actual": "CSPGBGA-6(1x1.6)",
+      "stock_number": 192,
+      "overseas_stock": {
+        "total": 192,
+        "shipImmediately": 192,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 192,
+        "shipImmediately": 192,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 1,
+      "order_multiple": 1,
+      "buy_quantity_populated_only": 1,
+      "buy_quantity_including_dnp": 1,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 1,
+          "unit_price_usd": 0.7166
+        },
+        {
+          "minimum_quantity": 10,
+          "unit_price_usd": 0.5737
+        },
+        {
+          "minimum_quantity": 30,
+          "unit_price_usd": 0.5013
+        },
+        {
+          "minimum_quantity": 100,
+          "unit_price_usd": 0.4307
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.3879
+        },
+        {
+          "minimum_quantity": 1000,
+          "unit_price_usd": 0.3666
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 1,
+        "unit_price_usd": 0.7166,
+        "extended_usd": 0.7166
+      },
+      "order_cost_including_dnp": {
+        "quantity": 1,
+        "unit_price_usd": 0.7166,
+        "extended_usd": 0.7166
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C22378853.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/46776f5bf44cc61a5ab5d955e0abc20e.pdf?productCode=C22378853",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C22378853",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C22378853.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_32910_s",
+          "paramName": "相对带宽",
+          "paramNameEn": "Relative Bandwidth",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 8
+        },
+        {
+          "paramCode": "param_14044_n",
+          "paramName": "阻抗",
+          "paramNameEn": "Impedance",
+          "paramValue": "50Ω",
+          "paramValueEn": "50Ω",
+          "paramValueEnForSearch": 50.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_32907_n",
+          "paramName": "中心频率",
+          "paramNameEn": "Frequency - Center",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_32532",
+          "paramName": "滤波器类型",
+          "paramNameEn": "Type of Filter",
+          "paramValue": "低通",
+          "paramValueEn": "Low Pass",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_32908_n",
+          "paramName": "截止频率",
+          "paramNameEn": "Cut-Off Frequency",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_32906_n",
+          "paramName": "衰减",
+          "paramNameEn": "Attenuation",
+          "paramValue": "66dB;61dB;51dB;40dB",
+          "paramValueEn": "66dB;61dB;51dB;40dB",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_14809_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+105℃",
+          "paramValueEn": "-40℃~+105℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_14969_n",
+          "paramName": "插入损耗",
+          "paramNameEn": "Insertion Loss",
+          "paramValue": "1.2dB",
+          "paramValueEn": "1.2dB",
+          "paramValueEnForSearch": 1.2,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C3681751",
+      "requested_mpns": [
+        "BQ29737DSER"
+      ],
+      "references_populated": [],
+      "references_dnp": [
+        "U514"
+      ],
+      "board_quantity_populated": 0,
+      "board_quantity_dnp": 1,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "WSON-6_1.5x1.5mm"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:55.903321+00:00",
+      "actual_mpn": "BQ29737DSER",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "Voltage and current protection integrated circuits (for single-cell lithium-ion/lithium-polymer batteries)",
+      "package_actual": "WSON-6(1.5x1.5)",
+      "stock_number": 192,
+      "overseas_stock": {
+        "total": 192,
+        "shipImmediately": 192,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 192,
+        "shipImmediately": 192,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 1,
+      "order_multiple": 1,
+      "buy_quantity_populated_only": 0,
+      "buy_quantity_including_dnp": 1,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 1,
+          "unit_price_usd": 0.6763
+        },
+        {
+          "minimum_quantity": 200,
+          "unit_price_usd": 0.3402
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.3327
+        },
+        {
+          "minimum_quantity": 1000,
+          "unit_price_usd": 0.329
+        }
+      ],
+      "populated_order_cost": null,
+      "order_cost_including_dnp": {
+        "quantity": 1,
+        "unit_price_usd": 0.6763,
+        "extended_usd": 0.6763
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C3681751.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/8cdb12587a2c393fe9a675696107a566.pdf?productCode=C3681751",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C3681751",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C3681751.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_15045_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+85℃",
+          "paramValueEn": "-40℃~+85℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_15042",
+          "paramName": "接口类型",
+          "paramNameEn": "Interface",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_31468_n",
+          "paramName": "静态电流(Iq)",
+          "paramNameEn": "Quiescent Current",
+          "paramValue": "4uA",
+          "paramValueEn": "4uA",
+          "paramValueEnForSearch": 4e-06,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 23
+        },
+        {
+          "paramCode": "param_31818",
+          "paramName": "0V电池充电",
+          "paramNameEn": "0V Battery Charge",
+          "paramValue": "支持",
+          "paramValueEn": "Support",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 58
+        },
+        {
+          "paramCode": "param_31466_s",
+          "paramName": "工作电压",
+          "paramNameEn": "Operating Voltage",
+          "paramValue": "1.5V~8V",
+          "paramValueEn": "1.5V~8V",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_14517",
+          "paramName": "电池类型",
+          "paramNameEn": "Type of Battery",
+          "paramValue": "锂电池",
+          "paramValueEn": "Lithium Battery",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 35
+        },
+        {
+          "paramCode": "param_33817",
+          "paramName": "功能特性",
+          "paramNameEn": "Features",
+          "paramValue": "过充保护;过放保护;过流保护;短路保护",
+          "paramValueEn": "Overcharge protection;Over-discharge protection;Overcurrent Protection;Short-Circuit  Protection",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_14518",
+          "paramName": "芯片类型",
+          "paramNameEn": "The Chip Type",
+          "paramValue": "保护芯片",
+          "paramValueEn": "Protection IC",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_31820_n",
+          "paramName": "均衡电流",
+          "paramNameEn": "Balance Current",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 66
+        },
+        {
+          "paramCode": "param_14520_n",
+          "paramName": "最大充电电流",
+          "paramNameEn": "Charge Current - Max",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 19
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C528987",
+      "requested_mpns": [
+        "NX3215SA 32.768KHZ EXS00A-MU00525"
+      ],
+      "references_populated": [
+        "Y402"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SMD3215-2"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.106133+00:00",
+      "actual_mpn": "NX3215SA 32.768KHZ EXS00A-MU00525",
+      "mpn_exact_match": true,
+      "manufacturer": "NDK",
+      "product_description": "CRYSTAL 32.768kHz 6pF SMD",
+      "package_actual": "SMD3215-2P",
+      "stock_number": 6095,
+      "overseas_stock": {
+        "total": 6095,
+        "shipImmediately": 6095,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 6095,
+        "shipImmediately": 6095,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.3433
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.2715
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.2407
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.2022
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.3433,
+        "extended_usd": 1.7165
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.3433,
+        "extended_usd": 1.7165
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C528987.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/524bac56b55e65eca5bbcc5105004c56.pdf?productCode=C528987",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C528987",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C528987.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_10915_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+85℃",
+          "paramValueEn": "-40℃~+85℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_11376_n",
+          "paramName": "负载电容",
+          "paramNameEn": "Load Capacitance",
+          "paramValue": "6pF",
+          "paramValueEn": "6pF",
+          "paramValueEnForSearch": 6.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_11377_n",
+          "paramName": "等效串联电阻(ESR)",
+          "paramNameEn": "Equivalent Series Resistance(ESR)",
+          "paramValue": "70kΩ",
+          "paramValueEn": "70kΩ",
+          "paramValueEnForSearch": 70000.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 15
+        },
+        {
+          "paramCode": "param_29445_n",
+          "paramName": "频率",
+          "paramNameEn": "Frequency",
+          "paramValue": "32.768kHz",
+          "paramValueEn": "32.768kHz",
+          "paramValueEnForSearch": 32768.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C5439722",
+      "requested_mpns": [
+        "MF52D103F3435L100"
+      ],
+      "references_populated": [
+        "RT501"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "OFFBOARD_MANUAL"
+      ],
+      "package_requested": [
+        "External_leaded_thermistor"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.117753+00:00",
+      "actual_mpn": "MF52D103F3435L100",
+      "mpn_exact_match": true,
+      "manufacturer": "SURGING",
+      "product_description": "THERMISTOR NTC 10kΩ 3435K",
+      "package_actual": "-",
+      "stock_number": 5320,
+      "overseas_stock": {
+        "total": 5320,
+        "shipImmediately": 5320,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 5320,
+        "shipImmediately": 5320,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.1127
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.0899
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.0785
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.07
+        },
+        {
+          "minimum_quantity": 2000,
+          "unit_price_usd": 0.0631
+        },
+        {
+          "minimum_quantity": 5000,
+          "unit_price_usd": 0.0597
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.1127,
+        "extended_usd": 0.5635
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.1127,
+        "extended_usd": 0.5635
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C5439722.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/a8423ab09e4698fd24b51728e5334c7d.pdf?productCode=C5439722",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C5439722",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C5439722.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_32032_n",
+          "paramName": "高度",
+          "paramNameEn": "Height",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 22
+        },
+        {
+          "paramCode": "param_11304_n",
+          "paramName": "阻值",
+          "paramNameEn": "Resistance @ 25℃",
+          "paramValue": "10kΩ",
+          "paramValueEn": "10kΩ",
+          "paramValueEnForSearch": 10000.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_32031_n",
+          "paramName": "宽度",
+          "paramNameEn": "Width",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 21
+        },
+        {
+          "paramCode": "param_32033_n",
+          "paramName": "脚间距",
+          "paramNameEn": "Pitch",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 23
+        },
+        {
+          "paramCode": "param_11312_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-30℃~+105℃",
+          "paramValueEn": "-30℃~+105℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 16
+        },
+        {
+          "paramCode": "param_11311_n",
+          "paramName": "B值(25℃/100℃)",
+          "paramNameEn": "B Constant (25℃/100℃)",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 12
+        },
+        {
+          "paramCode": "param_32030_n",
+          "paramName": "长度",
+          "paramNameEn": "Length",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 20
+        },
+        {
+          "paramCode": "param_11314_n",
+          "paramName": "最大稳态电流(25℃)",
+          "paramNameEn": "Steady State Current (Max)",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 15
+        },
+        {
+          "paramCode": "param_11309_n",
+          "paramName": "B值(25℃/75℃)",
+          "paramNameEn": "B Constant (25℃/75℃)",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 8
+        },
+        {
+          "paramCode": "param_11308_n",
+          "paramName": "B值(25℃/50℃)",
+          "paramNameEn": "B Constant (25℃/50℃)",
+          "paramValue": "3435K",
+          "paramValueEn": "3435K",
+          "paramValueEnForSearch": 3435.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_11305_s",
+          "paramName": "电阻精度",
+          "paramNameEn": "Resistance Tolerance",
+          "paramValue": "±1%",
+          "paramValueEn": "±1%",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_10837_n",
+          "paramName": "功率",
+          "paramNameEn": "Power(Watts)",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 9
+        },
+        {
+          "paramCode": "param_32029_n",
+          "paramName": "直径(φD)",
+          "paramNameEn": "Diameter (φD)",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 19
+        },
+        {
+          "paramCode": "param_32028_n",
+          "paramName": "热时间常数",
+          "paramNameEn": "Thermal Time Constant",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 18
+        },
+        {
+          "paramCode": "param_11310_n",
+          "paramName": "B值(25℃/85℃)",
+          "paramNameEn": "B Constant (25℃/85℃)",
+          "paramValue": "3435K",
+          "paramValueEn": "3435K",
+          "paramValueEnForSearch": 3435.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_11306",
+          "paramName": "B值精度",
+          "paramNameEn": "B Constant Tolerance",
+          "paramValue": "±1%",
+          "paramValueEn": "±1%",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 14
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C6364663",
+      "requested_mpns": [
+        "FPC 0.5-18P HYH2.0"
+      ],
+      "references_populated": [
+        "J301"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "FFC 18P 0.5mm double-sided contacts right-angle"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.143013+00:00",
+      "actual_mpn": "FPC 0.5-18P HYH2.0",
+      "mpn_exact_match": true,
+      "manufacturer": "SHOU HAN",
+      "product_description": "CONN FFC FPC 18POS 0.5mm TOP AND BOTTOM CNT SMD R/A",
+      "package_actual": "SMD,P=0.5mm,Surface Mount,Right Angle",
+      "stock_number": 24335,
+      "overseas_stock": {
+        "total": 24335,
+        "shipImmediately": 24335,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 24335,
+        "shipImmediately": 24335,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.1965
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.1563
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.1391
+        },
+        {
+          "minimum_quantity": 1500,
+          "unit_price_usd": 0.1168
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.1072
+        },
+        {
+          "minimum_quantity": 4500,
+          "unit_price_usd": 0.1014
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.1965,
+        "extended_usd": 0.9825
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.1965,
+        "extended_usd": 0.9825
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C6364663.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/49aea12409976e716898b25cdae6481e.pdf?productCode=C6364663",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C6364663",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C6364663.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_13509",
+          "paramName": "锁定特性",
+          "paramNameEn": "Locking Feature",
+          "paramValue": "翻盖式",
+          "paramValueEn": "Flip-Top",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_13516_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-25℃~+85℃",
+          "paramValueEn": "-25℃~+85℃",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 33
+        },
+        {
+          "paramCode": "param_13508",
+          "paramName": "触点数量",
+          "paramNameEn": "Number of Contacts",
+          "paramValue": "18P",
+          "paramValueEn": "18P",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_13675_n",
+          "paramName": "间距",
+          "paramNameEn": "Pitch",
+          "paramValue": "0.5mm",
+          "paramValueEn": "0.5mm",
+          "paramValueEnForSearch": 0.5,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_13207_n",
+          "paramName": "额定电流",
+          "paramNameEn": "Current Rating",
+          "paramValue": "500mA",
+          "paramValueEn": "500mA",
+          "paramValueEnForSearch": 0.5,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 30
+        },
+        {
+          "paramCode": "param_13208_n",
+          "paramName": "额定电压",
+          "paramNameEn": "Voltage Rating (Max)",
+          "paramValue": "50V",
+          "paramValueEn": "50V",
+          "paramValueEnForSearch": 50.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 32
+        },
+        {
+          "paramCode": "param_13770",
+          "paramName": "触头镀层",
+          "paramNameEn": "Contact Plating",
+          "paramValue": "锡",
+          "paramValueEn": "Tin",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 14
+        },
+        {
+          "paramCode": "param_13511",
+          "paramName": "触点类型",
+          "paramNameEn": "Contact Type",
+          "paramValue": "双侧触点/上下接",
+          "paramValueEn": "Double-Sided Contacts, Top and Bottom Entry",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_13510",
+          "paramName": "安装方式",
+          "paramNameEn": "Mounting Type",
+          "paramValue": "卧贴",
+          "paramValueEn": "Surface Mount, Right Angle",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 17
+        },
+        {
+          "paramCode": "param_13513_s",
+          "paramName": "接入柔性电缆厚度",
+          "paramNameEn": "FFC, FCB Thickness",
+          "paramValue": "0.3mm",
+          "paramValueEn": "0.3mm",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 23
+        },
+        {
+          "paramCode": "param_13769",
+          "paramName": "触头材质",
+          "paramNameEn": "Contact Material",
+          "paramValue": "磷青铜",
+          "paramValueEn": "Phosphor bronze",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 12
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C6936300",
+      "requested_mpns": [],
+      "references_populated": [],
+      "references_dnp": [],
+      "board_quantity_populated": 0,
+      "board_quantity_dnp": 0,
+      "external_quantity": 1,
+      "assembly": [
+        "OFFBOARD_MANUAL"
+      ],
+      "package_requested": [],
+      "scope": "EXTERNAL_ACCEPTED_ITEM",
+      "note": "18-position FFC cable for J301; exact catalogue MPN and geometry to verify",
+      "retrieved_at_utc": "2026-10-02T13:20:56.165609+00:00",
+      "actual_mpn": "FFC-0.5-18P-50mm",
+      "mpn_exact_match": true,
+      "manufacturer": "SHOU HAN",
+      "product_description": "CABLE FFC/FPC 18POS 0.5mm",
+      "package_actual": "P=0.5mm",
+      "stock_number": 400,
+      "overseas_stock": {
+        "total": 400,
+        "shipImmediately": 400,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 400,
+        "shipImmediately": 400,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 10,
+      "order_multiple": 10,
+      "buy_quantity_populated_only": 10,
+      "buy_quantity_including_dnp": 10,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 10,
+          "unit_price_usd": 0.058
+        },
+        {
+          "minimum_quantity": 100,
+          "unit_price_usd": 0.0457
+        },
+        {
+          "minimum_quantity": 300,
+          "unit_price_usd": 0.0396
+        },
+        {
+          "minimum_quantity": 1000,
+          "unit_price_usd": 0.035
+        },
+        {
+          "minimum_quantity": 5000,
+          "unit_price_usd": 0.0313
+        },
+        {
+          "minimum_quantity": 10000,
+          "unit_price_usd": 0.0295
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 10,
+        "unit_price_usd": 0.058,
+        "extended_usd": 0.58
+      },
+      "order_cost_including_dnp": {
+        "quantity": 10,
+        "unit_price_usd": 0.058,
+        "extended_usd": 0.58
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C6936300.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/79b16594411987bdf321e7b5c0a847e0.pdf?productCode=C6936300",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C6936300",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C6936300.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_13505_s",
+          "paramName": "插入厚度",
+          "paramNameEn": "Insert Thickness",
+          "paramValue": "0.3mm",
+          "paramValueEn": "0.3mm",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        },
+        {
+          "paramCode": "param_13502",
+          "paramName": "总PIN数",
+          "paramNameEn": "Number of Pins",
+          "paramValue": "18P",
+          "paramValueEn": "18P",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_13503_n",
+          "paramName": "间距",
+          "paramNameEn": "Pitch",
+          "paramValue": "0.5mm",
+          "paramValueEn": "0.5mm",
+          "paramValueEnForSearch": 0.5,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_13506",
+          "paramName": "触点",
+          "paramNameEn": "Contact Location",
+          "paramValue": "同向",
+          "paramValueEn": "Same Side",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_13504_n",
+          "paramName": "总长度",
+          "paramNameEn": "Total Length",
+          "paramValue": "5cm",
+          "paramValueEn": "5cm",
+          "paramValueEnForSearch": 50.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C77108",
+      "requested_mpns": [
+        "LQG15HS2N7S02D"
+      ],
+      "references_populated": [
+        "L401"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "0402"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.180775+00:00",
+      "actual_mpn": "LQG15HS2N7S02D",
+      "mpn_exact_match": true,
+      "manufacturer": "muRata",
+      "product_description": "FIXED IND 2.7nH 800mA 120mΩ 0402",
+      "package_actual": "0402",
+      "stock_number": 25600,
+      "overseas_stock": {
+        "total": 25600,
+        "shipImmediately": 25600,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 25600,
+        "shipImmediately": 25600,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 50,
+      "order_multiple": 50,
+      "buy_quantity_populated_only": 50,
+      "buy_quantity_including_dnp": 50,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.0216
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.0176
+        },
+        {
+          "minimum_quantity": 1500,
+          "unit_price_usd": 0.0153
+        },
+        {
+          "minimum_quantity": 10000,
+          "unit_price_usd": 0.0139
+        },
+        {
+          "minimum_quantity": 20000,
+          "unit_price_usd": 0.0128
+        },
+        {
+          "minimum_quantity": 50000,
+          "unit_price_usd": 0.0121
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 50,
+        "unit_price_usd": 0.0216,
+        "extended_usd": 1.08
+      },
+      "order_cost_including_dnp": {
+        "quantity": 50,
+        "unit_price_usd": 0.0216,
+        "extended_usd": 1.08
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C77108.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/034feb052b73b07a04cfb54c2dbdd7b8.pdf?productCode=C77108",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C77108",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C77108.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_11284_n",
+          "paramName": "额定电流",
+          "paramNameEn": "Current Rating",
+          "paramValue": "800mA",
+          "paramValueEn": "800mA",
+          "paramValueEnForSearch": 0.8,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_11282_n",
+          "paramName": "电感值",
+          "paramNameEn": "Inductance",
+          "paramValue": "2.7nH",
+          "paramValueEn": "2.7nH",
+          "paramValueEnForSearch": 0.0027,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_11283_s",
+          "paramName": "精度",
+          "paramNameEn": "Tolerance",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_11288_n",
+          "paramName": "自谐振频率",
+          "paramNameEn": "Frequency - Self Resonant",
+          "paramValue": "6GHz",
+          "paramValueEn": "6GHz",
+          "paramValueEnForSearch": 6000000000.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 19
+        },
+        {
+          "paramCode": "param_11296_n",
+          "paramName": "饱和电流(Isat)",
+          "paramNameEn": "Current - Saturation(Isat)",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_11286_n",
+          "paramName": "直流电阻(DCR)",
+          "paramNameEn": "DC Resistance(DCR)",
+          "paramValue": "150mΩ",
+          "paramValueEn": "150mΩ",
+          "paramValueEnForSearch": 0.15,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 14
+        },
+        {
+          "paramCode": "param_11256",
+          "paramName": "类型",
+          "paramNameEn": "Type",
+          "paramValue": "叠层电感",
+          "paramValueEn": "Multilayer inductor",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 18
+        },
+        {
+          "paramCode": "param_11287_nt",
+          "paramName": "品质因数",
+          "paramNameEn": "Q @ Frequency",
+          "paramValue": "8@100MHz",
+          "paramValueEn": "8@100MHz",
+          "paramValueEnForSearch": 8.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 16
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C77109",
+      "requested_mpns": [
+        "LQG15HS3N9S02D"
+      ],
+      "references_populated": [
+        "L402"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "0402"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.388830+00:00",
+      "actual_mpn": "LQG15HS3N9S02D",
+      "mpn_exact_match": true,
+      "manufacturer": "muRata",
+      "product_description": "FIXED IND 3.9nH 750mA 140mΩ 0402",
+      "package_actual": "0402",
+      "stock_number": 55350,
+      "overseas_stock": {
+        "total": 55350,
+        "shipImmediately": 55350,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 55350,
+        "shipImmediately": 55350,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 50,
+      "order_multiple": 50,
+      "buy_quantity_populated_only": 50,
+      "buy_quantity_including_dnp": 50,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.0177
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.0144
+        },
+        {
+          "minimum_quantity": 1500,
+          "unit_price_usd": 0.0126
+        },
+        {
+          "minimum_quantity": 10000,
+          "unit_price_usd": 0.0115
+        },
+        {
+          "minimum_quantity": 20000,
+          "unit_price_usd": 0.0106
+        },
+        {
+          "minimum_quantity": 50000,
+          "unit_price_usd": 0.0101
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 50,
+        "unit_price_usd": 0.0177,
+        "extended_usd": 0.885
+      },
+      "order_cost_including_dnp": {
+        "quantity": 50,
+        "unit_price_usd": 0.0177,
+        "extended_usd": 0.885
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C77109.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/034feb052b73b07a04cfb54c2dbdd7b8.pdf?productCode=C77109",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C77109",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C77109.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_11284_n",
+          "paramName": "额定电流",
+          "paramNameEn": "Current Rating",
+          "paramValue": "750mA",
+          "paramValueEn": "750mA",
+          "paramValueEnForSearch": 0.75,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_11282_n",
+          "paramName": "电感值",
+          "paramNameEn": "Inductance",
+          "paramValue": "3.9nH",
+          "paramValueEn": "3.9nH",
+          "paramValueEnForSearch": 0.0039,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_11283_s",
+          "paramName": "精度",
+          "paramNameEn": "Tolerance",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_11288_n",
+          "paramName": "自谐振频率",
+          "paramNameEn": "Frequency - Self Resonant",
+          "paramValue": "6GHz",
+          "paramValueEn": "6GHz",
+          "paramValueEnForSearch": 6000000000.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 19
+        },
+        {
+          "paramCode": "param_11296_n",
+          "paramName": "饱和电流(Isat)",
+          "paramNameEn": "Current - Saturation(Isat)",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_11286_n",
+          "paramName": "直流电阻(DCR)",
+          "paramNameEn": "DC Resistance(DCR)",
+          "paramValue": "180mΩ",
+          "paramValueEn": "180mΩ",
+          "paramValueEnForSearch": 0.18,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 14
+        },
+        {
+          "paramCode": "param_11256",
+          "paramName": "类型",
+          "paramNameEn": "Type",
+          "paramValue": "叠层电感",
+          "paramValueEn": "Multilayer inductor",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 18
+        },
+        {
+          "paramCode": "param_11287_nt",
+          "paramName": "品质因数",
+          "paramNameEn": "Q @ Frequency",
+          "paramValue": "8@100MHz",
+          "paramValueEn": "8@100MHz",
+          "paramValueEnForSearch": 8.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 16
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C7827",
+      "requested_mpns": [
+        "SN74LVC1G04DBVR"
+      ],
+      "references_populated": [
+        "U509"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SOT-23-5"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.405595+00:00",
+      "actual_mpn": "SN74LVC1G04DBVR",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "Single Inverter Gate",
+      "package_actual": "SOT-23-5",
+      "stock_number": 131780,
+      "overseas_stock": {
+        "total": 131780,
+        "shipImmediately": 131780,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 131780,
+        "shipImmediately": 131780,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.0819
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.0651
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.0566
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.0503
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.0453
+        },
+        {
+          "minimum_quantity": 6000,
+          "unit_price_usd": 0.0428
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.0819,
+        "extended_usd": 0.4095
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.0819,
+        "extended_usd": 0.4095
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C7827.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/cbb5b11e6f66448a899553349c0f7b2e.pdf?productCode=C7827",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C7827",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C7827.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_14165",
+          "paramName": "输入类型",
+          "paramNameEn": "Input Type",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_15167",
+          "paramName": "系列",
+          "paramNameEn": "Logic Family",
+          "paramValue": "74LVC",
+          "paramValueEn": "74LVC",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 46
+        },
+        {
+          "paramCode": "param_14168_s",
+          "paramName": "工作电压",
+          "paramNameEn": "Voltage - Supply",
+          "paramValue": "1.65V~5.5V",
+          "paramValueEn": "1.65V~5.5V",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 8
+        },
+        {
+          "paramCode": "param_15047_s",
+          "paramName": "输出低电平(VOL)",
+          "paramNameEn": "Output Logic Level - Low",
+          "paramValue": "400mV",
+          "paramValueEn": "400mV",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 55
+        },
+        {
+          "paramCode": "param_12829_nt",
+          "paramName": "传播延迟(tpd)",
+          "paramNameEn": "Propagation Delay",
+          "paramValue": "3.7ns@5V,50pF",
+          "paramValueEn": "3.7ns@5V,50pF",
+          "paramValueEnForSearch": 3.7e-09,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 48
+        },
+        {
+          "paramCode": "param_33856",
+          "paramName": "功能特性",
+          "paramNameEn": "Features",
+          "paramValue": "电源关断保护",
+          "paramValueEn": "Power shutdown protection",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 89
+        },
+        {
+          "paramCode": "param_15263_s",
+          "paramName": "输入低电平(VIL)",
+          "paramNameEn": "Input Logic Level - Low",
+          "paramValue": "700mV~800mV",
+          "paramValueEn": "700mV~800mV",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 16
+        },
+        {
+          "paramCode": "param_15045_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+125℃",
+          "paramValueEn": "-40℃~+125℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 30
+        },
+        {
+          "paramCode": "param_15262_s",
+          "paramName": "输入高电平(VIH)",
+          "paramNameEn": "Input Logic Level - High",
+          "paramValue": "1.7V~2V",
+          "paramValueEn": "1.7V~2V",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 13
+        },
+        {
+          "paramCode": "param_15264_s",
+          "paramName": "输出高电平(VOH)",
+          "paramNameEn": "Output Logic Level - High",
+          "paramValue": "2.4V",
+          "paramValueEn": "2.4V",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 18
+        },
+        {
+          "paramCode": "param_14169_n",
+          "paramName": "静态电流(Iq)",
+          "paramNameEn": "Quiescent Current(Iq)",
+          "paramValue": "10uA",
+          "paramValueEn": "10uA",
+          "paramValueEnForSearch": 1e-05,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 21
+        },
+        {
+          "paramCode": "param_11877",
+          "paramName": "放大器数",
+          "paramNameEn": "Number of Channels",
+          "paramValue": "1",
+          "paramValueEn": "1",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_14172_n",
+          "paramName": "拉电流(IOH)",
+          "paramNameEn": "Current - Output High(IOH)",
+          "paramValue": "32mA",
+          "paramValueEn": "32mA",
+          "paramValueEnForSearch": 0.032,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 40
+        },
+        {
+          "paramCode": "param_14171_n",
+          "paramName": "灌电流(IOL)",
+          "paramNameEn": "Current - Output Low(IOL)",
+          "paramValue": "32mA",
+          "paramValueEn": "32mA",
+          "paramValueEnForSearch": 0.032,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 35
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C7836",
+      "requested_mpns": [
+        "SN74LVC1G17DBVR"
+      ],
+      "references_populated": [
+        "U508",
+        "U510"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 2,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SOT-23-5"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.434042+00:00",
+      "actual_mpn": "SN74LVC1G17DBVR",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "Single Schmitt-Trigger Buffer",
+      "package_actual": "SOT-23-5",
+      "stock_number": 56045,
+      "overseas_stock": {
+        "total": 56045,
+        "shipImmediately": 56045,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 56045,
+        "shipImmediately": 56045,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.1695
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.1295
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.1099
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.0924
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.0876
+        },
+        {
+          "minimum_quantity": 6000,
+          "unit_price_usd": 0.0848
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.1695,
+        "extended_usd": 0.8475
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.1695,
+        "extended_usd": 0.8475
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C7836.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/04639bf0e5ff412faadcab7a205f61b5.pdf?productCode=C7836",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C7836",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C7836.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_14142",
+          "paramName": "输入类型",
+          "paramNameEn": "Input type",
+          "paramValue": "施密特触发器",
+          "paramValueEn": "Schmitt trigger",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_12880_s",
+          "paramName": "工作电压",
+          "paramNameEn": "Voltage - Supply",
+          "paramValue": "1.65V~5.5V",
+          "paramValueEn": "1.65V~5.5V",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_10382",
+          "paramName": "输出类型",
+          "paramNameEn": "Output Type",
+          "paramValue": "推挽式",
+          "paramValueEn": "Push-pull",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 32
+        },
+        {
+          "paramCode": "param_15116_st",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+125℃",
+          "paramValueEn": "-40℃~+125℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_31744_n",
+          "paramName": "静态电流",
+          "paramNameEn": "Quiescent Supply Current",
+          "paramValue": "10uA",
+          "paramValueEn": "10uA",
+          "paramValueEnForSearch": 1e-05,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 9
+        },
+        {
+          "paramCode": "param_12816",
+          "paramName": "功能",
+          "paramNameEn": "Function",
+          "paramValue": "掉电隔离;电平转换",
+          "paramValueEn": "Power-off isolation;Level shifting",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 59
+        },
+        {
+          "paramCode": "param_14219_n",
+          "paramName": "拉电流(IOH)",
+          "paramNameEn": "Current - Output High(IOH)",
+          "paramValue": "32mA",
+          "paramValueEn": "32mA",
+          "paramValueEnForSearch": 0.032,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 27
+        },
+        {
+          "paramCode": "param_12804",
+          "paramName": "系列",
+          "paramNameEn": "Series",
+          "paramValue": "74LVC",
+          "paramValueEn": "74LVC",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 89
+        },
+        {
+          "paramCode": "param_14218_n",
+          "paramName": "灌电流(IOL)",
+          "paramNameEn": "Current - Output Low(IOL)",
+          "paramValue": "32mA",
+          "paramValueEn": "32mA",
+          "paramValueEnForSearch": 0.032,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 24
+        },
+        {
+          "paramCode": "param_15255_n",
+          "paramName": "每个元件位数",
+          "paramNameEn": "Number of Bits per Element",
+          "paramValue": "1",
+          "paramValueEn": "1",
+          "paramValueEnForSearch": 1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 13
+        },
+        {
+          "paramCode": "param_13249",
+          "paramName": "通道类型",
+          "paramNameEn": "Channel Type",
+          "paramValue": "单向",
+          "paramValueEn": "Unidirectional",
+          "paramValueEnForSearch": -1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 2
+        },
+        {
+          "paramCode": "param_15653_n",
+          "paramName": "元件数",
+          "paramNameEn": "Number of Elements",
+          "paramValue": "1",
+          "paramValueEn": "1",
+          "paramValueEnForSearch": 1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 11
+        },
+        {
+          "paramCode": "param_14342_n",
+          "paramName": "传播延迟(tpd)",
+          "paramNameEn": "Propagation Delay",
+          "paramValue": "4.6ns@3.3V,15pF",
+          "paramValueEn": "4.6ns@3.3V,15pF",
+          "paramValueEnForSearch": 4.6e-09,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 79
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C83852",
+      "requested_mpns": [
+        "SS14"
+      ],
+      "references_populated": [
+        "D501"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SMA"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.505763+00:00",
+      "actual_mpn": "SS14",
+      "mpn_exact_match": true,
+      "manufacturer": "onsemi",
+      "product_description": "DIODE SCHOTTKY 40V SMA(DO-214AC)",
+      "package_actual": "SMA(DO-214AC)",
+      "stock_number": 137310,
+      "overseas_stock": {
+        "total": 137310,
+        "shipImmediately": 137310,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 137310,
+        "shipImmediately": 137310,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.1233
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.1007
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.089
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.0794
+        },
+        {
+          "minimum_quantity": 2500,
+          "unit_price_usd": 0.0617
+        },
+        {
+          "minimum_quantity": 7500,
+          "unit_price_usd": 0.0594
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.1233,
+        "extended_usd": 0.6165
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.1233,
+        "extended_usd": 0.6165
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C83852.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/4f2df05facd1a19452f69f9de2ea6577.pdf?productCode=C83852",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C83852",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C83852.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_11055",
+          "paramName": "二极管配置",
+          "paramNameEn": "Diode Configuration",
+          "paramValue": "1个独立式",
+          "paramValueEn": "1 Independent",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_31702_s",
+          "paramName": "工作结温范围",
+          "paramNameEn": "Operating Junction Temperature Range",
+          "paramValue": "-65℃~+125℃",
+          "paramValueEn": "-65℃~+125℃",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_26",
+          "paramName": "直流反向耐压（Vr）",
+          "paramNameEn": "Voltage - DC Reverse (Vr) (Max)",
+          "paramValue": "40V",
+          "paramValueEn": "40V",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_11059_nt",
+          "paramName": "正向压降(Vf)",
+          "paramNameEn": "Voltage - Forward(Vf@If)",
+          "paramValue": "500mV@1A",
+          "paramValueEn": "500mV@1A",
+          "paramValueEnForSearch": 0.5,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 5
+        },
+        {
+          "paramCode": "param_10919_nt",
+          "paramName": "反向电流(Ir)",
+          "paramNameEn": "Reverse Leakage Current (Ir)",
+          "paramValue": "200uA@40V",
+          "paramValueEn": "200uA@40V",
+          "paramValueEnForSearch": 0.0002,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 4
+        },
+        {
+          "paramCode": "param_31793_n",
+          "paramName": "非重复峰值浪涌电流 (Ifsm)",
+          "paramNameEn": "Non-Repetitive Peak Forward Surge Current",
+          "paramValue": "40A",
+          "paramValueEn": "40A",
+          "paramValueEnForSearch": 40.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_11058_n",
+          "paramName": "整流电流",
+          "paramNameEn": "Current - Rectified",
+          "paramValue": "1A",
+          "paramValueEn": "1A",
+          "paramValueEnForSearch": 1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 3
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C843260",
+      "requested_mpns": [
+        "NX2016SA-32MHZ-STD-CZS-5"
+      ],
+      "references_populated": [
+        "Y401"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 1,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SMD2016-4"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.679350+00:00",
+      "actual_mpn": "NX2016SA-32MHZ-STD-CZS-5",
+      "mpn_exact_match": true,
+      "manufacturer": "NDK",
+      "product_description": "Crystal Units for OA/AV/Short-range Wireless",
+      "package_actual": "SMD2016-4P",
+      "stock_number": 10115,
+      "overseas_stock": {
+        "total": 10115,
+        "shipImmediately": 10115,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 10115,
+        "shipImmediately": 10115,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.3534
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.2922
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.266
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.2333
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.2187
+        },
+        {
+          "minimum_quantity": 6000,
+          "unit_price_usd": 0.21
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.3534,
+        "extended_usd": 1.767
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.3534,
+        "extended_usd": 1.767
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C843260.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/7d295f64f7c44230fecd37b1086251f1.pdf?productCode=C843260",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C843260",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C843260.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_10915_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 6
+        },
+        {
+          "paramCode": "param_11376_n",
+          "paramName": "负载电容",
+          "paramNameEn": "Load Capacitance",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 10
+        },
+        {
+          "paramCode": "param_29445_n",
+          "paramName": "频率",
+          "paramNameEn": "Frequency",
+          "paramValue": "-",
+          "paramValueEn": "-",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C88374",
+      "requested_mpns": [
+        "U.FL-R-SMT-1(80)"
+      ],
+      "references_populated": [],
+      "references_dnp": [
+        "J404"
+      ],
+      "board_quantity_populated": 0,
+      "board_quantity_dnp": 1,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "Hirose U.FL-R-SMT-1"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.689810+00:00",
+      "actual_mpn": "U.FL-R-SMT-1(80)",
+      "mpn_exact_match": true,
+      "manufacturer": "HRS",
+      "product_description": "CONN RCPT IPEX 50Ω SMD",
+      "package_actual": "SMD",
+      "stock_number": 82165,
+      "overseas_stock": {
+        "total": 82165,
+        "shipImmediately": 82165,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 82165,
+        "shipImmediately": 82165,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 0,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.1107
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.0897
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.0789
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.07
+        },
+        {
+          "minimum_quantity": 2500,
+          "unit_price_usd": 0.0668
+        },
+        {
+          "minimum_quantity": 5000,
+          "unit_price_usd": 0.0647
+        }
+      ],
+      "populated_order_cost": null,
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.1107,
+        "extended_usd": 0.5535
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C88374.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/ade8681cf25347ad817fa65440db6a2c.pdf?productCode=C88374",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C88374",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C88374.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_14432_s",
+          "paramName": "频率",
+          "paramNameEn": "Frequency range",
+          "paramValue": "6GHz",
+          "paramValueEn": "6GHz",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 21
+        },
+        {
+          "paramCode": "param_13551",
+          "paramName": "连接器类型",
+          "paramNameEn": "Connector Type",
+          "paramValue": "板端;内针",
+          "paramValueEn": "Board Side;Inner pin",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_14723_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+90℃",
+          "paramValueEn": "-40℃~+90℃",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 16
+        },
+        {
+          "paramCode": "param_13555_n",
+          "paramName": "阻抗",
+          "paramNameEn": "Impedance",
+          "paramValue": "50Ω",
+          "paramValueEn": "50Ω",
+          "paramValueEnForSearch": 50.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 52
+        },
+        {
+          "paramCode": "param_13558_n",
+          "paramName": "接口直径",
+          "paramNameEn": "Interface Diameter",
+          "paramValue": "2mm",
+          "paramValueEn": "2mm",
+          "paramValueEnForSearch": 2.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 28
+        }
+      ],
+      "attempt_errors": []
+    },
+    {
+      "lcsc": "C963429",
+      "requested_mpns": [
+        "TPS7A2030PDBVR"
+      ],
+      "references_populated": [
+        "U503",
+        "U512",
+        "U513"
+      ],
+      "references_dnp": [],
+      "board_quantity_populated": 3,
+      "board_quantity_dnp": 0,
+      "external_quantity": 0,
+      "assembly": [
+        "PCB_SMT"
+      ],
+      "package_requested": [
+        "SOT-23-5"
+      ],
+      "scope": "REV_A_BOM_NON_RC",
+      "retrieved_at_utc": "2026-10-02T13:20:56.801835+00:00",
+      "actual_mpn": "TPS7A2030PDBVR",
+      "mpn_exact_match": true,
+      "manufacturer": "TI",
+      "product_description": "300mA, ultra-low noise, low IQ, low dropout (LDO) linear regulator with high PSRR",
+      "package_actual": "SOT-23-5",
+      "stock_number": 5815,
+      "overseas_stock": {
+        "total": 5815,
+        "shipImmediately": 5815,
+        "ship3Days": 0
+      },
+      "domestic_stock": {
+        "total": 5815,
+        "shipImmediately": 5815,
+        "ship3Days": 0
+      },
+      "is_foreign_onsale": true,
+      "is_foreign_display": true,
+      "minimum_order_quantity": 5,
+      "order_multiple": 5,
+      "buy_quantity_populated_only": 5,
+      "buy_quantity_including_dnp": 5,
+      "usd_price_tiers": [
+        {
+          "minimum_quantity": 5,
+          "unit_price_usd": 0.2332
+        },
+        {
+          "minimum_quantity": 50,
+          "unit_price_usd": 0.1831
+        },
+        {
+          "minimum_quantity": 150,
+          "unit_price_usd": 0.1586
+        },
+        {
+          "minimum_quantity": 500,
+          "unit_price_usd": 0.1368
+        },
+        {
+          "minimum_quantity": 3000,
+          "unit_price_usd": 0.1308
+        },
+        {
+          "minimum_quantity": 6000,
+          "unit_price_usd": 0.1272
+        }
+      ],
+      "populated_order_cost": {
+        "quantity": 5,
+        "unit_price_usd": 0.2332,
+        "extended_usd": 1.166
+      },
+      "order_cost_including_dnp": {
+        "quantity": 5,
+        "unit_price_usd": 0.2332,
+        "extended_usd": 1.166
+      },
+      "stock_status": "IN_STOCK_OVERSEAS",
+      "product_url": "https://www.lcsc.com/product-detail/C963429.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e9493c53ea71c523359aed2b3e8071a4.pdf?productCode=C963429",
+      "primary_api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C963429",
+      "raw_file": "procurement/raw-active-external-2026-10-02/C963429.json",
+      "param_vo_list": [
+        {
+          "paramCode": "param_13614_s",
+          "paramName": "输出电压",
+          "paramNameEn": "Output Voltage",
+          "paramValue": "3V",
+          "paramValueEn": "3V",
+          "paramValueEnForSearch": null,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 36
+        },
+        {
+          "paramCode": "param_13462_n",
+          "paramName": "输出通道数",
+          "paramNameEn": "Number of Outputs",
+          "paramValue": "1",
+          "paramValueEn": "1",
+          "paramValueEnForSearch": 1.0,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 66
+        },
+        {
+          "paramCode": "param_14524_s",
+          "paramName": "工作温度",
+          "paramNameEn": "Operating Temperature",
+          "paramValue": "-40℃~+125℃@(Tj)",
+          "paramValueEn": "-40℃~+125℃@(Tj)",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 20
+        },
+        {
+          "paramCode": "param_31819_n",
+          "paramName": "静态电流(Iq)",
+          "paramNameEn": "Supply Current (Iq)",
+          "paramValue": "8.5uA",
+          "paramValueEn": "8.5uA",
+          "paramValueEnForSearch": 8.5e-06,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 29
+        },
+        {
+          "paramCode": "param_13303",
+          "paramName": "输出极性",
+          "paramNameEn": "Output Configuration",
+          "paramValue": "正极",
+          "paramValueEn": "Positive",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 74
+        },
+        {
+          "paramCode": "param_15250_n",
+          "paramName": "输出电流",
+          "paramNameEn": "Output Current",
+          "paramValue": "300mA",
+          "paramValueEn": "300mA",
+          "paramValueEnForSearch": 0.3,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 35
+        },
+        {
+          "paramCode": "param_31466_s",
+          "paramName": "工作电压",
+          "paramNameEn": "Operating Voltage",
+          "paramValue": "6V",
+          "paramValueEn": "6V",
+          "paramValueEnForSearch": null,
+          "isMain": false,
+          "sortNumber": 1,
+          "sort": 1
+        },
+        {
+          "paramCode": "param_33817",
+          "paramName": "功能特性",
+          "paramNameEn": "Features",
+          "paramValue": "使能控制;内置软启动;输入欠压保护;短路保护;过流保护;热关断;输出放电",
+          "paramValueEn": "Enable control;Built-in soft-start;Input under-voltage protection;Short Circuit Protection;Over Current Protection;Thermal shutdown;Output discharge",
+          "paramValueEnForSearch": null,
+          "isMain": null,
+          "sortNumber": 1,
+          "sort": 7
+        },
+        {
+          "paramCode": "param_13730",
+          "paramName": "输出类型",
+          "paramNameEn": "Output Type",
+          "paramValue": "固定",
+          "paramValueEn": "Fixed",
+          "paramValueEnForSearch": -1.0,
+          "isMain": true,
+          "sortNumber": 1,
+          "sort": 19
+        }
+      ],
+      "attempt_errors": []
+    }
+  ],
+  "excluded_nonpurchased_pads": [],
+  "physical_nonpurchased_items": "Solder/pogo/test pads and J501-J504 copper wire fields are PCB copper; no separately purchased connector.",
+  "assembly_limit": "Inventory confirms standalone distributor availability, not JLCPCB feeder allocation, SMT placement eligibility or PCB assembly stock reservation. RT501 and cable/cell are manual external items. DNP alternatives are inventoried but not populated by default."
+}

@@ -1,0 +1,22 @@
+** Profile: "SCHEMATIC1-transient"  [ C:\Users\A0486596\Documents\LDO\Models\TPS7A20\TPS7A20_ADJ-TRANS\TPS7A20_ADJ-PSpiceFiles\SCHEMATIC1\transient.sim ] 
+
+** Creating circuit file "transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps7a20-adj_trans.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Cadence\SPB_17.2\tools\pspice\library\anl_misc.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 
+.OPTIONS ADVCONV
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

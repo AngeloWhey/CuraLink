@@ -1,0 +1,22 @@
+{
+  "status": "Partial vendor-model checks only; full TLV9002-family ngspice operating point invalid pending compatibility repair",
+  "adapter": "Helper names prefixed; resistor syntax reordered; noiseless R at 0.01 K; diode noise helper ports disabled. Original PSpice libraries preserved. No vendor-model noise result.",
+  "ADC_5pF": {
+    "baseline_V": 0.200709525,
+    "sample_end_V": 0.20017862,
+    "residual_uV": -530.9049999999982,
+    "residual_12bit_LSB": -0.7248622933333309,
+    "worst_pin_kick_mV": 12.066251,
+    "output_pin_kick_mV": 10.059231000000002,
+    "assumption": "Adjacent hold 2.8 V; final SK output \u22480.2 V; 1 k\u03a9 sample switch; 47 \u03a9/1 nF reservoir; 1.2 \u00b5s track"
+  },
+  "ADC_10pF": {
+    "baseline_V": 0.200709525,
+    "sample_end_V": 0.199874249,
+    "residual_uV": -835.2759999999959,
+    "residual_12bit_LSB": -1.1404301653333277,
+    "worst_pin_kick_mV": 22.83590199999999,
+    "output_pin_kick_mV": 18.926202000000004,
+    "assumption": "Adjacent hold 2.8 V; final SK output \u22480.2 V; 1 k\u03a9 sample switch; 47 \u03a9/1 nF reservoir; 1.2 \u00b5s track"
+  }
+}

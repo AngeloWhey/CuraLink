@@ -1,0 +1,73 @@
+{
+  "recorded_local_time": "2026-10-09T17:03:41.562180-04:00",
+  "workspace": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk",
+  "source": "MyLibrary_lib:RX_LoadSweep_20261009:schematic",
+  "destination": "MyLibrary_lib:RX_BAT54_LoadSweep_20261009:schematic",
+  "native_view_path": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%B%A%T54_%Load%Sweep_20261009\\schematic",
+  "new_cell_oa_sha256": "48b6db429034635d509473bafdb5f7d206d576e1b04f181e0a39d3059b63103b",
+  "original_oa_and_tag_sha256_before": {
+    "MyLibrary_lib\\cell_1\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_1\\schematic\\sch.oa": "b68eb23f7db0625bd8e18c6b21e31c6d6f7abed9c2ff6dee5c7c2f9d216d3749",
+    "MyLibrary_lib\\cell_2\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_2\\schematic\\sch.oa": "43b3e9444cd944fc927b75e39c2351adacc60ad58018be05f483a7c414b91de5"
+  },
+  "original_oa_and_tag_sha256_after": {
+    "MyLibrary_lib\\cell_1\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_1\\schematic\\sch.oa": "b68eb23f7db0625bd8e18c6b21e31c6d6f7abed9c2ff6dee5c7c2f9d216d3749",
+    "MyLibrary_lib\\cell_2\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_2\\schematic\\sch.oa": "43b3e9444cd944fc927b75e39c2351adacc60ad58018be05f483a7c414b91de5"
+  },
+  "model_source": "https://www.diodes.com/spice/download/510/BAT54.spice.txt",
+  "physical_VRRM_V": 30,
+  "model_BV_V": 50,
+  "model_parameters": {
+    "Is": "649 nA",
+    "N": "1.04",
+    "Rs": "2.09 Ohm",
+    "Ikf": "20 mA",
+    "Xti": "2",
+    "Eg": "0.58",
+    "Cjo": "12.4 pF",
+    "M": "0.381",
+    "Vj": "0.391 V",
+    "Bv": "50 V",
+    "Ibv": "100 uA",
+    "Isr": "431 nA",
+    "Nr": "4.99",
+    "Nbv": "1.04",
+    "Tnom": "27",
+    "IkModel": "1",
+    "Imax": "1000",
+    "Trs": "0",
+    "Trs2": "0",
+    "Tt": "0"
+  },
+  "TT_limit": "Explicit 0 because vendor card has no TT; reverse recovery not independently modeled.",
+  "sweep_controllers_saved_active": false,
+  "exact_native_sweep_netlist_verified": true,
+  "candidate_operating_point": {
+    "Pin_dBm": 23.5,
+    "Rload_ohm": 208.333333,
+    "frequency_hz": 13560000,
+    "hb_order": 31,
+    "Ctx_series_pF": 59.3004634,
+    "Ctx_shunt_pF": 374.7395638,
+    "Crx_series_pF": 826.2058518,
+    "Crx_shunt_pF": 773.5931919
+  },
+  "simulation_run_by_this_script": false,
+  "hardware_part_selection": false,
+  "native_export_actual_simulator_validation": {
+    "exit_code": 0,
+    "HB_order": 31,
+    "Vdc_V": 5.0885323893723005,
+    "Pdc_W": 0.12428717721177614,
+    "eta_available_to_dc": 0.5551704277525948,
+    "diode_reverse_peak_V": 5.718411199451466,
+    "run_directory": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\hardware\\wpt\\ads\\receiver-fixture-2026-10-09\\runs\\native_BAT54_candidate_validation"
+  },
+  "copied_workspace_dataset": {
+    "path": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\RX_BAT54_LoadSweep_20261009.ds",
+    "sha256": "b082e5189d523a27c471d4d3a7a96fc5539ef41e3293c2dec9f08a4ec9963fa7"
+  }
+}

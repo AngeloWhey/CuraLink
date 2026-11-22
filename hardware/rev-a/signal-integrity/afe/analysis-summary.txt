@@ -1,0 +1,247 @@
+{
+  "nominal": {
+    "at": [
+      {
+        "frequency_Hz": 300,
+        "aggressor_ADC_V_per_V": 702.5126988585462,
+        "victim_ADC_V_per_V": 1.72023046515497,
+        "VMID_V_per_V": 1.827566780647761,
+        "REF_PRE_V_per_V": 18.227866134096832,
+        "victim_crosstalk_dB": -52.22135088762644,
+        "victim_source_equivalent_uVpp_for_200uVpp": 0.4897364753548307,
+        "victim_source_equivalent_uVpp_for_1mVpp": 2.448682376774154,
+        "victim_ADC_mVpp_for_200uVpp": 0.34404609303099404,
+        "victim_ADC_mVpp_for_1mVpp": 1.72023046515497
+      },
+      {
+        "frequency_Hz": 1000,
+        "aggressor_ADC_V_per_V": 969.565917719732,
+        "victim_ADC_V_per_V": 1.622773501913577,
+        "VMID_V_per_V": 1.8871062387167823,
+        "REF_PRE_V_per_V": 18.820873938565516,
+        "victim_crosstalk_dB": -55.52638866364347,
+        "victim_source_equivalent_uVpp_for_200uVpp": 0.33474227430149095,
+        "victim_source_equivalent_uVpp_for_1mVpp": 1.6737113715074547,
+        "victim_ADC_mVpp_for_200uVpp": 0.3245547003827154,
+        "victim_ADC_mVpp_for_1mVpp": 1.622773501913577
+      },
+      {
+        "frequency_Hz": 3000,
+        "aggressor_ADC_V_per_V": 1006.1651096803162,
+        "victim_ADC_V_per_V": 0.5783921322318882,
+        "VMID_V_per_V": 0.851818435657308,
+        "REF_PRE_V_per_V": 8.492166208911668,
+        "victim_crosstalk_dB": -64.80893753458128,
+        "victim_source_equivalent_uVpp_for_200uVpp": 0.11496962609161789,
+        "victim_source_equivalent_uVpp_for_1mVpp": 0.5748481304580894,
+        "victim_ADC_mVpp_for_200uVpp": 0.11567842644637766,
+        "victim_ADC_mVpp_for_1mVpp": 0.5783921322318882
+      },
+      {
+        "frequency_Hz": 7000,
+        "aggressor_ADC_V_per_V": 704.7928797330452,
+        "victim_ADC_V_per_V": 0.2534925955655904,
+        "VMID_V_per_V": 0.20446429522301798,
+        "REF_PRE_V_per_V": 2.0343518157306053,
+        "victim_crosstalk_dB": -68.88192459298409,
+        "victim_source_equivalent_uVpp_for_200uVpp": 0.07193392636475156,
+        "victim_source_equivalent_uVpp_for_1mVpp": 0.3596696318237578,
+        "victim_ADC_mVpp_for_200uVpp": 0.05069851911311808,
+        "victim_ADC_mVpp_for_1mVpp": 0.2534925955655904
+      }
+    ],
+    "worst_ratio": 0.0024486823767741537,
+    "worst_ratio_dB": -52.22135088762644,
+    "worst_frequency_Hz": 300.0,
+    "max_equivalent_uVpp_for_1mVpp": 2.448682376774154,
+    "max_equivalent_uVpp_for_200uVpp": 0.4897364753548307,
+    "largest_victims_3_to_8_difference_V_per_V": 1.0598680132295179e-06,
+    "passes_proposed_single_aggressor_criterion": false
+  },
+  "summary": {
+    "input-input": [
+      {
+        "assumed_capacitance_pF": 0,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 2.4486822918732813,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 0.4897364583746563,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 5.932765648279631e-06,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 1.1865531296559261e-06,
+        "maximum_total_equiv_frequency_Hz": 300.0,
+        "worst_total_victim_output_ratio_dB": -52.22135119253198,
+        "maximum_aggressor_gain_relative_change_percent": 5.678540263549443e-07,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.4486823093717462,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.02,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 2.448132612934745,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 0.489626522586949,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 0.04117767757618253,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 0.008235535515236505,
+        "maximum_total_equiv_frequency_Hz": 300.0,
+        "worst_total_victim_output_ratio_dB": -52.2233011898678,
+        "maximum_aggressor_gain_relative_change_percent": 0.004118252590820861,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.4486823093458017,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.05,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 2.447310269317386,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 0.4894620538634772,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 0.10294713960446844,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 0.020589427920893688,
+        "maximum_total_equiv_frequency_Hz": 300.0,
+        "worst_total_victim_output_ratio_dB": -52.226219288141884,
+        "maximum_aggressor_gain_relative_change_percent": 0.01029519881015111,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.448682309356791,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.1,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 2.4459455022492644,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 0.48918910044985287,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 0.20589430931680797,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 0.041178861863361595,
+        "maximum_total_equiv_frequency_Hz": 300.0,
+        "worst_total_victim_output_ratio_dB": -52.23106434794366,
+        "maximum_aggressor_gain_relative_change_percent": 0.02058991581038045,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.448682309377649,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.2,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 2.4432377831639407,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 0.48864755663278814,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 0.41178135076630085,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 0.08235627015326016,
+        "maximum_total_equiv_frequency_Hz": 300.0,
+        "worst_total_victim_output_ratio_dB": -52.24068502717246,
+        "maximum_aggressor_gain_relative_change_percent": 0.04117862001464182,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.4486823093169297,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.5,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 2.4352900138639337,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 0.48705800277278677,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 1.0293831574880965,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 0.2058766314976193,
+        "maximum_total_equiv_frequency_Hz": 300.0,
+        "worst_total_victim_output_ratio_dB": -52.26898558207335,
+        "maximum_aggressor_gain_relative_change_percent": 0.10293880086596466,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.448682309360064,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 1,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 2.4226340479654898,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 0.48452680959309796,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 2.058515555655828,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 0.4117031111311656,
+        "maximum_total_equiv_frequency_Hz": 300.0,
+        "worst_total_victim_output_ratio_dB": -52.31424229455095,
+        "maximum_aggressor_gain_relative_change_percent": 0.205852040978481,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.4486823093860624,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      }
+    ],
+    "output-input": [
+      {
+        "assumed_capacitance_pF": 0,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 2.448682384178238,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 0.4897364768356476,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 2.2459342411413285e-08,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 4.491868482282657e-09,
+        "maximum_total_equiv_frequency_Hz": 300.0,
+        "worst_total_victim_output_ratio_dB": -52.22135086141455,
+        "maximum_aggressor_gain_relative_change_percent": 2.2653649656850265e-09,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.4486823838864344,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.01,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 17.24633522093748,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 3.4492670441874957,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 17.354264784448745,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 3.470852956889749,
+        "maximum_total_equiv_frequency_Hz": 6125.213834008563,
+        "worst_total_victim_output_ratio_dB": -35.266061866833525,
+        "maximum_aggressor_gain_relative_change_percent": 0.0006645175154891184,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.448417514244625,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.02,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 34.598580785987295,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 6.919716157197459,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 34.708455840140196,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 6.941691168028039,
+        "maximum_total_equiv_frequency_Hz": 6125.213834008563,
+        "worst_total_victim_output_ratio_dB": -29.21883097576695,
+        "maximum_aggressor_gain_relative_change_percent": 0.0013290323369841118,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.448154984746473,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.05,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 86.6595617348383,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 17.331912346967663,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 86.7705865239009,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 17.354117304780182,
+        "maximum_total_equiv_frequency_Hz": 6125.213834008563,
+        "worst_total_victim_output_ratio_dB": -21.24366191944429,
+        "maximum_aggressor_gain_relative_change_percent": 0.0033225596917493415,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.4473814201823068,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.1,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 173.4279414151677,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 34.68558828303354,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 173.53932896454566,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 34.70786579290913,
+        "maximum_total_equiv_frequency_Hz": 6125.213834008563,
+        "worst_total_victim_output_ratio_dB": -15.217602039296668,
+        "maximum_aggressor_gain_relative_change_percent": 0.006645048706868546,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.446138932722194,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.2,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 346.9597446811849,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 69.39194893623697,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 347.0712768682953,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 69.41425537365906,
+        "maximum_total_equiv_frequency_Hz": 6125.213834008563,
+        "worst_total_victim_output_ratio_dB": -9.194385242547789,
+        "maximum_aggressor_gain_relative_change_percent": 0.013289814832306257,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.443829728166529,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 0.5,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 867.5112466911711,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 173.5022493382342,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 867.6227486189493,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 173.52454972378987,
+        "maximum_total_equiv_frequency_Hz": 6125.213834008563,
+        "worst_total_victim_output_ratio_dB": -1.2344167515089286,
+        "maximum_aggressor_gain_relative_change_percent": 0.03322241398350509,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.438313346112075,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      },
+      {
+        "assumed_capacitance_pF": 1,
+        "maximum_total_victim_equiv_uVpp_for_1mVpp": 1734.9488055026188,
+        "maximum_total_victim_equiv_uVpp_for_200uVpp": 346.98976110052376,
+        "maximum_incremental_victim_equiv_uVpp_for_1mVpp": 1735.06010236642,
+        "maximum_incremental_victim_equiv_uVpp_for_200uVpp": 347.012020473284,
+        "maximum_total_equiv_frequency_Hz": 6125.213834008563,
+        "worst_total_victim_output_ratio_dB": 4.785890416632761,
+        "maximum_aggressor_gain_relative_change_percent": 0.06643772899704228,
+        "maximum_other_channel_equiv_uVpp_for_1mVpp": 2.433850026234513,
+        "passes_proposed_total_1uVpp_for_1mVpp": false
+      }
+    ]
+  }
+}

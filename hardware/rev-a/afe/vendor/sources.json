@@ -1,0 +1,44 @@
+[
+  {
+    "label": "tlv9002",
+    "url": "https://www.ti.com/lit/zip/SBOMAL2",
+    "sha256": "516e3f6405b699003d94840520966d7599c6c3af37f37c69541f9ed7ae211fe6",
+    "files": [
+      "tlv9002\\tlv9002.dsn",
+      "tlv9002\\tlv9002.lib",
+      "tlv9002\\tlv9002.libsig",
+      "tlv9002\\tlv9002.opj",
+      "tlv9002\\library\\tlv9002.olb",
+      "tlv9002\\tlv9002-PSpiceFiles\\SCHEMATIC1\\transient.sim",
+      "tlv9002\\tlv9002-PSpiceFiles\\SCHEMATIC1\\transient\\Install_TIPSpice.json",
+      "tlv9002\\tlv9002-PSpiceFiles\\SCHEMATIC1\\transient\\transient.1OP",
+      "tlv9002\\tlv9002-PSpiceFiles\\SCHEMATIC1\\transient\\transient.cir",
+      "tlv9002\\tlv9002-PSpiceFiles\\SCHEMATIC1\\transient\\transient.json",
+      "tlv9002\\tlv9002-PSpiceFiles\\SCHEMATIC1\\transient\\transient.mif",
+      "tlv9002\\tlv9002-PSpiceFiles\\SCHEMATIC1\\transient\\transient.mrk",
+      "tlv9002\\tlv9002-PSpiceFiles\\SCHEMATIC1\\transient\\transient.out.1",
+      "tlv9002\\tlv9002-PSpiceFiles\\SCHEMATIC1\\transient\\transient.prb"
+    ]
+  },
+  {
+    "label": "tlv9052",
+    "url": "https://www.ti.com/lit/zip/SBOMAO0",
+    "sha256": "c0720b202adbe59b2b00ee77de64671d6844567494606fd09819c3eee0664044",
+    "files": [
+      "tlv9052\\tlv9052.dsn",
+      "tlv9052\\tlv9052.lib",
+      "tlv9052\\tlv9052.libsig",
+      "tlv9052\\tlv9052.opj",
+      "tlv9052\\library\\tlv9052.olb",
+      "tlv9052\\tlv9052-PSpiceFiles\\SCHEMATIC1\\transient.sim",
+      "tlv9052\\tlv9052-PSpiceFiles\\SCHEMATIC1\\transient\\Install_TIPSpice.json",
+      "tlv9052\\tlv9052-PSpiceFiles\\SCHEMATIC1\\transient\\transient.1OP",
+      "tlv9052\\tlv9052-PSpiceFiles\\SCHEMATIC1\\transient\\transient.cir",
+      "tlv9052\\tlv9052-PSpiceFiles\\SCHEMATIC1\\transient\\transient.json",
+      "tlv9052\\tlv9052-PSpiceFiles\\SCHEMATIC1\\transient\\transient.mif",
+      "tlv9052\\tlv9052-PSpiceFiles\\SCHEMATIC1\\transient\\transient.mrk",
+      "tlv9052\\tlv9052-PSpiceFiles\\SCHEMATIC1\\transient\\transient.out.1",
+      "tlv9052\\tlv9052-PSpiceFiles\\SCHEMATIC1\\transient\\transient.prb"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-uvlo-rise.cir
+Start Time: Fri Oct  2 10:04:52 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+AsciiRawFile = true
+Total elapsed time: 0.572 seconds.
+
+Files loaded:
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-uvlo-rise.cir
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\sources\tlv3012b-spice\TLV3012B\tlv3012b.LIB
+

@@ -1,0 +1,44 @@
+{
+  "recorded_local_time": "2026-10-09T17:00:00.796210-04:00",
+  "ads_version": "Design Environment (*) 640.shp Mar 23 2026 (64-bit)\n",
+  "workspace": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk",
+  "source": "MyLibrary_lib:cell_1:schematic",
+  "destination": "MyLibrary_lib:RX_LoadSweep_20261009:schematic",
+  "corrected_stale_saved_oa_in_copy_only": true,
+  "original_oa_and_tag_sha256_before": {
+    "MyLibrary_lib\\cell_1\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_1\\schematic\\sch.oa": "b68eb23f7db0625bd8e18c6b21e31c6d6f7abed9c2ff6dee5c7c2f9d216d3749",
+    "MyLibrary_lib\\cell_2\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_2\\schematic\\sch.oa": "43b3e9444cd944fc927b75e39c2351adacc60ad58018be05f483a7c414b91de5"
+  },
+  "original_oa_and_tag_sha256_after": {
+    "MyLibrary_lib\\cell_1\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_1\\schematic\\sch.oa": "b68eb23f7db0625bd8e18c6b21e31c6d6f7abed9c2ff6dee5c7c2f9d216d3749",
+    "MyLibrary_lib\\cell_2\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_2\\schematic\\sch.oa": "43b3e9444cd944fc927b75e39c2351adacc60ad58018be05f483a7c414b91de5"
+  },
+  "latest_workspace_netlist_sha256": "80e4b868cb2e9278f4aadca9b28ab08037ee2472870184d585bf538655ff4027",
+  "new_cell_view_path": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%Load%Sweep_20261009\\schematic",
+  "new_cell_oa_sha256": "31a3a1dea789b6b4c96826bd3368671c6e75af07568aee931cdb514ad26c345d",
+  "simulation_run_by_this_script": false,
+  "sweep_controllers_saved_active": false,
+  "defaults": {
+    "Pin_dBm": 26,
+    "Rload_ohm": 220,
+    "frequency_hz": 13560000.0,
+    "hb_order": 7
+  },
+  "power_sweep_dBm": [
+    20,
+    23,
+    26
+  ],
+  "load_sweep_ohm": [
+    208.33,
+    220,
+    240,
+    470,
+    1000000
+  ],
+  "exact_native_sweep_netlist_verified": true
+}

@@ -1,0 +1,139 @@
+{
+  "date": "2026-09-22",
+  "evidence": "linear calculations, not measured",
+  "models": [
+    {
+      "feedback_ohm": 936000.0,
+      "gain_1kHz_VV": 472.44115051798263,
+      "gain_nominal_VV": 494.8226865671642,
+      "noise_300_7000_uVrms_output_div_1kHz_gain": {
+        "electronics": 1.9259748368751686,
+        "source": 3.189059467930462,
+        "quadrature_total": 3.7255173281402483
+      },
+      "noise_3_10000_uVrms_output_div_1kHz_gain": {
+        "electronics": 2.047099222313773,
+        "source": 3.3750097345602854,
+        "quadrature_total": 3.9473162952028993
+      },
+      "noise_0.05_2000000.0_uVrms_output_div_1kHz_gain": {
+        "electronics": 2.0591391530238505,
+        "source": 3.3959268690234543,
+        "quadrature_total": 3.971444743575217
+      },
+      "response_dB_relative_1kHz": {
+        "3.0": -54.42696983949895,
+        "300.0": -2.6119423973233764,
+        "7000.0": -2.499094362788852,
+        "10000.0": -12.086806866810553
+      }
+    },
+    {
+      "feedback_ohm": 1870000.0,
+      "gain_1kHz_VV": 944.1666339766741,
+      "gain_nominal_VV": 988.5880597014926,
+      "noise_300_7000_uVrms_output_div_1kHz_gain": {
+        "electronics": 1.9248629405191222,
+        "source": 3.188892230611672,
+        "quadrature_total": 3.72479945745263
+      },
+      "noise_3_10000_uVrms_output_div_1kHz_gain": {
+        "electronics": 2.0458031543186634,
+        "source": 3.374755555039056,
+        "quadrature_total": 3.946426941232684
+      },
+      "noise_0.05_2000000.0_uVrms_output_div_1kHz_gain": {
+        "electronics": 2.0563066348361905,
+        "source": 3.39564786266625,
+        "quadrature_total": 3.9697382009020705
+      },
+      "response_dB_relative_1kHz": {
+        "3.0": -54.429672985735245,
+        "300.0": -2.613141525822958,
+        "7000.0": -2.5008341556957614,
+        "10000.0": -12.090642433290533
+      }
+    }
+  ],
+  "template_trials": [
+    {
+      "corner_Hz": 5000,
+      "width_ms": 0.5,
+      "input_uVpp": 200,
+      "output_mVpp": 187.98773788292152,
+      "min_output_mV_relative_bias": -78.27926481601594,
+      "max_output_mV_relative_bias": 109.7084730669056
+    },
+    {
+      "corner_Hz": 5000,
+      "width_ms": 1.0,
+      "input_uVpp": 200,
+      "output_mVpp": 182.98537932545307,
+      "min_output_mV_relative_bias": -72.80445302605851,
+      "max_output_mV_relative_bias": 110.18092629939456
+    },
+    {
+      "corner_Hz": 5000,
+      "width_ms": 2.0,
+      "input_uVpp": 200,
+      "output_mVpp": 160.51717241745237,
+      "min_output_mV_relative_bias": -57.539338441610234,
+      "max_output_mV_relative_bias": 102.97783397584213
+    },
+    {
+      "corner_Hz": 7000,
+      "width_ms": 0.5,
+      "input_uVpp": 200,
+      "output_mVpp": 192.17190253635005,
+      "min_output_mV_relative_bias": -82.34315699640543,
+      "max_output_mV_relative_bias": 109.82874553994462
+    },
+    {
+      "corner_Hz": 7000,
+      "width_ms": 1.0,
+      "input_uVpp": 200,
+      "output_mVpp": 183.0870086364027,
+      "min_output_mV_relative_bias": -73.20637480063198,
+      "max_output_mV_relative_bias": 109.8806338357707
+    },
+    {
+      "corner_Hz": 7000,
+      "width_ms": 2.0,
+      "input_uVpp": 200,
+      "output_mVpp": 160.5332898514869,
+      "min_output_mV_relative_bias": -57.57748735494155,
+      "max_output_mV_relative_bias": 102.95580249654535
+    },
+    {
+      "corner_Hz": 10000,
+      "width_ms": 0.5,
+      "input_uVpp": 200,
+      "output_mVpp": 192.56601636379955,
+      "min_output_mV_relative_bias": -83.79176245384885,
+      "max_output_mV_relative_bias": 108.77425390995072
+    },
+    {
+      "corner_Hz": 10000,
+      "width_ms": 1.0,
+      "input_uVpp": 200,
+      "output_mVpp": 183.09483012617505,
+      "min_output_mV_relative_bias": -73.32752945743137,
+      "max_output_mV_relative_bias": 109.76730066874369
+    },
+    {
+      "corner_Hz": 10000,
+      "width_ms": 2.0,
+      "input_uVpp": 200,
+      "output_mVpp": 160.53976227832862,
+      "min_output_mV_relative_bias": -57.593615057974446,
+      "max_output_mV_relative_bias": 102.94614722035416
+    }
+  ],
+  "fixture": {
+    "unloaded_attenuation": 0.000999000999000999,
+    "DAC_2p5V_16bit_step_after_attenuator_uV": 0.038108863792457544,
+    "DAC_Vpp_for_200uVpp": 0.20020000000000002,
+    "source_R_noise_single_47k_300_7000_uVrms": 2.284118307181132
+  },
+  "input_C_budget_pF_for_10Mohm_7kHz_with_22Mohm_bias": 2.025186496710847
+}

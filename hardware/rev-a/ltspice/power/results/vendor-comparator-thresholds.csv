@@ -1,0 +1,5 @@
+function,direction,nominal_vendor_threshold_V,sweep_step_V
+field,rise,2.6574999999999998,0.005
+field,fall,2.2275,0.004999999999999005
+uvlo,rise,3.8095,0.0009999999999998899
+uvlo,fall,3.4915000000000003,0.001000000000000334

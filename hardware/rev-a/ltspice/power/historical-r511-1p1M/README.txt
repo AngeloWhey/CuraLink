@@ -1,0 +1,1 @@
+Historical 2026-10-02 runs before R511 correction: nominal1.1Meg +/-1% exceeded max recommended1100k at +1%. Archived cir/log/raw are evidence of those runs; relative include paths in these historical cir files refer to the original parent working directory. Current fixtures in parent use1.0Meg +/-1%.

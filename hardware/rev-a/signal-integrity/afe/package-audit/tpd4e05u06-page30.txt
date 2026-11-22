@@ -1,0 +1,19 @@
+www.ti.com
+EXAMPLE STENCIL DESIGN
+8X (0.2)10X (0.565)
+4X (0.5)
+2X (0.36)
+(0.835)(R) TYP0.05
+USON - 0.55 mm max heightDQA0010APLASTIC SMALL OUTLINE - NO LEAD
+4220328/A   12/2015NOTES: (continued) 4. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate    design recommendations.  
+SOLDER PASTE EXAMPLEBASED ON 0.1 mm THICK STENCIL EXPOSED PADS 3 & 8: 90% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGESCALE:40X
+SYMM
+1
+5 6
+10
+SYMMMETALTYP3 8
+TPD1E05U06, TPD4E05U06, TPD6E05U06
+SLVSBO7O – DECEMBER 2012 – REVISED AUGUST 2024
+ www.ti.com
+30 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPD1E05U06 TPD4E05U06 TPD6E05U06

@@ -1,0 +1,241 @@
+
+**** 03/27/20 10:34:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\A0486596\Documents\LDO\Models\TPS7A20\TPS7A20_ADJ-TRANS\TPS7A20_ADJ-PSpiceFiles\SCHEM
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps7a20-adj_trans.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Cadence\SPB_17.2\tools\pspice\library\anl_misc.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TPS7A20_ADJ
+X_U1         N00581 0 N00581 M_UN0001 N00734 TPS7A20_ADJ_TRANS 
+V_V1         N00581 0  
++PULSE 0 5 1m 1u 1u 10m 
+C_C1         0 N00581  1uF  TC=0,0 
+C_C2         0 N00734  1uF  TC=0,0 
+** Floating/unmodeled pin fixups **
+R__UC0001   M_UN0001  0   {1/GMIN}
+.PARAM  v_out=1v
+
+**** RESUMING transient.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file tps7a20-adj_trans.ind for library file tps7a20-adj_trans.lib.
+
+INFO(ORPSIM-15422): Making new index file tps7a20-adj_trans.ind for library file tps7a20-adj_trans.lib.
+
+Index has 8 entries from 1 file(s).
+
+**** 03/27/20 10:34:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\A0486596\Documents\LDO\Models\TPS7A20\TPS7A20_ADJ-TRANS\TPS7A20_ADJ-PSpiceFiles\SCHEM
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U1_U4.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+**** 03/27/20 10:34:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\A0486596\Documents\LDO\Models\TPS7A20\TPS7A20_ADJ-TRANS\TPS7A20_ADJ-PSpiceFiles\SCHEM
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_S1._S1   X_U1.X_S4._S4   X_U1.X_S2._S2   
+         RON  230              80               1.000000E+06 
+        ROFF    1.000000E+06  100               1.000000E-06 
+         VON    1.000000E-03     .5             1.000000E-03 
+        VOFF    0                .4             0            
+
+
+**** 03/27/20 10:34:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\A0486596\Documents\LDO\Models\TPS7A20\TPS7A20_ADJ-TRANS\TPS7A20_ADJ-PSpiceFiles\SCHEM
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00581)    0.0000 (N00734)    0.0000 (X_U1.FB)    0.0000                       
+
+(M_UN0001)    0.0000                  (X_U1.VXX)    0.0000                      
+
+(X_U1.VYY)    0.0000                  (X_U1.VZZ)    0.0000                      
+
+(X_U1.EN_OK)    0.0000                (X_U1.V_FBK)    0.0000                    
+
+(X_U1.EN_INT)    0.0000               (X_U1.ISENSE)    0.0000                   
+
+(X_U1.U1_DROP)     .0627              (X_U1.VIN_PRE)    0.0000                  
+
+(X_U1.Vzz_INT)    0.0000              (X_U1.LOAD_DIS)    1.0000                 
+
+(X_U1.VOUT_INT)    0.0000             (X_U1.N15505639)    0.0000                
+
+(X_U1.N15505647)    0.0000            (X_U1.N15505691)    0.0000                
+
+(X_U1.N15505717)    0.0000            (X_U1.N15505751)    0.0000                
+
+(X_U1.N15506031)    0.0000            (X_U1.N15518026)    0.0000                
+
+(X_U1.N15528889)    0.0000            (X_U1.N15735226)    0.0000                
+
+(X_U1.N15738584)    0.0000            (X_U1.N15738829)    0.0000                
+
+(X_U1.U1_EN_PRE)    0.0000            (X_U1.U1_VIN_OK)    0.0000                
+
+(X_U1.X_U1_U1.1)    0.0000            (X_U1.X_U1_U2.1)    0.0000                
+
+(X_U1.N157842371)    1.0000           (X_U1.U1_N15488381)    0.0000             
+
+(X_U1.U1_N15488397)    0.0000         (X_U1.U1_N15488775)    0.0000             
+
+(X_U1.U1_N15496735)     .9200         (X_U1.U1_N15545135)-1.397E-27             
+
+(X_U1.U1_N15846152)    0.0000         (X_U1.U1_N15850660)    1.3250             
+
+(X_U1.U1_N15850670)    0.0000         (X_U1.X_U1_U1.INM1)     .9200             
+
+(X_U1.X_U1_U1.INP1)    0.0000         (X_U1.X_U1_U1.INP2)    0.0000             
+
+(X_U1.X_U1_U2.INM1)    1.3250         (X_U1.X_U1_U2.INP1)    0.0000             
+
+(X_U1.X_U1_U2.INP2)    0.0000         (X_U1.U1_N154887931)    0.0000            
+
+(X_U1.U1_N154966513)     .0250        (X_U1.U1_N158505703)     .0250        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    X_U1.V_V2    0.000E+00
+    X_U1.V_V5    0.000E+00
+    X_U1.V_U1_V6   0.000E+00
+    X_U1.V_U1_V3   0.000E+00
+    X_U1.V_U1_V4   0.000E+00
+    X_U1.V_U1_V5   0.000E+00
+    X_U1.V_V4    0.000E+00
+    X_U1.V_V3    0.000E+00
+    X_U1.X_F1.VF_F1   0.000E+00
+    X_U1.X_H1.VH_H1   0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15139): Time step =  170.0E-21 is too small in Transient Analysis at Time =  .011. Minimum allowable step size =  1.000E-18.
+         The device which is changing too fast is X_U1.X_U1_U4.d1.
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00581)     .8950 (N00734)     .9772 (X_U1.FB)     .7817                       
+
+(M_UN0001)    0.0000                  (X_U1.VXX)     .8954                      
+
+(X_U1.VYY)     .8991                  (X_U1.VZZ)     .9772                      
+
+(X_U1.EN_OK)    1.0000                (X_U1.V_FBK)     .7817                    
+
+(X_U1.EN_INT)     .8950               (X_U1.ISENSE)   -1.3529                   
+
+(X_U1.U1_DROP)     .0627              (X_U1.VIN_PRE)     .8950                  
+
+(X_U1.Vzz_INT)     .9772              (X_U1.LOAD_DIS)    0.0000                 
+
+(X_U1.VOUT_INT)     .9772             (X_U1.N15505639)     .9772                
+
+(X_U1.N15505647)     .9772            (X_U1.N15505691)    5.2034                
+
+(X_U1.N15505717)     .8950            (X_U1.N15505751)     .8806                
+
+(X_U1.N15506031)     .9772            (X_U1.N15518026)     .9772                
+
+(X_U1.N15528889)     .9772            (X_U1.N15735226)     .8954                
+
+(X_U1.N15738584)     .8954            (X_U1.N15738829)     .8954                
+
+(X_U1.U1_EN_PRE)    1.0000            (X_U1.U1_VIN_OK)    0.0000                
+
+(X_U1.X_U1_U1.1)    1.0000            (X_U1.X_U1_U2.1) 12.95E-09                
+
+(X_U1.N157842371)    0.0000           (X_U1.U1_N15488381)     .7997             
+
+(X_U1.U1_N15488397)     .9997         (X_U1.U1_N15488775)     .9997             
+
+(X_U1.U1_N15496735)     .9200         (X_U1.U1_N15545135)    1.0000             
+
+(X_U1.U1_N15846152)     .8323         (X_U1.U1_N15850660)    1.3250             
+
+(X_U1.U1_N15850670)    0.0000         (X_U1.X_U1_U1.INM1)     .0250             
+
+(X_U1.X_U1_U1.INP1)    0.0000         (X_U1.X_U1_U1.INP2)     .0250             
+
+(X_U1.X_U1_U2.INM1)     .4300         (X_U1.X_U1_U2.INP1)    0.0000             
+
+(X_U1.X_U1_U2.INP2)    0.0000         (X_U1.U1_N154887931)     .8323            
+
+(X_U1.U1_N154966513)     .0250        (X_U1.U1_N158505703)     .0250        
+
+
+**** Interrupt ****

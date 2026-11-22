@@ -1,0 +1,48 @@
+{
+  "checked_date": "2026-10-02",
+  "source_board_sha256": "b4783fd7902b334be20473bb06bde6dd24a31ccd87740e554982dca04ae29bae",
+  "candidate_board_sha256": "0088c6bf9a879f31753af60fd09e785f4b021e5200dd9d0ecbe1936d5c1c7348",
+  "override_position_max_error_mm": 0.0,
+  "override_angle_max_error_degrees": 0.0,
+  "native_courtyard_bound_overlaps": 0,
+  "pad_transfer_errors": 0,
+  "clock_measurements": [
+    {
+      "connection": "HSE input",
+      "from": "U401.41",
+      "to": "Y401.1",
+      "distance_mm": 3.3769
+    },
+    {
+      "connection": "HSE output",
+      "from": "U401.40",
+      "to": "Y401.3",
+      "distance_mm": 4.4205
+    },
+    {
+      "connection": "LSE input",
+      "from": "U401.17",
+      "to": "Y402.1",
+      "distance_mm": 5.3924
+    },
+    {
+      "connection": "LSE output",
+      "from": "U401.16",
+      "to": "Y402.2",
+      "distance_mm": 4.2518
+    },
+    {
+      "connection": "LSE input load",
+      "from": "Y402.1",
+      "to": "C421.1",
+      "distance_mm": 1.5001
+    },
+    {
+      "connection": "LSE output load",
+      "from": "Y402.2",
+      "to": "C422.1",
+      "distance_mm": 1.5876
+    }
+  ],
+  "orientation_comparison": "Angles compared modulo360 degrees; native -90 equals override270."
+}

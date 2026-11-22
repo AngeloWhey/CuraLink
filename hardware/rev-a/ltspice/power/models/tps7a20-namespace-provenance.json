@@ -1,0 +1,9 @@
+{
+  "original": "sources/tps7a20-spice/tps7a20-adj_trans.lib",
+  "original_sha256": "154acfdd2199ac44259908b90b07d15bc7e535a45c8c51d1413894c900718b69",
+  "namespaced_copy": "models/tps7a20-namespaced.lib",
+  "namespaced_sha256": "7fb58584a68a236b659278055302b1dc0fbe916d1f8cd0d835b818d409639dad",
+  "change": "All four COMPHYS_BASIC_GEN references/definition/end statements renamed TPS7A20_COMPHYS_BASIC_GEN; no electrical parameters or expressions changed.",
+  "names_changed": 4,
+  "limits": "Generic voltage-programmed TI PSpice macro with no temperature or ground/quiescent-current model; coupled LTspice operation has not been validated by TI."
+}

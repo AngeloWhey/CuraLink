@@ -1,0 +1,2451 @@
+{
+  "date_local": "2026-10-02",
+  "timezone": "America/New_York",
+  "status": "Proposed placement constraints for unrouted candidate PCB; electrical circuit unchanged.",
+  "source": "hardware/rev-a/power/power-components.json",
+  "source_sha256": "62e340989a81d53b7780dd238190cca8dc0dcdbaea9eabb0571e95c16c3de94a",
+  "board_assumption": {
+    "size_mm": [
+      80,
+      74
+    ],
+    "bottom_power_region_mm": {
+      "x": [
+        6,
+        76
+      ],
+      "y": [
+        53,
+        71
+      ]
+    }
+  },
+  "component_count": 120,
+  "main_board_component_count": 120,
+  "external_catalog_component_refs": [
+    "RT501"
+  ],
+  "coordinate_suggestions_status": "Initial agent floorplan proposal only. Root subsequently selected input/charger at left bottom and LDOs at right, below MCU/AFE output region; actual PCB coordinates take precedence. Groups and local-proximity constraints are independent of these provisional centers.",
+  "ref_to_group": {
+    "U502": "input",
+    "D501": "input",
+    "R510": "input",
+    "R511": "input",
+    "R512": "input",
+    "C501": "input",
+    "C502": "input",
+    "U501": "charger",
+    "Q504": "charger",
+    "Q505": "charger",
+    "Q506": "charger",
+    "R501": "charger",
+    "R503": "charger",
+    "R504": "charger",
+    "R505": "charger",
+    "R506": "charger",
+    "R507": "charger",
+    "R508": "charger",
+    "R509": "charger",
+    "C503": "charger",
+    "C504": "charger",
+    "C505": "charger",
+    "U503": "ctrl",
+    "U504": "ctrl",
+    "U505": "ctrl",
+    "U508": "ctrl",
+    "U509": "ctrl",
+    "U510": "ctrl",
+    "U515": "ctrl",
+    "D502": "ctrl",
+    "D503": "ctrl",
+    "D504": "ctrl",
+    "D507": "ctrl",
+    "D508": "ctrl",
+    "D509": "ctrl",
+    "R513": "ctrl",
+    "R514": "ctrl",
+    "R515": "ctrl",
+    "R516": "ctrl",
+    "R517": "ctrl",
+    "R518": "ctrl",
+    "R519": "ctrl",
+    "R520": "ctrl",
+    "R526": "ctrl",
+    "R527": "ctrl",
+    "R528": "ctrl",
+    "R529": "ctrl",
+    "R530": "ctrl",
+    "R549": "ctrl",
+    "R550": "ctrl",
+    "R551": "ctrl",
+    "C506": "ctrl",
+    "C507": "ctrl",
+    "C508": "ctrl",
+    "C509": "ctrl",
+    "C512": "ctrl",
+    "C513": "ctrl",
+    "C514": "ctrl",
+    "C518": "ctrl",
+    "C519": "ctrl",
+    "C520": "ctrl",
+    "C521": "ctrl",
+    "C522": "ctrl",
+    "C531": "ctrl",
+    "C532": "ctrl",
+    "U511": "battery-switch",
+    "Q501": "battery-switch",
+    "Q502": "battery-switch",
+    "Q503": "battery-switch",
+    "R502": "battery-switch",
+    "R531": "battery-switch",
+    "R532": "battery-switch",
+    "R533": "battery-switch",
+    "R534": "battery-switch",
+    "R535": "battery-switch",
+    "C523": "battery-switch",
+    "C524": "battery-switch",
+    "U512": "analog-ldo",
+    "Q507": "analog-ldo",
+    "R536": "analog-ldo",
+    "R538": "analog-ldo",
+    "R540": "analog-ldo",
+    "R541": "analog-ldo",
+    "R544": "analog-ldo",
+    "C525": "analog-ldo",
+    "C526": "analog-ldo",
+    "C529": "analog-ldo",
+    "U513": "digital-ldo",
+    "Q508": "digital-ldo",
+    "R537": "digital-ldo",
+    "R539": "digital-ldo",
+    "C527": "digital-ldo",
+    "C528": "digital-ldo",
+    "U506": "temperature",
+    "U507": "temperature",
+    "R521": "temperature",
+    "R522": "temperature",
+    "R523": "temperature",
+    "R524": "temperature",
+    "R525": "temperature",
+    "C510": "temperature",
+    "C511": "temperature",
+    "C515": "temperature",
+    "C516": "temperature",
+    "C517": "temperature",
+    "RT501": "temperature",
+    "U514": "pcm",
+    "Q509": "pcm",
+    "Q510": "pcm",
+    "R545": "pcm",
+    "R546": "pcm",
+    "R547": "pcm",
+    "R548": "pcm",
+    "C530": "pcm",
+    "J501": "benchpads",
+    "J502": "benchpads",
+    "J503": "benchpads",
+    "J504": "benchpads",
+    "R542": "benchpads",
+    "R543": "benchpads"
+  },
+  "groups": [
+    {
+      "name": "input",
+      "center_xy_mm": [
+        70,
+        59
+      ],
+      "refs": [
+        "U502",
+        "D501",
+        "R510",
+        "R511",
+        "R512",
+        "C501",
+        "C502"
+      ],
+      "count": 7
+    },
+    {
+      "name": "charger",
+      "center_xy_mm": [
+        61,
+        62
+      ],
+      "refs": [
+        "U501",
+        "Q504",
+        "Q505",
+        "Q506",
+        "R501",
+        "R503",
+        "R504",
+        "R505",
+        "R506",
+        "R507",
+        "R508",
+        "R509",
+        "C503",
+        "C504",
+        "C505"
+      ],
+      "count": 15
+    },
+    {
+      "name": "ctrl",
+      "center_xy_mm": [
+        40,
+        62
+      ],
+      "refs": [
+        "U503",
+        "U504",
+        "U505",
+        "U508",
+        "U509",
+        "U510",
+        "U515",
+        "D502",
+        "D503",
+        "D504",
+        "D507",
+        "D508",
+        "D509",
+        "R513",
+        "R514",
+        "R515",
+        "R516",
+        "R517",
+        "R518",
+        "R519",
+        "R520",
+        "R526",
+        "R527",
+        "R528",
+        "R529",
+        "R530",
+        "R549",
+        "R550",
+        "R551",
+        "C506",
+        "C507",
+        "C508",
+        "C509",
+        "C512",
+        "C513",
+        "C514",
+        "C518",
+        "C519",
+        "C520",
+        "C521",
+        "C522",
+        "C531",
+        "C532"
+      ],
+      "count": 43
+    },
+    {
+      "name": "battery-switch",
+      "center_xy_mm": [
+        24,
+        64
+      ],
+      "refs": [
+        "U511",
+        "Q501",
+        "Q502",
+        "Q503",
+        "R502",
+        "R531",
+        "R532",
+        "R533",
+        "R534",
+        "R535",
+        "C523",
+        "C524"
+      ],
+      "count": 12
+    },
+    {
+      "name": "analog-ldo",
+      "center_xy_mm": [
+        28,
+        54.5
+      ],
+      "refs": [
+        "U512",
+        "Q507",
+        "R536",
+        "R538",
+        "R540",
+        "R541",
+        "R544",
+        "C525",
+        "C526",
+        "C529"
+      ],
+      "count": 10
+    },
+    {
+      "name": "digital-ldo",
+      "center_xy_mm": [
+        49,
+        54.5
+      ],
+      "refs": [
+        "U513",
+        "Q508",
+        "R537",
+        "R539",
+        "C527",
+        "C528"
+      ],
+      "count": 6
+    },
+    {
+      "name": "temperature",
+      "center_xy_mm": [
+        54,
+        68
+      ],
+      "refs": [
+        "U506",
+        "U507",
+        "R521",
+        "R522",
+        "R523",
+        "R524",
+        "R525",
+        "C510",
+        "C511",
+        "C515",
+        "C516",
+        "C517",
+        "RT501"
+      ],
+      "count": 13
+    },
+    {
+      "name": "pcm",
+      "center_xy_mm": [
+        13.5,
+        66
+      ],
+      "refs": [
+        "U514",
+        "Q509",
+        "Q510",
+        "R545",
+        "R546",
+        "R547",
+        "R548",
+        "C530"
+      ],
+      "count": 8
+    },
+    {
+      "name": "benchpads",
+      "center_xy_mm": [
+        75,
+        67
+      ],
+      "refs": [
+        "J501",
+        "J502",
+        "J503",
+        "J504",
+        "R542",
+        "R543"
+      ],
+      "count": 6
+    }
+  ],
+  "components": [
+    {
+      "ref": "U501",
+      "group": "charger",
+      "value": "BQ25185DLHR",
+      "pins": {
+        "1": "CHG_SYS",
+        "2": "BAT_CHG",
+        "3": "CHG_STAT2",
+        "4": "CHG_CE_N",
+        "5": "GND",
+        "6": "CHG_TS",
+        "7": "CHG_VSET",
+        "8": "CHG_ISET",
+        "9": "CHG_STAT1",
+        "10": "CHG_IN",
+        "11": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        61,
+        61
+      ]
+    },
+    {
+      "ref": "U502",
+      "group": "input",
+      "value": "TPS25200DRVR",
+      "pins": {
+        "1": "CHG_IN",
+        "2": "WPT_EF_ILIM",
+        "3": "CHG_INPUT_FAULT_N",
+        "4": "WPT_EF_EN",
+        "5": "GND",
+        "6": "WPT_PROTECTED",
+        "7": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        69,
+        59
+      ]
+    },
+    {
+      "ref": "U503",
+      "group": "ctrl",
+      "value": "TPS7A2030PDBVR",
+      "pins": {
+        "1": "CTRL_INPUT",
+        "2": "GND",
+        "3": "CTRL_INPUT",
+        "4": null,
+        "5": "CTRL_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        46,
+        61
+      ]
+    },
+    {
+      "ref": "U504",
+      "group": "ctrl",
+      "value": "TLV3012BIDBVR",
+      "pins": {
+        "1": "BAT_OK",
+        "2": "GND",
+        "3": "BAT_SENSE",
+        "4": "REF_1V242",
+        "5": "REF_1V242",
+        "6": "CTRL_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        36,
+        61
+      ]
+    },
+    {
+      "ref": "U505",
+      "group": "ctrl",
+      "value": "TLV3012BIDBVR",
+      "pins": {
+        "1": "FIELD_ABSENT",
+        "2": "GND",
+        "3": "WPT_THRESHOLD",
+        "4": "WPT_SENSE",
+        "5": null,
+        "6": "CTRL_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        44,
+        64
+      ]
+    },
+    {
+      "ref": "U506",
+      "group": "temperature",
+      "value": "TLV3012BIDBVR",
+      "pins": {
+        "1": "TEMP_COLD_OK",
+        "2": "GND",
+        "3": "CELL_TEMP",
+        "4": "TEMP_COLD_REF",
+        "5": null,
+        "6": "CTRL_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        53,
+        67
+      ]
+    },
+    {
+      "ref": "U507",
+      "group": "temperature",
+      "value": "TLV3012BIDBVR",
+      "pins": {
+        "1": "TEMP_HOT_OK",
+        "2": "GND",
+        "3": "TEMP_HOT_REF",
+        "4": "CELL_TEMP",
+        "5": null,
+        "6": "CTRL_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        57,
+        67
+      ]
+    },
+    {
+      "ref": "U508",
+      "group": "ctrl",
+      "value": "SN74LVC1G17DBVR",
+      "pins": {
+        "1": null,
+        "2": "RUN_DELAY",
+        "3": "GND",
+        "4": "RUN_ENABLE",
+        "5": "CTRL_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        36,
+        67
+      ]
+    },
+    {
+      "ref": "U509",
+      "group": "ctrl",
+      "value": "SN74LVC1G04DBVR",
+      "pins": {
+        "1": null,
+        "2": "RUN_ENABLE",
+        "3": "GND",
+        "4": "NOT_RUN",
+        "5": "CTRL_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        40,
+        68
+      ]
+    },
+    {
+      "ref": "U510",
+      "group": "ctrl",
+      "value": "SN74LVC1G17DBVR",
+      "pins": {
+        "1": null,
+        "2": "CHARGE_DELAY",
+        "3": "GND",
+        "4": "CHARGE_READY",
+        "5": "CTRL_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        44,
+        68
+      ]
+    },
+    {
+      "ref": "U511",
+      "group": "battery-switch",
+      "value": "TPS25200DRVR",
+      "pins": {
+        "1": "SYS_RAW",
+        "2": "SYS_EF_ILIM",
+        "3": "SYS_FAULT_N",
+        "4": "RUN_ENABLE",
+        "5": "GND",
+        "6": "SYS_PRE",
+        "7": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        27,
+        64
+      ]
+    },
+    {
+      "ref": "U512",
+      "group": "analog-ldo",
+      "value": "TPS7A2030PDBVR",
+      "pins": {
+        "1": "SYS_ANALOG_IN",
+        "2": "GND",
+        "3": "DIGITAL_GOOD",
+        "4": null,
+        "5": "AVDD_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        28,
+        54.5
+      ]
+    },
+    {
+      "ref": "U513",
+      "group": "digital-ldo",
+      "value": "TPS7A2030PDBVR",
+      "pins": {
+        "1": "SYS_DIGITAL_IN",
+        "2": "GND",
+        "3": "RUN_ENABLE",
+        "4": null,
+        "5": "DVDD_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        49,
+        54.5
+      ]
+    },
+    {
+      "ref": "Q501",
+      "group": "battery-switch",
+      "value": "DMP2035U-7",
+      "pins": {
+        "1": "SW_GATE",
+        "2": "PMOS_COMMON_SOURCE",
+        "3": "BAT_RUN"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        19,
+        63
+      ]
+    },
+    {
+      "ref": "Q502",
+      "group": "battery-switch",
+      "value": "DMP2035U-7",
+      "pins": {
+        "1": "SW_GATE",
+        "2": "PMOS_COMMON_SOURCE",
+        "3": "SYS_PRE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        22,
+        63
+      ]
+    },
+    {
+      "ref": "Q503",
+      "group": "battery-switch",
+      "value": "AO3400A",
+      "pins": {
+        "1": "RUN_ENABLE",
+        "2": "GND",
+        "3": "SW_GATE_PULL"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        23,
+        68
+      ]
+    },
+    {
+      "ref": "Q504",
+      "group": "charger",
+      "value": "AO3400A",
+      "pins": {
+        "1": "CHARGE_READY",
+        "2": "CE_MID1",
+        "3": "CHG_CE_N"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        63,
+        65
+      ]
+    },
+    {
+      "ref": "Q505",
+      "group": "charger",
+      "value": "AO3400A",
+      "pins": {
+        "1": "TEMP_COLD_OK",
+        "2": "CE_MID2",
+        "3": "CE_MID1"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        60.5,
+        65
+      ]
+    },
+    {
+      "ref": "Q506",
+      "group": "charger",
+      "value": "AO3400A",
+      "pins": {
+        "1": "TEMP_HOT_OK",
+        "2": "GND",
+        "3": "CE_MID2"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        58,
+        65
+      ]
+    },
+    {
+      "ref": "Q507",
+      "group": "analog-ldo",
+      "value": "AO3400A",
+      "pins": {
+        "1": "NOT_RUN",
+        "2": "GND",
+        "3": "ANALOG_DISCHARGE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        29,
+        58
+      ]
+    },
+    {
+      "ref": "Q508",
+      "group": "digital-ldo",
+      "value": "AO3400A",
+      "pins": {
+        "1": "NOT_RUN",
+        "2": "GND",
+        "3": "DIGITAL_DISCHARGE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        51,
+        58
+      ]
+    },
+    {
+      "ref": "D501",
+      "group": "input",
+      "value": "SS14",
+      "pins": {
+        "1": "WPT_RAW",
+        "2": "WPT_PROTECTED"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        73,
+        59
+      ]
+    },
+    {
+      "ref": "D502",
+      "group": "ctrl",
+      "value": "BAT54C-7-F",
+      "pins": {
+        "1": "PACK+",
+        "2": "CHG_IN",
+        "3": "CTRL_INPUT"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "D503",
+      "group": "ctrl",
+      "value": "BAT54-7-F",
+      "pins": {
+        "1": "RUN_PERMIT",
+        "2": null,
+        "3": "BAT_OK"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "D504",
+      "group": "ctrl",
+      "value": "BAT54-7-F",
+      "pins": {
+        "1": "RUN_PERMIT",
+        "2": null,
+        "3": "FIELD_ABSENT"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "D507",
+      "group": "ctrl",
+      "value": "BAT54-7-F",
+      "pins": {
+        "1": "RUN_DELAY",
+        "2": null,
+        "3": "RUN_FAST_DISCH"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "D508",
+      "group": "ctrl",
+      "value": "BAT54-7-F",
+      "pins": {
+        "1": "CHARGE_DELAY",
+        "2": null,
+        "3": "CHG_FAST_DISCH"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "D509",
+      "group": "ctrl",
+      "value": "BAT54-7-F",
+      "pins": {
+        "1": "GND",
+        "2": null,
+        "3": "WPT_SENSE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R501",
+      "group": "charger",
+      "value": "0",
+      "pins": {
+        "1": "PACK+",
+        "2": "BAT_CHG"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R502",
+      "group": "battery-switch",
+      "value": "0",
+      "pins": {
+        "1": "PACK+",
+        "2": "BAT_RUN"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R503",
+      "group": "charger",
+      "value": "130k",
+      "pins": {
+        "1": "CHG_VSET",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U501",
+        "near_pin": "7",
+        "purpose": "VSET precision return to local charger ground"
+      }
+    },
+    {
+      "ref": "R504",
+      "group": "charger",
+      "value": "15k",
+      "pins": {
+        "1": "CHG_ISET",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U501",
+        "near_pin": "8",
+        "purpose": "ISET precision ground return, not charger-current return segment"
+      }
+    },
+    {
+      "ref": "R505",
+      "group": "charger",
+      "value": "2k",
+      "pins": {
+        "1": "CHG_ISET",
+        "2": "ISET_COMP"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U501",
+        "near_pin": "8",
+        "purpose": "ISET compensation resistor"
+      }
+    },
+    {
+      "ref": "R506",
+      "group": "charger",
+      "value": "10k",
+      "pins": {
+        "1": "CHG_TS",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U501",
+        "near_pin": "6",
+        "purpose": "internal charger TS termination; external NTC comparators control CE separately"
+      }
+    },
+    {
+      "ref": "R507",
+      "group": "charger",
+      "value": "100k",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "CHG_CE_N"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U501",
+        "near_pin": "4",
+        "purpose": "default CE disable pull-up, Q504/Q505/Q506 series pull-down adjacent"
+      }
+    },
+    {
+      "ref": "R508",
+      "group": "charger",
+      "value": "10k",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "CHG_STAT1"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R509",
+      "group": "charger",
+      "value": "10k",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "CHG_STAT2"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R510",
+      "group": "input",
+      "value": "300k",
+      "pins": {
+        "1": "WPT_PROTECTED",
+        "2": "WPT_EF_EN"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R511",
+      "group": "input",
+      "value": "1Meg",
+      "pins": {
+        "1": "WPT_EF_ILIM",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U502",
+        "near_pin": "2",
+        "purpose": "eFuse ILIM programming; Kelvin ground to GND5/EP7"
+      }
+    },
+    {
+      "ref": "R512",
+      "group": "input",
+      "value": "10k",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "CHG_INPUT_FAULT_N"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R513",
+      "group": "ctrl",
+      "value": "1Meg",
+      "pins": {
+        "1": "PACK+",
+        "2": "BAT_SENSE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R514",
+      "group": "ctrl",
+      "value": "510k",
+      "pins": {
+        "1": "BAT_SENSE",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R515",
+      "group": "ctrl",
+      "value": "10Meg",
+      "pins": {
+        "1": "BAT_OK",
+        "2": "BAT_SENSE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R516",
+      "group": "ctrl",
+      "value": "100k",
+      "pins": {
+        "1": "WPT_RAW",
+        "2": "WPT_SENSE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R517",
+      "group": "ctrl",
+      "value": "10k",
+      "pins": {
+        "1": "WPT_SENSE",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R518",
+      "group": "ctrl",
+      "value": "100k",
+      "pins": {
+        "1": "REF_1V242",
+        "2": "WPT_THRESHOLD"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R519",
+      "group": "ctrl",
+      "value": "20k",
+      "pins": {
+        "1": "WPT_THRESHOLD",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R520",
+      "group": "ctrl",
+      "value": "1.5Meg",
+      "pins": {
+        "1": "FIELD_ABSENT",
+        "2": "WPT_THRESHOLD"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R521",
+      "group": "temperature",
+      "value": "10k",
+      "pins": {
+        "1": "CELL_TEMP",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R522",
+      "group": "temperature",
+      "value": "113k",
+      "pins": {
+        "1": "REF_1V242",
+        "2": "TEMP_COLD_REF"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R523",
+      "group": "temperature",
+      "value": "100k",
+      "pins": {
+        "1": "TEMP_COLD_REF",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R524",
+      "group": "temperature",
+      "value": "66.5k",
+      "pins": {
+        "1": "REF_1V242",
+        "2": "TEMP_HOT_REF"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R525",
+      "group": "temperature",
+      "value": "100k",
+      "pins": {
+        "1": "TEMP_HOT_REF",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R526",
+      "group": "ctrl",
+      "value": "10k",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "RUN_PERMIT"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R527",
+      "group": "ctrl",
+      "value": "47k",
+      "pins": {
+        "1": "RUN_PERMIT",
+        "2": "RUN_DELAY"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R528",
+      "group": "ctrl",
+      "value": "1k",
+      "pins": {
+        "1": "RUN_FAST_DISCH",
+        "2": "RUN_PERMIT"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R529",
+      "group": "ctrl",
+      "value": "47k",
+      "pins": {
+        "1": "NOT_RUN",
+        "2": "CHARGE_DELAY"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R530",
+      "group": "ctrl",
+      "value": "1k",
+      "pins": {
+        "1": "CHG_FAST_DISCH",
+        "2": "NOT_RUN"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R531",
+      "group": "battery-switch",
+      "value": "100k",
+      "pins": {
+        "1": "PMOS_COMMON_SOURCE",
+        "2": "SW_GATE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "Q501",
+        "near_pin": "1",
+        "purpose": "PMOS source-to-gate off bias; keep common-source/gate loop short"
+      }
+    },
+    {
+      "ref": "R532",
+      "group": "battery-switch",
+      "value": "1k",
+      "pins": {
+        "1": "SW_GATE",
+        "2": "SW_GATE_PULL"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "Q503",
+        "near_pin": "3",
+        "purpose": "PMOS gate pull-down path"
+      }
+    },
+    {
+      "ref": "R533",
+      "group": "battery-switch",
+      "value": "100k",
+      "pins": {
+        "1": "RUN_ENABLE",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U511",
+        "near_pin": "4",
+        "purpose": "RUN_ENABLE default low at main switch/eFuse control"
+      }
+    },
+    {
+      "ref": "R534",
+      "group": "battery-switch",
+      "value": "820k",
+      "pins": {
+        "1": "SYS_EF_ILIM",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U511",
+        "near_pin": "2",
+        "purpose": "run eFuse ILIM programming; Kelvin ground to GND5/EP7"
+      }
+    },
+    {
+      "ref": "R535",
+      "group": "battery-switch",
+      "value": "10k",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "SYS_FAULT_N"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R536",
+      "group": "analog-ldo",
+      "value": "0",
+      "pins": {
+        "1": "SYS_RAW",
+        "2": "SYS_ANALOG_IN"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U512",
+        "near_pin": "1",
+        "purpose": "separate SYS_RAW analog branch; tuning link next to local input capacitor"
+      }
+    },
+    {
+      "ref": "R537",
+      "group": "digital-ldo",
+      "value": "0",
+      "pins": {
+        "1": "SYS_RAW",
+        "2": "SYS_DIGITAL_IN"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U513",
+        "near_pin": "1",
+        "purpose": "separate SYS_RAW digital branch; do not daisy-chain digital feed through analog branch"
+      }
+    },
+    {
+      "ref": "R538",
+      "group": "analog-ldo",
+      "value": "100",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "ANALOG_DISCHARGE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "Q507",
+        "near_pin": "3",
+        "purpose": "analog discharge resistor and switch near analog output reservoir"
+      }
+    },
+    {
+      "ref": "R539",
+      "group": "digital-ldo",
+      "value": "100",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "DIGITAL_DISCHARGE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "Q508",
+        "near_pin": "3",
+        "purpose": "digital discharge resistor and switch near digital output reservoir"
+      }
+    },
+    {
+      "ref": "R540",
+      "group": "analog-ldo",
+      "value": "10k",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "VMID_RAW"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U109",
+        "near_pin": "4",
+        "purpose": "quiet VMID divider/filter adjacent to AFE buffer input"
+      }
+    },
+    {
+      "ref": "R541",
+      "group": "analog-ldo",
+      "value": "10k",
+      "pins": {
+        "1": "VMID_RAW",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "R540",
+        "near_pin": "2",
+        "purpose": "VMID divider bottom resistor; same quiet local ground as C529"
+      }
+    },
+    {
+      "ref": "R542",
+      "group": "benchpads",
+      "value": "0",
+      "pins": {
+        "1": "WPT_RX_DC",
+        "2": "WPT_RAW"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        72,
+        64
+      ]
+    },
+    {
+      "ref": "R543",
+      "group": "benchpads",
+      "value": "0",
+      "pins": {
+        "1": "BENCH_CHG_5V",
+        "2": "WPT_RAW"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        72,
+        70
+      ]
+    },
+    {
+      "ref": "C501",
+      "group": "input",
+      "value": "2.2uF 25V X7R",
+      "pins": {
+        "1": "WPT_PROTECTED",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U502",
+        "near_pin": "6",
+        "purpose": "input bypass loop with EP7/GND5; post-D501 WPT_PROTECTED"
+      }
+    },
+    {
+      "ref": "C502",
+      "group": "input",
+      "value": "2.2uF 25V X7R",
+      "pins": {
+        "1": "CHG_IN",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U502",
+        "near_pin": "1",
+        "purpose": "output reservoir at CHG_IN, also feed U501 IN10 directly"
+      }
+    },
+    {
+      "ref": "C503",
+      "group": "charger",
+      "value": "10uF 25V X7R",
+      "pins": {
+        "1": "CHG_SYS",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U501",
+        "near_pin": "1",
+        "purpose": "charger-local SYS bypass; never merge CHG_SYS with SYS_RAW"
+      }
+    },
+    {
+      "ref": "C504",
+      "group": "charger",
+      "value": "2.2uF 10V X7R",
+      "pins": {
+        "1": "BAT_CHG",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U501",
+        "near_pin": "2",
+        "purpose": "charger BAT bypass and short path to R501"
+      }
+    },
+    {
+      "ref": "C505",
+      "group": "charger",
+      "value": "4.7nF 50V C0G",
+      "pins": {
+        "1": "ISET_COMP",
+        "2": "GND"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U501",
+        "near_pin": "8",
+        "purpose": "ISET compensation; R505/C505 close to ISET pin"
+      }
+    },
+    {
+      "ref": "C506",
+      "group": "ctrl",
+      "value": "2.2uF 10V X7R",
+      "pins": {
+        "1": "CTRL_INPUT",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U503",
+        "near_pin": "1",
+        "purpose": "CTRL_INPUT local bypass after D502"
+      }
+    },
+    {
+      "ref": "C507",
+      "group": "ctrl",
+      "value": "2.2uF 10V X7R",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U503",
+        "near_pin": "5",
+        "purpose": "CTRL_3V0 LDO output reservoir"
+      }
+    },
+    {
+      "ref": "C508",
+      "group": "ctrl",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U504",
+        "near_pin": "6",
+        "purpose": "BAT supervisor local supply bypass"
+      }
+    },
+    {
+      "ref": "C509",
+      "group": "ctrl",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U505",
+        "near_pin": "6",
+        "purpose": "field detector local supply bypass"
+      }
+    },
+    {
+      "ref": "C510",
+      "group": "temperature",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U506",
+        "near_pin": "6",
+        "purpose": "cold comparator local supply bypass"
+      }
+    },
+    {
+      "ref": "C511",
+      "group": "temperature",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U507",
+        "near_pin": "6",
+        "purpose": "hot comparator local supply bypass"
+      }
+    },
+    {
+      "ref": "C512",
+      "group": "ctrl",
+      "value": "4.7nF C0G",
+      "pins": {
+        "1": "REF_1V242",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U504",
+        "near_pin": "5",
+        "purpose": "shared reference output bypass; reference source is U504"
+      }
+    },
+    {
+      "ref": "C513",
+      "group": "ctrl",
+      "value": "1nF C0G",
+      "pins": {
+        "1": "BAT_SENSE",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U504",
+        "near_pin": "3",
+        "purpose": "BAT_SENSE low-pass with R513/R514/R515 kept local"
+      }
+    },
+    {
+      "ref": "C514",
+      "group": "ctrl",
+      "value": "100pF C0G",
+      "pins": {
+        "1": "WPT_SENSE",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U505",
+        "near_pin": "4",
+        "purpose": "WPT_SENSE low-pass; R516/R517/D509 adjacent, long route carries raw WPT not divided sense"
+      }
+    },
+    {
+      "ref": "C515",
+      "group": "temperature",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "CELL_TEMP",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U506",
+        "near_pin": "3",
+        "purpose": "CELL_TEMP NTC harness filtering; U507 IN-4 samples same local node"
+      }
+    },
+    {
+      "ref": "C516",
+      "group": "temperature",
+      "value": "10nF C0G",
+      "pins": {
+        "1": "TEMP_COLD_REF",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U506",
+        "near_pin": "4",
+        "purpose": "cold threshold bypass; R522/R523 adjacent"
+      }
+    },
+    {
+      "ref": "C517",
+      "group": "temperature",
+      "value": "10nF C0G",
+      "pins": {
+        "1": "TEMP_HOT_REF",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U507",
+        "near_pin": "3",
+        "purpose": "hot threshold bypass; R524/R525 adjacent"
+      }
+    },
+    {
+      "ref": "C518",
+      "group": "ctrl",
+      "value": "2.2uF 16V X7R",
+      "pins": {
+        "1": "RUN_DELAY",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U508",
+        "near_pin": "2",
+        "purpose": "RUN_DELAY timing, R527/D507/R528 adjacent"
+      }
+    },
+    {
+      "ref": "C519",
+      "group": "ctrl",
+      "value": "4.7uF 16V X7R",
+      "pins": {
+        "1": "CHARGE_DELAY",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U510",
+        "near_pin": "2",
+        "purpose": "CHARGE_DELAY timing, R529/D508/R530 adjacent"
+      }
+    },
+    {
+      "ref": "C520",
+      "group": "ctrl",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U508",
+        "near_pin": "5",
+        "purpose": "RUN delay Schmitt gate local bypass"
+      }
+    },
+    {
+      "ref": "C521",
+      "group": "ctrl",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U509",
+        "near_pin": "5",
+        "purpose": "NOT_RUN inverter local bypass"
+      }
+    },
+    {
+      "ref": "C522",
+      "group": "ctrl",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U510",
+        "near_pin": "5",
+        "purpose": "charge delay Schmitt gate local bypass"
+      }
+    },
+    {
+      "ref": "C523",
+      "group": "battery-switch",
+      "value": "2.2uF 10V X7R",
+      "pins": {
+        "1": "SYS_PRE",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U511",
+        "near_pin": "6",
+        "purpose": "SYS_PRE local input bypass; short loop through PMOS pair"
+      }
+    },
+    {
+      "ref": "C524",
+      "group": "battery-switch",
+      "value": "10uF 10V X7R",
+      "pins": {
+        "1": "SYS_RAW",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U511",
+        "near_pin": "1",
+        "purpose": "SYS_RAW reservoir before separate analog/digital branches"
+      }
+    },
+    {
+      "ref": "C525",
+      "group": "analog-ldo",
+      "value": "2.2uF 10V X7R",
+      "pins": {
+        "1": "SYS_ANALOG_IN",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U512",
+        "near_pin": "1",
+        "purpose": "analog LDO input bypass after R536"
+      }
+    },
+    {
+      "ref": "C526",
+      "group": "analog-ldo",
+      "value": "4.7uF 10V X7R",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U512",
+        "near_pin": "5",
+        "purpose": "AVDD LDO output bypass; feed quiet AFE rail from this node"
+      }
+    },
+    {
+      "ref": "C527",
+      "group": "digital-ldo",
+      "value": "2.2uF 10V X7R",
+      "pins": {
+        "1": "SYS_DIGITAL_IN",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U513",
+        "near_pin": "1",
+        "purpose": "digital LDO input bypass after R537"
+      }
+    },
+    {
+      "ref": "C528",
+      "group": "digital-ldo",
+      "value": "10uF 10V X7R",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U513",
+        "near_pin": "5",
+        "purpose": "DVDD reservoir; local MCU bypass still mandatory"
+      }
+    },
+    {
+      "ref": "C529",
+      "group": "analog-ldo",
+      "value": "2.2uF 10V X7R",
+      "pins": {
+        "1": "VMID_RAW",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "R540",
+        "near_pin": "2",
+        "purpose": "VMID_RAW divider/filter; place at AFE U109B buffer input, prioritize AFE proximity over generic analog-LDO group center"
+      }
+    },
+    {
+      "ref": "RT501",
+      "group": "temperature",
+      "value": "10k B3435 NTC",
+      "pins": {
+        "1": "REF_1V242",
+        "2": "CELL_TEMP"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": false,
+      "placement_representation": "Two manually soldered wire landings for the off-board NTC; no physical catalog thermistor mounted on main PCB.",
+      "location_note": "Off-board NTC bonded to cell, not board ambient; root PCB has explicit RT501 harness landing pads and alternate access through J501 REF_1V242 pin3/CELL_TEMP pin4. Exclude RT501 from SMT placement and assembled main-board BOM, while preserving its separately purchased catalog component."
+    },
+    {
+      "ref": "J501",
+      "group": "benchpads",
+      "value": "Protected pack + external cell NTC",
+      "pins": {
+        "1": "PACK+",
+        "2": "GND",
+        "3": "REF_1V242",
+        "4": "CELL_TEMP"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        6,
+        61
+      ]
+    },
+    {
+      "ref": "J502",
+      "group": "benchpads",
+      "value": "WPT receiver DC input",
+      "pins": {
+        "1": "WPT_RX_DC",
+        "2": "GND"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        75.5,
+        64
+      ]
+    },
+    {
+      "ref": "J503",
+      "group": "benchpads",
+      "value": "Bench charge input 5V",
+      "pins": {
+        "1": "BENCH_CHG_5V",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        75.5,
+        70
+      ]
+    },
+    {
+      "ref": "R544",
+      "group": "analog-ldo",
+      "value": "0",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "AVDD_3V0"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U512",
+        "near_pin": "5",
+        "purpose": "DNP rail short option; keep at analog/digital boundary, not as default rail merger"
+      }
+    },
+    {
+      "ref": "U514",
+      "group": "pcm",
+      "value": "BQ29737DSER",
+      "pins": {
+        "1": null,
+        "2": "PCM_CHG_GATE",
+        "3": "PCM_DSG_GATE",
+        "4": "CELLN",
+        "5": "PCM_BAT",
+        "6": "PCM_VMINUS"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        13.5,
+        66
+      ]
+    },
+    {
+      "ref": "Q509",
+      "group": "pcm",
+      "value": "AO3400A",
+      "pins": {
+        "1": "PCM_DSG_GATE",
+        "2": "CELLN",
+        "3": "PCM_COMMON_DRAIN"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        12,
+        69.5
+      ]
+    },
+    {
+      "ref": "Q510",
+      "group": "pcm",
+      "value": "AO3400A",
+      "pins": {
+        "1": "PCM_CHG_GATE",
+        "2": "PCM_NEG_SENSE",
+        "3": "PCM_COMMON_DRAIN"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        15,
+        69.5
+      ]
+    },
+    {
+      "ref": "R545",
+      "group": "pcm",
+      "value": "0",
+      "pins": {
+        "1": "CELLP",
+        "2": "PACK+"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R546",
+      "group": "pcm",
+      "value": "1.0",
+      "pins": {
+        "1": "PCM_NEG_SENSE",
+        "2": "GND"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "Q510",
+        "near_pin": "2",
+        "purpose": "PCM current sense resistor: Kelvin sense trace to U514 V- through R548; isolate load copper from sense path"
+      }
+    },
+    {
+      "ref": "R547",
+      "group": "pcm",
+      "value": "330",
+      "pins": {
+        "1": "CELLP",
+        "2": "PCM_BAT"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U514",
+        "near_pin": "5",
+        "purpose": "PCM BAT series filter at IC"
+      }
+    },
+    {
+      "ref": "R548",
+      "group": "pcm",
+      "value": "2.2k",
+      "pins": {
+        "1": "GND",
+        "2": "PCM_VMINUS"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U514",
+        "near_pin": "6",
+        "purpose": "PCM V- input series resistor at IC"
+      }
+    },
+    {
+      "ref": "C530",
+      "group": "pcm",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "PCM_BAT",
+        "2": "CELLN"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U514",
+        "near_pin": "5",
+        "purpose": "optional PCM local BAT/CELLN bypass; DNP qualification gate"
+      }
+    },
+    {
+      "ref": "J504",
+      "group": "benchpads",
+      "value": "Bare cell only \u2014 PCM qualification required",
+      "pins": {
+        "1": "CELLP",
+        "2": "CELLN"
+      },
+      "populate": false,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        6,
+        70
+      ]
+    },
+    {
+      "ref": "U515",
+      "group": "ctrl",
+      "value": "TLV3012BIDBVR",
+      "pins": {
+        "1": "DIGITAL_GOOD",
+        "2": "GND",
+        "3": "DIGITAL_SENSE",
+        "4": "REF_1V242",
+        "5": null,
+        "6": "CTRL_3V0"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "suggested_anchor_xy_mm": [
+        38,
+        55.5
+      ]
+    },
+    {
+      "ref": "R549",
+      "group": "ctrl",
+      "value": "200k",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "DIGITAL_SENSE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R550",
+      "group": "ctrl",
+      "value": "1Meg",
+      "pins": {
+        "1": "DIGITAL_SENSE",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "R551",
+      "group": "ctrl",
+      "value": "6.04Meg",
+      "pins": {
+        "1": "DIGITAL_GOOD",
+        "2": "DIGITAL_SENSE"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true
+    },
+    {
+      "ref": "C531",
+      "group": "ctrl",
+      "value": "100pF C0G",
+      "pins": {
+        "1": "DIGITAL_SENSE",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U515",
+        "near_pin": "3",
+        "purpose": "digital rail supervisor sense bypass; R549/R550/R551 adjacent"
+      }
+    },
+    {
+      "ref": "C532",
+      "group": "ctrl",
+      "value": "100nF 10V X7R",
+      "pins": {
+        "1": "CTRL_3V0",
+        "2": "GND"
+      },
+      "populate": true,
+      "place_on_main_pcb": true,
+      "catalog_component_on_main_pcb": true,
+      "local_proximity": {
+        "near_ref": "U515",
+        "near_pin": "6",
+        "purpose": "digital supervisor local CTRL supply bypass"
+      }
+    }
+  ],
+  "critical_clusters": [
+    {
+      "name": "battery-threshold",
+      "anchor": "U504",
+      "refs": [
+        "U504",
+        "C508",
+        "C512",
+        "C513",
+        "R513",
+        "R514",
+        "R515"
+      ],
+      "avoid": "WPT/raw power, gate/drain traces, clock/RF and discharge returns"
+    },
+    {
+      "name": "field-threshold",
+      "anchor": "U505",
+      "refs": [
+        "U505",
+        "C509",
+        "C514",
+        "R516",
+        "R517",
+        "R518",
+        "R519",
+        "R520",
+        "D509"
+      ],
+      "avoid": "Run WPT_RAW to R516, then keep WPT_SENSE short; sense input is not a long harness net"
+    },
+    {
+      "name": "digital-sequence-threshold",
+      "anchor": "U515",
+      "refs": [
+        "U515",
+        "C531",
+        "C532",
+        "R549",
+        "R550",
+        "R551"
+      ],
+      "avoid": "Long DIGITAL_SENSE routing and digital load ground returns"
+    },
+    {
+      "name": "run-delay",
+      "anchor": "U508",
+      "refs": [
+        "U508",
+        "C518",
+        "C520",
+        "R526",
+        "R527",
+        "R528",
+        "D503",
+        "D504",
+        "D507"
+      ],
+      "avoid": "Charging and SYS discharge current in timing capacitor return"
+    },
+    {
+      "name": "charge-delay",
+      "anchor": "U510",
+      "refs": [
+        "U509",
+        "U510",
+        "C519",
+        "C521",
+        "C522",
+        "R529",
+        "R530",
+        "D508"
+      ],
+      "avoid": "Timing network near WPT_RAW or power gate switching"
+    },
+    {
+      "name": "cold-threshold",
+      "anchor": "U506",
+      "refs": [
+        "U506",
+        "C510",
+        "C515",
+        "C516",
+        "R521",
+        "R522",
+        "R523"
+      ],
+      "avoid": "NTC harness coupling into reference or AFE; filter at comparator"
+    },
+    {
+      "name": "hot-threshold",
+      "anchor": "U507",
+      "refs": [
+        "U507",
+        "C511",
+        "C517",
+        "R524",
+        "R525"
+      ],
+      "avoid": "High-current ground drop in threshold resistors"
+    },
+    {
+      "name": "charger-programming",
+      "anchor": "U501",
+      "refs": [
+        "U501",
+        "R503",
+        "R504",
+        "R505",
+        "R506",
+        "R507",
+        "C505"
+      ],
+      "avoid": "STAT/CE routing through precision ISET node"
+    },
+    {
+      "name": "ce-interlock",
+      "anchor": "Q504",
+      "refs": [
+        "Q504",
+        "Q505",
+        "Q506",
+        "R507"
+      ],
+      "avoid": "Splitting the three series CE NMOS along distant temperature gates; carry digital gate nets instead"
+    },
+    {
+      "name": "vmid-input-filter",
+      "anchor": "U109",
+      "refs": [
+        "R540",
+        "R541",
+        "C529"
+      ],
+      "avoid": "BLE, charger, eFuse or discharge return in reference/filter ground"
+    },
+    {
+      "name": "pmos-source-gate",
+      "anchor": "Q501",
+      "refs": [
+        "Q501",
+        "Q502",
+        "Q503",
+        "R531",
+        "R532"
+      ],
+      "avoid": "Large shared-source/gate loops or single-FET substitution"
+    },
+    {
+      "name": "optional-pcm",
+      "anchor": "U514",
+      "refs": [
+        "U514",
+        "Q509",
+        "Q510",
+        "R545",
+        "R546",
+        "R547",
+        "R548",
+        "C530"
+      ],
+      "avoid": "CELLN copper stitched into GND, which would bypass the negative-side protector"
+    }
+  ],
+  "routing_rules": [
+    "Local bypass capacitor power pin connection: aim <=1 mm copper path, <=2 mm where package escape requires it; direct return to IC ground/EP with nearby plane connection. This is a layout objective, not a measured parasitic bound.",
+    "Priority order: exact package escape and local bypass loops, precision sense/reference/timing networks, high-current power paths, control connectivity, then compact packing.",
+    "Use a continuous ground return plane and physical zoning; do not route charging/eFuse/discharge current through threshold, VMID or AFE ground return segments.",
+    "Keep high-current SYS and WPT loops in bottom power zone; distribute AVDD and DVDD from separate LDO output nodes. Long shared PACK/SYS copper must carry current independently of quiet sense taps.",
+    "Carry low-impedance PACK+, WPT_RAW and DVDD toward local threshold dividers. Do not carry divided BAT_SENSE/WPT_SENSE/DIGITAL_SENSE across the board.",
+    "Shared REF_1V242 source is U504 pin5 with C512 locally. Route reference branch to temperature/field/digital-supervisor thresholds away from raw WPT and digital load returns.",
+    "Place R540/R541/C529 near AFE U109B VMID_RAW input even if outside nominal analog-LDO group center. Existing VMID crosstalk is a circuit issue and cannot be claimed fixed by this floorplan.",
+    "External NTC pair should run together from J501 toward local CELL_TEMP filtering, away from raw WPT and ADC input runs. J501 RT501 is off-board; no ambient-temperature substitute.",
+    "DNP protection components still need valid footprints, but CELLN remains distinct from GND. The bare-cell circuit must not be released solely because placement is complete.",
+    "J501/J502/J503/J504 are manually soldered copper wire pads. Keep pad/silkscreen legends and isolation links accessible at board edges.",
+    "RT501's main-board footprint represents wire landing pads only; the actual purchased thermistor is off-board on the cell and excluded from SMT placement/assembled main-board BOM."
+  ]
+}

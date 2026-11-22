@@ -1,0 +1,12 @@
+* CuraLink Rev A: actual LTspice run with original TI family macro-model equations
+.include models/tlv9002-namespaced.lib
+.include models/tlv9052-namespaced.lib
+.options numdgt=7 plotwinsize=0
+.temp 27
+VDD avdd 0 3
+VIN plus 0 1.5
+XTEST plus out avdd 0 out TLV9052_TLV9052
+RLOAD out 0 100k
+.op
+.save V(plus) V(minus) V(out) I(VDD)
+.end

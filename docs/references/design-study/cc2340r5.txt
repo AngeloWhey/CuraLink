@@ -1,0 +1,3820 @@
+CC2340R SimpleLink™ Family of 2.4GHz Wireless MCUs
+1 Features
+Wireless microcontroller
+• Optimized 48MHz Arm® Cortex®-M0+ processor
+• Up to 512KB of in-system programmable flash
+• 12KB of ROM for bootloader and drivers
+• Up to 64KB of ultra-low leakage SRAM. Full RAM 
+retention in standby mode
+• 2.4GHz RF transceiver compatible with Bluetooth® 
+Low Energy and IEEE 802.15.4 PHY and MAC 
+• Integrated balun
+• Supports over-the-air upgrade (OTA)
+• Serial wire debug (SWD)
+Low power consumption
+• MCU consumption:
+– 2.6mA active mode, CoreMark®
+– 53μA/MHz running CoreMark®
+– < 710nA standby mode on CC2340R52
+– 165nA shutdown mode, wake-up on pin
+• Radio consumption:
+– 5.3mA RX
+– 5.1mA TX at 0dBm
+– < 11.0mA TX at +8dBm
+Wireless protocol support
+• Bluetooth® LE
+– Features: LE 2M, LE Coded, Periodic 
+Advertising, Extended Advertising, LE Secure 
+Connections
+– Qualified against Bluetooth Core 5.4
+• Zigbee®
+• Thread
+• Proprietary systems
+High-performance radio
+• –102dBm sensitivity for Bluetooth® LE Coded 
+125kbps
+• –96.5dBm sensitivity for Bluetooth® LE 1Mbps
+• –98dBm sensitivity for IEEE 802.15.4 (2.4GHz)
+• Output power up to +8dBm with temperature 
+compensation
+Regulatory compliance
+• Suitable for systems targeting compliance with 
+these standards:
+– EN 300 328 (Europe)
+– FCC CFR47 Part 15
+– ARIB STD-T66 (Japan)
+MCU peripherals
+• Up to 26 I/O pads
+– Two IO pads SWD, muxed with GPIOs
+– Two IO pads LFXT, muxed with GPIOs
+– Up to 22 DIOs (analog or digital IOs)
+• Up to 3 × 16-bit and 1× 24-bit general-purpose 
+timers with quadrature decode mode and IR 
+generation mode
+• 12-bit ADC, 1.2Msps with external reference, 
+267ksps with internal reference, up to 12 external 
+ADC inputs
+• 1× low power comparator
+• 1× UART
+• 1× SPI
+• 1× I2C
+• Real-time clock (RTC)
+• Integrated temperature and battery monitor
+• Watchdog timer
+Security enablers
+• AES 128-bit cryptographic accelerator
+• Random number generator from on-chip analog 
+noise
+Development tools and software
+• LP-EM-CC2340R53 LaunchPad Development Kit
+• SimpleLink™ Low Power F3 software 
+development kit
+• SmartRF™ Studio for simple radio configuration
+• SysConfig system configuration tool
+Operating range
+• On-chip buck DC/DC converter
+• 1.71V to 3.8V single supply voltage
+• Tj: –40°C up to +125°C
+RoHS-compliant package
+• 5mm × 5mm RKP QFN40
+• 4mm × 4mm RGE QFN24
+• 2.2mm × 2.6mm YBG WCSP
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, 
+intellectual property matters and other important disclaimers. UNLESS OTHERWISE NOTED, this document contains PRODUCTION 
+DATA.
+2 Applications
+• Medical
+– Home healthcare—blood glucose monitors, 
+blood pressure monitors, CPAP machines, 
+electronic thermometers
+– Patient monitoring and diagnostics—medical 
+sensor patches
+– Personal care and fitness—electric toothbrush, 
+wearable fitness and activity monitor
+• Building automation
+– Building security systems—motion detector, 
+electronic smart lock, door and window sensor, 
+garage door system, gateway
+– HVAC—thermostat, wireless environmental 
+sensor
+– Fire safety system—smoke and heat detector
+– Video surveillance—IP network camera
+• Lighting
+– LED luminaire
+– Lighting control—daylight sensor, lighting 
+sensor, wireless control
+• Factory automation and control
+• Retail automation and payment—electronic point 
+of sale
+– Electronic shelf label
+• Grid infrastructure
+– Smart meters—water meter, gas meter, 
+electricity meter, and heat cost allocators
+– Grid communications—wireless 
+communications—Long-range sensor 
+applications
+– Other alternative energy—energy harvesting
+• Communication equipment
+– Wired networking
+– wireless LAN or Wi-Fi access points, edge 
+router
+• Personal electronics
+– Connected peripherals—consumer wireless 
+module, pointing devices, keyboards, and 
+keypads
+– Gaming—electronic and robotic toys
+– Wearables (non-medical)—smart trackers, 
+smart clothing
+3 Description
+The CC2340R SimpleLink™ family of devices are 2.4GHz wireless microcontrollers (MCUs), targeting Bluetooth® 
+Low Energy, Zigbee, Thread, and Proprietary 2.4GHz applications. These devices are optimized for low-power 
+wireless communication with Over the Air Download (OAD) support in Building automation (wireless sensors, 
+lighting control, beacons), asset tracking, medical, retail EPOS (electronic point of sale), ESL (electronic shelf), 
+and Personal electronics (toys, HID, stylus pens) markets. Highlighted features of this device include:
+• Support for Bluetooth 5 features: high-speed mode (2Mbps PHY), long-range (LE Coded 125kbps and 
+500kbps PHYs), privacy 1.2.1 and channel selection algorithm #2, as well as backward compatibility and 
+support for key features from the earlier Bluetooth LE specifications.
+• Fully qualified Bluetooth software protocol stack included with the SimpleLink™ Low Power F3 software 
+development kit (SDK)
+• Zigbee® protocol stack support in the SimpleLink™ Low Power F3 software development kit (SDK)
+• Thread protocol stack support in SIMPLELINK TI OPENTHREAD SDK
+• Ultra-low standby current less than 0.71μA with RTC operational and full RAM retention that enables 
+significant battery life extension, especially for applications with longer sleep intervals.
+• Integrated balun for reduced bill-of-material (BOM) board layout
+• Excellent radio sensitivity and robustness (selectivity and blocking) performance for Bluetooth Low Energy 
+(–102dBm for 125kbps LE Coded PHY, with integrated balun)
+The CC2340R family is part of the SimpleLink ™ MCU platform, which consists of Wi-Fi®, Bluetooth Low 
+Energy, Thread, Zigbee, Sub1GHz MCUs, and host MCUs that all share a common, easy-to-use development 
+environment with a single-core software development kit (SDK) and rich tool set. A one-time integration of the 
+SimpleLink™ platform enables you to add any combination of the portfolio’s devices into your design, allowing 
+100-percent code reuse when your design requirements change. For more information, visit the SimpleLink™ 
+MCU platform.
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+2 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+Device Information
+PART NUMBER(2) FLASH RAM TEMPERATURE 
+RANGE PACKAGE STATUS
+CC2340R53E0RKPR 512KB 64KB –40°C–125°C QFN40 Released
+CC2340R53E0YBGR 512KB 64KB –40°C–125°C WCSP Released
+CC2340R53N0RKPR 512KB 64KB –40°C–85°C QFN40 Released
+CC2340R52E0RKPR 512KB 36KB –40°C–125°C QFN40 Released
+CC2340R52E0RGER 512KB 36KB –40°C–125°C QFN24 Released
+CC2340R52N0RKPR 512KB 36KB –40°C–85°C QFN40 Released
+CC2340R52N0RGER 512KB 36KB –40°C–85°C QFN24 Released
+CC2340R22E0RKPR 256KB 36KB –40°C–125°C QFN40 Released
+CC2340R22N0RKPR 256KB 36KB –40°C–85°C QFN40 Released
+CC2340R21E0RGER(1) 256KB 28KB –40°C–125°C QFN24 Preview
+CC2340R21N0RGER 256KB 28KB –40°C–85°C QFN24 Released
+(1) Available in a future release
+(2) For more information, see Section 12.
+4 Functional Block Diagram
+Arm Cortex M0+ Processor
+48 MHz
+SWD
+Upto 512kB Flash
+Upto 64kB SRAM  
+12kB System ROM
+48 MHz 
+HFXT
+B
+A
+L
+U
+N
+2.4GHz Radio Transceiver
+RF RAM
+Radio Digital  
+Modem Accelerators
+PWR & CLK Mgmt.
+1x UARTLGPT Timers
+1x SPI
+1x I2C
+RTC
+WDT
+Battery 
+Monitor
+Temperature 
+Sensor
+IOMUX | up to 26 GPIOs
+System Buses
+AES-128
+System Buses
+µDMA (8 channel)
+2.4 GHz 
+50 Ω  
+48 MHz 
+HFOSC
+32.768 kHz 
+LFXT
+32.768 kHz 
+LFOSC
+DC/DC
+Global LDO
+POR
+BOR
+ADC
+ADC
+Digital PLL
+PA
+LNA
+12-bit ADC
+1.2 Msps
+Low Power
+Comparator
+Thermal 
+Shutdown
+SYSTIM
+System Timer
+Figure 4-1. CC2340R Family Block Diagram 
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 3
+Product Folder Links: CC2340R2 CC2340R5
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................2
+3 Description.......................................................................2
+4 Functional Block Diagram.............................................. 3
+5 Device Comparison.........................................................5
+6 Pin Configurations and Functions.................................6
+6.1 Pin Diagrams.............................................................. 6
+6.2 Signal Descriptions................................................... 13
+6.3 Connections for Unused Pins and Modules..............17
+7 Specifications................................................................ 18
+7.1 Absolute Maximum Ratings...................................... 18
+7.2 ESD Ratings............................................................. 18
+7.3 Recommended Operating Conditions.......................18
+7.4 DCDC........................................................................18
+7.5 Global LDO (GLDO)..................................................19
+7.6 Power Supply and Modules...................................... 19
+7.7 Battery Monitor..........................................................19
+7.8 Temperature Sensor................................................. 19
+7.9 Power Consumption–Power Modes..........................19
+7.10 Power Consumption–Radio Modes........................ 20
+7.11 Nonvolatile (Flash) Memory Characteristics........... 20
+7.12 Thermal Resistance Characteristics....................... 21
+7.13 RF Frequency Bands..............................................21
+7.14 Bluetooth Low Energy–Receive (RX)..................... 21
+7.15 Bluetooth Low EnergyTransmit (TX).......................24
+7.16 Zigbee and Thread - IEEE 802.15.4-2006 2.4 
+GHz (OQPSK DSSS1:8, 250 kbps) - RX.................... 24
+7.17 Zigbee and Thread - IEEE 802.15.4-2006 2.4 
+GHz (OQPSK DSSS1:8, 250 kbps) - TX.....................25
+7.18 Proprietary Radio Modes........................................ 25
+7.19 2.4GHz RX/TX CW................................................. 26
+7.20 Timing and Switching Characteristics..................... 26
+7.21 Peripheral Characteristics.......................................27
+7.22 Typical Characteristics............................................35
+8 Detailed Description......................................................44
+8.1 Overview...................................................................44
+8.2 System CPU............................................................. 44
+8.3 Radio (RF Core)........................................................44
+8.4 Memory.....................................................................45
+8.5 Cryptography............................................................ 45
+8.6 Timers....................................................................... 45
+8.7 Serial Peripherals and I/O.........................................47
+8.8 Battery and Temperature Monitor............................. 47
+8.9 µDMA........................................................................47
+8.10 Debug..................................................................... 48
+8.11 Power Management................................................ 49
+8.12 Clock Systems........................................................ 50
+8.13 Network Processor..................................................50
+9 Application, Implementation, and Layout................... 51
+9.1 Reference Designs................................................... 51
+9.2 Junction Temperature Calculation.............................52
+10 Device and Documentation Support..........................53
+10.1 Device Nomenclature..............................................53
+10.2 Tools and Software................................................. 53
+10.3 Documentation Support.......................................... 55
+10.4 Support Resources................................................. 55
+10.5 Trademarks.............................................................55
+10.6 Electrostatic Discharge Caution..............................56
+10.7 Glossary..................................................................56
+11 Revision History.......................................................... 56
+12 Mechanical, Packaging, and Orderable 
+Information.................................................................... 59
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+4 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+5 Device Comparison
+Device
+RADIO SUPPORT
+FLASH (KB) RAM + Cache 
+(KB) GPIO
+PACKAGE SIZE
+2.4GHz Prop.
+Bluetooth® LE
+ZigBee
+Thread
+2.2 X 2.6 mm WCSP (28)
+4 X 4 mm VQFN (24)
+5 X 5 mm VQFN (40)
+CC2340R53 ✓ ✓ ✓ ✓ 512 64 12-26 ✓ ✓
+CC2340R52 ✓ ✓ ✓ ✓ 512 36 12-26 ✓ ✓
+CC2340R22 ✓ ✓ ✓ ✓ 256 36 26 ✓
+CC2340R21 ✓ ✓ ✓ 256 28 12 ✓
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 5
+Product Folder Links: CC2340R2 CC2340R5
+6 Pin Configurations and Functions
+6.1 Pin Diagrams
+6.1.1 Pin Diagram—RKP Package (Top View)
+32
+31
+19
+20
+DIO4_X32N27
+DIO0_A5
+28
+DIO5_A229
+DCDC30
+DIO10 4
+DIO9 3
+DIO8 2
+VDDR 1
+DIO3_X32P26
+RSTN25
+DIO2_A324
+DIO1_A423
+DIO11 5
+DIO12 6
+DIO13 7
+8
+22
+21
+9
+10
+33
+34
+35
+36
+18
+DIO23_A8
+17
+DIO22_A9
+16
+15
+37
+38
+39
+40
+14
+13
+12
+11
+DIO25_A6
+VDDD
+DIO21_A10
+VDDS
+DIO16_SWDIO
+DIO20_A11
+DIO19
+DIO15
+VDDS
+DIO14
+DIO17_SWDCK
+DIO18
+DIO24_A7
+NC
+RFGND
+VDDS
+ANT
+VDDS
+DIO7_A0
+VDDR
+X48P
+DIO6_A1
+X48N
+Figure 6-1. RKP (5mm × 5mm) Pinout, 0.4mm Pitch (Top View)
+The following I/O pins marked in Figure 6-1 in bold have high-drive capabilities:
+• Pin 6, DIO12
+• Pin 11, DIO16_SWDIO
+• Pin 12, DIO17_SWDCK
+• Pin 13, DIO18
+• Pin 14, DIO19
+• Pin 20, DIO24_A7
+The following I/O pins marked in Figure 6-1 in italics have analog capabilities:
+• Pin 15, DIO20_A11
+• Pin 16, DIO21_A10
+• Pin 18, DIO22_A9
+• Pin 19, DIO23_A8
+• Pin 20, DIO24_A7
+• Pin 21, DIO25_A6
+• Pin 22, DIO0_A5
+• Pin 23, DIO1_A4
+• Pin 24, DIO2_A3
+• Pin 29, DIO5_A2
+• Pin 32, DIO6, A1
+• Pin 33, DIO7_A0
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+6 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+6.1.2 Pin Diagram—RGE Package (Top View)
+DIO4_X32N15
+16
+DCDC17
+VDDS18
+DIO11 4
+DIO8 3
+VDDR 2
+ANT 1
+DIO3_X32P14
+RSTN13
+DIO12 5
+DIO13 6
+19
+20
+12
+11
+21
+22
+23
+24
+10
+9
+8
+7
+VDDD
+DIO24_A7
+DIO16_SWDIO
+VDDS
+DIO21_A10
+DIO17_SWDCK
+DIO20_A11
+X48P
+VDDS
+GND
+X48N
+DIO6_A1
+VDDR
+Figure 6-2. RGE (4mm × 4mm) Pinout, 0.5mm Pitch (Top View)
+The following I/O pins marked in Figure 6-2 in bold have high-drive capabilities:
+• Pin 5, DIO12
+• Pin 7, DIO16_SWDIO
+• Pin 8, DIO17_SWDCK
+• Pin 12, DIO24_A7
+The following I/O pins marked in Figure 6-2 in italics have analog capabilities:
+• Pin 9, DIO20_A11
+• Pin 10, DIO21_A10
+• Pin 12, DIO24_A7
+• Pin 19, DIO6_A1
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 7
+Product Folder Links: CC2340R2 CC2340R5
+6.1.3 Pin Diagram—YBG Package (Top View)
+1 2 3 4 5
+A
+B
+C
+D
+E
+F
+Not to scale
+DIO16
+_SWDIO
+DIO17
+_SWDCK DIO20_A11 DIO21_A10 RSTN
+DIO11 DIO12 DIO18 VDDS DIO4_X32N
+GND DIO8 GND DIO24_A7 DIO3_X32P
+VDDR VDDR DIO6_A1 GND VDDD
+RFGND VDDS VDDS DCDC
+ANT X48N X48P GND
+Figure 6-3. YBG (2.2mm × 2.6mm) Pinout, 0.4mm Pitch (Top View)
+The following I/O pins marked in Figure 6-2 in bold have high-drive capabilities:
+• Pin B2, DIO12
+• Pin A1, DIO16_SWDIO
+• Pin A2, DIO17_SWDCK
+• Pin B3, DIO18
+• Pin C4, DIO24_A7
+The following I/O pins marked in Figure 6-2 in italics have analog capabilities:
+• Pin A3, DIO20_A11
+• Pin A4, DIO21_A10
+• Pin C4, DIO24_A7
+• Pin D3, DIO6_A1
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+8 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+Table 6-1. Pin Attributes (RKP, RGE, YBG Packages)
+RKP PIN 
+NUMBER
+RGE PIN 
+NUMBER
+YBG PIN 
+NUMBER PIN NAME SIGNAL NAME
+PIN MUX 
+ENCODIN
+G
+TYPE
+39 1 F2 ANT ANT RF
+30 17 E5 DCDC DCDC PWR
+2 3 C2 DIO8 GPIO8 0 I/O
+SPI0SCLK 1 I/O
+UART0RTS 2 I/O
+T1C0N 3 I/O
+I2C0SDA 4 I/O
+T0C0N 5 I/O
+DTB3 7 I/O
+3 DIO9 GPIO9 0 I/O
+T3C0 1 I/O
+LRFD3 3 I/O
+22 DIO0_A5 GPIO0 0 I/O
+SPI0CSN 1 I/O
+I2C0SDA 2 I/O
+T3C2 3 I/O
+ANA5 6 ANALOG
+4 DIO10 GPIO10 0 I/O
+LPCO 1 I/O
+T2PE 2 I/O
+T3C0N 3 I/O
+5 4 B1 DIO11 GPIO11 0 I/O
+SPI0CSN 1 I/O
+T1C2N 2 I/O
+T0C0 3 I/O
+LRFD0 4 I/O
+SPI0POCI 5 I/O
+DTB9 7 I/O
+6 5 B2 DIO12 GPIO12 0 I/O
+SPI0POCI 1 I/O
+SPI0PICO 2 I/O
+UART0RXD 3 I/O
+T1C1 4 I/O
+I2C0SDA 5 I/O
+DTB13 7 I/O
+7 6 DIO13 GPIO13 0 I/O
+SPI0POCI 1 I/O
+SPI0PICO 2 I/O
+UART0TXD 3 I/O
+T0C0N 4 I/O
+T1F 5 I/O
+DTB4 7 I/O
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 9
+Product Folder Links: CC2340R2 CC2340R5
+Table 6-1. Pin Attributes (RKP, RGE, YBG Packages) (continued)
+RKP PIN 
+NUMBER
+RGE PIN 
+NUMBER
+YBG PIN 
+NUMBER PIN NAME SIGNAL NAME
+PIN MUX 
+ENCODIN
+G
+TYPE
+9 DIO14 GPIO14 0 I/O
+T3C2 1 I/O
+T1C2N 2 I/O
+LRFD5 3 I/O
+T1F 4 I/O
+10 DIO15 GPIO15 0 I/O
+UART0RXD 1 I/O
+T2C0N 2 I/O
+CKMIN 3 I/O
+11 7 A1 DIO16_SWDIO GPIO16 0 I/O
+SPI0PICO 1 I/O
+UART0RXD 2 I/O
+I2C0SDA 3 I/O
+T1C2 4 I/O
+T1C0N 5 I/O
+DTB10 7 I/O
+12 8 A2 DIO17_SWDCK GPIO17 0 I/O
+SPI0SCLK 1 I/O
+UART0TXD 2 I/O
+I2C0SCL 3 I/O
+T1C1N 4 I/O
+T0C2 5 I/O
+DTB11 7 I/O
+13 B3 DIO18 GPIO18 0 I/O
+T3C0 1 I/O
+LPCO 2 I/O
+UART0TXD 3 I/O
+SPI0SCLK 4 I/O
+DTB12 7 I/O
+14 DIO19 GPIO19 0 I/O
+T3C1 1 I/O
+T2PE 2 I/O
+SPI0PICO 4 I/O
+DTB0 7 I/O
+23 DIO1_A4 GPIO1 0 I/O
+T3C1 1 I/O
+LRFD7 2 I/O
+T1F 3 I/O
+UART0RTS 4 I/O
+ANA4 6 ANALOG
+DTB2 7 I/O
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+10 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+Table 6-1. Pin Attributes (RKP, RGE, YBG Packages) (continued)
+RKP PIN 
+NUMBER
+RGE PIN 
+NUMBER
+YBG PIN 
+NUMBER PIN NAME SIGNAL NAME
+PIN MUX 
+ENCODIN
+G
+TYPE
+15 9 A3 DIO20_A11 GPIO20 0 I/O
+LPCO 1 I/O
+UART0TXD 2 I/O
+UART0RXD 3 I/O
+T1C0 4 I/O
+SPI0POCI 5 I/O
+ANA11 6 ANALOG
+DTB14 7 I/O
+16 10 A4 DIO21_A10 GPIO21 0 I/O
+UART0CTS 1 I/O
+T1C1N 2 I/O
+T0C1 3 I/O
+SPI0POCI 4 I/O
+LRFD1 5 I/O
+ANA10 6 ANALOG
+DTB15 7 I/O
+18 DIO22_A9 GPIO22 0 I/O
+T2C0 1 I/O
+UART0RXD 2 I/O
+T3C1N 3 I/O
+ANA9 6 ANALOG
+DTB1 7 I/O
+19 DIO23_A8 GPIO23 0 I/O
+T2C1 1 I/O
+T3C2N 3 I/O
+ANA8 6 ANALOG
+20 12 C4 DIO24_A7 GPIO24 0 I/O
+SPI0SCLK 1 I/O
+T1C0 2 I/O
+T3C0 3 I/O
+T0PE 4 I/O
+I2C0SCL 5 I/O
+ANA7 6 ANALOG
+DTB5 7 I/O
+21 DIO25_16 GPIO25 0 I/O
+SPI0POCI 1 I/O
+I2C0SCL 2 I/O
+T2C2N 3 I/O
+ANA6 6 ANALOG
+24 DIO2_A3 GPIO2 0 I/O
+T0PE 1 I/O
+T2C1N 2 I/O
+UART0CTS 3 I/O
+ANA3 6 ANALOG
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 11
+Product Folder Links: CC2340R2 CC2340R5
+Table 6-1. Pin Attributes (RKP, RGE, YBG Packages) (continued)
+RKP PIN 
+NUMBER
+RGE PIN 
+NUMBER
+YBG PIN 
+NUMBER PIN NAME SIGNAL NAME
+PIN MUX 
+ENCODIN
+G
+TYPE
+26 14 C5 DIO3_X32P GPIO3 0 I/O
+LFCI 1 I/O
+T0C1N 2 I/O
+LRFD0 3 I/O
+T3C1 4 I/O
+T1C2 5 I/O
+LFXT_P 6 I/O
+DTB7 7 I/O
+27 15 B5 DIO4_X32N GPIO4 0 I/O
+T0C2N 1 I/O
+UART0TXD 2 I/O
+LRFD1 3 I/O
+SPI0PICO 4 I/O
+T0C2 5 I/O
+LFXT_N 6 I/O
+DTB8 7 I/O
+29 DIO5_A2 GPIO5 0 I/O
+T2C2 1 I/O
+LRFD6 3 I/O
+ANA2 6 ANALOG
+32 19 D3 DIO6_A1 GPIO6 0 I/O
+SPI0CSN 1 I/O
+I2C0SCL 2 I/O
+T1C2 3 I/O
+LRFD2 4 I/O
+UART0TXD 5 I/O
+ANA1 6 ANALOG
+DTB6 7 I/O
+33 DIO7_A0 GPIO7 0 I/O
+T3C1 1 I/O
+LRFD4 3 I/O
+ANA0 6 ANALOG
+23 C1, C3, D4, F5 GND GND GND
+37 NC NC NC
+40 E2 RFGND RFGND GND
+25 13 A5 RSTN RSTN I/O
+28 16 D5 VDDD VDDD PWR
+1, 34 2, 20 D1, D2 VDDR VDDR PWR
+17, 31, 38, 8 11, 18, 24 B4, E3, E4 VDDS VDDS PWR
+36 22 F3 X48N X48N I/O
+35 21 F4 X48P X48P I/O
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+12 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+6.2 Signal Descriptions
+Table 6-2. Analog Input Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+ANA0 ANAL
+OG
+ADC reference (negative terminal) or ADC 
+channel 0 input(1)
+33
+ANA1 ANAL
+OG
+ADC reference (positive terminal) or ADC 
+channel 1 input
+32 19 D3
+ANA2 ANAL
+OG
+ADC channel 2 input 29
+ANA3 ANAL
+OG
+ADC channel 3 input 24
+ANA4 ANAL
+OG
+ADC channel 4 input 23
+ANA5 ANAL
+OG
+ADC channel 5 input 22
+ANA6 ANAL
+OG
+ADC channel 6 input 21
+ANA7 ANAL
+OG
+Low power comparator input (positive 
+terminal) / ADC channel 7 input
+20 12 C4
+ANA8 ANAL
+OG
+Low power comparator input (positive or 
+negative terminal) / ADC channel 8 input
+19
+ANA9 ANAL
+OG
+ADC channel 9 input 18
+ANA10 ANAL
+OG
+Low power comparator input (positive 
+terminal) / ADC channel 10 input
+16 10 A4
+ANA11 ANAL
+OG
+ADC channel 11 input 15 9 A3
+(1) ADC VREF– (external reference negative terminal) is connected directly to ground in the RGE package. ADC VREF– is not connected 
+in the WCSP (YBG) package so external reference is not available with the YBG package.
+Table 6-3. Clock Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+CKMIN I/O HFOSC tracking loop input 10
+LFCI I/O Low frequency clock input (LFXT bypass 
+clock from pin)
+26 14 C5
+LFXT_N I/O 32kHz crystal oscillator pin 2 27 15 B5
+LFXT_P I/O 32kHz crystal oscillator pin 1 26 14 C5
+X48N I/O 48MHz crystal oscillator pin 2 36 22 F3
+X48P I/O 48MHz crystal oscillator pin 1 35 21 F4
+Table 6-4. DTB Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+DTB0 I/O Digital test bus output 0 14
+DTB1 I/O Digital test bus output 1 18
+DTB2 I/O Digital test bus output 2 23
+DTB3 I/O Digital test bus output 3 2 3 C2
+DTB4 I/O Digital test bus output 4 7 6
+DTB5 I/O Digital test bus output 5 20 12 C4
+DTB6 I/O Digital test bus output6 32 19 D3
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 13
+Product Folder Links: CC2340R2 CC2340R5
+Table 6-4. DTB Signal Descriptions (continued)
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+DTB7 I/O Digital test bus output 7 26 14 C5
+DTB8 I/O Digital test bus output 8 27 15 B5
+DTB9 I/O Digital test bus output 9 5 4 B1
+DTB10 I/O Digital test bus output 10 11 7 A1
+DTB11 I/O Digital test bus output 11 12 8 A2
+DTB12 I/O Digital test bus output 12 13 B3
+DTB13 I/O Digital test bus output 13 6 5 B2
+DTB14 I/O Digital test bus output 14 15 9 A3
+DTB15 I/O Digital test bus output 15 16 10 A4
+Table 6-5. GPIO Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+GPIO0 I/O General-purpose input or output 22
+GPIO1 I/O General-purpose input or output 23
+GPIO2 I/O General-purpose input or output 24
+GPIO3 I/O General-purpose input or output 26 14 C5
+GPIO4 I/O General-purpose input or output 27 15 B5
+GPIO5 I/O General-purpose input or output 29
+GPIO6 I/O General-purpose input or output 32 19 D3
+GPIO7 I/O General-purpose input or output 33
+GPIO8 I/O General-purpose input or output 2 3 C2
+GPIO9 I/O General-purpose input or output 3
+GPIO10 I/O General-purpose input or output 4
+GPIO11 I/O General-purpose input or output 5 4 B1
+GPIO12 I/O General-purpose input or output 6 5 B2
+GPIO13 I/O General-purpose input or output 7 6
+GPIO14 I/O General-purpose input or output 9
+GPIO15 I/O General-purpose input or output 10
+GPIO16 I/O General-purpose input or output 11 7 A1
+GPIO17 I/O General-purpose input or output 12 8 A2
+GPIO18 I/O General-purpose input or output 13 B3
+GPIO19 I/O General-purpose input or output 14
+GPIO20 I/O General-purpose input or output 15 9 A3
+GPIO21 I/O General-purpose input or output 16 10 A4
+GPIO22 I/O General-purpose input or output 18
+GPIO23 I/O General-purpose input or output 19
+GPIO24 I/O General-purpose input or output 20 12 C4
+GPIO25 I/O General-purpose input or output 21
+Table 6-6. Device Grounds
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+GND GND Ground 23 C1, C3, D4, F5
+RFGND GND RF ground reference 40 E2
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+14 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+Table 6-7. I2C Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+I2C0SCL I/O I2C clock 12, 20, 21, 32 12, 19, 8 A2, C4, D3
+I2C0SDA I/O I2C data 11, 2, 22, 6 3, 5, 7 A1, B2, C2
+Table 6-8. Low Power Comparator Output Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+LPCO I/O Low power comparator output 13, 15, 4 9 A3, B3
+Table 6-9. No Connect
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+NC NC No connect 37
+Table 6-10. Device Power
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+DCDC (1) PWR Switch node of the internal DC/DC 
+converter
+30 17 E5
+VDDD (1) PWR Internal 1.28V regulator decoupling 
+capacitor
+28 16 D5
+VDDR PWR Internal supply, must be powered from the 
+internal DC/DC converter or the internal 
+LDO
+1, 34 2, 20 D1, D2
+VDDS PWR 1.71V to 3.8V supply 17, 31, 38, 8 11, 18, 24 B4, E3, E4
+(1) Do not supply external circuitry from this pin.
+Table 6-11. Reset Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+RSTN I/O Global main device reset (active low) 25 13 A5
+Table 6-12. Radio Digital Output Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+LRFD0 I/O Radio Core Output 0 26, 5 14, 4 B1, C5
+LRFD1 I/O Radio Core Output 1 16, 27 10, 15 A4, B5
+LRFD2 I/O Radio Core Output 2 32 19 D3
+LRFD3 I/O Radio Core Digital Output 3 3
+LRFD4 I/O Radio Core Output 4 33
+LRFD5 I/O Radio Core Output 5 9
+LRFD6 I/O Radio Core Output 6 29
+LRFD7 I/O Radio Core Output 7 23
+Table 6-13. RF Port
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+ANT RF 50Ohm RF port 39 1 F2
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 15
+Product Folder Links: CC2340R2 CC2340R5
+Table 6-14. SPI Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+SPI0CSN I/O SPI chip select 22, 32, 5 19, 4 B1, D3
+SPI0PICO I/O SPI peripheral in controller out 11, 14, 27, 6, 7 15, 5, 6, 7 A1, B2, B5
+SPI0POCI I/O SPI peripheral out controller in 15, 16, 21, 5, 6, 
+7
+10, 4, 5, 6, 9 A3, A4, B1, B2
+SPI0SCLK I/O SPI clock 12, 13, 2, 20 12, 3, 8 A2, B3, C2, C4
+Table 6-15. Timers Capture or Compare Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+T0C0 I/O Capture or compare 0 from timer 0 5 4 B1
+T0C1 I/O Capture or compare 1 from timer 0 16 10 A4
+T0C2 I/O Capture or compare 2 from timer 0 12, 27 15, 8 A2, B5
+T1C0 I/O Capture or compare 0 from timer 1 15, 20 12, 9 A3, C4
+T1C1 I/O Capture or compare 1 from timer 1 6 5 B2
+T1C2 I/O Capture or compare 2 from timer 1 11, 26, 32 14, 19, 7 A1, C5, D3
+T2C0 I/O Capture or compare output 0 from timer 2 18
+T2C1 I/O Capture or compare 1 from timer 2 19
+T2C2 I/O Capture or compare 2 from timer 2 29
+T3C0 (1) I/O Capture or compare 0 from timer 3 13, 20, 3 12 B3, C4
+T3C1 (1) I/O Capture or compare 1 from timer 3 14, 23, 26, 33 14 C5
+T3C2 I/O Capture or compare 2 from timer 3 22, 9
+(1) Timer 3 not available on CC2340R21.
+Table 6-16. Timers Complementary Output Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+T0C0N I/O Complementary compare or PWM output 
+0 from timer 0
+2, 7 3, 6 C2
+T0C1N I/O Complementary compare or PWM output 
+1 from timer 0
+26 14 C5
+T0C2N I/O Complementary compare or PWM output 
+2 from timer 0
+27 15 B5
+T1C0N I/O Complementary compare or PWM output 
+0 from timer 1
+11, 2 3, 7 A1, C2
+T1C1N I/O Complementary compare or PWM output 
+1 from timer 1
+12, 16 10, 8 A2, A4
+T1C2N I/O Complementary compare or PWM output 
+2 from timer 0
+5, 9 4 B1
+T2C0N I/O Complementary compare or PWM output 
+0 from timer 2
+10
+T2C1N I/O Complementary compare or PWM output 
+1 from timer 2
+24
+T2C2N I/O Complementary compare or PWM output 
+2 from timer 2
+21
+T3C0N I/O Complementary compare or PWM output 
+0 from timer 3
+4
+T3C1N I/O Complementary compare or PWM output 
+1 from timer 3
+18
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+16 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+Table 6-16. Timers Complementary Output Signal Descriptions (continued)
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+T3C2N I/O Complementary compare or PWM output 
+2 from timer 3
+19
+Table 6-17. Timers Fault Input Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+T1F I/O Fault input for timer 1 23, 7, 9 6
+Table 6-18. Timers Prescaler Event Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+T0PE I/O Prescaler event output from timer 0 20, 24 12 C4
+T2PE I/O Prescaler event output from timer 2 14, 4
+Table 6-19. UART Signal Descriptions
+SIGNAL NAME PIN 
+TYPE DESCRIPTION RKP PIN RGE PIN YBG PIN
+UART0CTS I/O UART clear-to-send input (active low) 16, 24 10 A4
+UART0RTS I/O UART request-to-send (active low) 2, 23 3 C2
+UART0RXD I/O UART receive data 10, 11, 15, 18, 6 5, 7, 9 A1, A3, B2
+UART0TXD I/O UART transmit data 12, 13, 15, 27, 
+32, 7
+15, 19, 6, 8, 9 A2, A3, B3, B5, 
+D3
+6.3 Connections for Unused Pins and Modules
+Table 6-20. Connections for Unused Pins
+FUNCTION SIGNAL NAME ACCEPTABLE PRACTICE(1) PREFERRED
+PRACTICE(1)
+GPIO (digital) DIOn NC, GND, or VDDS NC
+SWD
+DIO16_SWDIO NC, GND, or VDDS GND or VDDS
+DIO17_SWDCK NC, GND, or VDDS GND or VDDS
+GPIO (digital or analog) DIOn_Am NC, GND, or VDDS NC
+32.768-kHz crystal
+DIO3_X32P
+NC or GND NC
+DIO4_X32N
+DC/DC converter(2) DCDC NC NC
+VDDS VDDS VDDS
+(1) NC = No connect
+(2) When the DC/DC converter is not used, the inductor between DCDC and VDDR can be removed. VDDR must still be connected, and 
+the 10μF DCDC capacitor must be kept on the VDDR net.
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 17
+Product Folder Links: CC2340R2 CC2340R5
+7 Specifications
+7.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted)(1) (2)
+MIN MAX UNIT
+VDDS Supply voltage –0.3 4.1 V
+Voltage on any digital pin(3) –0.3 VDDS + 0.3, max 4.1 V
+Voltage on crystal oscillator pins X48P and X48N –0.3 1.24 V
+Vin_adc Voltage on ADC input 0 VDDS V
+Input level, RF pins 5 dBm
+Tstg Storage temperature –40 150 °C
+(1) Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply 
+functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions. If 
+outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully functional, and 
+this may affect device reliability, functionality, performance, and shorten the device lifetime.
+(2) All voltage values are with respect to ground, unless otherwise noted.
+(3) Including analog capable DIOs.
+7.2 ESD Ratings
+VALUE UNIT
+VESD
+Electrostatic 
+discharge
+Human body model (HBM), per ANSI/ESDA/JEDEC JS-001(1) All pins ±1000 V
+Charged device model (CDM), per ANSI/ESDA/JEDEC JS-002(2) All pins ±500 V
+(1) JEDEC document JEP155 states that 500V HBM allows safe manufacturing with a standard ESD control process.
+(2) JEDEC document JEP157 states that 250V CDM allows safe manufacturing with a standard ESD control process.
+7.3 Recommended Operating Conditions
+over operating free-air temperature range (unless otherwise noted)
+MIN MAX UNIT
+CC2340xxxExxxxx devices (125°C parts)
+Operating ambient temperature(1) (2) –40 125 °C
+Operating junction temperature(1) (2) –40 125 °C
+CC2340xxxNxxxxx devices (85°C parts)
+Operating ambient temperature(1) (2) –40 85 °C
+Operating junction temperature(1) (2) –40 85 °C
+Operating supply voltage (VDDS) 1.71 3.8 V
+Rising supply voltage slew rate 0 100 mV/µs
+Falling supply voltage slew rate(3) 0 1 mV/µs
+(1) Operation at or near maximum operating temperature for extended durations will result in a reduction in lifetime.
+(2) For thermal resistance details, refer to Thermal Resistance Characteristics table in this document.
+(3) For small coin-cell batteries, with high worst-case end-of-life equivalent source resistance, a 10µF VDDS input capacitor must be used 
+to ensure compliance with this slew rate.
+7.4 DCDC
+When measured on the CC2340R5 reference design with Tc = 25°C and DCDC enabled unless otherwise noted. 
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+VDDS supply voltage for DCDC operation (1) (2) 2.2 3.0 3.8 V
+(1) When the supply voltage drops below the DCDC operation min voltage, the device automatically transitions to use GLDO regulator 
+on-chip.
+(2) A 10µH and 10µF load capacitor are required on the VDDR voltage rail. They must be placed close to the DCDC output pin.
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+18 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.5 Global LDO (GLDO)
+When measured on the CC2340R5 reference design with Tc = 25°C
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+VDDS supply voltage for GLDO operation (1) 1.71 3.0 3.8 V
+(1) A 10µF capacitor is recommended at VDDR pin.
+7.6 Power Supply and Modules
+over operating free-air temperature range (unless otherwise noted)
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+VDDS_BOD
+Brownout rising threshold (1) 1.68 V
+Brownout falling threshold (1) 1.67 V
+POR
+power-on reset power-up level 1.5 V
+power-on reset power-down level 1.45 V
+(1) Brown-out Detector is trimmed at initial boot, value is kept until device is reset by a POR reset or the RSTN pin.
+7.7 Battery Monitor
+Measured on the CC2340R5 reference design with Tc = 25°C, unless otherwise noted
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Resolution 22 mV
+Range 1.7 3.8 V
+Accuracy VDDS = 3.0V 30 mV
+7.8 Temperature Sensor
+Measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, unless otherwise noted.
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+CC2340xxxExxxxx devices (125°C devices)
+Accuracy -40°C to 125°C -15/+9(1) °C
+CC2340xxxNxxxxx devices (85°C devices)
+Accuracy -40°C to 85°C ±10(1) °C
+(1) Raw output from register.
+7.9 Power Consumption–Power Modes
+When measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, DCDC enabled, GLDO disabled, unless 
+otherwise noted
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Core Current Consumption with DCDC
+Icore Active MCU running CoreMark from Flash at 48MHz 2.6 mA
+Icore Active MCU running CoreMark from Flash at 48MHz 53 µA / MHz
+Icore Idle Supply Systems and RAM powered, flash disabled, DMA disabled 0.8 mA
+Icore Idle Supply Systems and RAM powered, flash disabled, DMA enabled 0.8 mA
+Icore Idle Supply Systems and RAM powered, flash enabled, DMA disabled 1.1 mA
+Icore Idle Supply Systems and RAM powered, flash enabled, DMA enabled 1.2 mA
+Icore Standby RTC running, full RAM retention
+LFOSC, DCDC recharge current setting (ipeak = 1) 0.71 µA
+Icore Standby RTC running, full RAM retention
+LFXT, DCDC recharge current setting (ipeak = 1) 0.74 µA
+Core Current consumption with GLDO
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 19
+Product Folder Links: CC2340R2 CC2340R5
+7.9 Power Consumption–Power Modes (continued)
+When measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, DCDC enabled, GLDO disabled, unless 
+otherwise noted
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Icore Active MCU running CoreMark from Flash at 48MHz 4.1 mA
+Icore Idle Supply Systems and RAM powered, flash disabled, DMA disabled 1.2 mA
+Icore Idle Supply Systems and RAM powered, flash disabled, DMA enabled 1.3 mA
+Icore Idle Supply Systems and RAM powered, flash enabled, DMA disabled 1.5 mA
+Icore Idle Supply Systems and RAM powered, flash enabled, DMA enabled 1.7 mA
+Icore Standby RTC running, full RAM retention  
+LFOSC, default GLDO recharge current setting 1.1 µA
+Icore Standby RTC running, full RAM retention
+LFXT default GLDO recharge current setting  1.15 µA
+Reset, Shutdown Current Consumption
+Icore Reset Reset. RSTN pin asserted or VDDS below power-on-reset threshold 165 nA
+Icore Shutdown Shutdown measured in steady state. No clocks running, no retention, IO 
+wakeup enabled 165 nA
+Peripheral Current Consumption
+Iperi RF Delta current, clock enabled, RF subsystem idle 40 µA
+Iperi Timers Delta current with clock enabled, module is idle, one LGPT timer 2.4 µA
+Iperi I2C Delta current with clock enabled, module is idle 10.6 µA
+Iperi SPI Delta current with clock enabled, module is idle 3.4 µA
+Iperi UART Delta current with clock enabled, module is idle 24.5 µA
+Iperi
+CRYPTO 
+(AES) Delta current with clock enabled, module is idle 3.8 µA
+7.10 Power Consumption–Radio Modes
+When measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V with DCDC enabled unless otherwise 
+noted  
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+IRX Radio receive current 2440MHz, 1Mbps, GFSK, system bus off (1) 5.3 mA
+IRX Radio receive current 2440MHz, 1Mbps, GFSK, DCDC OFF, system bus off (1) 9 mA
+ITX Radio transmit current -8dBm output power setting
+2440MHz system bus off (1) 4.5 mA
+ITX
+Radio transmit current
+ 
+0dBm output power setting
+2440MHz system bus off (1) 5.1 mA
+ITX
+Radio transmit current
+ 
+0dBm output power setting
+2440MHz DCDC OFF, system bus off (1) 9.0 mA
+ITX Radio transmit current +4dBm output power setting
+2440MHz system bus off (1) 7.9 mA
+ITX
+Radio transmit current
+ 
++6dBm output power setting
+2440MHz system bus off (1) 8.9 mA
+ITX
+Radio transmit current
+ 
++8dBm output power setting 
+2440MHz system bus off (1) 10.7 mA
+ITX
+Radio transmit current
+ 
++8dBm output power setting
+2440MHz DCDC OFF, system bus off (1) 19 mA
+(1) System bus off refers to device idle mode, DMA disabled, Flash disabled 
+7.11 Nonvolatile (Flash) Memory Characteristics
+Over operating free-air temperature range and VDDS = 3.0V (unless otherwise noted)
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Flash sector size 2 KB
+Supported flash erase cycles before failure, full bank(1) (2) 30 k Cycles
+Supported flash erase cycles before failure, single sector(3) 60 k Cycles
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+20 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.11 Nonvolatile (Flash) Memory Characteristics (continued)
+Over operating free-air temperature range and VDDS = 3.0V (unless otherwise noted)
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Maximum number of write operations per row before sector 
+erase(4) 83 Write 
+Operations
+CC2340xxxExxxxx devices (125°C devices)
+Flash retention 105°C 11.4 Years
+Flash retention 125°C 10 Years
+CC2340xxxNxxxxx devices (85°C devices)
+Flash retention 85°C 11.4 Years
+Flash sector erase current Average delta current 1.2 mA
+Flash sector erase time(5) 0 erase cycles 2.2 ms
+Flash write current Average delta current, full sector at a time 1.7 mA
+Flash write time(5) full sector (2kB) at a time, 0 erase cycles 8.3 ms
+(1) A full bank erase is counted as a single erase cycle on each sector.
+(2) Aborting flash during erase or program modes is not a safe operation.
+(3) Up to 16 customer-designated sectors can be individually erased an additional 30k times beyond the baseline bank limitation of 30k 
+cycles.
+(4) Each wordline is 2048 bits (or 256 bytes) wide. This limitation corresponds to sequential memory writes of 4 (3.1) bytes minimum 
+per write over a whole wordline. If additional writes to the same wordline are required, a sector erase is required once the maximum 
+number of write operations per row is reached.
+(5) This number is dependent on Flash aging and increases over time and erase cycles.
+7.12 Thermal Resistance Characteristics
+THERMAL 
+METRIC THERMAL METRIC(2)
+PACKAGE
+UNIT 
+(1)
+RKP
+(VQFN)
+RGE
+(VQFN)
+YBG
+(WCSP)
+40 PINS 24 PINS 28 PINS
+RθJA Junction-to-ambient thermal resistance 31.8 40.1 61.4 ℃/W
+RθJC(top) Junction-to-case (top) thermal resistance 23.1 30.5 0.3 ℃/W
+RθJB Junction-to-board thermal resistance 12.7 17.2 14.2 ℃/W
+ψJT Junction-to-top characterization parameter 0.3 0.4 0.2 ℃/W
+ψJB Junction-to-board characterization parameter 12.7 17.1 14 ℃/W
+RθJC(bot) Junction-to-case (bottom) thermal resistance 3.3 3.4 No thermal pad ℃/W
+(1) °C/W = degrees Celsius per watt.
+(2) For more information about traditional and new thermal metrics, see Semiconductor and IC Package Thermal Metrics.
+7.13 RF Frequency Bands
+Over operating free-air temperature range (unless otherwise noted).
+PARAMETER MIN TYP MAX UNIT
+Frequency bands 2360 2510 MHz
+7.14 Bluetooth Low Energy–Receive (RX)
+When measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, fRF = 2440MHz with DCDC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path.  All measurements 
+are performed conducted. 
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+125kbps (LE Coded)
+Receiver sensitivity BER = 10–3 –102 dBm
+Receiver saturation BER = 10–3 5 dBm
+Frequency error tolerance Difference between the incoming carrier frequency and 
+the internally generated carrier frequency > (–250/ 250) (1) kHz
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 21
+Product Folder Links: CC2340R2 CC2340R5
+7.14 Bluetooth Low Energy–Receive (RX) (continued)
+When measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, fRF = 2440MHz with DCDC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path.  All measurements 
+are performed conducted. 
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Data rate error tolerance Difference between incoming data rate and the internally 
+generated data rate (37-byte packets) > (–90 / 90) (1) ppm
+Data rate error tolerance Difference between incoming data rate and the internally 
+generated data rate (255-byte packets) > (–90 / 90) (1) ppm
+Co-channel rejection(2) Wanted signal at –79dBm, modulated interferer in 
+channel, BER = 10–3 –6 dB
+Selectivity, ±1MHz(2) Wanted signal at –79dBm, modulated interferer at 
+±1MHz, BER = 10–3 9 / 5 (3) dB
+Selectivity, ±2MHz(2) Wanted signal at –79dBm, modulated interferer at 
+±2MHz, BER = 10–3 44 / 31 (3) dB
+Selectivity, ±3MHz(2) Wanted signal at –79dBm, modulated interferer at 
+±3MHz, BER = 10–3 47 / 42 (3) dB
+Selectivity, ±4MHz(2) Wanted signal at –79dBm, modulated interferer at 
+±4MHz, BER = 10–3 49 / 45 (3) dB
+Selectivity, ±6MHz(2) Wanted signal at –79dBm, modulated interferer at ≥ 
+±6MHz, BER = 10–3 52 / 48 (3) dB
+Selectivity, ±7MHz Wanted signal at –79dBm, modulated interferer at ≥ 
+±7MHz, BER = 10–3 54 / 49 (3) dB
+Selectivity, Image frequency(2) Wanted signal at –79dBm, modulated interferer at image 
+frequency, BER = 10–3 31 dB
+Selectivity, Image frequency ±1 
+MHz(2)
+Note that Image frequency + 1MHz is the Co- channel – 
+1MHz. Wanted signal at –79dBm, modulated interferer at 
+±1 MHz from image frequency, BER = 10–3
+5 / 42 (3) dB
+500kbps (LE Coded)
+Receiver sensitivity BER = 10–3 –99 dBm
+Receiver saturation BER = 10–3 5 dBm
+Frequency error tolerance Difference between the incoming carrier frequency and 
+the internally generated carrier frequency > (–250 / 250) (1) kHz
+Data rate error tolerance Difference between incoming data rate and the internally 
+generated data rate (37-byte packets) > (–90/ 90) (1) ppm
+Data rate error tolerance Difference between incoming data rate and the internally 
+generated data rate (255-byte packets) > (–90 / 90) (1) ppm
+Co-channel rejection(2) Wanted signal at –72dBm, modulated interferer in 
+channel, BER = 10–3 –4.5 dB
+Selectivity, ±1MHz(2) Wanted signal at –72dBm, modulated interferer at 
+±1MHz, BER = 10–3 9 / 5 (3) dB
+Selectivity, ±2MHz(2) Wanted signal at –72dBm, modulated interferer at 
+±2MHz, BER = 10–3 42 / 31 (3) dB
+Selectivity, ±3MHz(2) Wanted signal at –72dBm, modulated interferer at 
+±3MHz, BER = 10–3 45 / 41 (3) dB
+Selectivity, ±4MHz(2) Wanted signal at –72dBm, modulated interferer at 
+±4MHz, BER = 10–3 46 / 42 (3) dB
+Selectivity, ±6MHz(2) Wanted signal at –72dBm, modulated interferer at ≥ 
+±6MHz, BER = 10–3 50 / 45 (3) dB
+Selectivity, ±7MHz Wanted signal at –72dBm, modulated interferer at ≥ 
+±7MHz, BER = 10–3 51 / 46 (3) dB
+Selectivity, Image frequency(2) Wanted signal at –72dBm, modulated interferer at image 
+frequency, BER = 10–3 31 dB
+Selectivity, Image frequency 
+±1MHz(2)
+Note that Image frequency + 1MHz is the Co- channel – 
+1MHz. Wanted signal at –72dBm, modulated interferer at 
+±1MHz from image frequency, BER = 10–3
+5 / 41 (3) dB
+1Mbps (LE 1M)
+Receiver sensitivity BER = 10–3 –96.5 dBm
+Receiver saturation BER = 10–3 5 dBm
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+22 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.14 Bluetooth Low Energy–Receive (RX) (continued)
+When measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, fRF = 2440MHz with DCDC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path.  All measurements 
+are performed conducted. 
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Frequency error tolerance Difference between the incoming carrier frequency and 
+the internally generated carrier frequency > (–250/250) (1) kHz
+Data rate error tolerance Difference between incoming data rate and the internally 
+generated data rate (37-byte packets) > (–90 / 90) (1) ppm
+Co-channel rejection(2) Wanted signal at –67dBm, modulated interferer in 
+channel, BER = 10–3 –6 dB
+Selectivity, ±1MHz(2) Wanted signal at –67dBm, modulated interferer at 
+±1MHz, BER = 10–3 7 / 5 (3) dB
+Selectivity, ±2MHz(2) Wanted signal at –67dBm, modulated interferer at 
+±2MHz,BER = 10–3 39 / 28 (3) dB
+Selectivity, ±3MHz(2) Wanted signal at –67dBm, modulated interferer at 
+±3MHz, BER = 10–3 38 / 38 (3) dB
+Selectivity, ±4MHz(2) Wanted signal at –67dBm, modulated interferer at 
+±4MHz, BER = 10–3 47 / 35 (3) dB
+Selectivity, ±5MHz or more(2) Wanted signal at –67dBm, modulated interferer at ≥ 
+±5MHz, BER = 10–3 40 dB
+Selectivity, image frequency(2) Wanted signal at –67 dBm, modulated interferer at image 
+frequency, BER = 10–3 28 dB
+Selectivity, image frequency
+±1MHz(2)
+Note that Image frequency + 1MHz is the co-channel – 
+1MHz. Wanted signal at –67dBm, modulated interferer at 
+±1MHz from image frequency, BER = 10–3
+5 / 38 (3) dB
+Out-of-band blocking(4) 30MHz to 2000MHz –10 dBm
+Out-of-band blocking 2003MHz to 2399MHz –10 dBm
+Out-of-band blocking 2484MHz to 2997MHz –10 dBm
+Out-of-band blocking 3000MHz to 12.75GHz (excluding VCO frequency) –2 dBm
+Intermodulation Wanted signal at 2402MHz, –64dBm. Two interferers at 
+2405 and 2408MHz respectively, at the given power level –37 dBm
+Spurious emissions,
+30 to 1000MHz(5) Measurement in a 50Ω single-ended load. < –59 dBm
+Spurious emissions,
+1 to 12.75GHz(5) Measurement in a 50Ω single-ended load. < –47 dBm
+RSSI dynamic range (6) 70 dB
+RSSI accuracy ±4 dB
+RSSI resolution 1 dB
+2Mbps (LE 2M)
+Receiver sensitivity Measured at SMA connector, BER = 10–3 –92 dBm
+Receiver saturation Measured at SMA connector, BER = 10–3 2 dBm
+Frequency error tolerance Difference between the incoming carrier frequency and 
+the internally generated carrier frequency > (–250 / 250) (1) kHz
+Data rate error tolerance Difference between incoming data rate and the internally 
+generated data rate (37-byte packets) > (–90/ 90) (1) ppm
+Co-channel rejection(2) Wanted signal at –67dBm, modulated interferer in 
+channel,BER = 10–3 –8 dB
+Selectivity, ±2MHz(2) Wanted signal at –67dBm, modulated interferer at 
+±2MHz, Image frequency is at –2MHz, BER = 10–3 9 / 5 (3) dB
+Selectivity, ±4MHz(2) Wanted signal at –67dBm, modulated interferer at 
+±4MHz, BER = 10–3 40 / 32 (3) dB
+Selectivity, ±6MHz(2) Wanted signal at –67dBm, modulated interferer at 
+±6MHz, BER = 10–3 46 / 40 (3) dB
+Selectivity, image frequency(2) Wanted signal at –67dBm, modulated interferer at image 
+frequency, BER = 10–3 5 dB
+Selectivity, image frequency
+±2MHz(2)
+Note that Image frequency +2MHz is the co-channel. 
+Wanted signal at –67dBm, modulated interferer at ±2MHz 
+from image frequency, BER = 10–3
+–8 / 32 (3) dB
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 23
+Product Folder Links: CC2340R2 CC2340R5
+7.14 Bluetooth Low Energy–Receive (RX) (continued)
+When measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, fRF = 2440MHz with DCDC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path.  All measurements 
+are performed conducted. 
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Out-of-band blocking(4) 30MHz to 2000MHz –10 dBm
+Out-of-band blocking 2003MHz to 2399MHz –10 dBm
+Out-of-band blocking 2484MHz to 2997MHz –12 dBm
+Out-of-band blocking 3000MHz to 12.75GHz (excluding VCO frequency) –10 dBm
+Intermodulation Wanted signal at 2402MHz, –64dBm. Two interferers at 
+2408 and 2414MHz respectively, at the given power level –38 dBm
+(1) Actual performance exceeding Bluetooth specification
+(2) Numbers given as I/C dB
+(3) X / Y, where X is +N MHz and Y is –N MHz
+(4) Excluding one exception at Fwanted / 2, per Bluetooth Specification
+(5) Suitable for systems targeting compliance with worldwide radio-frequency regulations ETSI EN 300 328 and EN 300 440 Class 2 
+(Europe), FCC CFR47 Part 15 (US), and ARIB STD-T66 (Japan)
+(6) The RSSI measurement will saturate at -30dBm
+7.15 Bluetooth Low EnergyTransmit (TX)
+When measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, fRF = 2440MHz with DCDC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path.  All measurements 
+are performed conducted. 
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+General Parameters
+Max output power Delivered to a single-ended 50Ω load through integrated balun 8 dBm
+Output power 
+programmable range Delivered to a single-ended 50Ω load through integrated balun 28 dB
+7.16 Zigbee and Thread - IEEE 802.15.4-2006 2.4 GHz (OQPSK DSSS1:8, 250 kbps) - RX
+Measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, fRF= 2440MHz with DC/DC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path. All measurements 
+are performed conducted.
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+General Parameters
+Receiver sensitivity PER = 1% –98 dBm
+Receiver saturation PER = 1% > 3 dBm
+Adjacent channel rejection Wanted signal at –82dBm, modulated interferer at ±5MHz, 
+PER = 1% 36 dB
+Alternate channel rejection Wanted signal at –82dBm, modulated interferer at ±10MHz, 
+PER = 1% 55 dB
+Channel rejection, ±15MHz or more
+Wanted signal at –82dBm, undesired signal is IEEE 
+802.15.4 modulated channel, stepped through all channels 
+2405 to 2480MHz, PER = 1%
+59 dB
+Blocking and desensitization,
+5MHz from upper band edge
+Wanted signal at –97dBm (3dB above the sensitivity level), 
+CW jammer, PER = 1% 57 dB
+Blocking and desensitization,
+10MHz from upper band edge
+Wanted signal at –97dBm (3dB above the sensitivity level), 
+CW jammer, PER = 1% 63 dB
+Blocking and desensitization,
+20MHz from upper band edge
+Wanted signal at –97dBm (3dB above the sensitivity level), 
+CW jammer, PER = 1% 63 dB
+Blocking and desensitization,
+50MHz from upper band edge
+Wanted signal at –97dBm (3dB above the sensitivity level), 
+CW jammer, PER = 1% 66 dB
+Blocking and desensitization,
+–5MHz from lower band edge
+Wanted signal at –97dBm (3dB above the sensitivity level), 
+CW jammer, PER = 1% 60 dB
+Blocking and desensitization,
+–10MHz from lower band edge
+Wanted signal at –97dBm (3dB above the sensitivity level), 
+CW jammer, PER = 1% 60 dB
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+24 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.16 Zigbee and Thread - IEEE 802.15.4-2006 2.4 GHz (OQPSK DSSS1:8, 250 kbps) - RX 
+(continued)
+Measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, fRF= 2440MHz with DC/DC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path. All measurements 
+are performed conducted.
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Blocking and desensitization,
+–20MHz from lower band edge
+Wanted signal at –97dBm (3dB above the sensitivity level), 
+CW jammer, PER = 1% 63 dB
+Blocking and desensitization,
+–50MHz from lower band edge
+Wanted signal at –97dBm (3dB above the sensitivity level), 
+CW jammer, PER = 1% 65 dB
+Spurious emissions, 30MHz to 
+1000MHz Measurement in a 50Ω single-ended load(1) –64 dBm
+Spurious emissions, 1GHz to 12.75GHz Measurement in a 50Ω single-ended load(1) –49 dBm
+Frequency error tolerance Difference between the incoming carrier frequency and the 
+internally generated carrier frequency > 80 ppm
+Symbol rate error tolerance Difference between incoming symbol rate and the internally 
+generated symbol rate > 80 ppm
+RSSI dynamic range 90 dB
+RSSI accuracy ±4 dB
+(1) Suitable for systems targeting compliance with EN 300 328, EN 300 440 class 2 (Europe), FCC CFR47, Part 15 (US), and ARIB 
+STD-T-66 (Japan)
+7.17 Zigbee and Thread - IEEE 802.15.4-2006 2.4 GHz (OQPSK DSSS1:8, 250 kbps) - TX
+Measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, fRF= 2440MHz with DC/DC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path. All measurements 
+are performed conducted.
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+General Parameters
+Max output power (1) 
+Delivered to a single-ended 50Ω load through integrated balun 8 dBm
+Output power 
+programmable range Delivered to a single-ended 50Ω load through integrated balun 29 dB
+IEEE 802.15.4-2006 2.4 GHz (OQPSK DSSS1:8, 250 kbps)
+Error vector magnitude +8dBm setting 2%
+(1) To ensure margins for passing FCC band edge requirements at 2483.5 MHz, a lower than maximum output-power setting or less than 
+100% duty cycle may be used when operating at the upper 802.15.4 channel(s). 
+7.18 Proprietary Radio Modes
+Measured on the CC2340R5 reference design  with Tc = 25°C, VDDS = 3.0V, fRF = 2440MHz with DCDC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path. All measurements 
+are performed conducted.
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+2 Mbps GFSK (HID), 320 kHz deviation
+Receiver sensitivity PER = 30.8%, Payload 37 bytes –89 dBm
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 25
+Product Folder Links: CC2340R2 CC2340R5
+7.19 2.4GHz RX/TX CW
+When measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, fRF = 2440MHz with DCDC enabled unless 
+otherwise noted. All measurements are performed at the antenna input with a combined RX and TX path. All measurements 
+are performed conducted. 
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Spurious emissions and harmonics
+Spurious emissions(1)
+f < 1GHz, outside restricted bands
++8dBm setting
+< –36 dBm
+f < 1GHz, restricted bands ETSI < –54 dBm
+f < 1GHz, restricted bands FCC < –55 dBm
+f > 1GHz, including harmonics 
+(ETSI) < –30 dBm
+Harmonics(1) Second harmonic < –42 dBm
+Third harmonic < –42 dBm
+(1) Suitable for systems targeting compliance with worldwide radio-frequency regulations ETSI EN 300 328 and EN 300 440 Class 2 
+(Europe), FCC CFR47 Part 15 (US), and ARIB STD-T66 (Japan).
+7.20 Timing and Switching Characteristics
+7.20.1 Reset Timing
+PARAMETER MIN TYP MAX UNIT
+RSTN low duration 1 µs
+7.20.2 Wakeup Timing
+Measured over operating free-air temperature with VDDS = 3.0V (unless otherwise noted). The times listed here do not 
+include any software overhead (unless otherwise noted).
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+MCU, Reset/Shutdown to 
+Active(1) GLDO default charge current setting, VDDR capacitor fully charged (2) 350–450 µs
+MCU, Standby to Active MCU, Standby to Active (ready to execute code from flash). DCDC 
+ON,  default recharge current configuration 33–43 (3) µs
+MCU, Standby to Active MCU, Standby to Active (ready to execute code from flash). GLDO ON, 
+default recharge current configuration 33–50 (3) µs
+MCU, Idle to Active Flash enabled in idle mode 3 µs
+MCU, Idle to Active Flash disabled in idle mode 14 µs
+(1) Wakeup time includes device ROM bootcode execution time. The wakeup time is dependent on remaining charge on VDDR capacitor 
+when starting the device, and thus how long the device has been in Reset or Shutdown before starting up again.
+(2) This is the best-case reset/shutdown to active time (including ROM bootcode operation), for the specified GLDO charge current setting 
+considering the VDDR capacitor is fully charged and is not discharged during the reset and shutdown events; that is, when the device 
+is in reset / shutdown modes for only a very short period of time.
+(3) Depending on VDDR capacitor voltage level
+7.20.3 Clock Specifications
+7.20.3.1 48MHz Crystal Oscillator (HFXT)
+Measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, unless otherwise noted.(4)
+PARAMETER MIN TYP MAX UNIT
+Crystal frequency 48 MHz
+ESR Equivalent series resistance
+6pF < CL ≤ 9pF 20 60 Ω
+ESR Equivalent series resistance
+5pF < CL ≤  6pF 80 Ω
+CL Crystal load capacitance(1) 5 7(2) 9 pF
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+26 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.20.3.1 48MHz Crystal Oscillator (HFXT) (continued)
+Measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, unless otherwise noted.(4)
+PARAMETER MIN TYP MAX UNIT
+Start-up 
+time (3) Until clock is qualified 200 µs
+(1) Adjustable load capacitance is integrated into the device. External load capacitors are required for systems targeting compliance with 
+certain regulations.
+(2) On-chip default connected capacitance including reference design parasitic capacitance. Connected internal capacitance is changed 
+through software in the SysConfig.
+(3) Start-up time using the TI-provided power driver. Start-up time may increase if driver is not used.
+(4) Tai-Saw TZ3908AAAO43 has been validated for CC2340R5 design.
+7.20.3.2 48MHz RC Oscillator (HFOSC)
+Measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, unless otherwise noted
+MIN TYP MAX UNIT
+Frequency 48 MHz
+Uncalibrated frequency accuracy ±3%
+Calibrated frequency accuracy (1) ±0.25%
+(1) Accuracy relative to the calibration source (HFXT)
+7.20.3.3 32kHz Crystal Oscillator (LFXT)
+Measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, unless otherwise noted
+MIN TYP MAX UNIT
+Crystal frequency 32.768 kHz
+Supported crystal load capacitance 6 12 pF
+ESR 30 100 kΩ
+7.20.3.4 32kHz RC Oscillator (LFOSC)
+Measured on the CC2340R5 reference design with Tc = 25°C, VDDS = 3.0V, unless otherwise noted
+MIN TYP MAX UNIT
+Calibrated frequency 32.768 kHz
+7.21 Peripheral Characteristics
+7.21.1 UART
+7.21.1.1 UART Characteristics
+over operating free-air temperature range (unless otherwise noted)
+PARAMETER MIN TYP MAX UNIT
+UART rate 3 MBaud
+7.21.2 SPI
+7.21.2.1 SPI Characteristics
+Using TI SPI driver, over operating free-air temperature range (unless otherwise noted)
+PARAMETERS TEST CONDITIONS MIN TYP MAX UNIT
+fSCLK
+1/tsclk SPI clock frequency
+Controller Mode and Peripheral Mode (1)
+2.7V ≤ VDDS < 3.8V 12 MHz
+Controller Mode and Peripheral Mode (1)
+VDDS < 2.7V 8 MHz
+DCSCK SCK Duty Cycle 45% 50% 55%
+(1) Assume interfacing with ideal SPI controller and SPI peripheral devices
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 27
+Product Folder Links: CC2340R2 CC2340R5
+7.21.2.2 SPI Controller Mode
+Using TI SPI driver, over operating free-air temperature range (unless otherwise noted)
+PARAMETERS TEST CONDITIONS MIN TYP MAX UNIT
+tSCLK_H/L SCLK High or Low time (tSPI/2)–1 tSPI/2 (tSPI/2)+1 ns
+tCS.LEAD
+CS lead-time, CS active to 
+clock 1/2 SCLK
+tCS.LAG
+CS lag time, Last clock to CS 
+inactive 1/2 SCLK
+tCS.ACC
+CS access time, CS active to 
+PICO data out 1 SCLK
+tCS.DIS
+CS disable time, CS inactive to 
+PICO high impedance 1 SCLK
+tVALID.CO PICO output data valid time(1) SCLK edge to PICO valid, CL = 20pF 13 ns
+tHD.CO PICO output data hold time(2) CL = 20pF 0 ns
+(1) Specifies the time to drive the next valid data to the output after the output changing SCLK clock edge
+(2) Specifies how long data on the output is valid after the output changing SCLK clock edge
+7.21.2.3 SPI Timing Diagrams—Controller Mode
+SCLK 
+(SPO = 0)
+POCI
+SCLK 
+(SPO = 1)
+CS 
+(inverted)
+CS
+PICO
+tCS, LEAD
+tCS, ACC
+tCS, LAG
+tCS, DIS
+tSU,CI
+tHD,CI
+tVALID,CO
+tHD,CO
+1 / fSPI
+tSCLK_H/L tSCLK_H/L
+Controller Mode, SPH = 0  
+Figure 7-1. SPI Timing Diagram—Controller Mode, SPH = 0
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+28 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+CS 
+(inverted)
+CS
+tCS, LEAD
+tCS, ACC
+tCS, LAG
+tCS, DIS
+tSU,CI
+tHD,CI
+tVALID,CO
+tHD,CO
+SCLK 
+(SPO = 0)
+POCI
+SCLK 
+(SPO = 1)
+PICO
+1 / fSPI
+tSCLK_H/L tSCLK_H/L
+Controller Mode, SPH = 1  
+Figure 7-2. SPI Timing Diagram—Controller Mode, SPH = 1
+7.21.2.4 SPI Peripheral Mode
+Using TI SPI driver, over operating free-air temperature range (unless otherwise noted), 
+PARAMETERS TEST CONDITIONS MIN TYP MAX UNIT
+tCS.LEAD
+CS lead-time, CS active to 
+clock 1/2 SCLK
+tCS.LAG
+CS lag time, Last clock to CS 
+inactive 1/2 SCLK
+tCS.ACC
+CS access time, CS active to 
+POCI data out VDDS = 3.3V 35 ns
+tCS.ACC
+CS access time, CS active to 
+POCI data out VDDS = 1.8V 50 ns
+tCS.DIS
+CS disable time, CS inactive to 
+POCI high impedance VDDS = 3.3V 35 ns
+tCS.DIS
+CS disable time, CS inactive to 
+POCI high impedance VDDS = 1.8V 50 ns
+tSU.PI PICO input data setup time 13 ns
+tHD.PI PICO input data hold time 0 ns
+tVALID.PO POCI output data valid time(1) SCLK edge to POCI valid, CL = 20pF, 3.3V 35 ns
+tVALID.PO POCI output data valid time(1) SCLK edge to POCI valid, CL = 20pF, 1.8V 50 ns
+tHD.PO POCI output data hold time(2) CL = 20pF 0 ns
+(1) Specifies the time to drive the next valid data to the output after the output changing SCLK clock edge
+(2) Specifies how long data on the output is valid after the output changing SCLK clock edge
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 29
+Product Folder Links: CC2340R2 CC2340R5
+7.21.2.5 SPI Timing Diagrams—Peripheral Mode
+CS 
+(inverted)
+CS
+tCS, LEAD
+tCS, ACC
+tCS, LAG
+tCS, DIS
+tSU,PI
+tHD,PI
+tVALID,PO
+tHD,PO
+SCLK 
+(SPO = 0)
+PICO
+SCLK 
+(SPO = 1)
+POCI
+1 / fSPI
+tSCLK_H/L tSCLK_H/L
+Peripheral Mode, SPH = 0  
+Figure 7-3. SPI Timing Diagram—Peripheral Mode, SPH = 0
+CS 
+(inverted)
+CS
+tCS, LEAD
+tCS, ACC
+tCS, LAG
+tCS, DIS
+tSU,PI
+tHD,PI
+tVALID,PO
+tHD,PO
+SCLK 
+(SPO = 0)
+PICO
+SCLK 
+(SPO = 1)
+POCI
+1 / fSPI
+tSCLK_H/L tSCLK_H/L
+Peripheral Mode, SPH = 1  
+Figure 7-4. SPI Timing Diagram—Peripheral Mode, SPH = 1
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+30 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.21.3 I2C
+7.21.3.1 I2C
+Over operating free-air temperature range (unless otherwise noted)
+PARAMETERS TEST CONDITIONS MIN TYP MAX UNIT
+fSCL SCL clock frequency 0 400 kHz
+tHD,STA Hold time (repeated) START fSCL = 100kHz 4.0 µs
+tHD,STA Hold time (repeated) START fSCL > 100kHz 0.6 µs
+tSU,STA
+Setup time for a repeated 
+START fSCL = 100kHz 4.7 µs
+tSU,STA
+Setup time for a repeated 
+START fSCL > 100kHz 0.6 µs
+tHD,DAT Data hold time 0 µs
+tSU,DAT Data setup time fSCL = 100kHz 250 ns
+tSU,DAT Data setup time fSCL > 100kHz 100 ns
+tSU,STO Setup time for STOP fSCL = 100kHz 4.0 µs
+tSU,STO Setup time for STOP fSCL > 100kHz  0.6 µs
+tBUF
+Bus free time between STOP 
+and START conditions fSCL = 100kHz 4.7 µs
+tBUF
+Bus free time between STOP 
+and START conditions fSCL > 100kHz  1.3 µs
+tSP
+Pulse duration of spikes 
+supressed by input deglitch filter 50 ns
+7.21.3.2 I2C Timing Diagram
+SDA
+SCL
+tSU,DAT
+tHD,STAtHD,STA
+tSU,STO
+tBUFtSU,STA
+tSPttHIGHtttLOWt
+tHD,DAT
+Figure 7-5. I2C Timing Diagram
+7.21.4 GPIO
+7.21.4.1 GPIO DC Characteristics
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+TA = 25°C, VDDS = 1.8V
+GPIO pullup current Input mode, pullup enabled, Vpad = 0V 39 66 109 µA
+GPIO pulldown current Input mode, pulldown enabled, Vpad = VDDS 10 21 40 µA
+GPIO low-to-high input transition, with hysteresis IH = 1, transition voltage for input read as 0 → 1 0.91 1.11 1.27 V
+GPIO high-to-low input transition, with hysteresis IH = 1, transition voltage for input read as 1 → 0 0.59 0.75 0.91 V
+GPIO input hysteresis IH = 1, difference between 0 → 1
+and 1 → 0 points 0.26 0.35 0.44 V
+TA = 25°C, VDDS = 3.0V
+GPIO VOH at 10mA load high-drive GPIOs only, max drive setting 2.47 V
+GPIO VOL at 10mA load high-drive GPIOs only, max drive setting 0.25 V
+GPIO VOH at 2mA load standard drive GPIOs 2.52 V
+GPIO VOL at 2mA load standard drive GPIOs 0.20 V
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 31
+Product Folder Links: CC2340R2 CC2340R5
+7.21.4.1 GPIO DC Characteristics (continued)
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+TA = 25°C, VDDS = 3.8V
+GPIO pullup current Input mode, pullup enabled, Vpad = 0V 170 262 393 µA
+GPIO pulldown current Input mode, pulldown enabled, Vpad = VDDS 60 110 172 µA
+GPIO low-to-high input transition, with hysteresis IH = 1, transition voltage for input read as 0 → 1 1.76 1.98 2.27 V
+GPIO high-to-low input transition, with hysteresis IH = 1, transition voltage for input read as 1 → 0 1.26 1.52 1.79 V
+GPIO input hysteresis IH = 1, difference between 0 → 1
+and 1 → 0 points 0.40 0.47 0.54 V
+TA = 25°C
+VIH Lowest GPIO input voltage reliably interpreted as a 
+High 0.8×VDDS V
+VIL Highest GPIO input voltage reliably interpreted as a 
+Low 0.2×VDDS V
+7.21.5 ADC
+7.21.5.1 Analog-to-Digital Converter (ADC) Characteristics
+Tc = 25°C, VDDS = 3.0V, unless otherwise noted(2)
+Performance numbers require use of offset and gain adjustments in software by TI provided ADC drivers.
+ 
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+ADC Power Supply and Input Range Conditions
+V(Ax) Analog input voltage range All ADC analog input pins Ax 0 VDDS V
+I(ADC) single-
+ended mode
+Operating supply current
+into VDDS terminal 
+RES = 0x0 (12Bit mode), Fs = 1.2MSPS, Internal reference OFF 
+(ADCREF_EN = 0), VeREF+ = VDDS 480
+μA
+RES = 0x0 (12Bit mode), Fs = 266ksps, Internal reference ON 
+(ADCREF_EN = 0), ADCREF = 2.5V 365
+CI GPIO 
+Input capacitance into a single 
+terminal 5 7 pF
+RI GPIO Input MUX ON-resistance 0.5 1 kΩ
+ADC Switching Characteristics
+FS ADCREF
+ADC sampling frequency when 
+using the internal ADC 
+reference voltage
+ADCREF_EN = 1, RES = 0x0 (12-bit), VDDS = 1.71V to 
+VDDSmax 267 (1) ksps
+FS ADCREF
+ADC sampling frequency when 
+using the internal ADC 
+reference voltage
+ADCREF_EN = 1, RES = 0x1 (10-bit), VDDS = 1.71V to 
+VDDSmax 308 (1) ksps
+FS ADCREF
+ADC sampling frequency when 
+using the internal ADC 
+reference voltage
+ADCREF_EN = 1, RES = 0x2 (8-bit), VDDS = 1.71V to VDDSmax 400 (1) ksps
+FS EXTREF
+ADC sampling frequency when 
+using the external ADC 
+reference voltage
+ADCREF_EN = 0, VeREF+ = VDDS, RES = 0x0 (12-bit), VDDS = 
+1.71V to VDDSmax 1.2 (1) Msps
+FS EXTREF
+ADC sampling frequency when 
+using the external ADC 
+reference voltage
+ADCREF_EN = 0, VeREF+ = VDDS, RES = 0x1 (10-bit), VDDS = 
+1.71V to VDDSmax 1.33 (1) Msps
+FS EXTREF
+ADC sampling frequency when 
+using the external ADC 
+reference voltage
+ADCREF_EN = 0, VeREF+ = VDDS, RES = 0x2 (8-bit), VDDS = 
+1.71V to VDDSmax 1.6 (1) Msps
+NCONVERT Clock cycles for conversion RES = 0x0 (12-bit) 14 cycles
+NCONVERT Clock cycles for conversion RES = 0x1 (10-bit) 12 cycles
+NCONVERT Clock cycles for conversion RES = 0x2 (8-bit) 9 cycles
+tSample Sampling time RES = 0x0 (12-bit), RS = 25Ω, Cpext = 10pF. ±0.5LSB settling 250 ns
+tVSUPPLY/3(sample)
+Sample time required when 
+Vsupply/3 channel is selected 20 µs
+ADC Linearity Parameters
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+32 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.21.5.1 Analog-to-Digital Converter (ADC) Characteristics (continued)
+Tc = 25°C, VDDS = 3.0V, unless otherwise noted(2)
+Performance numbers require use of offset and gain adjustments in software by TI provided ADC drivers.
+ 
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+EI
+Integral linearity error (INL) for 
+single-ended inputs 12-bit Mode, VR+ = VeREF+ = VDDS, VDDS=1.71V–3.8V ±2 LSB
+ED Differential linearity error (DNL) 12-bit Mode, VR+ = VeREF+ = VDDS, VDDS=1.71V–3.8V ±1 LSB
+EO Offset error 12-bit Mode, External reference, VR+ = VeREF+ = 
+VDDS, VDDS=1.71V–3.8V 1.98 LSB
+EO Offset error 12-bit Mode, Internal reference, VR+ = ADCREF = 2.5V 1.02 LSB
+EG Gain error External Reference, VR+ = VeREF+ = VDDS , VDD = 1.71V–3.8V ±2 LSB
+EG Gain error Internal reference, VR+ = ADCREF = 2.5V ±40 LSB
+ADC Dynamic Parameters
+ENOB Effective number of bits ADCREF_EN = 0, VeREF+ = VDDS =3.3V, VeREF-=0V, RES = 
+0x2 (8-bit) 8 bit
+ENOB Effective number of bits ADCREF_EN = 0, VeREF+ = VDDS =3.3V, VeREF-=0V, RES = 
+0x1 (10-bit) 9.9 bit
+ENOB Effective number of bits ADCREF_EN = 0, VeREF+ = VDDS =3.3V, VeREF-=0V, RES = 
+0x0 (12-bit) 11.2 bit
+ENOB Effective number of bits ADCREF_EN = 1, ADCREF_VSEL = {2.5V, 1.4V}, RES = 0x2 
+(8-bit) 8 bit
+ENOB Effective number of bits ADCREF_EN = 1, ADCREF_VSEL = {2.5V, 1.4V} , RES = 0x1 
+(10-bit)
+9.6
+ bit
+ENOB Effective number of bits ADCREF_EN = 1, ADCREF_VSEL = {2.5V, 1.4V}, RES = 0x0 
+(12-bit) 10.4 bit
+ENOB Effective number of bits VDDS reference, RES = 0x0 (12-bit) 11.2 bit
+SINAD Signal-to-noise and distortion 
+ratio
+ADCREF_EN = 0, VeREF+ = VDDS = 3.3V, VeREF– =0V, RES = 
+0x0 (12-bit)  69.18
+ dB
+SINAD Signal-to-noise and distortion 
+ratio
+ADCREF_EN = 1, ADCREF_VSEL = {2.5V, 1.4V}, RES = 0x0 
+(12-bit)  64.37
+ dB
+SINAD Signal-to-noise and distortion 
+ratio VDDS reference, RES = 0x0 (12-bit)  69.18
+ dB
+ADC External Reference
+EXTREF Positive external reference 
+voltage input
+ADCREF_EN=0, ADC reference sourced from external reference 
+pin (VeREF+) 1.4 VDDS V
+EXTREF Negative external reference 
+voltage input
+ADCREF_EN=0, ADC reference sourced from external reference 
+pin (VeREF–) 0 V
+ADC Temperature Diode, Supply Monitor
+Temp_diode 
+Accuracy Temperature Error ADC input channel: Temp diode voltage, Error calculated in 
+temperature range: -30C to +40C, with single point calibration (2) ±3 C
+ADC Internal 
+Input: VSUPPLY / 3 
+Accuracy
+Vsupply voltage divider accuracy 
+for supply monitoring ADC input channel: Vsupply monitor ±1%
+ADC Internal 
+Input: IVSUPPLY / 3
+Vsupply voltage divider current 
+consumption ADC input channel Vsupply monitor. Vsupply=VDDS=3.3V 10 µA
+ADC Internal and VDDS Reference
+VDDSREF Positive ADC reference voltage ADC reference sourced from VDDS VDDS V
+ADCREF Internal ADC Reference Voltage
+ADCREF_EN = 1, ADCREF_VSEL = 0, VDDS = 1.71V to 
+VDDSmax 1.4 V
+ADCREF_EN = 1, ADCREF_VSEL = 1, VDDS = 2.7V to 
+VDDSmax 2.5 V
+IADCREF
+Operating supply current into 
+VDDA terminal with internal 
+reference ON
+ADCREF_EN = 1, VDDA = 1.7V to VDDAmax, ADCREF_VSEL = 
+{0,1} 80 µA
+tON
+Internal ADC Reference Voltage 
+power on-time ADCREF_EN = 1 2 µs
+(1) Measured with 48MHz HFOSC
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 33
+Product Folder Links: CC2340R2 CC2340R5
+(2) Using IEEE Std 1241-2010 for terminology and test methods
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+34 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.21.6 Comparators
+7.21.6.1 Ultra-Low Power Comparator 
+Tc = 25°C, VDDS = 3.0V, unless otherwise noted.
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Input voltage range 0 VDDS V
+Clock frequency 32 kHz
+Voltage Divider Accuracy Input voltage range is between VDDS/4 and VDDS 98%
+Offset Measured at VDDS / 2 (Errors seen when using two external inputs ) ±27.3 mV
+Decision time Step from –50mV to 50mV 1 3 Clock Cycle
+Comparator enable time COMP_LP disable → enable, VIN+, VIN- from pins,
+Overdrive ≥ 20mV 70 µs
+ Current consumption Including using VDDS/2 as internal reference at VIN- comparator 
+terminal 370 nA
+7.22 Typical Characteristics
+All measurements in this section are done with T c = 25°C and V DDS = 3.0V, unless otherwise noted. See 
+Recommended Operating Conditions for device limits. Values exceeding these limits are for reference only.
+7.22.1 MCU Current
+V o l t a g e  ( V )
+Current (mA)
+1 . 7 1 . 9 2 . 1 2 . 3 2 . 5 2 . 7 2 . 9 3 . 1 3 . 3 3 . 5 3 . 7
+2
+2 . 2
+2 . 4
+2 . 6
+2 . 8
+3
+3 . 2
+3 . 4
+3 . 6
+3 . 8
+4
+4 . 2
+4 . 4
+4 . 6
+Figure 7-6. Active Mode (MCU) Current vs. Supply 
+Voltage (VDDS) (Running CoreMark)
+T e m p e r a t u r e  ( ° C )
+Current (µA)
+- 4 0 - 2 0 0 2 0 4 0 6 0 8 0 1 0 0 1 2 0
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1 0
+1 1
+Figure 7-7. Standby Mode (MCU) Current vs. 
+Temperature ( RAM and partial register retention, 
+RTC)
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 35
+Product Folder Links: CC2340R2 CC2340R5
+7.22.2 RX Current
+T e m p e r a t u r e  ( ° C )
+Current [mA]
+- 4 0 - 2 5 - 1 0 5 2 0 3 5 5 0 6 5 8 0 9 5 1 1 0 1 2 5
+4 . 9
+5
+5 . 1
+5 . 2
+5 . 3
+5 . 4
+5 . 5
+5 . 6
+5 . 7
+5 . 8
+5 . 9
+6
+6 . 1
+6 . 2
+6 . 3
+6 . 4
+Figure 7-8. RX Current vs. Temperature (Bluetooth 
+LE 1Mbps, 2.44GHz)
+V o l t a g e  ( V )
+Current (mA)
+1 . 7 1 . 9 2 . 1 2 . 3 2 . 5 2 . 7 2 . 9 3 . 1 3 . 3 3 . 5 3 . 7
+4
+4 . 5
+5
+5 . 5
+6
+6 . 5
+7
+7 . 5
+8
+8 . 5
+9
+9 . 5
+1 0
+Figure 7-9. RX Current vs. Supply Voltage (VDDS) 
+(Bluetooth LE 1Mbps, 2.44GHz)
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+36 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.22.3 TX Current
+T e m p e r a t u r e  ( ° C )
+Current (mA)
+- 4 0 - 2 5 - 1 0 5 2 0 3 5 5 0 6 5 8 0 9 5 1 1 0 1 2 5
+4 . 5
+4 . 7
+4 . 9
+5 . 1
+5 . 3
+5 . 5
+5 . 7
+5 . 9
+6 . 1
+6 . 3
+6 . 5
+Figure 7-10. TX Current vs. Temperature (Bluetooth 
+LE 1Mbps, 2.44GHz, 0dBm)
+T e m p e r a t u r e  ( ° C )
+Current [mA]
+- 4 0 - 2 5 - 1 0 5 2 0 3 5 5 0 6 5 8 0 9 5 1 1 0 1 2 5
+9
+9 . 4
+9 . 8
+1 0 . 2
+1 0 . 6
+1 1
+1 1 . 4
+1 1 . 8
+1 2 . 2
+1 2 . 6
+1 3
+1 3 . 4
+Figure 7-11. TX Current vs. Temperature (Bluetooth 
+LE 1Mbps, 2.44GHz, +8dBm)
+Figure 7-12. TX Current vs. Supply Voltage, VDDS 
+(Bluetooth LE 1Mbps, 2.44GHz, 0dBm)
+V o l t a g e  ( V )
+Current (mA)
+1 . 7 1 . 9 2 . 1 2 . 3 2 . 5 2 . 7 2 . 9 3 . 1 3 . 3 3 . 5 3 . 7
+8 . 5
+9 . 5
+1 0 . 5
+1 1 . 5
+1 2 . 5
+1 3 . 5
+1 4 . 5
+1 5 . 5
+1 6 . 5
+1 7 . 5
+1 8 . 5
+1 9 . 5
+Figure 7-13. TX Current vs. Supply Voltage, VDDS 
+(Bluetooth LE 1Mbps, 2.44GHz, +8dBm)
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 37
+Product Folder Links: CC2340R2 CC2340R5
+Table 7-1 shows typical TX current and output power for different output power settings.
+Table 7-1. Typical TX Current and Output Power
+2.4 GHz, VDDS = 3.0 V, DCDC=On, Temperature = 25 °C (Measured on LP-EM-CC2340R5)
+txPowerTable 
+Index
+TX Power Setting [dBm] (SmartRF 
+Studio) Typical Output Power [dBm] Typical Current Consumption [mA]
+13 8 7.7 10.7
+12 7 7.1 9.5
+11 6 6.3 8.9
+10 5 5.5 8.3
+9 4 4.5 7.9
+8 3 3.7 7.5
+7 2 2.4 7.1
+6 1 1.0 5.4
+5 0 0.4 5.1
+4 -4 -3.1 4.8
+3 -8 -7.3 4.5
+2 -12 -10.9 4.2
+1 -16 -15.1 4.0
+0 -20 -19.0 3.8
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+38 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.22.4 RX Performance
+F r e q u e n c y  ( M H z )
+Sensitivity (dBm)
+2 3 6 0 2 3 8 0 2 4 0 0 2 4 2 0 2 4 4 0 2 4 6 0 2 4 8 0 2 5 0 0
+- 1 0 1
+- 1 0 0
+- 9 9
+- 9 8
+- 9 7
+- 9 6
+- 9 5
+- 9 4
+- 9 3
+- 9 2
+- 9 1
+Figure 7-14. Sensitivity vs. Frequency (Bluetooth 
+LE 1Mbps)
+F r e q u e n c y  ( M H z )
+Power (dBm)
+2 4 0 0 2 4 0 8 2 4 1 6 2 4 2 4 2 4 3 2 2 4 4 0 2 4 4 8 2 4 5 6 2 4 6 4 2 4 7 2 2 4 8 0
+- 1 0 2
+- 1 0 1
+- 1 0 0
+- 9 9
+- 9 8
+- 9 7
+- 9 6
+- 9 5
+- 9 4
+- 9 3
+- 9 2
+Figure 7-15. Sensitivity vs. Frequency (IEEE 
+802.15.4 PHY )
+Figure 7-16. Sensitivity vs. Temperature (Bluetooth 
+LE 1Mbps, 2.44GHz)
+T e m p e r a t u r e  ( ° C )
+Sensitivity (dBm)
+- 4 0 - 2 0 0 2 0 4 0 6 0 8 0 1 0 0 1 2 0
+- 1 0 3
+- 1 0 2
+- 1 0 1
+- 1 0 0
+- 9 9
+- 9 8
+- 9 7
+- 9 6
+- 9 5
+- 9 4
+- 9 3
+Figure 7-17. Sensitivity vs. Temperature (IEEE 
+802.15.4 PHY, 2.44GHz)
+V o l t a g e  ( V )
+Sensitivity (dBm)
+1 . 7 1 . 9 2 . 1 2 . 3 2 . 5 2 . 7 2 . 9 3 . 1 3 . 3 3 . 5 3 . 7
+- 1 0 1
+- 1 0 0
+- 9 9
+- 9 8
+- 9 7
+- 9 6
+- 9 5
+- 9 4
+- 9 3
+- 9 2
+- 9 1
+Figure 7-18. Sensitivity vs. Supply Voltage (VDDS) 
+(Bluetooth LE 1Mbps, 2.44GHz)
+V o l t a g e  ( V )
+Sensitivity (dBm)
+1 . 7 1 2 . 0 1 2 . 3 1 2 . 6 1 2 . 9 1 3 . 2 1 3 . 5 1 3 . 8
+- 1 0 2
+- 1 0 1
+- 1 0 0
+- 9 9
+- 9 8
+- 9 7
+- 9 6
+- 9 5
+- 9 4
+- 9 3
+- 9 2
+Figure 7-19. Sensitivity vs. Supply Voltage (VDDS) 
+(IEEE 802.15.4 PHY, 2.44GHz)
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 39
+Product Folder Links: CC2340R2 CC2340R5
+V o l t a g e  ( V )
+Sensitivity (dBm)
+1 . 7 1 . 9 2 . 1 2 . 3 2 . 5 2 . 7 2 . 9 3 . 1 3 . 3 3 . 5 3 . 7
+- 1 0 1
+- 1 0 0
+- 9 9
+- 9 8
+- 9 7
+- 9 6
+- 9 5
+- 9 4
+- 9 3
+- 9 2
+- 9 1
+Figure 7-20. Sensitivity vs. Supply Voltage (VDDS) (Bluetooth LE 1Mbps, 2.44GHz, DCDC Off)
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+40 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+7.22.5 TX Performance
+T e m p e r a t u r e  ( ° C )
+Output Power (dBm)
+- 4 0 - 2 0 0 2 0 4 0 6 0 8 0 1 0 0 1 2 0
+- 2
+- 1 . 5
+- 1
+- 0 . 5
+0
+0 . 5
+1
+1 . 5
+2
+Figure 7-21. Output Power vs. Temperature 
+(Bluetooth LE 1Mbps, 2.44GHz, 0dBm)
+T e m p e r a t u r e  ( ° C )
+Output Power (dBm)
+- 4 0 - 2 0 0 2 0 4 0 6 0 8 0 1 0 0 1 2 0
+6
+6 . 5
+7
+7 . 5
+8
+8 . 5
+9
+9 . 5
+1 0
+Figure 7-22. Output Power vs. Temperature 
+(Bluetooth LE 1Mbps, 2.44GHz, +8dBm)
+V o l t a g e  ( V )
+Power (dBm)
+1 . 7 1 . 9 2 . 1 2 . 3 2 . 5 2 . 7 2 . 9 3 . 1 3 . 3 3 . 5 3 . 7
+- 2
+- 1 . 5
+- 1
+- 0 . 5
+0
+0 . 5
+1
+1 . 5
+2
+Figure 7-23. Output Power vs. Supply Voltage 
+(VDDS) (Bluetooth LE 1Mbps, 2.44GHz, 0dBm)
+V o l t a g e  ( V )
+Output Power (dBm)
+1 . 7 1 . 9 2 . 1 2 . 3 2 . 5 2 . 7 2 . 9 3 . 1 3 . 3 3 . 5 3 . 7
+6
+6 . 5
+7
+7 . 5
+8
+8 . 5
+9
+9 . 5
+1 0
+Figure 7-24. Output Power vs. Supply Voltage 
+(VDDS) (Bluetooth LE 1Mbps, 2.44GHz, +8dBm)
+F r e q u e n c y  ( M H z )
+Power (dBm)
+2 3 6 0 2 3 8 0 2 4 0 0 2 4 2 0 2 4 4 0 2 4 6 0 2 4 8 0 2 5 0 0
+- 2
+- 1 . 5
+- 1
+- 0 . 5
+0
+0 . 5
+1
+1 . 5
+2
+Figure 7-25. Output Power vs. Frequency 
+(Bluetooth LE 1Mbps, 0dBm)
+F r e q u e n c y  ( M H z )
+Output Power (dBm)
+2 3 6 0 2 3 8 0 2 4 0 0 2 4 2 0 2 4 4 0 2 4 6 0 2 4 8 0 2 5 0 0
+6
+6 . 5
+7
+7 . 5
+8
+8 . 5
+9
+9 . 5
+1 0
+Figure 7-26. Output Power vs. Frequency 
+(Bluetooth LE 1Mbps, +8dBm)
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 41
+Product Folder Links: CC2340R2 CC2340R5
+7.22.6 ADC Performance
+F r e q u e n c y  [ k H z ]
+ENOB [bit]
+0.01
+0.02
+0.05
+0.1
+0.2
+0.3
+0.5
+1
+2
+3
+5
+7
+10
+20
+25
+1 0
+1 0 . 4
+1 0 . 8
+1 1 . 2
+1 1 . 6
+1 2
+1 2 . 4
+Figure 7-27. ENOB vs. Input Frequency (Internal 
+Reference)
+Figure 7-28. ENOB vs. Sampling Frequency (Vin= 
+3V Sine Wave, Internal Reference, Fin=Fs/10)
+Figure 7-29. ENOB vs. Input Frequency (External 
+Reference = 3.0V)
+F r e q u e n c y  ( k H z )
+ENOB (bit)
+0.1
+0.2
+0.5
+1
+2
+3
+5
+10
+20
+30
+50
+100
+200
+500
+1000
+1200
+1 0
+1 0 . 1
+1 0 . 2
+1 0 . 3
+1 0 . 4
+1 0 . 5
+1 0 . 6
+1 0 . 7
+1 0 . 8
+1 0 . 9
+1 1
+1 1 . 1
+1 1 . 2
+1 1 . 3
+1 1 . 4
+1 1 . 5
+Figure 7-30. ENOB vs. Sampling Frequency (Vin = 
+3V Sine Wave, External Reference = 3.0V, Fin=Fs/10
+Figure 7-31. INL vs. ADC Code (Vin= 3V Sine Wave, 
+Internal Reference, 200ksps)
+A D C  C o d e
+DNL (LSB)
+0 5 1 2 1 0 2 4 1 5 3 6 2 0 4 8 2 5 6 0 3 0 7 2 3 5 8 4 4 0 9 5
+- 0 . 4
+- 0 . 3
+- 0 . 2
+- 0 . 1
+0
+0 . 1
+0 . 2
+0 . 3
+0 . 4
+0 . 5
+0 . 6
+Figure 7-32. DNL vs. ADC Code (Vin= 3V Sine 
+Wave, Internal Reference, 200ksps)
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+42 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+T e m p e r a t u r e  ( ° C )
+Voltage (V)
+- 4 0 - 2 5 - 1 0 5 2 0 3 5 5 0 6 5 8 0 9 5 1 1 0 1 2 5
+0 . 9 8
+0 . 9 8 4
+0 . 9 8 8
+0 . 9 9 2
+0 . 9 9 6
+1
+1 . 0 0 4
+1 . 0 0 8
+1 . 0 1 2
+1 . 0 1 6
+1 . 0 2
+Figure 7-33. ADC Accuracy vs. Temperature (Vin= 
+1V, Internal Reference, 200ksps)
+V o l t a g e  ( V )
+Voltage (V)
+2 . 7 2 . 8 2 . 9 3 3 . 1 3 . 2 3 . 3 3 . 4 3 . 5 3 . 6 3 . 7 3 . 8
+1
+1 . 0 0 1
+1 . 0 0 2
+1 . 0 0 3
+1 . 0 0 4
+Figure 7-34. ADC Accuracy vs. Supply Voltage 
+(Vin= 1V, Internal Reference, 200ksps)
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 43
+Product Folder Links: CC2340R2 CC2340R5
+8 Detailed Description
+8.1 Overview
+Section 4 shows the core modules of the CC2340R device.
+8.2 System CPU
+The CC2340R SimpleLink™ Wireless MCU contains an Arm® Cortex®-M0+ system CPU, which runs the 
+application, the protocol stacks, and the radio. The Cortex-M0+ processor is built on a highly area and power-
+optimized 32-bit processor core, with a 2-stage pipeline Von Neumann architecture. The processor delivers 
+exceptional energy efficiency through a small but powerful instruction set and extensively optimized design, 
+providing high-end processing hardware including a single-cycle multiplier. The Cortex-M0+ processor offers 
+multiple benefits to developers, including:
+• Ultra-low power, energy-efficient operation
+• Deterministic, high-performance interrupt handling for time-critical applications
+• Upward compatibility with the Cortex-M processor family
+The Cortex-M0+ processor provides the excellent performance expected of a modern 32-bit architecture core, 
+with higher code density than other 8-bit and 16-bit microcontrollers. Its features include the following:
+• ARMv6-M architecture optimized for small-footprint embedded applications
+• A subset of Arm Thumb/Thumb-2 mixed 16- and 32-bit instructions delivers the high performance expected of 
+a 32-bit Arm
+• Single-cycle multiply instruction
+• VTOR supporting offset of the vector table base address
+• Serial Wire debug with HW break-point comparators
+• Ultra-low-power consumption with integrated sleep modes
+• SysTick timer
+• 48MHz operation
+• 0.99DMIPS/MHz
+Additionally, the CC2340R devices are compatible with all ARM tools and software.
+8.3 Radio (RF Core)
+The low-power RF Core (LRF) implements a high performance and highly flexible RF sub system containing 
+RF and baseband circuitry in addition to a software defined digital radio (LRFD). LRFD provides a high-level, 
+command-based API to the main CPU and handles all of the timing critical and low-level details of many 
+different radio PHYs. Several signals are also available to control external circuitry such as RF switches or range 
+extenders autonomously.
+The software-defined modem is not programmable by customers but is instead loaded with precompiled images 
+provided in the radio driver in the SimpleLink™ Low Power F3 software development kit (SDK) for the CC23xx 
+devices. This mechanism allows the radio platform to be updated for support of future versions of standards with 
+over-the-air (OTA) updates while still using the same silicon. LRFD stores the code images in the RF SRAM and 
+does not make use of any ROM memory, thus image loading from NV memory only occurs once after boot and 
+also, no patching is required when exiting power modes.
+8.3.1 Bluetooth Low Energy
+The RF Core offers full support for Bluetooth Low Energy, including the high-speed 2Mbps physical layer and 
+the 500kbps and 125kbps long-range PHYs (Coded PHY) through the TI-provided Bluetooth stack or through a 
+high-level Bluetooth API.
+The new high-speed mode allows data transfers up to 2Mbps. In addition to faster speeds, this mode offers 
+significant improvements in energy efficiency and wireless coexistence with reduced radio communication time.
+Bluetooth LE also enables unparalleled flexibility for adjustment of speed and range based on application needs, 
+which capitalizes on the high-speed or long-range modes, respectively. Data transfers are now possible at 
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+44 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+2Mbps, enabling the development of applications using voice, audio, imaging, and data logging that were not 
+previously an option using Bluetooth low energy. With high-speed mode, existing applications deliver faster 
+responses, richer engagement, and longer battery life. Bluetooth LE enables fast, reliable firmware updates.
+8.3.2 802.15.4 (Thread and Zigbee)
+Through a dedicated IEEE radio API, the RF Core supports the 2.4GHz IEEE 802.15.4-2011 physical layer 
+(2 Mchips per second Offset-QPSK with DSSS 1:8), used in Thread and Zigbee protocols. TI also provides 
+royalty-free protocol stacks for Thread and Zigbee, enabling a robust end-to end solution.
+8.4 Memory
+Up to 512KB nonvolatile (Flash) memory provides storage for code and data. The flash memory is in-system 
+programmable and erasable. A special flash memory sector must contain a Customer Configuration section 
+(CCFG) that is used by the boot ROM and TI-provided drivers to configure the device. This configuration is done 
+through the ccfg.c source file that is included in all TI-provided examples.
+Up to 64KB ultra-low leakage system static RAM (SRAM) can be used for both storage of data and execution of 
+code. Retention of SRAM contents in Standby power mode is enabled by default and included in Standby mode 
+power consumption numbers. System SRAM is always initialized to zeroes upon code execution during boot.
+The ROM includes device bootcode firmware handling initial device trimming operations, security configurations, 
+and device lifecycle management. The ROM also contains a serial (SPI and UART) bootloader that can be used 
+for the initial programming of the device.
+8.5 Cryptography
+The CC2340R device comes with AES-128 cryptography hardware accelerator, reducing code footprint and 
+execution time for cryptographic operations. It also has the benefit of being lower power and improves the 
+availability and responsiveness of the system because the cryptography operations run in a background 
+hardware thread. The AES hardware accelerators support the following block cipher modes and message 
+authentication codes:
+• AES ECB encrypt
+• AES CBC encrypt
+• AES CTR encrypt/decrypt
+• AES CBC-MAC
+• AES GCM
+• AEC CCM (uses a combination of CTR + CBC-MAC hardware via software drivers)
+The AES hardware accelerator can be fed with plaintext/ciphertext from either the CPU or using DMA. Sustained 
+throughput of one 16-byte ECB block per 23 cycles is possible, corresponding to > 30Mbps.
+The CC2340R device supports Random Number Generation (RNG) using on-chip analog noise as the 
+non-deterministic noise source for the purpose of generating a seed for a cryptographically secure counter 
+deterministic random bit generator (CTR-DRBG) that in turn is used to generate random numbers for keys, 
+initialization vectors (IVs), and other random number requirements. Hardware acceleration of AES CTR-DRBG is 
+supported.
+The CC2340R device includes a complete SHA 256 library in ROM, reducing the code footprint of the 
+application. Use cases may include generating digests for use in digital signature algorithms, data integrity 
+checks, and password storage.
+Together with a large selection of open-source cryptography libraries provided with the Software Development 
+Kit (SDK), this allows for secure and future-proof IoT applications to be easily built on top of the platform.
+8.6 Timers
+A large selection of timers are available as part of the CC2340R device. These timers are:
+• Real-Time Clock (RTC)
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 45
+Product Folder Links: CC2340R2 CC2340R5
+The RTC is a 67-bit, 2-channel timer running on the LFCLK system clock. The RTC is active in STANDBY 
+and ACTIVE power states. When the device enters the RESET or SHUTDOWN state the RTC is reset.
+The RTC accumulates time elapsed since reset on each LFCLK. The RTC counter is incremented by LFINC 
+at a rate of 32.768kHz. LFINC indicates the period of LFCLK in μs, with an additional granularity of 16 
+fractional bits.
+The counter can be read from two 32-bit registers. RTC.TIME8U has a range of approximately 9.5 hours with 
+an LSB representing 8 microseconds. RTC.TIME524M has a range of approximately 71.4 years with an LSB 
+representing 524 milliseconds.
+There is hardware synchronization between the system timer (SYSTIM) and the RTC so that the multichannel 
+and higher resolution SYSTIM remains in synchronization with the RTC’s time base.
+The RTC has two channels: one compare channel and one capture channel and is capable of waking the 
+device out of the standby power state. The RTC compare channel is typically used only by system software 
+and only during the standby power state.
+• System Timer (SYSTIM)
+The SYSTIM is a 34-bit, 5-channel wrap-around timer with a per-channel selectable 32b slice with either 
+a 1μs resolution and 1h11m35s range or 250ns resolution and 17m54s range. All channels support both 
+capture and single-shot compare (posting an event) operation. One channel is reserved for system software, 
+three channels are reserved for radio software and one channel is freely available to user applications.
+For software convenience, a hardware synchronization mechanism automatically ensures that the RTC and 
+SYSTIM share a common time base (albeit with different resolutions/spans). Another software convenience 
+feature is that SYSTIM qualifies any submitted compare values so that the timer channel will immediately 
+trigger if the submitted event is in the immediate past (4.294s with 1μs resolution and 1.049s with 250ns 
+resolution).
+• General Purpose Timers (LGPT)
+The CC2340R device provides up to four LGPTs with 3 × 16 bit timers and 1× 24 bit timer, all running up to 
+48MHz. The LGPTs support a wide range of features such as:
+– Three capture/compare channels
+– One-shot or periodic counting
+– Pulse width modulation (PWM)
+– Time counting between edges and edge counting
+– Input filter implemented on each of the channels for all timers
+– IR generation feature available on Timer-0 and Timer-1
+– Deadband feature available on Timer-1
+The timer capture/compare and PWM signals are connected to IOs through the IO controller module (IOC), 
+and the internal timer event connections to CPU, DMA, and other peripherals are through the event fabric, 
+which allows the timers to interact with signals such as GPIO inputs, other timers, DMA, and ADC. Two 
+LGPTs (2× 16-bit timers) support quadrature decoder mode to enable buffered decoding of quadrature-
+encoded sensor signals. The LGPTs are available in device Active and Idle power modes.
+Table 8-1. Timer Comparison
+Feature Timer 0 Timer 1 Timer 2 Timer 3
+Counter Width 16-bit 16-bit 16-bit 24-bit
+Quadrature Decoder Yes No Yes No
+Park Mode on Fault No Yes No No
+Programmable Dead-
+Band Insertion
+No Yes No No
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+46 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+• Table 8-2. Timer Availability
+Part Number Timer 0 Timer 1 Timer 2 Timer 3
+CC2340R21 Yes Yes No No
+CC2340R22 Yes Yes Yes Yes
+CC2340R52 Yes Yes Yes Yes
+CC2340R53 Yes Yes Yes Yes
+• Watchdog timer
+The watchdog timer is used to regain control if the system operates incorrectly due to software errors. Upon 
+counter expiry, the watchdog timer resets the device when periodic monitoring of the system components 
+and tasks fails to verify proper functionality. The watchdog timer runs on a 32kHz clock rate and operates in 
+device active, idle, and standby modes, and cannot be stopped once enabled.
+8.7 Serial Peripherals and I/O
+The CC2340R device provides 1xUART, 1xSPI, and 1xI2C serial peripherals.
+The SPI module supports both SPI controller and peripheral up to 12MHz with configurable phase and polarity.
+The UART module implements universal asynchronous receiver and transmitter functions. They support flexible 
+baud-rate generation up to a maximum of 3Mbps and IRDA SIR mode of operation.
+The I2C module is used to communicate with devices compatible with the I 2C standard. The I 2C interface can 
+handle 100kHz and 400kHz operation and can serve as both controller and target.
+The I/O controller (IOC) controls the digital I/O pins and contains multiplexer circuitry to allow a set of peripherals 
+to be assigned to I/O pins in a fixed manner over DIOs. All digital I/Os are interrupt and wake-up capable, have 
+a programmable pullup and pulldown function, and can generate an interrupt on a negative or positive edge 
+(configurable). When configured as an output, pins can function as either push-pull, open-drain, or open-source. 
+Some GPIOs have high-drive capabilities, which are marked in bold in Pin Configurations and Functions.
+For more information, see the CC23xx SimpleLink™ Wireless MCU Technical Reference Manual.
+8.8 Battery and Temperature Monitor
+A combined temperature and battery voltage monitor is available in the CC2340R device. The battery and 
+temperature monitor allows an application to continuously monitor on-chip temperature and supply voltage 
+and respond to changes in environmental conditions as needed. The module contains window comparators to 
+interrupt the system CPU when temperature or supply voltage go outside defined windows. These events can 
+also be used to wake up the device from Standby mode through the Always-On (AON) event fabric.
+8.9 µDMA
+The device includes a direct memory access (µDMA) controller. The µDMA controller provides a way to offload 
+data-transfer tasks from the system CPU, thus allowing for more efficient use of the processor and the available 
+bus bandwidth. The µDMA controller can perform a transfer between memory and peripherals. The µDMA 
+controller has dedicated channels for each supported on-chip module and can be programmed to automatically 
+perform transfers between peripherals and memory when the peripheral is ready to transfer more data.
+Some features of the µDMA controller include the following (this is not an exhaustive list):
+• Channel operation of up to 8 channels, with 6 channels having a dedicated peripheral interface and 2 
+channels having the ability to be triggered via configurable events.
+• Transfer modes: memory-to-memory, memory-to-peripheral, peripheral-to-memory, and
+peripheral-to-peripheral
+• Data sizes of 8, 16, and 32 bits
+• Ping-pong mode for continuous streaming of data
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 47
+Product Folder Links: CC2340R2 CC2340R5
+8.10 Debug
+On-chip debug is supported through the serial wire debug (SWD) interface, which is an ARM bi-directional 2-wire 
+protocol that communicates with the JTAG Test Access Port (TAP) controller and allows for complete debug 
+functionality. SWD is fully compatible with Texas Instruments' XDS family of debug probes.
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+48 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+8.11 Power Management
+To minimize power consumption, the CC2340R supports a number of power modes and power management 
+features (see Table 8-3).
+Table 8-3. Power Modes
+MODE
+SOFTWARE CONFIGURABLE POWER MODES (1)
+RESET PIN 
+HELDACTIVE IDLE STANDBY SHUTDOWN
+CPU Active Off Off Off Off
+Flash On Available Off Off Off
+SRAM On On Retention Off Off
+Radio Available Available Off Off Off
+Supply System On On Duty Cycled Off Off
+CPU register retention Full Full Full (2) No No
+SRAM retention Full Full Full Off Off
+48 MHz high-speed clock 
+(HFCLK) HFOSC (tracks HFXT) HFOSC (tracks HFXT) Off Off Off
+32 kHz low-speed clock (LFCLK) LFXT or LFOSC LFXT or LFOSC LFXT or LFOSC Off Off
+Peripherals Available Available IOC, BATMON, 
+RTC, LPCOMP Off Off
+Wake-up on RTC N/A Available Available Off Off
+Wake-up on pin edge N/A Available Available Available Off
+Wake-up on reset pin On On On On On
+Brownout detector (BOD) On On Duty Cycled Off Off
+Power-on reset (POR) On On On On On
+Watchdog timer (WDT) Available Available Available Off Off
+(1) “Available” indicates that the specific IP or feature can be enabled by user application in the corresponding device operating modes. 
+“On” indicates that the specific IP or feature is turned on, irrespective of the user application configuration of the device in the 
+corresponding device operating mode. “Off” indicates that the specific IP or feature is turned off and not available for the user 
+application in the corresponding device operating mode.
+(2) Software-based retention of CPU registers with context save and restore when entering and exiting standby power mode
+In the Active mode, both of MCU and AON power domains are powered. Clock gating is used to minimize power 
+consumption. Clock gating to peripherals/subsystems is controlled manually by the CPU.
+In Idle mode, the CPU is in sleep, but selected peripherals and subsystems (such as the radio) can be active. 
+Infrastructure (Flash, ROM, SRAM, bus) clock gating is possible depending on the state of the DMA and debug 
+subsystem.
+In Standby mode, only the always-on (AON) domain is active. An external wake-up event, RTC event, or 
+comparator event (LP-COMP) is required to bring the device back to active mode. Pin Reset will also drive the 
+device from Standby to Active. MCU peripherals with retention do not need to be reconfigured when waking up 
+again, and the CPU continues execution from where it went into standby mode. All GPIOs are latched in standby 
+mode.
+In Shutdown mode, the device is entirely turned off (including the AON domain), and the I/Os are latched with 
+the value they had before entering shutdown mode. A change of state on any I/O pin defined as a wake from 
+shutdown pin wakes up the device and functions as a reset trigger. The CPU can differentiate between reset in 
+this way and reset-by-reset pin or power-on reset by reading the reset status register. The only states retained in 
+this mode are the latched I/O state, the 3V register bank, and the flash memory contents.
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 49
+Product Folder Links: CC2340R2 CC2340R5
+Note
+The power, RF, and clock management for the CC2340R device requires specific configuration and 
+handling by software for optimized performance. This configuration and handling is implemented in 
+the TI-provided drivers that are part of the CC2340R software development kit (SDK). Therefore, TI 
+highly recommends using this software framework for all application development on the device. The 
+complete SDK with FreeRTOS, device drivers, and examples are offered free of charge in source 
+code.
+8.12 Clock Systems
+The CC2340R device has the following internal system clocks.
+The 48MHz HFCLK is used as the main system (MCU and peripherals) clock. This is driven by the internal 
+48MHz RC Oscillator (HFOSC), which can track its accuracy against an external 48MHz crystal (HFXT). Radio 
+operation requires an external 48MHz crystal.
+The 32.768kHz LFCLK is used as the internal low-frequency system clock. It is used for the RTC, the watchdog 
+timer (if enabled in standby power mode), and to synchronize the radio timer before or after Standby power 
+mode. LFCLK can be driven by the internal 32.8kHz RC Oscillator (LFOSC), a 32.768kHz watch-type crystal, or 
+a clock input in LFXT bypass mode. When using a crystal or the internal RC oscillator, the device can output the 
+32kHz LFCLK signal to other devices, thereby reducing the overall system cost.
+8.13 Network Processor
+Depending on the product configuration, the CC2340R device can function as a wireless network processor 
+(WNP), a device running the wireless protocol stack with the application running on a separate host MCU, or as 
+a system-on-chip (SoC), with the application and protocol stack running on the system CPU inside the device.
+In the first case, the external host MCU communicates with the device using SPI or UART. In the second case, 
+the application must be written according to the application framework supplied with the wireless protocol stack.
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+50 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+9 Application, Implementation, and Layout
+Note
+Information in the following applications sections is not part of the TI component specification, 
+and TI does not warrant its accuracy or completeness. TI’s customers are responsible for 
+determining suitability of components for their purposes, as well as validating and testing their design 
+implementation to confirm system functionality.
+9.1 Reference Designs
+The following reference designs should be followed closely when implementing designs using the CC2340R 
+devices.
+Special attention must be paid to RF component placement, decoupling capacitors, and DCDC regulator 
+components, as well as ground connections for all of these.
+LP-EM-CC2340R5 Design 
+Files 
+The CC2340R5 LaunchPad Design Files contain detailed schematics and layouts 
+to build application-specific boards using the CC2340R devices in the 5mm x 5mm 
+RKP package.
+LP-EM-CC2340R53 Design 
+Files 
+The CC2340R53 LaunchPad Design Files contain detailed schematics and 
+layouts to build application-specific boards using the CC2340R devices in the 
+5mm x 5mm RKP package.
+LP-EM-CC2340R5-
+RGE-4x4-IS24 Design Files 
+The CC2340R5 RGE 4x4 LaunchPad Design Files contain detailed schematics 
+and layouts to build application-specific boards using the CC2340R devices in the 
+4mm x 4mm RGE package. The CC2340R5x and CC2340R2x devices in RGE 
+packages are pin-to-pin compatible.
+LP-EM-CC2340R53-BG The CC2340R5 YBG WCSP LaunchPad Design Files contain detailed schematics 
+and layouts to build application-specific boards using the CC2340R devices in the 
+WCSP YBG package.
+Sub1 GHz and 2.4 GHz 
+Antenna Kit for 
+LaunchPad™ Development 
+Kit and SensorTag 
+The antenna kit allows real-life testing to identify the optimal antenna for your 
+application. The antenna kit includes 16 antennas for frequencies from 169MHz to 
+2.4GHz, including:
+• PCB antennas
+• Helical antennas
+• Chip antennas
+• Dualband antennas for 868MHz and 915MHz combined with 2.4GHz
+The antenna kit includes a JSC cable to connect to the Wireless MCU LaunchPad 
+Development Kits and SensorTags.
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 51
+Product Folder Links: CC2340R2 CC2340R5
+9.2 Junction Temperature Calculation
+This section shows the different techniques for calculating the junction temperature under various operating 
+conditions. For more details, see Semiconductor and IC Package Thermal Metrics.
+There are two recommended ways to derive the junction temperature from other measured temperatures:
+1. From package temperature:
+TJ = ψJT × P + Tcase (1)
+2. From board temperature:
+TJ = ψJB × P + Tboard (2)
+P is the power dissipated from the device and can be calculated by multiplying the current consumption by the 
+supply voltage. Thermal resistance coefficients are found in Thermal Resistance Characteristics.
+Example:
+In this example, we assume a simple use case where the radio is transmitting continuously at 0dBm output 
+power. Let us assume we want to maintain a junction temperature equal or less than 85°C and the supply 
+voltage is 3V. Using Equation 1, the temperature difference between the top of the case and the junction 
+temperature is calculated. To calculate P, look up the current consumption for Tx at 85°C. At 85°C, the current 
+consumption is approximately 5.5mA. This means that P is 5.5mA × 3V = 16.5mW.
+The maximum case temperature to maintain and junction temperature of 85°C is then calculated as:
+Tcase < Tj − 0.4°C W × 23.4mW = 84.99°C (3)
+For various application use cases, current consumption for other modules may have to be added to calculate the 
+appropriate power dissipation. For example, the MCU may be running simultaneously as the radio, peripheral 
+modules may be enabled, and so on. Typically, the easiest way to find the peak current consumption, and thus 
+the peak power dissipation in the device, is to measure as described in the Measuring CC13xx and CC26xx 
+Current Consumption application report.
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+52 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+10 Device and Documentation Support
+TI offers an extensive line of development tools. Tools and software to evaluate the performance of the device, 
+generate code, and develop solutions are listed as follows.
+10.1 Device Nomenclature
+To designate the stages in the product development cycle, TI assigns prefixes to all part numbers and/or 
+date-code. Each device has one of three prefixes/identifications: X, P, or null (no prefix) (for example, X is in 
+preview; therefore, an X prefix/identification is assigned).
+Device development evolutionary flow:
+X Experimental device that is not necessarily representative of the final device's electrical specifications and 
+may not use production assembly flow.
+P Prototype device that is not necessarily the final silicon die and may not necessarily meet final electrical 
+specifications.
+null Production version of the silicon die that is fully qualified.
+Production devices have been characterized fully, and the quality and reliability of the device have been 
+demonstrated fully. TI's standard warranty applies.
+Predictions show that prototype devices (X or P) have a greater failure rate than the standard production 
+devices. Texas Instruments recommends that these devices not be used in any production system because their 
+expected end-use failure rate still is undefined. Only qualified production devices are to be used.
+TI device nomenclature also includes a suffix with the device family name. This suffix indicates the package type 
+(for example, RKP).
+CC2340  R  5  2  E  0  RKP  R
+PREFIX
+X = Experimental Device
+Blank = Qualified Device
+DEVICE
+SimpleLink™ 2.4GHz 
+Wireless MCU
+CONFIGURATION
+R = Regular (+8dBm)
+FLASH SIZE
+2 = 256KB
+5 = 512KB
+R = Large Reel
+PACKAGE
+RKP = 5mm x 5mm QFN
+RGE = 4mm x 4mm QFN
+YBG = 2.2mm x 2.6mm WCSP
+TEMPERATURE
+E = 125°C Ambient
+N = 85°C Ambient
+PRODUCT REVISION
+SRAM SIZE
+1 = 28KB
+2 = 36KB
+3 = 64KB
+Figure 10-1. Device Nomenclature
+10.2 Tools and Software
+The CC2340R device is supported by a variety of software and hardware development tools.
+Development Kit
+CC2340R53 
+LaunchPad™ 
+Development Kit 
+The CC2340R53 LaunchPad™ Development Kit enables development of high-
+performance wireless applications that benefit from low-power operation. The kit features 
+the CC2340R53 SimpleLink Wireless MCU, which allows you to quickly evaluate and 
+prototype 2.4GHz wireless applications such as Bluetooth Low Energy, Zigbee, and 
+Thread. The kit works with the LaunchPad ecosystem, enabling additional functionality 
+like sensors, display, and more.
+Software
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 53
+Product Folder Links: CC2340R2 CC2340R5
+SimpleLink™ Low 
+Power F3 software 
+development kit 
+(SDK) 
+The SimpleLink™ Low Power F3 software development kit (SDK) provides a complete 
+package for the development of wireless applications on the CC2340R family of devices. 
+The SDK includes a comprehensive software package for the CC2340R device, including 
+the following protocol stacks:
+• Bluetooth Low Energy
+• Zigbee 3.x
+The SimpleLink Low Power F3 SDK is part of TI’s SimpleLink MCU platform, offering a 
+single development environment that delivers flexible hardware, software, and tool options 
+for customers developing wired and wireless applications. For more information about the 
+SimpleLink MCU Platform, visit https://www.ti.com/simplelink.
+Zephyr Our Zephyr stack delivers a fully certified open-source and portable Bluetooth solution while 
+maintaining low power, enabled by TI’s Bluetooth LE Controller. Through a TI-managed 
+downstream branch, we ensure faster delivery, bug fixes, and controlled updates for 
+CC2340 and CC2755 devices.
+Customers benefit from portability across silicon vendors, extensive testing with Twister, 
+Ztest frameworks and additional validation, plus a complete production-ready SDK and TI 
+tool ecosystem.
+Development Tools
+Code Composer 
+Studio™ Integrated 
+Development 
+Environment (IDE) 
+Code Composer Studio is an integrated development environment (IDE) that supports TI's 
+Microcontroller and Embedded Processors portfolio. Code Composer Studio comprises a 
+suite of tools used to develop and debug embedded applications. It includes an optimizing 
+C/C++ compiler, source code editor, project build environment, debugger, profiler, and many 
+other features. The intuitive IDE provides a single user interface, taking you through each 
+step of the application development flow. Familiar tools and interfaces allow users to get 
+started faster than ever before.
+CCS has support for all SimpleLink Wireless MCUs and includes support for EnergyTrace™ 
+software (application energy usage profiling).
+Code Composer Studio is provided free of charge when used in conjunction with the XDS 
+debuggers included on a LaunchPad Development Kit.
+Code Composer 
+Studio™ Cloud 
+IDE 
+Code Composer Studio (CCS) Cloud is a web-based IDE that allows you to create, edit, 
+and build CCS projects. After you have successfully built your project, you can download 
+and run it on your connected LaunchPad. Basic debugging, including features like setting 
+breakpoints and viewing variable values, is now supported with CCS Cloud.
+IAR Embedded 
+Workbench® for 
+Arm® 
+IAR Embedded Workbench ® is a set of development tools for building and debugging 
+embedded system applications using Assembler, C, and C++. It provides a completely 
+integrated development environment that includes a project manager, editor, and build 
+tools. IAR has support for all SimpleLink Wireless MCUs. It offers broad debugger support, 
+including XDS110, IAR I-jet™, and Segger J-Link™. IAR is also supported out-of-the-box on 
+most software examples provided as part of the SimpleLink SDK.
+SmartRF™ Studio SmartRF™ Studio is a Windows® application that can be used to evaluate and configure 
+SimpleLink Wireless MCUs from Texas Instruments. The application will help designers 
+of RF systems to easily evaluate the radio at an early stage in the design process. It is 
+especially useful for the generation of configuration register values and for practical testing 
+and debugging of the RF system. SmartRF Studio can be used either as a standalone 
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+54 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+application or together with applicable evaluation boards or debug probes for the RF device. 
+Features of the SmartRF Studio include:
+• Link tests—send and receive packets between nodes
+• Antenna and radiation tests—set the radio in continuous wave TX and RX states
+• Export radio configuration code for use with the TI SimpleLink SDK RF driver
+• Custom GPIO configuration for signaling and control of external switches
+UniFlash UniFlash is a standalone tool used to program on-chip flash memory on TI MCUs. UniFlash 
+has a GUI, command line, and scripting interface. UniFlash is available free of charge.
+10.2.1 SimpleLink™ Microcontroller Platform
+The SimpleLink microcontroller platform sets a new standard for developers with the broadest portfolio of 
+wired and wireless Arm® MCUs (System-on-Chip) in a single software development environment. Delivering 
+flexible hardware, software and tool options for your IoT applications. Invest once in the SimpleLink software 
+development kit and use throughout your entire portfolio. Learn more at ti.com/simplelink.
+10.3 Documentation Support
+To receive notification of documentation updates on data sheets, errata, application notes, and similar, navigate 
+to the device product folder ( CC2340R5). In the upper right corner, click on Alert me  to register and receive 
+a weekly digest of any product information that has changed. For change details, review the revision history 
+included in any revised document.
+The current documentation that describes the MCU, related peripherals, and other technical collateral is listed as 
+follows.
+TI Resource Explorer
+TI Resource Explorer Software examples, libraries, executables, and documentation are available for your 
+device and development board.
+Errata 
+CC2340R Silicon 
+Errata The silicon errata describes the known exceptions to the functional specifications for 
+each silicon revision of the device and describes how to recognize a device revision.
+Application Reports 
+All application reports for the CC2340R devices are found on the device product folder ( CC2340R2 or 
+CC2340R5).
+Technical Reference Manual (TRM)
+CC23xx SimpleLink™ Wireless MCU 
+TRM The TRM provides a detailed description of all modules and peripherals 
+available in the device family.
+10.4 Support Resources
+TI E2E ™ support forums  are an engineer's go-to source for fast, verified answers and design help — straight 
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do 
+not necessarily reflect TI's views; see TI's Terms of Use.
+10.5 Trademarks
+SimpleLink™, LaunchPad™, Code Composer Studio™, EnergyTrace™, and TI E2E™ are trademarks of Texas 
+Instruments.
+I-jet™ is a trademark of IAR Systems AB.
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 55
+Product Folder Links: CC2340R2 CC2340R5
+J-Link™ is a trademark of SEGGER Microcontroller Systems GmbH.
+Arm® and Cortex® are registered trademarks of Arm Limited (or its subsidiaries) in the US and/or elsewhere.
+Bluetooth® is a registered trademark of Bluetooth SIG.
+CoreMark® is a registered trademark of Embedded Microprocessor Benchmark Consortium Corporation.
+is a registered trademark of Bluthtooth SIG.
+Wi-Fi® is a registered trademark of Wi-Fi Alliance.
+IAR Embedded Workbench® is a registered trademark of IAR Systems AB.
+Windows® is a registered trademark of Microsoft Corporation.
+All trademarks are the property of their respective owners.
+10.6 Electrostatic Discharge Caution
+This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled 
+with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may 
+be more susceptible to damage because very small parametric changes could cause the device not to meet its published 
+specifications.
+10.7 Glossary
+TI Glossary This glossary lists and explains terms, acronyms, and definitions.
+11 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision E (September 2024) to Revision F (September 2025) Page
+• Added IR Generation to timer features...............................................................................................................1
+• Removed preview status for WCSP (YBG) package..........................................................................................1
+• Updated formatting and corrected typos throughout the document................................................................... 1
+• Updated features descriptions............................................................................................................................1
+• Included DIO18 in list of high drive pins (YBG) package................................................................................... 8
+• Updated footnote in Absolute Maximum table..................................................................................................18
+• Updated DCDC footnote...................................................................................................................................18
+• Updated thermal characteristics for YBG package...........................................................................................21
+• Updated SPI peripheral CS timing....................................................................................................................29
+• Updated Bluetooth Low Energy description..................................................................................................... 44
+Changes from Revision D (June 2024) to Revision E (September 2024) Page
+• Updated the SDK name throughout the data sheet............................................................................................1
+• Updated CC2340R53E0RKPR from Preview to Released.................................................................................2
+• Corrected pin pitch in pin diagram title............................................................................................................... 6
+• Corrected pin pitch in diagram title.....................................................................................................................8
+• Updated the description of software and tools................................................................................................. 53
+Changes from Revision C (June 2023) to Revision D (June 2024) Page
+• Combined all CC2340R family of devices to a single data sheet.......................................................................1
+• Added all devices in CC2340R family................................................................................................................ 2
+• Changed the comparison table to the CC2340R family of devices.................................................................... 5
+• Added preview for YBG package....................................................................................................................... 8
+• Removed "Untrimmed brownout rising threshold"............................................................................................19
+• Updated parameter name of "Trimmed brownout rising threshold"..................................................................19
+• Updated parameter name of "Trimmed brownout falling threshold".................................................................19
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+56 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+• Changed Temperature Sensor " Accuracy"...................................................................................................... 19
+• Changed DCDC "Idle Current - Supply Systems and RAM powered, flash disabled, DMA disabled "............19
+• Changed DCDC "Idle Current - Supply Systems and RAM powered, flash disabled, DMA enabled"..............19
+• Changed DCDC "Idle Current - Supply Systems and RAM powered, flash enabled, DMA disabled"..............19
+• Changed DCDC "Idle Current - Supply Systems and RAM powered, flash enabled, DMA enabled".............. 19
+• Changed GLDO "Idle Current - Supply Systems and RAM powered, flash disabled, DMA disabled"............. 19
+• Changed GLDO "Idle Current - Supply Systems and RAM powered, flash disabled, DMA enabled"..............19
+• Changed GLDO "Idle Current - Supply Systems and RAM powered, flash enabled, DMA disabled"..............19
+• Changed GLDO "Idle Current - Supply Systems and RAM powered, flash enabled, DMA enabled "............. 19
+• Changed "Reset current"..................................................................................................................................19
+• Changed "Shutdown Current"...........................................................................................................................19
+• Changed "Radio transmit current at -8 dBm"................................................................................................... 20
+• Changed "Radio transmit current at 0 dBm, DCDC OFF"................................................................................20
+• Changed "Radio transmit current at +4 dBm"...................................................................................................20
+• Changed "Flash write time".............................................................................................................................. 20
+• Changed "Frequency error tolerance" for 500kbps BLE PHY..........................................................................21
+• Changed "Data rate error tolerance" for 1Mbps BLE PHY...............................................................................21
+• Updated footnote 1 in Section 8.14 "Bluetooth Low Energy - Receive (RX)"...................................................21
+• Changed "Selectivity, +3MHz" for 1Mbps BLE PHY.........................................................................................21
+• Changed "Data rate error tolerance" for 2Mbps BLE PHY...............................................................................21
+• Changed "f &gt; 1 GHz, including harmonics"..................................................................................................26
+• Changed min value of "Crystal load capacitance"............................................................................................26
+• Removed "Temperature coefficient"................................................................................................................. 27
+• Changed "SPI clock frequency"........................................................................................................................27
+• Added footnote (1)............................................................................................................................................27
+• Changed "CS access time, CS active to POCI data out - VDDS=3.3V".......................................................... 29
+• Changed "CS access time, CS active to POCI data out - VDDS=1.8V".......................................................... 29
+• Changed "CS disable time, CS inactive to POCI high inpedance - VDDS=3.3V"............................................ 29
+• Changed "CS disable time, CS inactive to POCI high impedance - VDDS=1.8V"........................................... 29
+• Changed "PICO input data setup time"............................................................................................................ 29
+• Changed "POCI output data valid time" at 3.3V...............................................................................................29
+• Removed "(4)" from test conditions..................................................................................................................29
+• Changed "POCI output data valid time" at 1.8V...............................................................................................29
+• Removed "(4)" from test conditions..................................................................................................................29
+• Added "Data setup time" at f_SCL = 100kHz................................................................................................... 31
+• Changed "Data setup time" at f_SCL &gt; 100kHz...........................................................................................31
+• Changed "GPIO pullup current" at 1.8V........................................................................................................... 31
+• Changed "GPIO pulldown current" at 1.8V.......................................................................................................31
+• Changed "GPIO low-to-high input transition, with hysteresis" at 1.8V............................................................. 31
+• Changed "GPIO high-to-low input transition, with hysteresis" at 1.8V............................................................. 31
+• Changed "GPIO input hysteresis" at 1.8V........................................................................................................31
+• Changed "GPIO VOH at 10 mA load" at 3.0V..................................................................................................31
+• Changed "GPIO VOL at 10 mA load" at 3.0V...................................................................................................31
+• Changed "GPIO VOH at 2 mA load" at 3.0V....................................................................................................31
+• Changed "GPIO VOL at 2 mA load" at 3.0V.....................................................................................................31
+• Changed "GPIO pullup current" at 3.8V........................................................................................................... 31
+• Changed "GPIO pulldown current" at 3.8V.......................................................................................................31
+• Changed "GPIO low-to-high input transition, with hysteresis" at 3.8V............................................................. 31
+• Changed "GPIO high-to-low input transition, with hysteresis" at 3.8V............................................................. 31
+• Changed "GPIO input hysteresis" at 3.8V........................................................................................................31
+• Added "Temperature Error" of Temp diode inside ADC....................................................................................32
+• Changed "Ultra-low power comparator current consumption"..........................................................................35
+• Added performance plots................................................................................................................................. 35
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 57
+Product Folder Links: CC2340R2 CC2340R5
+• Corrected timer features...................................................................................................................................45
+• Updated descriptions........................................................................................................................................49
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+58 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+12 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical packaging and orderable information. This information is the most 
+current data available for the designated devices. This data is subject to change without notice and revision of 
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 59
+Product Folder Links: CC2340R2 CC2340R5
+www.ti.com
+PACKAGE OUTLINE
+C0.5 MAX0.200.14
+2TYP
+1.6 TYP
+0.4 TYP0.4 TYP28X 0.270.23
+B E A
+D
+4230507/A   02/2024
+D: Max = 2.622 mm, Min = 2.582 mm
+DSBGA - 0.5 mm max heightYBG0028-C01DIE SIZE BALL GRID ARRAY
+ E: Max = 2.206 mm, Min = 2.166 mm
+NOTES:  1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing     per ASME Y14.5M.2. This drawing is subject to change without notice. 
+BALL A1CORNER
+SEATING PLANE0.05C
+A1230.015CAB
+SYMM
+4
+SYMM
+BCDEF
+5
+SCALE  5.000
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+60 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+www.ti.com
+EXAMPLE BOARD LAYOUT
+0.05 MIN0.05 MAX
+28X (0.23)(0.4) TYP(0.4) TYP
+(0.23)SOLDER MASKOPENING(0.23)METAL
+4230507/A   02/2024
+DSBGA - 0.5 mm max heightYBG0028-C01DIE SIZE BALL GRID ARRAY
+NOTES: (continued) 3. Final dimensions may vary due to manufacturing tolerance considerations and also routing constraints.    See Texas Instruments Literature No. SNVA009 (www.ti.com/lit/snva009). 
+SOLDER MASK DETAILSNOT TO SCALE
+SYMM
+SYMM
+C
+1234ABDEFEXPOSED METAL SHOWNLAND PATTERN EXAMPLESCALE: 30X
+5
+NON-SOLDER MASKDEFINED(PREFERRED)EXPOSEDMETALSOLDER MASKOPENINGSOLDER MASKDEFINED
+METAL UNDERSOLDER MASKEXPOSEDMETAL
+www.ti.com
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+Copyright © 2026 Texas Instruments Incorporated Submit Document Feedback 61
+Product Folder Links: CC2340R2 CC2340R5
+www.ti.com
+EXAMPLE STENCIL DESIGN
+(0.4) TYP(0.4) TYP28X (0.25) (R0.05) TYP
+4230507/A   02/2024
+DSBGA - 0.5 mm max heightYBG0028-C01DIE SIZE BALL GRID ARRAY
+NOTES: (continued) 4. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release.
+C
+1234ABDEF
+5
+SYMM
+SYMM
+SOLDER PASTE EXAMPLEBASED ON 0.1 mm THICK STENCILSCALE: 30X
+METALTYP
+CC2340R2, CC2340R5
+SWRS272F – APRIL 2023 – REVISED MAY 2026
+ www.ti.com
+62 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: CC2340R2 CC2340R5
+PACKAGE OPTION ADDENDUM
+www.ti.com 15-Jul-2026
+PACKAGING INFORMATION
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+CC2340R21N0RGER Active Production VQFN (RGE) | 24 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R21
+CC2340R21N0RGER.A Active Production VQFN (RGE) | 24 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R21
+CC2340R22E0RKPR Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 125 CC2340
+R22
+CC2340R22E0RKPR.A Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 125 CC2340
+R22
+CC2340R22E0RKPR.B Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 125 CC2340
+R22
+CC2340R22N0RKPR Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R22
+CC2340R22N0RKPR.A Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R22
+CC2340R22N0RKPR.B Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R22
+CC2340R52E0RGER Active Production VQFN (RGE) | 24 3000 | LARGE T&R Yes Call TI | Sn | Nipdau Level-3-260C-168 HR -40 to 125 CC2340
+R52
+CC2340R52E0RGER.A Active Production VQFN (RGE) | 24 3000 | LARGE T&R Yes Call TI Level-3-260C-168 HR -40 to 125 CC2340
+R52
+CC2340R52E0RGER.B Active Production VQFN (RGE) | 24 3000 | LARGE T&R Yes Call TI Level-3-260C-168 HR -40 to 125 CC2340
+R52
+CC2340R52E0RKPR Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU | SN Level-3-260C-168 HR -40 to 125 CC2340
+R52
+CC2340R52E0RKPR.A Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 125 CC2340
+R52
+CC2340R52E0RKPR.B Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 125 CC2340
+R52
+CC2340R52N0RGER Active Production VQFN (RGE) | 24 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R52
+CC2340R52N0RGER.A Active Production VQFN (RGE) | 24 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R52
+Addendum-Page 1
+PACKAGE OPTION ADDENDUM
+www.ti.com 15-Jul-2026
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+CC2340R52N0RGER.B Active Production VQFN (RGE) | 24 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R52
+CC2340R52N0RKPR Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R52
+CC2340R52N0RKPR.A Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R52
+CC2340R52N0RKPR.B Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-3-260C-168 HR -40 to 85 CC2340
+R52
+CC2340R53E0RKPR Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-2-260C-1 YEAR -40 to 125 CC2340
+R53
+CC2340R53E0RKPR.A Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-2-260C-1 YEAR -40 to 125 CC2340
+R53
+CC2340R53E0YBGR Active Production DSBGA (YBG) | 28 3000 | LARGE T&R Yes SNAGCU Level-1-260C-UNLIM -40 to 125 CC2340R53
+CC2340R53N0RKPR Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-2-260C-1 YEAR -40 to 85 CC2340
+R53
+CC2340R53N0RKPR.A Active Production VQFN (RKP) | 40 3000 | LARGE T&R Yes NIPDAU Level-2-260C-1 YEAR -40 to 85 CC2340
+R53
+ 
+(1) Status:  For more details on status, see our product life cycle.
+ 
+(2) Material type:  When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+ 
+(3) RoHS values:  Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+ 
+(4) Lead finish/Ball material:  Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+ 
+(5) MSL rating/Peak reflow:  The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+ 
+(6) Part marking:  There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+ 
+Addendum-Page 2
+PACKAGE OPTION ADDENDUM
+www.ti.com 15-Jul-2026
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+ 
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+ 
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+ 
+ OTHER QUALIFIED VERSIONS OF CC2340R5 :
+• Automotive : CC2340R5-Q1
+ NOTE: Qualified Version Definitions:
+• Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects
+Addendum-Page 3
+PACKAGE MATERIALS INFORMATION
+  
+www.ti.com 3-Sep-2026
+TAPE AND REEL INFORMATION
+Reel Width (W1)
+REEL DIMENSIONS
+A0B0K0WDimension designed to accommodate the component lengthDimension designed to accommodate the component thicknessOverall width of the carrier tapePitch between successive cavity centersDimension designed to accommodate the component width
+TAPE DIMENSIONSK0 P1B0WA0Cavity
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+Pocket QuadrantsSprocket HolesQ1Q1Q2Q2Q3Q3Q4Q4User Direction of Feed
+P1ReelDiameter
+ 
+*All dimensions are nominal
+Device Package
+Type
+Package
+Drawing
+Pins SPQ Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+CC2340R21N0RGER VQFN RGE 24 3000 330.0 12.4 4.3 4.3 1.3 8.0 12.0 Q2
+CC2340R21N0RGER VQFN RGE 24 3000 330.0 12.4 4.25 4.25 1.15 8.0 12.0 Q2
+CC2340R22E0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.3 8.0 12.0 Q2
+CC2340R22E0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.1 8.0 12.0 Q2
+CC2340R22N0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.3 8.0 12.0 Q2
+CC2340R22N0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.1 8.0 12.0 Q2
+CC2340R52E0RGER VQFN RGE 24 3000 330.0 12.4 4.3 4.3 1.3 8.0 12.0 Q2
+CC2340R52E0RGER VQFN RGE 24 3000 330.0 12.4 4.25 4.25 1.15 8.0 12.0 Q2
+CC2340R52E0RGER VQFN RGE 24 3000 330.0 12.4 4.25 4.25 1.15 8.0 12.0 Q2
+CC2340R52E0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.3 8.0 12.0 Q2
+CC2340R52E0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.1 8.0 12.0 Q2
+CC2340R52E0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.1 8.0 12.0 Q2
+CC2340R52N0RGER VQFN RGE 24 3000 330.0 12.4 4.25 4.25 1.15 8.0 12.0 Q2
+CC2340R52N0RGER VQFN RGE 24 3000 330.0 12.4 4.3 4.3 1.3 8.0 12.0 Q2
+CC2340R52N0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.3 8.0 12.0 Q2
+CC2340R52N0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.1 8.0 12.0 Q2
+Pack Materials-Page 1
+PACKAGE MATERIALS INFORMATION
+  
+www.ti.com 3-Sep-2026
+Device Package
+Type
+Package
+Drawing
+Pins SPQ Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+CC2340R53E0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.1 8.0 12.0 Q2
+CC2340R53E0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.3 8.0 12.0 Q2
+CC2340R53E0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.1 8.0 12.0 Q2
+CC2340R53E0YBGR DSBGA YBG 28 3000 180.0 8.4 2.36 2.77 0.65 4.0 8.0 Q1
+CC2340R53N0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.3 8.0 12.0 Q2
+CC2340R53N0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.1 8.0 12.0 Q2
+CC2340R53N0RKPR VQFN RKP 40 3000 330.0 12.4 5.3 5.3 1.1 8.0 12.0 Q2
+Pack Materials-Page 2
+PACKAGE MATERIALS INFORMATION
+  
+www.ti.com 3-Sep-2026
+TAPE AND REEL BOX DIMENSIONS
+Width (mm)
+W LH
+ 
+*All dimensions are nominal
+Device Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)
+CC2340R21N0RGER VQFN RGE 24 3000 353.0 353.0 32.0
+CC2340R21N0RGER VQFN RGE 24 3000 367.0 367.0 35.0
+CC2340R22E0RKPR VQFN RKP 40 3000 353.0 353.0 32.0
+CC2340R22E0RKPR VQFN RKP 40 3000 367.0 367.0 35.0
+CC2340R22N0RKPR VQFN RKP 40 3000 353.0 353.0 32.0
+CC2340R22N0RKPR VQFN RKP 40 3000 367.0 367.0 35.0
+CC2340R52E0RGER VQFN RGE 24 3000 353.0 353.0 32.0
+CC2340R52E0RGER VQFN RGE 24 3000 367.0 367.0 35.0
+CC2340R52E0RGER VQFN RGE 24 3000 336.6 336.6 31.8
+CC2340R52E0RKPR VQFN RKP 40 3000 353.0 353.0 32.0
+CC2340R52E0RKPR VQFN RKP 40 3000 336.6 336.6 31.8
+CC2340R52E0RKPR VQFN RKP 40 3000 367.0 367.0 35.0
+CC2340R52N0RGER VQFN RGE 24 3000 367.0 367.0 35.0
+CC2340R52N0RGER VQFN RGE 24 3000 353.0 353.0 32.0
+CC2340R52N0RKPR VQFN RKP 40 3000 353.0 353.0 32.0
+CC2340R52N0RKPR VQFN RKP 40 3000 367.0 367.0 35.0
+CC2340R53E0RKPR VQFN RKP 40 3000 360.0 360.0 36.0
+CC2340R53E0RKPR VQFN RKP 40 3000 353.0 353.0 32.0
+Pack Materials-Page 3
+PACKAGE MATERIALS INFORMATION
+  
+www.ti.com 3-Sep-2026
+Device Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)
+CC2340R53E0RKPR VQFN RKP 40 3000 336.6 336.6 31.8
+CC2340R53E0YBGR DSBGA YBG 28 3000 182.0 182.0 20.0
+CC2340R53N0RKPR VQFN RKP 40 3000 353.0 353.0 32.0
+CC2340R53N0RKPR VQFN RKP 40 3000 336.6 336.6 31.8
+CC2340R53N0RKPR VQFN RKP 40 3000 360.0 360.0 36.0
+Pack Materials-Page 4
+www.ti.com
+GENERIC PACKAGE VIEW
+This image is a representation of the package family, actual package may vary.
+Refer to the product data sheet for package details.
+VQFN - 1 mm max heightRKP 40
+PLASTIC QUAD FLATPACK - NO LEAD5 x 5, 0.4 mm pitch
+4229305/A
+NOTES:
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. The package thermal pad must be soldered to the printed circuit board for optimal thermal and mechanical performance.
+PACKAGE OUTLINE
+4219083/A   03/2021
+www.ti.com
+VQFN - 1 mm max height
+PLASTIC QUAD FLATPACK- NO LEAD
+RKP0040B
+A
+0.08 C
+0.1 C A B
+0.05 C
+B
+SYMM
+SYMM
+PIN 1 INDEX AREA
+5.1
+4.9
+5.1
+4.9
+0.05
+0.00
+1 MAX
+SEATING PLANE
+C
+(0.1) TYP
+   3.6
+3.4
+36X 0.4
+4X
+3.6
+PIN1 ID
+(OPTIONAL)
+40X 0.5
+0.3
+40X 0.25
+0.151
+10
+11 20
+21
+30
+3140
+41
+NOTES: (continued)
+4. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+number SLUA271 (www.ti.com/lit/slua271) .
+5. Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown
+          on this view. It is recommended that vias under paste be filled, plugged or tented.
+EXAMPLE BOARD LAYOUT
+4219083/A   03/2021
+www.ti.com
+VQFN - 1 mm max heightRKP0040B
+PLASTIC QUAD FLATPACK- NO LEAD
+SYMM
+SYMM
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE: 15X
+SOLDER MASK DETAILS
+NON- SOLDER MASK
+DEFINED
+(PREFERRED)
+SOLDER MASK
+DEFINED
+0.05 MAX
+ALL AROUND
+0.05 MIN
+ALL AROUNDMETAL
+SOLDERMASK
+OPENINGEXPOSED METAL
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+OPENING
+EXPOSED
+METAL
+(    3.5)
+2X
+(4.8)
+2X (4.8)
+36X (0.4)
+40X (0.6)
+40X (0.2)
+2X (0.6)
+2X (0.9)
+2X (0.6)2X (0.9283)
+(Ø 0.2) VIA
+TYP
+(R 0.05) TYP
+1
+10
+11 20
+21
+30
+3140
+NOTES: (continued)
+6.  Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+design recommendations.
+EXAMPLE STENCIL DESIGN
+4219083/A   03/2021
+www.ti.com
+VQFN - 1 mm max heightRKP0040B
+PLASTIC QUAD FLATPACK- NO LEAD
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+EXPOSED PAD
+74% PRINTED COVERAGE BY AREA
+SCALE: 15X
+SYMM
+SYMM
+9X
+(    1)
+2X
+(4.8)
+2X (4.8)
+36X (0.4)
+40X (0.6)
+40X (0.2)
+(R 0.05) TYP
+1
+10
+11 20
+21
+30
+3140
+2X
+(1.2)
+2X (1.2)
+GENERIC PACKAGE VIEW
+Images above are just a representation of the package family, actual package may vary.
+Refer to the product data sheet for package details.
+RGE 24 VQFN - 1 mm max height
+PLASTIC QUAD FLATPACK - NO LEAD
+4204104/H
+
+www.ti.com
+PACKAGE OUTLINE
+C
+SEE TERMINAL
+DETAIL
+24X 0.3
+0.2
+2.45 0.1
+24X 0.5
+0.3
+1 MAX
+(0.2) TYP
+0.05
+0.00
+20X 0.5
+2X
+2.5
+2X 2.5
+A 4.1
+3.9
+B
+4.1
+3.9
+0.3
+0.2
+0.5
+0.3
+VQFN - 1 mm max heightRGE0024B
+PLASTIC QUAD FLATPACK - NO LEAD
+4219013/A   05/2017
+PIN 1 INDEX AREA
+0.08 C
+SEATING PLANE
+1
+6 13
+18
+7 12
+24 19
+(OPTIONAL)
+PIN 1 ID
+0.1 C A B
+0.05
+EXPOSED
+THERMAL PAD
+25 SYMM
+SYMM
+NOTES:
+ 
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+    per ASME Y14.5M. 
+2. This drawing is subject to change without notice. 
+3. The package thermal pad must be soldered to the printed circuit board for thermal and mechanical performance.
+SCALE  3.000
+DETAIL
+OPTIONAL TERMINAL
+TYPICAL
+www.ti.com
+EXAMPLE BOARD LAYOUT
+0.07 MIN
+ALL AROUND
+0.07 MAX
+ALL AROUND
+24X (0.25)
+24X (0.6)
+( 0.2) TYP
+VIA
+20X (0.5)
+(3.8)
+(3.8)
+( 2.45)
+(R0.05)
+TYP
+(0.975) TYP
+VQFN - 1 mm max heightRGE0024B
+PLASTIC QUAD FLATPACK - NO LEAD
+4219013/A   05/2017
+SYMM
+1
+6
+7 12
+13
+18
+1924
+SYMM
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE:15X
+NOTES: (continued)
+ 
+4. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+    number SLUA271 (www.ti.com/lit/slua271).
+5. Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown
+    on this view. It is recommended that vias under paste be filled, plugged or tented.
+25
+SOLDER MASK
+OPENING
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+DEFINED
+EXPOSED
+METAL
+METAL
+SOLDER MASK
+OPENINGSOLDER MASK DETAILS
+NON SOLDER MASK
+DEFINED
+(PREFERRED)
+EXPOSED
+METAL
+www.ti.com
+EXAMPLE STENCIL DESIGN
+24X (0.6)
+24X (0.25)
+20X (0.5)
+(3.8)
+(3.8)
+4X ( 1.08)
+(0.64)
+TYP
+(0.64) TYP
+(R0.05) TYP
+VQFN - 1 mm max heightRGE0024B
+PLASTIC QUAD FLATPACK - NO LEAD
+4219013/A   05/2017
+NOTES: (continued)
+ 
+6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+   design recommendations. 
+ 
+25
+SYMM
+METAL
+TYP
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+ 
+EXPOSED PAD 25
+78% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGE
+SCALE:20X
+SYMM
+1
+6
+7 12
+13
+18
+1924
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE 
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” 
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD 
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate 
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable 
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an 
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license 
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully 
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on 
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable 
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products 
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2026, Texas Instruments Incorporated
+Last updated 10/2025

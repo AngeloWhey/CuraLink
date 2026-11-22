@@ -1,0 +1,18 @@
+* CuraLink TI generic TPS7A20 voltage-programmed macro, target TPS7A2030PDBVR
+* Vendor states temperature and ground/quiescent current are NOT modeled.
+* Actual fixed-suffix performance bounded separately from datasheet.
+.include "sources/tps7a20-spice/tps7a20-adj_trans.lib"
+.param V_out=3.0
+VIN LDO_IN 0 4.0 AC 1
+VENA EN 0 3
+XU513 LDO_IN 0 EN NC OUT TPS7A20_ADJ_TRANS
+CIN LDO_IN 0 2.2u
+COUT OUT 0 10u
+RLOAD OUT 0 200
+.ac dec 100 1 10Meg
+.meas AC ripple_1k FIND mag(V(OUT)) AT=1k
+.meas AC ripple_100k FIND mag(V(OUT)) AT=100k
+.meas AC ripple_1Meg FIND mag(V(OUT)) AT=1Meg
+.save V(LDO_IN) V(OUT) I(VIN)
+.options plotwinsize=0
+.end

@@ -1,0 +1,23 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-efuse-short-5v.cir
+Start Time: Fri Oct  2 10:13:13 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+AsciiRawFile = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.850 seconds.
+
+Files loaded:
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-efuse-short-5v.cir
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\models\tps25200-ltspice-compat.lib
+
+input_current: AVG(I(D501) )=0.112004475101 FROM 0.03 TO 0.034
+chg_steady: AVG(V(CHG_IN) )=0.111870418047 FROM 0.03 TO 0.034
+protected_input: AVG(V(WPT_PROTECTED) )=4.67031615984 FROM 0.03 TO 0.034
+output_peak: MAX(V(CHG_IN))=0.111870418193 FROM 0 TO 0.035
+en_peak: MAX(V(WPT_EF_EN))=4.87391671877 FROM 0 TO 0.035
+input_peak: MAX(V(WPT_PROTECTED))=4.8739177262 FROM 0 TO 0.035

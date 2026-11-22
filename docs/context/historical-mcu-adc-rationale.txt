@@ -1,0 +1,632 @@
+Yes — but I’d tighten one part of the rationale: **“higher BLE power because it must transmit through skin” is directionally valid, but +10 dBm should be treated as optional link-budget headroom, not proof that the link will work through tissue.** Tissue absorption, antenna detuning, implant depth, encapsulation, and antenna efficiency still dominate the RF problem. Reviews of implant antennas specifically identify tissue attenuation and detuning as major constraints at 2.4 GHz. ([PubMed Central (PMC)][1])
+
+The stronger argument is: **the WBA52 gives us programmable RF output from low-power levels up to +10 dBm, so CuraLink can normally operate at low TX power and only spend the extra energy if the measured transcutaneous link requires it.** ST specifies +10 dBm maximum output, -96 dBm BLE sensitivity at 1 Mbps, ~5.2 mA TX at 0 dBm, and about 19.4 mA TX at +10 dBm with the internal SMPS. ([STMicroelectronics][2])
+
+Here’s the Codex-ready decision entry.
+
+---
+
+# DEC-MCU-001 — Select STM32WBA52 as CuraLink MCU + BLE SoC
+
+## Status
+
+**SELECTED BASELINE**
+
+Exact ordering part/package should remain subject to final pinout review, but the current preferred device class is the **STM32WBA52**, with the **5 × 5 mm UFQFPN32** variant as the leading package candidate. ST lists the STM32WBA52KGU6 in a 5 × 5 × 0.55 mm UFQFPN32 package. ([STMicroelectronics][3])
+
+---
+
+## Functional Objectives / FOCs
+
+The CuraLink controller must:
+
+1. Receive spike-event outputs from **8 analog neural channels**.
+2. Apply channel-specific refractory logic.
+3. Maintain **8 spike counters**.
+4. Generate configurable spike-count bins.
+5. Packetize the resulting low-rate neural data.
+6. Transmit packets wirelessly over **Bluetooth Low Energy**.
+7. Provide sufficient RF link margin for a device intended to emulate a shallow implanted BCI communicating through tissue.
+8. Minimize PCB area and external component count.
+9. Minimize average battery power.
+10. Support robust SWD/UART firmware development and first-board debugging.
+11. Support AI-assisted firmware implementation with a mature and scriptable development ecosystem.
+12. Preserve first-board success and minimize integration risk.
+
+### Important architectural assumption
+
+CuraLink will **not use the STM32 ADC in the current baseline architecture**.
+
+Neural spike detection occurs in the analog front end / analog detector before the MCU.
+
+The MCU therefore receives sparse digital spike events and is responsible primarily for:
+
+$$
+\boxed{
+EVENT[7:0]
+\rightarrow
+refractory
+\rightarrow
+counting
+\rightarrow
+binning
+\rightarrow
+BLE
+}
+$$
+
+The unused ADC therefore does not justify selecting the WBA52 and should not be counted as a project benefit.
+
+---
+
+# Candidate MCU Classes Considered
+
+## Option A — ESP32-family BLE MCU
+
+### Pros
+
+* Excellent development ecosystem.
+* Extensive firmware examples.
+* Very strong AI-assisted implementation support.
+* Integrated BLE.
+* Low component cost.
+
+### Cons
+
+* Several compact ESP variants expose too few analog/event resources for previous architectures.
+* RF current is generally much larger than BLE-focused SoCs.
+* Wi-Fi/general-purpose capabilities are unnecessary for CuraLink.
+* Higher peak current places more demand on a small battery and regulators.
+* Optimized for a different application class than an ultra-low-power implant-inspired sensor.
+
+### Evaluation
+
+Firmware convenience is valuable but does not justify materially worse power characteristics for a battery-powered neural interface.
+
+**Rejected as primary CuraLink MCU.**
+
+---
+
+## Option B — Silicon Labs EFR32BG22
+
+### Pros
+
+* Very small packages available.
+* Excellent BLE power efficiency.
+* Sufficient processing performance.
+* BLE-focused architecture.
+* Strong low-power characteristics.
+
+### Cons
+
+* Less familiar development environment for the project.
+* Smaller amount of existing CuraLink-relevant firmware experience.
+* Greater software/toolchain integration risk relative to STM32.
+* Lower maximum RF output-power flexibility than the selected STM32WBA architecture may provide, depending on exact variant/configuration.
+
+### Evaluation
+
+EFR32BG22 may provide superior minimum power/area in some operating conditions.
+
+However, CuraLink is explicitly constrained by:
+
+* first-board success,
+* firmware-development risk,
+* observability,
+* rapid AI-assisted firmware iteration,
+* potential tissue-link loss.
+
+Its silicon efficiency advantage must therefore be weighed against the STM32 ecosystem and RF headroom.
+
+**Strong alternative, but not selected.**
+
+---
+
+## Option C — TI CC2340R5
+
+### Pros
+
+* Lightweight BLE-focused MCU.
+* Low-power architecture.
+* Sufficient compute for event counting and binning.
+* Integrated BLE radio.
+
+### Cons
+
+* More vendor-specific firmware ecosystem.
+* Less favorable AI-assisted implementation/debug workflow than STM32 for this project.
+* No clear system-level advantage large enough to offset the development-risk increase.
+
+### Evaluation
+
+The Cortex-M0+ has ample compute for CuraLink, demonstrating that the project does not require a powerful processor.
+
+However, processing performance is not the dominant MCU-selection FOC.
+
+**Rejected because its lower compute complexity does not create enough system-level benefit to outweigh ecosystem/integration advantages of STM32WBA52.**
+
+---
+
+## Option D — STM32WBA52
+
+### Pros
+
+* Integrated BLE radio.
+* Programmable RF output power up to:
+
+$$
+\boxed{+10\ dBm}
+$$
+
+in 1 dB steps. ([STMicroelectronics][2])
+
+* BLE receiver sensitivity approximately:
+
+$$
+-96\ dBm
+$$
+
+at 1 Mbps. ([STMicroelectronics][2])
+
+* BLE long-range / LE Coded support is available. ([STMicroelectronics][2])
+* Integrated RF balun reduces external RF BOM. ([STMicroelectronics][2])
+* 5 × 5 mm UFQFPN32 package available. ([STMicroelectronics][3])
+* Mature STM32 firmware/tool ecosystem.
+* SWD / ST-LINK workflow is mature.
+* Strong documentation and reference designs.
+* Cortex-M33 has far more compute than required, allowing:
+
+  * low clock operation,
+  * short active periods,
+  * extensive sleep between events/packets.
+* Radio power is programmable rather than fixed.
+* STM32WBA supports low-power modes and autonomous peripherals. ST specifies 6.5 µA Stop mode with 64 kB SRAM retained and 23 µA/MHz run-mode current at 3.3 V under specified conditions. ([STMicroelectronics][2])
+* Fits the existing project philosophy of scriptable firmware, SWD debugging, UART diagnostics, and AI-assisted implementation.
+
+### Cons
+
+* CPU capability is significantly greater than required for simple spike counting.
+* 5 × 5 mm package is larger than some competing BLE SoCs.
+* At maximum +10 dBm output, RF current rises substantially.
+* ST specifies approximately:
+
+$$
+19.4\ mA
+$$
+
+TX current at +10 dBm with the SMPS configuration, compared with approximately:
+
+$$
+5.2-5.5\ mA
+$$
+
+around 0 dBm. ([STMicroelectronics][4])
+
+* 2.4 GHz RF remains strongly affected by biological tissue and antenna detuning regardless of transmitter capability. ([PubMed Central (PMC)][1])
+
+---
+
+# Evaluation Against Functional Objectives
+
+## FOC 1 — Required compute
+
+CuraLink's digital workload is extremely small.
+
+The MCU primarily performs:
+
+```text
+digital EVENT arrives
+        ↓
+identify channel
+        ↓
+check refractory state
+        ↓
+increment counter
+```
+
+and at a bin boundary:
+
+```text
+read 8 counters
+    ↓
+form packet
+    ↓
+BLE transmit
+    ↓
+reset counters
+```
+
+A 100 MHz Cortex-M33 is therefore **not required for computational throughput**.
+
+This is explicitly acknowledged.
+
+The WBA52 is not being selected because CuraLink needs its CPU performance.
+
+---
+
+# FOC 2 — Low MCU processing energy
+
+Because spike detection occurs before the MCU, processing is **event-driven rather than continuously sampled**.
+
+Therefore the processor can spend much of its time in low-power modes.
+
+The ADC is not required and should remain disabled in normal operation.
+
+This allows the architecture to avoid continuous:
+
+* ADC conversion,
+* DMA sample traffic,
+* digital filtering,
+* per-sample threshold processing.
+
+The MCU workload scales approximately with:
+
+$$
+\boxed{\text{neural event rate}}
+$$
+
+rather than:
+
+$$
+\boxed{\text{sampling rate}\times8}
+$$
+
+which supports the project's low-power objective.
+
+---
+
+# FOC 3 — BLE link through tissue
+
+CuraLink is intended to emulate a shallow implanted neural interface.
+
+Unlike a free-space wearable, the RF signal may need to cross:
+
+* encapsulation,
+* skin,
+* fat,
+* other tissue layers.
+
+Biological tissue is lossy at RF frequencies and can both attenuate electromagnetic waves and detune electrically small implant antennas. Implant-antenna literature identifies both **tissue absorption and detuning** as central design challenges. ([PubMed Central (PMC)][1])
+
+Therefore CuraLink benefits from **RF link-budget margin**.
+
+The STM32WBA52 provides programmable output up to:
+
+$$
+\boxed{+10\ dBm}
+$$
+
+rather than forcing the device to always operate at maximum power. ([STMicroelectronics][2])
+
+This produces an important design capability:
+
+### Normal case
+
+Operate at low transmit power, potentially near:
+
+$$
+0\ dBm
+$$
+
+to minimize battery consumption.
+
+ST specifies approximately 5.2–5.5 mA TX current around 0 dBm when using the internal SMPS. ([STMicroelectronics][4])
+
+### Degraded link case
+
+If tissue/packaging measurements show insufficient link margin:
+
+$$
+P_{TX}\uparrow
+$$
+
+can be commanded in software up to:
+
+$$
++10\ dBm.
+$$
+
+This increases peak consumption to approximately:
+
+$$
+19.4\ mA
+$$
+
+under ST's specified +10 dBm SMPS operating condition. ([STMicroelectronics][4])
+
+Because CuraLink transmits only short, low-rate spike-count packets, this high-current state does **not need to be continuous**.
+
+Thus high RF output power is treated as:
+
+$$
+\boxed{\text{optional link-margin capability}}
+$$
+
+rather than:
+
+$$
+\boxed{\text{normal operating power}}
+$$
+
+This is a stronger architectural choice than selecting a radio whose maximum power permanently constrains the link budget.
+
+---
+
+# FOC 4 — Low neural-data rate
+
+CuraLink transmits processed spike counts rather than raw neural samples.
+
+For example, with:
+
+* 8 channels,
+* 8-bit count/channel,
+* 25 ms bins,
+
+the raw neural payload is only:
+
+$$
+8\times8\times40
+=
+2560\ bit/s.
+$$
+
+Even after protocol overhead, this is extremely small compared with BLE capability.
+
+Therefore:
+
+* high throughput is unnecessary,
+* radio duty cycle can remain low,
+* additional transmit power can be used briefly if needed without requiring continuous high power.
+
+This supports selecting a radio with **adjustable RF output strength**.
+
+---
+
+# FOC 5 — PCB Area
+
+The STM32WBA52 integrates:
+
+* MCU,
+* BLE radio,
+* RF balun,
+* timers,
+* memory,
+* GPIO,
+* CRC and other peripherals
+
+into one package.
+
+ST offers a:
+
+$$
+5\times5\times0.55\ mm
+$$
+
+UFQFPN32 package. ([STMicroelectronics][3])
+
+Integrated BLE eliminates a separate:
+
+* radio IC,
+* MCU-radio interface,
+* associated digital routing.
+
+The integrated balun further reduces external RF component count. ([STMicroelectronics][2])
+
+Although a smaller BLE SoC may exist, the WBA52 remains compatible with the project's approximately 25–30 mm XY target while reducing integration risk.
+
+---
+
+# FOC 6 — First-Board Success / Firmware Risk
+
+Because CuraLink may only receive one main PCB revision, development ecosystem and debugging quality are engineering constraints.
+
+STM32 provides:
+
+* mature SWD debugging,
+* ST-LINK support,
+* HAL/LL libraries,
+* BLE stack documentation,
+* reference designs,
+* established command-line build/flash workflows.
+
+CuraLink firmware can therefore be developed before the final PCB using development hardware.
+
+Expected software architecture:
+
+```text
+EVENT[7:0]
+    ↓
+GPIO / EXTI
+    ↓
+refractory logic
+    ↓
+8 counters
+    ↓
+hardware bin timer
+    ↓
+packet
+    ↓
+BLE GATT notification
+```
+
+This is straightforward to implement and test independently.
+
+The strong development ecosystem reduces:
+
+* firmware schedule risk,
+* integration risk,
+* bring-up uncertainty.
+
+These directly support the first-board-success FOC.
+
+---
+
+# Selected Decision
+
+Use:
+
+$$
+\boxed{\textbf{STM32WBA52}}
+$$
+
+as the current CuraLink MCU/BLE SoC baseline.
+
+The current likely package is:
+
+$$
+\boxed{\text{5 × 5 mm UFQFPN32}}
+$$
+
+subject to final GPIO/power/RF pin mapping.
+
+---
+
+# First-Principles Justification
+
+CuraLink does not require significant compute power because neural spike detection occurs in analog hardware before the MCU.
+
+Therefore MCU selection is driven primarily by:
+
+$$
+\boxed{
+\text{BLE capability}
++
+\text{low event-processing power}
++
+\text{RF link margin}
++
+\text{small area}
++
+\text{first-board development reliability}
+}
+$$
+
+rather than CPU throughput.
+
+The STM32WBA52 provides enough processing capability to perform event counting and binning while spending substantial time in low-power modes.
+
+Its integrated BLE radio eliminates a separate wireless IC and supports programmable transmit power from low-power operating levels to **+10 dBm**, providing software-controlled RF link-budget margin for a system intended to communicate through lossy biological tissue. ([STMicroelectronics][2])
+
+The higher +10 dBm mode carries an approximately **19.4 mA peak TX-current penalty**, so it is not assumed as the normal operating point. Instead, the radio should operate at the **lowest measured power level that closes the link**, increasing TX power only when required. ([STMicroelectronics][4])
+
+Because CuraLink's processed neural-data rate is only a few kbps, radio transmission is brief and duty-cycled, making this adaptive link-power strategy practical.
+
+The STM32 ecosystem also materially reduces firmware and bring-up risk, an important requirement for a potentially one-shot PCB.
+
+Therefore the WBA52 gives a strong combined tradeoff across:
+
+* RF capability,
+* power flexibility,
+* area,
+* firmware implementation,
+* debugging,
+* integration risk.
+
+---
+
+# Important Constraint
+
+Do **not** document:
+
+> “STM32WBA52 was selected because +10 dBm guarantees BLE transmission through skin.”
+
+That statement is not technically defensible.
+
+Instead document:
+
+> “Because tissue absorption, antenna inefficiency, packaging and detuning reduce an implant RF link's available margin, the STM32WBA52's programmable output up to +10 dBm provides additional link-budget headroom. Actual required transmit power will be determined experimentally using representative packaging/tissue phantoms, and normal operation will use the lowest power that achieves the target packet reliability.”
+
+That preserves the first-principles argument without overclaiming.
+
+---
+
+# Risks
+
+### RF energy consumption
+
++10 dBm transmission increases TX current significantly.
+
+**Mitigation:** use minimum required programmable output power and duty-cycle packets.
+
+### Tissue detuning
+
+A strong transmitter does not fix a poorly tuned implanted antenna.
+
+**Mitigation:**
+
+* simulate antenna with tissue/phantom environment,
+* include RF matching network,
+* consider tuning/DNP components,
+* provide an RF test path if feasible,
+* measure return loss/link performance in representative media.
+
+### Processor is overqualified
+
+100 MHz Cortex-M33 exceeds CuraLink's computational requirement.
+
+**Mitigation:** processor performance is not a design requirement; operate at reduced clock / low-power states where practical. Its integration and BLE capabilities justify the device despite unused compute.
+
+### 5 × 5 mm area
+
+Smaller BLE MCUs exist.
+
+**Mitigation:** verify the complete system floorplan. Reopen MCU selection only if the WBA52 materially prevents the 25–30 mm mechanical objective.
+
+---
+
+# Verification Plan
+
+Before final architecture lock:
+
+1. Implement spike-event counting on STM32WBA development hardware.
+2. Implement configurable refractory logic.
+3. Implement configurable bin timer.
+4. Transmit 8-element spike-count vectors through BLE.
+5. Measure MCU current between events.
+6. Measure BLE current at several RF power levels.
+7. Measure packet reliability versus:
+
+   * transmit power,
+   * distance,
+   * antenna configuration.
+8. Later repeat RF tests with representative:
+
+   * encapsulation,
+   * tissue phantom,
+   * final antenna geometry.
+9. Select the **minimum BLE TX power** meeting the packet-error/range requirement.
+10. Confirm 5 × 5 mm package pin availability for:
+
+* 8 event inputs,
+* UART,
+* SWD,
+* power control,
+* status/debug signals,
+* BLE RF.
+
+---
+
+One more architectural point: now that you've explicitly decided **not to use the MCU ADC**, we should update CuraLink's high-level chain back to:
+
+$$
+\boxed{
+\text{AFE}
+\rightarrow
+\text{analog spike detector}
+\rightarrow
+EVENT[7:0]
+\rightarrow
+STM32WBA52
+\rightarrow
+\text{binning}
+\rightarrow
+BLE
+}
+$$
+
+rather than leaving the older `AFE → internal ADC → digital thresholding` architecture in the repo. That is a significant decision change and should be logged explicitly.
+
+[1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC11361053/?utm_source=chatgpt.com "Implantable antennas for biomedical applications: a systematic review - PMC"
+[2]: https://www.st.com/en/microcontrollers-microprocessors/stm32wba52ce.html?utm_source=chatgpt.com "STM32WBA52CE | Product - STMicroelectronics"
+[3]: https://www.st.com/en/microcontrollers-microprocessors/stm32wba52kg.html?utm_source=chatgpt.com "STM32WBA52KG | Product - STMicroelectronics"
+[4]: https://www.st.com/resource/en/datasheet/stm32wba52ce.pdf?utm_source=chatgpt.com "Datasheet - STM32WBA5xxx - Multiprotocol wireless 32-bit MCU Arm<Sup>®</Sup>-based Cortex<Sup>®</Sup>-M33 with TrustZone<Sup>®</Sup>, FPU, Bluetooth<Sup>®</Sup> LE and IEEE 802.15.4 radio solution"

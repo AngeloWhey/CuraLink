@@ -1,0 +1,79 @@
+{
+  "checked_date": "2026-10-02",
+  "timezone": "America/New_York",
+  "evidence_scope": "Schematic/component review; no routed-PCB SI extraction or measured crosstalk",
+  "canonical_snapshots": [
+    {
+      "file": "hardware/rev-a/mcu/mcu-components.json",
+      "sha256": "341c120a1660569458471b7c45777aff846c7fe5294703ea73386229d31b6a1c"
+    },
+    {
+      "file": "hardware/rev-a/interface/interface-components.json",
+      "sha256": "11be0fb5b951835b4ed3060091bee682934476f98d4a13584bf74b7a8e7af72a"
+    },
+    {
+      "file": "hardware/rev-a/power/power-components.json",
+      "sha256": "62e340989a81d53b7780dd238190cca8dc0dcdbaea9eabb0571e95c16c3de94a"
+    },
+    {
+      "file": "hardware/rev-a/afe/afe-pin-nets.json",
+      "sha256": "d5f6afce055657a79593d1d3863f9c2c3aaa4db0ea18dbab099045a57f387102"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.st.com/resource/en/datasheet/mlpf-wb-04d3.pdf",
+      "sections": "DS14446 Rev6, section3.1/Figures13-14",
+      "primary_web_read": true,
+      "download_limitation": "The read operation timed out"
+    },
+    {
+      "url": "https://www.st.com/resource/en/application_note/an6335-mlpfwb-and-mlpfnrg-pcb-design-guidelines-and-reference-hardware-stmicroelectronics.pdf",
+      "sections": "Rev1, section6/Figure13",
+      "primary_web_read": true,
+      "download_limitation": "The read operation timed out"
+    },
+    {
+      "url": "https://www.st.com/resource/en/application_note/an5948-how-to-develop-rf-hardware-using-stm32wba-mcus-stmicroelectronics.pdf",
+      "sections": "Rev4, sections7.1-7.9/Figure29",
+      "primary_web_read": true,
+      "download_limitation": "The read operation timed out"
+    },
+    {
+      "url": "https://www.st.com/resource/en/application_note/an2834-how-to-optimize-the-adc-accuracy-in-the-stm32-mcus-stmicroelectronics.pdf",
+      "sections": "Rev10, sections3.2.11/4.2.11-4.2.14",
+      "primary_web_read": true,
+      "download_limitation": "Remote end closed connection without response"
+    },
+    {
+      "url": "https://www.st.com/resource/en/application_note/an2867-guidelines-for-oscillator-design-on-stm8afals-and-stm32-mcusmpus-stmicroelectronics.pdf",
+      "sections": "Rev24, section7.1",
+      "primary_web_read": true,
+      "download_limitation": "Remote end closed connection without response"
+    },
+    {
+      "url": "https://www.st.com/resource/en/datasheet/stm32wba52cg.pdf",
+      "sections": "DS14127 Rev10, Table24/Figure14/sections3.12.1 and5.3.20",
+      "primary_web_read": true,
+      "download_limitation": "The read operation timed out"
+    },
+    {
+      "url": "https://www.johansontechnology.com/docs/3827/Antenna-2450AT18A0100001E-Rev4.0.pdf",
+      "sections": "36S0021A Rev4.0, pages2-3",
+      "primary_web_read": true,
+      "cached_copy_from": "hardware/rev-a/mcu/sources/johanson-antenna-rev4.pdf",
+      "local_file": "hardware/rev-a/signal-integrity/mcu-rf/johanson-antenna-rev4.pdf",
+      "sha256": "c11a1866c9fd04bad6dcbbd40cfdfbec067c731e47ba83f4e58b56c0e4c9dfa0",
+      "bytes": 495617
+    },
+    {
+      "url": "https://www.johansontechnology.com/docs/2/jti-antenna-mounting.pdf",
+      "sections": "January2006, page7 matching topology",
+      "primary_web_read": true,
+      "local_file": "hardware/rev-a/signal-integrity/mcu-rf/jti-antenna-mounting.pdf",
+      "sha256": "3bd0ccb555f0ae638952a508031f0166292eb5b4f1c078c8f32da8ff9a3a028d",
+      "bytes": 99927
+    }
+  ],
+  "workspace_pcb_files_found": []
+}

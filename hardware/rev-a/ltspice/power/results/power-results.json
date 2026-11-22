@@ -1,0 +1,452 @@
+{
+  "date_local": "2026-10-02",
+  "simulator": "LTspice 26.0.2 for Windows",
+  "measurement_kind": "SIMULATED, not measured hardware",
+  "current_design": {
+    "R511_ohm": 1000000,
+    "R511_tolerance": 0.01,
+    "historical_results_excluded": "historical-r511-1p1M/"
+  },
+  "fixtures": {
+    "static-ovp-high-charger": {
+      "raw_file": "static-ovp-high-charger.raw",
+      "log_file": "static-ovp-high-charger.log",
+      "raw_sha256": "37cff8df9176f7be12eead95fdec1ffb825c835e4fc6dbf5a8bc9e30e63eb48d",
+      "points": 3601,
+      "circuit_sha256": "c18af72303d9d929ee9fa8c63a0326ae1eee2aba717489790c30f98be5036a6f",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "max_chg": 5.54750362337,
+        "max_current": 0.0252159255608,
+        "max_dissipation": 0.0748791325735,
+        "output_5v": 4.99775101204,
+        "output_65v": 5.54750362337,
+        "output_10v": 0.0
+      },
+      "model_kind": "AUTHORED_STATIC_BOUND",
+      "accepted_for_analysis": true
+    },
+    "static-ovp-high-short": {
+      "raw_file": "static-ovp-high-short.raw",
+      "log_file": "static-ovp-high-short.log",
+      "raw_sha256": "4200d726aca3187b5774297ed58784b6fb067acfebc41a2a8d4f17cedc5414f2",
+      "points": 3601,
+      "circuit_sha256": "ce569c01938a851ce0eb9e4dc9ad00a9580db2dee1b128ec2ef45c6747da35be",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "max_chg": 0.138384770406,
+        "max_current": 0.138384770406,
+        "max_dissipation": 1.15189096525,
+        "output_5v": 0.138384770406,
+        "output_65v": 0.138384770406,
+        "output_10v": 0.0
+      },
+      "model_kind": "AUTHORED_STATIC_BOUND",
+      "accepted_for_analysis": true
+    },
+    "static-ovp-low-charger": {
+      "raw_file": "static-ovp-low-charger.raw",
+      "log_file": "static-ovp-low-charger.log",
+      "raw_sha256": "2d0216fef105fc47905c4cbb3948322a8f2c31549457a2653228f015a7771aa1",
+      "points": 3601,
+      "circuit_sha256": "23082e01ff0391ca6af2aea5bb19c974389cab14d297fa9ce91059a0a36aadc9",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "max_chg": 5.24763856265,
+        "max_current": 0.0238529025575,
+        "max_dissipation": 0.0383883260992,
+        "output_5v": 4.99775101204,
+        "output_65v": 5.24763856265,
+        "output_10v": 0.0
+      },
+      "model_kind": "AUTHORED_STATIC_BOUND",
+      "accepted_for_analysis": true
+    },
+    "static-ovp-low-short": {
+      "raw_file": "static-ovp-low-short.raw",
+      "log_file": "static-ovp-low-short.log",
+      "raw_sha256": "e5091e9367592da00d55d5e390c05dd0dd670a930a564e94926ec62ac4c52387",
+      "points": 3601,
+      "circuit_sha256": "1245d6f50badf43f87f97d9626693031010c0c05ae1b1da09c190e4a9decd112",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "max_chg": 0.0569297245683,
+        "max_current": 0.0569297245683,
+        "max_dissipation": 0.385241133525,
+        "output_5v": 0.0569297245683,
+        "output_65v": 0.0569297245683,
+        "output_10v": 0.0
+      },
+      "model_kind": "AUTHORED_STATIC_BOUND",
+      "accepted_for_analysis": true
+    },
+    "static-ovp-typ-charger": {
+      "raw_file": "static-ovp-typ-charger.raw",
+      "log_file": "static-ovp-typ-charger.log",
+      "raw_sha256": "35053bedb2555410f6fd8c9f7b0d87bdadd73cd4228141ba1b162131005aceb7",
+      "points": 3601,
+      "circuit_sha256": "6658855bff33e21c1daab20bc39b05d8f4790a90f10f069ef27e566c806b7fc3",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "max_chg": 5.39757109301,
+        "max_current": 0.0245344140591,
+        "max_dissipation": 0.0554316306696,
+        "output_5v": 4.99775101204,
+        "output_65v": 5.39757109301,
+        "output_10v": 0.0
+      },
+      "model_kind": "AUTHORED_STATIC_BOUND",
+      "accepted_for_analysis": true
+    },
+    "static-ovp-typ-short": {
+      "raw_file": "static-ovp-typ-short.raw",
+      "log_file": "static-ovp-typ-short.log",
+      "raw_sha256": "aadac3cfebdd82310333d21dd786b7897d39609e69cb57f9f9a550cfbb6cdb07",
+      "points": 3601,
+      "circuit_sha256": "3428ca9ae93a942f90aabb49598e4e533f3d83e95069b4a8daa62b341d24a4fb",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "max_chg": 0.0963054143454,
+        "max_current": 0.0963054143454,
+        "max_dissipation": 0.723683889121,
+        "output_5v": 0.0963054143454,
+        "output_65v": 0.0963054143454,
+        "output_10v": 0.0
+      },
+      "model_kind": "AUTHORED_STATIC_BOUND",
+      "accepted_for_analysis": true
+    },
+    "vendor-efuse-dc": {
+      "raw_file": "vendor-efuse-dc.raw",
+      "log_file": "vendor-efuse-dc.log",
+      "raw_sha256": "a2c091e9403f605b2fbb1ee32ab8dd848b5eb93b26157a20dd299eddef0486a2",
+      "points": 721,
+      "circuit_sha256": "82ec907eb429547654372b14f5f43f453a87e10408d06e08a8b5afaa3c2d61ee",
+      "finite": false,
+      "nonfinite_values": 3726,
+      "measurements": {
+        "max_chg_in": -1.07089612276e-10,
+        "chg_in_5v": 0.0,
+        "chg_in_65v": 0.0,
+        "chg_in_10v": 0.0,
+        "max_en": 2.34948689421
+      },
+      "model_kind": "TI_VENDOR_MACRO_WITH_DOCUMENTED_XOR_PORT",
+      "accepted_for_analysis": false,
+      "rejection_reason": "Transient macro cannot establish valid DC latch/charge-pump states; NaN data and zero-output measurements are not device results. Use independent startup runs and explicit static model instead."
+    },
+    "vendor-efuse-independent-faults": {
+      "raw_file": "vendor-efuse-independent-faults.raw",
+      "log_file": "vendor-efuse-independent-faults.log",
+      "raw_sha256": "feea7520b97ca86a5aabfa01d81db240715798e019abb9e19e717331ca566ce2",
+      "points": 10247,
+      "circuit_sha256": "378e3604dba033e1011f036065109d4f77062d04917d902ba159f111c21bef50",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {},
+      "model_kind": "TI_VENDOR_MACRO_WITH_DOCUMENTED_XOR_PORT",
+      "accepted_for_analysis": true
+    },
+    "vendor-efuse-short-5v": {
+      "raw_file": "vendor-efuse-short-5v.raw",
+      "log_file": "vendor-efuse-short-5v.log",
+      "raw_sha256": "1c135e0b9c0e3e65d93afc008b0ec5c5b5ccb3e57769b2a88b20ed5639151cf5",
+      "points": 2227,
+      "circuit_sha256": "712c8eab0f5c2870a49d9ec52f7409959f2aa2891a1b7d324851357e92066936",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "input_current": 0.112004475101,
+        "chg_steady": 0.111870418047,
+        "protected_input": 4.67031615984,
+        "output_peak": 0.111870418193,
+        "en_peak": 4.87391671877,
+        "input_peak": 4.8739177262
+      },
+      "model_kind": "TI_VENDOR_MACRO_WITH_DOCUMENTED_XOR_PORT",
+      "accepted_for_analysis": true
+    },
+    "vendor-efuse-transient": {
+      "raw_file": "vendor-efuse-transient.raw",
+      "log_file": "vendor-efuse-transient.log",
+      "raw_sha256": "d8da560aa36486e28d1f56cfb576c196311462c247bc52262c1253997cb93e0d",
+      "points": 31067,
+      "circuit_sha256": "fc543d6267b8a3d0eec8521692bc9fdce8a173f94d9802acc5fe59acd5999d04",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "chg_5v": 4.7216498233,
+        "chg_65v": 5.39918201902,
+        "chg_10v": -1.07089612276e-10,
+        "chg_18v": -1.07089612276e-10,
+        "chg_early_recovery": -1.07089612276e-10,
+        "chg_recovered": 4.72164982328,
+        "held_input_at130ms": 15.5471048909,
+        "max_chg": 5.72222383654,
+        "max_en": 6.46301206856
+      },
+      "model_kind": "TI_VENDOR_MACRO_WITH_DOCUMENTED_XOR_PORT",
+      "accepted_for_analysis": true,
+      "recovery_first_above3V_seconds": 0.2499683051136021,
+      "peak_time_seconds": 0.02500121205489578
+    },
+    "vendor-field-dc": {
+      "raw_file": "vendor-field-dc.raw",
+      "log_file": "vendor-field-dc.log",
+      "raw_sha256": "c2347d1c521a7f07842ad1db05964bab5ab65eb1415ca1494e5408c807db21de",
+      "points": 7201,
+      "circuit_sha256": "a64eb3730e2c81f50f6f96906e4c16aaaa7574d6d7187e0288b54ecb61aacdae",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "field_at5": 8.46179288146e-06,
+        "max_sense": 1.63569085331,
+        "min_sense": -0.212718285168
+      },
+      "model_kind": "TI_VENDOR_MACRO",
+      "accepted_for_analysis": true,
+      "interpretation_limit": "The negative-RAW subrange can exceed the comparator's recommended common-mode range; finite values do not qualify its reverse-fault logic state."
+    },
+    "vendor-field-fall": {
+      "raw_file": "vendor-field-fall.raw",
+      "log_file": "vendor-field-fall.log",
+      "raw_sha256": "a43eab5c8661491f65e396ed0de6d4a6af9bb9eb9c1d1bcd578a49da731b1105",
+      "points": 3601,
+      "circuit_sha256": "1830f4e70bf65778dc47fc03dfa92c462f51fa3e1153ebb0556ef1ab12a409a6",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "field_at5": 8.46179288146e-06,
+        "max_sense": 1.63569085331,
+        "min_sense": -3.99382953987e-08
+      },
+      "model_kind": "TI_VENDOR_MACRO",
+      "accepted_for_analysis": true
+    },
+    "vendor-field-rise": {
+      "raw_file": "vendor-field-rise.raw",
+      "log_file": "vendor-field-rise.log",
+      "raw_sha256": "2f38a264778a3e01b6ebb0d531e67b624c08e0cfa9d9b2667102f96ff005e9d3",
+      "points": 3601,
+      "circuit_sha256": "787f9784118c0202e48adf51e042ac4777947f4a27b4d74141030b13f4e1254c",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "field_at5": 8.46179288146e-06,
+        "max_sense": 1.63569085331,
+        "min_sense": -3.99382953987e-08
+      },
+      "model_kind": "TI_VENDOR_MACRO",
+      "accepted_for_analysis": true
+    },
+    "vendor-ldo-dc": {
+      "raw_file": "vendor-ldo-dc.raw",
+      "log_file": "vendor-ldo-dc.log",
+      "raw_sha256": "0e99a21d2fe1135e27530ac17b2d9c69b8fdac2eebd6456a25f4e90b4d423c7f",
+      "points": 601,
+      "circuit_sha256": "63256980a42cd389ca7b784ee03ea47583f62be00d61e2963d7ba66474eb7e29",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "out_33v": 2.99894426606,
+        "out_4v": 2.9990687992,
+        "max_out": 2.99942460817
+      },
+      "model_kind": "TI_VENDOR_MACRO",
+      "accepted_for_analysis": true
+    },
+    "vendor-ldo-psrr": {
+      "raw_file": "vendor-ldo-psrr.raw",
+      "log_file": "vendor-ldo-psrr.log",
+      "raw_sha256": "6458bfa2cb454f3259348d6f805b47d9c37d150819c2c7ab29858e41369e4b51",
+      "points": 701,
+      "circuit_sha256": "ab114277cbbd398d5cb0bc8cede7333901f83bc9fdf976296d6796288ad26de8",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {},
+      "model_kind": "TI_VENDOR_MACRO",
+      "accepted_for_analysis": true,
+      "interpretation_limit": "Generic typical macro only; its high-frequency curve is not accepted as guaranteed exact-part PSRR."
+    },
+    "vendor-protected-control-fast-fault": {
+      "raw_file": "vendor-protected-control-fast-fault.raw",
+      "log_file": "vendor-protected-control-fast-fault.log",
+      "raw_sha256": "a050a69ec67493e86009f938801c4f94e9aa8a98c836f0cb3cf7150a55b92223",
+      "points": 91799,
+      "circuit_sha256": "0d0484f8a3fd866eea51058625f6437e1ef619f9c6840d2a7b83bfbb72ba3eec",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {},
+      "model_kind": "TI_MACROS_WITH_XOR_PORT_AND_LDO_NAMESPACE",
+      "accepted_for_analysis": true
+    },
+    "vendor-protected-control-transient": {
+      "raw_file": "vendor-protected-control-transient.raw",
+      "log_file": "vendor-protected-control-transient.log",
+      "raw_sha256": "80d7ef0fcc3313fc1c9fa76af26dac06b20a6936cc82d6d9db973edbc471536e",
+      "points": 31236,
+      "circuit_sha256": "f224be34fbbaff817c17c38cd620a4ca5fe71946c27b54441a5d56f3a90a9b7d",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {
+        "chg_5v": 4.72091328445,
+        "chg_65v": 5.3991650591,
+        "chg_10v": 1.13052337405e-05,
+        "chg_18v": 1.13052337405e-05,
+        "chg_early_recovery": 1.13052337405e-05,
+        "chg_recovered": 4.72091328443,
+        "held_input_at130ms": 15.5471045377,
+        "max_chg": 5.6951883762,
+        "max_en": 6.46301206944,
+        "ctrl_input_peak": 5.15207076473,
+        "ctrl_output_peak": 3.00031941398,
+        "ctrl_input_5v": 4.47386047998
+      },
+      "model_kind": "TI_MACROS_WITH_XOR_PORT_AND_LDO_NAMESPACE",
+      "accepted_for_analysis": true
+    },
+    "vendor-uvlo-fall": {
+      "raw_file": "vendor-uvlo-fall.raw",
+      "log_file": "vendor-uvlo-fall.log",
+      "raw_sha256": "69da87caa050bc35c20929a1278bc8e7f17ec22a0192c6114a33df9a4f30f314",
+      "points": 2301,
+      "circuit_sha256": "e4a22290bdf69a7313b0e62bcf8936fab38c1d55a240bd85a25d64d42e7a3064",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {},
+      "model_kind": "TI_VENDOR_MACRO",
+      "accepted_for_analysis": true
+    },
+    "vendor-uvlo-rise": {
+      "raw_file": "vendor-uvlo-rise.raw",
+      "log_file": "vendor-uvlo-rise.log",
+      "raw_sha256": "eeef1063ba2f631040ea1f6de9a7ee1236e215c343df3362751beb338f0cdb16",
+      "points": 2301,
+      "circuit_sha256": "072be5c4aab64bbd5759bc0c2a21178b7b4dcddd4ee2cbf4e8f0a2c6570689fe",
+      "finite": true,
+      "nonfinite_values": 0,
+      "measurements": {},
+      "model_kind": "TI_VENDOR_MACRO",
+      "accepted_for_analysis": true
+    }
+  },
+  "independent_vendor_fault_cases": [
+    {
+      "raw_input_V": 5,
+      "chg_steady": 4.7216498233,
+      "protected_input": 4.72288776916,
+      "output_peak": 4.72164983377,
+      "en_peak": 4.87391671884,
+      "input_peak": 4.87391772625
+    },
+    {
+      "raw_input_V": 6.5,
+      "chg_steady": 5.39918201902,
+      "protected_input": 6.37448525696,
+      "output_peak": 5.3991820616,
+      "en_peak": 6.37448335448,
+      "input_peak": 6.37448525696
+    },
+    {
+      "raw_input_V": 8.5,
+      "chg_steady": -1.07089612276e-10,
+      "protected_input": 8.37312137377,
+      "output_peak": -7.00996813324e-16,
+      "en_peak": 6.45839513778,
+      "input_peak": 8.37312137377
+    },
+    {
+      "raw_input_V": 10,
+      "chg_steady": -1.07089612276e-10,
+      "protected_input": 9.87209613122,
+      "output_peak": -7.00996813324e-16,
+      "en_peak": 6.45988982525,
+      "input_peak": 9.87209613122
+    },
+    {
+      "raw_input_V": 18,
+      "chg_steady": -1.07089612276e-10,
+      "protected_input": 17.8671521163,
+      "output_peak": -7.00996813324e-16,
+      "en_peak": 6.46301206839,
+      "input_peak": 17.8671521163
+    }
+  ],
+  "comparator_nominal_vendor_thresholds": [
+    {
+      "function": "field",
+      "direction": "rise",
+      "nominal_vendor_threshold_V": 2.6574999999999998,
+      "sweep_step_V": 0.005
+    },
+    {
+      "function": "field",
+      "direction": "fall",
+      "nominal_vendor_threshold_V": 2.2275,
+      "sweep_step_V": 0.004999999999999005
+    },
+    {
+      "function": "uvlo",
+      "direction": "rise",
+      "nominal_vendor_threshold_V": 3.8095,
+      "sweep_step_V": 0.0009999999999998899
+    },
+    {
+      "function": "uvlo",
+      "direction": "fall",
+      "nominal_vendor_threshold_V": 3.4915000000000003,
+      "sweep_step_V": 0.001000000000000334
+    }
+  ],
+  "ldo_macro_psrr_dB": {
+    "100": 74.99582562348547,
+    "1000": 74.95284649425442,
+    "10000": 71.96871947763339,
+    "100000": 58.89024655427645,
+    "1000000": 77.93827317822405
+  },
+  "coupled_fast_fault_peaks": [
+    {
+      "source_slew_s": 1e-06,
+      "chg_peak": 5.8683804781,
+      "protected_peak": 17.8671521163,
+      "en_peak": 6.46301206839,
+      "ctrl_input_peak": 4.64999510712,
+      "ctrl_output_peak": 3.00030447125,
+      "ctrl_input_5v": 4.47386047999
+    },
+    {
+      "source_slew_s": 1e-05,
+      "chg_peak": 5.75431260018,
+      "protected_peak": 17.8671521163,
+      "en_peak": 6.46301206846,
+      "ctrl_input_peak": 4.6715876614,
+      "ctrl_output_peak": 3.00030855892,
+      "ctrl_input_5v": 4.47386047999
+    },
+    {
+      "source_slew_s": 0.001,
+      "chg_peak": 5.39915462033,
+      "protected_peak": 17.8671521163,
+      "en_peak": 6.46301206839,
+      "ctrl_input_peak": 5.13732196251,
+      "ctrl_output_peak": 3.00031432904,
+      "ctrl_input_5v": 4.47386047999
+    }
+  ],
+  "qualification": {
+    "vendor_efuse_dc_rejected": true,
+    "independent_vendor_transients_finite": true,
+    "static_model_not_manufacturer_transistor_model": true,
+    "charger_and_battery_vendor_simulated": false,
+    "raw_rf_receiver_protected_by_efuse": false,
+    "battery_pcm_qualified": false,
+    "fabrication_release_granted": false
+  }
+}

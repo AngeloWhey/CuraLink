@@ -1,0 +1,80 @@
+; Top Design: "MyLibrary_lib:RX_BAT54_LoadSweep_20261009:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:RX_BAT54_LoadSweep_20261009:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Mutual:Mutual1  K=0.0662 M=60 nH Inductor1="L1" Inductor2="L2" 
+C:C5  Vin 0 C=Ctx_shunt 
+"DIODEM1":DIODE1  0 Vbridge_P Mode=1 Noise=yes 
+"DIODEM1":DIODE2  Vbridge_P DCout Mode=1 Noise=yes 
+Short:I_RX  Vcoil_P Vout Mode=0 SaveCurrent=yes 
+C:C6  VoutMatched IMPin C=Crx_shunt 
+"DIODEM1":DIODE3  0 IMPin Mode=1 Noise=yes 
+"DIODEM1":DIODE4  IMPin DCout Mode=1 Noise=yes 
+Short:I_SRC  Vin_src Vin Mode=0 SaveCurrent=yes 
+
+Pin_dBm=23.5
+Rload=208.333333 Ohm
+Ctx_series=59.3004634 pF
+Ctx_shunt=374.7395638 pF
+Crx_series=826.2058518 pF
+Crx_shunt=773.5931919 pF
+model DIODEM1 Diode Is=649 nA Rs=2.09 Ohm N=1.04 Tt=0 Cjo=12.4 pF Vj=0.391 V M=0.381 Fc=0.5 Imax=1000 Isr=431 nA Nr=4.99 Ikf=20 mA IkModel=1 Bv=50 V Ibv=100 uA Nbv=1.04 AllowScaling=0 Tnom=27 Xti=2 Eg=0.58 Trs=0 Trs2=0 
+HB:HB1 MaxOrder=4 Freq[1]=13.56 MHz Order[1]=31 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB1_Output" 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=yes \
+      DeviceCurrentNestLevel=2 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=yes \
+      DeviceVoltageNestLevel=2 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=13.56 MHz Order[1]=31 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+L:L1  VinMatched 0 L=2.49 uH R=1.8 Noise=yes  
+L:L2  IMPin Vcoil_P L=0.33 uH R=0.399 Noise=yes  
+C:C2  DCout 0 C=1000 nF tune{ 5 nF to 1000 nF by 1 nF } 
+Short:I_BRIDGE  VoutMatched Vbridge_P Mode=0 SaveCurrent=yes 
+C:C1  Vout VoutMatched C=Crx_series 
+
+PWR=DCout
+C:C3  Vin VinMatched C=Ctx_series 
+R:R1  N__10 0 R=Rload Noise=yes 
+Short:I_Probe1  DCout N__10 Mode=0 SaveCurrent=yes 
+
+
+
+
+
+SweepPlan:LoadPoints SweepPlan[1]="LoadPoints_seg1" \ 
+SweepPlan[2]="LoadPoints_seg2" \ 
+SweepPlan[3]="LoadPoints_seg3" \ 
+SweepPlan[4]="LoadPoints_seg4" \ 
+SweepPlan[5]="LoadPoints_seg5" 
+SweepPlan:LoadPoints_seg1 Pt=208.33 Ohm 
+SweepPlan:LoadPoints_seg2 Pt=220 Ohm 
+SweepPlan:LoadPoints_seg3 Pt=240 Ohm 
+SweepPlan:LoadPoints_seg4 Pt=470 Ohm 
+SweepPlan:LoadPoints_seg5 Pt=1 MOhm 
+ParamSweep:SweepPower SimInstanceName[1]="HB1" StatusLevel=2 SweepVar="Pin_dBm" SweepPlan="SweepPower_stim" 
+
+SweepPlan: SweepPower_stim Start=20 Stop=26 Step=3 
+
+ParamSweep:SweepLoad SimInstanceName[1]="SweepPower" StatusLevel=2 SweepVar="Rload" SweepPlan="LoadPoints" 
+
+aele Vdc=real(mix(DCout,{0}));Pdc=Vdc*Vdc/Rload;Pavail=dbmtow(Pin_dBm);eta_avail=Pdc/Pavail;Z_source=mix(Vin_src,{1})/mix(I_SRC.i,{1});Z_rx=(mix(Vcoil_P,{1})-mix(IMPin,{1}))/mix(I_RX.i,{1});Z_bridge=(mix(Vbridge_P,{1})-mix(IMPin,{1}))/mix(I_BRIDGE.i,{1});Psource_f1=0.5*real(mix(Vin_src,{1})*conj(mix(I_SRC.i,{1})));Prx_f1=0.5*real((mix(Vcoil_P,{1})-mix(IMPin,{1}))*conj(mix(I_RX.i,{1})));Pbridge_f1=0.5*real((mix(Vbridge_P,{1})-mix(IMPin,{1}))*conj(mix(I_BRIDGE.i,{1})));
+Port:PORT1  Vin_src 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(Pin_dBm), 0) Freq[1]=13.56 MHz    Noise=yes Pac=polar(dbmtow(0),0) 

@@ -1,0 +1,19 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\signal-integrity\afe\bias-study\shared47-op.cir
+Start Time: Fri Oct  2 12:15:26 2026
+Options:numdgt=7 plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+AsciiRawFile = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 8.315 seconds.
+
+Files loaded:
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\signal-integrity\afe\bias-study\shared47-op.cir
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\signal-integrity\afe\bias-study\models\tlv9002-namespaced.lib
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\signal-integrity\afe\bias-study\models\tlv9052-namespaced.lib
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\signal-integrity\afe\bias-study\shared47.lib
+

@@ -1,0 +1,1136 @@
+{
+  "checked_date": "2026-10-02",
+  "timezone": "America/New_York",
+  "scope": "Every unique capacitor LCSC SKU in the combined Rev A BOM, including DNP",
+  "bom_path": "hardware/rev-a/bom.csv",
+  "bom_sha256": "7efee96822f07fdf54333c56ea29e61fa1c7fa8ffc2fcb18d3cb3d76811ef4e0",
+  "source": "Primary LCSC unauthenticated product-detail API; original raw responses saved",
+  "qualification": "Exact BOM MPN, foreign orderable/displayed, immediate overseas inventory covers one-board populated plus DNP quantity rounded to minimum/order increment",
+  "limitations": [
+    "Stock snapshot is not a reservation",
+    "LCSC inventory availability does not establish JLCPCB assembly-library eligibility",
+    "Catalog capacitance/dielectric/tolerance/voltage metadata saved for review; PCB DC-bias and RF stress remain engineering validation"
+  ],
+  "unique_capacitor_skus": 22,
+  "one_board_populated_capacitors": 121,
+  "one_board_dnp_capacitors": 2,
+  "all_stock_sufficient": true,
+  "records": [
+    {
+      "lcsc": "C1546",
+      "mpn": "0402CG101J500NT",
+      "package": "0402",
+      "bom_values": [
+        "100pF C0G"
+      ],
+      "populated_references": [
+        "C514",
+        "C531"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "5%"
+      ],
+      "one_board_populated_qty": 2,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 2,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C1546.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C1546",
+      "product_model": "0402CG101J500NT",
+      "manufacturer": "FH",
+      "stock_total": 1623800,
+      "stock_immediate": 1623800,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "one_board_purchase_qty_populated": 100,
+      "one_board_purchase_qty_populated_plus_dnp": 100,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0042,
+      "price_basis_purchase_qty": 100,
+      "lcsc_parameters": {
+        "Capacitance": "100pF",
+        "Temperature Coefficient": "C0G",
+        "Tolerance": "±5%",
+        "Voltage Rating": "50V"
+      },
+      "description": "100pF ±5% 50V Ceramic Capacitor C0G 0402",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1546",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C1546.json",
+      "raw_sha256": "0f8e76e0ef0b17327ec265ceb60cf44c689c80e4b999fab7c4aab89417da2025",
+      "fetched_utc": "2026-10-02T13:20:32.902036+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C1550",
+      "mpn": "0402CG1R0C500NT",
+      "package": "0402",
+      "bom_values": [
+        "1pF C0G +/-0.25pF 50V INITIAL"
+      ],
+      "populated_references": [
+        "C423"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        ""
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 1,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C1550.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C1550",
+      "product_model": "0402CG1R0C500NT",
+      "manufacturer": "FH",
+      "stock_total": 817800,
+      "stock_immediate": 817800,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "one_board_purchase_qty_populated": 100,
+      "one_board_purchase_qty_populated_plus_dnp": 100,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0029,
+      "price_basis_purchase_qty": 100,
+      "lcsc_parameters": {
+        "Capacitance": "1pF",
+        "Temperature Coefficient": "C0G",
+        "Voltage Rating": "50V"
+      },
+      "description": "1pF 50V Ceramic Capacitor C0G 0402",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1550",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C1550.json",
+      "raw_sha256": "7d7ccd9a890738f19d3f0948613cb0be6f16ac8d2d0ebe1b11283c1711f4d02a",
+      "fetched_utc": "2026-10-02T13:20:32.898508+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C1569",
+      "mpn": "0402CG4R7C500NT",
+      "package": "0402",
+      "bom_values": [
+        "4.7pF C0G +/-0.25pF 50V"
+      ],
+      "populated_references": [
+        "C421",
+        "C422"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        ""
+      ],
+      "one_board_populated_qty": 2,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 2,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C1569.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C1569",
+      "product_model": "0402CG4R7C500NT",
+      "manufacturer": "FH",
+      "stock_total": 469200,
+      "stock_immediate": 469200,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "one_board_purchase_qty_populated": 100,
+      "one_board_purchase_qty_populated_plus_dnp": 100,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0058,
+      "price_basis_purchase_qty": 100,
+      "lcsc_parameters": {
+        "Capacitance": "4.7pF",
+        "Temperature Coefficient": "C0G",
+        "Voltage Rating": "50V"
+      },
+      "description": "4.7pF 50V Ceramic Capacitor C0G 0402",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1569",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C1569.json",
+      "raw_sha256": "dda10041b5da03ecefb0d6f1f81e185a16214c1cc8d2186bee86657569b08f1f",
+      "fetched_utc": "2026-10-02T13:20:33.340387+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C1623",
+      "mpn": "CL10B474KA8NNNC",
+      "package": "0603",
+      "bom_values": [
+        "470nF X7R >=10V"
+      ],
+      "populated_references": [
+        "C409"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        ""
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 1,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C1623.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C1623",
+      "product_model": "CL10B474KA8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "stock_total": 385120,
+      "stock_immediate": 385120,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "one_board_purchase_qty_populated": 20,
+      "one_board_purchase_qty_populated_plus_dnp": 20,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0299,
+      "price_basis_purchase_qty": 20,
+      "lcsc_parameters": {
+        "Capacitance": "470nF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "25V"
+      },
+      "description": "470nF ±10% 25V Ceramic Capacitor X7R 0603",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1623",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C1623.json",
+      "raw_sha256": "78779a6c4c126d3c17cb9651d36c2ef6687daf698d5c9f1732368f385b5082b3",
+      "fetched_utc": "2026-10-02T13:20:34.232509+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C1705",
+      "mpn": "CL10A475KP8NNNC",
+      "package": "0603",
+      "bom_values": [
+        "4.7uF X5R >=10V"
+      ],
+      "populated_references": [
+        "C408"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        ""
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 1,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C1705.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C1705",
+      "product_model": "CL10A475KP8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "stock_total": 801900,
+      "stock_immediate": 801900,
+      "minimum_order": 50,
+      "order_multiple": 50,
+      "one_board_purchase_qty_populated": 50,
+      "one_board_purchase_qty_populated_plus_dnp": 50,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0164,
+      "price_basis_purchase_qty": 50,
+      "lcsc_parameters": {
+        "Capacitance": "4.7uF",
+        "Temperature Coefficient": "X5R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "10V"
+      },
+      "description": "4.7uF ±10% 10V Ceramic Capacitor X5R 0603",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1705",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C1705.json",
+      "raw_sha256": "57cb6b36a78a180713fcca776ca620ea3d164d8618b03a5b5ebd5c74e5bcbb01",
+      "fetched_utc": "2026-10-02T13:20:33.926818+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C14860",
+      "mpn": "CL31B106KAHNNNE",
+      "package": "1206",
+      "bom_values": [
+        "10uF 25V X7R"
+      ],
+      "populated_references": [
+        "C503"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "10%"
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 1,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C14860.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C14860",
+      "product_model": "CL31B106KAHNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "stock_total": 874620,
+      "stock_immediate": 874620,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "one_board_purchase_qty_populated": 20,
+      "one_board_purchase_qty_populated_plus_dnp": 20,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.1711,
+      "price_basis_purchase_qty": 20,
+      "lcsc_parameters": {
+        "Capacitance": "10uF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "25V"
+      },
+      "description": "10uF ±10% 25V Ceramic Capacitor X7R 1206",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C14860",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C14860.json",
+      "raw_sha256": "3647079c073863d88d7e8c3670d780645854da8d3e2125921c509f83436f3e5d",
+      "fetched_utc": "2026-10-02T13:20:34.409622+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C19702",
+      "mpn": "CL10A106KP8NNNC",
+      "package": "0603",
+      "bom_values": [
+        "10uF X5R >=10V"
+      ],
+      "populated_references": [
+        "C405"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        ""
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 1,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C19702.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C19702",
+      "product_model": "CL10A106KP8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "stock_total": 3505360,
+      "stock_immediate": 3505360,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "one_board_purchase_qty_populated": 20,
+      "one_board_purchase_qty_populated_plus_dnp": 20,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0322,
+      "price_basis_purchase_qty": 20,
+      "lcsc_parameters": {
+        "Capacitance": "10uF",
+        "Temperature Coefficient": "X5R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "10V"
+      },
+      "description": "10uF ±10% 10V Ceramic Capacitor X5R 0603",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C19702.json",
+      "raw_sha256": "e2425f3af55ecaa32a1327209ca716740ba74c094e131875a9144e20301bed40",
+      "fetched_utc": "2026-10-02T13:20:33.946707+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C28234",
+      "mpn": "CL21B225KOFNNNE",
+      "package": "0805",
+      "bom_values": [
+        "2.2uF 16V X7R"
+      ],
+      "populated_references": [
+        "C518"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "10%"
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 1,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C28234.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C28234",
+      "product_model": "CL21B225KOFNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "stock_total": 78940,
+      "stock_immediate": 78940,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "one_board_purchase_qty_populated": 20,
+      "one_board_purchase_qty_populated_plus_dnp": 20,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0429,
+      "price_basis_purchase_qty": 20,
+      "lcsc_parameters": {
+        "Capacitance": "2.2uF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "16V"
+      },
+      "description": "2.2uF ±10% 16V Ceramic Capacitor X7R 0805",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C28234",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C28234.json",
+      "raw_sha256": "7061e83c34adb136e04e81003a525a4d7d48b313ee749403692f2d64858e7508",
+      "fetched_utc": "2026-10-02T13:20:34.259089+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C30926",
+      "mpn": "0603B104K500NT",
+      "package": "0603",
+      "bom_values": [
+        "100nF"
+      ],
+      "populated_references": [
+        "C1059",
+        "C1060",
+        "C1061",
+        "C1062",
+        "C1063",
+        "C1064",
+        "C1065",
+        "C1066",
+        "C1067"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "10%"
+      ],
+      "one_board_populated_qty": 9,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 9,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C30926.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C30926",
+      "product_model": "0603B104K500NT",
+      "manufacturer": "FH",
+      "stock_total": 1524300,
+      "stock_immediate": 1524300,
+      "minimum_order": 50,
+      "order_multiple": 50,
+      "one_board_purchase_qty_populated": 50,
+      "one_board_purchase_qty_populated_plus_dnp": 50,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0144,
+      "price_basis_purchase_qty": 50,
+      "lcsc_parameters": {
+        "Capacitance": "100nF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "50V"
+      },
+      "description": "100nF ±10% 50V Ceramic Capacitor X7R 0603",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C30926",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C30926.json",
+      "raw_sha256": "33c3b03df38bf74ac56ccf87c9a3421d085c288a32c53feefa8e43dbe52913f3",
+      "fetched_utc": "2026-10-02T13:20:33.373031+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C41851",
+      "mpn": "0402B104K160NT",
+      "package": "0402",
+      "bom_values": [
+        "100nF 10V X7R"
+      ],
+      "populated_references": [
+        "C508",
+        "C509",
+        "C510",
+        "C511",
+        "C515",
+        "C520",
+        "C521",
+        "C522",
+        "C532"
+      ],
+      "dnp_references": [
+        "C530"
+      ],
+      "bom_tolerances": [
+        "10%"
+      ],
+      "one_board_populated_qty": 9,
+      "one_board_dnp_qty": 1,
+      "one_board_populated_plus_dnp_qty": 10,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C41851.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C41851",
+      "product_model": "0402B104K160NT",
+      "manufacturer": "FH",
+      "stock_total": 682100,
+      "stock_immediate": 682100,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "one_board_purchase_qty_populated": 100,
+      "one_board_purchase_qty_populated_plus_dnp": 100,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0076,
+      "price_basis_purchase_qty": 100,
+      "lcsc_parameters": {
+        "Capacitance": "100nF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "16V"
+      },
+      "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C41851",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C41851.json",
+      "raw_sha256": "659d38ce8a592ab32c5154078299d2a751c39dd4c79cb8a0da4f5a0602d9403f",
+      "fetched_utc": "2026-10-02T13:20:33.106727+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C53547",
+      "mpn": "0402CG102J500NT",
+      "package": "0402",
+      "bom_values": [
+        "1nF C0G"
+      ],
+      "populated_references": [
+        "C513"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "5%"
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 1,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C53547.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C53547",
+      "product_model": "0402CG102J500NT",
+      "manufacturer": "FH",
+      "stock_total": 6600,
+      "stock_immediate": 6600,
+      "minimum_order": 50,
+      "order_multiple": 50,
+      "one_board_purchase_qty_populated": 50,
+      "one_board_purchase_qty_populated_plus_dnp": 50,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0089,
+      "price_basis_purchase_qty": 50,
+      "lcsc_parameters": {
+        "Capacitance": "1nF",
+        "Temperature Coefficient": "C0G",
+        "Tolerance": "±5%",
+        "Voltage Rating": "50V"
+      },
+      "description": "1nF ±5% 50V Ceramic Capacitor C0G 0402",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C53547",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C53547.json",
+      "raw_sha256": "3fd83abd36a7721eae897de568da30ecdde536d66defa327d0f32ac3fc3002d1",
+      "fetched_utc": "2026-10-02T13:20:33.101106+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C59782",
+      "mpn": "CL10B105KO8NNNC",
+      "package": "0603",
+      "bom_values": [
+        "1uF X7R >=10V"
+      ],
+      "populated_references": [
+        "C407"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        ""
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 1,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C59782.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C59782",
+      "product_model": "CL10B105KO8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "stock_total": 205000,
+      "stock_immediate": 205000,
+      "minimum_order": 50,
+      "order_multiple": 50,
+      "one_board_purchase_qty_populated": 50,
+      "one_board_purchase_qty_populated_plus_dnp": 50,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0212,
+      "price_basis_purchase_qty": 50,
+      "lcsc_parameters": {
+        "Capacitance": "1uF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "16V"
+      },
+      "description": "1uF ±10% 16V Ceramic Capacitor X7R 0603",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C59782",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C59782.json",
+      "raw_sha256": "617ce85db7ed0d0c947d24f9f93e2998f6e831204af0b08925ef8a69759590db",
+      "fetched_utc": "2026-10-02T13:20:33.954478+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C71629",
+      "mpn": "GRM155R71C104KA88D",
+      "package": "0402",
+      "bom_values": [
+        "100nF X7R >=10V"
+      ],
+      "populated_references": [
+        "C401",
+        "C402",
+        "C403",
+        "C404",
+        "C406",
+        "C410",
+        "C411",
+        "C412"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        ""
+      ],
+      "one_board_populated_qty": 8,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 8,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C71629.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C71629",
+      "product_model": "GRM155R71C104KA88D",
+      "manufacturer": "muRata",
+      "stock_total": 997500,
+      "stock_immediate": 997500,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "one_board_purchase_qty_populated": 100,
+      "one_board_purchase_qty_populated_plus_dnp": 100,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0052,
+      "price_basis_purchase_qty": 100,
+      "lcsc_parameters": {
+        "Capacitance": "100nF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "16V"
+      },
+      "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/1c0e055aad254a09bfc0f6ba3f32eb9e.pdf?productCode=C71629",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C71629.json",
+      "raw_sha256": "0ba4416dde2b4ae6e345af5622d9fefde9f609a740929a8fe887d8b96fbbae5e",
+      "fetched_utc": "2026-10-02T13:20:34.516703+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C74690",
+      "mpn": "0805B225K250NT",
+      "package": "0805",
+      "bom_values": [
+        "2.2uF 25V X7R"
+      ],
+      "populated_references": [
+        "C501",
+        "C502"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "10%"
+      ],
+      "one_board_populated_qty": 2,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 2,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C74690.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C74690",
+      "product_model": "0805B225K250NT",
+      "manufacturer": "FH",
+      "stock_total": 55280,
+      "stock_immediate": 55280,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "one_board_purchase_qty_populated": 20,
+      "one_board_purchase_qty_populated_plus_dnp": 20,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0361,
+      "price_basis_purchase_qty": 20,
+      "lcsc_parameters": {
+        "Capacitance": "2.2uF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "25V"
+      },
+      "description": "2.2uF ±10% 25V Ceramic Capacitor X7R 0805",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C74690",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C74690.json",
+      "raw_sha256": "572b149a6bc9e92a3de713dff55a8513a15f62629efa4f0961101b796a25a735",
+      "fetched_utc": "2026-10-02T13:20:33.616259+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C75274",
+      "mpn": "0402CG471J500NT",
+      "package": "0402",
+      "bom_values": [
+        "470pF C0G 5% 50V"
+      ],
+      "populated_references": [
+        "C413",
+        "C414",
+        "C415",
+        "C416",
+        "C417",
+        "C418",
+        "C419",
+        "C420"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "5%"
+      ],
+      "one_board_populated_qty": 8,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 8,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C75274.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C75274",
+      "product_model": "0402CG471J500NT",
+      "manufacturer": "FH",
+      "stock_total": 42500,
+      "stock_immediate": 42500,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "one_board_purchase_qty_populated": 100,
+      "one_board_purchase_qty_populated_plus_dnp": 100,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0044,
+      "price_basis_purchase_qty": 100,
+      "lcsc_parameters": {
+        "Capacitance": "470pF",
+        "Temperature Coefficient": "C0G",
+        "Tolerance": "±5%",
+        "Voltage Rating": "50V"
+      },
+      "description": "470pF ±5% 50V Ceramic Capacitor C0G 0402",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C75274",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C75274.json",
+      "raw_sha256": "fc8d3a1322df902a8a4a3fbd7bf6e1a6ddf80e339018de34e908e506852e9e6e",
+      "fetched_utc": "2026-10-02T13:20:33.193984+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C85980",
+      "mpn": "GRM1885C1H472JA01D",
+      "package": "0603",
+      "bom_values": [
+        "4.7nF 50V C0G",
+        "4.7nF C0G"
+      ],
+      "populated_references": [
+        "C512"
+      ],
+      "dnp_references": [
+        "C505"
+      ],
+      "bom_tolerances": [
+        "5%"
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 1,
+      "one_board_populated_plus_dnp_qty": 2,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C85980.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C85980",
+      "product_model": "GRM1885C1H472JA01D",
+      "manufacturer": "muRata",
+      "stock_total": 81500,
+      "stock_immediate": 81500,
+      "minimum_order": 50,
+      "order_multiple": 50,
+      "one_board_purchase_qty_populated": 50,
+      "one_board_purchase_qty_populated_plus_dnp": 50,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0213,
+      "price_basis_purchase_qty": 50,
+      "lcsc_parameters": {
+        "Capacitance": "4.7nF",
+        "Temperature Coefficient": "C0G",
+        "Tolerance": "±5%",
+        "Voltage Rating": "50V"
+      },
+      "description": "4.7nF ±5% 50V Ceramic Capacitor C0G 0603",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/a4d1e2744bd5d44ba57842651a3fd598.pdf?productCode=C85980",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C85980.json",
+      "raw_sha256": "b01d49320a171b0de13ef29d996dc5578396e840826b2a214de049f9bd07ecf0",
+      "fetched_utc": "2026-10-02T13:20:34.526115+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C95841",
+      "mpn": "CL21B106KOQNNNE",
+      "package": "0805",
+      "bom_values": [
+        "10uF 10V X7R"
+      ],
+      "populated_references": [
+        "C524",
+        "C528"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "10%"
+      ],
+      "one_board_populated_qty": 2,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 2,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C95841.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C95841",
+      "product_model": "CL21B106KOQNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "stock_total": 333080,
+      "stock_immediate": 333080,
+      "minimum_order": 10,
+      "order_multiple": 10,
+      "one_board_purchase_qty_populated": 10,
+      "one_board_purchase_qty_populated_plus_dnp": 10,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.1057,
+      "price_basis_purchase_qty": 10,
+      "lcsc_parameters": {
+        "Capacitance": "10uF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "16V"
+      },
+      "description": "10uF ±10% 16V Ceramic Capacitor X7R 0805",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C95841",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C95841.json",
+      "raw_sha256": "c75f2f7bf98cb8451859e2ac8afbd8203ac8229dcfdadb70f1b6fc4993968748",
+      "fetched_utc": "2026-10-02T13:20:34.242377+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C100082",
+      "mpn": "CL10B225KP8NNNC",
+      "package": "0603",
+      "bom_values": [
+        "2.2uF 10V X7R"
+      ],
+      "populated_references": [
+        "C504",
+        "C506",
+        "C507",
+        "C523",
+        "C525",
+        "C527",
+        "C529"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "10%"
+      ],
+      "one_board_populated_qty": 7,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 7,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C100082.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C100082",
+      "product_model": "CL10B225KP8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "stock_total": 314720,
+      "stock_immediate": 314720,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "one_board_purchase_qty_populated": 20,
+      "one_board_purchase_qty_populated_plus_dnp": 20,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.028,
+      "price_basis_purchase_qty": 20,
+      "lcsc_parameters": {
+        "Capacitance": "2.2uF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "10V"
+      },
+      "description": "2.2uF ±10% 10V Ceramic Capacitor X7R 0603",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C100082",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C100082.json",
+      "raw_sha256": "f66702879083bfb91bea4b2084fe48940202af4e87098d53a827ce7a8e8a626e",
+      "fetched_utc": "2026-10-02T13:20:34.028611+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C108342",
+      "mpn": "0603B475K100NT",
+      "package": "0603",
+      "bom_values": [
+        "4.7uF",
+        "4.7uF 10V X7R"
+      ],
+      "populated_references": [
+        "C1058",
+        "C1068",
+        "C526"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "10%"
+      ],
+      "one_board_populated_qty": 3,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 3,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C108342.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C108342",
+      "product_model": "0603B475K100NT",
+      "manufacturer": "FH",
+      "stock_total": 61390,
+      "stock_immediate": 61390,
+      "minimum_order": 10,
+      "order_multiple": 10,
+      "one_board_purchase_qty_populated": 10,
+      "one_board_purchase_qty_populated_plus_dnp": 10,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0773,
+      "price_basis_purchase_qty": 10,
+      "lcsc_parameters": {
+        "Capacitance": "4.7uF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "10V"
+      },
+      "description": "4.7uF ±10% 10V Ceramic Capacitor X7R 0603",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C108342",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C108342.json",
+      "raw_sha256": "eda1cfb3a7aa27ab9324f9ce4852a2d35a89080119f4d27204e699833127e116",
+      "fetched_utc": "2026-10-02T13:20:33.390796+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C507408",
+      "mpn": "0603CG102F500NT",
+      "package": "0603",
+      "bom_values": [
+        "1nF"
+      ],
+      "populated_references": [
+        "C1004",
+        "C1005",
+        "C1006",
+        "C1007",
+        "C1011",
+        "C1012",
+        "C1013",
+        "C1014",
+        "C1018",
+        "C1019",
+        "C1020",
+        "C1021",
+        "C1025",
+        "C1026",
+        "C1027",
+        "C1028",
+        "C1032",
+        "C1033",
+        "C1034",
+        "C1035",
+        "C1039",
+        "C1040",
+        "C1041",
+        "C1042",
+        "C1046",
+        "C1047",
+        "C1048",
+        "C1049",
+        "C1053",
+        "C1054",
+        "C1055",
+        "C1056"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "1%"
+      ],
+      "one_board_populated_qty": 32,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 32,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C507408.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C507408",
+      "product_model": "0603CG102F500NT",
+      "manufacturer": "FH",
+      "stock_total": 39520,
+      "stock_immediate": 39520,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "one_board_purchase_qty_populated": 40,
+      "one_board_purchase_qty_populated_plus_dnp": 40,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.03,
+      "price_basis_purchase_qty": 40,
+      "lcsc_parameters": {
+        "Capacitance": "1nF",
+        "Temperature Coefficient": "C0G",
+        "Tolerance": "±1%",
+        "Voltage Rating": "50V"
+      },
+      "description": "1nF ±1% 50V Ceramic Capacitor C0G 0603",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C507408",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C507408.json",
+      "raw_sha256": "4c6df2caf8a095b3e1c73382f065dca9f900a8f720b3fe556bccb98c674abbbf",
+      "fetched_utc": "2026-10-02T13:20:33.469868+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C880382",
+      "mpn": "0805B475K160NT",
+      "package": "0805",
+      "bom_values": [
+        "4.7uF 16V X7R"
+      ],
+      "populated_references": [
+        "C519"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "10%"
+      ],
+      "one_board_populated_qty": 1,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 1,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C880382.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C880382",
+      "product_model": "0805B475K160NT",
+      "manufacturer": "FH",
+      "stock_total": 27390,
+      "stock_immediate": 27390,
+      "minimum_order": 10,
+      "order_multiple": 10,
+      "one_board_purchase_qty_populated": 10,
+      "one_board_purchase_qty_populated_plus_dnp": 10,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 0.0575,
+      "price_basis_purchase_qty": 10,
+      "lcsc_parameters": {
+        "Capacitance": "4.7uF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "16V"
+      },
+      "description": "4.7uF ±10% 16V Ceramic Capacitor X7R 0805",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C880382",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C880382.json",
+      "raw_sha256": "9a6f0dececa65fae094bc00cfc26938e0af61a9d8ed1185e9bf807a5dc18da53",
+      "fetched_utc": "2026-10-02T13:20:33.635970+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    },
+    {
+      "lcsc": "C2167903",
+      "mpn": "C0603C103F3GACTU",
+      "package": "0603",
+      "bom_values": [
+        "10nF",
+        "10nF C0G"
+      ],
+      "populated_references": [
+        "C1001",
+        "C1002",
+        "C1003",
+        "C1008",
+        "C1009",
+        "C1010",
+        "C1015",
+        "C1016",
+        "C1017",
+        "C1022",
+        "C1023",
+        "C1024",
+        "C1029",
+        "C1030",
+        "C1031",
+        "C1036",
+        "C1037",
+        "C1038",
+        "C1043",
+        "C1044",
+        "C1045",
+        "C1050",
+        "C1051",
+        "C1052",
+        "C1057",
+        "C516",
+        "C517"
+      ],
+      "dnp_references": [],
+      "bom_tolerances": [
+        "1%"
+      ],
+      "one_board_populated_qty": 27,
+      "one_board_dnp_qty": 0,
+      "one_board_populated_plus_dnp_qty": 27,
+      "checked_date": "2026-10-02",
+      "source_url": "https://www.lcsc.com/product-detail/C2167903.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C2167903",
+      "product_model": "C0603C103F3GACTU",
+      "manufacturer": "KEMET",
+      "stock_total": 6163,
+      "stock_immediate": 6163,
+      "minimum_order": 1,
+      "order_multiple": 1,
+      "one_board_purchase_qty_populated": 27,
+      "one_board_purchase_qty_populated_plus_dnp": 27,
+      "foreign_onsale": true,
+      "foreign_display": true,
+      "unit_price_usd": 1.0231,
+      "price_basis_purchase_qty": 27,
+      "lcsc_parameters": {
+        "Capacitance": "10nF",
+        "Temperature Coefficient": "C0G",
+        "Tolerance": "±1%",
+        "Voltage Rating": "25V"
+      },
+      "description": "10nF C0G ±1% 25V 0603 Ceramic Capacitors RoHS",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/39767117ba5ceac409bdd2bc668d7c59.pdf?productCode=C2167903",
+      "raw_file": "hardware/rev-a/procurement/stock-capacitors-2026-10-02-raw/C2167903.json",
+      "raw_sha256": "4980b47e61bdf749b7f9111d449e30ed15237311bd0bdd05131bf8cdb11c6e48",
+      "fetched_utc": "2026-10-02T13:20:33.701647+00:00",
+      "assembly_library_eligibility": "NOT_VERIFIED_BY_LCSC_INVENTORY_API",
+      "status": "STOCK_SUFFICIENT"
+    }
+  ]
+}

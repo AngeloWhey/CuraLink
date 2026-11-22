@@ -1,0 +1,11 @@
+{
+  "retrieved_at_utc": "2026-10-02T13:20:59.121301+00:00",
+  "url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C19632326",
+  "http_status": 200,
+  "api_code": 200,
+  "api_ok": true,
+  "result": null,
+  "raw_sha256": "a86e135fd9e76049a75c577cf98b0b67134bf05ac5638e61ac1583ded0e2f901",
+  "raw_file": "procurement/raw-active-external-2026-10-02/C19632326.json",
+  "note": "All three attempts gave a successful API wrapper but no product record; exact response headers were not retained for these failed-product attempts."
+}

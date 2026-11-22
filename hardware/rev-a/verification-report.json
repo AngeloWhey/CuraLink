@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "scope": "CAD transfer, topology invariants, ERC and saved BOM stock; excludes analog/nonlinear/PCB safety validation",
+  "kicad_version": "9.0.9",
+  "physical_components": 446,
+  "connected_pins_compared": 1089,
+  "intentional_NC_pins_compared": 48,
+  "erc_violations": 0,
+  "topology_checks": [
+    {
+      "check": "MCU VCAP is a decoupled internal output, separate from supplied rails",
+      "passed": true
+    },
+    {
+      "check": "MCU PA internal output is separate from supplied rails",
+      "passed": true
+    },
+    {
+      "check": "Eight distinct ADC inputs receive eight AFE channels",
+      "passed": true
+    },
+    {
+      "check": "RUN PMOS isolation has common sources, opposite outer drains and common gate",
+      "passed": true
+    },
+    {
+      "check": "Charge CE has all three required NMOS permissions in series",
+      "passed": true
+    },
+    {
+      "check": "Analog regulator waits for digital good",
+      "passed": true
+    },
+    {
+      "check": "Optional RF receiver input is isolated in initial bench build",
+      "passed": true
+    },
+    {
+      "check": "Unqualified independent cell PCM is not populated",
+      "passed": true
+    },
+    {
+      "check": "Antenna second pad remains electrically isolated",
+      "passed": true
+    },
+    {
+      "check": "U502 TPS25200 pins match TI Rev F Table 4-1",
+      "passed": true
+    },
+    {
+      "check": "U511 TPS25200 pins match TI Rev F Table 4-1",
+      "passed": true
+    },
+    {
+      "check": "SS14 manufacturer anode1/cathode2 sends cathode to protected input",
+      "passed": true
+    },
+    {
+      "check": "R511 tolerance stays below recommended TPS25200 1.1Meg upper limit",
+      "passed": true
+    },
+    {
+      "check": "RF tee uses series capacitor, shunt inductor, series inductor",
+      "passed": true
+    },
+    {
+      "check": "ADC1 uses qualified-model 150 ohm isolation candidate",
+      "passed": true
+    },
+    {
+      "check": "ADC1 has 470 pF local C0G reservoir",
+      "passed": true
+    },
+    {
+      "check": "ADC2 uses qualified-model 150 ohm isolation candidate",
+      "passed": true
+    },
+    {
+      "check": "ADC2 has 470 pF local C0G reservoir",
+      "passed": true
+    },
+    {
+      "check": "ADC3 uses qualified-model 150 ohm isolation candidate",
+      "passed": true
+    },
+    {
+      "check": "ADC3 has 470 pF local C0G reservoir",
+      "passed": true
+    },
+    {
+      "check": "ADC4 uses qualified-model 150 ohm isolation candidate",
+      "passed": true
+    },
+    {
+      "check": "ADC4 has 470 pF local C0G reservoir",
+      "passed": true
+    },
+    {
+      "check": "ADC5 uses qualified-model 150 ohm isolation candidate",
+      "passed": true
+    },
+    {
+      "check": "ADC5 has 470 pF local C0G reservoir",
+      "passed": true
+    },
+    {
+      "check": "ADC6 uses qualified-model 150 ohm isolation candidate",
+      "passed": true
+    },
+    {
+      "check": "ADC6 has 470 pF local C0G reservoir",
+      "passed": true
+    },
+    {
+      "check": "ADC7 uses qualified-model 150 ohm isolation candidate",
+      "passed": true
+    },
+    {
+      "check": "ADC7 has 470 pF local C0G reservoir",
+      "passed": true
+    },
+    {
+      "check": "ADC8 uses qualified-model 150 ohm isolation candidate",
+      "passed": true
+    },
+    {
+      "check": "ADC8 has 470 pF local C0G reservoir",
+      "passed": true
+    },
+    {
+      "check": "U110 ESD grounds and mechanical NC pads follow DQA mapping",
+      "passed": true
+    },
+    {
+      "check": "U111 ESD grounds and mechanical NC pads follow DQA mapping",
+      "passed": true
+    },
+    {
+      "check": "U112 ESD grounds and mechanical NC pads follow DQA mapping",
+      "passed": true
+    },
+    {
+      "check": "KiCad ERC has no errors, warnings or excluded findings",
+      "passed": true
+    },
+    {
+      "check": "All exact BOM SKUs and fitted/DNP quantities match dated sufficient LCSC inventory",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "populated_PCB_parts_without_LCSC": [],
+  "bom_LCSC_codes_complete": true,
+  "inventory_date": "2026-10-02",
+  "bom_unique_SKUs": 80,
+  "bom_stock_sufficient_one_board": true,
+  "inventory_failures": [],
+  "external_unconfirmed_sourcing": [
+    "C19632326"
+  ],
+  "release_status": "ENGINEERING REVIEW; NOT FABRICATION RELEASED",
+  "release_gates": [
+    "Unchanged >=10 MOhm full-band loading requirement is not met by candidate",
+    "Shared VMID/package/PCB crosstalk and stability; proposed -60 dB criterion is unaccepted and unmet",
+    "ADC/BLE ownership and timing, measured signal/noise/RF/power qualification",
+    "Globally orderable cell and compatible independent protection or approved protected pack",
+    "Altium import connectivity, exact land patterns, assembly quote and PCB DRC",
+    "Qualified RF-to-DC receiver; initial build uses bench DC inputs"
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "model": "linear MNA, finite dominant-pole op amps; no clipping/recovery or measured data",
+  "nominal_gain_VV": 988.5880597014926,
+  "gain_at_1kHz_VV": 945.5007384152407,
+  "hp_Hz": 296.93086397741666,
+  "lp_pole_Hz": 7042.254119110412,
+  "noise_300_7000_uVrms_output_div_nominal_gain": {
+    "electronics": 1.603247421893456,
+    "source": 3.049714761187236
+  },
+  "noise_0p05_2MHz_uVrms_output_div_nominal_gain": {
+    "electronics": 1.715195065500363,
+    "source": 3.24757020624067
+  },
+  "ADC_allocation_uVrms_input": 0.37043835792491625,
+  "total_300_7000_with_ADC_allocation_uVrms": 3.465311962498246,
+  "input_impedance_at_7kHz": {
+    "4e-12": {
+      "magnitude_Mohm": 5.505836727492378,
+      "loss_at_100kohm_percent": 0.4676633299758204
+    },
+    "7e-12": {
+      "magnitude_Mohm": 3.215624367798783,
+      "loss_at_100kohm_percent": 0.49942394460383843
+    },
+    "1.5e-11": {
+      "magnitude_Mohm": 1.5145137191006461,
+      "loss_at_100kohm_percent": 0.6687186734356199
+    },
+    "3e-11": {
+      "magnitude_Mohm": 0.7597386580705537,
+      "loss_at_100kohm_percent": 1.3091942508688281
+    }
+  },
+  "template_comparisons": [
+    {
+      "corner_Hz": 5000,
+      "duration_ms": 0.5,
+      "retained_pp_percent": 95.32288202878678
+    },
+    {
+      "corner_Hz": 5000,
+      "duration_ms": 1.0,
+      "retained_pp_percent": 92.93747202225975
+    },
+    {
+      "corner_Hz": 5000,
+      "duration_ms": 2.0,
+      "retained_pp_percent": 81.93377721768177
+    },
+    {
+      "corner_Hz": 7000,
+      "duration_ms": 0.5,
+      "retained_pp_percent": 97.42722327018902
+    },
+    {
+      "corner_Hz": 7000,
+      "duration_ms": 1.0,
+      "retained_pp_percent": 92.98221128878373
+    },
+    {
+      "corner_Hz": 7000,
+      "duration_ms": 2.0,
+      "retained_pp_percent": 81.94032887429702
+    },
+    {
+      "corner_Hz": 10000,
+      "duration_ms": 0.5,
+      "retained_pp_percent": 97.61855607773207
+    },
+    {
+      "corner_Hz": 10000,
+      "duration_ms": 1.0,
+      "retained_pp_percent": 92.99671166204573
+    },
+    {
+      "corner_Hz": 10000,
+      "duration_ms": 2.0,
+      "retained_pp_percent": 81.94468357734253
+    }
+  ],
+  "mc_1kHz_gain_min_max": [
+    942.8282820394093,
+    949.1238227923934
+  ],
+  "mc_CMRR_dB_min_median": [
+    52.75799605456588,
+    61.816494108916565
+  ],
+  "attenuation_dB_vs_nominal": {
+    "1000": -0.38706976668235477,
+    "32000": -52.736765638191294,
+    "57000": -72.97168490897735,
+    "71000": -80.74204995586479
+  },
+  "aliased_noise_into_300_7000_uVrms_10_images": {
+    "electronics": 0.01147362153214295,
+    "source": 0.0006926402495153127
+  },
+  "noise_300_7000_uVrms_output_div_1kHz_gain": {
+    "electronics": 1.6763088526907108,
+    "source": 3.188693013036036
+  },
+  "analytic_1kHz_gain_VV": 947.6958672667233,
+  "illustrative_detector_trials": [
+    {
+      "duration_ms": 0.5,
+      "amplitude_uVpp": 20,
+      "injected": 99,
+      "detected": 8,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 0.5,
+      "amplitude_uVpp": 50,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 0.5,
+      "amplitude_uVpp": 100,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 0.5,
+      "amplitude_uVpp": 200,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 0.5,
+      "amplitude_uVpp": 500,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 1.0,
+      "amplitude_uVpp": 20,
+      "injected": 99,
+      "detected": 8,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 1.0,
+      "amplitude_uVpp": 50,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 1.0,
+      "amplitude_uVpp": 100,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 1.0,
+      "amplitude_uVpp": 200,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 1.0,
+      "amplitude_uVpp": 500,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 48,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 2.0,
+      "amplitude_uVpp": 20,
+      "injected": 99,
+      "detected": 10,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 2.0,
+      "amplitude_uVpp": 50,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 0,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 2.0,
+      "amplitude_uVpp": 100,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 24,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 2.0,
+      "amplitude_uVpp": 200,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 99,
+      "seconds": 10
+    },
+    {
+      "duration_ms": 2.0,
+      "amplitude_uVpp": 500,
+      "injected": 99,
+      "detected": 99,
+      "unmatched_or_duplicate": 0,
+      "naive_unmatched_or_duplicate": 112,
+      "seconds": 10
+    }
+  ]
+}

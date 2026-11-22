@@ -1,0 +1,96 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 16:44:04 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\projects\curalink\MyWorkspace_wrk\data"
+      Process ID: 16620
+
+Warning detected by hpeesofsim during netlist parsing.
+    Unrecognizable scale factor `ohm' ignored
+
+
+HB HB1[1] <MyLibrary_lib:cell_1:schematic>
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 210.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	88.0482 A   	100.0             
+1.0 	2.83756 A   	100.0	126.038 mV   
+1.1 	1.98035 A   	100.0	33.2649 mV   
+1.2*	1.54268 A   	100.0	124.486 mV   
+2.0 	589.59 mA   	100.0	84.6857 mV   
+2.1 	423.334 mA  	100.0	74.2437 mV   
+2.2 	339.899 mA  	100.0	65.4319 mV   
+2.3 	288.619 mA  	100.0	57.3852 mV   
+2.4 	253.584 mA  	100.0	50.1031 mV   
+2.5*	227.994 mA  	100.0	370.364 mV   
+3.0 	113.782 mA  	100.0	97.4874 mV   
+3.1 	89.0592 mA  	100.0	76.9231 mV   
+3.2 	73.8513 mA  	100.0	62.5161 mV   
+3.3 	62.6039 mA  	100.0	51.0026 mV   
+3.4 	54.0705 mA  	100.0	41.7286 mV   
+3.5 	47.546 mA   	100.0	34.2634 mV   
+3.6 	42.1975 mA  	100.0	28.259 mV    
+3.7 	37.7571 mA  	100.0	23.4292 mV   
+3.8 	34.2005 mA  	100.0	19.5399 mV   
+3.9 	31.7205 mA  	100.0	16.4021 mV   
+3.10*	29.5312 mA  	100.0	128.085 mV   
+4.0 	14.5903 mA  	100.0	26.5158 mV   
+4.1 	9.47312 mA  	100.0	17.402 mV    
+4.2 	7.25574 mA  	100.0	12.934 mV    
+4.3 	6.11131 mA  	100.0	10.2904 mV   
+4.4 	5.4108 mA   	100.0	8.55674 mV   
+4.5 	4.81973 mA  	100.0	7.33423 mV   
+4.6 	4.3285 mA   	100.0	6.4247 mV    
+4.7 	3.92027 mA  	100.0	5.72023 mV   
+4.8 	3.57867 mA  	100.0	5.15751 mV   
+4.9 	3.29003 mA  	100.0	4.6971 mV    
+4.10*	3.04358 mA  	100.0	56.1034 mV   
+5.0 	1.46969 mA  	100.0	19.9294 mV   
+5.1 	1.01835 mA  	100.0	13.7005 mV   
+5.2 	785.873 uA  	100.0	10.5587 mV   
+5.3 	641.807 uA  	100.0	8.61848 mV   
+5.4 	542.929 uA  	100.0	7.28849 mV   
+5.5 	470.52 uA   	100.0	6.31517 mV   
+5.6 	415.049 uA  	100.0	5.56985 mV   
+5.7 	371.113 uA  	100.0	4.97971 mV   
+5.8 	335.409 uA  	100.0	4.50024 mV   
+5.9 	305.794 uA  	100.0	4.10262 mV   
+5.10*	280.817 uA  	100.0	47.8539 mV   
+6.0 	93.4361 uA  	100.0	15.8226 mV   
+6.1 	59.156 uA   	100.0	10.0171 mV   
+6.2 	41.974 uA   	100.0	7.10755 mV   
+6.3 	31.5193 uA  	100.0	5.3372 mV    
+6.4 	24.4949 uA  	100.0	4.14773 mV   
+6.5 	19.4784 uA  	100.0	3.29826 mV   
+6.6 	15.7447 uA  	100.0	2.66603 mV   
+6.7 	12.8823 uA  	100.0	2.18134 mV   
+6.8 	10.6387 uA  	100.0	1.80144 mV   
+6.9 	8.85004 uA  	100.0	1.49856 mV   
+6.10*	7.40488 uA  	100.0	7.781 mV     
+7.0 	485.542 nA  	100.0	510.186 uV   
+7.1 	64.0973 nA  	100.0	67.3514 uV   
+7.2 	8.74352 nA  	100.0	9.18743 uV   
+7.3 	1.19778 nA  	100.0	1.2586 uV    
+7.4 	164.181 pA  	100.0	172.516 nV   
+
+Resource usage:
+    Total CPU time            =     5.52 seconds.
+    Simulation stopwatch time =     0.35 seconds.
+    Total stopwatch time      =    34.77 seconds.
+
+    Memory used:  125 MBytes
+
+    Max threads used:  36
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

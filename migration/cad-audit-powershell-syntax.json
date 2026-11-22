@@ -1,0 +1,32 @@
+[
+  {
+    "Path": "hardware/rev-a/ltspice/afe/run_ltspice_afe.ps1",
+    "PowerShellSyntax": "PASS",
+    "Simulated": false
+  },
+  {
+    "Path": "hardware/rev-a/ltspice/power/run-ltspice.ps1",
+    "PowerShellSyntax": "PASS",
+    "Simulated": false
+  },
+  {
+    "Path": "hardware/rev-a/signal-integrity/power/run-sensitivity.ps1",
+    "PowerShellSyntax": "PASS",
+    "Simulated": false
+  },
+  {
+    "Path": "hardware/rev-a/signal-integrity/afe/run_crosstalk.ps1",
+    "PowerShellSyntax": "PASS",
+    "Simulated": false
+  },
+  {
+    "Path": "hardware/rev-a/signal-integrity/afe/bias-study/run_bias_ac.ps1",
+    "PowerShellSyntax": "PASS",
+    "Simulated": false
+  },
+  {
+    "Path": "hardware/rev-a/signal-integrity/afe/bias-study/run_bias_transients.ps1",
+    "PowerShellSyntax": "PASS",
+    "Simulated": false
+  }
+]

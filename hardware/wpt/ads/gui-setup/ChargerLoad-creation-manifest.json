@@ -1,0 +1,67 @@
+{
+  "recorded_local_time": "2026-10-09T17:16:17.786451-04:00",
+  "workspace": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk",
+  "source": "MyLibrary_lib:RX_BAT54_LoadSweep_20261009:schematic",
+  "destination": "MyLibrary_lib:RX_ChargerLoad_20261009:schematic",
+  "native_view_path": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%Charger%Load_20261009\\schematic",
+  "new_cell_oa_sha256": "1449738887ee67a0c4343db0308a32c963c457a491d3b8fd6a6d0c1b1166b248",
+  "original_and_completed_copy_hashes_before": {
+    "MyLibrary_lib\\cell_1\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_1\\schematic\\sch.oa": "b68eb23f7db0625bd8e18c6b21e31c6d6f7abed9c2ff6dee5c7c2f9d216d3749",
+    "MyLibrary_lib\\cell_2\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_2\\schematic\\sch.oa": "43b3e9444cd944fc927b75e39c2351adacc60ad58018be05f483a7c414b91de5",
+    "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%Load%Sweep_20261009\\schematic\\sch.oa": "31a3a1dea789b6b4c96826bd3368671c6e75af07568aee931cdb514ad26c345d",
+    "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%B%A%T54_%Load%Sweep_20261009\\schematic\\sch.oa": "48b6db429034635d509473bafdb5f7d206d576e1b04f181e0a39d3059b63103b"
+  },
+  "original_and_completed_copy_hashes_after": {
+    "MyLibrary_lib\\cell_1\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_1\\schematic\\sch.oa": "b68eb23f7db0625bd8e18c6b21e31c6d6f7abed9c2ff6dee5c7c2f9d216d3749",
+    "MyLibrary_lib\\cell_2\\schematic\\master.tag": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+    "MyLibrary_lib\\cell_2\\schematic\\sch.oa": "43b3e9444cd944fc927b75e39c2351adacc60ad58018be05f483a7c414b91de5",
+    "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%Load%Sweep_20261009\\schematic\\sch.oa": "31a3a1dea789b6b4c96826bd3368671c6e75af07568aee931cdb514ad26c345d",
+    "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%B%A%T54_%Load%Sweep_20261009\\schematic\\sch.oa": "48b6db429034635d509473bafdb5f7d206d576e1b04f181e0a39d3059b63103b"
+  },
+  "law_source": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\hardware\\wpt\\ads\\charger\\native-raw-SDD-I-1-0.txt",
+  "law_source_sha256": "2f98626b07ecd795bfd630d3cebae1206eb7371aafcebe5177132d89753b31e8",
+  "parameter_source": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\hardware\\wpt\\ads\\charger\\native-raw-SDD-parameters.txt",
+  "parameter_source_sha256": "8d3f45e0f1216d597c59a3a6dc5700b4c3d8ff1b4483102fa700f7555bfbc024",
+  "parameters": {
+    "VBAT": "3.7",
+    "IPHASE": "0.02",
+    "IQACTIVE": "0.00075",
+    "IQSLEEP": "0.00003",
+    "CHARGE_ALLOWED": "1",
+    "VWAKE": "max(3.0,VBAT+0.152)",
+    "VSTART": "max(3.15,VBAT+0.188)",
+    "VDPM": "max(3.6,VBAT+0.330)",
+    "WNUM": "0.020",
+    "WDPM": "0.15",
+    "ICTRL": "0.0008",
+    "WOR": "0.100",
+    "VPATH": "0.28"
+  },
+  "raw_SDD_I_1_0": "IQSLEEP*max(0,min(1,(_v1-VPATH)/3.6))+(IQACTIVE-IQSLEEP)*max(0,min(1,((_v1-VPATH)-VWAKE)/WNUM))+CHARGE_ALLOWED*IPHASE*max(0,min(1,((_v1-VPATH)-VSTART)/WNUM))*max(0,min(1,((_v1-VPATH)-VDPM)/WDPM))+ICTRL*max(0,min(1,(_v1-VPATH-VBAT)/WOR))+0.000143*max(0,min(1,_v1/2.5))+_v1/110000",
+  "source_power_dBm": 23.5,
+  "frequency_Hz": 13560000,
+  "HB_order": 31,
+  "reservoir_C_F": 1e-06,
+  "extra_raw_equivalent_C_F": 2.2e-06,
+  "SDD_terminal_nodes": [
+    "RAW_LOAD",
+    "0"
+  ],
+  "existing_DC_probe_positive_current": "DCout to RAW_LOAD",
+  "native_netlist_syntax_and_topology_verified": true,
+  "actual_SDD_simulation_completed": false,
+  "fixture_status": "Authored static unexecuted candidate; no actual charger/cell/OVP model",
+  "approximation_CHG_IN_voltage_domain_V": [
+    0,
+    5.5
+  ],
+  "equivalence_limit": "Positive steady-state RAW only; fixed path drop and ideal capacitance",
+  "load_sweep_retired": true,
+  "power_sweep_saved_active": false,
+  "separate_current_readouts": "Charger/control static-law estimates at DC voltage, not solved branch waveforms",
+  "fresh_process_OA_readback_verified": true,
+  "fresh_readback_netlist_sha256": "23e5689a8e98bbd42583271226153a341d447efa77100539d4d2d8fe9df2f0e0"
+}

@@ -1,0 +1,110 @@
+{
+  "date_local": "2026-10-02",
+  "timezone": "America/New_York",
+  "fixtures": {
+    "afe-avdd-ripple": {
+      "raw_sha256": "5ba621ef11241da5104fc2033fbfc68cdf2932410db5cbb908e5d0c0a0da5e1f",
+      "deck_sha256": "982230ee98c0018a048ac4b3df2ec31d5168c4bf8e72fe4f8dbffd8ff5d53447",
+      "finite_points": 962,
+      "ADC1_DC_V": 1.503360005042646,
+      "model_kind": "Original-equation TI family macros, nominal linearized AC",
+      "actual_step_capacitances_F": [
+        2e-06,
+        4.7e-06
+      ]
+    },
+    "afe-vmid-current": {
+      "raw_sha256": "88c3780d37555bac0a9b220eec398c941c1d049f2de9d29d5e173c479e895d6c",
+      "deck_sha256": "a171dd9d2ea63fafd578fcd95b8c688b84d5bf8a1a5875a90a7de1d592ff771f",
+      "finite_points": 962,
+      "ADC1_DC_V": 1.503360005042646,
+      "model_kind": "Original-equation TI family macros, nominal linearized AC",
+      "actual_step_capacitances_F": [
+        2e-06,
+        4.7e-06
+      ]
+    }
+  },
+  "frequency_point_method": "Complex log-frequency interpolation at300Hz/7kHz;1kHz is on the exactAC grid. Step labels follow recorded .step log order, not declaration order.",
+  "calculation_kind": "Nominal model AC sensitivities, not noise, physical routing, or measured immunity",
+  "frequency_points": [
+    {
+      "C1058_F": 4.7e-06,
+      "frequency_Hz": 300,
+      "VMID_per_AVDD_V_per_V": 0.01591431272298583,
+      "ADC1_per_AVDD_V_per_V": 0.012242850949703954,
+      "ideal_code_LSB_per_1mV_AVDD": 0.6988675554649889,
+      "VMID_impedance_ohm": 31.66291929393648,
+      "ADC1_uV_per_1uA_VMID_injection": 29.803258328872843
+    },
+    {
+      "C1058_F": 4.7e-06,
+      "frequency_Hz": 1000,
+      "VMID_per_AVDD_V_per_V": 0.002580453213393589,
+      "ADC1_per_AVDD_V_per_V": 0.04459687614301748,
+      "ideal_code_LSB_per_1mV_AVDD": 0.6822856429369848,
+      "VMID_impedance_ohm": 23.79256954499867,
+      "ADC1_uV_per_1uA_VMID_injection": 20.45993065199853
+    },
+    {
+      "C1058_F": 4.7e-06,
+      "frequency_Hz": 7000,
+      "VMID_per_AVDD_V_per_V": 0.0004664320344614687,
+      "ADC1_per_AVDD_V_per_V": 0.21923923513858948,
+      "ideal_code_LSB_per_1mV_AVDD": 0.7773357890085075,
+      "VMID_impedance_ohm": 4.880397706509182,
+      "ADC1_uV_per_1uA_VMID_injection": 6.043403680575484
+    },
+    {
+      "C1058_F": 2e-06,
+      "frequency_Hz": 300,
+      "VMID_per_AVDD_V_per_V": 0.016445215092330313,
+      "ADC1_per_AVDD_V_per_V": 0.010997478666429502,
+      "ideal_code_LSB_per_1mV_AVDD": 0.6958227714509946,
+      "VMID_impedance_ohm": 32.71941019339564,
+      "ADC1_uV_per_1uA_VMID_injection": 30.7976951307397
+    },
+    {
+      "C1058_F": 2e-06,
+      "frequency_Hz": 1000,
+      "VMID_per_AVDD_V_per_V": 0.0033174000196092824,
+      "ADC1_per_AVDD_V_per_V": 0.04353926631612002,
+      "ideal_code_LSB_per_1mV_AVDD": 0.6816538848669792,
+      "VMID_impedance_ohm": 30.587444939776105,
+      "ADC1_uV_per_1uA_VMID_injection": 26.303043846258447
+    },
+    {
+      "C1058_F": 2e-06,
+      "frequency_Hz": 7000,
+      "VMID_per_AVDD_V_per_V": 0.0010722830224900353,
+      "ADC1_per_AVDD_V_per_V": 0.2195891309340198,
+      "ideal_code_LSB_per_1mV_AVDD": 0.7767485893419198,
+      "VMID_impedance_ohm": 11.219711550952429,
+      "ADC1_uV_per_1uA_VMID_injection": 13.892941558116704
+    }
+  ],
+  "passive_examples": {
+    "ideal_VMIDs_divider_fc_Hz": 14.468631190172303,
+    "ideal_VMIDs_R47_C4p7u_fc_Hz": 720.4841244540305,
+    "ideal_VMIDs_R47_C2u_fc_Hz": 1693.1376924669719,
+    "assumed_BLE_increment_A": 0.02,
+    "shared_return_R_ohm": [
+      0.01,
+      0.1
+    ],
+    "resulting_return_drop_V": [
+      0.0002,
+      0.002
+    ],
+    "capacitor_alone_20mA_10us_10uF_droop_V": 0.02,
+    "capacitor_alone_20mA_10us_2uF_droop_V": 0.10000000000000002,
+    "assumption_warning": "Illustrative20mA increment and return resistances are not WBA52 measured values or extracted PCB parasitics; capacitor droop excludes regulator replenishment/ESR/ESL."
+  },
+  "limitations": [
+    "No PCB geometry, real shared ground impedance, real BLE load waveform, regulator loop or exact ADC switching model.",
+    "AC1V/AC1A are normalization sources; no physical1V neural stimulus or1A reference-current test is claimed.",
+    "C1058 minimum2uF is an accepted design assumption to check by MLCC DC-bias data, not a measured capacitance.",
+    "ADC code perturbation uses first-order ideal12-bit ratiometry; no quantization, ENOB, drift or actual conversion result.",
+    "All high-frequency model behavior and RF immunity remain unqualified."
+  ]
+}

@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-02T12:18:34-0400",
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "9.0.9",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab",
+            "violations": []
+        },
+        {
+            "path": "/INTERFACE_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/d339e4bb-7114-537f-9f12-cfc9e298b67f",
+            "violations": []
+        },
+        {
+            "path": "/MCU_ACQUISITION_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/d491b392-df26-5e3c-8d36-6303de1001db",
+            "violations": []
+        },
+        {
+            "path": "/MCU_ACQUISITION_2/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/13326384-5de8-5988-9d87-fe643d28985d",
+            "violations": []
+        },
+        {
+            "path": "/RF_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/28d81b15-e3a2-5f79-a926-d9eac4da216b",
+            "violations": []
+        },
+        {
+            "path": "/afe_ch1_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/e7e2bbef-03ec-5fb1-bd4a-93c12e5583f8",
+            "violations": []
+        },
+        {
+            "path": "/afe_ch2_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/cb017909-69f7-570c-88af-9ec8c85ef82f",
+            "violations": []
+        },
+        {
+            "path": "/afe_ch3_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/387b52a2-3837-5805-b043-fd220c23adc1",
+            "violations": []
+        },
+        {
+            "path": "/afe_ch4_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/c9f2ceb6-e106-519f-96a9-205113d9e9fe",
+            "violations": []
+        },
+        {
+            "path": "/afe_ch5_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/846cb66a-cc98-576d-a800-96756cc7ad7c",
+            "violations": []
+        },
+        {
+            "path": "/afe_ch6_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/1749abea-1e25-5ed9-a7af-c5a892a6aa53",
+            "violations": []
+        },
+        {
+            "path": "/afe_ch7_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/43d64133-e7d8-5a00-bf94-026e33d699f6",
+            "violations": []
+        },
+        {
+            "path": "/afe_ch8_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/ebe1f9a4-e30c-5c33-ab2b-ffc89725edcc",
+            "violations": []
+        },
+        {
+            "path": "/afe_shared_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/f47c4a92-b547-5d1c-8096-2c664fc4d3f1",
+            "violations": []
+        },
+        {
+            "path": "/power_1/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/895dd55c-18fc-5a52-bc0d-715d75999776",
+            "violations": []
+        },
+        {
+            "path": "/power_2/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/6cf3c8e4-2ced-51f7-9e69-6b00cc7085ae",
+            "violations": []
+        },
+        {
+            "path": "/power_3/",
+            "uuid_path": "/8301eba8-fab0-5bcb-b414-f69e384483ab/d4792915-f286-500a-857b-884ffe616d7b",
+            "violations": []
+        }
+    ],
+    "source": "curalink-rev-a.kicad_sch"
+}

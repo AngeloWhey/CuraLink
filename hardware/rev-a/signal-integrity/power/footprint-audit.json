@@ -1,0 +1,678 @@
+{
+  "date_local": "2026-10-02",
+  "timezone": "America/New_York",
+  "status": "Manufacturer drawing transcription; KiCad loader verification separately recorded; no assembly or PCB qualification implied.",
+  "coordinate_system": "mm, top-view unrotated footprint; +x right and +y down; pin1 upper-left.",
+  "courtyard_rule": "Chosen 0.25 mm clearance from maximum package body or copper extents, rounded outward to 0.05 mm. Courtyard and silkscreen are project choices, not TI dimensions.",
+  "assembly_limitations": [
+    "No manufacturer's 3D model included.",
+    "Confirm assembly orientation against pin1 mark on actual reel and JLC preview; footprint orientation alone does not establish pick-and-place rotation.",
+    "0.125 mm stencil thickness is the TI drawing example, not an approved JLC process.",
+    "EP11/EP7 must connect to ground with short low-impedance copper; thermal dissipation and solder voiding require board-level review.",
+    "Do not automatically add through thermal vias beneath full paste apertures without assembly approval."
+  ],
+  "footprints": [
+    {
+      "name": "BQ25185DLH_WSON10_2.2x2mm",
+      "manufacturer": "Texas Instruments",
+      "mpn": "BQ25185DLHR",
+      "lcsc": "C19725033",
+      "refs": [
+        "U501"
+      ],
+      "package": "DLH0010A",
+      "drawing": "4226298/A 10/2020",
+      "description": "TI DLH0010A, exact example land and stencil geometry; 10 leads plus grounded EP11; top-view pin1 upper-left",
+      "source_url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "source_pdf": "hardware/rev-a/ltspice/power/sources/bq25185-datasheet.pdf",
+      "pdf_pages_1based": {
+        "outline": 29,
+        "land": 30,
+        "stencil": 31
+      },
+      "body_nominal_mm": [
+        2.2,
+        2.0
+      ],
+      "body_max_mm": [
+        2.3,
+        2.1
+      ],
+      "height_max_mm": 0.8,
+      "pitch_mm": 0.4,
+      "courtyard_half_mm": [
+        1.55,
+        1.3
+      ],
+      "silk_y_mm": 1.2,
+      "pin1_marker_xy_mm": [
+        -1.4,
+        -1.2
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -1.05,
+            -0.8
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -1.05,
+            -0.4
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -1.05,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            -1.05,
+            0.4
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            -1.05,
+            0.8
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            1.05,
+            0.8
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            1.05,
+            0.4
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "8",
+          "xy_mm": [
+            1.05,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "9",
+          "xy_mm": [
+            1.05,
+            -0.4
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "10",
+          "xy_mm": [
+            1.05,
+            -0.8
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "11",
+          "xy_mm": [
+            0,
+            0
+          ],
+          "copper_size_mm": [
+            0.9,
+            1.5
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": false,
+          "copper_corner_radius_mm": 0.05
+        }
+      ],
+      "pin_functions": {
+        "1": "SYS",
+        "2": "BAT",
+        "3": "STAT2",
+        "4": "CE_N",
+        "5": "GND",
+        "6": "TS/MR",
+        "7": "ILIM/VSET",
+        "8": "ISET",
+        "9": "STAT1",
+        "10": "IN",
+        "11": "EP_GND"
+      },
+      "paste_apertures": [
+        {
+          "xy_mm": [
+            0,
+            0
+          ],
+          "size_mm": [
+            0.85,
+            1.38
+          ]
+        }
+      ],
+      "stencil_thickness_example_mm": 0.125,
+      "thermal_vias": "TI optional 0.2 mm finished holes at x=0,y=+/-0.5 mm; no vias embedded in footprint. Assembly shop must approve filled/plugged/tented construction and paste before adding vias.",
+      "mask_notes": "Non-solder-mask-defined, 0.05 mm positive mask expansion on all pads.",
+      "official_library_comparison": "KiCad9.0.9 Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm uses 0.75x0.2 mm lands at x=+/-1.1 mm; this custom uses TI example 0.5x0.2 mm at +/-1.05 mm instead.",
+      "source_pdf_sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+      "file": "hardware/rev-a/pcb/footprints/CuraLink.pretty/BQ25185DLH_WSON10_2.2x2mm.kicad_mod",
+      "footprint_sha256": "8fe1d949c2c59e5cbfe1c4cf42d98b9f32adfcf4184aaaa9191b57334229a828",
+      "canonical_pin_checks": {
+        "U501": {
+          "functions_match": true,
+          "pins": {
+            "1": "CHG_SYS",
+            "2": "BAT_CHG",
+            "3": "CHG_STAT2",
+            "4": "CHG_CE_N",
+            "5": "GND",
+            "6": "CHG_TS",
+            "7": "CHG_VSET",
+            "8": "CHG_ISET",
+            "9": "CHG_STAT1",
+            "10": "CHG_IN",
+            "11": "GND"
+          }
+        }
+      }
+    },
+    {
+      "name": "TPS25200DRV_WSON6_2x2mm",
+      "manufacturer": "Texas Instruments",
+      "mpn": "TPS25200DRVR",
+      "lcsc": "C128401",
+      "refs": [
+        "U502",
+        "U511"
+      ],
+      "package": "DRV0006A",
+      "drawing": "4222173/C 11/2025",
+      "description": "TI DRV0006A, exact example land and split-stencil geometry; 6 leads plus grounded EP7; top-view pin1 upper-left",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps25200.pdf",
+      "source_pdf": "hardware/rev-a/ltspice/power/sources/tps25200-datasheet.pdf",
+      "pdf_pages_1based": {
+        "outline": 28,
+        "land": 29,
+        "stencil": 30
+      },
+      "body_nominal_mm": [
+        2,
+        2
+      ],
+      "body_max_mm": [
+        2.1,
+        2.1
+      ],
+      "height_max_mm": 0.8,
+      "pitch_mm": 0.65,
+      "courtyard_half_mm": [
+        1.45,
+        1.3
+      ],
+      "silk_y_mm": 1.2,
+      "pin1_marker_xy_mm": [
+        -1.3,
+        -1.2
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.975,
+            -0.65
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.975,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -0.975,
+            0.65
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.975,
+            0.65
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.975,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            0.975,
+            -0.65
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "paste_is_copper": true,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            0,
+            0
+          ],
+          "copper_size_mm": [
+            1,
+            1.6
+          ],
+          "mask_margin_mm": 0.07,
+          "paste_is_copper": false,
+          "copper_corner_radius_mm": 0.05
+        }
+      ],
+      "pin_functions": {
+        "1": "OUT",
+        "2": "ILIM",
+        "3": "FAULT_N",
+        "4": "EN",
+        "5": "GND",
+        "6": "IN",
+        "7": "EP_GND"
+      },
+      "paste_apertures": [
+        {
+          "xy_mm": [
+            0,
+            -0.45
+          ],
+          "size_mm": [
+            1,
+            0.7
+          ]
+        },
+        {
+          "xy_mm": [
+            0,
+            0.45
+          ],
+          "size_mm": [
+            1,
+            0.7
+          ]
+        }
+      ],
+      "stencil_thickness_example_mm": 0.125,
+      "thermal_vias": "TI optional 0.2 mm finished holes at x=0,y=+/-0.55 mm; not embedded. Confirm via-in-pad process and stencil with assembly shop first.",
+      "mask_notes": "Non-solder-mask-defined, 0.07 mm positive mask expansion per drawing.",
+      "official_library_comparison": "KiCad9.0.9 DFN-6-1EP_2x2mm_P0.65mm_EP1x1.6mm is described for Microchip and uses 0.65x0.35 mm lands at +/-1.05 mm; TI example is 0.45x0.30 mm at +/-0.975 mm. A generic DFN-6 was not copied.",
+      "source_pdf_sha256": "fafdb867c456a2b24ef4fe5908e7d6da75703c0f24a36f984864d1d2daf9cd4a",
+      "file": "hardware/rev-a/pcb/footprints/CuraLink.pretty/TPS25200DRV_WSON6_2x2mm.kicad_mod",
+      "footprint_sha256": "98fc26affc6230fd0e9dbf10297fa62c7c43767db3a0ed05b54b4ac11459b4a1",
+      "canonical_pin_checks": {
+        "U502": {
+          "functions_match": true,
+          "pins": {
+            "1": "CHG_IN",
+            "2": "WPT_EF_ILIM",
+            "3": "CHG_INPUT_FAULT_N",
+            "4": "WPT_EF_EN",
+            "5": "GND",
+            "6": "WPT_PROTECTED",
+            "7": "GND"
+          }
+        },
+        "U511": {
+          "functions_match": true,
+          "pins": {
+            "1": "SYS_RAW",
+            "2": "SYS_EF_ILIM",
+            "3": "SYS_FAULT_N",
+            "4": "RUN_ENABLE",
+            "5": "GND",
+            "6": "SYS_PRE",
+            "7": "GND"
+          }
+        }
+      }
+    },
+    {
+      "name": "BQ29737DSE_WSON6_1.5x1.5mm",
+      "manufacturer": "Texas Instruments",
+      "mpn": "BQ29737DSER",
+      "lcsc": "C3681751",
+      "refs": [
+        "U514"
+      ],
+      "package": "DSE0006A",
+      "drawing": "4220552/B 01/2024",
+      "description": "TI DSE0006A, asymmetric 6-lead example lands, solder-mask-defined pads1-3, NO exposed pad; pin1 upper-left",
+      "source_url": "https://www.ti.com/lit/ds/symlink/bq2973.pdf",
+      "source_pdf": "hardware/rev-a/ltspice/sources/bq2973.pdf",
+      "pdf_pages_1based": {
+        "outline": 32,
+        "land": 33,
+        "stencil": 34
+      },
+      "body_nominal_mm": [
+        1.5,
+        1.5
+      ],
+      "body_max_mm": [
+        1.55,
+        1.55
+      ],
+      "height_max_mm": 0.8,
+      "pitch_mm": 0.5,
+      "courtyard_half_mm": [
+        1.25,
+        1.05
+      ],
+      "silk_y_mm": 0.95,
+      "pin1_marker_xy_mm": [
+        -1.1,
+        -0.95
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.55,
+            -0.5
+          ],
+          "copper_size_mm": [
+            0.9,
+            0.35
+          ],
+          "mask_margin_mm": -0.05,
+          "paste_is_copper": false,
+          "copper_corner_radius_mm": 0.1
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.6,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.7999999999999999,
+            0.35
+          ],
+          "mask_margin_mm": -0.05,
+          "paste_is_copper": false,
+          "copper_corner_radius_mm": 0.1
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -0.6,
+            0.5
+          ],
+          "copper_size_mm": [
+            0.7999999999999999,
+            0.35
+          ],
+          "mask_margin_mm": -0.05,
+          "paste_is_copper": false,
+          "copper_corner_radius_mm": 0.1
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.6,
+            0.5
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": false,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.6,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": false,
+          "copper_corner_radius_mm": 0.05
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            0.6,
+            -0.5
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": 0.05,
+          "paste_is_copper": false,
+          "copper_corner_radius_mm": 0.05
+        }
+      ],
+      "pin_functions": {
+        "1": "NC",
+        "2": "COUT",
+        "3": "DOUT",
+        "4": "VSS",
+        "5": "BAT",
+        "6": "V-"
+      },
+      "paste_apertures": [
+        {
+          "xy_mm": [
+            -0.55,
+            -0.5
+          ],
+          "size_mm": [
+            0.8,
+            0.25
+          ]
+        },
+        {
+          "xy_mm": [
+            -0.6,
+            0.0
+          ],
+          "size_mm": [
+            0.7,
+            0.25
+          ]
+        },
+        {
+          "xy_mm": [
+            -0.6,
+            0.5
+          ],
+          "size_mm": [
+            0.7,
+            0.25
+          ]
+        },
+        {
+          "xy_mm": [
+            0.6,
+            0.5
+          ],
+          "size_mm": [
+            0.7,
+            0.25
+          ]
+        },
+        {
+          "xy_mm": [
+            0.6,
+            0.0
+          ],
+          "size_mm": [
+            0.7,
+            0.25
+          ]
+        },
+        {
+          "xy_mm": [
+            0.6,
+            -0.5
+          ],
+          "size_mm": [
+            0.7,
+            0.25
+          ]
+        }
+      ],
+      "stencil_thickness_example_mm": 0.125,
+      "thermal_vias": "No exposed pad and no thermal via array. Do not add a phantom pad7.",
+      "mask_notes": "TI requires SMD pads1-3 with at least 0.05 mm copper under mask. The specified exposed lands are 0.8x0.25 mm at pin1 and 0.7x0.25 mm at pins2/3, implemented using copper enlarged 0.05 mm on each edge and mask_margin=-0.05 mm. Pads4-6 are NSMD 0.7x0.25 mm copper with +0.05 mm mask margin (drawing says 0.05 mm maximum). All six paste openings follow TI example exposed-land dimensions, separate from enlarged SMD copper.",
+      "pin1_asymmetry": "Pin1 shares the x=-0.95 mm outer exposed-land edge with pins2/3; it extends 0.10 mm farther inward, so its exposed-land center is -0.55 mm versus -0.60 mm for pins2/3.",
+      "population_status": "Optional DNP protection remains electrically unqualified for selected cell. Correct footprint does not approve populating it.",
+      "source_pdf_sha256": "33ecbecf2eca2276a7afa6cf41aa6f8016ef4a71572a52d6941dfba8f3def126",
+      "file": "hardware/rev-a/pcb/footprints/CuraLink.pretty/BQ29737DSE_WSON6_1.5x1.5mm.kicad_mod",
+      "footprint_sha256": "68cb5301729a4432787a8716d86ccf810f3afe57b42ad71e41da717f8277add1",
+      "canonical_pin_checks": {
+        "U514": {
+          "functions_match": true,
+          "pins": {
+            "1": null,
+            "2": "PCM_CHG_GATE",
+            "3": "PCM_DSG_GATE",
+            "4": "CELLN",
+            "5": "PCM_BAT",
+            "6": "PCM_VMINUS"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\static-ovp-typ-charger.cir
+Start Time: Fri Oct  2 10:04:45 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+AsciiRawFile = true
+.OP point found by inspection.
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Starting Gmin stepping level 2
+Gmin stepping level 2 failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient succeeded in finding the operating point at 305.601 ms
+Total elapsed time: 1.060 seconds.
+
+Files loaded:
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\static-ovp-typ-charger.cir
+
+max_chg: MAX(V(CHG_IN))=5.39757109301 FROM 0 TO 18
+max_current: MAX(I(BPASS))=0.0245344140591 FROM 0 TO 18
+max_dissipation: MAX(V(EFUSE_DISSIPATION_W))=0.0554316306696 FROM 0 TO 18
+output_5v: V(CHG_IN) =4.99775101204 at 5
+output_65v: V(CHG_IN) =5.39757109301 at 6.5
+output_10v: V(CHG_IN) =0 at 10

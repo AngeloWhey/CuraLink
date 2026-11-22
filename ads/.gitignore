@@ -1,0 +1,7 @@
+# Original large datasets are transported losslessly through Git LFS gzip files.
+/MyWorkspace_wrk/data/cell_1.ds
+/MyWorkspace_wrk/data/__simdata125462.ds
+*.restore-partial
+*.cdslck
+*.lck
+*.lock

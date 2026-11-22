@@ -1,0 +1,26 @@
+* CuraLink: TI TPS25200 vendor macro; intended U502 wiring after physical-pin correction
+* DUT pin order in vendor macro: PWPD EN IN FAULT_B ILIM OUT GND
+* Physical pins: OUT1 ILIM2 FAULT3 EN4 GND5 IN6 EP7
+* D501 diode shape is APPROXIMATE, not an onsemi vendor model.
+.include "models/tps25200-ltspice-compat.lib"
+VRAW WPT_RAW 0 5
+D501 WPT_RAW WPT_PROTECTED D501_APPROX
+.model D501_APPROX D(Is=2u N=1.15 Rs=.04 BV=40 Ibv=1m Cjo=60p)
+C501 WPT_PROTECTED 0 2.2u
+R510 WPT_PROTECTED WPT_EF_EN 300k
+R511 WPT_EF_ILIM 0 1.1Meg
+XU502 0 WPT_EF_EN WPT_PROTECTED FAULT_N WPT_EF_ILIM CHG_IN 0 TPS25200_TRANS
+VLOGIC PULLUP_3V 0 3
+RFAULT PULLUP_3V FAULT_N 10k
+C502 CHG_IN 0 2.2u
+* 220ohm test load approximates 21..25mA, but does not model battery/charger states.
+RLOAD CHG_IN 0 220
+.dc VRAW 0 18 .025
+.meas DC max_chg_in MAX V(CHG_IN)
+.meas DC chg_in_5v FIND V(CHG_IN) AT=5
+.meas DC chg_in_65v FIND V(CHG_IN) AT=6.5
+.meas DC chg_in_10v FIND V(CHG_IN) AT=10
+.meas DC max_en MAX V(WPT_EF_EN)
+.save V(WPT_RAW) V(WPT_PROTECTED) V(CHG_IN) V(WPT_EF_EN) V(FAULT_N) I(VRAW) I(D501)
+.options plotwinsize=0
+.end

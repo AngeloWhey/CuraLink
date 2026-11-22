@@ -1,0 +1,86 @@
+{
+  "recorded_local_date": "2026-10-02",
+  "timezone": "America/New_York",
+  "status": "CALCULATED SENSITIVITY; NO PLACED OR ROUTED PCB REVIEW",
+  "source": "hardware\\rev-a\\components-merged.json",
+  "source_sha256": "18654970547494c6eb7103410cd8fb1e54971d6c9ef4720aeec9f4312df949c4",
+  "layout_file_extensions_searched": [
+    ".brd",
+    ".gbr",
+    ".gerber",
+    ".kicad_pcb",
+    ".pcb",
+    ".pcbdoc"
+  ],
+  "project_folder_search": [
+    {
+      "folder": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink",
+      "exists": true,
+      "matching_files": []
+    },
+    {
+      "folder": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink",
+      "exists": true,
+      "matching_files": []
+    }
+  ],
+  "leakage_assumptions": "Steady state; input coupling capacitor open; VMID held at 1.5 V; an added ohmic path from preamp + input to GND; no bias current or amplifier offset. This is surface leakage sensitivity, not a measured capacitor-insulation result.",
+  "input_leakage_sensitivity": [
+    {
+      "hypothetical_input_to_ground_leakage_ohm": 1000000000.0,
+      "input_bias_shift_mV": -32.28962818003914,
+      "gain11_preamp_shift_mV": -355.1859099804305
+    },
+    {
+      "hypothetical_input_to_ground_leakage_ohm": 10000000000.0,
+      "input_bias_shift_mV": -3.2927559369387347,
+      "gain11_preamp_shift_mV": -36.22031530632608
+    },
+    {
+      "hypothetical_input_to_ground_leakage_ohm": 100000000000.0,
+      "input_bias_shift_mV": -0.3299274159684869,
+      "gain11_preamp_shift_mV": -3.629201575653356
+    }
+  ],
+  "feedback_assumptions": "One capacitance directly across total 1.818 MOhm feedback resistance. Values describe only its impedance, not complete filter gain, stability, distributed pad capacitance or CMRR.",
+  "feedback_impedance_sensitivity": [
+    {
+      "assumed_parallel_feedback_capacitance_pF": 0.05,
+      "simple_feedback_impedance_pole_Hz": 1750879.4619570444,
+      "feedback_impedance_phase_at_7k_deg": -0.2290667795427055,
+      "feedback_impedance_magnitude_ratio_at_7k": 0.9999920081305438
+    },
+    {
+      "assumed_parallel_feedback_capacitance_pF": 0.1,
+      "simple_feedback_impedance_pole_Hz": 875439.7309785222,
+      "feedback_impedance_phase_at_7k_deg": -0.45812623662254137,
+      "feedback_impedance_magnitude_ratio_at_7k": 0.9999680336717855
+    },
+    {
+      "assumed_parallel_feedback_capacitance_pF": 0.5,
+      "simple_feedback_impedance_pole_Hz": 175087.94619570448,
+      "feedback_impedance_phase_at_7k_deg": -2.2894607001396903,
+      "feedback_impedance_magnitude_ratio_at_7k": 0.9992017602720409
+    },
+    {
+      "assumed_parallel_feedback_capacitance_pF": 1.0,
+      "simple_feedback_impedance_pole_Hz": 87543.97309785224,
+      "feedback_impedance_phase_at_7k_deg": -4.5716335329536,
+      "feedback_impedance_magnitude_ratio_at_7k": 0.9968184618380764
+    }
+  ],
+  "common_return_example": {
+    "assumed_step_current_mA": 20,
+    "assumed_shared_impedance_mohm": 1,
+    "calculated_ground_difference_uV": 20,
+    "qualification": "Illustrative V=IZ. Only a portion may convert to differential error; actual current path, frequency-dependent impedance and rejection require geometry/measurement."
+  },
+  "candidate_crosstalk_review_check": {
+    "single_aggressor_input_uVpp": 1000,
+    "victim_input_equivalent_ceiling_uVpp": 1,
+    "ratio_ceiling_dB": -60,
+    "status": "PROPOSED REVIEW CHECK; NOT USER-ACCEPTED REQUIREMENT",
+    "rationale": "A 1 uVpp sine is 0.354 uVrms, small compared with the existing 3.44 uVrms calculated electronics-noise result. Coherent, broadband and multiple-aggressor cases need an aggregate criterion.",
+    "qualification": "Compute input equivalence using victim gain at the same frequency and source configuration, not a fixed 1 kHz gain."
+  }
+}

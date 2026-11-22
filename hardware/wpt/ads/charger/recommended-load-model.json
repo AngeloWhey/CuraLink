@@ -1,0 +1,89 @@
+{
+  "recorded_date": "2026-10-09",
+  "timezone": "America/New_York",
+  "status": "Candidate authored ADS charger input-load approximation",
+  "manufacturer_macromodel": false,
+  "ads_simulation_verified": false,
+  "model_boundary": "CHG_IN after existing SS14 and input TPS25200; control current separately assigned from diode-OR supply",
+  "canonical_power_design": "../../../rev-a/power/power-design.md",
+  "source_urls": {
+    "charger": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+    "charger_model_availability_checked": "https://www.ti.com/product/BQ25185",
+    "input_efuse": "https://www.ti.com/lit/ds/symlink/tps25200.pdf"
+  },
+  "datasheet_anchors": {
+    "IQ_IN_A": {"typical": 0.00075, "maximum": 0.001, "conditions": "VIN=5V, VBAT=3.6V, charge enabled, ICHG=0mA, SYSREG=4.5V"},
+    "ISLEEP_IN_A": {"typical": 0.00003, "conditions": "VIN=3.6V, VBAT=3.7V", "maximum_not_given": true},
+    "VIN_UVLO_exit_V": {"typical": 3.0},
+    "VIN_UVLO_enter_V": {"typical": 2.7},
+    "charge_start_V": {"typical": 3.0, "maximum": 3.15},
+    "charge_stop_V": {"typical": 2.95, "maximum": 3.1},
+    "sleep_exit_VIN_minus_VBAT_V": {"minimum": 0.122, "typical": 0.152, "maximum": 0.188, "conditions": "VBAT=4V, VINDPM_ACTIVE=1", "table_duplicate_minimum_ambiguity": true},
+    "sleep_enter_VIN_minus_VBAT_V": {"typical": 0.082},
+    "VINDPM_tracking_offset_V": {"typical": 0.330, "conditions": "VBAT>3.5V", "full_current_guarantee": false},
+    "VINDPM_low_battery_fallback_V": {"typical": 3.6},
+    "precharge_fraction": {"typical": 0.20},
+    "termination_fraction": {"typical": 0.10},
+    "precharge_transition_V": {"minimum": 2.9, "typical": 3.0, "maximum": 3.1},
+    "recharge_delta_V": {"typical": 0.1},
+    "charge_safety_timer_minutes": {"typical": 360}
+  },
+  "nominal_fixture": {
+    "VBAT_V": 3.7,
+    "IPHASE_A": 0.020,
+    "IQACTIVE_A": 0.00075,
+    "IQSLEEP_A": 0.00003,
+    "CHARGE_ALLOWED": 1,
+    "VWAKE_expression": "max(3.0,VBAT+0.152)",
+    "VSTART_expression": "max(3.15,VBAT+0.188)",
+    "VDPM_expression": "max(3.6,VBAT+0.330)",
+    "WNUM_V": 0.020,
+    "WDPM_V": 0.150,
+    "WDPM_sweep_V": [0.05, 0.15, 0.30],
+    "ramp_widths_are_author_assumptions": true,
+    "SDD1P_I_1_0": "IQSLEEP*max(0,min(1,_v1/3.6))+(IQACTIVE-IQSLEEP)*max(0,min(1,(_v1-VWAKE)/WNUM))+CHARGE_ALLOWED*IPHASE*max(0,min(1,(_v1-VSTART)/WNUM))*max(0,min(1,(_v1-VDPM)/WDPM))",
+    "control_ICTRL_A": 0.0008,
+    "control_WOR_V": 0.100,
+    "control_SDD1P_I_1_0": "ICTRL*max(0,min(1,(_v1-VBAT)/WOR))"
+  },
+  "control_estimate": {
+    "calculated_charge_mode_control_fixture_A": 0.0008,
+    "sensitivity_fixture_A": 0.0015,
+    "guaranteed_whole_circuit_maximum": false,
+    "basis": "One 10 kOhm STAT pull-up about 300 uA + RUN_PERMIT 10 kOhm pull-up about 240 to 300 uA + CE 100 kOhm pull-up 30 uA + NTC/reference branches about 85 uA + IC currents, at settled 3 V control",
+    "old_300uA_total_charge_control_estimate_credible": false,
+    "weak_source_supply_assignment": "Diode-OR control can transfer to battery when CHG_IN is below PACK+; input-only model is approximate"
+  },
+  "upstream_fixture": {
+    "WPT_RAW_field_divider_ohm": 110000,
+    "efuse_IQ_typical_fixture_A": 0.000143,
+    "efuse_IQ_high_fixture_A": 0.0002,
+    "efuse_IQ_published_conditions": "VIN=5 V, no OUT load, RILIM=33 kOhm; this design uses 1 MOhm, so these are sensitivity assumptions here",
+    "series_losses_modeled_as_voltage_drops": true
+  },
+  "power_calculations_at_5V_RAW": {
+    "nominal_current_A": 0.021738454545454545,
+    "nominal_power_W": 0.10869227272727272,
+    "nominal_equivalent_resistance_ohm": 230.00715113142607,
+    "high_sensitivity_current_A": 0.023957575757575758,
+    "high_sensitivity_power_W": 0.11978787878787879,
+    "high_sensitivity_equivalent_resistance_ohm": 208.70225145459142,
+    "qualification_target_W": 0.120,
+    "qualification_target_resistance_ohm": 208.33333333333334,
+    "first_resistor_sweep_ohm": [208.33333333333334, 220, 230, 240],
+    "RF_lossless_floor_dBm_for120mW": 20.791812460476248,
+    "RF_available_source_sweep_dBm": [20, 23, 26]
+  },
+  "snapshots": [
+    {"name": "disabled", "VBAT_V": 3.7, "IPHASE_A": 0, "CHARGE_ALLOWED": 0},
+    {"name": "precharge_emulator_only", "VBAT_V": 2.7, "IPHASE_A": 0.004},
+    {"name": "CC_nominal", "VBAT_sweep_V": [3.2, 3.7, 4.0], "IPHASE_A": 0.020},
+    {"name": "CC_high_setting_sensitivity", "VBAT_sweep_V": [3.7, 4.0], "IPHASE_A": 0.021212121212121215, "IQACTIVE_A": 0.001, "ICTRL_A": 0.0015},
+    {"name": "CV_taper_snapshot_only", "VBAT_V": 4.1, "IPHASE_sweep_A": [0.005, 0.002]},
+    {"name": "charge_complete", "VBAT_V": 4.1, "IPHASE_A": 0}
+  ],
+  "input_fixture_voltage_domain_V": [0, 5.5],
+  "excluded_from_static_fixture": ["true UVLO/sleep hysteresis", "charger loop bandwidth", "precise DPM control", "SYS startup current", "charge-ready delay", "NTC fault dynamics", "CC/CV state transitions", "termination/recharge/timers", "thermal response", "cell SOC/impedance", "battery protection", "charger high-voltage OVP", "receiver OVP"],
+  "official_model_finding": "No BQ25185 SPICE/ADS macro identified on reviewed public TI product page on 2026-10-09; unpublished availability unknown",
+  "ADS_supported_route": "Installed ADS 2026 Update 2 confirms SDD1P I[1,0]/_v1 and PSpice/LTspice netlist translation; vendor encryption or unsupported syntax still blocks portability"
+}

@@ -1,0 +1,362 @@
+{
+  "recorded_local_date": "2026-11-22",
+  "timezone": "America/New_York",
+  "source_workspace": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk",
+  "repository_workspace": "ads/MyWorkspace_wrk",
+  "source_workspace_modified": false,
+  "files": [
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\cds.lib",
+      "destination": "ads/MyWorkspace_wrk/cds.lib",
+      "bytes": 22,
+      "source_sha256": "635be97e67a6caed5f01f0d43c688cf52028d5e59be164bb4d2a841fa160bb54",
+      "copied_sha256": "635be97e67a6caed5f01f0d43c688cf52028d5e59be164bb4d2a841fa160bb54",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\cell_1.dds",
+      "destination": "ads/MyWorkspace_wrk/cell_1.dds",
+      "bytes": 29885,
+      "source_sha256": "b3bfad3f6e971280e54998cddf9b694c6aa48c57075d9fc34adf449a5b13bc89",
+      "copied_sha256": "b3bfad3f6e971280e54998cddf9b694c6aa48c57075d9fc34adf449a5b13bc89",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\cell_1.dds~",
+      "destination": "ads/MyWorkspace_wrk/cell_1.dds~",
+      "bytes": 29880,
+      "source_sha256": "2bdaa7c66b831b4c42ee85e9c48e9e850f66a42dd7b2f2878de398b82aebe99e",
+      "copied_sha256": "2bdaa7c66b831b4c42ee85e9c48e9e850f66a42dd7b2f2878de398b82aebe99e",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\cell_2.dds",
+      "destination": "ads/MyWorkspace_wrk/cell_2.dds",
+      "bytes": 11587,
+      "source_sha256": "3d04cdc18daa03c263a4467e089d59e62a58b5ae5612f6f39819450e2e16d032",
+      "copied_sha256": "3d04cdc18daa03c263a4467e089d59e62a58b5ae5612f6f39819450e2e16d032",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\__simdata125462.ds",
+      "destination": "ads/MyWorkspace_wrk/data/__simdata125462.ds",
+      "bytes": 230537728,
+      "source_sha256": "ae72ec605bb6f4fb71e5f02cc23d8e9c5ab67975b0f040edad162fb1ed40f0be",
+      "copied_sha256": "ae72ec605bb6f4fb71e5f02cc23d8e9c5ab67975b0f040edad162fb1ed40f0be",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\cached_imp\\640shp\\cell_1\\SNP1.CMP1\\tran\\6cb364c3d9d9abeb11cb4fab870d62d5",
+      "destination": "ads/MyWorkspace_wrk/data/cached_imp/640shp/cell_1/SNP1.CMP1/tran/6cb364c3d9d9abeb11cb4fab870d62d5",
+      "bytes": 163992,
+      "source_sha256": "47a1175765be2bf71a79bf68abaeb6968c3338d39cc59810739532719b3c70fd",
+      "copied_sha256": "47a1175765be2bf71a79bf68abaeb6968c3338d39cc59810739532719b3c70fd",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\cached_imp\\640shp\\cell_1\\SNP2.CMP1\\tran\\6cb364c3d9d9abeb11cb4fab870d62d5",
+      "destination": "ads/MyWorkspace_wrk/data/cached_imp/640shp/cell_1/SNP2.CMP1/tran/6cb364c3d9d9abeb11cb4fab870d62d5",
+      "bytes": 163992,
+      "source_sha256": "47a1175765be2bf71a79bf68abaeb6968c3338d39cc59810739532719b3c70fd",
+      "copied_sha256": "47a1175765be2bf71a79bf68abaeb6968c3338d39cc59810739532719b3c70fd",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\cell_1.ds",
+      "destination": "ads/MyWorkspace_wrk/data/cell_1.ds",
+      "bytes": 2345613824,
+      "source_sha256": "207fd8e9062126d4106c518daa69fce75c943b4a7e1c8da386c20dc90e2b6e4e",
+      "copied_sha256": "207fd8e9062126d4106c518daa69fce75c943b4a7e1c8da386c20dc90e2b6e4e",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\cell_1_data\\logFile.txt",
+      "destination": "ads/MyWorkspace_wrk/data/cell_1_data/logFile.txt",
+      "bytes": 1613,
+      "source_sha256": "a5cf78db0834d3680c3146d0d379300f24b9add96051fe4632f6f333c232b147",
+      "copied_sha256": "a5cf78db0834d3680c3146d0d379300f24b9add96051fe4632f6f333c232b147",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\cell_2.ds",
+      "destination": "ads/MyWorkspace_wrk/data/cell_2.ds",
+      "bytes": 96768,
+      "source_sha256": "2539343f95404876f6d58c546365d6a468942249203881f0c4d402fc60099086",
+      "copied_sha256": "2539343f95404876f6d58c546365d6a468942249203881f0c4d402fc60099086",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\cell_2_data\\logFile.txt",
+      "destination": "ads/MyWorkspace_wrk/data/cell_2_data/logFile.txt",
+      "bytes": 752,
+      "source_sha256": "2bf841699ade15db9622ba1fad3c2175d718c69d1c95eda8da0aad1d7d267511",
+      "copied_sha256": "2bf841699ade15db9622ba1fad3c2175d718c69d1c95eda8da0aad1d7d267511",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\dc_annotation\\%My%Library_lib_cell_1_schematic\\annotation_1.xml",
+      "destination": "ads/MyWorkspace_wrk/data/dc_annotation/%My%Library_lib_cell_1_schematic/annotation_1.xml",
+      "bytes": 1611,
+      "source_sha256": "f1894fe953fa87b7986b1cab339487e04eb6fdcb4184831873254506e8eddeaf",
+      "copied_sha256": "f1894fe953fa87b7986b1cab339487e04eb6fdcb4184831873254506e8eddeaf",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\dc_annotation\\%My%Library_lib_cell_1_schematic\\annotation_map.xml",
+      "destination": "ads/MyWorkspace_wrk/data/dc_annotation/%My%Library_lib_cell_1_schematic/annotation_map.xml",
+      "bytes": 270,
+      "source_sha256": "2d4e33118050ae1027127f82fafe13b02ec5a18af7894de1b14bb340d3273dd9",
+      "copied_sha256": "2d4e33118050ae1027127f82fafe13b02ec5a18af7894de1b14bb340d3273dd9",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\RX_BAT54_LoadSweep_20261009.ds",
+      "destination": "ads/MyWorkspace_wrk/data/RX_BAT54_LoadSweep_20261009.ds",
+      "bytes": 346624,
+      "source_sha256": "b082e5189d523a27c471d4d3a7a96fc5539ef41e3293c2dec9f08a4ec9963fa7",
+      "copied_sha256": "b082e5189d523a27c471d4d3a7a96fc5539ef41e3293c2dec9f08a4ec9963fa7",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\s11dad.csv",
+      "destination": "ads/MyWorkspace_wrk/data/s11dad.csv",
+      "bytes": 13295,
+      "source_sha256": "895dd0a90f9d94095f5cecad84ad16e679edcc0b142417bdfaadc913b5990673",
+      "copied_sha256": "895dd0a90f9d94095f5cecad84ad16e679edcc0b142417bdfaadc913b5990673",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\dds.cfg",
+      "destination": "ads/MyWorkspace_wrk/dds.cfg",
+      "bytes": 218,
+      "source_sha256": "02f2a0c5ce2bc2cc93e1b08ec3e654d90df26a03d0f869b1d5866851945f09a8",
+      "copied_sha256": "02f2a0c5ce2bc2cc93e1b08ec3e654d90df26a03d0f869b1d5866851945f09a8",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\de_sim.cfg",
+      "destination": "ads/MyWorkspace_wrk/de_sim.cfg",
+      "bytes": 725,
+      "source_sha256": "3513ae4e11996eba833e5ec3a68205d826b2bef9e35f7cd9b5d5a69595ba83eb",
+      "copied_sha256": "3513ae4e11996eba833e5ec3a68205d826b2bef9e35f7cd9b5d5a69595ba83eb",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\hpeesofsim.cfg",
+      "destination": "ads/MyWorkspace_wrk/hpeesofsim.cfg",
+      "bytes": 377,
+      "source_sha256": "f059202b46ca7cda110ccb27d3e9d08dc01639a9f440257673b86a49256c17b6",
+      "copied_sha256": "f059202b46ca7cda110ccb27d3e9d08dc01639a9f440257673b86a49256c17b6",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\layout.prf",
+      "destination": "ads/MyWorkspace_wrk/layout.prf",
+      "bytes": 4158,
+      "source_sha256": "8e919b09bb4a23817a068c524dfe37a0d3469ca28ab82a3e40512a15f60e85ba",
+      "copied_sha256": "8e919b09bb4a23817a068c524dfe37a0d3469ca28ab82a3e40512a15f60e85ba",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\lib.defs",
+      "destination": "ads/MyWorkspace_wrk/lib.defs",
+      "bytes": 117,
+      "source_sha256": "038be54299efc7607997006ad1e6a2d7acf6e2d14df1ba149028705902608b04",
+      "copied_sha256": "038be54299efc7607997006ad1e6a2d7acf6e2d14df1ba149028705902608b04",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%B%A%T54_%Load%Sweep_20261009\\schematic\\master.tag",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/%R%X_%B%A%T54_%Load%Sweep_20261009/schematic/master.tag",
+      "bytes": 35,
+      "source_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copied_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%B%A%T54_%Load%Sweep_20261009\\schematic\\sch.oa",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/%R%X_%B%A%T54_%Load%Sweep_20261009/schematic/sch.oa",
+      "bytes": 66444,
+      "source_sha256": "48b6db429034635d509473bafdb5f7d206d576e1b04f181e0a39d3059b63103b",
+      "copied_sha256": "48b6db429034635d509473bafdb5f7d206d576e1b04f181e0a39d3059b63103b",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%Charger%Load_20261009\\schematic\\master.tag",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/%R%X_%Charger%Load_20261009/schematic/master.tag",
+      "bytes": 35,
+      "source_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copied_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%Charger%Load_20261009\\schematic\\sch.oa",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/%R%X_%Charger%Load_20261009/schematic/sch.oa",
+      "bytes": 72444,
+      "source_sha256": "1449738887ee67a0c4343db0308a32c963c457a491d3b8fd6a6d0c1b1166b248",
+      "copied_sha256": "1449738887ee67a0c4343db0308a32c963c457a491d3b8fd6a6d0c1b1166b248",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%Load%Sweep_20261009\\schematic\\master.tag",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/%R%X_%Load%Sweep_20261009/schematic/master.tag",
+      "bytes": 35,
+      "source_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copied_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\%R%X_%Load%Sweep_20261009\\schematic\\sch.oa",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/%R%X_%Load%Sweep_20261009/schematic/sch.oa",
+      "bytes": 67588,
+      "source_sha256": "31a3a1dea789b6b4c96826bd3368671c6e75af07568aee931cdb514ad26c345d",
+      "copied_sha256": "31a3a1dea789b6b4c96826bd3368671c6e75af07568aee931cdb514ad26c345d",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\.oalib",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/.oalib",
+      "bytes": 151,
+      "source_sha256": "a903013ae7eec72ea11bcd0b2cefb4d719160a783dd44bfed0e418516a28ff8e",
+      "copied_sha256": "a903013ae7eec72ea11bcd0b2cefb4d719160a783dd44bfed0e418516a28ff8e",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\cdsinfo.tag",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/cdsinfo.tag",
+      "bytes": 782,
+      "source_sha256": "7c2382099db60a5670ba95feaa157041ab0d5ee85a621217abc98cf7a414fff5",
+      "copied_sha256": "7c2382099db60a5670ba95feaa157041ab0d5ee85a621217abc98cf7a414fff5",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\cell_1\\schematic\\master.tag",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/cell_1/schematic/master.tag",
+      "bytes": 35,
+      "source_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copied_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\cell_1\\schematic\\sch.oa",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/cell_1/schematic/sch.oa",
+      "bytes": 64148,
+      "source_sha256": "b68eb23f7db0625bd8e18c6b21e31c6d6f7abed9c2ff6dee5c7c2f9d216d3749",
+      "copied_sha256": "b68eb23f7db0625bd8e18c6b21e31c6d6f7abed9c2ff6dee5c7c2f9d216d3749",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\cell_2\\schematic\\master.tag",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/cell_2/schematic/master.tag",
+      "bytes": 35,
+      "source_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copied_sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\cell_2\\schematic\\sch.oa",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/cell_2/schematic/sch.oa",
+      "bytes": 39948,
+      "source_sha256": "43b3e9444cd944fc927b75e39c2351adacc60ad58018be05f483a7c414b91de5",
+      "copied_sha256": "43b3e9444cd944fc927b75e39c2351adacc60ad58018be05f483a7c414b91de5",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\libRefs.json",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/libRefs.json",
+      "bytes": 1276,
+      "source_sha256": "bbf13fd26c8fcd26060a28cc34cd19d01d2137fba36d1178ad471b798bf7df1d",
+      "copied_sha256": "bbf13fd26c8fcd26060a28cc34cd19d01d2137fba36d1178ad471b798bf7df1d",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\schematic.prf",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/schematic.prf",
+      "bytes": 408,
+      "source_sha256": "658db15e8695312f4bf7a46de529b6552121d2f19dac14c8c7452c09db338e2a",
+      "copied_sha256": "658db15e8695312f4bf7a46de529b6552121d2f19dac14c8c7452c09db338e2a",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\tech.db",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib/tech.db",
+      "bytes": 10900,
+      "source_sha256": "566cec78d53a487f590b69211e9373110c934e89fc4ad0f2fb6a0635578309d3",
+      "copied_sha256": "566cec78d53a487f590b69211e9373110c934e89fc4ad0f2fb6a0635578309d3",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib_lay.prf",
+      "destination": "ads/MyWorkspace_wrk/MyLibrary_lib_lay.prf",
+      "bytes": 460,
+      "source_sha256": "53b1457296cc356edd4a83d226de837e6e82e62b38a399b1cbaf15d8f10c4e0b",
+      "copied_sha256": "53b1457296cc356edd4a83d226de837e6e82e62b38a399b1cbaf15d8f10c4e0b",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\navigator.opt",
+      "destination": "ads/MyWorkspace_wrk/navigator.opt",
+      "bytes": 740,
+      "source_sha256": "7f33d6a567ed301db046078465ef4119c01f9ec757061bb23239014ca56264f2",
+      "copied_sha256": "7f33d6a567ed301db046078465ef4119c01f9ec757061bb23239014ca56264f2",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\netlist.log",
+      "destination": "ads/MyWorkspace_wrk/netlist.log",
+      "bytes": 2459,
+      "source_sha256": "4bc4bf1d417871bbad92baf9f5740e0e67a109c7a99d10bc1eaaa7abac6fba41",
+      "copied_sha256": "4bc4bf1d417871bbad92baf9f5740e0e67a109c7a99d10bc1eaaa7abac6fba41",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\saved.wrkstate",
+      "destination": "ads/MyWorkspace_wrk/saved.wrkstate",
+      "bytes": 470,
+      "source_sha256": "49c1d37cd5d4db8ca0de52af3a09c40d2795ecff02ccb50586ef58938debeb00",
+      "copied_sha256": "49c1d37cd5d4db8ca0de52af3a09c40d2795ecff02ccb50586ef58938debeb00",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\schematic.prf",
+      "destination": "ads/MyWorkspace_wrk/schematic.prf",
+      "bytes": 4105,
+      "source_sha256": "ca6357bb5b0dcfd205d67da96366d5b374175b48d3f2dd2d879fcb0da6bf0a5e",
+      "copied_sha256": "ca6357bb5b0dcfd205d67da96366d5b374175b48d3f2dd2d879fcb0da6bf0a5e",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\search_history.log",
+      "destination": "ads/MyWorkspace_wrk/search_history.log",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\simLog.gUTEdh",
+      "destination": "ads/MyWorkspace_wrk/simLog.gUTEdh",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\simLog.phNuam",
+      "destination": "ads/MyWorkspace_wrk/simLog.phNuam",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_verified": true
+    }
+  ],
+  "exclusions": [
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\MyLibrary_lib\\cell_1\\schematic\\sch.oa.cdslck",
+      "relative_path": "MyLibrary_lib/cell_1/schematic/sch.oa.cdslck",
+      "reason": "Machine/process lock; ADS recreates on opening"
+    }
+  ],
+  "total_included_bytes": 2577349936,
+  "note": "Original-copy hashes precede any documented relocation edits or large-dataset packaging."
+}

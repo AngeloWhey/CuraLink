@@ -1,0 +1,29 @@
+{
+  "retrieved_at_utc": "2026-10-02T13:20:55.856333+00:00",
+  "url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C20917",
+  "http_status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "https://www.lcsc.com",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+    "Access-Control-Max-Age": "60",
+    "Access-Control-Allow-Headers": "Origin,X-Requested-With,Content-Type,Accept,Referer,User-Agent,TOKEN,vendor-code,x-lc-accesstoken,x-lc-accesssharecode,x-lc-source",
+    "Access-Control-Expose-Headers": "x_web_cipher_pairs",
+    "x_web_cipher_pairs": "{\"decryptPrivateHexKey\":\"1e059c59c80656d28695df377bd1bc716d8bdda8f68af7226cf21c344517334f\",\"encryptPublicHexKey\":\"04603bc8f2a3624e996659f8d84cb0d60d844ca164c066c9184f53a9774f2cfab64d51a2925f1d0e63d9fd3ebf9bcccc98e72d2eb2ee085443ba175aba32912af6\",\"switchStatus\":\"yes\"}",
+    "From": "spw",
+    "J-Trace-UA": "ua:DjwdVTBx9AFrnP",
+    "J-Trace-ID": "19a6478b6a1745d28039733ed94ba10b",
+    "Strict-Transport-Security": "max-age=15768000",
+    "Vary": "Accept-Encoding",
+    "Date": "Fri, 02 Oct 2026 13:20:56 GMT",
+    "Content-Length": "44132",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=153DEBA2C414F9DE1492802642D07334; Path=/; HttpOnly",
+    "Alt-Svc": "h3=\":443\"; ma=93600",
+    "Akamai-Cache-Status": "NotCacheable from child",
+    "Akamai-GRN": "0.563e8242.1790947256.dee8530"
+  },
+  "raw_sha256": "24ec2cd383db111f136b52e63e8e5c636b8a0444e8d73bef1afa394d74276986",
+  "raw_file": "procurement/raw-active-external-2026-10-02/C20917.json"
+}

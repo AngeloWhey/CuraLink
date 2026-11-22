@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-02",
+  "status": "Isolated proposal; canonical unchanged",
+  "source_snapshots": [
+    {
+      "source": "hardware/rev-a/signal-integrity/afe/canonical-afe.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/bias-study/canonical-afe.lib",
+      "sha256": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f"
+    },
+    {
+      "source": "hardware/rev-a/signal-integrity/afe/read_ltspice_raw.py",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/bias-study/read_ltspice_raw.py",
+      "sha256": "14c51be0e08a47dee7d1f28436aa12c79d565815d1b4e9ab1aa987329402b67b"
+    },
+    {
+      "source": "hardware/rev-a/signal-integrity/afe/models/model-provenance.json",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/bias-study/models/model-provenance.json",
+      "sha256": "a4b41ae16f8cf84f8e20b2494cda558c3314e39e1a07909d735323d4e7fb1fb6"
+    },
+    {
+      "source": "hardware/rev-a/signal-integrity/afe/models/tlv9002-namespaced.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/bias-study/models/tlv9002-namespaced.lib",
+      "sha256": "22a5c4569fafceb2559ba048d2a2b3035059513988a9c1a2f0688630263cb66d"
+    },
+    {
+      "source": "hardware/rev-a/signal-integrity/afe/models/tlv9002-original.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/bias-study/models/tlv9002-original.lib",
+      "sha256": "8d482d075395aa6d995354f6289f819120ba66126c88c23fb1113b8c14a81b18"
+    },
+    {
+      "source": "hardware/rev-a/signal-integrity/afe/models/tlv9052-namespaced.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/bias-study/models/tlv9052-namespaced.lib",
+      "sha256": "21aa0f220b73bef615f2431e9b5f24606d618121215f766240b6bd29cabeab8e"
+    },
+    {
+      "source": "hardware/rev-a/signal-integrity/afe/models/tlv9052-original.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/bias-study/models/tlv9052-original.lib",
+      "sha256": "234eb546abe7ff88937387ecfe430014c9d4d6490cb4c56014f650d21b7376f4"
+    }
+  ],
+  "cases": {
+    "shared47": {
+      "isolation_resistor_ohm": 47,
+      "split": false,
+      "library_sha256": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f"
+    },
+    "shared4R7": {
+      "isolation_resistor_ohm": 4.7,
+      "split": false,
+      "library_sha256": "f49a48e32f260c4bb2198bb81d97c0ad5ee18c245758436b001c740b086fcf40"
+    },
+    "split47": {
+      "isolation_resistor_ohm": 47,
+      "split": true,
+      "library_sha256": "5f5b35b055d7c4706413ee627d48715bf614e5a17333f3aa5113bab3c8acb247"
+    }
+  },
+  "fixture": "Original 8-channel + REF, 36 amplifiers, 3V ideal supply, 27C; all source resistors47k, FFC20pF+trace2pF+ESD0.5pF assumptions; only CH1 AC1",
+  "split_mapping": {
+    "U109B": "VMID quiet preamp + REF + difference balance",
+    "U109C": "VMID_LP1 first low-pass shunt capacitors and feedback-ground resistors",
+    "U109D": "VMID_LP2 second low-pass shunt capacitors and feedback-ground resistors"
+  },
+  "limits": [
+    "Family models omit quad-package coupling and thermal interaction",
+    "No PCB parasitic extraction; no tolerance/PVT/stability certification",
+    "AC improvement alone does not qualify new isolation/load topology"
+  ]
+}

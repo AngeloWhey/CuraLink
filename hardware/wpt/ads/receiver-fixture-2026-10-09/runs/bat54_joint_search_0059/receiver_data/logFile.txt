@@ -1,0 +1,145 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 17:00:21 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\bat54_joint_search_0059"
+      Process ID: 27280
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+HB HB1[1] <receiver.ckt>
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 360.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	184.455 kA  	100.0             
+1.0 	3.42951 kA  	100.0	2.0628 V     
+1.1 	2.42679 kA  	100.0	1.32509 V    
+1.2*	1.92542 kA  	100.0	289.226 mV   
+2.0 	803.54 A    	100.0	333.962 mV   
+2.1 	610.043 A   	100.0	269.205 mV   
+2.2 	514.397 A   	100.0	237.857 mV   
+2.3 	456.597 A   	100.0	218.061 mV   
+2.4*	417.845 A   	100.0	3.23551 V    
+3.0 	268.958 A   	100.0	1.44545 V    
+3.1 	232.152 A   	100.0	1.25047 V    
+3.2 	197.932 A   	100.0	1.05737 V    
+3.3 	163.496 A   	100.0	858.228 mV   
+3.4 	128.304 A   	100.0	649.987 mV   
+3.5 	91.6577 A   	100.0	431.897 mV   
+3.6 	51.3213 A   	100.0	1.48342 kV   
+        Samanskii-Newton iteration failed
+3.7*	51.3213 A   	100.0	1.8454 V     
+4.0 	10.7701 A   	100.0	1.18801 V    
+4.1 	7.82022 A   	100.0	626.202 mV   
+4.2 	6.2628 A    	100.0	329.106 mV   
+4.3 	5.27838 A   	100.0	170.763 mV   
+4.4 	4.59394 A   	100.0	86.3591 mV   
+4.5 	4.08885 A   	100.0	41.4424 mV   
+4.6 	3.71765 A   	100.0	26.8267 mV   
+4.7 	3.42938 A   	100.0	20.7602 mV   
+4.8 	3.19632 A   	100.0	18.5329 mV   
+4.9 	3.00421 A   	100.0	18.0598 mV   
+4.10 	2.84332 A   	100.0	17.7497 mV   
+4.11 	2.70678 A   	100.0	17.6296 mV   
+4.12 	2.5896 A    	100.0	17.4722 mV   
+4.13*	2.49039 A   	100.0	7.13293 V    
+5.0*	2.49039 A   	  6.2	7.13293 V    
+6.0*	2.3466 A    	 12.5	585.771 mV   
+7.0*	2.11246 A   	 25.0	3.36312 V    
+8.0*	1.8329 A    	 25.0	5.56695 V    
+9.0*	1.46695 A   	 50.0	5.4189 V     
+10.0*	907.66 mA   	100.0	2.8104 V     
+11.0 	802.793 mA  	100.0	586.645 mV   
+11.1*	663.783 mA  	 25.0	2.36354 V    
+12.0*	561.679 mA  	 50.0	1.56721 V    
+13.0*	312.139 mA  	100.0	808.401 mV   
+14.0 	107.578 mA  	100.0	42.7237 mV   
+14.1 	58.4235 mA  	100.0	17.746 mV    
+14.2 	35.818 mA   	100.0	11.2542 mV   
+14.3 	23.5127 mA  	100.0	8.52475 mV   
+14.4 	16.4276 mA  	100.0	6.84055 mV   
+14.5 	12.2683 mA  	100.0	5.70087 mV   
+14.6*	9.58022 mA  	100.0	40.3716 mV   
+15.0 	2.67909 mA  	100.0	14.1408 mV   
+15.1 	1.84494 mA  	100.0	9.73684 mV   
+15.2 	1.43547 mA  	100.0	7.54646 mV   
+15.3 	1.18419 mA  	100.0	6.20747 mV   
+15.4 	1.01266 mA  	100.0	5.29614 mV   
+15.5 	887.514 uA  	100.0	4.63276 mV   
+15.6 	791.904 uA  	100.0	4.12689 mV   
+15.7*	716.336 uA  	100.0	41.3355 mV   
+16.0 	290.756 uA  	100.0	16.4033 mV   
+16.1 	215.41 uA   	100.0	12.0654 mV   
+16.2 	177.222 uA  	100.0	9.88003 mV   
+16.3 	153.519 uA  	100.0	8.5266 mV    
+16.4 	137.16 uA   	100.0	7.59351 mV   
+16.5 	125.081 uA  	100.0	6.90501 mV   
+16.6 	115.727 uA  	100.0	6.37217 mV   
+16.7 	108.223 uA  	100.0	5.94485 mV   
+16.8 	102.035 uA  	100.0	5.59245 mV   
+16.9 	96.8148 uA  	100.0	5.29524 mV   
+16.10 	92.3275 uA  	100.0	5.03985 mV   
+16.11*	88.4092 uA  	100.0	115.895 mV   
+17.0 	74.5092 uA  	100.0	43.734 mV    
+17.1 	58.6565 uA  	100.0	23.0295 mV   
+17.2 	37.2649 uA  	100.0	12.3843 mV   
+17.3 	21.8088 uA  	100.0	6.68976 mV   
+17.4 	12.2863 uA  	100.0	3.61795 mV   
+17.5 	6.79084 uA  	100.0	1.95724 mV   
+17.6 	3.71622 uA  	100.0	1.0589 mV    
+17.7 	2.02294 uA  	100.0	572.888 uV   
+17.8 	1.09808 uA  	100.0	309.944 uV   
+17.9 	595.141 nA  	100.0	167.685 uV   
+17.10 	322.292 nA  	100.0	90.7202 uV   
+17.11 	174.455 nA  	100.0	49.0809 uV   
+17.12 	94.4095 nA  	100.0	26.5535 uV   
+17.13*	51.0846 nA  	100.0	31.2989 uV   
+18.0 	3.86237 pA  	100.0	16.0888 pV   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+DIODE4.a                1.114e-03       >       3.099e-06
+DIODE2.a                1.114e-03       >       3.099e-06
+DIODE3.a                8.951e-04       >       1.031e-06
+DIODE1.a                8.951e-04       >       1.031e-06
+IMPin                   4.801e-04       >       3.130e-06
+
+o Number of waveforms violating the HB truncation error check:
+        6 out of 7 waveforms.
+o Estimated max HB truncation error: 1.114e-03 @ waveform DIODE4.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 3.099e-06 for this waveform.
+o A time-domain plot of the DCout waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     1.77 seconds.
+    Simulation stopwatch time =     0.40 seconds.
+    Total stopwatch time      =     1.78 seconds.
+
+    Memory used:  108 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

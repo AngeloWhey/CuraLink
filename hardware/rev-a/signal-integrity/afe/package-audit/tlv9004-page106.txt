@@ -1,0 +1,7 @@
+www.ti.com
+GENERIC PACKAGE VIEW
+This image is a representation of the package family, actual package may vary.
+Refer to the product data sheet for package details.
+X2QFN - 0.4 mm max heightRUC 14
+PLASTIC QUAD FLATPACK - NO LEAD2 x 2, 0.4 mm pitch
+4229871/A

@@ -1,0 +1,55 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 16:57:22 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\bat54_baseline_P26_R230_H7"
+      Process ID: 2028
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Circuit converged with at least one device's P-N junction current
+            exceeding the explosion current and junction has been linearized.
+            You may want to increase the explosion current in the device model or in
+            the Options (if the parameter is not given in the model) and resimulate.
+            You may need to increase Maximum number of warnings under Output tab
+            in Options to see which devices have been linearized.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Diode `DIODE4' explosion current exceeded.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Diode `DIODE1' explosion current exceeded.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Diode `DIODE3' explosion current exceeded.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Diode `DIODE2' explosion current exceeded.
+
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     1.97 seconds.
+    Simulation stopwatch time =     0.38 seconds.
+    Total stopwatch time      =     2.06 seconds.
+
+    Memory used:  108 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Fri Oct  9 16:57:23 2026
+
+Command line dataset name receiver

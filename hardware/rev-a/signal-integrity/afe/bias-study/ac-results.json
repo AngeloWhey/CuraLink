@@ -1,0 +1,1353 @@
+{
+  "status": "Nominal actual LTspice comparison; isolated candidates, no canonical change",
+  "review_level": "Parent-proposed <=1uVpp input-equivalent victim for 1mVpp aggressor; not an accepted system requirement",
+  "cases": {
+    "shared47": {
+      "description": "Original shared 47 \u03a9",
+      "op": {
+        "name": "shared47-op",
+        "exit_code": 0,
+        "plotname": "Operating Point",
+        "points": 1,
+        "completed_log": true,
+        "finite_results": true,
+        "simulator": "LTspice 26.0.2 for Windows",
+        "source_hashes": {
+          ".cir": "b77d56681fd240de2c32a225edeb2d783faa950614fbaacb902322c25fa62d98",
+          ".raw": "6d61fe6f3deb6a2ef8af344645da5c3a28128f16c8694f872e94fb8165406ab4",
+          ".log": "cbf2ae8b6606cd285ebc29723783f0fbac3f7c58873ef78f2592df7aa35de795"
+        }
+      },
+      "op_units": [
+        {
+          "unit": "XU101_1",
+          "plus_V": 1.500486238469828,
+          "minus_V": 1.500884541745412,
+          "out_V": 1.503767069514864,
+          "valid": true
+        },
+        {
+          "unit": "XU101_2",
+          "plus_V": 1.500486238469828,
+          "minus_V": 1.500884541745412,
+          "out_V": 1.503767069514864,
+          "valid": true
+        },
+        {
+          "unit": "XU101_3",
+          "plus_V": 1.500486238469828,
+          "minus_V": 1.500884541745412,
+          "out_V": 1.503767069514864,
+          "valid": true
+        },
+        {
+          "unit": "XU101_4",
+          "plus_V": 1.500486238469828,
+          "minus_V": 1.500884541745412,
+          "out_V": 1.503767069514864,
+          "valid": true
+        },
+        {
+          "unit": "XU102_1",
+          "plus_V": 1.500486238469828,
+          "minus_V": 1.500884541745412,
+          "out_V": 1.503767069514864,
+          "valid": true
+        },
+        {
+          "unit": "XU102_2",
+          "plus_V": 1.500486238469828,
+          "minus_V": 1.500884541745412,
+          "out_V": 1.503767069514864,
+          "valid": true
+        },
+        {
+          "unit": "XU102_3",
+          "plus_V": 1.500486238469828,
+          "minus_V": 1.500884541745412,
+          "out_V": 1.503767069514864,
+          "valid": true
+        },
+        {
+          "unit": "XU102_4",
+          "plus_V": 1.500486238469828,
+          "minus_V": 1.500884541745412,
+          "out_V": 1.503767069514864,
+          "valid": true
+        },
+        {
+          "unit": "XU103_1",
+          "plus_V": 1.500587196633909,
+          "minus_V": 1.500985518139308,
+          "out_V": 1.500990981099031,
+          "valid": true
+        },
+        {
+          "unit": "XU103_2",
+          "plus_V": 1.500587196633909,
+          "minus_V": 1.500985518139308,
+          "out_V": 1.500990981099031,
+          "valid": true
+        },
+        {
+          "unit": "XU103_3",
+          "plus_V": 1.500587196633909,
+          "minus_V": 1.500985518139308,
+          "out_V": 1.500990981099031,
+          "valid": true
+        },
+        {
+          "unit": "XU103_4",
+          "plus_V": 1.500587196633909,
+          "minus_V": 1.500985518139308,
+          "out_V": 1.500990981099031,
+          "valid": true
+        },
+        {
+          "unit": "XU104_1",
+          "plus_V": 1.500587196633909,
+          "minus_V": 1.500985518139308,
+          "out_V": 1.500990981099031,
+          "valid": true
+        },
+        {
+          "unit": "XU104_2",
+          "plus_V": 1.500587196633909,
+          "minus_V": 1.500985518139308,
+          "out_V": 1.500990981099031,
+          "valid": true
+        },
+        {
+          "unit": "XU104_3",
+          "plus_V": 1.500587196633909,
+          "minus_V": 1.500985518139308,
+          "out_V": 1.500990981099031,
+          "valid": true
+        },
+        {
+          "unit": "XU104_4",
+          "plus_V": 1.500587196633909,
+          "minus_V": 1.500985518139308,
+          "out_V": 1.500990981099031,
+          "valid": true
+        },
+        {
+          "unit": "XU105_1",
+          "plus_V": 1.500990754875086,
+          "minus_V": 1.501389136589793,
+          "out_V": 1.501508067792748,
+          "valid": true
+        },
+        {
+          "unit": "XU105_2",
+          "plus_V": 1.500990754875086,
+          "minus_V": 1.501389136589793,
+          "out_V": 1.501508067792748,
+          "valid": true
+        },
+        {
+          "unit": "XU105_3",
+          "plus_V": 1.500990754875086,
+          "minus_V": 1.501389136589793,
+          "out_V": 1.501508067792748,
+          "valid": true
+        },
+        {
+          "unit": "XU105_4",
+          "plus_V": 1.500990754875086,
+          "minus_V": 1.501389136589793,
+          "out_V": 1.501508067792748,
+          "valid": true
+        },
+        {
+          "unit": "XU106_1",
+          "plus_V": 1.500990754875086,
+          "minus_V": 1.501389136589793,
+          "out_V": 1.501508067792748,
+          "valid": true
+        },
+        {
+          "unit": "XU106_2",
+          "plus_V": 1.500990754875086,
+          "minus_V": 1.501389136589793,
+          "out_V": 1.501508067792748,
+          "valid": true
+        },
+        {
+          "unit": "XU106_3",
+          "plus_V": 1.500990754875086,
+          "minus_V": 1.501389136589793,
+          "out_V": 1.501508067792748,
+          "valid": true
+        },
+        {
+          "unit": "XU106_4",
+          "plus_V": 1.500990754875086,
+          "minus_V": 1.501389136589793,
+          "out_V": 1.501508067792748,
+          "valid": true
+        },
+        {
+          "unit": "XU107_1",
+          "plus_V": 1.501507977051911,
+          "minus_V": 1.501830086864087,
+          "out_V": 1.503360005042647,
+          "valid": true
+        },
+        {
+          "unit": "XU107_2",
+          "plus_V": 1.501507977051911,
+          "minus_V": 1.501830086864087,
+          "out_V": 1.503360005042647,
+          "valid": true
+        },
+        {
+          "unit": "XU107_3",
+          "plus_V": 1.501507977051911,
+          "minus_V": 1.501830086864087,
+          "out_V": 1.503360005042647,
+          "valid": true
+        },
+        {
+          "unit": "XU107_4",
+          "plus_V": 1.501507977051911,
+          "minus_V": 1.501830086864087,
+          "out_V": 1.503360005042647,
+          "valid": true
+        },
+        {
+          "unit": "XU108_1",
+          "plus_V": 1.501507977051911,
+          "minus_V": 1.501830086864087,
+          "out_V": 1.503360005042647,
+          "valid": true
+        },
+        {
+          "unit": "XU108_2",
+          "plus_V": 1.501507977051911,
+          "minus_V": 1.501830086864087,
+          "out_V": 1.503360005042647,
+          "valid": true
+        },
+        {
+          "unit": "XU108_3",
+          "plus_V": 1.501507977051911,
+          "minus_V": 1.501830086864087,
+          "out_V": 1.503360005042647,
+          "valid": true
+        },
+        {
+          "unit": "XU108_4",
+          "plus_V": 1.501507977051911,
+          "minus_V": 1.501830086864087,
+          "out_V": 1.503360005042647,
+          "valid": true
+        },
+        {
+          "unit": "XU109_1",
+          "plus_V": 1.500486238469828,
+          "minus_V": 1.500884541745412,
+          "out_V": 1.503767069514864,
+          "valid": true
+        },
+        {
+          "unit": "XU109_2",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398164670742,
+          "out_V": 1.500398164670742,
+          "valid": true
+        },
+        {
+          "unit": "XU109_3",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398158570248,
+          "out_V": 1.500398158570248,
+          "valid": true
+        },
+        {
+          "unit": "XU109_4",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398158570248,
+          "out_V": 1.500398158570248,
+          "valid": true
+        }
+      ],
+      "op_supply_current_mA": 4.4742160363897945,
+      "ac": {
+        "name": "shared47-ac",
+        "exit_code": 0,
+        "plotname": "AC Analysis",
+        "points": 138,
+        "completed_log": true,
+        "finite_results": true,
+        "simulator": "LTspice 26.0.2 for Windows",
+        "source_hashes": {
+          ".cir": "53db1ab9752ddaa88f2bc19f972d7de1b787ac28b77104b2c4b969ea61015d1d",
+          ".raw": "4b01228e56881ea0ce8c9a613939e140df2f5ef0abcd3961a6e0adec7e6e4e99",
+          ".log": "973ac9892f614048f843761d9f7126335e602bba4217d6496cbb2327914511d1"
+        }
+      },
+      "table": [
+        {
+          "frequency_Hz": 300,
+          "aggressor_V_per_V": 702.5126988585462,
+          "victim_V_per_V": 1.72023046515497,
+          "quiet_VMID_V_per_V": 1.827566780647761,
+          "ratio_dB": -52.22135088762644,
+          "victim_input_equivalent_uVpp_for_1mVpp": 2.448682376774154,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.4897364753548307
+        },
+        {
+          "frequency_Hz": 1000,
+          "aggressor_V_per_V": 969.565917719732,
+          "victim_V_per_V": 1.622773501913577,
+          "quiet_VMID_V_per_V": 1.8871062387167823,
+          "ratio_dB": -55.52638866364347,
+          "victim_input_equivalent_uVpp_for_1mVpp": 1.6737113715074547,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.33474227430149095
+        },
+        {
+          "frequency_Hz": 3000,
+          "aggressor_V_per_V": 1006.1651096803162,
+          "victim_V_per_V": 0.5783921322318882,
+          "quiet_VMID_V_per_V": 0.851818435657308,
+          "ratio_dB": -64.80893753458128,
+          "victim_input_equivalent_uVpp_for_1mVpp": 0.5748481304580894,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.11496962609161789
+        },
+        {
+          "frequency_Hz": 7000,
+          "aggressor_V_per_V": 704.7928797330452,
+          "victim_V_per_V": 0.2534925955655904,
+          "quiet_VMID_V_per_V": 0.20446429522301798,
+          "ratio_dB": -68.88192459298409,
+          "victim_input_equivalent_uVpp_for_1mVpp": 0.3596696318237578,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.07193392636475156
+        }
+      ],
+      "worst_case": {
+        "frequency_Hz": 300.0,
+        "ratio_dB": -52.22135088762644,
+        "victim_input_equivalent_uVpp_for_1mVpp": 2.448682376774154,
+        "victim_input_equivalent_uVpp_for_200uVpp": 0.4897364753548307,
+        "passes_proposed_single_aggressor_minus60dB_review": false
+      },
+      "other_victim_symmetry_max_V_per_V_delta": 1.0598680132295179e-06
+    },
+    "shared4R7": {
+      "description": "Shared 4.7 \u03a9 candidate",
+      "op": {
+        "name": "shared4R7-op",
+        "exit_code": 0,
+        "plotname": "Operating Point",
+        "points": 1,
+        "completed_log": true,
+        "finite_results": true,
+        "simulator": "LTspice 26.0.2 for Windows",
+        "source_hashes": {
+          ".cir": "3d0473c00560755e7bffe0464412b2d1b7f35a7a7b83220197c878f6c546aad1",
+          ".raw": "44d3928686e1abbee0d3923215791b2601ed93b01b5913a83efc7e3a1d868b60",
+          ".log": "8713c9e1546b777cd319e8b6436df23977e990a68a476f7e53a08bec611eea52"
+        }
+      },
+      "op_units": [
+        {
+          "unit": "XU101_1",
+          "plus_V": 1.500307942772738,
+          "minus_V": 1.500706219349733,
+          "out_V": 1.50358867624965,
+          "valid": true
+        },
+        {
+          "unit": "XU101_2",
+          "plus_V": 1.500307942772738,
+          "minus_V": 1.500706219349733,
+          "out_V": 1.50358867624965,
+          "valid": true
+        },
+        {
+          "unit": "XU101_3",
+          "plus_V": 1.500307942772738,
+          "minus_V": 1.500706219349733,
+          "out_V": 1.50358867624965,
+          "valid": true
+        },
+        {
+          "unit": "XU101_4",
+          "plus_V": 1.500307942772738,
+          "minus_V": 1.500706219349733,
+          "out_V": 1.50358867624965,
+          "valid": true
+        },
+        {
+          "unit": "XU102_1",
+          "plus_V": 1.500307942772738,
+          "minus_V": 1.500706219349733,
+          "out_V": 1.50358867624965,
+          "valid": true
+        },
+        {
+          "unit": "XU102_2",
+          "plus_V": 1.500307942772738,
+          "minus_V": 1.500706219349733,
+          "out_V": 1.50358867624965,
+          "valid": true
+        },
+        {
+          "unit": "XU102_3",
+          "plus_V": 1.500307942772738,
+          "minus_V": 1.500706219349733,
+          "out_V": 1.50358867624965,
+          "valid": true
+        },
+        {
+          "unit": "XU102_4",
+          "plus_V": 1.500307942772738,
+          "minus_V": 1.500706219349733,
+          "out_V": 1.50358867624965,
+          "valid": true
+        },
+        {
+          "unit": "XU103_1",
+          "plus_V": 1.500408882945163,
+          "minus_V": 1.500807177749204,
+          "out_V": 1.500812639087814,
+          "valid": true
+        },
+        {
+          "unit": "XU103_2",
+          "plus_V": 1.500408882945163,
+          "minus_V": 1.500807177749204,
+          "out_V": 1.500812639087814,
+          "valid": true
+        },
+        {
+          "unit": "XU103_3",
+          "plus_V": 1.500408882945163,
+          "minus_V": 1.500807177749204,
+          "out_V": 1.500812639087814,
+          "valid": true
+        },
+        {
+          "unit": "XU103_4",
+          "plus_V": 1.500408882945163,
+          "minus_V": 1.500807177749204,
+          "out_V": 1.500812639087814,
+          "valid": true
+        },
+        {
+          "unit": "XU104_1",
+          "plus_V": 1.500408882945163,
+          "minus_V": 1.500807177749204,
+          "out_V": 1.500812639087814,
+          "valid": true
+        },
+        {
+          "unit": "XU104_2",
+          "plus_V": 1.500408882945163,
+          "minus_V": 1.500807177749204,
+          "out_V": 1.500812639087814,
+          "valid": true
+        },
+        {
+          "unit": "XU104_3",
+          "plus_V": 1.500408882945163,
+          "minus_V": 1.500807177749204,
+          "out_V": 1.500812639087814,
+          "valid": true
+        },
+        {
+          "unit": "XU104_4",
+          "plus_V": 1.500408882945163,
+          "minus_V": 1.500807177749204,
+          "out_V": 1.500812639087814,
+          "valid": true
+        },
+        {
+          "unit": "XU105_1",
+          "plus_V": 1.500812412904174,
+          "minus_V": 1.501210767913302,
+          "out_V": 1.501329691109888,
+          "valid": true
+        },
+        {
+          "unit": "XU105_2",
+          "plus_V": 1.500812412904174,
+          "minus_V": 1.501210767913302,
+          "out_V": 1.501329691109888,
+          "valid": true
+        },
+        {
+          "unit": "XU105_3",
+          "plus_V": 1.500812412904174,
+          "minus_V": 1.501210767913302,
+          "out_V": 1.501329691109888,
+          "valid": true
+        },
+        {
+          "unit": "XU105_4",
+          "plus_V": 1.500812412904174,
+          "minus_V": 1.501210767913302,
+          "out_V": 1.501329691109888,
+          "valid": true
+        },
+        {
+          "unit": "XU106_1",
+          "plus_V": 1.500812412904174,
+          "minus_V": 1.501210767913302,
+          "out_V": 1.501329691109888,
+          "valid": true
+        },
+        {
+          "unit": "XU106_2",
+          "plus_V": 1.500812412904174,
+          "minus_V": 1.501210767913302,
+          "out_V": 1.501329691109888,
+          "valid": true
+        },
+        {
+          "unit": "XU106_3",
+          "plus_V": 1.500812412904174,
+          "minus_V": 1.501210767913302,
+          "out_V": 1.501329691109888,
+          "valid": true
+        },
+        {
+          "unit": "XU106_4",
+          "plus_V": 1.500812412904174,
+          "minus_V": 1.501210767913302,
+          "out_V": 1.501329691109888,
+          "valid": true
+        },
+        {
+          "unit": "XU107_1",
+          "plus_V": 1.501329600409364,
+          "minus_V": 1.501651708488525,
+          "out_V": 1.503181548454254,
+          "valid": true
+        },
+        {
+          "unit": "XU107_2",
+          "plus_V": 1.501329600409364,
+          "minus_V": 1.501651708488525,
+          "out_V": 1.503181548454254,
+          "valid": true
+        },
+        {
+          "unit": "XU107_3",
+          "plus_V": 1.501329600409364,
+          "minus_V": 1.501651708488525,
+          "out_V": 1.503181548454254,
+          "valid": true
+        },
+        {
+          "unit": "XU107_4",
+          "plus_V": 1.501329600409364,
+          "minus_V": 1.501651708488525,
+          "out_V": 1.503181548454254,
+          "valid": true
+        },
+        {
+          "unit": "XU108_1",
+          "plus_V": 1.501329600409364,
+          "minus_V": 1.501651708488525,
+          "out_V": 1.503181548454254,
+          "valid": true
+        },
+        {
+          "unit": "XU108_2",
+          "plus_V": 1.501329600409364,
+          "minus_V": 1.501651708488525,
+          "out_V": 1.503181548454254,
+          "valid": true
+        },
+        {
+          "unit": "XU108_3",
+          "plus_V": 1.501329600409364,
+          "minus_V": 1.501651708488525,
+          "out_V": 1.503181548454254,
+          "valid": true
+        },
+        {
+          "unit": "XU108_4",
+          "plus_V": 1.501329600409364,
+          "minus_V": 1.501651708488525,
+          "out_V": 1.503181548454254,
+          "valid": true
+        },
+        {
+          "unit": "XU109_1",
+          "plus_V": 1.500307942772738,
+          "minus_V": 1.500706219349733,
+          "out_V": 1.50358867624965,
+          "valid": true
+        },
+        {
+          "unit": "XU109_2",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398164670514,
+          "out_V": 1.500398164670514,
+          "valid": true
+        },
+        {
+          "unit": "XU109_3",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398158570248,
+          "out_V": 1.500398158570248,
+          "valid": true
+        },
+        {
+          "unit": "XU109_4",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398158570248,
+          "out_V": 1.500398158570248,
+          "valid": true
+        }
+      ],
+      "op_supply_current_mA": 4.474215879437052,
+      "ac": {
+        "name": "shared4R7-ac",
+        "exit_code": 0,
+        "plotname": "AC Analysis",
+        "points": 138,
+        "completed_log": true,
+        "finite_results": true,
+        "simulator": "LTspice 26.0.2 for Windows",
+        "source_hashes": {
+          ".cir": "c1aa01324ca1c63320303e98f53f2314f6c20154aa100bbfa30252c0f233a70f",
+          ".raw": "3a1f26340615aaf38bf5fb3acd08e44b51a9ab8fc7624d86d8f4fe9faccc489c",
+          ".log": "c4b8181cae466f9d9f6fecd9ba610302b0e08be4080ce12021ff5b8af871dd10"
+        }
+      },
+      "table": [
+        {
+          "frequency_Hz": 300,
+          "aggressor_V_per_V": 701.1253244646571,
+          "victim_V_per_V": 0.24594305575997813,
+          "quiet_VMID_V_per_V": 0.26128905393462054,
+          "ratio_dB": -69.0992217860433,
+          "victim_input_equivalent_uVpp_for_1mVpp": 0.35078330104217453,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.0701566602084349
+        },
+        {
+          "frequency_Hz": 1000,
+          "aggressor_V_per_V": 968.6903391913053,
+          "victim_V_per_V": 0.32097124059002125,
+          "quiet_VMID_V_per_V": 0.37325597028201857,
+          "ratio_dB": -69.5943769534709,
+          "victim_input_equivalent_uVpp_for_1mVpp": 0.33134555760923423,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.06626911152184684
+        },
+        {
+          "frequency_Hz": 3000,
+          "aggressor_V_per_V": 1006.1095845492753,
+          "victim_V_per_V": 0.3382539902466597,
+          "quiet_VMID_V_per_V": 0.4980834059889178,
+          "ratio_dB": -69.4680471552418,
+          "victim_input_equivalent_uVpp_for_1mVpp": 0.3361999482374411,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.06723998964748822
+        },
+        {
+          "frequency_Hz": 7000,
+          "aggressor_V_per_V": 704.916553099127,
+          "victim_V_per_V": 0.39660196123119756,
+          "quiet_VMID_V_per_V": 0.31974939382059964,
+          "ratio_dB": -64.99565702890466,
+          "victim_input_equivalent_uVpp_for_1mVpp": 0.5626225678593569,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.11252451357187138
+        }
+      ],
+      "worst_case": {
+        "frequency_Hz": 6267.888392562092,
+        "ratio_dB": -64.4766215335465,
+        "victim_input_equivalent_uVpp_for_1mVpp": 0.5972675547913643,
+        "victim_input_equivalent_uVpp_for_200uVpp": 0.11945351095827286,
+        "passes_proposed_single_aggressor_minus60dB_review": true
+      },
+      "other_victim_symmetry_max_V_per_V_delta": 6.977209948507592e-06
+    },
+    "split47": {
+      "description": "Three 47 \u03a9 bias domains candidate",
+      "op": {
+        "name": "split47-op",
+        "exit_code": 0,
+        "plotname": "Operating Point",
+        "points": 1,
+        "completed_log": true,
+        "finite_results": true,
+        "simulator": "LTspice 26.0.2 for Windows",
+        "source_hashes": {
+          ".cir": "bb94eb41e6ff992f8488f578a19bb17148f0fdf8a5d2c91a3df777f4780a9dea",
+          ".raw": "ccb2eeba77fd8b579cb709a78fc9ff7df0cfb029c2aba22adc27f16929702068",
+          ".log": "f15f23acdb4dc672f7ca4e2f398ba4e02aa8c2596eb56699980c8c0a808c6ed8"
+        }
+      },
+      "op_units": [
+        {
+          "unit": "XU101_1",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU101_2",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU101_3",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU101_4",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU102_1",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU102_2",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU102_3",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU102_4",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU103_1",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU103_2",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU103_3",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU103_4",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU104_1",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU104_2",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU104_3",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU104_4",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU105_1",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908484947,
+          "out_V": 1.501445153100911,
+          "valid": true
+        },
+        {
+          "unit": "XU105_2",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908484947,
+          "out_V": 1.501445153100911,
+          "valid": true
+        },
+        {
+          "unit": "XU105_3",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908484947,
+          "out_V": 1.501445153100911,
+          "valid": true
+        },
+        {
+          "unit": "XU105_4",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908484947,
+          "out_V": 1.501445153100911,
+          "valid": true
+        },
+        {
+          "unit": "XU106_1",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908484947,
+          "out_V": 1.501445153100911,
+          "valid": true
+        },
+        {
+          "unit": "XU106_2",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908484947,
+          "out_V": 1.501445153100911,
+          "valid": true
+        },
+        {
+          "unit": "XU106_3",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908484947,
+          "out_V": 1.501445153100911,
+          "valid": true
+        },
+        {
+          "unit": "XU106_4",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908484947,
+          "out_V": 1.501445153100911,
+          "valid": true
+        },
+        {
+          "unit": "XU107_1",
+          "plus_V": 1.501445062374293,
+          "minus_V": 1.501767171535463,
+          "out_V": 1.50340324243242,
+          "valid": true
+        },
+        {
+          "unit": "XU107_2",
+          "plus_V": 1.501445062374293,
+          "minus_V": 1.501767171535463,
+          "out_V": 1.50340324243242,
+          "valid": true
+        },
+        {
+          "unit": "XU107_3",
+          "plus_V": 1.501445062374293,
+          "minus_V": 1.501767171535463,
+          "out_V": 1.50340324243242,
+          "valid": true
+        },
+        {
+          "unit": "XU107_4",
+          "plus_V": 1.501445062374293,
+          "minus_V": 1.501767171535463,
+          "out_V": 1.50340324243242,
+          "valid": true
+        },
+        {
+          "unit": "XU108_1",
+          "plus_V": 1.501445062374293,
+          "minus_V": 1.501767171535463,
+          "out_V": 1.50340324243242,
+          "valid": true
+        },
+        {
+          "unit": "XU108_2",
+          "plus_V": 1.501445062374293,
+          "minus_V": 1.501767171535463,
+          "out_V": 1.50340324243242,
+          "valid": true
+        },
+        {
+          "unit": "XU108_3",
+          "plus_V": 1.501445062374293,
+          "minus_V": 1.501767171535463,
+          "out_V": 1.50340324243242,
+          "valid": true
+        },
+        {
+          "unit": "XU108_4",
+          "plus_V": 1.501445062374293,
+          "minus_V": 1.501767171535463,
+          "out_V": 1.50340324243242,
+          "valid": true
+        },
+        {
+          "unit": "XU109_1",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU109_2",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398162324394,
+          "out_V": 1.500398162324394,
+          "valid": true
+        },
+        {
+          "unit": "XU109_3",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398159590906,
+          "out_V": 1.500398159590906,
+          "valid": true
+        },
+        {
+          "unit": "XU109_4",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398160097763,
+          "out_V": 1.500398160097763,
+          "valid": true
+        }
+      ],
+      "op_supply_current_mA": 4.474355493616612,
+      "ac": {
+        "name": "split47-ac",
+        "exit_code": 0,
+        "plotname": "AC Analysis",
+        "points": 138,
+        "completed_log": true,
+        "finite_results": true,
+        "simulator": "LTspice 26.0.2 for Windows",
+        "source_hashes": {
+          ".cir": "e205a1e045c29d0ec5d6f4b09dd1f84faa92cdb64d9b2fde205acc626835fa45",
+          ".raw": "fcae4c939dfd1f56499ef8f93033618681478390f7f10be829d03dc0cfd1c398",
+          ".log": "370b5967e238a3433d852876f477cc5c52a945cac55daec89089e31a6174f233"
+        }
+      },
+      "table": [
+        {
+          "frequency_Hz": 300,
+          "aggressor_V_per_V": 699.0778463558008,
+          "victim_V_per_V": 2.0968588089910605,
+          "quiet_VMID_V_per_V": 0.03163234049343051,
+          "ratio_dB": -50.459127024075165,
+          "victim_input_equivalent_uVpp_for_1mVpp": 2.999463965167405,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.599892793033481,
+          "VMID_LP1_V_per_V": 1.1455473564545997,
+          "VMID_LP2_V_per_V": 1.3141457863873949
+        },
+        {
+          "frequency_Hz": 1000,
+          "aggressor_V_per_V": 967.9533043376664,
+          "victim_V_per_V": 2.0319396556398504,
+          "quiet_VMID_V_per_V": 0.023788812066787575,
+          "ratio_dB": -53.55887201134364,
+          "victim_input_equivalent_uVpp_for_1mVpp": 2.099212479087748,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.4198424958175496,
+          "VMID_LP1_V_per_V": 1.0210530492628758,
+          "VMID_LP2_V_per_V": 1.1911068655685741
+        },
+        {
+          "frequency_Hz": 3000,
+          "aggressor_V_per_V": 1006.6823226374091,
+          "victim_V_per_V": 1.2646305502500328,
+          "quiet_VMID_V_per_V": 0.010828836104801105,
+          "ratio_dB": -58.01857546813535,
+          "victim_input_equivalent_uVpp_for_1mVpp": 1.2562359761486868,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.2512471952297373,
+          "VMID_LP1_V_per_V": 0.39048091539954,
+          "VMID_LP2_V_per_V": 0.5118310941304
+        },
+        {
+          "frequency_Hz": 7000,
+          "aggressor_V_per_V": 705.3878722213478,
+          "victim_V_per_V": 0.8502770384598107,
+          "quiet_VMID_V_per_V": 0.004841183940813581,
+          "ratio_dB": -58.37735074665703,
+          "victim_input_equivalent_uVpp_for_1mVpp": 1.205403540299311,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.2410807080598622,
+          "VMID_LP1_V_per_V": 0.1113693615451952,
+          "VMID_LP2_V_per_V": 0.169231402325768
+        }
+      ],
+      "worst_case": {
+        "frequency_Hz": 300.0,
+        "ratio_dB": -50.459127024075165,
+        "victim_input_equivalent_uVpp_for_1mVpp": 2.999463965167405,
+        "victim_input_equivalent_uVpp_for_200uVpp": 0.599892793033481,
+        "passes_proposed_single_aggressor_minus60dB_review": false
+      },
+      "other_victim_symmetry_max_V_per_V_delta": 1.5820059432162434e-08
+    },
+    "split4R7": {
+      "description": "Quiet 47 \u03a9; LP1/LP2 4.7 \u03a9 candidate",
+      "op": {
+        "name": "split4R7-op",
+        "exit_code": 0,
+        "plotname": "Operating Point",
+        "points": 1,
+        "completed_log": true,
+        "finite_results": true,
+        "simulator": "LTspice 26.0.2 for Windows",
+        "source_hashes": {
+          ".cir": "310a33b1d75e327cb224ed6cae41a0b86823d843a997c0a6d360a7698e694478",
+          ".raw": "fd669c8886a32c1ad208eac33f153bf3242e117b99a684110292a45a107e56a3",
+          ".log": "888fd6382c9c22a50892faa746ccdbf995d6c8ff5c276f304f5a0e42ebf806df"
+        }
+      },
+      "op_units": [
+        {
+          "unit": "XU101_1",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU101_2",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU101_3",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU101_4",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU102_1",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU102_2",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU102_3",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU102_4",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU103_1",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU103_2",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU103_3",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU103_4",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU104_1",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU104_2",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU104_3",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU104_4",
+          "plus_V": 1.500510992054083,
+          "minus_V": 1.500909302148323,
+          "out_V": 1.500914764415243,
+          "valid": true
+        },
+        {
+          "unit": "XU105_1",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908476469,
+          "out_V": 1.501449611328225,
+          "valid": true
+        },
+        {
+          "unit": "XU105_2",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908476469,
+          "out_V": 1.501449611328225,
+          "valid": true
+        },
+        {
+          "unit": "XU105_3",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908476469,
+          "out_V": 1.501449611328225,
+          "valid": true
+        },
+        {
+          "unit": "XU105_4",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908476469,
+          "out_V": 1.501449611328225,
+          "valid": true
+        },
+        {
+          "unit": "XU106_1",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908476469,
+          "out_V": 1.501449611328225,
+          "valid": true
+        },
+        {
+          "unit": "XU106_2",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908476469,
+          "out_V": 1.501449611328225,
+          "valid": true
+        },
+        {
+          "unit": "XU106_3",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908476469,
+          "out_V": 1.501449611328225,
+          "valid": true
+        },
+        {
+          "unit": "XU106_4",
+          "plus_V": 1.500914538208524,
+          "minus_V": 1.501312908476469,
+          "out_V": 1.501449611328225,
+          "valid": true
+        },
+        {
+          "unit": "XU107_1",
+          "plus_V": 1.501449520600599,
+          "minus_V": 1.501771629782368,
+          "out_V": 1.503468364953688,
+          "valid": true
+        },
+        {
+          "unit": "XU107_2",
+          "plus_V": 1.501449520600599,
+          "minus_V": 1.501771629782368,
+          "out_V": 1.503468364953688,
+          "valid": true
+        },
+        {
+          "unit": "XU107_3",
+          "plus_V": 1.501449520600599,
+          "minus_V": 1.501771629782368,
+          "out_V": 1.503468364953688,
+          "valid": true
+        },
+        {
+          "unit": "XU107_4",
+          "plus_V": 1.501449520600599,
+          "minus_V": 1.501771629782368,
+          "out_V": 1.503468364953688,
+          "valid": true
+        },
+        {
+          "unit": "XU108_1",
+          "plus_V": 1.501449520600599,
+          "minus_V": 1.501771629782368,
+          "out_V": 1.503468364953688,
+          "valid": true
+        },
+        {
+          "unit": "XU108_2",
+          "plus_V": 1.501449520600599,
+          "minus_V": 1.501771629782368,
+          "out_V": 1.503468364953688,
+          "valid": true
+        },
+        {
+          "unit": "XU108_3",
+          "plus_V": 1.501449520600599,
+          "minus_V": 1.501771629782368,
+          "out_V": 1.503468364953688,
+          "valid": true
+        },
+        {
+          "unit": "XU108_4",
+          "plus_V": 1.501449520600599,
+          "minus_V": 1.501771629782368,
+          "out_V": 1.503468364953688,
+          "valid": true
+        },
+        {
+          "unit": "XU109_1",
+          "plus_V": 1.50041004157896,
+          "minus_V": 1.500808333444569,
+          "out_V": 1.503690830927041,
+          "valid": true
+        },
+        {
+          "unit": "XU109_2",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398162324394,
+          "out_V": 1.500398162324394,
+          "valid": true
+        },
+        {
+          "unit": "XU109_3",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398159625316,
+          "out_V": 1.500398159625316,
+          "valid": true
+        },
+        {
+          "unit": "XU109_4",
+          "plus_V": 1.499999924999978,
+          "minus_V": 1.500398160154403,
+          "out_V": 1.500398160154403,
+          "valid": true
+        }
+      ],
+      "op_supply_current_mA": 4.474418409116837,
+      "ac": {
+        "name": "split4R7-ac",
+        "exit_code": 0,
+        "plotname": "AC Analysis",
+        "points": 138,
+        "completed_log": true,
+        "finite_results": true,
+        "simulator": "LTspice 26.0.2 for Windows",
+        "source_hashes": {
+          ".cir": "c86f5705910abcf4239763f1e3948013f0e2fd49242ac528805b62681cb4c7ff",
+          ".raw": "9d8b4c050ee71557d0be95539cbe4f0f99ccf30891f53d4dd0a97025ebacced5",
+          ".log": "4ed0021e3d79d772eb4de8a9c5b4c064ede2deec821ba076bd98edd75b5df435"
+        }
+      },
+      "table": [
+        {
+          "frequency_Hz": 300,
+          "aggressor_V_per_V": 700.6185694918686,
+          "victim_V_per_V": 0.2787746824619408,
+          "quiet_VMID_V_per_V": 0.0316323422958118,
+          "ratio_dB": -68.00456628109002,
+          "victim_input_equivalent_uVpp_for_1mVpp": 0.3978979356258359,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.07957958712516718,
+          "VMID_LP1_V_per_V": 0.12775918671202283,
+          "VMID_LP2_V_per_V": 0.14704196650103848
+        },
+        {
+          "frequency_Hz": 1000,
+          "aggressor_V_per_V": 968.0163966976311,
+          "victim_V_per_V": 0.39853494223307984,
+          "quiet_VMID_V_per_V": 0.023788818352710253,
+          "ratio_dB": -67.70832617465591,
+          "victim_input_equivalent_uVpp_for_1mVpp": 0.41170267734376603,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.08234053546875321,
+          "VMID_LP1_V_per_V": 0.1817686641722805,
+          "VMID_LP2_V_per_V": 0.2119455075409577
+        },
+        {
+          "frequency_Hz": 3000,
+          "aggressor_V_per_V": 1005.3734063172444,
+          "victim_V_per_V": 0.7741249503418561,
+          "quiet_VMID_V_per_V": 0.010828810731551576,
+          "ratio_dB": -62.27032656247958,
+          "victim_input_equivalent_uVpp_for_1mVpp": 0.7699874946737767,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.15399749893475534,
+          "VMID_LP1_V_per_V": 0.23451648686977689,
+          "VMID_LP2_V_per_V": 0.3060848680701975
+        },
+        {
+          "frequency_Hz": 7000,
+          "aggressor_V_per_V": 705.8425253642821,
+          "victim_V_per_V": 1.3769066983790024,
+          "quiet_VMID_V_per_V": 0.00484119537434244,
+          "ratio_dB": -54.1960661469047,
+          "victim_input_equivalent_uVpp_for_1mVpp": 1.9507278874539151,
+          "victim_input_equivalent_uVpp_for_200uVpp": 0.390145577490783,
+          "VMID_LP1_V_per_V": 0.17955098889473042,
+          "VMID_LP2_V_per_V": 0.27376210704348714
+        }
+      ],
+      "worst_case": {
+        "frequency_Hz": 6267.888392562092,
+        "ratio_dB": -53.8385848937077,
+        "victim_input_equivalent_uVpp_for_1mVpp": 2.0326881497839633,
+        "victim_input_equivalent_uVpp_for_200uVpp": 0.40653762995679266,
+        "passes_proposed_single_aggressor_minus60dB_review": false
+      },
+      "other_victim_symmetry_max_V_per_V_delta": 1.5096809408583023e-08
+    }
+  },
+  "limits": [
+    "AC + verified OP only at this stage; no stability, startup, offset, PVT or package-coupling guarantee"
+  ]
+}

@@ -1,0 +1,6192 @@
+{
+  "schema_version": "1.0",
+  "status": "Candidate for review and qualification; not fabrication released",
+  "date": "2026-10-01",
+  "components": [
+    {
+      "ref": "R1001",
+      "value": "5.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "FFC_CH1",
+        "2": "CH1_LIMIT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input fault-current limiter. ESD shunt is ahead of this resistor."
+    },
+    {
+      "ref": "C1001",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH1_LIMIT",
+        "2": "CH1_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Input DC blocking; with 22 M\u03a9 fc\u22480.723 Hz."
+    },
+    {
+      "ref": "R1002",
+      "value": "22M",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input bias return. Clean thoroughly; PCB leakage is a qualification gate."
+    },
+    {
+      "ref": "R1003",
+      "value": "1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1004",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_PRE",
+        "2": "CH1_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP101",
+      "value": "CH1_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH1_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch1",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "C1002",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH1_PRE",
+        "2": "CH1_HP_CH"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Pair with corresponding REF high-pass capacitor; mismatch limits CMRR."
+    },
+    {
+      "ref": "R1005",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_HP_CH",
+        "2": "CH1_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1006",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH1_HP",
+        "2": "CH1_DIFF_FB_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1007",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH1_DIFF_FB_MID",
+        "2": "CH1_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "C1003",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "REF_PRE",
+        "2": "CH1_HP_REF"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Match CH/REF paths."
+    },
+    {
+      "ref": "R1008",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_HP_REF",
+        "2": "CH1_DIFF_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1009",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH1_DIFF_PLUS",
+        "2": "CH1_DIFF_BAL_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1010",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH1_DIFF_BAL_MID",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "TP102",
+      "value": "CH1_HP",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH1_HP"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch1",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1011",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_HP",
+        "2": "CH1_LP1_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1012",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_LP1_A",
+        "2": "CH1_LP1_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1004",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH1_LP1_A",
+        "2": "CH1_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1005",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH1_LP1_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1013",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_LP1_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1014",
+      "value": "1.5k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_LP1_OUT",
+        "2": "CH1_LP1_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1015",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_LP1_OUT",
+        "2": "CH1_LP2_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1016",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_LP2_A",
+        "2": "CH1_LP2_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1006",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH1_LP2_A",
+        "2": "AFE_OUT_1"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1007",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH1_LP2_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1017",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH1_LP2_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1018",
+      "value": "12.4k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_1",
+        "2": "CH1_LP2_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch1",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP103",
+      "value": "AFE_OUT_1",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "AFE_OUT_1"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch1",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1019",
+      "value": "5.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "FFC_CH2",
+        "2": "CH2_LIMIT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input fault-current limiter. ESD shunt is ahead of this resistor."
+    },
+    {
+      "ref": "C1008",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH2_LIMIT",
+        "2": "CH2_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Input DC blocking; with 22 M\u03a9 fc\u22480.723 Hz."
+    },
+    {
+      "ref": "R1020",
+      "value": "22M",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input bias return. Clean thoroughly; PCB leakage is a qualification gate."
+    },
+    {
+      "ref": "R1021",
+      "value": "1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1022",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_PRE",
+        "2": "CH2_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP104",
+      "value": "CH2_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH2_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch2",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "C1009",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH2_PRE",
+        "2": "CH2_HP_CH"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Pair with corresponding REF high-pass capacitor; mismatch limits CMRR."
+    },
+    {
+      "ref": "R1023",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_HP_CH",
+        "2": "CH2_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1024",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH2_HP",
+        "2": "CH2_DIFF_FB_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1025",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH2_DIFF_FB_MID",
+        "2": "CH2_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "C1010",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "REF_PRE",
+        "2": "CH2_HP_REF"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Match CH/REF paths."
+    },
+    {
+      "ref": "R1026",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_HP_REF",
+        "2": "CH2_DIFF_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1027",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH2_DIFF_PLUS",
+        "2": "CH2_DIFF_BAL_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1028",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH2_DIFF_BAL_MID",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "TP105",
+      "value": "CH2_HP",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH2_HP"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch2",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1029",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_HP",
+        "2": "CH2_LP1_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1030",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_LP1_A",
+        "2": "CH2_LP1_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1011",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH2_LP1_A",
+        "2": "CH2_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1012",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH2_LP1_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1031",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_LP1_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1032",
+      "value": "1.5k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_LP1_OUT",
+        "2": "CH2_LP1_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1033",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_LP1_OUT",
+        "2": "CH2_LP2_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1034",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_LP2_A",
+        "2": "CH2_LP2_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1013",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH2_LP2_A",
+        "2": "AFE_OUT_2"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1014",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH2_LP2_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1035",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH2_LP2_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1036",
+      "value": "12.4k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_2",
+        "2": "CH2_LP2_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch2",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP106",
+      "value": "AFE_OUT_2",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "AFE_OUT_2"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch2",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1037",
+      "value": "5.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "FFC_CH3",
+        "2": "CH3_LIMIT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input fault-current limiter. ESD shunt is ahead of this resistor."
+    },
+    {
+      "ref": "C1015",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH3_LIMIT",
+        "2": "CH3_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Input DC blocking; with 22 M\u03a9 fc\u22480.723 Hz."
+    },
+    {
+      "ref": "R1038",
+      "value": "22M",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input bias return. Clean thoroughly; PCB leakage is a qualification gate."
+    },
+    {
+      "ref": "R1039",
+      "value": "1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1040",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_PRE",
+        "2": "CH3_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP107",
+      "value": "CH3_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH3_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch3",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "C1016",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH3_PRE",
+        "2": "CH3_HP_CH"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Pair with corresponding REF high-pass capacitor; mismatch limits CMRR."
+    },
+    {
+      "ref": "R1041",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_HP_CH",
+        "2": "CH3_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1042",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH3_HP",
+        "2": "CH3_DIFF_FB_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1043",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH3_DIFF_FB_MID",
+        "2": "CH3_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "C1017",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "REF_PRE",
+        "2": "CH3_HP_REF"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Match CH/REF paths."
+    },
+    {
+      "ref": "R1044",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_HP_REF",
+        "2": "CH3_DIFF_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1045",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH3_DIFF_PLUS",
+        "2": "CH3_DIFF_BAL_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1046",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH3_DIFF_BAL_MID",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "TP108",
+      "value": "CH3_HP",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH3_HP"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch3",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1047",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_HP",
+        "2": "CH3_LP1_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1048",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_LP1_A",
+        "2": "CH3_LP1_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1018",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH3_LP1_A",
+        "2": "CH3_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1019",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH3_LP1_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1049",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_LP1_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1050",
+      "value": "1.5k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_LP1_OUT",
+        "2": "CH3_LP1_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1051",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_LP1_OUT",
+        "2": "CH3_LP2_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1052",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_LP2_A",
+        "2": "CH3_LP2_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1020",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH3_LP2_A",
+        "2": "AFE_OUT_3"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1021",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH3_LP2_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1053",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH3_LP2_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1054",
+      "value": "12.4k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_3",
+        "2": "CH3_LP2_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch3",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP109",
+      "value": "AFE_OUT_3",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "AFE_OUT_3"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch3",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1055",
+      "value": "5.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "FFC_CH4",
+        "2": "CH4_LIMIT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input fault-current limiter. ESD shunt is ahead of this resistor."
+    },
+    {
+      "ref": "C1022",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH4_LIMIT",
+        "2": "CH4_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Input DC blocking; with 22 M\u03a9 fc\u22480.723 Hz."
+    },
+    {
+      "ref": "R1056",
+      "value": "22M",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input bias return. Clean thoroughly; PCB leakage is a qualification gate."
+    },
+    {
+      "ref": "R1057",
+      "value": "1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1058",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_PRE",
+        "2": "CH4_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP110",
+      "value": "CH4_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH4_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch4",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "C1023",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH4_PRE",
+        "2": "CH4_HP_CH"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Pair with corresponding REF high-pass capacitor; mismatch limits CMRR."
+    },
+    {
+      "ref": "R1059",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_HP_CH",
+        "2": "CH4_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1060",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH4_HP",
+        "2": "CH4_DIFF_FB_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1061",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH4_DIFF_FB_MID",
+        "2": "CH4_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "C1024",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "REF_PRE",
+        "2": "CH4_HP_REF"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Match CH/REF paths."
+    },
+    {
+      "ref": "R1062",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_HP_REF",
+        "2": "CH4_DIFF_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1063",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH4_DIFF_PLUS",
+        "2": "CH4_DIFF_BAL_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1064",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH4_DIFF_BAL_MID",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "TP111",
+      "value": "CH4_HP",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH4_HP"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch4",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1065",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_HP",
+        "2": "CH4_LP1_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1066",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_LP1_A",
+        "2": "CH4_LP1_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1025",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH4_LP1_A",
+        "2": "CH4_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1026",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH4_LP1_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1067",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_LP1_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1068",
+      "value": "1.5k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_LP1_OUT",
+        "2": "CH4_LP1_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1069",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_LP1_OUT",
+        "2": "CH4_LP2_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1070",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_LP2_A",
+        "2": "CH4_LP2_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1027",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH4_LP2_A",
+        "2": "AFE_OUT_4"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1028",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH4_LP2_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1071",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH4_LP2_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1072",
+      "value": "12.4k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_4",
+        "2": "CH4_LP2_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch4",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP112",
+      "value": "AFE_OUT_4",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "AFE_OUT_4"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch4",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1073",
+      "value": "5.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "FFC_CH5",
+        "2": "CH5_LIMIT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input fault-current limiter. ESD shunt is ahead of this resistor."
+    },
+    {
+      "ref": "C1029",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH5_LIMIT",
+        "2": "CH5_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Input DC blocking; with 22 M\u03a9 fc\u22480.723 Hz."
+    },
+    {
+      "ref": "R1074",
+      "value": "22M",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input bias return. Clean thoroughly; PCB leakage is a qualification gate."
+    },
+    {
+      "ref": "R1075",
+      "value": "1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1076",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_PRE",
+        "2": "CH5_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP113",
+      "value": "CH5_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH5_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch5",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "C1030",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH5_PRE",
+        "2": "CH5_HP_CH"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Pair with corresponding REF high-pass capacitor; mismatch limits CMRR."
+    },
+    {
+      "ref": "R1077",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_HP_CH",
+        "2": "CH5_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1078",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH5_HP",
+        "2": "CH5_DIFF_FB_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1079",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH5_DIFF_FB_MID",
+        "2": "CH5_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "C1031",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "REF_PRE",
+        "2": "CH5_HP_REF"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Match CH/REF paths."
+    },
+    {
+      "ref": "R1080",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_HP_REF",
+        "2": "CH5_DIFF_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1081",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH5_DIFF_PLUS",
+        "2": "CH5_DIFF_BAL_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1082",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH5_DIFF_BAL_MID",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "TP114",
+      "value": "CH5_HP",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH5_HP"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch5",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1083",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_HP",
+        "2": "CH5_LP1_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1084",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_LP1_A",
+        "2": "CH5_LP1_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1032",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH5_LP1_A",
+        "2": "CH5_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1033",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH5_LP1_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1085",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_LP1_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1086",
+      "value": "1.5k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_LP1_OUT",
+        "2": "CH5_LP1_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1087",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_LP1_OUT",
+        "2": "CH5_LP2_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1088",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_LP2_A",
+        "2": "CH5_LP2_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1034",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH5_LP2_A",
+        "2": "AFE_OUT_5"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1035",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH5_LP2_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1089",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH5_LP2_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1090",
+      "value": "12.4k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_5",
+        "2": "CH5_LP2_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch5",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP115",
+      "value": "AFE_OUT_5",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "AFE_OUT_5"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch5",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1091",
+      "value": "5.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "FFC_CH6",
+        "2": "CH6_LIMIT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input fault-current limiter. ESD shunt is ahead of this resistor."
+    },
+    {
+      "ref": "C1036",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH6_LIMIT",
+        "2": "CH6_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Input DC blocking; with 22 M\u03a9 fc\u22480.723 Hz."
+    },
+    {
+      "ref": "R1092",
+      "value": "22M",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input bias return. Clean thoroughly; PCB leakage is a qualification gate."
+    },
+    {
+      "ref": "R1093",
+      "value": "1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1094",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_PRE",
+        "2": "CH6_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP116",
+      "value": "CH6_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH6_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch6",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "C1037",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH6_PRE",
+        "2": "CH6_HP_CH"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Pair with corresponding REF high-pass capacitor; mismatch limits CMRR."
+    },
+    {
+      "ref": "R1095",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_HP_CH",
+        "2": "CH6_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1096",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH6_HP",
+        "2": "CH6_DIFF_FB_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1097",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH6_DIFF_FB_MID",
+        "2": "CH6_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "C1038",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "REF_PRE",
+        "2": "CH6_HP_REF"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Match CH/REF paths."
+    },
+    {
+      "ref": "R1098",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_HP_REF",
+        "2": "CH6_DIFF_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1099",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH6_DIFF_PLUS",
+        "2": "CH6_DIFF_BAL_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1100",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH6_DIFF_BAL_MID",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "TP117",
+      "value": "CH6_HP",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH6_HP"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch6",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1101",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_HP",
+        "2": "CH6_LP1_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1102",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_LP1_A",
+        "2": "CH6_LP1_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1039",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH6_LP1_A",
+        "2": "CH6_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1040",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH6_LP1_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1103",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_LP1_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1104",
+      "value": "1.5k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_LP1_OUT",
+        "2": "CH6_LP1_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1105",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_LP1_OUT",
+        "2": "CH6_LP2_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1106",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_LP2_A",
+        "2": "CH6_LP2_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1041",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH6_LP2_A",
+        "2": "AFE_OUT_6"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1042",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH6_LP2_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1107",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH6_LP2_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1108",
+      "value": "12.4k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_6",
+        "2": "CH6_LP2_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch6",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP118",
+      "value": "AFE_OUT_6",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "AFE_OUT_6"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch6",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1109",
+      "value": "5.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "FFC_CH7",
+        "2": "CH7_LIMIT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input fault-current limiter. ESD shunt is ahead of this resistor."
+    },
+    {
+      "ref": "C1043",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH7_LIMIT",
+        "2": "CH7_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Input DC blocking; with 22 M\u03a9 fc\u22480.723 Hz."
+    },
+    {
+      "ref": "R1110",
+      "value": "22M",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input bias return. Clean thoroughly; PCB leakage is a qualification gate."
+    },
+    {
+      "ref": "R1111",
+      "value": "1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1112",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_PRE",
+        "2": "CH7_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP119",
+      "value": "CH7_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH7_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch7",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "C1044",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH7_PRE",
+        "2": "CH7_HP_CH"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Pair with corresponding REF high-pass capacitor; mismatch limits CMRR."
+    },
+    {
+      "ref": "R1113",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_HP_CH",
+        "2": "CH7_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1114",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH7_HP",
+        "2": "CH7_DIFF_FB_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1115",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH7_DIFF_FB_MID",
+        "2": "CH7_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "C1045",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "REF_PRE",
+        "2": "CH7_HP_REF"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Match CH/REF paths."
+    },
+    {
+      "ref": "R1116",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_HP_REF",
+        "2": "CH7_DIFF_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1117",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH7_DIFF_PLUS",
+        "2": "CH7_DIFF_BAL_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1118",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH7_DIFF_BAL_MID",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "TP120",
+      "value": "CH7_HP",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH7_HP"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch7",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1119",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_HP",
+        "2": "CH7_LP1_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1120",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_LP1_A",
+        "2": "CH7_LP1_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1046",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH7_LP1_A",
+        "2": "CH7_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1047",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH7_LP1_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1121",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_LP1_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1122",
+      "value": "1.5k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_LP1_OUT",
+        "2": "CH7_LP1_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1123",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_LP1_OUT",
+        "2": "CH7_LP2_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1124",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_LP2_A",
+        "2": "CH7_LP2_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1048",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH7_LP2_A",
+        "2": "AFE_OUT_7"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1049",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH7_LP2_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1125",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH7_LP2_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1126",
+      "value": "12.4k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_7",
+        "2": "CH7_LP2_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch7",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP121",
+      "value": "AFE_OUT_7",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "AFE_OUT_7"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch7",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1127",
+      "value": "5.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "FFC_CH8",
+        "2": "CH8_LIMIT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input fault-current limiter. ESD shunt is ahead of this resistor."
+    },
+    {
+      "ref": "C1050",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH8_LIMIT",
+        "2": "CH8_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Input DC blocking; with 22 M\u03a9 fc\u22480.723 Hz."
+    },
+    {
+      "ref": "R1128",
+      "value": "22M",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input bias return. Clean thoroughly; PCB leakage is a qualification gate."
+    },
+    {
+      "ref": "R1129",
+      "value": "1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1130",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_PRE",
+        "2": "CH8_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP122",
+      "value": "CH8_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH8_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch8",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "C1051",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "CH8_PRE",
+        "2": "CH8_HP_CH"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Pair with corresponding REF high-pass capacitor; mismatch limits CMRR."
+    },
+    {
+      "ref": "R1131",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_HP_CH",
+        "2": "CH8_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1132",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH8_HP",
+        "2": "CH8_DIFF_FB_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1133",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH8_DIFF_FB_MID",
+        "2": "CH8_DIFF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "C1052",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "REF_PRE",
+        "2": "CH8_HP_REF"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Match CH/REF paths."
+    },
+    {
+      "ref": "R1134",
+      "value": "51.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_HP_REF",
+        "2": "CH8_DIFF_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1135",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH8_DIFF_PLUS",
+        "2": "CH8_DIFF_BAL_MID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "R1136",
+      "value": "909k",
+      "mpn": "RT0603BRE07909KL",
+      "lcsc": "C3014193",
+      "package": "0603",
+      "pins": {
+        "1": "CH8_DIFF_BAL_MID",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": "Two 909 k\u03a9 0.1% in series provide 1.818 M\u03a9; intentional updated gain ratio."
+    },
+    {
+      "ref": "TP123",
+      "value": "CH8_HP",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "CH8_HP"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch8",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1137",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_HP",
+        "2": "CH8_LP1_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1138",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_LP1_A",
+        "2": "CH8_LP1_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1053",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH8_LP1_A",
+        "2": "CH8_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1054",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH8_LP1_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1139",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_LP1_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1140",
+      "value": "1.5k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_LP1_OUT",
+        "2": "CH8_LP1_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1141",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_LP1_OUT",
+        "2": "CH8_LP2_A"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1142",
+      "value": "22.6k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_LP2_A",
+        "2": "CH8_LP2_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "C1055",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH8_LP2_A",
+        "2": "AFE_OUT_8"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Sallen-Key feedback capacitor connects to section OUTPUT."
+    },
+    {
+      "ref": "C1056",
+      "value": "1nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "CH8_LP2_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. AC return is VMID, not a mismatched rail."
+    },
+    {
+      "ref": "R1143",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "CH8_LP2_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1144",
+      "value": "12.4k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_8",
+        "2": "CH8_LP2_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_ch8",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP124",
+      "value": "AFE_OUT_8",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "AFE_OUT_8"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_ch8",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1145",
+      "value": "5.1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "FFC_REF",
+        "2": "REF_LIMIT"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input fault-current limiter. ESD shunt is ahead of this resistor."
+    },
+    {
+      "ref": "C1057",
+      "value": "10nF",
+      "mpn": "C0603C103F3GACTU",
+      "lcsc": "C2167903",
+      "package": "0603",
+      "pins": {
+        "1": "REF_LIMIT",
+        "2": "REF_PLUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "C0G, >=25 V. Input DC blocking; with 22 M\u03a9 fc\u22480.723 Hz."
+    },
+    {
+      "ref": "R1146",
+      "value": "22M",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "REF_PLUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Input bias return. Clean thoroughly; PCB leakage is a qualification gate."
+    },
+    {
+      "ref": "R1147",
+      "value": "1k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "REF_MINUS",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "R1148",
+      "value": "10k",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "REF_PRE",
+        "2": "REF_MINUS"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "0.1%",
+      "populated": true,
+      "notes": ""
+    },
+    {
+      "ref": "TP125",
+      "value": "REF_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "REF_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_shared",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "R1149",
+      "value": "47",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0402",
+      "pins": {
+        "1": "VMID_BUF",
+        "2": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "1%",
+      "populated": true,
+      "notes": "Isolates VMID buffer from 4.7 \u00b5F; output feedback is VMID_BUF."
+    },
+    {
+      "ref": "C1058",
+      "value": "4.7uF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "VMID",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "20%",
+      "populated": true,
+      "notes": "X7R >=10 V; budget DC bias derating; do not use effective capacitance <2 \u00b5F."
+    },
+    {
+      "ref": "TP126",
+      "value": "VMID",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "VMID"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_shared",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "TP127",
+      "value": "REF_PRE",
+      "mpn": null,
+      "lcsc": null,
+      "package": "TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "REF_PRE"
+      },
+      "pinfunctiontypes": {
+        "1": "passive"
+      },
+      "page": "afe_shared",
+      "populated": false,
+      "notes": "Bare pad. Low-C probe at high-impedance input; ordinary scope probe changes loading."
+    },
+    {
+      "ref": "U101",
+      "value": "TLV9004IRUCR",
+      "mpn": "TLV9004IRUCR",
+      "lcsc": "C2058192",
+      "package": "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP",
+      "pins": {
+        "3": "AVDD_3V0",
+        "10": "GND",
+        "2": "CH1_PLUS",
+        "1": "CH1_MINUS",
+        "14": "CH1_PRE",
+        "4": "CH2_PLUS",
+        "5": "CH2_MINUS",
+        "6": "CH2_PRE",
+        "9": "CH3_PLUS",
+        "8": "CH3_MINUS",
+        "7": "CH3_PRE",
+        "11": "CH4_PLUS",
+        "12": "CH4_MINUS",
+        "13": "CH4_PRE"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "10": "power_in",
+        "2": "input",
+        "1": "input",
+        "14": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "8": "input",
+        "7": "output",
+        "11": "input",
+        "12": "input",
+        "13": "output"
+      },
+      "page": "afe_shared",
+      "units": [
+        {
+          "unit": "A",
+          "positive": "CH1_PLUS",
+          "negative": "CH1_MINUS",
+          "output": "CH1_PRE",
+          "role": "Input preamp, gain 11",
+          "page": "afe_ch1"
+        },
+        {
+          "unit": "B",
+          "positive": "CH2_PLUS",
+          "negative": "CH2_MINUS",
+          "output": "CH2_PRE",
+          "role": "Input preamp, gain 11",
+          "page": "afe_ch2"
+        },
+        {
+          "unit": "C",
+          "positive": "CH3_PLUS",
+          "negative": "CH3_MINUS",
+          "output": "CH3_PRE",
+          "role": "Input preamp, gain 11",
+          "page": "afe_ch3"
+        },
+        {
+          "unit": "D",
+          "positive": "CH4_PLUS",
+          "negative": "CH4_MINUS",
+          "output": "CH4_PRE",
+          "role": "Input preamp, gain 11",
+          "page": "afe_ch4"
+        }
+      ],
+      "unit_blocks": [
+        {
+          "unit": 1,
+          "pins": [
+            "14",
+            "1",
+            "2"
+          ],
+          "channel": 1,
+          "stage": "preamp",
+          "page": "afe_ch1"
+        },
+        {
+          "unit": 2,
+          "pins": [
+            "6",
+            "5",
+            "4"
+          ],
+          "channel": 2,
+          "stage": "preamp",
+          "page": "afe_ch2"
+        },
+        {
+          "unit": 3,
+          "pins": [
+            "7",
+            "8",
+            "9"
+          ],
+          "channel": 3,
+          "stage": "preamp",
+          "page": "afe_ch3"
+        },
+        {
+          "unit": 4,
+          "pins": [
+            "13",
+            "12",
+            "11"
+          ],
+          "channel": 4,
+          "stage": "preamp",
+          "page": "afe_ch4"
+        },
+        {
+          "unit": 5,
+          "pins": [
+            "3",
+            "10"
+          ],
+          "channel": null,
+          "stage": "power",
+          "page": "afe_shared"
+        }
+      ],
+      "pin_names": {
+        "1": "IN_A-",
+        "2": "IN_A+",
+        "3": "V+",
+        "4": "IN_B+",
+        "5": "IN_B-",
+        "6": "OUT_B",
+        "7": "OUT_C",
+        "8": "IN_C-",
+        "9": "IN_C+",
+        "10": "V-",
+        "11": "IN_D+",
+        "12": "IN_D-",
+        "13": "OUT_D",
+        "14": "OUT_A"
+      },
+      "notes": "TI datasheet Table 6-5 RUC pin map; audit CAD footprint against TI RUC0014A."
+    },
+    {
+      "ref": "C1059",
+      "value": "100nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "10%",
+      "populated": true,
+      "notes": "X7R >=10 V; local bypass adjacent to U101 V+ / GND pins."
+    },
+    {
+      "ref": "U102",
+      "value": "TLV9004IRUCR",
+      "mpn": "TLV9004IRUCR",
+      "lcsc": "C2058192",
+      "package": "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP",
+      "pins": {
+        "3": "AVDD_3V0",
+        "10": "GND",
+        "2": "CH5_PLUS",
+        "1": "CH5_MINUS",
+        "14": "CH5_PRE",
+        "4": "CH6_PLUS",
+        "5": "CH6_MINUS",
+        "6": "CH6_PRE",
+        "9": "CH7_PLUS",
+        "8": "CH7_MINUS",
+        "7": "CH7_PRE",
+        "11": "CH8_PLUS",
+        "12": "CH8_MINUS",
+        "13": "CH8_PRE"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "10": "power_in",
+        "2": "input",
+        "1": "input",
+        "14": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "8": "input",
+        "7": "output",
+        "11": "input",
+        "12": "input",
+        "13": "output"
+      },
+      "page": "afe_shared",
+      "units": [
+        {
+          "unit": "A",
+          "positive": "CH5_PLUS",
+          "negative": "CH5_MINUS",
+          "output": "CH5_PRE",
+          "role": "Input preamp, gain 11",
+          "page": "afe_ch5"
+        },
+        {
+          "unit": "B",
+          "positive": "CH6_PLUS",
+          "negative": "CH6_MINUS",
+          "output": "CH6_PRE",
+          "role": "Input preamp, gain 11",
+          "page": "afe_ch6"
+        },
+        {
+          "unit": "C",
+          "positive": "CH7_PLUS",
+          "negative": "CH7_MINUS",
+          "output": "CH7_PRE",
+          "role": "Input preamp, gain 11",
+          "page": "afe_ch7"
+        },
+        {
+          "unit": "D",
+          "positive": "CH8_PLUS",
+          "negative": "CH8_MINUS",
+          "output": "CH8_PRE",
+          "role": "Input preamp, gain 11",
+          "page": "afe_ch8"
+        }
+      ],
+      "unit_blocks": [
+        {
+          "unit": 1,
+          "pins": [
+            "14",
+            "1",
+            "2"
+          ],
+          "channel": 5,
+          "stage": "preamp",
+          "page": "afe_ch5"
+        },
+        {
+          "unit": 2,
+          "pins": [
+            "6",
+            "5",
+            "4"
+          ],
+          "channel": 6,
+          "stage": "preamp",
+          "page": "afe_ch6"
+        },
+        {
+          "unit": 3,
+          "pins": [
+            "7",
+            "8",
+            "9"
+          ],
+          "channel": 7,
+          "stage": "preamp",
+          "page": "afe_ch7"
+        },
+        {
+          "unit": 4,
+          "pins": [
+            "13",
+            "12",
+            "11"
+          ],
+          "channel": 8,
+          "stage": "preamp",
+          "page": "afe_ch8"
+        },
+        {
+          "unit": 5,
+          "pins": [
+            "3",
+            "10"
+          ],
+          "channel": null,
+          "stage": "power",
+          "page": "afe_shared"
+        }
+      ],
+      "pin_names": {
+        "1": "IN_A-",
+        "2": "IN_A+",
+        "3": "V+",
+        "4": "IN_B+",
+        "5": "IN_B-",
+        "6": "OUT_B",
+        "7": "OUT_C",
+        "8": "IN_C-",
+        "9": "IN_C+",
+        "10": "V-",
+        "11": "IN_D+",
+        "12": "IN_D-",
+        "13": "OUT_D",
+        "14": "OUT_A"
+      },
+      "notes": "TI datasheet Table 6-5 RUC pin map; audit CAD footprint against TI RUC0014A."
+    },
+    {
+      "ref": "C1060",
+      "value": "100nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "10%",
+      "populated": true,
+      "notes": "X7R >=10 V; local bypass adjacent to U102 V+ / GND pins."
+    },
+    {
+      "ref": "U103",
+      "value": "TLV9004IRUCR",
+      "mpn": "TLV9004IRUCR",
+      "lcsc": "C2058192",
+      "package": "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP",
+      "pins": {
+        "3": "AVDD_3V0",
+        "10": "GND",
+        "2": "CH1_DIFF_PLUS",
+        "1": "CH1_DIFF_MINUS",
+        "14": "CH1_HP",
+        "4": "CH2_DIFF_PLUS",
+        "5": "CH2_DIFF_MINUS",
+        "6": "CH2_HP",
+        "9": "CH3_DIFF_PLUS",
+        "8": "CH3_DIFF_MINUS",
+        "7": "CH3_HP",
+        "11": "CH4_DIFF_PLUS",
+        "12": "CH4_DIFF_MINUS",
+        "13": "CH4_HP"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "10": "power_in",
+        "2": "input",
+        "1": "input",
+        "14": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "8": "input",
+        "7": "output",
+        "11": "input",
+        "12": "input",
+        "13": "output"
+      },
+      "page": "afe_shared",
+      "units": [
+        {
+          "unit": "A",
+          "positive": "CH1_DIFF_PLUS",
+          "negative": "CH1_DIFF_MINUS",
+          "output": "CH1_HP",
+          "role": "Matched differential HP: REF minus CH, gain 35.577, fc 311.46 Hz",
+          "page": "afe_ch1"
+        },
+        {
+          "unit": "B",
+          "positive": "CH2_DIFF_PLUS",
+          "negative": "CH2_DIFF_MINUS",
+          "output": "CH2_HP",
+          "role": "Matched differential HP: REF minus CH, gain 35.577, fc 311.46 Hz",
+          "page": "afe_ch2"
+        },
+        {
+          "unit": "C",
+          "positive": "CH3_DIFF_PLUS",
+          "negative": "CH3_DIFF_MINUS",
+          "output": "CH3_HP",
+          "role": "Matched differential HP: REF minus CH, gain 35.577, fc 311.46 Hz",
+          "page": "afe_ch3"
+        },
+        {
+          "unit": "D",
+          "positive": "CH4_DIFF_PLUS",
+          "negative": "CH4_DIFF_MINUS",
+          "output": "CH4_HP",
+          "role": "Matched differential HP: REF minus CH, gain 35.577, fc 311.46 Hz",
+          "page": "afe_ch4"
+        }
+      ],
+      "unit_blocks": [
+        {
+          "unit": 1,
+          "pins": [
+            "14",
+            "1",
+            "2"
+          ],
+          "channel": 1,
+          "stage": "diff_hp",
+          "page": "afe_ch1"
+        },
+        {
+          "unit": 2,
+          "pins": [
+            "6",
+            "5",
+            "4"
+          ],
+          "channel": 2,
+          "stage": "diff_hp",
+          "page": "afe_ch2"
+        },
+        {
+          "unit": 3,
+          "pins": [
+            "7",
+            "8",
+            "9"
+          ],
+          "channel": 3,
+          "stage": "diff_hp",
+          "page": "afe_ch3"
+        },
+        {
+          "unit": 4,
+          "pins": [
+            "13",
+            "12",
+            "11"
+          ],
+          "channel": 4,
+          "stage": "diff_hp",
+          "page": "afe_ch4"
+        },
+        {
+          "unit": 5,
+          "pins": [
+            "3",
+            "10"
+          ],
+          "channel": null,
+          "stage": "power",
+          "page": "afe_shared"
+        }
+      ],
+      "pin_names": {
+        "1": "IN_A-",
+        "2": "IN_A+",
+        "3": "V+",
+        "4": "IN_B+",
+        "5": "IN_B-",
+        "6": "OUT_B",
+        "7": "OUT_C",
+        "8": "IN_C-",
+        "9": "IN_C+",
+        "10": "V-",
+        "11": "IN_D+",
+        "12": "IN_D-",
+        "13": "OUT_D",
+        "14": "OUT_A"
+      },
+      "notes": "TI datasheet Table 6-5 RUC pin map; audit CAD footprint against TI RUC0014A."
+    },
+    {
+      "ref": "C1061",
+      "value": "100nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "10%",
+      "populated": true,
+      "notes": "X7R >=10 V; local bypass adjacent to U103 V+ / GND pins."
+    },
+    {
+      "ref": "U104",
+      "value": "TLV9004IRUCR",
+      "mpn": "TLV9004IRUCR",
+      "lcsc": "C2058192",
+      "package": "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP",
+      "pins": {
+        "3": "AVDD_3V0",
+        "10": "GND",
+        "2": "CH5_DIFF_PLUS",
+        "1": "CH5_DIFF_MINUS",
+        "14": "CH5_HP",
+        "4": "CH6_DIFF_PLUS",
+        "5": "CH6_DIFF_MINUS",
+        "6": "CH6_HP",
+        "9": "CH7_DIFF_PLUS",
+        "8": "CH7_DIFF_MINUS",
+        "7": "CH7_HP",
+        "11": "CH8_DIFF_PLUS",
+        "12": "CH8_DIFF_MINUS",
+        "13": "CH8_HP"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "10": "power_in",
+        "2": "input",
+        "1": "input",
+        "14": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "8": "input",
+        "7": "output",
+        "11": "input",
+        "12": "input",
+        "13": "output"
+      },
+      "page": "afe_shared",
+      "units": [
+        {
+          "unit": "A",
+          "positive": "CH5_DIFF_PLUS",
+          "negative": "CH5_DIFF_MINUS",
+          "output": "CH5_HP",
+          "role": "Matched differential HP: REF minus CH, gain 35.577, fc 311.46 Hz",
+          "page": "afe_ch5"
+        },
+        {
+          "unit": "B",
+          "positive": "CH6_DIFF_PLUS",
+          "negative": "CH6_DIFF_MINUS",
+          "output": "CH6_HP",
+          "role": "Matched differential HP: REF minus CH, gain 35.577, fc 311.46 Hz",
+          "page": "afe_ch6"
+        },
+        {
+          "unit": "C",
+          "positive": "CH7_DIFF_PLUS",
+          "negative": "CH7_DIFF_MINUS",
+          "output": "CH7_HP",
+          "role": "Matched differential HP: REF minus CH, gain 35.577, fc 311.46 Hz",
+          "page": "afe_ch7"
+        },
+        {
+          "unit": "D",
+          "positive": "CH8_DIFF_PLUS",
+          "negative": "CH8_DIFF_MINUS",
+          "output": "CH8_HP",
+          "role": "Matched differential HP: REF minus CH, gain 35.577, fc 311.46 Hz",
+          "page": "afe_ch8"
+        }
+      ],
+      "unit_blocks": [
+        {
+          "unit": 1,
+          "pins": [
+            "14",
+            "1",
+            "2"
+          ],
+          "channel": 5,
+          "stage": "diff_hp",
+          "page": "afe_ch5"
+        },
+        {
+          "unit": 2,
+          "pins": [
+            "6",
+            "5",
+            "4"
+          ],
+          "channel": 6,
+          "stage": "diff_hp",
+          "page": "afe_ch6"
+        },
+        {
+          "unit": 3,
+          "pins": [
+            "7",
+            "8",
+            "9"
+          ],
+          "channel": 7,
+          "stage": "diff_hp",
+          "page": "afe_ch7"
+        },
+        {
+          "unit": 4,
+          "pins": [
+            "13",
+            "12",
+            "11"
+          ],
+          "channel": 8,
+          "stage": "diff_hp",
+          "page": "afe_ch8"
+        },
+        {
+          "unit": 5,
+          "pins": [
+            "3",
+            "10"
+          ],
+          "channel": null,
+          "stage": "power",
+          "page": "afe_shared"
+        }
+      ],
+      "pin_names": {
+        "1": "IN_A-",
+        "2": "IN_A+",
+        "3": "V+",
+        "4": "IN_B+",
+        "5": "IN_B-",
+        "6": "OUT_B",
+        "7": "OUT_C",
+        "8": "IN_C-",
+        "9": "IN_C+",
+        "10": "V-",
+        "11": "IN_D+",
+        "12": "IN_D-",
+        "13": "OUT_D",
+        "14": "OUT_A"
+      },
+      "notes": "TI datasheet Table 6-5 RUC pin map; audit CAD footprint against TI RUC0014A."
+    },
+    {
+      "ref": "C1062",
+      "value": "100nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "10%",
+      "populated": true,
+      "notes": "X7R >=10 V; local bypass adjacent to U104 V+ / GND pins."
+    },
+    {
+      "ref": "U105",
+      "value": "TLV9004IRUCR",
+      "mpn": "TLV9004IRUCR",
+      "lcsc": "C2058192",
+      "package": "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP",
+      "pins": {
+        "3": "AVDD_3V0",
+        "10": "GND",
+        "2": "CH1_LP1_PLUS",
+        "1": "CH1_LP1_MINUS",
+        "14": "CH1_LP1_OUT",
+        "4": "CH2_LP1_PLUS",
+        "5": "CH2_LP1_MINUS",
+        "6": "CH2_LP1_OUT",
+        "9": "CH3_LP1_PLUS",
+        "8": "CH3_LP1_MINUS",
+        "7": "CH3_LP1_OUT",
+        "11": "CH4_LP1_PLUS",
+        "12": "CH4_LP1_MINUS",
+        "13": "CH4_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "10": "power_in",
+        "2": "input",
+        "1": "input",
+        "14": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "8": "input",
+        "7": "output",
+        "11": "input",
+        "12": "input",
+        "13": "output"
+      },
+      "page": "afe_shared",
+      "units": [
+        {
+          "unit": "A",
+          "positive": "CH1_LP1_PLUS",
+          "negative": "CH1_LP1_MINUS",
+          "output": "CH1_LP1_OUT",
+          "role": "Sallen-Key section 1, gain 1.15, low Q",
+          "page": "afe_ch1"
+        },
+        {
+          "unit": "B",
+          "positive": "CH2_LP1_PLUS",
+          "negative": "CH2_LP1_MINUS",
+          "output": "CH2_LP1_OUT",
+          "role": "Sallen-Key section 1, gain 1.15, low Q",
+          "page": "afe_ch2"
+        },
+        {
+          "unit": "C",
+          "positive": "CH3_LP1_PLUS",
+          "negative": "CH3_LP1_MINUS",
+          "output": "CH3_LP1_OUT",
+          "role": "Sallen-Key section 1, gain 1.15, low Q",
+          "page": "afe_ch3"
+        },
+        {
+          "unit": "D",
+          "positive": "CH4_LP1_PLUS",
+          "negative": "CH4_LP1_MINUS",
+          "output": "CH4_LP1_OUT",
+          "role": "Sallen-Key section 1, gain 1.15, low Q",
+          "page": "afe_ch4"
+        }
+      ],
+      "unit_blocks": [
+        {
+          "unit": 1,
+          "pins": [
+            "14",
+            "1",
+            "2"
+          ],
+          "channel": 1,
+          "stage": "filter_lp1",
+          "page": "afe_ch1"
+        },
+        {
+          "unit": 2,
+          "pins": [
+            "6",
+            "5",
+            "4"
+          ],
+          "channel": 2,
+          "stage": "filter_lp1",
+          "page": "afe_ch2"
+        },
+        {
+          "unit": 3,
+          "pins": [
+            "7",
+            "8",
+            "9"
+          ],
+          "channel": 3,
+          "stage": "filter_lp1",
+          "page": "afe_ch3"
+        },
+        {
+          "unit": 4,
+          "pins": [
+            "13",
+            "12",
+            "11"
+          ],
+          "channel": 4,
+          "stage": "filter_lp1",
+          "page": "afe_ch4"
+        },
+        {
+          "unit": 5,
+          "pins": [
+            "3",
+            "10"
+          ],
+          "channel": null,
+          "stage": "power",
+          "page": "afe_shared"
+        }
+      ],
+      "pin_names": {
+        "1": "IN_A-",
+        "2": "IN_A+",
+        "3": "V+",
+        "4": "IN_B+",
+        "5": "IN_B-",
+        "6": "OUT_B",
+        "7": "OUT_C",
+        "8": "IN_C-",
+        "9": "IN_C+",
+        "10": "V-",
+        "11": "IN_D+",
+        "12": "IN_D-",
+        "13": "OUT_D",
+        "14": "OUT_A"
+      },
+      "notes": "TI datasheet Table 6-5 RUC pin map; audit CAD footprint against TI RUC0014A."
+    },
+    {
+      "ref": "C1063",
+      "value": "100nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "10%",
+      "populated": true,
+      "notes": "X7R >=10 V; local bypass adjacent to U105 V+ / GND pins."
+    },
+    {
+      "ref": "U106",
+      "value": "TLV9004IRUCR",
+      "mpn": "TLV9004IRUCR",
+      "lcsc": "C2058192",
+      "package": "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP",
+      "pins": {
+        "3": "AVDD_3V0",
+        "10": "GND",
+        "2": "CH5_LP1_PLUS",
+        "1": "CH5_LP1_MINUS",
+        "14": "CH5_LP1_OUT",
+        "4": "CH6_LP1_PLUS",
+        "5": "CH6_LP1_MINUS",
+        "6": "CH6_LP1_OUT",
+        "9": "CH7_LP1_PLUS",
+        "8": "CH7_LP1_MINUS",
+        "7": "CH7_LP1_OUT",
+        "11": "CH8_LP1_PLUS",
+        "12": "CH8_LP1_MINUS",
+        "13": "CH8_LP1_OUT"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "10": "power_in",
+        "2": "input",
+        "1": "input",
+        "14": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "8": "input",
+        "7": "output",
+        "11": "input",
+        "12": "input",
+        "13": "output"
+      },
+      "page": "afe_shared",
+      "units": [
+        {
+          "unit": "A",
+          "positive": "CH5_LP1_PLUS",
+          "negative": "CH5_LP1_MINUS",
+          "output": "CH5_LP1_OUT",
+          "role": "Sallen-Key section 1, gain 1.15, low Q",
+          "page": "afe_ch5"
+        },
+        {
+          "unit": "B",
+          "positive": "CH6_LP1_PLUS",
+          "negative": "CH6_LP1_MINUS",
+          "output": "CH6_LP1_OUT",
+          "role": "Sallen-Key section 1, gain 1.15, low Q",
+          "page": "afe_ch6"
+        },
+        {
+          "unit": "C",
+          "positive": "CH7_LP1_PLUS",
+          "negative": "CH7_LP1_MINUS",
+          "output": "CH7_LP1_OUT",
+          "role": "Sallen-Key section 1, gain 1.15, low Q",
+          "page": "afe_ch7"
+        },
+        {
+          "unit": "D",
+          "positive": "CH8_LP1_PLUS",
+          "negative": "CH8_LP1_MINUS",
+          "output": "CH8_LP1_OUT",
+          "role": "Sallen-Key section 1, gain 1.15, low Q",
+          "page": "afe_ch8"
+        }
+      ],
+      "unit_blocks": [
+        {
+          "unit": 1,
+          "pins": [
+            "14",
+            "1",
+            "2"
+          ],
+          "channel": 5,
+          "stage": "filter_lp1",
+          "page": "afe_ch5"
+        },
+        {
+          "unit": 2,
+          "pins": [
+            "6",
+            "5",
+            "4"
+          ],
+          "channel": 6,
+          "stage": "filter_lp1",
+          "page": "afe_ch6"
+        },
+        {
+          "unit": 3,
+          "pins": [
+            "7",
+            "8",
+            "9"
+          ],
+          "channel": 7,
+          "stage": "filter_lp1",
+          "page": "afe_ch7"
+        },
+        {
+          "unit": 4,
+          "pins": [
+            "13",
+            "12",
+            "11"
+          ],
+          "channel": 8,
+          "stage": "filter_lp1",
+          "page": "afe_ch8"
+        },
+        {
+          "unit": 5,
+          "pins": [
+            "3",
+            "10"
+          ],
+          "channel": null,
+          "stage": "power",
+          "page": "afe_shared"
+        }
+      ],
+      "pin_names": {
+        "1": "IN_A-",
+        "2": "IN_A+",
+        "3": "V+",
+        "4": "IN_B+",
+        "5": "IN_B-",
+        "6": "OUT_B",
+        "7": "OUT_C",
+        "8": "IN_C-",
+        "9": "IN_C+",
+        "10": "V-",
+        "11": "IN_D+",
+        "12": "IN_D-",
+        "13": "OUT_D",
+        "14": "OUT_A"
+      },
+      "notes": "TI datasheet Table 6-5 RUC pin map; audit CAD footprint against TI RUC0014A."
+    },
+    {
+      "ref": "C1064",
+      "value": "100nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "10%",
+      "populated": true,
+      "notes": "X7R >=10 V; local bypass adjacent to U106 V+ / GND pins."
+    },
+    {
+      "ref": "U107",
+      "value": "TLV9054IRUCR",
+      "mpn": "TLV9054IRUCR",
+      "lcsc": "C2057826",
+      "package": "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP",
+      "pins": {
+        "3": "AVDD_3V0",
+        "10": "GND",
+        "2": "CH1_LP2_PLUS",
+        "1": "CH1_LP2_MINUS",
+        "14": "AFE_OUT_1",
+        "4": "CH2_LP2_PLUS",
+        "5": "CH2_LP2_MINUS",
+        "6": "AFE_OUT_2",
+        "9": "CH3_LP2_PLUS",
+        "8": "CH3_LP2_MINUS",
+        "7": "AFE_OUT_3",
+        "11": "CH4_LP2_PLUS",
+        "12": "CH4_LP2_MINUS",
+        "13": "AFE_OUT_4"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "10": "power_in",
+        "2": "input",
+        "1": "input",
+        "14": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "8": "input",
+        "7": "output",
+        "11": "input",
+        "12": "input",
+        "13": "output"
+      },
+      "page": "afe_shared",
+      "units": [
+        {
+          "unit": "A",
+          "positive": "CH1_LP2_PLUS",
+          "negative": "CH1_LP2_MINUS",
+          "output": "AFE_OUT_1",
+          "role": "Sallen-Key section 2, gain 2.24, high Q; final ADC driver",
+          "page": "afe_ch1"
+        },
+        {
+          "unit": "B",
+          "positive": "CH2_LP2_PLUS",
+          "negative": "CH2_LP2_MINUS",
+          "output": "AFE_OUT_2",
+          "role": "Sallen-Key section 2, gain 2.24, high Q; final ADC driver",
+          "page": "afe_ch2"
+        },
+        {
+          "unit": "C",
+          "positive": "CH3_LP2_PLUS",
+          "negative": "CH3_LP2_MINUS",
+          "output": "AFE_OUT_3",
+          "role": "Sallen-Key section 2, gain 2.24, high Q; final ADC driver",
+          "page": "afe_ch3"
+        },
+        {
+          "unit": "D",
+          "positive": "CH4_LP2_PLUS",
+          "negative": "CH4_LP2_MINUS",
+          "output": "AFE_OUT_4",
+          "role": "Sallen-Key section 2, gain 2.24, high Q; final ADC driver",
+          "page": "afe_ch4"
+        }
+      ],
+      "unit_blocks": [
+        {
+          "unit": 1,
+          "pins": [
+            "14",
+            "1",
+            "2"
+          ],
+          "channel": 1,
+          "stage": "filter_lp2",
+          "page": "afe_ch1"
+        },
+        {
+          "unit": 2,
+          "pins": [
+            "6",
+            "5",
+            "4"
+          ],
+          "channel": 2,
+          "stage": "filter_lp2",
+          "page": "afe_ch2"
+        },
+        {
+          "unit": 3,
+          "pins": [
+            "7",
+            "8",
+            "9"
+          ],
+          "channel": 3,
+          "stage": "filter_lp2",
+          "page": "afe_ch3"
+        },
+        {
+          "unit": 4,
+          "pins": [
+            "13",
+            "12",
+            "11"
+          ],
+          "channel": 4,
+          "stage": "filter_lp2",
+          "page": "afe_ch4"
+        },
+        {
+          "unit": 5,
+          "pins": [
+            "3",
+            "10"
+          ],
+          "channel": null,
+          "stage": "power",
+          "page": "afe_shared"
+        }
+      ],
+      "pin_names": {
+        "1": "IN_A-",
+        "2": "IN_A+",
+        "3": "V+",
+        "4": "IN_B+",
+        "5": "IN_B-",
+        "6": "OUT_B",
+        "7": "OUT_C",
+        "8": "IN_C-",
+        "9": "IN_C+",
+        "10": "V-",
+        "11": "IN_D+",
+        "12": "IN_D-",
+        "13": "OUT_D",
+        "14": "OUT_A"
+      },
+      "notes": "TI datasheet Table 6-5 RUC pin map; audit CAD footprint against TI RUC0014A."
+    },
+    {
+      "ref": "C1065",
+      "value": "100nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "10%",
+      "populated": true,
+      "notes": "X7R >=10 V; local bypass adjacent to U107 V+ / GND pins."
+    },
+    {
+      "ref": "U108",
+      "value": "TLV9054IRUCR",
+      "mpn": "TLV9054IRUCR",
+      "lcsc": "C2057826",
+      "package": "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP",
+      "pins": {
+        "3": "AVDD_3V0",
+        "10": "GND",
+        "2": "CH5_LP2_PLUS",
+        "1": "CH5_LP2_MINUS",
+        "14": "AFE_OUT_5",
+        "4": "CH6_LP2_PLUS",
+        "5": "CH6_LP2_MINUS",
+        "6": "AFE_OUT_6",
+        "9": "CH7_LP2_PLUS",
+        "8": "CH7_LP2_MINUS",
+        "7": "AFE_OUT_7",
+        "11": "CH8_LP2_PLUS",
+        "12": "CH8_LP2_MINUS",
+        "13": "AFE_OUT_8"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "10": "power_in",
+        "2": "input",
+        "1": "input",
+        "14": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "8": "input",
+        "7": "output",
+        "11": "input",
+        "12": "input",
+        "13": "output"
+      },
+      "page": "afe_shared",
+      "units": [
+        {
+          "unit": "A",
+          "positive": "CH5_LP2_PLUS",
+          "negative": "CH5_LP2_MINUS",
+          "output": "AFE_OUT_5",
+          "role": "Sallen-Key section 2, gain 2.24, high Q; final ADC driver",
+          "page": "afe_ch5"
+        },
+        {
+          "unit": "B",
+          "positive": "CH6_LP2_PLUS",
+          "negative": "CH6_LP2_MINUS",
+          "output": "AFE_OUT_6",
+          "role": "Sallen-Key section 2, gain 2.24, high Q; final ADC driver",
+          "page": "afe_ch6"
+        },
+        {
+          "unit": "C",
+          "positive": "CH7_LP2_PLUS",
+          "negative": "CH7_LP2_MINUS",
+          "output": "AFE_OUT_7",
+          "role": "Sallen-Key section 2, gain 2.24, high Q; final ADC driver",
+          "page": "afe_ch7"
+        },
+        {
+          "unit": "D",
+          "positive": "CH8_LP2_PLUS",
+          "negative": "CH8_LP2_MINUS",
+          "output": "AFE_OUT_8",
+          "role": "Sallen-Key section 2, gain 2.24, high Q; final ADC driver",
+          "page": "afe_ch8"
+        }
+      ],
+      "unit_blocks": [
+        {
+          "unit": 1,
+          "pins": [
+            "14",
+            "1",
+            "2"
+          ],
+          "channel": 5,
+          "stage": "filter_lp2",
+          "page": "afe_ch5"
+        },
+        {
+          "unit": 2,
+          "pins": [
+            "6",
+            "5",
+            "4"
+          ],
+          "channel": 6,
+          "stage": "filter_lp2",
+          "page": "afe_ch6"
+        },
+        {
+          "unit": 3,
+          "pins": [
+            "7",
+            "8",
+            "9"
+          ],
+          "channel": 7,
+          "stage": "filter_lp2",
+          "page": "afe_ch7"
+        },
+        {
+          "unit": 4,
+          "pins": [
+            "13",
+            "12",
+            "11"
+          ],
+          "channel": 8,
+          "stage": "filter_lp2",
+          "page": "afe_ch8"
+        },
+        {
+          "unit": 5,
+          "pins": [
+            "3",
+            "10"
+          ],
+          "channel": null,
+          "stage": "power",
+          "page": "afe_shared"
+        }
+      ],
+      "pin_names": {
+        "1": "IN_A-",
+        "2": "IN_A+",
+        "3": "V+",
+        "4": "IN_B+",
+        "5": "IN_B-",
+        "6": "OUT_B",
+        "7": "OUT_C",
+        "8": "IN_C-",
+        "9": "IN_C+",
+        "10": "V-",
+        "11": "IN_D+",
+        "12": "IN_D-",
+        "13": "OUT_D",
+        "14": "OUT_A"
+      },
+      "notes": "TI datasheet Table 6-5 RUC pin map; audit CAD footprint against TI RUC0014A."
+    },
+    {
+      "ref": "C1066",
+      "value": "100nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "10%",
+      "populated": true,
+      "notes": "X7R >=10 V; local bypass adjacent to U108 V+ / GND pins."
+    },
+    {
+      "ref": "U109",
+      "value": "TLV9004IRUCR",
+      "mpn": "TLV9004IRUCR",
+      "lcsc": "C2058192",
+      "package": "X2QFN-14_RUC_2x2mm_P0.4mm_NoEP",
+      "pins": {
+        "3": "AVDD_3V0",
+        "10": "GND",
+        "2": "REF_PLUS",
+        "1": "REF_MINUS",
+        "14": "REF_PRE",
+        "4": "VMID_RAW",
+        "5": "VMID_BUF",
+        "6": "VMID_BUF",
+        "9": "VMID_RAW",
+        "8": "AFE_SPARE_C",
+        "7": "AFE_SPARE_C",
+        "11": "VMID_RAW",
+        "12": "AFE_SPARE_D",
+        "13": "AFE_SPARE_D"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "10": "power_in",
+        "2": "input",
+        "1": "input",
+        "14": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "8": "input",
+        "7": "output",
+        "11": "input",
+        "12": "input",
+        "13": "output"
+      },
+      "page": "afe_shared",
+      "units": [
+        {
+          "unit": "A",
+          "positive": "REF_PLUS",
+          "negative": "REF_MINUS",
+          "output": "REF_PRE",
+          "role": "Input preamp, gain 11",
+          "page": "afe_shared"
+        },
+        {
+          "unit": "B",
+          "positive": "VMID_RAW",
+          "negative": "VMID_BUF",
+          "output": "VMID_BUF",
+          "role": "VMID unity follower; feedback before isolation",
+          "page": "afe_shared"
+        },
+        {
+          "unit": "C",
+          "positive": "VMID_RAW",
+          "negative": "AFE_SPARE_C",
+          "output": "AFE_SPARE_C",
+          "role": "Unused unit, stable follower",
+          "page": "afe_shared"
+        },
+        {
+          "unit": "D",
+          "positive": "VMID_RAW",
+          "negative": "AFE_SPARE_D",
+          "output": "AFE_SPARE_D",
+          "role": "Unused unit, stable follower",
+          "page": "afe_shared"
+        }
+      ],
+      "unit_blocks": [
+        {
+          "unit": 1,
+          "pins": [
+            "14",
+            "1",
+            "2"
+          ],
+          "channel": null,
+          "stage": "preamp",
+          "page": "afe_shared"
+        },
+        {
+          "unit": 2,
+          "pins": [
+            "6",
+            "5",
+            "4"
+          ],
+          "channel": null,
+          "stage": "vmid",
+          "page": "afe_shared"
+        },
+        {
+          "unit": 3,
+          "pins": [
+            "7",
+            "8",
+            "9"
+          ],
+          "channel": null,
+          "stage": "unused",
+          "page": "afe_shared"
+        },
+        {
+          "unit": 4,
+          "pins": [
+            "13",
+            "12",
+            "11"
+          ],
+          "channel": null,
+          "stage": "unused",
+          "page": "afe_shared"
+        },
+        {
+          "unit": 5,
+          "pins": [
+            "3",
+            "10"
+          ],
+          "channel": null,
+          "stage": "power",
+          "page": "afe_shared"
+        }
+      ],
+      "pin_names": {
+        "1": "IN_A-",
+        "2": "IN_A+",
+        "3": "V+",
+        "4": "IN_B+",
+        "5": "IN_B-",
+        "6": "OUT_B",
+        "7": "OUT_C",
+        "8": "IN_C-",
+        "9": "IN_C+",
+        "10": "V-",
+        "11": "IN_D+",
+        "12": "IN_D-",
+        "13": "OUT_D",
+        "14": "OUT_A"
+      },
+      "notes": "TI datasheet Table 6-5 RUC pin map; audit CAD footprint against TI RUC0014A."
+    },
+    {
+      "ref": "C1067",
+      "value": "100nF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "10%",
+      "populated": true,
+      "notes": "X7R >=10 V; local bypass adjacent to U109 V+ / GND pins."
+    },
+    {
+      "ref": "C1068",
+      "value": "4.7uF",
+      "mpn": null,
+      "lcsc": null,
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pinfunctiontypes": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "page": "afe_shared",
+      "tolerance": "20%",
+      "populated": true,
+      "notes": "Local analog-bank bypass; complements regulator output capacitors."
+    },
+    {
+      "ref": "U110",
+      "value": "TPD4E05U06DQAR",
+      "mpn": "TPD4E05U06DQAR",
+      "lcsc": "C138714",
+      "package": "USON-10_DQA_1x2.5mm_P0.5mm",
+      "pins": {
+        "3": "GND",
+        "8": "GND",
+        "1": "FFC_CH1",
+        "2": "FFC_CH2",
+        "4": "FFC_CH3",
+        "5": "FFC_CH4",
+        "6": "NC_ESD_0_PIN6",
+        "7": "NC_ESD_0_PIN7",
+        "9": "NC_ESD_0_PIN9",
+        "10": "NC_ESD_0_PIN10"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "8": "power_in",
+        "1": "passive",
+        "2": "passive",
+        "4": "passive",
+        "5": "passive",
+        "6": "no_connect",
+        "7": "no_connect",
+        "9": "no_connect",
+        "10": "no_connect"
+      },
+      "page": "afe_shared",
+      "notes": "Unidirectional connector ESD; 0.5 pF typical per line; not a 3 V precision rail clamp. Unused IO and NC pins remain unconnected."
+    },
+    {
+      "ref": "U111",
+      "value": "TPD4E05U06DQAR",
+      "mpn": "TPD4E05U06DQAR",
+      "lcsc": "C138714",
+      "package": "USON-10_DQA_1x2.5mm_P0.5mm",
+      "pins": {
+        "3": "GND",
+        "8": "GND",
+        "1": "FFC_CH5",
+        "2": "FFC_CH6",
+        "4": "FFC_CH7",
+        "5": "FFC_CH8",
+        "6": "NC_ESD_1_PIN6",
+        "7": "NC_ESD_1_PIN7",
+        "9": "NC_ESD_1_PIN9",
+        "10": "NC_ESD_1_PIN10"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "8": "power_in",
+        "1": "passive",
+        "2": "passive",
+        "4": "passive",
+        "5": "passive",
+        "6": "no_connect",
+        "7": "no_connect",
+        "9": "no_connect",
+        "10": "no_connect"
+      },
+      "page": "afe_shared",
+      "notes": "Unidirectional connector ESD; 0.5 pF typical per line; not a 3 V precision rail clamp. Unused IO and NC pins remain unconnected."
+    },
+    {
+      "ref": "U112",
+      "value": "TPD4E05U06DQAR",
+      "mpn": "TPD4E05U06DQAR",
+      "lcsc": "C138714",
+      "package": "USON-10_DQA_1x2.5mm_P0.5mm",
+      "pins": {
+        "3": "GND",
+        "8": "GND",
+        "1": "FFC_REF",
+        "2": "NC_ESD_2_1",
+        "4": "NC_ESD_2_2",
+        "5": "NC_ESD_2_3",
+        "6": "NC_ESD_2_PIN6",
+        "7": "NC_ESD_2_PIN7",
+        "9": "NC_ESD_2_PIN9",
+        "10": "NC_ESD_2_PIN10"
+      },
+      "pinfunctiontypes": {
+        "3": "power_in",
+        "8": "power_in",
+        "1": "passive",
+        "2": "no_connect",
+        "4": "no_connect",
+        "5": "no_connect",
+        "6": "no_connect",
+        "7": "no_connect",
+        "9": "no_connect",
+        "10": "no_connect"
+      },
+      "page": "afe_shared",
+      "notes": "Unidirectional connector ESD; 0.5 pF typical per line; not a 3 V precision rail clamp. Unused IO and NC pins remain unconnected."
+    }
+  ],
+  "nets": [
+    "AFE_OUT_1",
+    "AFE_OUT_2",
+    "AFE_OUT_3",
+    "AFE_OUT_4",
+    "AFE_OUT_5",
+    "AFE_OUT_6",
+    "AFE_OUT_7",
+    "AFE_OUT_8",
+    "AFE_SPARE_C",
+    "AFE_SPARE_D",
+    "AVDD_3V0",
+    "CH1_DIFF_BAL_MID",
+    "CH1_DIFF_FB_MID",
+    "CH1_DIFF_MINUS",
+    "CH1_DIFF_PLUS",
+    "CH1_HP",
+    "CH1_HP_CH",
+    "CH1_HP_REF",
+    "CH1_LIMIT",
+    "CH1_LP1_A",
+    "CH1_LP1_MINUS",
+    "CH1_LP1_OUT",
+    "CH1_LP1_PLUS",
+    "CH1_LP2_A",
+    "CH1_LP2_MINUS",
+    "CH1_LP2_PLUS",
+    "CH1_MINUS",
+    "CH1_PLUS",
+    "CH1_PRE",
+    "CH2_DIFF_BAL_MID",
+    "CH2_DIFF_FB_MID",
+    "CH2_DIFF_MINUS",
+    "CH2_DIFF_PLUS",
+    "CH2_HP",
+    "CH2_HP_CH",
+    "CH2_HP_REF",
+    "CH2_LIMIT",
+    "CH2_LP1_A",
+    "CH2_LP1_MINUS",
+    "CH2_LP1_OUT",
+    "CH2_LP1_PLUS",
+    "CH2_LP2_A",
+    "CH2_LP2_MINUS",
+    "CH2_LP2_PLUS",
+    "CH2_MINUS",
+    "CH2_PLUS",
+    "CH2_PRE",
+    "CH3_DIFF_BAL_MID",
+    "CH3_DIFF_FB_MID",
+    "CH3_DIFF_MINUS",
+    "CH3_DIFF_PLUS",
+    "CH3_HP",
+    "CH3_HP_CH",
+    "CH3_HP_REF",
+    "CH3_LIMIT",
+    "CH3_LP1_A",
+    "CH3_LP1_MINUS",
+    "CH3_LP1_OUT",
+    "CH3_LP1_PLUS",
+    "CH3_LP2_A",
+    "CH3_LP2_MINUS",
+    "CH3_LP2_PLUS",
+    "CH3_MINUS",
+    "CH3_PLUS",
+    "CH3_PRE",
+    "CH4_DIFF_BAL_MID",
+    "CH4_DIFF_FB_MID",
+    "CH4_DIFF_MINUS",
+    "CH4_DIFF_PLUS",
+    "CH4_HP",
+    "CH4_HP_CH",
+    "CH4_HP_REF",
+    "CH4_LIMIT",
+    "CH4_LP1_A",
+    "CH4_LP1_MINUS",
+    "CH4_LP1_OUT",
+    "CH4_LP1_PLUS",
+    "CH4_LP2_A",
+    "CH4_LP2_MINUS",
+    "CH4_LP2_PLUS",
+    "CH4_MINUS",
+    "CH4_PLUS",
+    "CH4_PRE",
+    "CH5_DIFF_BAL_MID",
+    "CH5_DIFF_FB_MID",
+    "CH5_DIFF_MINUS",
+    "CH5_DIFF_PLUS",
+    "CH5_HP",
+    "CH5_HP_CH",
+    "CH5_HP_REF",
+    "CH5_LIMIT",
+    "CH5_LP1_A",
+    "CH5_LP1_MINUS",
+    "CH5_LP1_OUT",
+    "CH5_LP1_PLUS",
+    "CH5_LP2_A",
+    "CH5_LP2_MINUS",
+    "CH5_LP2_PLUS",
+    "CH5_MINUS",
+    "CH5_PLUS",
+    "CH5_PRE",
+    "CH6_DIFF_BAL_MID",
+    "CH6_DIFF_FB_MID",
+    "CH6_DIFF_MINUS",
+    "CH6_DIFF_PLUS",
+    "CH6_HP",
+    "CH6_HP_CH",
+    "CH6_HP_REF",
+    "CH6_LIMIT",
+    "CH6_LP1_A",
+    "CH6_LP1_MINUS",
+    "CH6_LP1_OUT",
+    "CH6_LP1_PLUS",
+    "CH6_LP2_A",
+    "CH6_LP2_MINUS",
+    "CH6_LP2_PLUS",
+    "CH6_MINUS",
+    "CH6_PLUS",
+    "CH6_PRE",
+    "CH7_DIFF_BAL_MID",
+    "CH7_DIFF_FB_MID",
+    "CH7_DIFF_MINUS",
+    "CH7_DIFF_PLUS",
+    "CH7_HP",
+    "CH7_HP_CH",
+    "CH7_HP_REF",
+    "CH7_LIMIT",
+    "CH7_LP1_A",
+    "CH7_LP1_MINUS",
+    "CH7_LP1_OUT",
+    "CH7_LP1_PLUS",
+    "CH7_LP2_A",
+    "CH7_LP2_MINUS",
+    "CH7_LP2_PLUS",
+    "CH7_MINUS",
+    "CH7_PLUS",
+    "CH7_PRE",
+    "CH8_DIFF_BAL_MID",
+    "CH8_DIFF_FB_MID",
+    "CH8_DIFF_MINUS",
+    "CH8_DIFF_PLUS",
+    "CH8_HP",
+    "CH8_HP_CH",
+    "CH8_HP_REF",
+    "CH8_LIMIT",
+    "CH8_LP1_A",
+    "CH8_LP1_MINUS",
+    "CH8_LP1_OUT",
+    "CH8_LP1_PLUS",
+    "CH8_LP2_A",
+    "CH8_LP2_MINUS",
+    "CH8_LP2_PLUS",
+    "CH8_MINUS",
+    "CH8_PLUS",
+    "CH8_PRE",
+    "FFC_CH1",
+    "FFC_CH2",
+    "FFC_CH3",
+    "FFC_CH4",
+    "FFC_CH5",
+    "FFC_CH6",
+    "FFC_CH7",
+    "FFC_CH8",
+    "FFC_REF",
+    "GND",
+    "REF_LIMIT",
+    "REF_MINUS",
+    "REF_PLUS",
+    "REF_PRE",
+    "VMID",
+    "VMID_BUF",
+    "VMID_RAW"
+  ],
+  "interfaces": {
+    "power": [
+      "AVDD_3V0",
+      "GND",
+      "VMID_RAW"
+    ],
+    "input": [
+      "FFC_CH1",
+      "FFC_CH2",
+      "FFC_CH3",
+      "FFC_CH4",
+      "FFC_CH5",
+      "FFC_CH6",
+      "FFC_CH7",
+      "FFC_CH8",
+      "FFC_REF"
+    ],
+    "output": [
+      "AFE_OUT_1",
+      "AFE_OUT_2",
+      "AFE_OUT_3",
+      "AFE_OUT_4",
+      "AFE_OUT_5",
+      "AFE_OUT_6",
+      "AFE_OUT_7",
+      "AFE_OUT_8"
+    ]
+  },
+  "electrical_conventions": {
+    "GND": "One common electrical net; analog placement/return partition, not disconnected AGND/DGND islands",
+    "VMID": "1.5 V nominal, buffered from power-sheet VMID_RAW",
+    "output_polarity": "Positive REF-minus-CH; software can invert samples"
+  },
+  "sourcing_note": "Active exact order codes verified on LCSC. Passive MPN/LCSC fields require root BOM sourcing before release; values/tolerances are circuit requirements."
+}

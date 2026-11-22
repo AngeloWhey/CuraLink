@@ -1,0 +1,22 @@
+[
+  {
+    "part": "tlv9002",
+    "primary_url": "https://www.ti.com/lit/zip/SBOMAL2",
+    "archive_sha256": "516e3f6405b699003d94840520966d7599c6c3af37f37c69541f9ed7ae211fe6",
+    "original_path": "hardware/rev-a/ltspice/afe/models/tlv9002-original.lib",
+    "original_lib_sha256": "8d482d075395aa6d995354f6289f819120ba66126c88c23fb1113b8c14a81b18",
+    "derived_path": "hardware/rev-a/ltspice/afe/models/tlv9002-namespaced.lib",
+    "derived_lib_sha256": "22a5c4569fafceb2559ba048d2a2b3035059513988a9c1a2f0688630263cb66d",
+    "transformation": "Prefix every subcircuit/model identifier and reference only; no model equation, noise source, or temperature edits"
+  },
+  {
+    "part": "tlv9052",
+    "primary_url": "https://www.ti.com/lit/zip/SBOMAO0",
+    "archive_sha256": "c0720b202adbe59b2b00ee77de64671d6844567494606fd09819c3eee0664044",
+    "original_path": "hardware/rev-a/ltspice/afe/models/tlv9052-original.lib",
+    "original_lib_sha256": "234eb546abe7ff88937387ecfe430014c9d4d6490cb4c56014f650d21b7376f4",
+    "derived_path": "hardware/rev-a/ltspice/afe/models/tlv9052-namespaced.lib",
+    "derived_lib_sha256": "21aa0f220b73bef615f2431e9b5f24606d618121215f766240b6bd29cabeab8e",
+    "transformation": "Prefix every subcircuit/model identifier and reference only; no model equation, noise source, or temperature edits"
+  }
+]

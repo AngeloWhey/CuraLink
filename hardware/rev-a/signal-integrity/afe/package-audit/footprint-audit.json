@@ -1,0 +1,306 @@
+{
+  "date": "2026-10-02",
+  "status": "Manufacturer reference-land geometry audited; actual pcbnew parsing/DRC recorded separately",
+  "view": "Footprint is TOP view; TI package outline bottom view was mirrored appropriately; do not mirror top assembly placements again.",
+  "units": "mm",
+  "mask_expansion_mm": 0.05,
+  "mask_note": "NSMD openings; RUC expansion<=0.05mm and DQA<=0.07mm reference limits; actual board mask rules must retain webs.",
+  "sources": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tlv9004.pdf",
+      "local": "hardware/rev-a/ltspice/sources/tlv9004.pdf",
+      "sha256": "e03eb2e84aec415cb205c8c48b369ea58ac074ad812cf3d8ff9476ca419455da"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tlv9054.pdf",
+      "local": "hardware/rev-a/ltspice/sources/tlv9054.pdf",
+      "sha256": "9f143b3fc2e3768756cea227fadccecf7ead9bbd274f422621d05da7c5a448a4"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf",
+      "local": "hardware/rev-a/ltspice/sources/tpd4e05u06.pdf",
+      "sha256": "c167cf1e72a5473a4d2c59b6a3c0251498701da05b7785919b9ceaae3b3e02c6"
+    }
+  ],
+  "RUC": {
+    "footprint": "CuraLink:TLV_RUC14_X2QFN_2x2mm_NoEP",
+    "drawing": "RUC0014A4220584/A05/2019",
+    "TI_PDF_pages": [
+      107,
+      108,
+      109
+    ],
+    "body_nominal_mm": [
+      2,
+      2
+    ],
+    "body_max_mm": [
+      2.1,
+      2.1
+    ],
+    "height_max_mm": 0.4,
+    "exposed_pad": false,
+    "numbered_Cu_pads": 14,
+    "pads": [
+      {
+        "number": 1,
+        "x": -0.9,
+        "y": -0.8,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 2,
+        "x": -0.9,
+        "y": -0.4,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 3,
+        "x": -0.9,
+        "y": 0,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 4,
+        "x": -0.9,
+        "y": 0.4,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 5,
+        "x": -0.9,
+        "y": 0.8,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 6,
+        "x": -0.2,
+        "y": 0.9,
+        "w": 0.2,
+        "h": 0.6
+      },
+      {
+        "number": 7,
+        "x": 0.2,
+        "y": 0.9,
+        "w": 0.2,
+        "h": 0.6
+      },
+      {
+        "number": 8,
+        "x": 0.9,
+        "y": 0.8,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 9,
+        "x": 0.9,
+        "y": 0.4,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 10,
+        "x": 0.9,
+        "y": 0,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 11,
+        "x": 0.9,
+        "y": -0.4,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 12,
+        "x": 0.9,
+        "y": -0.8,
+        "w": 0.6,
+        "h": 0.2
+      },
+      {
+        "number": 13,
+        "x": 0.2,
+        "y": -0.9,
+        "w": 0.2,
+        "h": 0.6
+      },
+      {
+        "number": 14,
+        "x": -0.2,
+        "y": -0.9,
+        "w": 0.2,
+        "h": 0.6
+      }
+    ],
+    "courtyard_mm": [
+      3,
+      3
+    ],
+    "courtyard_note": "0.3mm beyond land extent, chosen assembly clearance; not a TI package dimension",
+    "paste": "Same as copper reference aperture,14x0.6x0.2mm, radius0.05mm",
+    "pin_functions": {
+      "1": "IN_A-",
+      "2": "IN_A+",
+      "3": "V+",
+      "4": "IN_B+",
+      "5": "IN_B-",
+      "6": "OUT_B",
+      "7": "OUT_C",
+      "8": "IN_C-",
+      "9": "IN_C+",
+      "10": "V-",
+      "11": "IN_D+",
+      "12": "IN_D-",
+      "13": "OUT_D",
+      "14": "OUT_A"
+    },
+    "official_KiCad_comparison": {
+      "path": "Package_DFN_QFN:Texas_S-PX2QFN-14",
+      "result": "Pin positions/order family correct, noEP; IPC-generated0.875x0.2mm lands atsidecenters\u00b10.9375mm differ fromTI reference0.6x0.2at\u00b10.9; custom usesTI reference"
+    },
+    "TLV9054_PDF_pages": [
+      85,
+      86,
+      87
+    ]
+  },
+  "DQA": {
+    "footprint": "CuraLink:TPD4E05U06DQA_USON10_1x2.5mm",
+    "drawing": "DQA0010A4220328/A12/2015",
+    "TI_PDF_pages": [
+      28,
+      29,
+      30
+    ],
+    "DQA_B_pages": [
+      31,
+      32,
+      33
+    ],
+    "body_nominal_mm": [
+      1,
+      2.5
+    ],
+    "body_max_mm": [
+      1.1,
+      2.6
+    ],
+    "height_max_mm": 0.55,
+    "exposed_pad": false,
+    "numbered_Cu_pads": 10,
+    "paste_only_unnumbered_pads": 2,
+    "pads": [
+      {
+        "number": 1,
+        "x": -0.4175,
+        "y": -1,
+        "w": 0.565,
+        "h": 0.2
+      },
+      {
+        "number": 2,
+        "x": -0.4175,
+        "y": -0.5,
+        "w": 0.565,
+        "h": 0.2
+      },
+      {
+        "number": 3,
+        "x": -0.4175,
+        "y": 0,
+        "w": 0.565,
+        "h": 0.4
+      },
+      {
+        "number": 4,
+        "x": -0.4175,
+        "y": 0.5,
+        "w": 0.565,
+        "h": 0.2
+      },
+      {
+        "number": 5,
+        "x": -0.4175,
+        "y": 1,
+        "w": 0.565,
+        "h": 0.2
+      },
+      {
+        "number": 6,
+        "x": 0.4175,
+        "y": 1,
+        "w": 0.565,
+        "h": 0.2
+      },
+      {
+        "number": 7,
+        "x": 0.4175,
+        "y": 0.5,
+        "w": 0.565,
+        "h": 0.2
+      },
+      {
+        "number": 8,
+        "x": 0.4175,
+        "y": 0,
+        "w": 0.565,
+        "h": 0.4
+      },
+      {
+        "number": 9,
+        "x": 0.4175,
+        "y": -0.5,
+        "w": 0.565,
+        "h": 0.2
+      },
+      {
+        "number": 10,
+        "x": 0.4175,
+        "y": -1,
+        "w": 0.565,
+        "h": 0.2
+      }
+    ],
+    "courtyard_mm": [
+      1.9,
+      3.1
+    ],
+    "paste": "Signals0.565x0.2mm; ground3/8 separate unnumbered F.Paste-only0.565x0.36mm, radius0.05mm, perTI stencil example",
+    "pin_functions": {
+      "1": "IO1",
+      "2": "IO2",
+      "3": "GND",
+      "4": "IO3",
+      "5": "IO4",
+      "6": "NC",
+      "7": "NC",
+      "8": "GND",
+      "9": "NC",
+      "10": "NC"
+    },
+    "NC_note": "6/7/9/10 have mechanical solder lands but are not signal vias or jumpers; preserve canonical NC nets/no connections.",
+    "variant_compatibility": {
+      "url": "https://e2e.ti.com/support/interface-group/interface/f/interface-forum/1384139/tpd4e05u06-what-is-the-correct-package-drawing",
+      "manufacturer_statement_paraphrase": "Either DQA0010A or DQA0010B can ship underTPD4E05U06DQAR; TI testedandconfirms either device works on either landpattern. B joinsgroundmetal; Aseparate groundlands usedhere.",
+      "note": "No stencil ground-via aperture added; use nearby GNDvias rather than unstated unfilled via-in-paste."
+    },
+    "official_KiCad_comparison": {
+      "path": "Package_SON:USON-10_2.5x1.0mm_P0.5mm",
+      "result": "Generic sourcedfromTPD4E02B04, all0.55x0.30lands at\u00b10.385; notsame as selectedpartTI distinct0.565x0.4ground and0.565x0.2signal recommendedlands"
+    }
+  },
+  "assembly_gates": [
+    "Manufacturer geometry audit does not qualify stencil thickness, solder volume, reflow, exact assembler land acceptance or board solder-mask registration",
+    "Root integration must skip unnumbered paste-only pads when mapping electrical pins",
+    "No substituted stock SKU/package or unapproved exposed-pad variant is interchangeable solely because body dimensions match"
+  ]
+}

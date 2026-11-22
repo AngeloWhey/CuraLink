@@ -1,0 +1,2583 @@
+{
+  "audit_date": "2026-10-02",
+  "date_source": "Client environment America/New_York",
+  "bom_source": "hardware/rev-a/bom.csv",
+  "bom_sha256": "7efee96822f07fdf54333c56ea29e61fa1c7fa8ffc2fcb18d3cb3d76811ef4e0",
+  "scope": "All PCB BOM refs matching R followed by digits, including DNP; one-board quantities",
+  "source_method": "Unauthenticated read-only LCSC public product detail API; exact code and model identity required",
+  "not_verified": [
+    "Stock reservation",
+    "JLCPCB assembly-library eligibility",
+    "Checkout/export/address eligibility",
+    "Placement feeder wastage"
+  ],
+  "unique_skus": 34,
+  "populated_resistors": 210,
+  "dnp_resistors": 8,
+  "all_stocked_for_one_board_including_dnp": true,
+  "records": [
+    {
+      "lcsc": "C4109",
+      "expected_mpn": "0402WGF2001TCE",
+      "package": "0402",
+      "values": [
+        "2k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [],
+      "dnp_refs": [
+        "R505"
+      ],
+      "source_url": "https://www.lcsc.com/product-detail/C4109.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C4109",
+      "pcb_populated_quantity": 0,
+      "pcb_dnp_quantity": 1,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C4109.json",
+      "returned_lcsc": "C4109",
+      "returned_mpn": "0402WGF2001TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "2kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 6694600,
+      "stock_international_immediate": 6694600,
+      "stock_international_total": 6694600,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C4109",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0026
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.002
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0016
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0015
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0012
+        }
+      ],
+      "purchase_quantity_populated_only": 0,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF2001TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF2001TCE",
+      "stock_immediate": 6694600,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C4109.json",
+      "unit_price_usd": 0.0026
+    },
+    {
+      "lcsc": "C4190",
+      "expected_mpn": "0603WAF2201T5E",
+      "package": "0603",
+      "values": [
+        "2.2k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [],
+      "dnp_refs": [
+        "R548"
+      ],
+      "source_url": "https://www.lcsc.com/product-detail/C4190.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C4190",
+      "pcb_populated_quantity": 0,
+      "pcb_dnp_quantity": 1,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C4190.json",
+      "returned_lcsc": "C4190",
+      "returned_mpn": "0603WAF2201T5E",
+      "returned_package": "0603",
+      "manufacturer": "UNI-ROYAL",
+      "description": "2.2kΩ ±1% 100mW 0603 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 5756200,
+      "stock_international_immediate": 5756200,
+      "stock_international_total": 5756200,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C4190",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0018
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0014
+        },
+        {
+          "quantity": 5000,
+          "usd_per_piece": 0.0012
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0011
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0009
+        }
+      ],
+      "purchase_quantity_populated_only": 0,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0603WAF2201T5E",
+      "checked_date": "2026-10-02",
+      "product_model": "0603WAF2201T5E",
+      "stock_immediate": 5756200,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C4190.json",
+      "unit_price_usd": 0.0018
+    },
+    {
+      "lcsc": "C17168",
+      "expected_mpn": "0402WGF0000TCE",
+      "package": "0402",
+      "values": [
+        "0ohm",
+        "0ohm DNP"
+      ],
+      "required_tolerances": [
+        ""
+      ],
+      "populated_refs": [
+        "R417"
+      ],
+      "dnp_refs": [
+        "R418"
+      ],
+      "source_url": "https://www.lcsc.com/product-detail/C17168.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C17168",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 1,
+      "pcb_quantity_if_all_options_fitted": 2,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C17168.json",
+      "returned_lcsc": "C17168",
+      "returned_mpn": "0402WGF0000TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "0Ω ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 3346800,
+      "stock_international_immediate": 3346800,
+      "stock_international_total": 3346800,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17168",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0025
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0019
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0016
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0015
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0013
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF0000TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF0000TCE",
+      "stock_immediate": 3346800,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C17168.json",
+      "unit_price_usd": 0.0025
+    },
+    {
+      "lcsc": "C21189",
+      "expected_mpn": "0603WAF0000T5E",
+      "package": "0603",
+      "values": [
+        "0"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R501",
+        "R502",
+        "R536",
+        "R537",
+        "R543"
+      ],
+      "dnp_refs": [
+        "R542",
+        "R544",
+        "R545"
+      ],
+      "source_url": "https://www.lcsc.com/product-detail/C21189.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C21189",
+      "pcb_populated_quantity": 5,
+      "pcb_dnp_quantity": 3,
+      "pcb_quantity_if_all_options_fitted": 8,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C21189.json",
+      "returned_lcsc": "C21189",
+      "returned_mpn": "0603WAF0000T5E",
+      "returned_package": "0603",
+      "manufacturer": "UNI-ROYAL",
+      "description": "0Ω ±1% 100mW 0603 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 17030100,
+      "stock_international_immediate": 17030100,
+      "stock_international_total": 17030100,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/f42da6c80a0747bae77c2f98f4e46d1d.pdf?productCode=C21189",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0023
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0018
+        },
+        {
+          "quantity": 5000,
+          "usd_per_piece": 0.0016
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0013
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0012
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0603WAF0000T5E",
+      "checked_date": "2026-10-02",
+      "product_model": "0603WAF0000T5E",
+      "stock_immediate": 17030100,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C21189.json",
+      "unit_price_usd": 0.0023
+    },
+    {
+      "lcsc": "C22276",
+      "expected_mpn": "0402WGF1504TCE",
+      "package": "0402",
+      "values": [
+        "1.5Meg"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R520"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C22276.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C22276",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C22276.json",
+      "returned_lcsc": "C22276",
+      "returned_mpn": "0402WGF1504TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "1.5MΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 50400,
+      "stock_international_immediate": 50400,
+      "stock_international_total": 50400,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22276",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0026
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.002
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0017
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0016
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0014
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF1504TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF1504TCE",
+      "stock_immediate": 50400,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C22276.json",
+      "unit_price_usd": 0.0026
+    },
+    {
+      "lcsc": "C22775",
+      "expected_mpn": "0603WAF1000T5E",
+      "package": "0603",
+      "values": [
+        "100"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R538",
+        "R539"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C22775.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C22775",
+      "pcb_populated_quantity": 2,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 2,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C22775.json",
+      "returned_lcsc": "C22775",
+      "returned_mpn": "0603WAF1000T5E",
+      "returned_package": "0603",
+      "manufacturer": "UNI-ROYAL",
+      "description": "100Ω ±1% 100mW 0603 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 5604300,
+      "stock_international_immediate": 5604300,
+      "stock_international_total": 5604300,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22775",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0032
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0025
+        },
+        {
+          "quantity": 5000,
+          "usd_per_piece": 0.0022
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0018
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0016
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0603WAF1000T5E",
+      "checked_date": "2026-10-02",
+      "product_model": "0603WAF1000T5E",
+      "stock_immediate": 5604300,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C22775.json",
+      "unit_price_usd": 0.0032
+    },
+    {
+      "lcsc": "C23138",
+      "expected_mpn": "0603WAF3300T5E",
+      "package": "0603",
+      "values": [
+        "330"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [],
+      "dnp_refs": [
+        "R547"
+      ],
+      "source_url": "https://www.lcsc.com/product-detail/C23138.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C23138",
+      "pcb_populated_quantity": 0,
+      "pcb_dnp_quantity": 1,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C23138.json",
+      "returned_lcsc": "C23138",
+      "returned_mpn": "0603WAF3300T5E",
+      "returned_package": "0603",
+      "manufacturer": "UNI-ROYAL",
+      "description": "330Ω ±1% 100mW 0603 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 1604600,
+      "stock_international_immediate": 1604600,
+      "stock_international_total": 1604600,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23138",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0026
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.002
+        },
+        {
+          "quantity": 5000,
+          "usd_per_piece": 0.0017
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0014
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0012
+        }
+      ],
+      "purchase_quantity_populated_only": 0,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0603WAF3300T5E",
+      "checked_date": "2026-10-02",
+      "product_model": "0603WAF3300T5E",
+      "stock_immediate": 1604600,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C23138.json",
+      "unit_price_usd": 0.0026
+    },
+    {
+      "lcsc": "C25118",
+      "expected_mpn": "0402WGF470JTCE",
+      "package": "0402",
+      "values": [
+        "47",
+        "47ohm 1%"
+      ],
+      "required_tolerances": [
+        "",
+        "1%"
+      ],
+      "populated_refs": [
+        "R1149",
+        "R411",
+        "R412",
+        "R413",
+        "R414",
+        "R415"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C25118.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C25118",
+      "pcb_populated_quantity": 6,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 6,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C25118.json",
+      "returned_lcsc": "C25118",
+      "returned_mpn": "0402WGF470JTCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "47Ω ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 149400,
+      "stock_international_immediate": 149400,
+      "stock_international_total": 149400,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25118",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0023
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0018
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0015
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0014
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0013
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF470JTCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF470JTCE",
+      "stock_immediate": 149400,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C25118.json",
+      "unit_price_usd": 0.0023
+    },
+    {
+      "lcsc": "C25741",
+      "expected_mpn": "0402WGF1003TCE",
+      "package": "0402",
+      "values": [
+        "100k",
+        "100kohm 1%"
+      ],
+      "required_tolerances": [
+        "",
+        "1%"
+      ],
+      "populated_refs": [
+        "R507",
+        "R516",
+        "R518",
+        "R523",
+        "R525",
+        "R531",
+        "R533",
+        "R409"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C25741.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C25741",
+      "pcb_populated_quantity": 8,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 8,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C25741.json",
+      "returned_lcsc": "C25741",
+      "returned_mpn": "0402WGF1003TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "100kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 3937800,
+      "stock_international_immediate": 3937800,
+      "stock_international_total": 3937800,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0025
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0019
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0016
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0015
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0013
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF1003TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF1003TCE",
+      "stock_immediate": 3937800,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C25741.json",
+      "unit_price_usd": 0.0025
+    },
+    {
+      "lcsc": "C25746",
+      "expected_mpn": "0402WGF1133TCE",
+      "package": "0402",
+      "values": [
+        "113k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R522"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C25746.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C25746",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C25746.json",
+      "returned_lcsc": "C25746",
+      "returned_mpn": "0402WGF1133TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "113kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 63100,
+      "stock_international_immediate": 63100,
+      "stock_international_total": 63100,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25746",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0009
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0008
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF1133TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF1133TCE",
+      "stock_immediate": 63100,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C25746.json",
+      "unit_price_usd": 0.0009
+    },
+    {
+      "lcsc": "C25756",
+      "expected_mpn": "0402WGF1502TCE",
+      "package": "0402",
+      "values": [
+        "15k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R504"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C25756.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C25756",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C25756.json",
+      "returned_lcsc": "C25756",
+      "returned_mpn": "0402WGF1502TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "15kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 557200,
+      "stock_international_immediate": 557200,
+      "stock_international_total": 557200,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25756",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0016
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0012
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0011
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.001
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0008
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF1502TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF1502TCE",
+      "stock_immediate": 557200,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C25756.json",
+      "unit_price_usd": 0.0016
+    },
+    {
+      "lcsc": "C25765",
+      "expected_mpn": "0402WGF2002TCE",
+      "package": "0402",
+      "values": [
+        "20k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R519"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C25765.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C25765",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C25765.json",
+      "returned_lcsc": "C25765",
+      "returned_mpn": "0402WGF2002TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "20kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 1864100,
+      "stock_international_immediate": 1864100,
+      "stock_international_total": 1864100,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25765",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0013
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.001
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0008
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0006
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF2002TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF2002TCE",
+      "stock_immediate": 1864100,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C25765.json",
+      "unit_price_usd": 0.0013
+    },
+    {
+      "lcsc": "C25774",
+      "expected_mpn": "0402WGF3003TCE",
+      "package": "0402",
+      "values": [
+        "300k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R510"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C25774.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C25774",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C25774.json",
+      "returned_lcsc": "C25774",
+      "returned_mpn": "0402WGF3003TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "300kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 121300,
+      "stock_international_immediate": 121300,
+      "stock_international_total": 121300,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25774",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0019
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0015
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0013
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0012
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0009
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF3003TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF3003TCE",
+      "stock_immediate": 121300,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C25774.json",
+      "unit_price_usd": 0.0019
+    },
+    {
+      "lcsc": "C25792",
+      "expected_mpn": "0402WGF4702TCE",
+      "package": "0402",
+      "values": [
+        "47k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R527",
+        "R529"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C25792.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C25792",
+      "pcb_populated_quantity": 2,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 2,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C25792.json",
+      "returned_lcsc": "C25792",
+      "returned_mpn": "0402WGF4702TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "47kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 4102800,
+      "stock_international_immediate": 4102800,
+      "stock_international_total": 4102800,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0026
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.002
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0017
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0015
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0013
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF4702TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF4702TCE",
+      "stock_immediate": 4102800,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C25792.json",
+      "unit_price_usd": 0.0026
+    },
+    {
+      "lcsc": "C25811",
+      "expected_mpn": "0603WAF2003T5E",
+      "package": "0603",
+      "values": [
+        "200k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R549"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C25811.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C25811",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C25811.json",
+      "returned_lcsc": "C25811",
+      "returned_mpn": "0603WAF2003T5E",
+      "returned_package": "0603",
+      "manufacturer": "UNI-ROYAL",
+      "description": "200kΩ ±1% 100mW 0603 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 1761200,
+      "stock_international_immediate": 1761200,
+      "stock_international_total": 1761200,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25811",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0023
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0017
+        },
+        {
+          "quantity": 5000,
+          "usd_per_piece": 0.0015
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0013
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0011
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0603WAF2003T5E",
+      "checked_date": "2026-10-02",
+      "product_model": "0603WAF2003T5E",
+      "stock_immediate": 1761200,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C25811.json",
+      "unit_price_usd": 0.0023
+    },
+    {
+      "lcsc": "C25905",
+      "expected_mpn": "0402WGF5101TCE",
+      "package": "0402",
+      "values": [
+        "5.1k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R1001",
+        "R1019",
+        "R1037",
+        "R1055",
+        "R1073",
+        "R1091",
+        "R1109",
+        "R1127",
+        "R1145"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C25905.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C25905",
+      "pcb_populated_quantity": 9,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 9,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C25905.json",
+      "returned_lcsc": "C25905",
+      "returned_mpn": "0402WGF5101TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "5.1kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 3783400,
+      "stock_international_immediate": 3783400,
+      "stock_international_total": 3783400,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25905",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0024
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0019
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0015
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0014
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0012
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF5101TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF5101TCE",
+      "stock_immediate": 3783400,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C25905.json",
+      "unit_price_usd": 0.0024
+    },
+    {
+      "lcsc": "C26083",
+      "expected_mpn": "0402WGF1004TCE",
+      "package": "0402",
+      "values": [
+        "1Meg",
+        "1Mohm 1%"
+      ],
+      "required_tolerances": [
+        "",
+        "1%"
+      ],
+      "populated_refs": [
+        "R513",
+        "R550",
+        "R416"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C26083.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C26083",
+      "pcb_populated_quantity": 3,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 3,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C26083.json",
+      "returned_lcsc": "C26083",
+      "returned_mpn": "0402WGF1004TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "1MΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 1222200,
+      "stock_international_immediate": 1222200,
+      "stock_international_total": 1222200,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C26083",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0026
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.002
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0017
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0016
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0012
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF1004TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF1004TCE",
+      "stock_immediate": 1222200,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C26083.json",
+      "unit_price_usd": 0.0026
+    },
+    {
+      "lcsc": "C26960",
+      "expected_mpn": "0402WGF2262TCE",
+      "package": "0402",
+      "values": [
+        "22.6k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R1011",
+        "R1012",
+        "R1015",
+        "R1016",
+        "R1029",
+        "R1030",
+        "R1033",
+        "R1034",
+        "R1047",
+        "R1048",
+        "R1051",
+        "R1052",
+        "R1065",
+        "R1066",
+        "R1069",
+        "R1070",
+        "R1083",
+        "R1084",
+        "R1087",
+        "R1088",
+        "R1101",
+        "R1102",
+        "R1105",
+        "R1106",
+        "R1119",
+        "R1120",
+        "R1123",
+        "R1124",
+        "R1137",
+        "R1138",
+        "R1141",
+        "R1142"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C26960.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C26960",
+      "pcb_populated_quantity": 32,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 32,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C26960.json",
+      "returned_lcsc": "C26960",
+      "returned_mpn": "0402WGF2262TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "22.6kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 34800,
+      "stock_international_immediate": 34800,
+      "stock_international_total": 34800,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C26960",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0013
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0012
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF2262TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF2262TCE",
+      "stock_immediate": 34800,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C26960.json",
+      "unit_price_usd": 0.0013
+    },
+    {
+      "lcsc": "C29381",
+      "expected_mpn": "0402WGF6652TCE",
+      "package": "0402",
+      "values": [
+        "66.5k"
+      ],
+      "required_tolerances": [
+        ""
+      ],
+      "populated_refs": [
+        "R524"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C29381.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C29381",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C29381.json",
+      "returned_lcsc": "C29381",
+      "returned_mpn": "0402WGF6652TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "66.5kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 20000,
+      "stock_international_immediate": 20000,
+      "stock_international_total": 20000,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C29381",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0014
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0011
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0009
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0008
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF6652TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF6652TCE",
+      "stock_immediate": 20000,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C29381.json",
+      "unit_price_usd": 0.0014
+    },
+    {
+      "lcsc": "C67558",
+      "expected_mpn": "0402WGF8203TCE",
+      "package": "0402",
+      "values": [
+        "820k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R534"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C67558.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C67558",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C67558.json",
+      "returned_lcsc": "C67558",
+      "returned_mpn": "0402WGF8203TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "820kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 63800,
+      "stock_international_immediate": 63800,
+      "stock_international_total": 63800,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C67558",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0013
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.001
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0009
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0008
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0007
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF8203TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF8203TCE",
+      "stock_immediate": 63800,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C67558.json",
+      "unit_price_usd": 0.0013
+    },
+    {
+      "lcsc": "C93946",
+      "expected_mpn": "RC0402FR-07130KL",
+      "package": "0402",
+      "values": [
+        "130k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R503"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C93946.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C93946",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C93946.json",
+      "returned_lcsc": "C93946",
+      "returned_mpn": "RC0402FR-07130KL",
+      "returned_package": "0402",
+      "manufacturer": "YAGEO",
+      "description": "130kΩ 62.5mW 50V Thick Film Resistor ±100ppm/℃ ±1% 0402 Chip Resistor - Surface Mount RoHS",
+      "exact_identity_match": true,
+      "stock_total": 916500,
+      "stock_international_immediate": 916500,
+      "stock_international_total": 916500,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C93946",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0033
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0027
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0024
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0022
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.002
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RC0402FR-07130KL",
+      "checked_date": "2026-10-02",
+      "product_model": "RC0402FR-07130KL",
+      "stock_immediate": 916500,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C93946.json",
+      "unit_price_usd": 0.0033
+    },
+    {
+      "lcsc": "C114606",
+      "expected_mpn": "RC0603FR-0710ML",
+      "package": "0603",
+      "values": [
+        "10Meg"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R515"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C114606.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C114606",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C114606.json",
+      "returned_lcsc": "C114606",
+      "returned_mpn": "RC0603FR-0710ML",
+      "returned_package": "0603",
+      "manufacturer": "YAGEO",
+      "description": "100mW 10MΩ 75V Thick Film Resistor ±100ppm/℃ ±1% 0603 Chip Resistor - Surface Mount RoHS",
+      "exact_identity_match": true,
+      "stock_total": 862300,
+      "stock_international_immediate": 862300,
+      "stock_international_total": 862300,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C114606",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.005
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0044
+        },
+        {
+          "quantity": 5000,
+          "usd_per_piece": 0.0041
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0039
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0037
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RC0603FR-0710ML",
+      "checked_date": "2026-10-02",
+      "product_model": "RC0603FR-0710ML",
+      "stock_immediate": 862300,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C114606.json",
+      "unit_price_usd": 0.005
+    },
+    {
+      "lcsc": "C131397",
+      "expected_mpn": "RC0805FR-071RL",
+      "package": "0805",
+      "values": [
+        "1.0"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [],
+      "dnp_refs": [
+        "R546"
+      ],
+      "source_url": "https://www.lcsc.com/product-detail/C131397.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C131397",
+      "pcb_populated_quantity": 0,
+      "pcb_dnp_quantity": 1,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C131397.json",
+      "returned_lcsc": "C131397",
+      "returned_mpn": "RC0805FR-071RL",
+      "returned_package": "0805",
+      "manufacturer": "YAGEO",
+      "description": "125mW 1Ω 150V Thick Film Resistor ±1% ±200ppm/℃ 0805 Chip Resistor - Surface Mount RoHS",
+      "exact_identity_match": true,
+      "stock_total": 254500,
+      "stock_international_immediate": 254500,
+      "stock_international_total": 254500,
+      "minimum_order": 50,
+      "order_multiple": 50,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C131397",
+      "price_ladders_usd": [
+        {
+          "quantity": 50,
+          "usd_per_piece": 0.0127
+        },
+        {
+          "quantity": 500,
+          "usd_per_piece": 0.01
+        },
+        {
+          "quantity": 1500,
+          "usd_per_piece": 0.0086
+        },
+        {
+          "quantity": 5000,
+          "usd_per_piece": 0.0077
+        },
+        {
+          "quantity": 25000,
+          "usd_per_piece": 0.0069
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0065
+        }
+      ],
+      "purchase_quantity_populated_only": 0,
+      "purchase_quantity_including_dnp": 50,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RC0805FR-071RL",
+      "checked_date": "2026-10-02",
+      "product_model": "RC0805FR-071RL",
+      "stock_immediate": 254500,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C131397.json",
+      "unit_price_usd": 0.0127
+    },
+    {
+      "lcsc": "C133039",
+      "expected_mpn": "0402WGF1104TCE",
+      "package": "0402",
+      "values": [
+        "1.1Meg"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R511"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C133039.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C133039",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C133039.json",
+      "returned_lcsc": "C133039",
+      "returned_mpn": "0402WGF1104TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "1.1MΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 41600,
+      "stock_international_immediate": 41600,
+      "stock_international_total": 41600,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C133039",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.001
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0008
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0007
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0006
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0005
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF1104TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF1104TCE",
+      "stock_immediate": 41600,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C133039.json",
+      "unit_price_usd": 0.001
+    },
+    {
+      "lcsc": "C137961",
+      "expected_mpn": "RC0402FR-07510KL",
+      "package": "0402",
+      "values": [
+        "510k"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R514"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C137961.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C137961",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C137961.json",
+      "returned_lcsc": "C137961",
+      "returned_mpn": "RC0402FR-07510KL",
+      "returned_package": "0402",
+      "manufacturer": "YAGEO",
+      "description": "510kΩ 62.5mW 50V Thick Film Resistor ±100ppm/℃ ±1% 0402 Chip Resistor - Surface Mount RoHS",
+      "exact_identity_match": true,
+      "stock_total": 753500,
+      "stock_international_immediate": 753500,
+      "stock_international_total": 753500,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C137961",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0028
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0023
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0021
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0019
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0018
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RC0402FR-07510KL",
+      "checked_date": "2026-10-02",
+      "product_model": "RC0402FR-07510KL",
+      "stock_immediate": 753500,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C137961.json",
+      "unit_price_usd": 0.0028
+    },
+    {
+      "lcsc": "C190095",
+      "expected_mpn": "RT0402BRD0710KL",
+      "package": "0402",
+      "values": [
+        "10k",
+        "10kohm 1%"
+      ],
+      "required_tolerances": [
+        "",
+        "0.1%"
+      ],
+      "populated_refs": [
+        "R1004",
+        "R1013",
+        "R1017",
+        "R1022",
+        "R1031",
+        "R1035",
+        "R1040",
+        "R1049",
+        "R1053",
+        "R1058",
+        "R1067",
+        "R1071",
+        "R1076",
+        "R1085",
+        "R1089",
+        "R1094",
+        "R1103",
+        "R1107",
+        "R1112",
+        "R1121",
+        "R1125",
+        "R1130",
+        "R1139",
+        "R1143",
+        "R1148",
+        "R506",
+        "R508",
+        "R509",
+        "R512",
+        "R517",
+        "R521",
+        "R526",
+        "R535",
+        "R540",
+        "R541",
+        "R410"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C190095.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C190095",
+      "pcb_populated_quantity": 36,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 36,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C190095.json",
+      "returned_lcsc": "C190095",
+      "returned_mpn": "RT0402BRD0710KL",
+      "returned_package": "0402",
+      "manufacturer": "YAGEO",
+      "description": "62.5mW 10kΩ 50V Thin Film Resistor ±25ppm/℃ ±0.1% 0402 Chip Resistor - Surface Mount RoHS",
+      "exact_identity_match": true,
+      "stock_total": 65100,
+      "stock_international_immediate": 65100,
+      "stock_international_total": 65100,
+      "minimum_order": 50,
+      "order_multiple": 50,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/46d7760c582640714d605308a25a220a.pdf?productCode=C190095",
+      "price_ladders_usd": [
+        {
+          "quantity": 50,
+          "usd_per_piece": 0.0255
+        },
+        {
+          "quantity": 500,
+          "usd_per_piece": 0.0215
+        },
+        {
+          "quantity": 1500,
+          "usd_per_piece": 0.0197
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0177
+        },
+        {
+          "quantity": 20000,
+          "usd_per_piece": 0.0171
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0168
+        }
+      ],
+      "purchase_quantity_populated_only": 50,
+      "purchase_quantity_including_dnp": 50,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RT0402BRD0710KL",
+      "checked_date": "2026-10-02",
+      "product_model": "RT0402BRD0710KL",
+      "stock_immediate": 65100,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C190095.json",
+      "unit_price_usd": 0.0255
+    },
+    {
+      "lcsc": "C281775",
+      "expected_mpn": "RT0402BRD071K5L",
+      "package": "0402",
+      "values": [
+        "1.5k"
+      ],
+      "required_tolerances": [
+        "0.1%"
+      ],
+      "populated_refs": [
+        "R1014",
+        "R1032",
+        "R1050",
+        "R1068",
+        "R1086",
+        "R1104",
+        "R1122",
+        "R1140"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C281775.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C281775",
+      "pcb_populated_quantity": 8,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 8,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:05 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C281775.json",
+      "returned_lcsc": "C281775",
+      "returned_mpn": "RT0402BRD071K5L",
+      "returned_package": "0402",
+      "manufacturer": "YAGEO",
+      "description": "62.5mW 1.5kΩ 50V Thin Film Resistor ±25ppm/℃ ±0.1% 0402 Chip Resistor - Surface Mount RoHS",
+      "exact_identity_match": true,
+      "stock_total": 75980,
+      "stock_international_immediate": 75980,
+      "stock_international_total": 75980,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/46d7760c582640714d605308a25a220a.pdf?productCode=C281775",
+      "price_ladders_usd": [
+        {
+          "quantity": 20,
+          "usd_per_piece": 0.0326
+        },
+        {
+          "quantity": 200,
+          "usd_per_piece": 0.0269
+        },
+        {
+          "quantity": 600,
+          "usd_per_piece": 0.0237
+        },
+        {
+          "quantity": 2000,
+          "usd_per_piece": 0.0218
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0195
+        },
+        {
+          "quantity": 20000,
+          "usd_per_piece": 0.0186
+        }
+      ],
+      "purchase_quantity_populated_only": 20,
+      "purchase_quantity_including_dnp": 20,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RT0402BRD071K5L",
+      "checked_date": "2026-10-02",
+      "product_model": "RT0402BRD071K5L",
+      "stock_immediate": 75980,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C281775.json",
+      "unit_price_usd": 0.0326
+    },
+    {
+      "lcsc": "C407703",
+      "expected_mpn": "0402WGF2205TCE",
+      "package": "0402",
+      "values": [
+        "22M"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R1002",
+        "R1020",
+        "R1038",
+        "R1056",
+        "R1074",
+        "R1092",
+        "R1110",
+        "R1128",
+        "R1146"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C407703.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C407703",
+      "pcb_populated_quantity": 9,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 9,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:03 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C407703.json",
+      "returned_lcsc": "C407703",
+      "returned_mpn": "0402WGF2205TCE",
+      "returned_package": "0402",
+      "manufacturer": "UNI-ROYAL",
+      "description": "22MΩ ±1% 62.5mW 0402 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 1400,
+      "stock_international_immediate": 1400,
+      "stock_international_total": 1400,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C407703",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0043
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0033
+        },
+        {
+          "quantity": 3000,
+          "usd_per_piece": 0.0028
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0026
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0023
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0402WGF2205TCE",
+      "checked_date": "2026-10-02",
+      "product_model": "0402WGF2205TCE",
+      "stock_immediate": 1400,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C407703.json",
+      "unit_price_usd": 0.0043
+    },
+    {
+      "lcsc": "C422914",
+      "expected_mpn": "0603WAF6044T5E",
+      "package": "0603",
+      "values": [
+        "6.04Meg"
+      ],
+      "required_tolerances": [
+        "1%"
+      ],
+      "populated_refs": [
+        "R551"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C422914.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C422914",
+      "pcb_populated_quantity": 1,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 1,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C422914.json",
+      "returned_lcsc": "C422914",
+      "returned_mpn": "0603WAF6044T5E",
+      "returned_package": "0603",
+      "manufacturer": "UNI-ROYAL",
+      "description": "6.04MΩ ±1% 100mW 0603 Thick Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 5000,
+      "stock_international_immediate": 5000,
+      "stock_international_total": 5000,
+      "minimum_order": 100,
+      "order_multiple": 100,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C422914",
+      "price_ladders_usd": [
+        {
+          "quantity": 100,
+          "usd_per_piece": 0.0013
+        },
+        {
+          "quantity": 1000,
+          "usd_per_piece": 0.0012
+        }
+      ],
+      "purchase_quantity_populated_only": 100,
+      "purchase_quantity_including_dnp": 100,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "0603WAF6044T5E",
+      "checked_date": "2026-10-02",
+      "product_model": "0603WAF6044T5E",
+      "stock_immediate": 5000,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C422914.json",
+      "unit_price_usd": 0.0013
+    },
+    {
+      "lcsc": "C723611",
+      "expected_mpn": "RT0402BRD0712K4L",
+      "package": "0402",
+      "values": [
+        "12.4k"
+      ],
+      "required_tolerances": [
+        "0.1%"
+      ],
+      "populated_refs": [
+        "R1018",
+        "R1036",
+        "R1054",
+        "R1072",
+        "R1090",
+        "R1108",
+        "R1126",
+        "R1144"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C723611.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C723611",
+      "pcb_populated_quantity": 8,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 8,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:04 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C723611.json",
+      "returned_lcsc": "C723611",
+      "returned_mpn": "RT0402BRD0712K4L",
+      "returned_package": "0402",
+      "manufacturer": "YAGEO",
+      "description": "62.5mW 12.4kΩ 50V Thin Film Resistor ±25ppm/℃ ±0.1% 0402 Chip Resistor - Surface Mount RoHS",
+      "exact_identity_match": true,
+      "stock_total": 7200,
+      "stock_international_immediate": 7200,
+      "stock_international_total": 7200,
+      "minimum_order": 50,
+      "order_multiple": 50,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/46d7760c582640714d605308a25a220a.pdf?productCode=C723611",
+      "price_ladders_usd": [
+        {
+          "quantity": 50,
+          "usd_per_piece": 0.028
+        },
+        {
+          "quantity": 500,
+          "usd_per_piece": 0.024
+        },
+        {
+          "quantity": 1500,
+          "usd_per_piece": 0.0218
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0205
+        },
+        {
+          "quantity": 20000,
+          "usd_per_piece": 0.0193
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0187
+        }
+      ],
+      "purchase_quantity_populated_only": 50,
+      "purchase_quantity_including_dnp": 50,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RT0402BRD0712K4L",
+      "checked_date": "2026-10-02",
+      "product_model": "RT0402BRD0712K4L",
+      "stock_immediate": 7200,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C723611.json",
+      "unit_price_usd": 0.028
+    },
+    {
+      "lcsc": "C852539",
+      "expected_mpn": "RT0402BRD07150RL",
+      "package": "0402",
+      "values": [
+        "150ohm 0.1%"
+      ],
+      "required_tolerances": [
+        "0.1%"
+      ],
+      "populated_refs": [
+        "R401",
+        "R402",
+        "R403",
+        "R404",
+        "R405",
+        "R406",
+        "R407",
+        "R408"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C852539.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C852539",
+      "pcb_populated_quantity": 8,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 8,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:05 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C852539.json",
+      "returned_lcsc": "C852539",
+      "returned_mpn": "RT0402BRD07150RL",
+      "returned_package": "0402",
+      "manufacturer": "YAGEO",
+      "description": "150Ω ±0.1% 63mW 0402 Thin Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 50240,
+      "stock_international_immediate": 50240,
+      "stock_international_total": 50240,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/46d7760c582640714d605308a25a220a.pdf?productCode=C852539",
+      "price_ladders_usd": [
+        {
+          "quantity": 20,
+          "usd_per_piece": 0.0245
+        },
+        {
+          "quantity": 200,
+          "usd_per_piece": 0.0198
+        },
+        {
+          "quantity": 600,
+          "usd_per_piece": 0.0172
+        },
+        {
+          "quantity": 2000,
+          "usd_per_piece": 0.0157
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0143
+        },
+        {
+          "quantity": 20000,
+          "usd_per_piece": 0.0136
+        }
+      ],
+      "purchase_quantity_populated_only": 20,
+      "purchase_quantity_including_dnp": 20,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RT0402BRD07150RL",
+      "checked_date": "2026-10-02",
+      "product_model": "RT0402BRD07150RL",
+      "stock_immediate": 50240,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C852539.json",
+      "unit_price_usd": 0.0245
+    },
+    {
+      "lcsc": "C852624",
+      "expected_mpn": "RT0402BRD071KL",
+      "package": "0402",
+      "values": [
+        "1k"
+      ],
+      "required_tolerances": [
+        "0.1%"
+      ],
+      "populated_refs": [
+        "R1003",
+        "R1021",
+        "R1039",
+        "R1057",
+        "R1075",
+        "R1093",
+        "R1111",
+        "R1129",
+        "R1147",
+        "R528",
+        "R530",
+        "R532"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C852624.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C852624",
+      "pcb_populated_quantity": 12,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 12,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:05 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C852624.json",
+      "returned_lcsc": "C852624",
+      "returned_mpn": "RT0402BRD071KL",
+      "returned_package": "0402",
+      "manufacturer": "YAGEO",
+      "description": "1kΩ 62.5mW 50V Thin Film Resistor ±25ppm/℃ ±0.1% 0402 Chip Resistor - Surface Mount RoHS",
+      "exact_identity_match": true,
+      "stock_total": 493500,
+      "stock_international_immediate": 493500,
+      "stock_international_total": 493500,
+      "minimum_order": 50,
+      "order_multiple": 50,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/46d7760c582640714d605308a25a220a.pdf?productCode=C852624",
+      "price_ladders_usd": [
+        {
+          "quantity": 50,
+          "usd_per_piece": 0.0248
+        },
+        {
+          "quantity": 500,
+          "usd_per_piece": 0.0205
+        },
+        {
+          "quantity": 1500,
+          "usd_per_piece": 0.0186
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0172
+        },
+        {
+          "quantity": 20000,
+          "usd_per_piece": 0.0166
+        },
+        {
+          "quantity": 50000,
+          "usd_per_piece": 0.0162
+        }
+      ],
+      "purchase_quantity_populated_only": 50,
+      "purchase_quantity_including_dnp": 50,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RT0402BRD071KL",
+      "checked_date": "2026-10-02",
+      "product_model": "RT0402BRD071KL",
+      "stock_immediate": 493500,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C852624.json",
+      "unit_price_usd": 0.0248
+    },
+    {
+      "lcsc": "C852827",
+      "expected_mpn": "RT0402BRD0751K1L",
+      "package": "0402",
+      "values": [
+        "51.1k"
+      ],
+      "required_tolerances": [
+        "0.1%"
+      ],
+      "populated_refs": [
+        "R1005",
+        "R1008",
+        "R1023",
+        "R1026",
+        "R1041",
+        "R1044",
+        "R1059",
+        "R1062",
+        "R1077",
+        "R1080",
+        "R1095",
+        "R1098",
+        "R1113",
+        "R1116",
+        "R1131",
+        "R1134"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C852827.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C852827",
+      "pcb_populated_quantity": 16,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 16,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:05 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C852827.json",
+      "returned_lcsc": "C852827",
+      "returned_mpn": "RT0402BRD0751K1L",
+      "returned_package": "0402",
+      "manufacturer": "YAGEO",
+      "description": "51.1kΩ 63mW 50V Thin Film Resistor ±25ppm/℃ ±0.1% 0402 Chip Resistor - Surface Mount RoHS",
+      "exact_identity_match": true,
+      "stock_total": 14060,
+      "stock_international_immediate": 14060,
+      "stock_international_total": 14060,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/46d7760c582640714d605308a25a220a.pdf?productCode=C852827",
+      "price_ladders_usd": [
+        {
+          "quantity": 20,
+          "usd_per_piece": 0.0312
+        },
+        {
+          "quantity": 200,
+          "usd_per_piece": 0.0268
+        },
+        {
+          "quantity": 600,
+          "usd_per_piece": 0.0243
+        },
+        {
+          "quantity": 2000,
+          "usd_per_piece": 0.0228
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0216
+        },
+        {
+          "quantity": 20000,
+          "usd_per_piece": 0.0209
+        }
+      ],
+      "purchase_quantity_populated_only": 20,
+      "purchase_quantity_including_dnp": 20,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RT0402BRD0751K1L",
+      "checked_date": "2026-10-02",
+      "product_model": "RT0402BRD0751K1L",
+      "stock_immediate": 14060,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C852827.json",
+      "unit_price_usd": 0.0312
+    },
+    {
+      "lcsc": "C3014193",
+      "expected_mpn": "RT0603BRE07909KL",
+      "package": "0603",
+      "values": [
+        "909k"
+      ],
+      "required_tolerances": [
+        "0.1%"
+      ],
+      "populated_refs": [
+        "R1006",
+        "R1007",
+        "R1009",
+        "R1010",
+        "R1024",
+        "R1025",
+        "R1027",
+        "R1028",
+        "R1042",
+        "R1043",
+        "R1045",
+        "R1046",
+        "R1060",
+        "R1061",
+        "R1063",
+        "R1064",
+        "R1078",
+        "R1079",
+        "R1081",
+        "R1082",
+        "R1096",
+        "R1097",
+        "R1099",
+        "R1100",
+        "R1114",
+        "R1115",
+        "R1117",
+        "R1118",
+        "R1132",
+        "R1133",
+        "R1135",
+        "R1136"
+      ],
+      "dnp_refs": [],
+      "source_url": "https://www.lcsc.com/product-detail/C3014193.html",
+      "api_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C3014193",
+      "pcb_populated_quantity": 32,
+      "pcb_dnp_quantity": 0,
+      "pcb_quantity_if_all_options_fitted": 32,
+      "server_response_date": "Fri, 02 Oct 2026 13:19:05 GMT",
+      "raw_response_file": "procurement/raw-resistors-2026-10-02/C3014193.json",
+      "returned_lcsc": "C3014193",
+      "returned_mpn": "RT0603BRE07909KL",
+      "returned_package": "0603",
+      "manufacturer": "YAGEO",
+      "description": "909kΩ ±0.1% 100mW 0603 Thin Film Resistor",
+      "exact_identity_match": true,
+      "stock_total": 140,
+      "stock_international_immediate": 140,
+      "stock_international_total": 140,
+      "minimum_order": 20,
+      "order_multiple": 20,
+      "foreign_on_sale": true,
+      "foreign_display": true,
+      "pre_sale": false,
+      "third_party_stock": false,
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/46d7760c582640714d605308a25a220a.pdf?productCode=C3014193",
+      "price_ladders_usd": [
+        {
+          "quantity": 20,
+          "usd_per_piece": 0.0303
+        },
+        {
+          "quantity": 200,
+          "usd_per_piece": 0.0248
+        },
+        {
+          "quantity": 600,
+          "usd_per_piece": 0.0218
+        },
+        {
+          "quantity": 5000,
+          "usd_per_piece": 0.02
+        },
+        {
+          "quantity": 10000,
+          "usd_per_piece": 0.0184
+        },
+        {
+          "quantity": 20000,
+          "usd_per_piece": 0.0175
+        }
+      ],
+      "purchase_quantity_populated_only": 40,
+      "purchase_quantity_including_dnp": 40,
+      "status": "IN_STOCK_ONE_BOARD_INCLUDING_DNP",
+      "mpn": "RT0603BRE07909KL",
+      "checked_date": "2026-10-02",
+      "product_model": "RT0603BRE07909KL",
+      "stock_immediate": 140,
+      "foreign_onsale": true,
+      "raw_file": "procurement/raw-resistors-2026-10-02/C3014193.json",
+      "unit_price_usd": 0.0303
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "diode_model": "bat54",
+  "Pin_dBm": 23.5,
+  "P_available_W": 0.223872113856834,
+  "Rload_ohm": 208.333333,
+  "C_tx_series_pF": 59.30046343474315,
+  "C_tx_shunt_pF": 374.73956378774636,
+  "C_rx_series_pF": 826.2058518327118,
+  "C_rx_shunt_pF": 773.5931919048533,
+  "k": 0.0662,
+  "HB_order": 31,
+  "Vdc_V": 5.0885323893723005,
+  "Idc_A": 0.02442495550806697,
+  "Pdc_W": 0.12428717721177614,
+  "P_load_total_W": 0.1242871773991662,
+  "P_accepted_W": 0.21900911434191403,
+  "P_accepted_origin": "saved TX_Probe current",
+  "eta_available_to_dc": 0.5551704277525948,
+  "eta_accepted_to_dc": 0.5674977390107185,
+  "Vdc_ripple_pp_V": 0.0006254217478049995,
+  "Vdc_max_V": 5.088839426468246,
+  "Vdc_min_V": 5.088214004720441,
+  "Zin_fundamental_real_ohm": 38.37252977468255,
+  "Zin_fundamental_imag_ohm": 5.933861622616542,
+  "return_loss_fundamental_dB": 16.630962664315902,
+  "bridge_ac_fundamental_peak_V": 6.403568322944202,
+  "D1_reverse_peak_V": 5.7184111994316495,
+  "D1_forward_peak_V": 0.6299273248257131,
+  "D1_forward_current_peak_A": 0.1207603965677996,
+  "D1_reverse_current_peak_A": 0.001921563070460839,
+  "D1_current_rms_A": 0.03387273189006468,
+  "D1_average_dissipation_W": 0.0068070045909244484,
+  "D2_reverse_peak_V": 5.718411199431647,
+  "D2_forward_peak_V": 0.6299273248257159,
+  "D2_forward_current_peak_A": 0.12076038444344177,
+  "D2_reverse_current_peak_A": 0.001921562751723864,
+  "D2_current_rms_A": 0.033872726281251056,
+  "D2_average_dissipation_W": 0.006807003205559287,
+  "D3_reverse_peak_V": 5.718411199451466,
+  "D3_forward_peak_V": 0.629927324844756,
+  "D3_forward_current_peak_A": 0.12076039656728481,
+  "D3_reverse_current_peak_A": 0.0019215630702072053,
+  "D3_current_rms_A": 0.033872731890185026,
+  "D3_average_dissipation_W": 0.0068070045910329285,
+  "D4_reverse_peak_V": 5.718411199451464,
+  "D4_forward_peak_V": 0.6299273248447579,
+  "D4_forward_current_peak_A": 0.12076038444326756,
+  "D4_reverse_current_peak_A": 0.0019215627519300915,
+  "D4_current_rms_A": 0.033872726281256316,
+  "D4_average_dissipation_W": 0.006807003205572126,
+  "diode_max_reverse_peak_V": 5.718411199451466,
+  "diode_rated_reverse_V": 30.0,
+  "diode_rated_reverse_limit_exceeded": false,
+  "diode_model_BV_V": 50.0,
+  "diode_model_BV_exceeded": false,
+  "charging_hardware_validated": false,
+  "tx_series_cap_voltage_peak_V": 36.10853449898811,
+  "tx_series_cap_current_peak_A": 0.18246938345663455,
+  "tx_series_cap_current_rms_A": 0.12900294990668032,
+  "tx_shunt_cap_voltage_peak_V": 4.147812101180846,
+  "tx_shunt_cap_current_peak_A": 0.132492964642236,
+  "tx_shunt_cap_current_rms_A": 0.09365738166861126,
+  "rx_series_cap_voltage_peak_V": 6.152422383232434,
+  "rx_series_cap_current_peak_A": 0.4351029296079368,
+  "rx_series_cap_current_rms_A": 0.3067280403589421,
+  "rx_shunt_cap_voltage_peak_V": 6.3483385183395695,
+  "rx_shunt_cap_current_peak_A": 0.4321457299008853,
+  "rx_shunt_cap_current_rms_A": 0.30054069094409963,
+  "reservoir_cap_voltage_peak_V": 5.088839426468246,
+  "reservoir_cap_current_peak_A": 0.09645058581786471,
+  "reservoir_cap_current_rms_A": 0.0411729157104585,
+  "tx_coil_current_origin": "saved ADS device pin current",
+  "tx_coil_current_peak_A": 0.18246938334972873,
+  "tx_coil_current_rms_A": 0.12900294983109967,
+  "tx_coil_resistor_loss_W": 0.0299551699172254,
+  "rx_coil_current_origin": "saved ADS device pin current",
+  "rx_coil_current_peak_A": 0.4351029295907098,
+  "rx_coil_current_rms_A": 0.3067280403467979,
+  "rx_coil_resistor_loss_W": 0.037538754203259764,
+  "remaining_rectifier_loss_W": 0.02722801282226267,
+  "power_balance_error_W": -2.7708261206293994e-09,
+  "evidence": "Actual ADS simulation of fresh OA readback netlist generated from copied native candidate cell",
+  "source_netlist": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\hardware\\wpt\\ads\\gui-setup\\RX_BAT54_LoadSweep_20261009-fresh-readback.net",
+  "native_aele_equations": {
+    "Vdc": {
+      "real": 5.0885323893723005,
+      "imag": 0.0
+    },
+    "Pdc": {
+      "real": 0.12428717721177614,
+      "imag": 0.0
+    },
+    "Pavail": {
+      "real": 0.22387211385683395,
+      "imag": 0.0
+    },
+    "eta_avail": {
+      "real": 0.555170427752595,
+      "imag": 0.0
+    },
+    "Z_source": {
+      "real": 38.37252977468255,
+      "imag": 5.933861622616542
+    },
+    "Z_rx": {
+      "real": 1.610535208507576,
+      "imag": -28.88046783402282
+    },
+    "Z_bridge": {
+      "real": 130.47011692773174,
+      "imag": -25.148141425907106
+    },
+    "Psource_f1": {
+      "real": 0.21900911985867225,
+      "imag": 0.0
+    },
+    "Prx_f1": {
+      "real": 0.15151665382556967,
+      "imag": 0.0
+    },
+    "Pbridge_f1": {
+      "real": 0.15151665382556984,
+      "imag": 0.0
+    }
+  }
+}

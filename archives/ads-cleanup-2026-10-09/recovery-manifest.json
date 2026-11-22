@@ -1,0 +1,246 @@
+{
+  "record_date": "2026-10-09",
+  "timezone": "America/New_York",
+  "real_workspace": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk",
+  "confirmed_cells": {
+    "MyLibrary_lib:cell_1:schematic": "Coil/matching/rectifier WPT simulation; saved netlist 13.56MHz LTX2.49uH/LRX0.33uH/K0.0662; OA later than netlist",
+    "MyLibrary_lib:cell_2:schematic": "Passive coil/matching S-parameter test"
+  },
+  "AFE_note": "An earlier AFE scratch cell is preserved in the home-scratch backup; no AFE cell was found in the real two-cell WPT workspace.",
+  "backups": [
+    {
+      "label": "home-scratch",
+      "original_path": "C:\\Users\\angel\\Curalink_wrk",
+      "zip_path": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\archives\\ads-cleanup-2026-10-09\\home-scratch.zip",
+      "zip_sha256": "a01afba02fd277601aada645033e32ed90ea339967fcfdbfcb4506cc96959c2c",
+      "files": [
+        {
+          "path": "cds.lib",
+          "bytes": 22,
+          "sha256": "635be97e67a6caed5f01f0d43c688cf52028d5e59be164bb4d2a841fa160bb54",
+          "modified_utc": "2026-09-18T17:33:52.026288+00:00"
+        },
+        {
+          "path": "Curalink.aedt",
+          "bytes": 3976,
+          "sha256": "bb4e945e242c6d1c399a1c028c04d3443833e06949872d86a1165ce9a7afa62c",
+          "modified_utc": "2026-09-22T16:56:58.900149+00:00"
+        },
+        {
+          "path": "Curalink_lib/%A%F%E/schematic/master.tag",
+          "bytes": 35,
+          "sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+          "modified_utc": "2026-09-18T17:34:08.670645+00:00"
+        },
+        {
+          "path": "Curalink_lib/%A%F%E/schematic/sch.oa",
+          "bytes": 34644,
+          "sha256": "886ba6ed6dffec288bca507126ad1fe82e68a98314dd66c3b71aca0ca95bac4b",
+          "modified_utc": "2026-09-18T19:18:21.000623+00:00"
+        },
+        {
+          "path": "Curalink_lib/.oalib",
+          "bytes": 151,
+          "sha256": "a903013ae7eec72ea11bcd0b2cefb4d719160a783dd44bfed0e418516a28ff8e",
+          "modified_utc": "2026-09-18T17:33:53.469290+00:00"
+        },
+        {
+          "path": "Curalink_lib/cdsinfo.tag",
+          "bytes": 782,
+          "sha256": "7c2382099db60a5670ba95feaa157041ab0d5ee85a621217abc98cf7a414fff5",
+          "modified_utc": "2026-09-18T17:33:53.473165+00:00"
+        },
+        {
+          "path": "Curalink_lib/libRefs.json",
+          "bytes": 1082,
+          "sha256": "af9ec28e41fa8d029c5216e287b750b840d43430a2360e76797aa90ed2d37315",
+          "modified_utc": "2026-10-09T20:31:22.725737+00:00"
+        },
+        {
+          "path": "Curalink_lib/schematic.prf",
+          "bytes": 408,
+          "sha256": "658db15e8695312f4bf7a46de529b6552121d2f19dac14c8c7452c09db338e2a",
+          "modified_utc": "2026-02-02T22:38:55+00:00"
+        },
+        {
+          "path": "Curalink_lib/tech.db",
+          "bytes": 10900,
+          "sha256": "8ff96d62d229a66e01b3fcd7905e3bd7a74374e8e38fc5ebf16e264741675712",
+          "modified_utc": "2026-09-18T17:33:53.831545+00:00"
+        },
+        {
+          "path": "Curalink_lib_lay.prf",
+          "bytes": 460,
+          "sha256": "53b1457296cc356edd4a83d226de837e6e82e62b38a399b1cbaf15d8f10c4e0b",
+          "modified_utc": "2026-10-09T20:32:40.685751+00:00"
+        },
+        {
+          "path": "de_sim.cfg",
+          "bytes": 583,
+          "sha256": "9f9dc4dfa58da47dddb8a0a0156174d950b1aabe7955f508cc1f494bae703701",
+          "modified_utc": "2026-10-09T20:32:40.674454+00:00"
+        },
+        {
+          "path": "hpeesofsim.cfg",
+          "bytes": 377,
+          "sha256": "f059202b46ca7cda110ccb27d3e9d08dc01639a9f440257673b86a49256c17b6",
+          "modified_utc": "2026-09-18T17:33:53.121611+00:00"
+        },
+        {
+          "path": "layout.prf",
+          "bytes": 4158,
+          "sha256": "8e919b09bb4a23817a068c524dfe37a0d3469ca28ab82a3e40512a15f60e85ba",
+          "modified_utc": "2026-10-09T20:32:40.684752+00:00"
+        },
+        {
+          "path": "lib.defs",
+          "bytes": 114,
+          "sha256": "b30b213e40584e97582764a2b5aab02002a870119ebd853ab814696a4d0ea8ff",
+          "modified_utc": "2026-09-18T17:33:53.476213+00:00"
+        },
+        {
+          "path": "navigator.opt",
+          "bytes": 740,
+          "sha256": "7f33d6a567ed301db046078465ef4119c01f9ec757061bb23239014ca56264f2",
+          "modified_utc": "2026-02-02T22:40:11+00:00"
+        },
+        {
+          "path": "saved.wrkstate",
+          "bytes": 117,
+          "sha256": "cea705759e7d874ba54a90a284d6b5be2168d91643fc703388c0881c2d8cf2e7",
+          "modified_utc": "2026-10-09T20:32:40.669844+00:00"
+        },
+        {
+          "path": "schematic.prf",
+          "bytes": 4105,
+          "sha256": "f1046944263be61073b3e125b7d54d7df18677496c8b11f7ebee1aee211df2eb",
+          "modified_utc": "2026-10-09T20:32:40.683747+00:00"
+        },
+        {
+          "path": "search_history.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "modified_utc": "2026-10-09T20:31:31.650094+00:00"
+        }
+      ]
+    },
+    {
+      "label": "onedrive-code-scratch",
+      "original_path": "C:\\Users\\angel\\OneDrive\\Code\\ADS workspaces\\Curalink_wrk",
+      "zip_path": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\archives\\ads-cleanup-2026-10-09\\onedrive-code-scratch.zip",
+      "zip_sha256": "42915445380a6b0188eef7c91ce2fb264ee9f68e855f9577335699eab94da42f",
+      "files": [
+        {
+          "path": "cds.lib",
+          "bytes": 22,
+          "sha256": "635be97e67a6caed5f01f0d43c688cf52028d5e59be164bb4d2a841fa160bb54",
+          "modified_utc": "2026-09-22T14:09:33.541074+00:00"
+        },
+        {
+          "path": "Curalink1_lib/.oalib",
+          "bytes": 151,
+          "sha256": "a903013ae7eec72ea11bcd0b2cefb4d719160a783dd44bfed0e418516a28ff8e",
+          "modified_utc": "2026-09-22T14:09:35.277809+00:00"
+        },
+        {
+          "path": "Curalink1_lib/cdsinfo.tag",
+          "bytes": 782,
+          "sha256": "7c2382099db60a5670ba95feaa157041ab0d5ee85a621217abc98cf7a414fff5",
+          "modified_utc": "2026-09-22T14:09:35.281043+00:00"
+        },
+        {
+          "path": "Curalink1_lib/cell_1/schematic/master.tag",
+          "bytes": 35,
+          "sha256": "754d948d84456304dc9c92190e19089b4156a194ac7f002aad93b7d91a110099",
+          "modified_utc": "2026-09-22T14:10:46.382755+00:00"
+        },
+        {
+          "path": "Curalink1_lib/cell_1/schematic/sch.oa",
+          "bytes": 32196,
+          "sha256": "d329fdde7221cb422f48f0c1958db554f681857440c6239ebab395c3d744d247",
+          "modified_utc": "2026-09-22T14:14:13.064567+00:00"
+        },
+        {
+          "path": "Curalink1_lib/cell_1/schematic/sch.oa.cdslck",
+          "bytes": 743,
+          "sha256": "ea37fd6064701c259c0050656be07b7491e49a6a429aaec2a6414041b60eaa23",
+          "modified_utc": "2026-10-09T20:32:43.061568+00:00"
+        },
+        {
+          "path": "Curalink1_lib/libRefs.json",
+          "bytes": 903,
+          "sha256": "3871e892192f18017acfda41cb7eeae9f43e8d25f2b95db776d22222ff464237",
+          "modified_utc": "2026-10-09T20:26:13.168325+00:00"
+        },
+        {
+          "path": "Curalink1_lib/schematic.prf",
+          "bytes": 408,
+          "sha256": "658db15e8695312f4bf7a46de529b6552121d2f19dac14c8c7452c09db338e2a",
+          "modified_utc": "2026-02-02T22:38:55+00:00"
+        },
+        {
+          "path": "Curalink1_lib/tech.db",
+          "bytes": 10900,
+          "sha256": "03d0107df9e729d2e4daf0a3ee043a7af63101218fd43d3ee5e18024ee946476",
+          "modified_utc": "2026-09-22T14:09:35.707065+00:00"
+        },
+        {
+          "path": "Curalink1_lib_lay.prf",
+          "bytes": 460,
+          "sha256": "53b1457296cc356edd4a83d226de837e6e82e62b38a399b1cbaf15d8f10c4e0b",
+          "modified_utc": "2026-10-09T20:26:13.192316+00:00"
+        },
+        {
+          "path": "de_sim.cfg",
+          "bytes": 588,
+          "sha256": "3b82e2d52f6492ed578cf1c474e5d2d69baa95adc99f03a06d226f2a2f45f009",
+          "modified_utc": "2026-10-09T20:32:43.287905+00:00"
+        },
+        {
+          "path": "hpeesofsim.cfg",
+          "bytes": 377,
+          "sha256": "f059202b46ca7cda110ccb27d3e9d08dc01639a9f440257673b86a49256c17b6",
+          "modified_utc": "2026-09-22T14:09:34.882447+00:00"
+        },
+        {
+          "path": "layout.prf",
+          "bytes": 4158,
+          "sha256": "8e919b09bb4a23817a068c524dfe37a0d3469ca28ab82a3e40512a15f60e85ba",
+          "modified_utc": "2026-10-09T20:26:13.190300+00:00"
+        },
+        {
+          "path": "lib.defs",
+          "bytes": 117,
+          "sha256": "29e845ffbd7946c5cb5c32ab301bd02be1154fe244356dc3a71d05cfa375367b",
+          "modified_utc": "2026-09-22T14:09:35.284552+00:00"
+        },
+        {
+          "path": "navigator.opt",
+          "bytes": 740,
+          "sha256": "7f33d6a567ed301db046078465ef4119c01f9ec757061bb23239014ca56264f2",
+          "modified_utc": "2026-02-02T22:40:11+00:00"
+        },
+        {
+          "path": "saved.wrkstate",
+          "bytes": 117,
+          "sha256": "cea705759e7d874ba54a90a284d6b5be2168d91643fc703388c0881c2d8cf2e7",
+          "modified_utc": "2026-10-09T20:26:13.157646+00:00"
+        },
+        {
+          "path": "schematic.prf",
+          "bytes": 4105,
+          "sha256": "f1046944263be61073b3e125b7d54d7df18677496c8b11f7ebee1aee211df2eb",
+          "modified_utc": "2026-10-09T20:26:13.188358+00:00"
+        },
+        {
+          "path": "search_history.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "modified_utc": "2026-10-09T20:25:28.579118+00:00"
+        }
+      ]
+    }
+  ],
+  "cleanup_status": "ORIGINAL_PATH_ABSENCE_VERIFIED; matching folders observed in Windows Recycle Bin; verified ZIP backups retained",
+  "cleanup_observation": "The deletion command found the first source already absent. A subsequent check found both sources absent and matching Recycle Bin entries; this record does not attribute who deleted them."
+}

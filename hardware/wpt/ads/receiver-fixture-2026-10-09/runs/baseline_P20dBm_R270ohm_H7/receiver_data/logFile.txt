@@ -1,0 +1,98 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 16:54:56 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\baseline_P20dBm_R270ohm_H7"
+      Process ID: 11736
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+HB HB1[1] <receiver.ckt>
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 360.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	491.309 A   	100.0             
+1.0 	3.41881 A   	100.0	177.104 mV   
+1.1 	2.41864 A   	100.0	28.7073 mV   
+1.2*	1.91298 A   	100.0	123.936 mV   
+2.0 	920.195 mA  	100.0	91.2334 mV   
+2.1 	771.759 mA  	100.0	90.7607 mV   
+2.2 	703.043 mA  	100.0	90.7866 mV   
+2.3*	661.824 mA  	100.0	2.76819 V    
+3.0 	311.023 mA  	100.0	808.852 mV   
+3.1 	264.119 mA  	100.0	297.597 mV   
+3.2 	237.612 mA  	100.0	158.243 mV   
+3.3 	215.003 mA  	100.0	103.733 mV   
+3.4 	196.493 mA  	100.0	66.753 mV    
+3.5 	180.999 mA  	100.0	48.043 mV    
+3.6 	167.613 mA  	100.0	40.3401 mV   
+3.7 	155.746 mA  	100.0	35.2392 mV   
+3.8 	145.228 mA  	100.0	31.5879 mV   
+3.9 	135.631 mA  	100.0	28.7956 mV   
+3.10 	126.767 mA  	100.0	26.5378 mV   
+3.11 	118.55 mA   	100.0	24.6291 mV   
+3.12 	110.915 mA  	100.0	22.9609 mV   
+3.13*	103.809 mA  	100.0	369.007 mV   
+4.0 	21.9618 mA  	100.0	8.47629 mV   
+4.1 	9.79375 mA  	100.0	4.86858 mV   
+4.2 	4.79672 mA  	100.0	2.52955 mV   
+4.3 	2.43871 mA  	100.0	1.31861 mV   
+4.4 	1.26141 mA  	100.0	689.501 uV   
+4.5 	658.049 uA  	100.0	361.395 uV   
+4.6 	344.791 uA  	100.0	189.742 uV   
+4.7 	181.067 uA  	100.0	99.7312 uV   
+4.8 	95.201 uA   	100.0	52.4564 uV   
+4.9 	50.0858 uA  	100.0	27.6022 uV   
+4.10 	26.3591 uA  	100.0	14.5275 uV   
+4.11 	13.8747 uA  	100.0	7.64712 uV   
+4.12 	7.30389 uA  	100.0	4.02565 uV   
+4.13*	3.84509 uA  	100.0	4.47537 uV   
+5.0 	79.4465 pA  	100.0	93.0832 pV   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+DIODE2.a                3.477e-04       >       2.040e-06
+DIODE4.a                3.477e-04       >       2.040e-06
+DIODE3.a                3.412e-04       >       1.027e-06
+DIODE1.a                3.412e-04       >       1.027e-06
+VoutMatched             4.117e-05       >       2.067e-06
+
+o Number of waveforms violating the HB truncation error check:
+        6 out of 7 waveforms.
+o Estimated max HB truncation error: 3.477e-04 @ waveform DIODE2.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 2.040e-06 for this waveform.
+o A time-domain plot of the DCout waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     1.91 seconds.
+    Simulation stopwatch time =     0.32 seconds.
+    Total stopwatch time      =     1.77 seconds.
+
+    Memory used:  108 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

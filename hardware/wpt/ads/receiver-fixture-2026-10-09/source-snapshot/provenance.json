@@ -1,0 +1,20 @@
+[
+  {
+    "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\netlist.log",
+    "snapshot": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\hardware\\wpt\\ads\\receiver-fixture-2026-10-09\\source-snapshot\\netlist.log",
+    "source_mtime_local": "2026-10-09 16:43:57",
+    "sha256": "cf6fc3bb841969ba5261e9309dfbd9372706d72e2881c92740b5badf8e877f92"
+  },
+  {
+    "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\cell_1.ds",
+    "snapshot": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\hardware\\wpt\\ads\\receiver-fixture-2026-10-09\\source-snapshot\\cell_1.ds",
+    "source_mtime_local": "2026-10-09 16:44:38",
+    "sha256": "265de3e813e8d6438ab8d9a757ae5eb5854955822ffc40d6d807f9d416dd1c96"
+  },
+  {
+    "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\cell_1_data\\logFile.txt",
+    "snapshot": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\hardware\\wpt\\ads\\receiver-fixture-2026-10-09\\source-snapshot\\logFile.txt",
+    "source_mtime_local": "2026-10-09 16:44:38",
+    "sha256": "54374018429032f24880567bb9e9ff4f34c54b7b70c509a6a64a1971811449cf"
+  }
+]

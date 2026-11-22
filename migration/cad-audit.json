@@ -1,0 +1,2101 @@
+{
+  "recorded_local_date": "2026-11-22",
+  "timezone": "America/New_York",
+  "purpose": "Read-only file/portability audit for GitHub computer migration; not new engineering verification",
+  "canonical_root": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink",
+  "secondary_root": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink",
+  "exclusions_from_enumeration": [
+    ".git",
+    ".pytest_cache",
+    ".venv",
+    "__pycache__",
+    "ads",
+    "migration",
+    "node_modules"
+  ],
+  "unreadable_entries": [
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.compiler\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.compiler\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.compiler\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.datatransfer\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.datatransfer\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.datatransfer\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.desktop\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.desktop\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.desktop\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.instrument\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.instrument\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.instrument\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.logging\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.logging\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.logging\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.management\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.management\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.management\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.management.rmi\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.management.rmi\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.management.rmi\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.naming\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.naming\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.naming\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.net.http\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.net.http\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.net.http\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.prefs\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.prefs\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.prefs\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.rmi\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.rmi\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.rmi\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.scripting\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.scripting\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.scripting\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.se\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.se\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.se\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.security.jgss\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.security.jgss\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.security.jgss\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.security.sasl\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.security.sasl\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.security.sasl\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.smartcardio\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.smartcardio\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.smartcardio\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.sql\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.sql\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.sql\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.sql.rowset\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.sql.rowset\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.sql.rowset\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.transaction.xa\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.transaction.xa\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.transaction.xa\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.xml\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.xml\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.xml\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.xml.crypto\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.xml.crypto\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\java.xml.crypto\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.accessibility\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.accessibility\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.accessibility\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.charsets\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.charsets\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.charsets\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.crypto.cryptoki\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.crypto.cryptoki\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.crypto.cryptoki\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.dynalink\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.dynalink\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.dynalink\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.graal.compiler\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.graal.compiler\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.graal.compiler\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.graal.compiler.management\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.graal.compiler.management\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.graal.compiler.management\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.httpserver\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.httpserver\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.httpserver\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.incubator.vector\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.incubator.vector\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.incubator.vector\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.internal.vm.ci\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.internal.vm.ci\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.internal.vm.ci\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.jdwp.agent\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.jdwp.agent\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.jdwp.agent\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.jfr\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.jfr\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.jfr\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.jsobject\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.jsobject\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.jsobject\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.localedata\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.localedata\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.localedata\\cldr.md",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.localedata\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.management\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.management\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.management\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.management.agent\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.management.agent\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.management.agent\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.management.jfr\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.management.jfr\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.management.jfr\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.naming.dns\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.naming.dns\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.naming.dns\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.naming.rmi\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.naming.rmi\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.naming.rmi\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.net\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.net\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.net\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.nio.mapmode\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.nio.mapmode\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.nio.mapmode\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.sctp\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.sctp\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.sctp\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.security.auth\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.security.auth\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.security.auth\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.security.jgss\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.security.jgss\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.security.jgss\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.unsupported\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.unsupported\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.unsupported\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.xml.dom\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.xml.dom\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.xml.dom\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.zipfs\\ADDITIONAL_LICENSE_INFO",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.zipfs\\ASSEMBLY_EXCEPTION",
+      "error_type": "OSError",
+      "winerror": 1920
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\tmp\\pcb-tools\\jre25\\jdk-25.0.4.1+1-jre\\legal\\jdk.zipfs\\LICENSE",
+      "error_type": "OSError",
+      "winerror": 1920
+    }
+  ],
+  "canonical_file_count": 1550,
+  "canonical_total_bytes": 824069584,
+  "canonical_extension_counts": {
+    ".md": 82,
+    ".cfg": 3,
+    ".png": 179,
+    ".json": 368,
+    ".txt": 60,
+    ".pdf": 39,
+    ".cir": 158,
+    "(none)": 19,
+    ".csv": 103,
+    ".log": 148,
+    ".py": 63,
+    ".lib": 30,
+    ".olb": 5,
+    ".1op": 3,
+    ".mif": 3,
+    ".mrk": 4,
+    ".1": 3,
+    ".prb": 4,
+    ".sim": 4,
+    ".dsn": 6,
+    ".libsig": 4,
+    ".opj": 5,
+    ".zip": 6,
+    ".kicad_sch": 17,
+    ".kicad_pcb": 3,
+    ".kicad_prl": 2,
+    ".kicad_pro": 3,
+    ".xml": 1,
+    ".kicad_sym": 1,
+    ".raw": 83,
+    ".ps1": 6,
+    ".db": 26,
+    ".jpg": 1,
+    ".html": 3,
+    ".h": 4,
+    ".c": 1,
+    ".kicad_mod": 30,
+    ".svg": 1,
+    ".s2p": 1,
+    ".sha256": 1,
+    ".jar": 2,
+    ".template": 3,
+    ".properties": 6,
+    ".access": 1,
+    ".security": 1,
+    ".policy": 5,
+    ".jfc": 2,
+    ".so": 38,
+    ".ja": 1,
+    ".certs": 1,
+    ".dat": 2,
+    ".jsa": 4,
+    ".gz": 1
+  },
+  "secondary_file_count": 100,
+  "secondary_total_bytes": 2609418111,
+  "secondary_matching_non_ads_files": 42,
+  "secondary_unique_or_different_non_ads_files": [
+    {
+      "path": "archives/ads-cleanup-2026-10-09/home-scratch.zip",
+      "bytes": 17870,
+      "modified_utc": "2026-10-09T20:33:01.672791+00:00",
+      "sha256": "a01afba02fd277601aada645033e32ed90ea339967fcfdbfcb4506cc96959c2c",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "archives/ads-cleanup-2026-10-09/onedrive-code-scratch.zip",
+      "bytes": 16486,
+      "modified_utc": "2026-10-09T20:33:01.775131+00:00",
+      "sha256": "42915445380a6b0188eef7c91ce2fb264ee9f68e855f9577335699eab94da42f",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "archives/ads-cleanup-2026-10-09/recovery-manifest.json",
+      "bytes": 10379,
+      "modified_utc": "2026-10-09T20:35:26.744544+00:00",
+      "sha256": "c0f24f809dca5036f5b216e46e18b5efda75222f669b995f0b9a3899c2fd7441",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "data/ADS both matched v4.csv",
+      "bytes": 17019,
+      "modified_utc": "2026-09-23T18:19:04.721662+00:00",
+      "sha256": "f77b690d9f096cba84b51d90d98560d86f1868cdd1b1a03640a90c81ca91c2d6",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "data/ADS matched networktest GNDED.csv",
+      "bytes": 19115,
+      "modified_utc": "2026-09-23T16:44:06.929341+00:00",
+      "sha256": "8fab372063a164f7c494a61a0f857d06685db4ecc1793d4e321e96d30b99c228",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "data/ADS matched networktest.csv",
+      "bytes": 21520,
+      "modified_utc": "2026-09-23T16:41:41.199262+00:00",
+      "sha256": "934f424e23d28ddcf9793377753ec00de1fd78783686bb631dca8f85930097ef",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "data/ADS matching lumped V5.csv",
+      "bytes": 15672,
+      "modified_utc": "2026-09-23T18:27:56.220253+00:00",
+      "sha256": "88f0580da9dc6b1f326c74b7f955d33b67836cd110e1eca31a0bab17be9a9c69",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "data/ADS matching v3.csv",
+      "bytes": 17072,
+      "modified_utc": "2026-09-23T18:08:04.724225+00:00",
+      "sha256": "3df88eddfa9b94d99bd78154d9dc8d778c4e530224913e24036796d3ead52b55",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "data/daa.csv",
+      "bytes": 13295,
+      "modified_utc": "2026-09-22T19:44:39.161959+00:00",
+      "sha256": "895dd0a90f9d94095f5cecad84ad16e679edcc0b142417bdfaadc913b5990673",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "data/DAS matched lumped v6.csv",
+      "bytes": 16991,
+      "modified_utc": "2026-09-23T18:39:26.228201+00:00",
+      "sha256": "6a3f69e2569acf668a0855c0be3efd0f3f27479803fdc07c3db6c35870ea7f5f",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "data/v7.csv",
+      "bytes": 17000,
+      "modified_utc": "2026-09-23T18:43:35.006431+00:00",
+      "sha256": "b389c7655a61b7ca4d6b106eb5b43034f327a8d98a8890714a5d2b5578544ebb",
+      "status": "unique_to_secondary_project"
+    },
+    {
+      "path": "docs/design/2026-09-22-ads-wpt-model-setup.md",
+      "bytes": 10018,
+      "modified_utc": "2026-09-22T20:07:55.644099+00:00",
+      "sha256": "589823bce7d1cd36f1ce6f48330b4d931a0262500d94a5a537651fbb8cd905cd",
+      "status": "different_from_canonical_project",
+      "canonical": {
+        "path": "docs/design/2026-09-22-ads-wpt-model-setup.md",
+        "bytes": 9034,
+        "modified_utc": "2026-09-24T20:21:55.453084+00:00",
+        "sha256": "f4818cecf09d7071fddbc26285e9211afb74614b7c03c60230b83fd3d5ada30a"
+      },
+      "secondary_is_newer": false
+    },
+    {
+      "path": "docs/design/2026-09-22-rectifier-options.md",
+      "bytes": 8681,
+      "modified_utc": "2026-09-22T17:39:15.815773+00:00",
+      "sha256": "ec2beafc540793b3d9002c9d13273ecd907ebca0b1b3665d5c54da9863ddc7c6",
+      "status": "different_from_canonical_project",
+      "canonical": {
+        "path": "docs/design/2026-09-22-rectifier-options.md",
+        "bytes": 11246,
+        "modified_utc": "2026-09-22T18:48:52.693592+00:00",
+        "sha256": "0d38de524ad86ba7745a78aa8eb43f6a4fdd0385570c9d708f557b8fad20611e"
+      },
+      "secondary_is_newer": false
+    },
+    {
+      "path": "docs/engineering-handbook.md",
+      "bytes": 81559,
+      "modified_utc": "2026-09-22T20:08:11.993429+00:00",
+      "sha256": "4327a2853c38bbff0204eff6dc56b8f48ea49c23ee8fb318aa418b0f91735c72",
+      "status": "different_from_canonical_project",
+      "canonical": {
+        "path": "docs/engineering-handbook.md",
+        "bytes": 134174,
+        "modified_utc": "2026-10-09T21:17:18.120251+00:00",
+        "sha256": "6f4053a13ebff0b4f408a498a7877ce44378fed4178716051520c9cb9d858a0d"
+      },
+      "secondary_is_newer": false
+    }
+  ],
+  "native_cad_files": [
+    {
+      "path": "hardware/rev-a/afe_ch1_1.kicad_sch",
+      "bytes": 73665,
+      "modified_utc": "2026-10-02T16:13:45.233680+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe_ch2_1.kicad_sch",
+      "bytes": 73661,
+      "modified_utc": "2026-10-02T16:13:45.259855+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe_ch3_1.kicad_sch",
+      "bytes": 73661,
+      "modified_utc": "2026-10-02T16:13:45.282672+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe_ch4_1.kicad_sch",
+      "bytes": 73673,
+      "modified_utc": "2026-10-02T16:13:45.304716+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe_ch5_1.kicad_sch",
+      "bytes": 73666,
+      "modified_utc": "2026-10-02T16:13:45.332673+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe_ch6_1.kicad_sch",
+      "bytes": 73662,
+      "modified_utc": "2026-10-02T16:13:45.359874+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe_ch7_1.kicad_sch",
+      "bytes": 73662,
+      "modified_utc": "2026-10-02T16:13:45.376193+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe_ch8_1.kicad_sch",
+      "bytes": 73674,
+      "modified_utc": "2026-10-02T16:13:45.398208+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe_shared_1.kicad_sch",
+      "bytes": 89612,
+      "modified_utc": "2026-10-02T16:13:45.421669+00:00"
+    },
+    {
+      "path": "hardware/rev-a/curalink-rev-a.kicad_pcb",
+      "bytes": 1452741,
+      "modified_utc": "2026-10-02T15:57:01.262480+00:00"
+    },
+    {
+      "path": "hardware/rev-a/curalink-rev-a.kicad_pro",
+      "bytes": 8475,
+      "modified_utc": "2026-10-02T15:59:21.087561+00:00"
+    },
+    {
+      "path": "hardware/rev-a/curalink-rev-a.kicad_sch",
+      "bytes": 7654,
+      "modified_utc": "2026-10-02T16:13:45.524929+00:00"
+    },
+    {
+      "path": "hardware/rev-a/CuraLink.kicad_sym",
+      "bytes": 46948,
+      "modified_utc": "2026-10-02T16:13:45.147017+00:00"
+    },
+    {
+      "path": "hardware/rev-a/INTERFACE_1.kicad_sch",
+      "bytes": 29681,
+      "modified_utc": "2026-10-02T16:13:45.157340+00:00"
+    },
+    {
+      "path": "hardware/rev-a/MCU_ACQUISITION_1.kicad_sch",
+      "bytes": 124351,
+      "modified_utc": "2026-10-02T16:13:45.197334+00:00"
+    },
+    {
+      "path": "hardware/rev-a/MCU_ACQUISITION_2.kicad_sch",
+      "bytes": 21906,
+      "modified_utc": "2026-10-02T16:13:45.206663+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/BQ25185DLH_WSON10_2.2x2mm.kicad_mod",
+      "bytes": 4336,
+      "modified_utc": "2026-10-02T15:36:43.337535+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/BQ29737DSE_WSON6_1.5x1.5mm.kicad_mod",
+      "bytes": 4117,
+      "modified_utc": "2026-10-02T15:36:43.393259+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/C_0402_1005Metric.kicad_mod",
+      "bytes": 1766,
+      "modified_utc": "2026-10-02T16:07:42.680012+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/C_0603_1608Metric.kicad_mod",
+      "bytes": 1758,
+      "modified_utc": "2026-10-02T16:07:38.285189+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/C_0805_2012Metric.kicad_mod",
+      "bytes": 1860,
+      "modified_utc": "2026-10-02T16:07:46.028788+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/C_1206_3216Metric.kicad_mod",
+      "bytes": 1768,
+      "modified_utc": "2026-10-02T16:07:46.330282+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/CopperField_2P_P2mm_D0.9mm.kicad_mod",
+      "bytes": 757,
+      "modified_utc": "2026-10-02T16:07:41.688379+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/CopperField_4P_P2mm_D0.9mm.kicad_mod",
+      "bytes": 902,
+      "modified_utc": "2026-10-02T16:07:41.414755+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/CopperField_6P_P2mm_D0.9mm.kicad_mod",
+      "bytes": 1047,
+      "modified_utc": "2026-10-02T16:07:41.142601+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+      "bytes": 3353,
+      "modified_utc": "2026-10-02T16:07:40.591563+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/FFC18P_HYH2.0.kicad_mod",
+      "bytes": 2573,
+      "modified_utc": "2026-10-02T15:35:44.031677+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/Johanson_2450AT18A0100001E.kicad_mod",
+      "bytes": 1044,
+      "modified_utc": "2026-10-02T15:35:44.011861+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/L_0402_1005Metric.kicad_mod",
+      "bytes": 1472,
+      "modified_utc": "2026-10-02T16:07:42.986781+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/MLPF-WB-04D3.kicad_mod",
+      "bytes": 1932,
+      "modified_utc": "2026-10-02T15:35:43.992759+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/NDK_NX2016SA_2.0x1.6mm.kicad_mod",
+      "bytes": 1071,
+      "modified_utc": "2026-10-02T15:35:44.049442+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/R_0402_1005Metric.kicad_mod",
+      "bytes": 1767,
+      "modified_utc": "2026-10-02T16:07:37.961020+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/R_0603_1608Metric.kicad_mod",
+      "bytes": 1773,
+      "modified_utc": "2026-10-02T16:07:38.896062+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/R_0805_2012Metric.kicad_mod",
+      "bytes": 1775,
+      "modified_utc": "2026-10-02T16:07:46.923682+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/SOT-23-5.kicad_mod",
+      "bytes": 4610,
+      "modified_utc": "2026-10-02T16:07:44.406272+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/SOT-23-6.kicad_mod",
+      "bytes": 4145,
+      "modified_utc": "2026-10-02T16:07:44.721992+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/SOT-23.kicad_mod",
+      "bytes": 4350,
+      "modified_utc": "2026-10-02T16:07:45.015251+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/SS14_SMA_A1K2.kicad_mod",
+      "bytes": 4517,
+      "modified_utc": "2026-10-02T16:07:45.690724+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/STM32WBA52CGU6.kicad_mod",
+      "bytes": 6384,
+      "modified_utc": "2026-10-02T15:35:43.972960+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/TestPoint_Pad_D0.6mm.kicad_mod",
+      "bytes": 651,
+      "modified_utc": "2026-10-02T16:07:43.540616+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/TestPoint_Pad_D0.8mm.kicad_mod",
+      "bytes": 651,
+      "modified_utc": "2026-10-02T16:07:43.267163+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/TestPoint_Pad_D1.0mm.kicad_mod",
+      "bytes": 1707,
+      "modified_utc": "2026-10-02T16:07:38.604787+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/TLV_RUC14_X2QFN_2x2mm_NoEP.kicad_mod",
+      "bytes": 4434,
+      "modified_utc": "2026-10-02T15:32:45.490698+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/TPD4E05U06DQA_USON10_1x2.5mm.kicad_mod",
+      "bytes": 3854,
+      "modified_utc": "2026-10-02T15:32:45.492739+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/TPS25200DRV_WSON6_2x2mm.kicad_mod",
+      "bytes": 3694,
+      "modified_utc": "2026-10-02T15:36:43.369287+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/footprints/CuraLink.pretty/UFL_Hirose_1SIG_2GND_3GND.kicad_mod",
+      "bytes": 9001,
+      "modified_utc": "2026-10-02T16:07:42.384650+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/mcu-local-placement.kicad_pcb",
+      "bytes": 1409073,
+      "modified_utc": "2026-10-02T16:18:12.171422+00:00"
+    },
+    {
+      "path": "hardware/rev-a/pcb/mcu-local-placement.kicad_pro",
+      "bytes": 8300,
+      "modified_utc": "2026-10-02T16:18:12.209500+00:00"
+    },
+    {
+      "path": "hardware/rev-a/power_1.kicad_sch",
+      "bytes": 131757,
+      "modified_utc": "2026-10-02T16:13:45.456976+00:00"
+    },
+    {
+      "path": "hardware/rev-a/power_2.kicad_sch",
+      "bytes": 98736,
+      "modified_utc": "2026-10-02T16:13:45.494218+00:00"
+    },
+    {
+      "path": "hardware/rev-a/power_3.kicad_sch",
+      "bytes": 64597,
+      "modified_utc": "2026-10-02T16:13:45.523928+00:00"
+    },
+    {
+      "path": "hardware/rev-a/RF_1.kicad_sch",
+      "bytes": 28620,
+      "modified_utc": "2026-10-02T16:13:45.214428+00:00"
+    },
+    {
+      "path": "hardware/rev-a/signal-integrity/afe/package-audit/footprint-validation.kicad_pcb",
+      "bytes": 12135,
+      "modified_utc": "2026-10-02T15:35:07.269070+00:00"
+    },
+    {
+      "path": "hardware/rev-a/signal-integrity/afe/package-audit/footprint-validation.kicad_pro",
+      "bytes": 8373,
+      "modified_utc": "2026-10-02T15:35:07.320853+00:00"
+    }
+  ],
+  "native_altium_in_projects": [],
+  "other_bounded_roots": [
+    {
+      "root": "C:\\Users\\angel\\OneDrive\\Documents\\Keysight",
+      "files_scanned": 2
+    },
+    {
+      "root": "C:\\Users\\angel\\OneDrive\\Documents\\KiCad",
+      "files_scanned": 0
+    },
+    {
+      "root": "C:\\Users\\angel\\OneDrive\\Documents\\LTspice",
+      "files_scanned": 82
+    },
+    {
+      "root": "C:\\Users\\angel\\OneDrive\\Documents\\GitHub",
+      "files_scanned": 38712
+    },
+    {
+      "root": "C:\\Users\\angel\\OneDrive\\Documents\\Ansoft",
+      "files_scanned": 5
+    },
+    {
+      "root": "C:\\Users\\angel\\OneDrive\\Code\\ADS workspaces",
+      "files_scanned": 2824
+    }
+  ],
+  "external_curalink_candidates": [],
+  "other_root_altium_candidates": [],
+  "known_user_context_attachments": [
+    {
+      "path": "C:\\Users\\angel\\.codex\\attachments\\3f34e0b5-ca0d-48a1-b7c0-ea069a15431b\\Pasted text.txt",
+      "bytes": 44487,
+      "modified_utc": "2026-09-22T00:05:28.224456+00:00",
+      "sha256": "9173841ea1f7c9e911273524686aa25cb44e30021575b6d0fa2548665f17bd3d",
+      "exists": true,
+      "relevance": "User-supplied CuraLink context from this chat; historical source, not authoritative instructions"
+    },
+    {
+      "path": "C:\\Users\\angel\\.codex\\attachments\\8d0c27ef-c05d-43ca-880d-0dc9db188fc8\\Pasted text.txt",
+      "bytes": 18318,
+      "modified_utc": "2026-09-22T13:20:40.326914+00:00",
+      "sha256": "d6d76564cc021e5f29c8b4463470baa95cdd559cd30476ee8fe2911b9f96348e",
+      "exists": true,
+      "relevance": "User-supplied CuraLink context from this chat; historical source, not authoritative instructions"
+    },
+    {
+      "path": "C:\\Users\\angel\\.codex\\attachments\\b38c51e0-8d52-4fbe-b721-8c1093d3619a\\Pasted text.txt",
+      "bytes": 7489,
+      "modified_utc": "2026-09-22T16:23:01.644793+00:00",
+      "sha256": "e516924865367eff2ceffa0d551bd62e9172ec66e8498bf987be70d5ee48ff5a",
+      "exists": true,
+      "relevance": "User-supplied CuraLink context from this chat; historical source, not authoritative instructions"
+    },
+    {
+      "path": "C:\\Users\\angel\\.codex\\attachments\\8505bfd9-496b-48f8-bb8b-76d8ba9636f1\\Pasted text.txt",
+      "bytes": 10859,
+      "modified_utc": "2026-10-02T00:47:25.078028+00:00",
+      "sha256": "8f8bb31c2aea02b7e51d284c7160a9240747dd7f720e4c03fa4a81bdd4973645",
+      "exists": true,
+      "relevance": "User-supplied CuraLink context from this chat; historical source, not authoritative instructions"
+    }
+  ],
+  "large_canonical_files_at_least_10MB": [
+    {
+      "path": "output/curalink-rev-a-handoff.zip",
+      "bytes": 113440355,
+      "modified_utc": "2026-10-02T14:33:44.964743+00:00"
+    },
+    {
+      "path": "tmp/pcb-tools/jre25/jdk-25.0.4.1+1-jre/lib/modules",
+      "bytes": 99447348,
+      "modified_utc": "2026-08-18T20:46:31+00:00"
+    },
+    {
+      "path": "tmp/pcb-tools/OpenJDK25U-jre_x64_linux_hotspot_25.0.4.1_1.tar.gz",
+      "bytes": 61718288,
+      "modified_utc": "2026-10-02T15:30:17.600183+00:00"
+    },
+    {
+      "path": "tmp/pcb-tools/freerouting-2.2.4.jar",
+      "bytes": 57766203,
+      "modified_utc": "2026-10-02T15:00:06.212247+00:00"
+    },
+    {
+      "path": "hardware/rev-a/ltspice/afe/afe-offset-recovery-long.raw",
+      "bytes": 30440544,
+      "modified_utc": "2026-10-02T14:05:20.841229+00:00"
+    },
+    {
+      "path": "tmp/pcb-tools/jre25/jdk-25.0.4.1+1-jre/lib/server/libjvm.so",
+      "bytes": 29876336,
+      "modified_utc": "2026-08-18T20:46:31+00:00"
+    },
+    {
+      "path": "hardware/rev-a/ltspice/power/vendor-protected-control-fast-fault.raw",
+      "bytes": 22667177,
+      "modified_utc": "2026-10-02T14:21:02.890887+00:00"
+    },
+    {
+      "path": "hardware/rev-a/ltspice/afe/afe-startup.raw",
+      "bytes": 22040525,
+      "modified_utc": "2026-10-02T14:02:12.549543+00:00"
+    },
+    {
+      "path": "hardware/rev-a/ltspice/afe/afe-offset-recovery.raw",
+      "bytes": 19929451,
+      "modified_utc": "2026-10-02T14:00:38.349806+00:00"
+    },
+    {
+      "path": "tmp/pcb-tools/jre25/jdk-25.0.4.1+1-jre/lib/server/classes_nocoops_coh.jsa",
+      "bytes": 15527936,
+      "modified_utc": "2026-08-18T20:46:44+00:00"
+    },
+    {
+      "path": "tmp/pcb-tools/jre25/jdk-25.0.4.1+1-jre/lib/server/classes_coh.jsa",
+      "bytes": 15212544,
+      "modified_utc": "2026-08-18T20:46:40+00:00"
+    },
+    {
+      "path": "tmp/pcb-tools/jre25/jdk-25.0.4.1+1-jre/lib/server/classes_nocoops.jsa",
+      "bytes": 14868480,
+      "modified_utc": "2026-08-18T20:46:37+00:00"
+    },
+    {
+      "path": "tmp/pcb-tools/jre25/jdk-25.0.4.1+1-jre/lib/server/classes.jsa",
+      "bytes": 14503936,
+      "modified_utc": "2026-08-18T20:46:35+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe/adc-stress-50k/track_50k_1000Hz_adc5.csv",
+      "bytes": 11945343,
+      "modified_utc": "2026-10-02T02:20:25.647008+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe/adc-stress-50k/track_50k_7000Hz_adc5.csv",
+      "bytes": 11936077,
+      "modified_utc": "2026-10-02T02:20:26.493904+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe/adc-stress-50k/track_50k_7000Hz_adc10.csv",
+      "bytes": 11912799,
+      "modified_utc": "2026-10-02T02:20:25.769463+00:00"
+    },
+    {
+      "path": "hardware/rev-a/afe/adc-stress-50k/track_50k_1000Hz_adc10.csv",
+      "bytes": 11912686,
+      "modified_utc": "2026-10-02T02:20:26.384571+00:00"
+    }
+  ],
+  "spice_nonlocal_or_working_directory_dependencies": [
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_down_r0.99_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_down_r0.99_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_down_r1.01_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_down_r1.01_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_down_r1_c1.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_up_r0.99_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_up_r0.99_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_up_r1.01_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_up_r1.01_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc10_up_r1_c1.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_down_r0.99_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_down_r0.99_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_down_r1.01_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_down_r1.01_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_down_r1_c1.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_up_r0.99_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_up_r0.99_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_up_r1.01_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_up_r1.01_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c1000_adc5_up_r1_c1.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_down_r0.99_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_down_r0.99_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_down_r1.01_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_down_r1.01_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_down_r1_c1.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_up_r0.99_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_up_r0.99_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_up_r1.01_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_up_r1.01_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc10_up_r1_c1.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_down_r0.99_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_down_r0.99_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_down_r1.01_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_down_r1.01_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_down_r1_c1.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_up_r0.99_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_up_r0.99_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_up_r1.01_c0.95.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_up_r1.01_c1.05.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/c470_adc5_up_r1_c1.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/track_1000Hz_adc10.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/track_1000Hz_adc5.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/track_7000Hz_adc10.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress/track_7000Hz_adc5.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress-50k/track_50k_1000Hz_adc10.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress-50k/track_50k_1000Hz_adc5.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress-50k/track_50k_7000Hz_adc10.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-stress-50k/track_50k_7000Hz_adc5.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r100_c1000_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r100_c1000_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r100_c2200_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r100_c2200_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r100_c330_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r100_c330_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r100_c470_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r100_c470_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r150_c1000_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r150_c1000_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r150_c2200_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r150_c2200_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r150_c330_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r150_c330_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r150_c470_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r150_c470_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r220_c1000_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r220_c1000_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r220_c2200_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r220_c2200_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r220_c470_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r220_c470_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r33_c1000_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r33_c1000_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r33_c330_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r33_c330_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r33_c470_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r33_c470_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r47_c1000_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r47_c1000_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r47_c2200_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r47_c2200_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r47_c330_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r47_c330_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r47_c470_adc10p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/adc-sweep/r47_c470_adc5p.cir",
+      "line": 3,
+      "reference": "vendor/combined-namespaced.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/afe/vendor/tlv9002/tlv9002-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "line": 10,
+      "reference": "nom_pspti.lib",
+      "is_absolute": false,
+      "status": "unresolved_or_vendor_environment"
+    },
+    {
+      "file": "hardware/rev-a/afe/vendor/tlv9002/tlv9002-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "line": 11,
+      "reference": "nom.lib",
+      "is_absolute": false,
+      "status": "unresolved_or_vendor_environment"
+    },
+    {
+      "file": "hardware/rev-a/afe/vendor/tlv9002/tlv9002-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "line": 18,
+      "reference": "..\\SCHEMATIC1.net",
+      "is_absolute": false,
+      "status": "unresolved_or_vendor_environment"
+    },
+    {
+      "file": "hardware/rev-a/afe/vendor/tlv9052/tlv9052-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "line": 10,
+      "reference": "nom_pspti.lib",
+      "is_absolute": false,
+      "status": "unresolved_or_vendor_environment"
+    },
+    {
+      "file": "hardware/rev-a/afe/vendor/tlv9052/tlv9052-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "line": 11,
+      "reference": "nom.lib",
+      "is_absolute": false,
+      "status": "unresolved_or_vendor_environment"
+    },
+    {
+      "file": "hardware/rev-a/afe/vendor/tlv9052/tlv9052-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "line": 18,
+      "reference": "..\\SCHEMATIC1.net",
+      "is_absolute": false,
+      "status": "unresolved_or_vendor_environment"
+    },
+    {
+      "file": "hardware/rev-a/ltspice/power/historical-r511-1p1M/vendor-efuse-dc.cir",
+      "line": 5,
+      "reference": "models/tps25200-ltspice-compat.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/ltspice/power/historical-r511-1p1M/vendor-efuse-independent-faults.cir",
+      "line": 3,
+      "reference": "models/tps25200-ltspice-compat.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/ltspice/power/historical-r511-1p1M/vendor-efuse-transient.cir",
+      "line": 3,
+      "reference": "models/tps25200-ltspice-compat.lib",
+      "is_absolute": false,
+      "status": "requires_parent_working_directory"
+    },
+    {
+      "file": "hardware/rev-a/ltspice/power/sources/tps7a20-spice/TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "line": 11,
+      "reference": "C:\\Cadence\\SPB_17.2\\tools\\pspice\\library\\anl_misc.lib",
+      "is_absolute": true,
+      "status": "unresolved_or_vendor_environment"
+    },
+    {
+      "file": "hardware/rev-a/ltspice/power/sources/tps7a20-spice/TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "line": 12,
+      "reference": "nom.lib",
+      "is_absolute": false,
+      "status": "unresolved_or_vendor_environment"
+    },
+    {
+      "file": "hardware/rev-a/ltspice/power/sources/tps7a20-spice/TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "line": 19,
+      "reference": "..\\SCHEMATIC1.net",
+      "is_absolute": false,
+      "status": "unresolved_or_vendor_environment"
+    }
+  ],
+  "secondary_recovery_archives": [
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\archives\\ads-cleanup-2026-10-09\\home-scratch.zip",
+      "bytes": 17870,
+      "member_count": 23,
+      "largest_members": [
+        {
+          "path": "Curalink_wrk/Curalink_lib/%A%F%E/schematic/sch.oa",
+          "bytes": 34644
+        },
+        {
+          "path": "Curalink_wrk/Curalink_lib/tech.db",
+          "bytes": 10900
+        },
+        {
+          "path": "Curalink_wrk/layout.prf",
+          "bytes": 4158
+        },
+        {
+          "path": "Curalink_wrk/schematic.prf",
+          "bytes": 4105
+        },
+        {
+          "path": "Curalink_wrk/Curalink.aedt",
+          "bytes": 3976
+        },
+        {
+          "path": "Curalink_wrk/Curalink_lib/libRefs.json",
+          "bytes": 1082
+        },
+        {
+          "path": "Curalink_wrk/Curalink_lib/cdsinfo.tag",
+          "bytes": 782
+        },
+        {
+          "path": "Curalink_wrk/navigator.opt",
+          "bytes": 740
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\archives\\ads-cleanup-2026-10-09\\onedrive-code-scratch.zip",
+      "bytes": 16486,
+      "member_count": 22,
+      "largest_members": [
+        {
+          "path": "Curalink_wrk/Curalink1_lib/cell_1/schematic/sch.oa",
+          "bytes": 32196
+        },
+        {
+          "path": "Curalink_wrk/Curalink1_lib/tech.db",
+          "bytes": 10900
+        },
+        {
+          "path": "Curalink_wrk/layout.prf",
+          "bytes": 4158
+        },
+        {
+          "path": "Curalink_wrk/schematic.prf",
+          "bytes": 4105
+        },
+        {
+          "path": "Curalink_wrk/Curalink1_lib/libRefs.json",
+          "bytes": 903
+        },
+        {
+          "path": "Curalink_wrk/Curalink1_lib/cdsinfo.tag",
+          "bytes": 782
+        },
+        {
+          "path": "Curalink_wrk/Curalink1_lib/cell_1/schematic/sch.oa.cdslck",
+          "bytes": 743
+        },
+        {
+          "path": "Curalink_wrk/navigator.opt",
+          "bytes": 740
+        }
+      ]
+    }
+  ],
+  "kicad_library_portability": {
+    "symbol_table": "hardware/rev-a/sym-lib-table",
+    "symbol_reference": "${KIPRJMOD}/CuraLink.kicad_sym",
+    "symbol_exists": true,
+    "footprint_table": "hardware/rev-a/fp-lib-table",
+    "footprint_reference": "${KIPRJMOD}/pcb/footprints/CuraLink.pretty",
+    "footprint_directory_exists": true,
+    "footprint_count": 30
+  },
+  "important_limits": [
+    "No source files, user apps, original workspaces or Git index changed by this audit.",
+    "No native Altium absence claim extends beyond the listed bounded roots.",
+    "Historical vendor PSpice example decks may require vendor simulator standard libraries; authored LTspice fixtures are separate.",
+    "Raw numerical logs and outputs are evidence, not portable executable applications; retain useful data and recreate installed tools separately.",
+    "Original .git, machine licensing, simulator locks and credentials must not be copied for publication."
+  ]
+}

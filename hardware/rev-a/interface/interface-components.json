@@ -1,0 +1,23 @@
+{
+  "status": "Engineering draft; mating orientation and footprint audit required",
+  "components": [
+    {
+      "ref": "J301",
+      "value": "18P FFC 0.5mm",
+      "mpn": "FPC 0.5-18P HYH2.0",
+      "lcsc": "C6364663",
+      "package": "FFC 18P 0.5mm double-sided contacts right-angle",
+      "page": "INTERFACE",
+      "pins": {
+        "1": "FFC_CH1", "2": "GND", "3": "FFC_CH2", "4": "GND",
+        "5": "FFC_CH3", "6": "GND", "7": "FFC_CH4", "8": "GND",
+        "9": "FFC_CH5", "10": "GND", "11": "FFC_CH6", "12": "GND",
+        "13": "FFC_CH7", "14": "GND", "15": "FFC_CH8", "16": "GND",
+        "17": "FFC_REF", "18": "GND", "MP1": "GND", "MP2": "GND"
+      },
+      "notes": "Same pin map on stimulus fixture. 50mm cable candidate C6936300. Confirm pin1 continuity and mounting-anchor pad numbering from vendor drawing; no electrode bias-drive conductor. Cable and board parasitics are part of input-loading budget.",
+      "source": "https://www.lcsc.com/product-detail/C6364663.html",
+      "populated": true
+    }
+  ]
+}

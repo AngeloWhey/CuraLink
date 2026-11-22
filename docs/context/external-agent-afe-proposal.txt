@@ -1,0 +1,117 @@
+It combines BLE, a 12-bit ADC rated up to 2.5 MS/s, eight external analog inputs, and an internal switching regulator, in a 7 × 7 mm UFQFPN48 package. It is not the smallest STM32 wireless option, but I think it offers the better balance of power, acquisition capability, and debugging flexibility for our current architecture. [STMicroelectronics](https://www.st.com/en/microcontrollers-microprocessors/stm32wba55cg.html)
+One important correction to our earlier discussion: STM32WBA52 does not include an internal SMPS. I previously attributed some SMPS-mode power figures to it incorrectly. WBA55 does include that option. That distinction matters when selecting for low power. [STMicroelectronics](https://www.st.com/resource/en/datasheet/stm32wba55cg.pdf)
+Our proposed system becomes:
+```
+8 custom neural AFEs
+         ↓
+8 amplified, filtered analog outputs
+         ↓
+STM32WBA55 ADC → DMA buffers
+         ↓
+Digital thresholding / refractory handling
+         ↓
+8-channel spike-count bins
+         ↓
+BLE → laptop
+```
+FOCs: eight-channel acquisition, low average power, compact and inspectable packaging, STM32 development tools, and measurable low-noise operation.
+The closest smaller alternative is STM32WBA52KGU6, a 5 × 5 mm part with eight ADC inputs. WBA55CG instead offers 31 GPIOs and SMPS capability in its larger package. Both have enough acquisition capability for the proposed workload. [STMicroelectronics](https://www.st.com/resource/en/datasheet/stm32wba55cg.pdf)
+The package-body difference is:
+\[ 7^2-5^2=\boxed{24\text{ mm}^2}. \]
+That is a real cost, and the external components add more. However, we should evaluate the whole board: the ADC architecture also removes the proposed comparator bank and analog threshold circuitry.
+My selection is WBA55—not because we need a more powerful CPU, but because it gives us a useful power-management option without abandoning STM32 tooling.
+ST’s RF table gives these typical currents at 3.3 V, including the radio subsystem and associated digital processing:
+These are active-state currents, not CuraLink’s average consumption. [STMicroelectronics](https://www.st.com/resource/en/datasheet/stm32wba55cg.pdf)
+For our design, I would populate the SMPS support circuitry and retain the supported LDO operating option. Then compare noise and current in both modes. ST provides the regulator circuitry in its WBA55 reference schematic, including the external inductor and capacitors. [STMicroelectronics](https://www.st.com/resource/en/schematic_pack/mb1803-wba55cga-b01-schematic.pdf)
+This is the tradeoff:
+Use switching regulation when its energy savings are worthwhile and acquisition quality remains acceptable; retain LDO operation as a comparison and fallback rather than assuming either mode is automatically best.
+We still need to measure the complete acquisition-plus-BLE workload. A small radio-current number does not establish the total system budget.
+Our current sampling proposal is:
+\[ 8\times30\,000=\boxed{240\,000\text{ samples/s}}. \]
+That is only 9.6% of the headline 2.5 MS/s maximum. This gives us room to use longer acquisition times rather than pushing the ADC at its fastest setting. The final clock and sample time must still satisfy settling requirements. [STMicroelectronics](https://www.st.com/en/microcontrollers-microprocessors/stm32wba55cg.html)
+For the WBA55CG package, the eight external ADC-capable GPIOs are:
+```
+PA8, PA7, PA6, PA5, PA2, PA1, PA0, PB9
+```
+We can separately reserve PA13/PA14 for SWD and use PA12/PB4 for USART2 TX/RX. [STMicroelectronics](https://www.st.com/resource/en/datasheet/stm32wba55cg.pdf)
+Two consequences for our design:
+First: these are eight inputs to one multiplexed ADC, not eight simultaneously sampling converters. We should timestamp using the acquisition schedule and account for channel-to-channel scan offsets.
+Second: using all eight for neural signals leaves no spare external ADC input. Our AFE should continue producing eight already-reference-subtracted outputs; we should not quietly add a ninth “sample REF separately” requirement.
+I would not call WBA55 a guaranteed “low-noise neural ADC.” It is a plausible converter after our AFE, and we must qualify the combined circuit.
+The design choices I would make are below.
+The ADC’s reference is tied internally to VDDA, making that supply especially important. [STMicroelectronics](https://www.st.com/resource/en/datasheet/stm32wba55cg.pdf)
+Proposed power distribution:
+```
+Battery / switched system supply
+              │
+       ┌──────┴─────────┐
+       │                │
+Digital regulator   Quiet analog LDO
+       │                │
+     3.0 V            3.0 V
+       │                ├── AFE
+       │                └── Local filtering/decoupling → MCU VDDA
+       │
+       └── MCU digital/RF supply network
+           wired according to ST's reference design
+```
+The point is to avoid making the ADC reference share the same supply impedance as the BLE current bursts. Local decoupling and return-current routing still matter even with separate regulators. ST specifically identifies reference noise, supply impedance, and layout as ADC accuracy factors. [STMicroelectronics](https://www.st.com/resource/en/application_note/cd00211314-how-to-optimize-the-adc-accuracy-in-the-stm32-mcus-stmicroelectronics.pdf)
+Naming trap: the MCU also has a pin called VDDANA, but that belongs to its radio supply network. It is not interchangeable with the ADC’s VDDA. Follow the WBA55 power schematic rather than grouping all “analog-sounding” names together. [STMicroelectronics](https://www.st.com/resource/en/schematic_pack/mb1803-wba55cga-b01-schematic.pdf)
+The intended path is:
+```
+Electrode-like source
+       ↓
+High-impedance AFE input
+       ↓
+Amplification / filtering
+       ↓
+Low-impedance AFE output
+       ↓
+Small isolation resistor + local ADC capacitor
+       ↓
+ADC input
+```
+A sampled ADC draws transient charge during acquisition. Excess source impedance or inadequate settling causes conversion errors and channel interaction. ST discusses both the sampling-time and external-buffer requirements. [STMicroelectronics](https://www.st.com/resource/en/application_note/cd00211314-how-to-optimize-the-adc-accuracy-in-the-stm32-mcus-stmicroelectronics.pdf)
+I would reserve footprints for a small series resistor and local capacitor, then calculate their values with the selected amplifier and sampling time. Those values should not be guessed from the 7 kHz signal bandwidth alone.
+No 50 Ω termination is wanted here. This interface needs accurate voltage acquisition, not RF power matching.
+Digital filtering cannot remove a disturbance once it has aliased into the spike band.
+For the proposed 30 kS/s per channel:
+\[ f_{\mathrm{Nyquist}}=15\text{ kHz}. \]
+Therefore, our AFE review must specify attenuation above the useful band, not merely a “7 kHz cutoff.” I would retain the current passband as a starting point but revisit filter order and sampling rate together. ST includes analog filtering among its ADC noise-control recommendations. [STMicroelectronics](https://www.st.com/resource/en/application_note/cd00211314-how-to-optimize-the-adc-accuracy-in-the-stm32-mcus-stmicroelectronics.pdf)
+My proposed qualification matrix is:
+Use the same AFE stimulus and measure input-referred noise, spectral spurs, false detections, and missed samples.
+Do not stop sampling around every BLE packet merely to obtain a cleaner noise plot. Any acquisition gaps must be explicitly recorded and assessed against the neural-data requirement.
+It is a reasonable starting point after amplification.
+With a proposed 3.0 V ADC range:
+\[ LSB=\frac{3.0}{4096}=732\,\mu V \]
+at the ADC input.
+At a hypothetical AFE gain of 1000:
+\[ LSB_{\mathrm{electrode}}=0.732\,\mu V. \]
+A 50 µVpp spike would therefore occupy approximately:
+\[ \frac{50}{0.732}\approx\boxed{68\text{ codes peak-to-peak}}. \]
+That is useful resolution for thresholding. However, it is an ideal code-size calculation, not a noise prediction. ST specifies 10.9 effective bits typical under its ADC characterization conditions, rather than twelve perfectly clean bits. [STMicroelectronics](https://www.st.com/resource/en/datasheet/stm32wba55cg.pdf)
+Our acceptance test should be the actual AFE-plus-ADC detection performance, not the nominal bit count.
+ST supports autonomous ADC conversion with DMA in Stop 0. That gives us a route to block processing without waking the CPU for every conversion. [STMicroelectronics](https://www.st.com/resource/en/datasheet/stm32wba55cg.pdf)
+I would implement:
+```
+Hardware-timed scan
+      ↓
+DMA circular buffer
+      ↓
+Process completed blocks
+      ↓
+Per-channel baseline / threshold / refractory
+      ↓
+Assign events to bins using sample timestamps
+      ↓
+BLE notification
+```
+Normal telemetry would remain spike counts, with short raw captures available for debugging. We should benchmark buffer size, CPU clock, and sleep behavior rather than assume “lowest clock” always means lowest energy.
+For implementation, STM32CubeWBA supplies HAL/LL drivers, BLE middleware, and examples. The NUCLEO-WBA55CG provides ST-LINK and a reference hardware platform for development before our PCB exists. [STMicroelectronics](https://www.st.com/en/embedded-software/stm32cubewba.html)
+ST’s store currently lists STM32WBA55CGU6 in stock. Its tape-and-reel TR listing was out of stock when checked. I have not verified an LCSC/JLC assembly allocation, so that remains a procurement gate before PCB release. [STMicroelectronics eStore](https://estore.st.com/en/stm32wba55cgu6-cpn.html)
+For the schematic, I would start from ST’s MB1803 WBA55 reference design, reuse its MCU power/clock/RF structure, and adapt the analog supply and input section for CuraLink. It already provides a concrete implementation of the exact chip rather than requiring us to invent its support circuitry. [STMicroelectronics](https://www.st.com/resource/en/schematic_pack/mb1803-wba55cga-b01-schematic.pdf)
+Selected baseline: STM32WBA55CGU6.
+FOCs: eight-channel ADC acquisition, BLE, low average energy, compact manufacturable packaging, and reliable STM32 development.
+Tradeoff: accept a larger MCU footprint and switching-regulator support components in exchange for power-management flexibility. Keep the ADC/AFE supply separately conditioned and compare SMPS versus LDO operation experimentally.
+Release gates: procurement, complete pin-map review, ADC settling/noise with BLE active, measured acquisition power, and full-board floorplan.
+This is the MCU I would design around now. The next circuit change is to replace the comparator interface with a properly designed AFE-to-ADC interface—not merely connect the old comparator input nets straight to the MCU. 

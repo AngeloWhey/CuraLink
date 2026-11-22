@@ -1,0 +1,1 @@
+IQSLEEP*max(0,min(1,(_v1-VPATH)/3.6))+(IQACTIVE-IQSLEEP)*max(0,min(1,((_v1-VPATH)-VWAKE)/WNUM))+CHARGE_ALLOWED*IPHASE*max(0,min(1,((_v1-VPATH)-VSTART)/WNUM))*max(0,min(1,((_v1-VPATH)-VDPM)/WDPM))+ICTRL*max(0,min(1,(_v1-VPATH-VBAT)/WOR))+0.000143*max(0,min(1,_v1/2.5))+_v1/110000

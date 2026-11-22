@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-02",
+  "status": "PASS_MANUAL_PRIMARY_DATASHEET_TO_CANONICAL_PIN_NAMES",
+  "parts": [
+    "TLV9004IRUCR",
+    "TLV9054IRUCR"
+  ],
+  "pin_function_map": {
+    "1": "IN_A-",
+    "2": "IN_A+",
+    "3": "V+",
+    "4": "IN_B+",
+    "5": "IN_B-",
+    "6": "OUT_B",
+    "7": "OUT_C",
+    "8": "IN_C-",
+    "9": "IN_C+",
+    "10": "V-",
+    "11": "IN_D+",
+    "12": "IN_D-",
+    "13": "OUT_D",
+    "14": "OUT_A"
+  },
+  "package": "RUC14-pin X2QFN; no exposed pad",
+  "sources": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tlv9004.pdf",
+      "document": "SBOS833R",
+      "figure": "6-12",
+      "table": "6-5",
+      "printed_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tlv9054.pdf",
+      "document": "SBOS942J",
+      "figure": "5-10",
+      "table": "5-5",
+      "printed_pages": [
+        7
+      ]
+    }
+  ],
+  "limits": "Physical pin-function audit; does not certify PCB land pattern or model/package parasitics",
+  "canonical_refs_checked": [
+    "U101",
+    "U102",
+    "U103",
+    "U104",
+    "U105",
+    "U106",
+    "U107",
+    "U108",
+    "U109"
+  ]
+}

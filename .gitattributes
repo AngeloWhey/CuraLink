@@ -1,0 +1,22 @@
+# Preserve saved bytes and source-manifest hashes on every operating system.
+* -text
+
+# Git LFS preserves large simulation results and complete handoff archives.
+ads/large-datasets/*.gz filter=lfs diff=lfs merge=lfs -text
+ads/large-datasets/*.part-* filter=lfs diff=lfs merge=lfs -text
+output/*.zip filter=lfs diff=lfs merge=lfs -text
+*.raw filter=lfs diff=lfs merge=lfs -text
+
+# Native engineering binaries must not undergo newline conversion.
+*.oa -text
+*.ds -text
+*.dds -text
+*.pdf -text
+*.png -text
+*.jpg -text
+*.zip -text
+*.kicad_sch -text
+*.kicad_pcb -text
+*.kicad_pro -text
+*.kicad_sym -text
+*.kicad_mod -text

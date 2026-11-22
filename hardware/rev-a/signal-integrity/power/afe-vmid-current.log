@@ -1,0 +1,24 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\signal-integrity\power\afe-vmid-current.cir
+Start Time: Fri Oct  2 10:52:37 2026
+Options:numdgt=7 plotwinsize=0
+
+.step cmid_f=2e-06
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+AsciiRawFile = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step cmid_f=4.7e-06
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 69.856 seconds.
+
+Files loaded:
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\signal-integrity\power\afe-vmid-current.cir
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\afe\models\tlv9002-namespaced.lib
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\afe\models\tlv9052-namespaced.lib
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\signal-integrity\power\canonical-afe-sensitivity.lib
+

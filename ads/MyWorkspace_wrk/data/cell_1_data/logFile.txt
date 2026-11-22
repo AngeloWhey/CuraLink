@@ -1,0 +1,49 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 17:26:33 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\projects\curalink\MyWorkspace_wrk\data"
+      Process ID: 25956
+
+Warning detected by hpeesofsim during netlist parsing.
+    Unrecognizable scale factor `ohm' ignored
+
+
+
+TRAN Tran1[1] <MyLibrary_lib:cell_1:schematic>   time=(0 s->50 ms)
+Warning detected by hpeesofsim during TRAN analysis `Tran1'.
+    MaxTimeStep reduced to  4.609e-09 to resolve source bandwidth.
+
+t=2.060e-04    0%  8:03 remaining
+t=4.402e-04    1%  7:30 remaining
+t=6.723e-04    1%  7:20 remaining
+t=9.141e-04    2%  7:09 remaining
+t=1.218e-03    2%  6:56 remaining
+t=1.584e-03    3%  6:53 remaining
+t=2.069e-03    4%  6:47 remaining
+t=2.766e-03    6%  6:30 remaining
+t=3.711e-03    7%  6:10 remaining
+t=4.896e-03   10%  5:55 remaining
+t=6.424e-03   13%  5:40 remaining
+t=8.465e-03   17%  5:20 remaining
+t=1.122e-02   22%  4:53 remaining
+t=1.503e-02   30%  4:16 remaining
+t=1.994e-02   40%  3:36 remaining
+t=2.694e-02   54%  2:39 remaining
+t=3.472e-02   69%  1:46 remaining
+t=4.551e-02   91%  0:29 remaining
+t=5.000e-02  100%
+
+Resource usage:
+    Total CPU time            =   351.97 seconds.
+    Simulation stopwatch time =   326.04 seconds.
+    Total stopwatch time      =   327.27 seconds.
+
+    Memory used:  622 MBytes
+
+    Max threads used:  36
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

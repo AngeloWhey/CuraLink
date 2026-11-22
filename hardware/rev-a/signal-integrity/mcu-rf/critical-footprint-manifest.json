@@ -1,0 +1,639 @@
+{
+  "checked_date": "2026-10-02",
+  "coordinate_view": "PCBtop, mm, before placement rotation",
+  "status": "Manufacturer-drawing-based lands; PCB RF adaptation, FFC orientation and assembly process qualification remain OPEN",
+  "footprints": [
+    {
+      "name": "CuraLink:STM32WBA52CGU6",
+      "file": "hardware/rev-a/pcb/footprints/CuraLink.pretty/STM32WBA52CGU6.kicad_mod",
+      "sha256": "323205125ce8401fba46eff918491223e0d4759b60db2ea8b867671bbb334734",
+      "physical_pads": [
+        {
+          "pad": "1",
+          "x_mm": -3.375,
+          "y_mm": -2.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "13",
+          "x_mm": -2.75,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "25",
+          "x_mm": 3.375,
+          "y_mm": 2.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "37",
+          "x_mm": 2.75,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "2",
+          "x_mm": -3.375,
+          "y_mm": -2.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "14",
+          "x_mm": -2.25,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "26",
+          "x_mm": 3.375,
+          "y_mm": 2.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "38",
+          "x_mm": 2.25,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "3",
+          "x_mm": -3.375,
+          "y_mm": -1.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "15",
+          "x_mm": -1.75,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "27",
+          "x_mm": 3.375,
+          "y_mm": 1.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "39",
+          "x_mm": 1.75,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "4",
+          "x_mm": -3.375,
+          "y_mm": -1.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "16",
+          "x_mm": -1.25,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "28",
+          "x_mm": 3.375,
+          "y_mm": 1.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "40",
+          "x_mm": 1.25,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "5",
+          "x_mm": -3.375,
+          "y_mm": -0.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "17",
+          "x_mm": -0.75,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "29",
+          "x_mm": 3.375,
+          "y_mm": 0.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "41",
+          "x_mm": 0.75,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "6",
+          "x_mm": -3.375,
+          "y_mm": -0.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "18",
+          "x_mm": -0.25,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "30",
+          "x_mm": 3.375,
+          "y_mm": 0.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "42",
+          "x_mm": 0.25,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "7",
+          "x_mm": -3.375,
+          "y_mm": 0.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "19",
+          "x_mm": 0.25,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "31",
+          "x_mm": 3.375,
+          "y_mm": -0.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "43",
+          "x_mm": -0.25,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "8",
+          "x_mm": -3.375,
+          "y_mm": 0.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "20",
+          "x_mm": 0.75,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "32",
+          "x_mm": 3.375,
+          "y_mm": -0.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "44",
+          "x_mm": -0.75,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "9",
+          "x_mm": -3.375,
+          "y_mm": 1.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "21",
+          "x_mm": 1.25,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "33",
+          "x_mm": 3.375,
+          "y_mm": -1.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "45",
+          "x_mm": -1.25,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "10",
+          "x_mm": -3.375,
+          "y_mm": 1.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "22",
+          "x_mm": 1.75,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "34",
+          "x_mm": 3.375,
+          "y_mm": -1.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "46",
+          "x_mm": -1.75,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "11",
+          "x_mm": -3.375,
+          "y_mm": 2.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "23",
+          "x_mm": 2.25,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "35",
+          "x_mm": 3.375,
+          "y_mm": -2.25,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "47",
+          "x_mm": -2.25,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "12",
+          "x_mm": -3.375,
+          "y_mm": 2.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "24",
+          "x_mm": 2.75,
+          "y_mm": 3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "36",
+          "x_mm": 3.375,
+          "y_mm": -2.75,
+          "w_mm": 0.55,
+          "h_mm": 0.3
+        },
+        {
+          "pad": "48",
+          "x_mm": -2.75,
+          "y_mm": -3.375,
+          "w_mm": 0.3,
+          "h_mm": 0.55
+        },
+        {
+          "pad": "49",
+          "x_mm": 0,
+          "y_mm": 0,
+          "w_mm": 5.6,
+          "h_mm": 5.6
+        }
+      ],
+      "notes": [
+        "Exact ST peripheral copper/EP drawing; paste-window and mask process require assembly approval.",
+        "No drill pattern invented: add audited ground stitching/EP vias in PCB after paste/via-fill decision."
+      ]
+    },
+    {
+      "name": "CuraLink:MLPF-WB-04D3",
+      "file": "hardware/rev-a/pcb/footprints/CuraLink.pretty/MLPF-WB-04D3.kicad_mod",
+      "sha256": "a4b23cd7e7bd93df3e631a5960ed86d3f9ca68d59b7e1571297d124d241b1d6b",
+      "physical_pads": [
+        {
+          "pad": "A1",
+          "x_mm": -0.25,
+          "y_mm": -0.577,
+          "copper_diameter_mm": 0.32,
+          "mask_diameter_mm": 0.22,
+          "paste_square_mm": 0.22
+        },
+        {
+          "pad": "A2",
+          "x_mm": -0.25,
+          "y_mm": 0,
+          "copper_diameter_mm": 0.32,
+          "mask_diameter_mm": 0.22,
+          "paste_square_mm": 0.22
+        },
+        {
+          "pad": "A3",
+          "x_mm": -0.25,
+          "y_mm": 0.577,
+          "copper_diameter_mm": 0.32,
+          "mask_diameter_mm": 0.22,
+          "paste_square_mm": 0.22
+        },
+        {
+          "pad": "B1",
+          "x_mm": 0.25,
+          "y_mm": -0.577,
+          "copper_diameter_mm": 0.32,
+          "mask_diameter_mm": 0.22,
+          "paste_square_mm": 0.22
+        },
+        {
+          "pad": "B2",
+          "x_mm": 0.25,
+          "y_mm": 0,
+          "copper_diameter_mm": 0.32,
+          "mask_diameter_mm": 0.22,
+          "paste_square_mm": 0.22
+        },
+        {
+          "pad": "B3",
+          "x_mm": 0.25,
+          "y_mm": 0.577,
+          "copper_diameter_mm": 0.32,
+          "mask_diameter_mm": 0.22,
+          "paste_square_mm": 0.22
+        }
+      ],
+      "notes": [
+        "A1IN,A2GND,A3OUT,B1/B2/B3GND top view; dot identifiesA1.",
+        "Figure15 visual inspection supersedes misleading extracted label order.",
+        "No guessed L2 exclusion: component-specific RF stack/ground adaptation remains OPEN."
+      ]
+    },
+    {
+      "name": "CuraLink:Johanson_2450AT18A0100001E",
+      "file": "hardware/rev-a/pcb/footprints/CuraLink.pretty/Johanson_2450AT18A0100001E.kicad_mod",
+      "sha256": "b7e03bfe48c253e23f10706eac0ca22cc7c2a83090b0abfb597bb6b6c7152ea7",
+      "physical_pads": [
+        {
+          "pad": "1",
+          "x_mm": -1.7,
+          "y_mm": 0,
+          "w_mm": 0.8,
+          "h_mm": 1.6,
+          "function": "FEED"
+        },
+        {
+          "pad": "2",
+          "x_mm": 1.7,
+          "y_mm": 0,
+          "w_mm": 0.8,
+          "h_mm": 1.6,
+          "function": "ISOLATED_NC_ANCHOR"
+        }
+      ],
+      "notes": [
+        "Pad2 must be physically soldered, neverGND.",
+        "Place board-corner6.5mm clearance explicitly at final rotation; no universal center-based keepout invented."
+      ]
+    },
+    {
+      "name": "CuraLink:FFC18P_HYH2.0",
+      "file": "hardware/rev-a/pcb/footprints/CuraLink.pretty/FFC18P_HYH2.0.kicad_mod",
+      "sha256": "062b2c26ab76275ee465d9982e454246addaa78cf3987556b79797ebf042c683",
+      "physical_pads": [
+        {
+          "pad": "1",
+          "x_mm": -4.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "2",
+          "x_mm": -3.75,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "3",
+          "x_mm": -3.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "4",
+          "x_mm": -2.75,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "5",
+          "x_mm": -2.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "6",
+          "x_mm": -1.75,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "7",
+          "x_mm": -1.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "8",
+          "x_mm": -0.75,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "9",
+          "x_mm": -0.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "10",
+          "x_mm": 0.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "11",
+          "x_mm": 0.75,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "12",
+          "x_mm": 1.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "13",
+          "x_mm": 1.75,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "14",
+          "x_mm": 2.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "15",
+          "x_mm": 2.75,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "16",
+          "x_mm": 3.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "17",
+          "x_mm": 3.75,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "18",
+          "x_mm": 4.25,
+          "y_mm": 0,
+          "w_mm": 0.3,
+          "h_mm": 1.2
+        },
+        {
+          "pad": "MP1",
+          "x_mm": -5.9,
+          "y_mm": 3.15,
+          "w_mm": 1.8,
+          "h_mm": 2.0
+        },
+        {
+          "pad": "MP2",
+          "x_mm": 5.9,
+          "y_mm": 3.15,
+          "w_mm": 1.8,
+          "h_mm": 2.0
+        }
+      ],
+      "notes": [
+        "Center-span8.50mm follows18pins/pitch; sourcePCB usesB label ambiguously alongsideDIMA/DIMB table.",
+        "Anchorx follows2.55mm fromanchorouteredge tofirstsignalcenter; anchory follows4.75mm fromsignallandtop toanchorbottom.",
+        "Makerdrawing has no contactpin1number: left-right numbering is project harness convention and needs continuity test.",
+        "F.Fab housing pose/courtyard are engineering placement envelope, not a fully dimensioned manufacturer model; actuator/cable clearance OPEN."
+      ]
+    },
+    {
+      "name": "CuraLink:NDK_NX2016SA_2.0x1.6mm",
+      "file": "hardware/rev-a/pcb/footprints/CuraLink.pretty/NDK_NX2016SA_2.0x1.6mm.kicad_mod",
+      "sha256": "9dca6439074c1149861bfb94eb525a659680f09e6adc52dbd79b62b5a18325f0",
+      "physical_pads": [
+        {
+          "pad": "1",
+          "x_mm": -0.675,
+          "y_mm": 0.525,
+          "w_mm": 0.85,
+          "h_mm": 0.75
+        },
+        {
+          "pad": "2",
+          "x_mm": 0.675,
+          "y_mm": 0.525,
+          "w_mm": 0.85,
+          "h_mm": 0.75
+        },
+        {
+          "pad": "3",
+          "x_mm": 0.675,
+          "y_mm": -0.525,
+          "w_mm": 0.85,
+          "h_mm": 0.75
+        },
+        {
+          "pad": "4",
+          "x_mm": -0.675,
+          "y_mm": -0.525,
+          "w_mm": 0.85,
+          "h_mm": 0.75
+        }
+      ],
+      "notes": [
+        "Pins2/4arecaseGND;1/3crystal. Land dimensions exactmaker typical drawing; reflow/mask/paste finalaudit."
+      ]
+    }
+  ]
+}

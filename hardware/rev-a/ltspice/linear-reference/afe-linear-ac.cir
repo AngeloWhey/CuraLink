@@ -1,0 +1,65 @@
+* Candidate small-signal relative to ideal VMID; not a vendor nonlinear model
+Vsig src 0 AC 1
+Vref refsrc 0 AC 0
+Rchsource src chelec 47000
+Rchprotect chelec chcap 5100
+Cchac chcap chp 1e-08
+Rchbias chp 0 22000000
+Rchrg chm 0 1000
+Rchrf cho chm 10000
+Rrefsource refsrc refelec 47000
+Rrefprotect refelec refcap 5100
+Crefac refcap refp 1e-08
+Rrefbias refp 0 22000000
+Rrefrg refm 0 1000
+Rrefrf refo refm 10000
+Chpch cho hpc 1e-08
+Rrin hpc dm 51100
+Chpref refo hpr 1e-08
+Rrref hpr dp 51100
+Rlp1r1 do lp1a 22600
+Rlp1r2 lp1a lp1p 22600
+Clp1c1 lp1a lp1o 1e-09
+Clp1c2 lp1p 0 1e-09
+Rlp1rg lp1m 0 10000
+Rlp1rf lp1o lp1m 1500
+Rlp2r1 lp1o lp2a 22600
+Rlp2r2 lp2a lp2p 22600
+Clp2c1 lp2a lp2o 1e-09
+Clp2c2 lp2p 0 1e-09
+Rlp2rg lp2m 0 10000
+Rlp2rf lp2o lp2m 12400
+Radciso lp2o adc 150
+Cadcreservoir adc 0 4.7e-10
+Rrfd_1 do rfd_mid 909000
+Rrfd_2 rfd_mid dm 909000
+Rrbald_1 dp rbald_mid 909000
+Rrbald_2 rbald_mid 0 909000
+Cchcincommon chp 0 5e-12
+Cchcincommonminus chm 0 5e-12
+Cchcindiff chp chm 1.5e-12
+Cchesdtraceffc chelec 0 2.25e-11
+Crefcincommon refp 0 5e-12
+Crefcincommonminus refm 0 5e-12
+Crefcindiff refp refm 1.5e-12
+Crefesdtraceffc refelec 0 2.25e-11
+Xch chp chm cho OP_SLOW
+Xref refp refm refo OP_SLOW
+Xdiff dp dm do OP_SLOW
+Xlp1 lp1p lp1m lp1o OP_SLOW
+Xlp2 lp2p lp2m lp2o OP_FAST
+.subckt OP_SLOW p m o
+Eol internal 0 p m 100000
+Rdom internal pole 1k
+Cdom pole 0 1.59154943092e-05
+Ebuf o 0 pole 0 1
+.ends OP_SLOW
+.subckt OP_FAST p m o
+Eol internal 0 p m 100000
+Rdom internal pole 1k
+Cdom pole 0 3.18309886184e-06
+Ebuf o 0 pole 0 1
+.ends OP_FAST
+.save V(src) V(adc) V(cho) V(do) V(lp1o) V(lp2o)
+.ac dec 100 0.01 1Meg
+.end

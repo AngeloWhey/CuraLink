@@ -1,0 +1,845 @@
+{
+  "date": "2026-10-02",
+  "timezone": "America/New_York",
+  "status": "ACTUAL LTSPICE NOMINAL FAMILY-MODEL ANALYSIS; NOT HARDWARE QUALIFICATION",
+  "simulator": {
+    "executable": "C:\\Users\\angel\\AppData\\Local\\Programs\\ADI\\LTspice\\LTspice.exe",
+    "log_version": "26.0.2 for Windows",
+    "file_version": "26.0.2.1",
+    "product_version": "26.0.1.1",
+    "command": "Start-Process -WindowStyle Hidden -Wait with -b -ascii"
+  },
+  "model_provenance_file": "models/model-provenance.json",
+  "canonical_extraction_file": "canonical-extraction.json",
+  "assumptions": [
+    "Original TI TLV9002 and TLV9052 single-amplifier family macro-models represent each TLV9004/TLV9054 unit",
+    "Only identifiers are prefixed; no disabled noise helpers, temperature, resistor ordering or equation edits",
+    "Exact nominal physical net topology for36 amplifiers/eight channels/sharedREF/sharedVMID, power-divider10k/10k/2.2uF, MCU150R/470pF",
+    "3V ideal rail, nine47k source branches, 20pF FFC+2pF trace+0.5pF ESD perinput; no cable measurement",
+    "TPD4E05U06 external ESD is modeled as capacitance only; no qualified fault clamp/ESD waveform model",
+    "Passives nominal;27C except25C capacitor-leakage cases; model parameters typical with no mismatch/PVT/package crosstalk",
+    "No PCB leakage except explicit coupling-capacitor IR scenario; no real ADC sample/hold, rail regulator, RF coupling or digital activity"
+  ],
+  "operating_point": {
+    "passed_all36_units": true,
+    "amplifiers": [
+      {
+        "ref": "U101",
+        "unit": 1,
+        "output_V": 1.503767069514864,
+        "inverting_V": 1.500884541745412,
+        "noninverting_V": 1.500486238469828,
+        "input_difference_V": -0.0003983032755838778,
+        "op_valid": true
+      },
+      {
+        "ref": "U101",
+        "unit": 2,
+        "output_V": 1.503767069514864,
+        "inverting_V": 1.500884541745412,
+        "noninverting_V": 1.500486238469828,
+        "input_difference_V": -0.0003983032755838778,
+        "op_valid": true
+      },
+      {
+        "ref": "U101",
+        "unit": 3,
+        "output_V": 1.503767069514864,
+        "inverting_V": 1.500884541745412,
+        "noninverting_V": 1.500486238469828,
+        "input_difference_V": -0.0003983032755838778,
+        "op_valid": true
+      },
+      {
+        "ref": "U101",
+        "unit": 4,
+        "output_V": 1.503767069514864,
+        "inverting_V": 1.500884541745412,
+        "noninverting_V": 1.500486238469828,
+        "input_difference_V": -0.0003983032755838778,
+        "op_valid": true
+      },
+      {
+        "ref": "U102",
+        "unit": 1,
+        "output_V": 1.503767069514864,
+        "inverting_V": 1.500884541745412,
+        "noninverting_V": 1.500486238469828,
+        "input_difference_V": -0.0003983032755838778,
+        "op_valid": true
+      },
+      {
+        "ref": "U102",
+        "unit": 2,
+        "output_V": 1.503767069514864,
+        "inverting_V": 1.500884541745412,
+        "noninverting_V": 1.500486238469828,
+        "input_difference_V": -0.0003983032755838778,
+        "op_valid": true
+      },
+      {
+        "ref": "U102",
+        "unit": 3,
+        "output_V": 1.503767069514864,
+        "inverting_V": 1.500884541745412,
+        "noninverting_V": 1.500486238469828,
+        "input_difference_V": -0.0003983032755838778,
+        "op_valid": true
+      },
+      {
+        "ref": "U102",
+        "unit": 4,
+        "output_V": 1.503767069514864,
+        "inverting_V": 1.500884541745412,
+        "noninverting_V": 1.500486238469828,
+        "input_difference_V": -0.0003983032755838778,
+        "op_valid": true
+      },
+      {
+        "ref": "U103",
+        "unit": 1,
+        "output_V": 1.500990981099031,
+        "inverting_V": 1.500985518139308,
+        "noninverting_V": 1.500587196633909,
+        "input_difference_V": -0.0003983215053988687,
+        "op_valid": true
+      },
+      {
+        "ref": "U103",
+        "unit": 2,
+        "output_V": 1.500990981099031,
+        "inverting_V": 1.500985518139308,
+        "noninverting_V": 1.500587196633909,
+        "input_difference_V": -0.0003983215053988687,
+        "op_valid": true
+      },
+      {
+        "ref": "U103",
+        "unit": 3,
+        "output_V": 1.500990981099031,
+        "inverting_V": 1.500985518139308,
+        "noninverting_V": 1.500587196633909,
+        "input_difference_V": -0.0003983215053988687,
+        "op_valid": true
+      },
+      {
+        "ref": "U103",
+        "unit": 4,
+        "output_V": 1.500990981099031,
+        "inverting_V": 1.500985518139308,
+        "noninverting_V": 1.500587196633909,
+        "input_difference_V": -0.0003983215053988687,
+        "op_valid": true
+      },
+      {
+        "ref": "U104",
+        "unit": 1,
+        "output_V": 1.500990981099031,
+        "inverting_V": 1.500985518139308,
+        "noninverting_V": 1.500587196633909,
+        "input_difference_V": -0.0003983215053988687,
+        "op_valid": true
+      },
+      {
+        "ref": "U104",
+        "unit": 2,
+        "output_V": 1.500990981099031,
+        "inverting_V": 1.500985518139308,
+        "noninverting_V": 1.500587196633909,
+        "input_difference_V": -0.0003983215053988687,
+        "op_valid": true
+      },
+      {
+        "ref": "U104",
+        "unit": 3,
+        "output_V": 1.500990981099031,
+        "inverting_V": 1.500985518139308,
+        "noninverting_V": 1.500587196633909,
+        "input_difference_V": -0.0003983215053988687,
+        "op_valid": true
+      },
+      {
+        "ref": "U104",
+        "unit": 4,
+        "output_V": 1.500990981099031,
+        "inverting_V": 1.500985518139308,
+        "noninverting_V": 1.500587196633909,
+        "input_difference_V": -0.0003983215053988687,
+        "op_valid": true
+      },
+      {
+        "ref": "U105",
+        "unit": 1,
+        "output_V": 1.501508067792748,
+        "inverting_V": 1.501389136589793,
+        "noninverting_V": 1.500990754875086,
+        "input_difference_V": -0.00039838171470685246,
+        "op_valid": true
+      },
+      {
+        "ref": "U105",
+        "unit": 2,
+        "output_V": 1.501508067792748,
+        "inverting_V": 1.501389136589793,
+        "noninverting_V": 1.500990754875086,
+        "input_difference_V": -0.00039838171470685246,
+        "op_valid": true
+      },
+      {
+        "ref": "U105",
+        "unit": 3,
+        "output_V": 1.501508067792748,
+        "inverting_V": 1.501389136589793,
+        "noninverting_V": 1.500990754875086,
+        "input_difference_V": -0.00039838171470685246,
+        "op_valid": true
+      },
+      {
+        "ref": "U105",
+        "unit": 4,
+        "output_V": 1.501508067792748,
+        "inverting_V": 1.501389136589793,
+        "noninverting_V": 1.500990754875086,
+        "input_difference_V": -0.00039838171470685246,
+        "op_valid": true
+      },
+      {
+        "ref": "U106",
+        "unit": 1,
+        "output_V": 1.501508067792748,
+        "inverting_V": 1.501389136589793,
+        "noninverting_V": 1.500990754875086,
+        "input_difference_V": -0.00039838171470685246,
+        "op_valid": true
+      },
+      {
+        "ref": "U106",
+        "unit": 2,
+        "output_V": 1.501508067792748,
+        "inverting_V": 1.501389136589793,
+        "noninverting_V": 1.500990754875086,
+        "input_difference_V": -0.00039838171470685246,
+        "op_valid": true
+      },
+      {
+        "ref": "U106",
+        "unit": 3,
+        "output_V": 1.501508067792748,
+        "inverting_V": 1.501389136589793,
+        "noninverting_V": 1.500990754875086,
+        "input_difference_V": -0.00039838171470685246,
+        "op_valid": true
+      },
+      {
+        "ref": "U106",
+        "unit": 4,
+        "output_V": 1.501508067792748,
+        "inverting_V": 1.501389136589793,
+        "noninverting_V": 1.500990754875086,
+        "input_difference_V": -0.00039838171470685246,
+        "op_valid": true
+      },
+      {
+        "ref": "U107",
+        "unit": 1,
+        "output_V": 1.503360005042647,
+        "inverting_V": 1.501830086864087,
+        "noninverting_V": 1.501507977051911,
+        "input_difference_V": -0.00032210981217595247,
+        "op_valid": true
+      },
+      {
+        "ref": "U107",
+        "unit": 2,
+        "output_V": 1.503360005042647,
+        "inverting_V": 1.501830086864087,
+        "noninverting_V": 1.501507977051911,
+        "input_difference_V": -0.00032210981217595247,
+        "op_valid": true
+      },
+      {
+        "ref": "U107",
+        "unit": 3,
+        "output_V": 1.503360005042647,
+        "inverting_V": 1.501830086864087,
+        "noninverting_V": 1.501507977051911,
+        "input_difference_V": -0.00032210981217595247,
+        "op_valid": true
+      },
+      {
+        "ref": "U107",
+        "unit": 4,
+        "output_V": 1.503360005042647,
+        "inverting_V": 1.501830086864087,
+        "noninverting_V": 1.501507977051911,
+        "input_difference_V": -0.00032210981217595247,
+        "op_valid": true
+      },
+      {
+        "ref": "U108",
+        "unit": 1,
+        "output_V": 1.503360005042647,
+        "inverting_V": 1.501830086864087,
+        "noninverting_V": 1.501507977051911,
+        "input_difference_V": -0.00032210981217595247,
+        "op_valid": true
+      },
+      {
+        "ref": "U108",
+        "unit": 2,
+        "output_V": 1.503360005042647,
+        "inverting_V": 1.501830086864087,
+        "noninverting_V": 1.501507977051911,
+        "input_difference_V": -0.00032210981217595247,
+        "op_valid": true
+      },
+      {
+        "ref": "U108",
+        "unit": 3,
+        "output_V": 1.503360005042647,
+        "inverting_V": 1.501830086864087,
+        "noninverting_V": 1.501507977051911,
+        "input_difference_V": -0.00032210981217595247,
+        "op_valid": true
+      },
+      {
+        "ref": "U108",
+        "unit": 4,
+        "output_V": 1.503360005042647,
+        "inverting_V": 1.501830086864087,
+        "noninverting_V": 1.501507977051911,
+        "input_difference_V": -0.00032210981217595247,
+        "op_valid": true
+      },
+      {
+        "ref": "U109",
+        "unit": 1,
+        "output_V": 1.503767069514864,
+        "inverting_V": 1.500884541745412,
+        "noninverting_V": 1.500486238469828,
+        "input_difference_V": -0.0003983032755838778,
+        "op_valid": true
+      },
+      {
+        "ref": "U109",
+        "unit": 2,
+        "output_V": 1.500398164670742,
+        "inverting_V": 1.500398164670742,
+        "noninverting_V": 1.499999924999978,
+        "input_difference_V": -0.00039823967076402234,
+        "op_valid": true
+      },
+      {
+        "ref": "U109",
+        "unit": 3,
+        "output_V": 1.500398158570248,
+        "inverting_V": 1.500398158570248,
+        "noninverting_V": 1.499999924999978,
+        "input_difference_V": -0.00039823357026991246,
+        "op_valid": true
+      },
+      {
+        "ref": "U109",
+        "unit": 4,
+        "output_V": 1.500398158570248,
+        "inverting_V": 1.500398158570248,
+        "noninverting_V": 1.499999924999978,
+        "input_difference_V": -0.00039823357026991246,
+        "op_valid": true
+      }
+    ],
+    "values": {
+      "V(AVDD_3V0)": 3.0,
+      "V(VMID_RAW)": 1.499999924999978,
+      "V(VMID_BUF)": 1.500398164670742,
+      "V(VMID)": 1.50059629197289,
+      "V(CH1_PRE)": 1.503767069514864,
+      "V(REF_PRE)": 1.503767069514864,
+      "V(CH1_HP)": 1.500990981099031,
+      "V(CH1_LP1_OUT)": 1.501508067792748,
+      "V(AFE_OUT_1)": 1.503360005042647,
+      "V(ADC_IN_1)": 1.503360005042647,
+      "I(VDD)": -0.004474216036389794
+    },
+    "supply_current_mA": 4.4742160363897945,
+    "max_amplifier_input_difference_uV": 398.38171470685245
+  },
+  "steady_dc_sweeps_ideal_capacitors": {
+    "differential": {
+      "input_min_V": -0.1,
+      "input_max_V": 0.1,
+      "adc_mean_V": 1.5033582617053112,
+      "adc_span_V": 1.9984014443252818e-15,
+      "preamp_min_V": 1.503739020119528,
+      "preamp_max_V": 1.503739020119593,
+      "criterion": "Completed sweep, preamp/ADC not saturated, ADC variation <0.25 ideal LSB",
+      "passed": true
+    },
+    "common": {
+      "input_min_V": -0.3,
+      "input_max_V": 0.3,
+      "adc_mean_V": 1.5033582617053105,
+      "adc_span_V": 1.9984014443252818e-14,
+      "preamp_min_V": 1.503739020117772,
+      "preamp_max_V": 1.503739020119589,
+      "criterion": "Completed sweep, preamp/ADC not saturated, ADC variation <0.25 ideal LSB",
+      "passed": true
+    }
+  },
+  "steady_dc_with_capacitor_IR": [
+    {
+      "parallel_resistance_per_10nF_ohm": 100000000000.0,
+      "temperature_C": 25,
+      "input_offset_span_V": 0.2,
+      "adc_mean_V": 1.5032206057038662,
+      "adc_span_uV": 2.0465397558844245,
+      "adc_span_ideal_LSB": 0.0027942089467008677,
+      "preamp_min_V": 1.49971925064798,
+      "preamp_max_V": 1.500205220375612,
+      "passed_quarter_LSB_offset_variation": true
+    },
+    {
+      "parallel_resistance_per_10nF_ohm": 10000000000.0,
+      "temperature_C": 25,
+      "input_offset_span_V": 0.2,
+      "adc_mean_V": 1.501967437987614,
+      "adc_span_uV": 18.363716139058184,
+      "adc_span_ideal_LSB": 0.02507259376852744,
+      "preamp_min_V": 1.463721467396842,
+      "preamp_max_V": 1.468571070913678,
+      "passed_quarter_LSB_offset_variation": true
+    }
+  ],
+  "capacitor_IR_primary_source": "https://content.kemet.com/datasheets/kem_c1003_c0g_smd.pdf page4",
+  "ac": {
+    "gain_at_1k_VV": 969.7435634576424,
+    "peak_gain_VV": 1006.2919623148555,
+    "peak_frequency_Hz": 2900.681198693225,
+    "sampled_peak_relative_minus3dB_band_Hz": [
+      316.2277660168443,
+      6878.599123088256
+    ],
+    "target_frequency_values_log_interpolated": [
+      {
+        "frequency_Hz": 0.01,
+        "gain_VV": 0.0023169388632428363,
+        "phase_deg": -79.9493718161745,
+        "gain_dB_vs1k": -112.43484662879962,
+        "common_gain_VV": 0.005851470830280499,
+        "nominal_CM_rejection_dB": -8.047009402683154
+      },
+      {
+        "frequency_Hz": 0.1,
+        "gain_VV": 0.0486530475776846,
+        "phase_deg": -35.198847958514946,
+        "gain_dB_vs1k": -85.99093712974111,
+        "common_gain_VV": 0.057420984000582896,
+        "nominal_CM_rejection_dB": -1.4392116266550636
+      },
+      {
+        "frequency_Hz": 1,
+        "gain_VV": 2.6126420108822757,
+        "phase_deg": -56.65855996541797,
+        "gain_dB_vs1k": -51.391539995051964,
+        "common_gain_VV": 0.2647814354370139,
+        "nominal_CM_rejection_dB": 19.88384747434097
+      },
+      {
+        "frequency_Hz": 10,
+        "gain_VV": 32.276674080385625,
+        "phase_deg": -88.14964238954703,
+        "gain_dB_vs1k": -29.55536257645168,
+        "common_gain_VV": 0.2972161334182683,
+        "nominal_CM_rejection_dB": 40.71632793771315
+      },
+      {
+        "frequency_Hz": 50,
+        "gain_VV": 159.86655055968455,
+        "phase_deg": -99.47915976276406,
+        "gain_dB_vs1k": -15.65798602840398,
+        "common_gain_VV": 0.3002177979910899,
+        "nominal_CM_rejection_dB": 54.526423381611934
+      },
+      {
+        "frequency_Hz": 60,
+        "gain_VV": 190.81220975647085,
+        "phase_deg": -101.62415358277617,
+        "gain_dB_vs1k": -14.121014893409928,
+        "common_gain_VV": 0.3012029325833006,
+        "nominal_CM_rejection_dB": 56.03493930193033
+      },
+      {
+        "frequency_Hz": 300,
+        "gain_VV": 702.6129613320686,
+        "phase_deg": -140.89214248079543,
+        "gain_dB_vs1k": -2.7988149721529303,
+        "common_gain_VV": 0.3342052608993327,
+        "nominal_CM_rejection_dB": 66.45405750071411
+      },
+      {
+        "frequency_Hz": 1000,
+        "gain_VV": 969.7435634576424,
+        "phase_deg": 172.93161960117465,
+        "gain_dB_vs1k": 0.0,
+        "common_gain_VV": 0.30634814867409693,
+        "nominal_CM_rejection_dB": 70.00883291133877
+      },
+      {
+        "frequency_Hz": 7000,
+        "gain_VV": 704.2973353605162,
+        "phase_deg": -18.83326570147942,
+        "gain_dB_vs1k": -2.778017208507735,
+        "common_gain_VV": 0.17583511304546023,
+        "nominal_CM_rejection_dB": 72.05300880617074
+      },
+      {
+        "frequency_Hz": 15000,
+        "gain_VV": 43.086899834488,
+        "phase_deg": -152.25815607453174,
+        "gain_dB_vs1k": -27.046233172433777,
+        "common_gain_VV": 0.01449422938313218,
+        "nominal_CM_rejection_dB": 69.46300233967726
+      },
+      {
+        "frequency_Hz": 23000,
+        "gain_VV": 6.760898984810246,
+        "phase_deg": 159.3424939125713,
+        "gain_dB_vs1k": -43.13304917116354,
+        "common_gain_VV": 0.014168074634546415,
+        "nominal_CM_rejection_dB": 53.573872223778935
+      },
+      {
+        "frequency_Hz": 43000,
+        "gain_VV": 0.3606865877743346,
+        "phase_deg": 90.658646510891,
+        "gain_dB_vs1k": -68.59053824892922,
+        "common_gain_VV": 0.007158904236738234,
+        "nominal_CM_rejection_dB": 34.045668805593806
+      },
+      {
+        "frequency_Hz": 100000.0,
+        "gain_VV": 0.005525003636610552,
+        "phase_deg": -38.33031545560762,
+        "gain_dB_vs1k": -104.88648674992903,
+        "common_gain_VV": 0.0016250429368858989,
+        "nominal_CM_rejection_dB": 10.629354556367545
+      },
+      {
+        "frequency_Hz": 1000000.0,
+        "gain_VV": 1.1382008843805154e-05,
+        "phase_deg": -88.96097873981134,
+        "gain_dB_vs1k": -158.608759739837,
+        "common_gain_VV": 3.952073266166646e-06,
+        "nominal_CM_rejection_dB": 9.187878629760883
+      },
+      {
+        "frequency_Hz": 10000000.0,
+        "gain_VV": 9.623674816562403e-11,
+        "phase_deg": -163.74794528028684,
+        "gain_dB_vs1k": -260.06631931834426,
+        "common_gain_VV": 2.383979669100897e-10,
+        "nominal_CM_rejection_dB": -7.879232151379572
+      }
+    ],
+    "limitation": "CMRR is nominal matched family model; tolerance/source/parasitic mismatch results from previous study still apply. Audio-band model cannot establish GHz RF immunity."
+  },
+  "offset_recovery": {
+    "source_case": "CH1: 0,+100mV,0,-100mV,0; 1us edges at 10ms/600ms/1.2s/1.8s; others 0V; final quiet interval 2.2s",
+    "adc_min_V": 0.01489811405524633,
+    "adc_max_V": 2.985101506670219,
+    "outside_0p2_to_2p8_V": true,
+    "all_samples_within_0_to_3V": true,
+    "shared_vmid_min_V": 1.496463571083955,
+    "shared_vmid_max_V": 1.504439776996828,
+    "unexcited_channel2_min_V": 1.499225491289832,
+    "unexcited_channel2_max_V": 1.507205120101795,
+    "settling_after_last_event_to_1mV_s": 1.2025270000012709,
+    "settling_after_last_event_to_quarter_LSB_s": 1.5853400000020792,
+    "residual_at_0p6s_after_last_event_mV": 14.782902813973209,
+    "residual_at_2s_after_last_event_uV": 28.771762316859295,
+    "residual_at_end_uV": 11.243512977987535,
+    "provisional_2s_quarter_LSB_recovery_passed_this_nominal_case": true
+  },
+  "startup": {
+    "source_case": "Grounded external CH/REF, 0-to-3V AFE supply ramp in1ms, LTspice startup initializes sources at0",
+    "dc_equilibrium_reference_V": 1.503360005042647,
+    "adc_residual_at_2s_uV": -531.2086021056483,
+    "adc_residual_at_2p4s_uV": -149.71359592408362,
+    "settling_to_1mV_s": 1.801055974692463,
+    "settling_to_quarter_LSB_s": 2.336172974693151,
+    "provisional_2s_quarter_LSB_startup_passed_this_nominal_case": false,
+    "preamp_last_time_below_0p2V_s": 0.583861974692532,
+    "VMID_at_0p3s_V": 1.4453427082438015,
+    "limits": "Family-model behavior below1.8V is not guaranteed; no regulator/interlock/MCU sequencing, process corners, or measured startup included"
+  },
+  "AFE_OVP_status": "NO DEDICATED PRECISION OVP CLAMP; nominal output rail-bounding in this model is not input-ESD, unpowered fault, MCU injection, or power-path OVP proof",
+  "release_findings": [
+    "Steady DC rejection passes stated ideal/IR scenarios; DC steps still rail amplifier stages and require shared recovery blanking",
+    "2s step-recovery delay covers this nominal case, but2s cold startup fails quarter-LSB baseline criterion; use longer Candidate delay plus rail/baseline/clipping checks and qualify hardware",
+    "VMID moves and unexcited channels respond during an offset artifact; count validity must account for the shared reference/bias",
+    "50/60Hz differential interference is only about14-16dB below1k gain; this is not a mains notch or blanket low-frequency rejection claim",
+    "Unchanged >=10MOhm full-band input requirement and actual power/ESD/ADC release gates remain open"
+  ],
+  "invalid_diagnostics": [
+    {
+      "deck": "afe-dc-capacitor-leakage.cir",
+      "status": "ABORTED_INVALID",
+      "reason": "Additional deliberately poor1GOhm leakage step did not converge directly and stalled in Gmin stepping; agent stopped only this named process.100G/10G scenarios completed separately. No circuit performance conclusion from incomplete diagnostic."
+    }
+  ],
+  "runs": [
+    {
+      "name": "import-tlv9002-op",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "Operating Point",
+      "points": 1,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": null,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/import-tlv9002-op.cir",
+          "sha256": "41faf38824af16da45be7651e25f55ad08d537a2fc0b00b47c28a3b661866069"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/import-tlv9002-op.log",
+          "sha256": "45c925ac1d566642246e310ccd72c624df31122ad0d7f6058704ecde38fe9ecf"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/import-tlv9002-op.raw",
+          "sha256": "24dee92db86cae7067f7018cdea55b0987b3d24bc7f1dca851f44aedf4732bf3"
+        }
+      }
+    },
+    {
+      "name": "import-tlv9052-op",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "Operating Point",
+      "points": 1,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": null,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/import-tlv9052-op.cir",
+          "sha256": "173c4cfc6dc9d46aeff1c27bf61dd91d7859c9cb21adf5200f9714aaf2f60076"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/import-tlv9052-op.log",
+          "sha256": "39667541d25b9b8b2decdc737cd1b464668f08bec355d80bb369b96583fb4d7c"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/import-tlv9052-op.raw",
+          "sha256": "809d808e99b5d56e9c04fccc181dcfd13a7d112c3bf1405fced91b3dd9a127ab"
+        }
+      }
+    },
+    {
+      "name": "afe-full-op",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "Operating Point",
+      "points": 1,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": 0,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/afe-full-op.cir",
+          "sha256": "841b888c3b3fcdad429dee22df6d082ac38642d178a086e05e5921a05c0ca869"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/afe-full-op.log",
+          "sha256": "035183b77a2efd6b27f67c947850a54e76d1f70e4af1bf4521dc209c1f040bef"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/afe-full-op.raw",
+          "sha256": "f56a8817821be65fa18c6e9759b005424d67edc06f3f67f73f4a7d68ad8482f3"
+        }
+      }
+    },
+    {
+      "name": "afe-dc-differential-offset",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "DC transfer characteristic",
+      "points": 41,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": null,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/afe-dc-differential-offset.cir",
+          "sha256": "bd555082b694ad1abb6aa70ac8773c6a07417a7d069e9f504391341f09ea7408"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/afe-dc-differential-offset.log",
+          "sha256": "92f331e9ff06ca6f4c9c2bebefee6f3cb497eca2b7cc72456280b696274c9db1"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/afe-dc-differential-offset.raw",
+          "sha256": "5e0c9bb860cecd1c2f38b2567290ebb6c09f4563055f7c95608a6d4549e5db32"
+        }
+      }
+    },
+    {
+      "name": "afe-dc-common-offset",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "DC transfer characteristic",
+      "points": 61,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": null,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/afe-dc-common-offset.cir",
+          "sha256": "35befc950929b5e154b51a7f0d2f4089b02073aa56755fc9d42946d93a3147f7"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/afe-dc-common-offset.log",
+          "sha256": "ae8d9d63536e919163d682ab47f2b05954a5d8b7e9757e77953a231307e5caab"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/afe-dc-common-offset.raw",
+          "sha256": "8a032fecab96054c1f26f36d7ada2c67548f68b344aeeecabbbde6b0a9663685"
+        }
+      }
+    },
+    {
+      "name": "afe-ac-differential",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "AC Analysis",
+      "points": 721,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": null,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/afe-ac-differential.cir",
+          "sha256": "f966ff5c9a764e6ce28fd5ed9730d9d76f362a7703b89ea385a76e1e4db06bda"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/afe-ac-differential.log",
+          "sha256": "993b870f683ef506780a3283f6dd23736ee867f5f846bc345ba196eb8fea576e"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/afe-ac-differential.raw",
+          "sha256": "eb9239b58f1e5db1bba708a41ebeea2b4945a9d05cbec5c8751c23f344e094bd"
+        }
+      }
+    },
+    {
+      "name": "afe-ac-common",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "AC Analysis",
+      "points": 721,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": null,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/afe-ac-common.cir",
+          "sha256": "0d9e04ee8a397f11aab071710892618befbd79a3d542a9ac47f483e1302db188"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/afe-ac-common.log",
+          "sha256": "de7bd7797db90701a274b244d00dd40fddfbb54e584c5cf9da8a4fe6de8cb886"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/afe-ac-common.raw",
+          "sha256": "f5116bfd40eb5d1503ca0e921628d17dd0df8fd299646e723b6df370d3882cce"
+        }
+      }
+    },
+    {
+      "name": "afe-offset-recovery",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "Transient Analysis",
+      "points": 30407,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": null,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/afe-offset-recovery.cir",
+          "sha256": "f62a00ec37916cae16ae1b186a7173d7d13a2a81b46c409bc1825fe56b593489"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/afe-offset-recovery.log",
+          "sha256": "71646082a03d8a59cdaef67b1dd864f2302d14d3ed2b698394e78a9d6ffc524c"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/afe-offset-recovery.raw",
+          "sha256": "b91c2c1112a4c0c8fbdb6a329ebdfb95fa774077097487b45fb9dbb3d53c1e1c"
+        }
+      }
+    },
+    {
+      "name": "afe-offset-recovery-long",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "Transient Analysis",
+      "points": 46430,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": 0,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/afe-offset-recovery-long.cir",
+          "sha256": "712f3808fe5dd513dc681958fdc23a17d339ddff1958ec057182b23404aa9e33"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/afe-offset-recovery-long.log",
+          "sha256": "51f5fa9ae9e54465c92b048e6809c9b477d18996dc99a268d9fdad598d29fc51"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/afe-offset-recovery-long.raw",
+          "sha256": "724974c47ae17b9e3b2f83c8df821760ef7e75a65f1b1e7adc997d9415ef2bf9"
+        }
+      }
+    },
+    {
+      "name": "afe-startup",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "Transient Analysis",
+      "points": 33665,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": null,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/afe-startup.cir",
+          "sha256": "9c3626d97d56f9d36d5178edd755d9c2984e03932507da65d0225a4890c0002f"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/afe-startup.log",
+          "sha256": "b293be1900906bf6b71384a88e5603b12a45f2e2fb668d73fd51804127b3b58a"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/afe-startup.raw",
+          "sha256": "cf26fe78eec53307235d3f70ec957524f886b0783ca28525e3948d4e3e54209f"
+        }
+      }
+    },
+    {
+      "name": "afe-dc-capacitor-leakage-qualified",
+      "status": "COMPLETED_FINITE_RESULT_WITH_LOG",
+      "plotname": "DC transfer characteristic",
+      "points": 82,
+      "simulator_version_log": "LTspice 26.0.2 for Windows",
+      "simulator_exit_code": 0,
+      "exit_code_note": "Captured when present; other runs are qualified from completed logs and independently inspected finite raw results",
+      "files": {
+        ".cir": {
+          "path": "hardware/rev-a/ltspice/afe/afe-dc-capacitor-leakage-qualified.cir",
+          "sha256": "1fc4a67176ae70f93e993cfa065a894d8cf628e35a5aae7ab754b3e3c31bb13a"
+        },
+        ".log": {
+          "path": "hardware/rev-a/ltspice/afe/afe-dc-capacitor-leakage-qualified.log",
+          "sha256": "56a70432b13703a3f869a26e3a8d614d3682017701b8d2f21785e01399710bd6"
+        },
+        ".raw": {
+          "path": "hardware/rev-a/ltspice/afe/afe-dc-capacitor-leakage-qualified.raw",
+          "sha256": "e001a667fd6dd5aa2309201760f43e735ffe5fd6ac43d09918e1f7a88b516949"
+        }
+      }
+    }
+  ]
+}

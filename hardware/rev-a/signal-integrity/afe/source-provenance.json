@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-02",
+  "status": "Nominal sensitivity study, not routed-PCB extraction",
+  "source_snapshots": [
+    {
+      "source": "hardware/rev-a/ltspice/afe/canonical-afe.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/canonical-afe.lib",
+      "sha256": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f"
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/read_ltspice_raw.py",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/read_ltspice_raw.py",
+      "sha256": "14c51be0e08a47dee7d1f28436aa12c79d565815d1b4e9ab1aa987329402b67b"
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/tlv9002-namespaced.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/tlv9002-namespaced.lib",
+      "sha256": "22a5c4569fafceb2559ba048d2a2b3035059513988a9c1a2f0688630263cb66d"
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/tlv9002-original.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/tlv9002-original.lib",
+      "sha256": "8d482d075395aa6d995354f6289f819120ba66126c88c23fb1113b8c14a81b18"
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/tlv9052-namespaced.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/tlv9052-namespaced.lib",
+      "sha256": "21aa0f220b73bef615f2431e9b5f24606d618121215f766240b6bd29cabeab8e"
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/tlv9052-original.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/tlv9052-original.lib",
+      "sha256": "234eb546abe7ff88937387ecfe430014c9d4d6490cb4c56014f650d21b7376f4"
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/model-provenance.json",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/model-provenance.json",
+      "sha256": "a4b41ae16f8cf84f8e20b2494cda558c3314e39e1a07909d735323d4e7fb1fb6"
+    }
+  ],
+  "canonical_source_current_sha256": "d5f6afce055657a79593d1d3863f9c2c3aaa4db0ea18dbab099045a57f387102",
+  "fixture": {
+    "channels": 8,
+    "reference_channels": 1,
+    "source_resistance_ohm": 47000,
+    "series_limit_ohm": 5100,
+    "assumed_FFC_shunt_capacitance_per_input_pF": 20,
+    "assumed_trace_shunt_capacitance_per_input_pF": 2,
+    "ESD_capacitance_only_per_input_pF": 0.5,
+    "rail_V": 3,
+    "temperature_C": 27,
+    "frequency_Hz": [
+      300,
+      7000
+    ],
+    "ac_points_per_decade": 100,
+    "excitation": "CH1 external source=AC1; other seven sources and REF=AC0 with all 47k series resistances preserved",
+    "added_coupling_pF": [
+      0,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1.0
+    ],
+    "input_input_nodes": [
+      "FFC_CH1",
+      "FFC_CH2"
+    ],
+    "output_input_nodes": [
+      "AFE_OUT_1",
+      "CH2_PLUS"
+    ],
+    "late_output_added_coupling_pF": [
+      0,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1
+    ]
+  },
+  "limits": [
+    "Family single-amplifier models do not model selected quad package crosstalk",
+    "Rail and ground sources are ideal; no copper return impedance or shared supply impedance",
+    "No ADC sampling switches, RF/BLE/13.56MHz excitation, or cable/package parasitic extraction",
+    "Added capacitors are assumptions with no geometry-based justification; useful for sensitivity only",
+    "No component-tolerance or worst-case statistical study in this fixture",
+    "AC analysis is linearized at a verified OP; amplitudes are linear scaling estimates, not spike-template runs"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "battery_uvlo": {
+    "nominal_rise": 3.801494117647059,
+    "nominal_fall": 3.5014941176470593,
+    "rise": {
+      "min": 3.6662517181129886,
+      "max": 3.949375975440681
+    },
+    "fall": {
+      "min": 3.352067850902738,
+      "max": 3.638902673796791
+    },
+    "assumptions": "Independent reference 1.223..1.260 V, offset \u00b19 mV, built-in hysteresis \u22648 mV, divider/feedback \u00b11%, control 2.955..3.045 V; excludes comparator output swing and pin bias."
+  },
+  "digital_sequence": {
+    "nominal_rise": 1.5315258278145694,
+    "nominal_fall": 1.4321880794701984,
+    "rise": {
+      "min": 1.4913947413284376,
+      "max": 1.5757473142016187
+    },
+    "fall": {
+      "min": 1.3864463313881057,
+      "max": 1.472099458157736
+    },
+    "assumptions": "As UVLO; delay added by 100 pF at sense."
+  },
+  "ntc_window": {
+    "nominal_cold": 21.87036324796469,
+    "nominal_hot": 35.94527797842511,
+    "bounds": {
+      "cold": {
+        "min": 20.068300152840663,
+        "max": 23.655182497722137
+      },
+      "hot": {
+        "min": 33.90580161989101,
+        "max": 38.066498248110804
+      }
+    },
+    "R_hot_top_ohm": 66500,
+    "sourcing_revision": "2026-10-01: 66.5 k\u03a9 C29381 replaces unsourced 65.8 k\u03a9; same 1% corner assumptions."
+  },
+  "charge": {
+    "nominal_mA": 20,
+    "min_mA": 18.81188118811881,
+    "max_mA": 21.212121212121215,
+    "CV_nominal": 4.1,
+    "CV_upper_assuming_half_percent": 4.120499999999999
+  },
+  "charging_power": {
+    "delivered_at5V_20mA_BQ_typ": 0.10375000000000001,
+    "delivered_at5V_maxcurrent_IQ": 0.11106060606060607,
+    "additional_control_input_estimate_mW": 1.5,
+    "input_efuse_typ_mW": 0.7150000000000001,
+    "reverse_diode_20mA_drop_estimate_mW": 5
+  },
+  "analog_energy": {
+    "Cmax_100uF": 0.00046360125,
+    "maximum_C_for1mJ": 0.00021570261081047562
+  },
+  "delay": {
+    "charge_enable_min_estimated_s": 0.08367977445698598,
+    "charge_enable_nominal_s": 0.1847271885459166,
+    "run_enable_nominal_s": 0.08646804570234395,
+    "active_rail_discharge_100uF_3Vto0p3V_s": 0.02302585092994046
+  },
+  "VMID": {
+    "Vnominal": 1.5,
+    "Idivider_uA": 150,
+    "tau_s": 0.011000000000000001,
+    "fc_Hz": 14.468631190172303
+  },
+  "input_efuse_current_limit": {
+    "recorded_date": "2026-10-02",
+    "R511_ohm": 1000000,
+    "R511_tolerance_fraction": 0.01,
+    "maximum_resistor_ohm": 1010000,
+    "datasheet_RILIM_maximum_ohm": 1100000,
+    "approx_min_mA": 56.92972456826551,
+    "approx_nominal_mA": 96.30541434535417,
+    "approx_max_mA": 138.3847704059197,
+    "calculation_kind": "TI Eq.1 approximate curves; not a guaranteed production current threshold at 1Meg.",
+    "source": "https://www.ti.com/lit/ds/symlink/tps25200.pdf",
+    "revision_reason": "Replaced 1.1Meg +/-1% because its upper tolerance exceeds the recommended 1.1Meg resistor maximum; stocked C26083 1Meg +/-1% keeps all resistor corners within range.",
+    "cell_protection_qualified": false,
+    "supporting_results": "../ltspice/power/results/power-results.json"
+  }
+}

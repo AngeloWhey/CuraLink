@@ -1,0 +1,358 @@
+{
+  "kicad_version": "9.0.9-9.0.9~ubuntu24.04.1",
+  "source": "Two manufacturer-geometry custom footprints",
+  "status": "Geometry/parsing only, not completed board DRC or assembler qualification",
+  "records": [
+    {
+      "footprint": "TLV_RUC14_X2QFN_2x2mm_NoEP",
+      "status": "PASS_actual_KiCad_FootprintLoad_and_manufacturer_geometry_check",
+      "sha256": "1702432af1c5be9c1aa00361543a0cf0909cd3b81cf805ce8bc317b2233e630e",
+      "numbered_copper_pads": [
+        {
+          "number": "1",
+          "x": -0.9,
+          "y": -0.8,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x": -0.9,
+          "y": -0.4,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "3",
+          "x": -0.9,
+          "y": 0.0,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "4",
+          "x": -0.9,
+          "y": 0.4,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "5",
+          "x": -0.9,
+          "y": 0.8,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "6",
+          "x": -0.2,
+          "y": 0.9,
+          "w": 0.2,
+          "h": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "7",
+          "x": 0.2,
+          "y": 0.9,
+          "w": 0.2,
+          "h": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "8",
+          "x": 0.9,
+          "y": 0.8,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "9",
+          "x": 0.9,
+          "y": 0.4,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "10",
+          "x": 0.9,
+          "y": 0.0,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "11",
+          "x": 0.9,
+          "y": -0.4,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "12",
+          "x": 0.9,
+          "y": -0.8,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "13",
+          "x": 0.2,
+          "y": -0.9,
+          "w": 0.2,
+          "h": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "14",
+          "x": -0.2,
+          "y": -0.9,
+          "w": 0.2,
+          "h": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "paste_only_unnumbered_pads": [],
+      "canonical_pin_set_matches": true
+    },
+    {
+      "footprint": "TPD4E05U06DQA_USON10_1x2.5mm",
+      "status": "PASS_actual_KiCad_FootprintLoad_and_manufacturer_geometry_check",
+      "sha256": "7a1906e93dd2332d42084f09ab9be85c90876116629e08d766e84485fc0d9737",
+      "numbered_copper_pads": [
+        {
+          "number": "1",
+          "x": -0.4175,
+          "y": -1.0,
+          "w": 0.565,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x": -0.4175,
+          "y": -0.5,
+          "w": 0.565,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "3",
+          "x": -0.4175,
+          "y": 0.0,
+          "w": 0.565,
+          "h": 0.4,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "x": -0.4175,
+          "y": 0.5,
+          "w": 0.565,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "5",
+          "x": -0.4175,
+          "y": 1.0,
+          "w": 0.565,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "6",
+          "x": 0.4175,
+          "y": 1.0,
+          "w": 0.565,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "7",
+          "x": 0.4175,
+          "y": 0.5,
+          "w": 0.565,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "8",
+          "x": 0.4175,
+          "y": 0.0,
+          "w": 0.565,
+          "h": 0.4,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "9",
+          "x": 0.4175,
+          "y": -0.5,
+          "w": 0.565,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "10",
+          "x": 0.4175,
+          "y": -1.0,
+          "w": 0.565,
+          "h": 0.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "paste_only_unnumbered_pads": [
+        {
+          "number": "",
+          "x": -0.4175,
+          "y": 0.0,
+          "w": 0.565,
+          "h": 0.36,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "x": 0.4175,
+          "y": 0.0,
+          "w": 0.565,
+          "h": 0.36,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        }
+      ],
+      "canonical_pin_set_matches": true
+    }
+  ]
+}

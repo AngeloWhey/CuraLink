@@ -1,0 +1,21 @@
+* Normalized small-signal transfer, not a physical 1V/1A neural input.
+* Original TI family equations; nominal passives except C1058 effective-capacitance cases.
+.include "../../ltspice/afe/models/tlv9002-namespaced.lib"
+.include "../../ltspice/afe/models/tlv9052-namespaced.lib"
+.include "canonical-afe-sensitivity.lib"
+.options numdgt=7 plotwinsize=0
+.temp 27
+.step param CMID_F list 4.7u 2u
+VDD AVDD_3V0 0 DC 3 AC 1
+VCH1 SRC_CH1 0 DC 0 AC 0
+VCH2 SRC_CH2 0 DC 0 AC 0
+VCH3 SRC_CH3 0 DC 0 AC 0
+VCH4 SRC_CH4 0 DC 0 AC 0
+VCH5 SRC_CH5 0 DC 0 AC 0
+VCH6 SRC_CH6 0 DC 0 AC 0
+VCH7 SRC_CH7 0 DC 0 AC 0
+VCH8 SRC_CH8 0 DC 0 AC 0
+VREF SRC_REF 0 DC 0 AC 0
+.save V(ADC_IN_1) V(ADC_IN_2) V(AFE_OUT_1) V(AFE_OUT_2) V(AFE_OUT_3) V(AFE_OUT_4) V(AFE_OUT_5) V(AFE_OUT_6) V(AFE_OUT_7) V(AFE_OUT_8) V(AFE_SPARE_C) V(AFE_SPARE_D) V(AVDD_3V0) V(CH1_HP) V(CH1_LP1_OUT) V(CH1_PRE) V(CH2_HP) V(CH2_LP1_OUT) V(CH2_PRE) V(CH3_HP) V(CH3_LP1_OUT) V(CH3_PRE) V(CH4_HP) V(CH4_LP1_OUT) V(CH4_PRE) V(CH5_HP) V(CH5_LP1_OUT) V(CH5_PRE) V(CH6_HP) V(CH6_LP1_OUT) V(CH6_PRE) V(CH7_HP) V(CH7_LP1_OUT) V(CH7_PRE) V(CH8_HP) V(CH8_LP1_OUT) V(CH8_PRE) V(REF_PRE) V(VMID) V(VMID_BUF) V(VMID_RAW) I(VDD)
+.ac dec 80 1 1Meg
+.end

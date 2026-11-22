@@ -1,0 +1,10 @@
+{
+  "date_local": "2026-10-02",
+  "timezone": "America/New_York",
+  "canonical_file": "hardware/rev-a/ltspice/afe/canonical-afe.lib",
+  "canonical_sha256": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f",
+  "derived_sha256": "493c22ad468098bef96410c50869f1c4670c3c1e4854bfa306043fec085ce212",
+  "only_circuit_change": "C1058 from fixed4.7uF to CMID_F parameter, cases4.7uF and assumed minimum2uF.",
+  "model_provenance": "../../ltspice/afe/models/model-provenance.json",
+  "limitations": "No PCB parasitics, digital/BLE currents, real ADC core, regulator loop, mismatch, RF rectification or ground impedances. AC is linearized nominal family behavior, not hardware immunity."
+}

@@ -1,0 +1,30 @@
+* Final actual SK stage, worst adjacent sample 2.8V -> 0.2V
+* ADC simplified switch (1k on) + sample capacitor. Does not model actual SAR conversion kickback.
+.include vendor/combined-namespaced.lib
+VS AVDD 0 DC 3
+VMID VMID 0 DC 1.5
+VIN prior 0 DC 0.919642857142857
+R1 prior a 22.6k
+R2 a plus 22.6k
+C1 a out 1n
+C2 plus VMID 1n
+RG minus VMID 10k
+RF out minus 12.4k
+Xfinal plus minus AVDD 0 out TLV9052_TLV9052
+RISO out adc 151.5
+CRES adc 0 950.0p
+CSAMP held 0 10p
+VPREV prev 0 DC 2.8
+Sprev held prev cp 0 SAMPSW
+Sacq held adc ca 0 SAMPSW
+VCP cp 0 PWL(0 1 0.9u 1 0.901u 0 8u 0)
+VCA ca 0 PWL(0 0 1u 0 1.001u 1 3.5u 1 3.501u 0 8u 0)
+.model SAMPSW SW(Ron=1k Roff=1e12 Vt=0.5 Vh=0)
+.control
+set wr_singlescale
+set wr_vecnames
+tran 1n 4u 0 2n
+wrdata adc-stress/c1000_adc10_down_r1.01_c0.95.csv v(out) v(adc) v(held)
+quit
+.endc
+.end

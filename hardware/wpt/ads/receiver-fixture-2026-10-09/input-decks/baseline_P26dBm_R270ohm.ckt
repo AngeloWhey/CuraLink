@@ -1,0 +1,29 @@
+; CuraLink isolated corrected floating full-bridge receiver, 2026-10-09
+; Four ideal tuning capacitors; resistive DC load; current diode diagnostic only.
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="CuraLink:receiver_resistor_fixture:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes
+Pin_dBm=26
+Rload=270
+F0=13.56 MHz
+Port:PORT1 Vin0 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(Pin_dBm),0) Freq[1]=F0 Noise=no
+Short:TX_Probe Vin0 Vin Mode=0 SaveCurrent=yes
+C:C5 Vin 0 C=438 pF
+C:C3 Vin VinMatched C=61.3 pF
+L:L1 VinMatched 0 L=2.49 uH R=1.8 Noise=no
+L:L2 IMPin Vout L=0.33 uH R=0.399 Noise=no
+Mutual:Mutual1 K=0.0662 Inductor1="L1" Inductor2="L2"
+C:C1 Vout VoutMatched C=673.3 pF
+C:C6 VoutMatched IMPin C=1050 pF
+model DIODEM1 Diode Is=74 nA Rs=5 N=1.07 Tt=3 ps Cjo=138.5 fF Vj=0.224 V M=0.138 Fc=0.5 Bv=4.2 V Ibv=100 uA AllowScaling=0 Xti=1.5
+Short:D1_Probe 0 D1_A Mode=0 SaveCurrent=yes
+"DIODEM1":DIODE1 D1_A VoutMatched Mode=1 Noise=no
+Short:D2_Probe VoutMatched D2_A Mode=0 SaveCurrent=yes
+"DIODEM1":DIODE2 D2_A DCout Mode=1 Noise=no
+Short:D3_Probe 0 D3_A Mode=0 SaveCurrent=yes
+"DIODEM1":DIODE3 D3_A IMPin Mode=1 Noise=no
+Short:D4_Probe IMPin D4_A Mode=0 SaveCurrent=yes
+"DIODEM1":DIODE4 D4_A DCout Mode=1 Noise=no
+C:Cdc DCout 0 C=1 uF
+Short:DC_Probe DCout LoadIn Mode=0 SaveCurrent=yes
+R:Rload LoadIn 0 R=Rload Noise=no
+HB:HB1 MaxOrder=7 Freq[1]=F0 Order[1]=7 StatusLevel=0 OutputPlan="HB1_Output"
+OutputPlan:HB1_Output Type="Output" UseNodeNestLevel=yes NodeNestLevel=2 UseEquationNestLevel=yes EquationNestLevel=2 UseSavedEquationNestLevel=yes SavedEquationNestLevel=2 UseDeviceCurrentNestLevel=yes DeviceCurrentNestLevel=2 DeviceCurrentDeviceType="All" DeviceCurrentSymSyntax=yes UseCurrentNestLevel=yes CurrentNestLevel=999 UseDeviceVoltageNestLevel=yes DeviceVoltageNestLevel=2 DeviceVoltageDeviceType="All"

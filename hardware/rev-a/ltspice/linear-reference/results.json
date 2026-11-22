@@ -1,0 +1,96 @@
+{
+  "simulator": "LTspice26.0.2Windows",
+  "model_class": "ExplicitfiniteGBWlinearreference,notvendororprotectionmodel",
+  "dc_source_range_V": [
+    -0.1,
+    0.1
+  ],
+  "dc_output_relative_VMID_max_abs_V": 1.133152257702461e-26,
+  "max_complex_transfer_relative_error_vs_MNA": 2.1096321717425952e-11,
+  "ac_points": [
+    {
+      "frequency_Hz": 0.01,
+      "gain_V_per_V": 0.00044730760206896324,
+      "gain_dB": -66.9878744171171,
+      "phase_deg": -0.7962851839095143,
+      "relative_1k_dB": -126.71221924880513
+    },
+    {
+      "frequency_Hz": 0.09999999999999969,
+      "gain_V_per_V": 0.044311310583892566,
+      "gain_dB": -27.06970809531211,
+      "phase_deg": -7.913060229918158,
+      "relative_1k_dB": -86.79405292700014
+    },
+    {
+      "frequency_Hz": 0.9999999999999938,
+      "gain_V_per_V": 2.617134010490255,
+      "gain_dB": 8.356519225639362,
+      "phase_deg": -54.401235949525706,
+      "relative_1k_dB": -51.36782560604867
+    },
+    {
+      "frequency_Hz": 9.999999999999908,
+      "gain_V_per_V": 32.17037680512921,
+      "gain_dB": 30.1491229547071,
+      "phase_deg": -87.93879968115604,
+      "relative_1k_dB": -29.575221876980933
+    },
+    {
+      "frequency_Hz": 50.11872336272666,
+      "gain_V_per_V": 159.70690222219,
+      "gain_dB": 44.06647371816526,
+      "phase_deg": -99.45091438846676,
+      "relative_1k_dB": -15.65787111352277
+    },
+    {
+      "frequency_Hz": 60.25595860743506,
+      "gain_V_per_V": 190.9678935619505,
+      "gain_dB": 45.61920715427923,
+      "phase_deg": -101.62824266804078,
+      "relative_1k_dB": -14.105137677408807
+    },
+    {
+      "frequency_Hz": 301.9951720401974,
+      "gain_V_per_V": 703.3110984270742,
+      "gain_dB": 56.94294941488565,
+      "phase_deg": -141.08973816506935,
+      "relative_1k_dB": -2.781395416802374
+    },
+    {
+      "frequency_Hz": 999.9999999999844,
+      "gain_V_per_V": 968.7623266922063,
+      "gain_dB": 59.724344831688036,
+      "phase_deg": 172.88467599114017,
+      "relative_1k_dB": 0.0
+    },
+    {
+      "frequency_Hz": 7079.45784384125,
+      "gain_V_per_V": 687.7393319146049,
+      "gain_dB": 56.74847724836483,
+      "phase_deg": -22.682598649708083,
+      "relative_1k_dB": -2.9758675833232036
+    },
+    {
+      "frequency_Hz": 22908.67652767727,
+      "gain_V_per_V": 6.5172723704609306,
+      "gain_dB": 16.28131742901559,
+      "phase_deg": 159.18943016880075,
+      "relative_1k_dB": -43.44302740267244
+    },
+    {
+      "frequency_Hz": 42657.95188015838,
+      "gain_V_per_V": 0.34191119170550577,
+      "gain_dB": -9.321733666057309,
+      "phase_deg": 97.55114911916388,
+      "relative_1k_dB": -69.04607849774534
+    }
+  ],
+  "assumptions": [
+    "IdealVMID",
+    "A0=1e5;GBW1MHz/5MHz",
+    "Nominal47kohmsource20pFFFC",
+    "NoDCbias/leakageorclippinginreference",
+    "DCcapacitorsidealopen"
+  ]
+}

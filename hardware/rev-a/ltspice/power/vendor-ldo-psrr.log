@@ -1,0 +1,21 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-ldo-psrr.cir
+Start Time: Fri Oct  2 10:04:55 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+AsciiRawFile = true
+dd: Emission coefficient, N=0.01, too small, this might lead to numerical problems.
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.291 seconds.
+
+Files loaded:
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-ldo-psrr.cir
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\sources\tps7a20-spice\tps7a20-adj_trans.lib
+
+ripple_1k: mag(V(OUT)) =(-74.9528464943dB,0°) at 1000
+ripple_100k: mag(V(OUT)) =(-58.8902465543dB,0°) at 100000
+ripple_1meg: mag(V(OUT)) =(-77.9382731782dB,0°) at 1000000

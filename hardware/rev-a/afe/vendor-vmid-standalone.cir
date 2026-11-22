@@ -1,0 +1,12 @@
+* Isolated TLV9002 family VMID follower compatibility diagnostic
+.include vendor/combined-namespaced.lib
+VS avdd 0 DC 3
+VIN plus 0 DC 1.5
+Xbuffer plus out avdd 0 out TLV9002_TLV9002
+RLOAD out 0 100k
+.control
+op
+print v(out) i(VS)
+quit
+.endc
+.end

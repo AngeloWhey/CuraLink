@@ -1,0 +1,1226 @@
+{
+  "checked_date": "2026-10-02",
+  "components": [
+    {
+      "ref": "U401",
+      "value": "STM32WBA52CGU6",
+      "mpn": "STM32WBA52CGU6",
+      "package": "UFQFPN-48 7x7mm P0.5mm EP5.6x5.6mm",
+      "pins": {
+        "1": null,
+        "2": null,
+        "3": "ADC_IN_1",
+        "4": "ADC_IN_2",
+        "5": "ADC_IN_3",
+        "6": "AVDD_3V0",
+        "7": "ADC_IN_4",
+        "8": "ADC_SPARE",
+        "9": null,
+        "10": "ADC_IN_5",
+        "11": "DVDD_3V0",
+        "12": "ADC_IN_6",
+        "13": "ADC_IN_7",
+        "14": "ADC_IN_8",
+        "15": null,
+        "16": "LSE_OUT",
+        "17": "LSE_IN",
+        "18": null,
+        "19": "GPIO_TEST",
+        "20": "ACQ_MARKER",
+        "21": null,
+        "22": "DVDD_3V0",
+        "23": "UART_RX_MCU",
+        "24": "SWO_MCU",
+        "25": null,
+        "26": "SWCLK_MCU",
+        "27": "SWDIO_MCU",
+        "28": "UART_TX_MCU",
+        "29": null,
+        "30": null,
+        "31": null,
+        "32": null,
+        "33": null,
+        "34": "BOOT0",
+        "35": "DVDD_3V0",
+        "36": "NRST",
+        "37": "MCU_RF",
+        "38": "VDDHPA_OUT",
+        "39": "DVDD_3V0",
+        "40": "HSE_OUT",
+        "41": "HSE_IN",
+        "42": "DVDD_3V0",
+        "43": "DVDD_3V0",
+        "44": "VCAP_OUT",
+        "45": null,
+        "46": null,
+        "47": null,
+        "48": null,
+        "49": "GND"
+      },
+      "pin_names": {
+        "1": "PB12",
+        "2": "PB11",
+        "3": "PA8/ADC4_IN1",
+        "4": "PA7/ADC4_IN2",
+        "5": "PA6/ADC4_IN3",
+        "6": "VDDA",
+        "7": "PA5/ADC4_IN4",
+        "8": "PA3/ADC4_IN6",
+        "9": "PB10",
+        "10": "PA2/ADC4_IN7",
+        "11": "VDD",
+        "12": "PA1/ADC4_IN8",
+        "13": "PA0/ADC4_IN9",
+        "14": "PB9/ADC4_IN10",
+        "15": "PB8",
+        "16": "PC15/OSC32_OUT",
+        "17": "PC14/OSC32_IN",
+        "18": "PC13",
+        "19": "PB7",
+        "20": "PB6",
+        "21": "PB5",
+        "22": "VDD",
+        "23": "PB4/USART2_RX",
+        "24": "PB3/SWO",
+        "25": "PA15",
+        "26": "PA14/SWCLK",
+        "27": "PA13/SWDIO",
+        "28": "PA12/USART2_TX",
+        "29": "PA11",
+        "30": "PB2",
+        "31": "PB1",
+        "32": "PB0",
+        "33": "PB15",
+        "34": "PH3/BOOT0",
+        "35": "VDD",
+        "36": "NRST",
+        "37": "RF",
+        "38": "VDDHPA",
+        "39": "VDDRF",
+        "40": "OSC_OUT",
+        "41": "OSC_IN",
+        "42": "VDDRFPA",
+        "43": "VDD",
+        "44": "VCAP",
+        "45": "PA10",
+        "46": "PA9",
+        "47": "PB14",
+        "48": "PB13",
+        "49": "VSS/EP"
+      },
+      "populated": null,
+      "notes": "NON-SMPS pin map. Pin38 VDDHPA is OUTPUT:470nF only. Pin44 VCAP is OUTPUT:4.7uF only. ADC reference internally VDDA. Null pins require NC markers. SWD-only debug preserves PB4 UART RX. PA3 spare not in normal scan."
+    },
+    {
+      "ref": "U402",
+      "value": "MLPF-WB-04D3",
+      "mpn": "MLPF-WB-04D3",
+      "package": "CSPG-6 1.6x1.0mm P0.5mm",
+      "pins": {
+        "A1": "MCU_RF",
+        "A2": "GND",
+        "A3": "RF_50OHM",
+        "B1": "GND",
+        "B2": "GND",
+        "B3": "GND"
+      },
+      "pin_names": {
+        "A1": "IN",
+        "A2": "GND4",
+        "A3": "OUT",
+        "B1": "GND3",
+        "B2": "GND2",
+        "B3": "GND1"
+      },
+      "populated": null,
+      "notes": "MCU-to-filter63ohm, filter output50ohm. Replicate ST RF grounding/stackup. Do not also populate discrete MCU filter."
+    },
+    {
+      "ref": "Y401",
+      "value": "32MHz / CL8pF",
+      "mpn": "NX2016SA-32MHZ-STD-CZS-5",
+      "package": "SMD2016-4",
+      "pins": {
+        "1": "HSE_IN",
+        "2": "GND",
+        "3": "HSE_OUT",
+        "4": "GND"
+      },
+      "pin_names": {
+        "1": "XTAL",
+        "2": "CASE",
+        "3": "XTAL",
+        "4": "CASE"
+      },
+      "populated": null,
+      "notes": "No external HSE load caps: use programmable internal banks. +/-10ppm initial,+/-25ppm temperature; trim/aging must meet radio tolerance."
+    },
+    {
+      "ref": "Y402",
+      "value": "32.768kHz / CL6pF",
+      "mpn": "NX3215SA 32.768KHZ EXS00A-MU00525",
+      "package": "SMD3215-2",
+      "pins": {
+        "1": "LSE_IN",
+        "2": "LSE_OUT"
+      },
+      "pin_names": {
+        "1": "XTAL",
+        "2": "XTAL"
+      },
+      "populated": null,
+      "notes": "ESR<=70kohm,C0<=1.5pF family. C421/422 initial load values; startup/frequency/drive-level validation mandatory. Medium-high drive initial recommendation."
+    },
+    {
+      "ref": "AE401",
+      "value": "2.45GHz chip antenna",
+      "mpn": "2450AT18A0100001E",
+      "package": "1206 3.2x1.6x1.3mm",
+      "pins": {
+        "1": "ANT_FEED",
+        "2": null
+      },
+      "pin_names": {
+        "1": "FEED",
+        "2": "NC_ANCHOR"
+      },
+      "populated": null,
+      "notes": "Pad2 soldered to isolated mechanical anchor, never GND. Corner mount/all-layer keepout per manufacturer p3. Tee values only initial; PCB-specific match unverified."
+    },
+    {
+      "ref": "J401",
+      "value": "SWD/SWO pogo pads",
+      "mpn": "PCB copper",
+      "package": "6 pogo pads custom",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "SWDIO_DBG",
+        "3": "GND",
+        "4": "SWCLK_DBG",
+        "5": "NRST",
+        "6": "SWO_DBG"
+      },
+      "pin_names": {
+        "1": "VTREF_SENSE_ONLY",
+        "2": "SWDIO",
+        "3": "GND",
+        "4": "SWCLK",
+        "5": "NRST_OPEN_DRAIN",
+        "6": "SWO"
+      },
+      "populated": null,
+      "notes": "Nonstandard ordering must be labeled. VTREF is sense only, not power input. Debugger must tristate when target off. Series resistors do not prevent backfeed."
+    },
+    {
+      "ref": "J402",
+      "value": "UART pogo pads",
+      "mpn": "PCB copper",
+      "package": "4 pogo pads custom",
+      "pins": {
+        "1": "GND",
+        "2": "UART_TX_DBG",
+        "3": "UART_RX_DBG",
+        "4": "DVDD_3V0"
+      },
+      "pin_names": {
+        "1": "GND",
+        "2": "TARGET_TX",
+        "3": "TARGET_RX",
+        "4": "VTREF_SENSE_ONLY"
+      },
+      "populated": null,
+      "notes": "Target-referenced3.0V UART only; disconnect/tristate during WPT charge. No external power input."
+    },
+    {
+      "ref": "J403",
+      "value": "BOOT0 jumper OPEN",
+      "mpn": "PCB copper",
+      "package": "2-pad solder jumper",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "BOOT0"
+      },
+      "pin_names": {
+        "1": "DVDD",
+        "2": "BOOT0"
+      },
+      "populated": null,
+      "notes": "Default open;100kohm pulldown. Check option-byte boot behavior before recovery."
+    },
+    {
+      "ref": "J404",
+      "value": "U.FL RF test DNP",
+      "mpn": "U.FL-R-SMT-1(80)",
+      "package": "Hirose U.FL-R-SMT-1",
+      "pins": {
+        "1": "RF_COAX",
+        "2": "GND",
+        "3": "GND"
+      },
+      "pin_names": {
+        "1": "CONTACT",
+        "2": "SHELL",
+        "3": "SHELL"
+      },
+      "populated": null,
+      "notes": "DNP. PROJECT pad mapping1 central contact,2/3 shell must be audited in footprint. Fit R418 and remove R417 for coax; never both."
+    },
+    {
+      "ref": "C401",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Adjacent U401 VDD pin11."
+    },
+    {
+      "ref": "C402",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Adjacent U401 VDD pin22."
+    },
+    {
+      "ref": "C403",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Adjacent U401 VDD pin35."
+    },
+    {
+      "ref": "C404",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Adjacent U401 VDD pin43."
+    },
+    {
+      "ref": "C405",
+      "value": "10uF X5R >=10V",
+      "mpn": "CL10A106KP8NNNC",
+      "package": "0603",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "MCU bulk bypass; qualify effective capacitance."
+    },
+    {
+      "ref": "C406",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "package": "0402",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "VDDA pin6 quiet-ground local bypass."
+    },
+    {
+      "ref": "C407",
+      "value": "1uF X7R >=10V",
+      "mpn": "CL10B105KO8NNNC",
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "VDDA/ADC reference bypass."
+    },
+    {
+      "ref": "C408",
+      "value": "4.7uF X5R >=10V",
+      "mpn": "CL10A475KP8NNNC",
+      "package": "0603",
+      "pins": {
+        "1": "VCAP_OUT",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "MANDATORY LDO core output cap; no other loads; qualify effective C/ESR."
+    },
+    {
+      "ref": "C409",
+      "value": "470nF X7R >=10V",
+      "mpn": "CL10B474KA8NNNC",
+      "package": "0603",
+      "pins": {
+        "1": "VDDHPA_OUT",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "MANDATORY RF PA internal regulator output cap. Not3V supply."
+    },
+    {
+      "ref": "C410",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "RF VDDRF pin39 local bypass."
+    },
+    {
+      "ref": "C411",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "RF VDDRFPA pin42 local bypass."
+    },
+    {
+      "ref": "C412",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "package": "0402",
+      "pins": {
+        "1": "NRST",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ST reset bypass at MCU."
+    },
+    {
+      "ref": "R401",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_1",
+        "2": "ADC_IN_1"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain."
+    },
+    {
+      "ref": "C413",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_1",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation."
+    },
+    {
+      "ref": "R402",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_2",
+        "2": "ADC_IN_2"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain."
+    },
+    {
+      "ref": "C414",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_2",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation."
+    },
+    {
+      "ref": "R403",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_3",
+        "2": "ADC_IN_3"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain."
+    },
+    {
+      "ref": "C415",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_3",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation."
+    },
+    {
+      "ref": "R404",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_4",
+        "2": "ADC_IN_4"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain."
+    },
+    {
+      "ref": "C416",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_4",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation."
+    },
+    {
+      "ref": "R405",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_5",
+        "2": "ADC_IN_5"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain."
+    },
+    {
+      "ref": "C417",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_5",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation."
+    },
+    {
+      "ref": "R406",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_6",
+        "2": "ADC_IN_6"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain."
+    },
+    {
+      "ref": "C418",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_6",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation."
+    },
+    {
+      "ref": "R407",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_7",
+        "2": "ADC_IN_7"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain."
+    },
+    {
+      "ref": "C419",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_7",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation."
+    },
+    {
+      "ref": "R408",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_8",
+        "2": "ADC_IN_8"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain."
+    },
+    {
+      "ref": "C420",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_8",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation."
+    },
+    {
+      "ref": "C421",
+      "value": "4.7pF C0G +/-0.25pF 50V",
+      "mpn": "0402CG4R7C500NT",
+      "package": "0402",
+      "pins": {
+        "1": "LSE_IN",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "INITIAL load assumes equivalent stray3.65pF (internal3pFtyp+PCB0.65pF). Tune startup/frequency. Exact sourcing requires root check."
+    },
+    {
+      "ref": "C422",
+      "value": "4.7pF C0G +/-0.25pF 50V",
+      "mpn": "0402CG4R7C500NT",
+      "package": "0402",
+      "pins": {
+        "1": "LSE_OUT",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Match C421; no parallel crystal resistor."
+    },
+    {
+      "ref": "R409",
+      "value": "100kohm 1%",
+      "mpn": "0402WGF1003TCE",
+      "package": "0402",
+      "pins": {
+        "1": "BOOT0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "ST reference normal boot pulldown."
+    },
+    {
+      "ref": "R410",
+      "value": "10kohm 1%",
+      "mpn": "RT0402BRD0710KL",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "NRST"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Additional reset pullup; MCU also permanent internal pullup."
+    },
+    {
+      "ref": "R411",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "package": "0402",
+      "pins": {
+        "1": "SWDIO_MCU",
+        "2": "SWDIO_DBG"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Damping; no backfeed blocking."
+    },
+    {
+      "ref": "R412",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "package": "0402",
+      "pins": {
+        "1": "SWCLK_MCU",
+        "2": "SWCLK_DBG"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Damping; modest initial SWD clock."
+    },
+    {
+      "ref": "R413",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "package": "0402",
+      "pins": {
+        "1": "SWO_MCU",
+        "2": "SWO_DBG"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Optional observation/damping."
+    },
+    {
+      "ref": "R414",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "package": "0402",
+      "pins": {
+        "1": "UART_TX_MCU",
+        "2": "UART_TX_DBG"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "UART source damping."
+    },
+    {
+      "ref": "R415",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "package": "0402",
+      "pins": {
+        "1": "UART_RX_DBG",
+        "2": "UART_RX_MCU"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Input damping; no off-state isolation."
+    },
+    {
+      "ref": "R416",
+      "value": "1Mohm 1%",
+      "mpn": "0402WGF1004TCE",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_SPARE",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Bias spare PA3 for observation. Remove to repurpose."
+    },
+    {
+      "ref": "R417",
+      "value": "0ohm",
+      "mpn": "0402WGF0000TCE",
+      "package": "0402",
+      "pins": {
+        "1": "RF_50OHM",
+        "2": "ANT_T_IN"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Default antenna selection. Never fit withR418."
+    },
+    {
+      "ref": "R418",
+      "value": "0ohm DNP",
+      "mpn": "0402WGF0000TCE",
+      "package": "0402",
+      "pins": {
+        "1": "RF_50OHM",
+        "2": "RF_COAX"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Coax selection. RemoveR417 before fit. Keep stubs minimal."
+    },
+    {
+      "ref": "L401",
+      "value": "2.7nH INITIAL",
+      "mpn": "LQG15HS2N7S02D",
+      "package": "0402",
+      "pins": {
+        "1": "ANT_T_MID",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Johanson antenna tee SHUNT inductor to GND; board-specific matching gate. DNP for bypass; NEVER substitute0ohm in the shunt position."
+    },
+    {
+      "ref": "C423",
+      "value": "1pF C0G +/-0.25pF 50V INITIAL",
+      "mpn": "0402CG1R0C500NT",
+      "package": "0402",
+      "pins": {
+        "1": "ANT_T_IN",
+        "2": "ANT_T_MID"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Antenna tee SERIES input capacitor; root verify RF model. Replace with0ohm for bypass; do not simply DNP or antenna is disconnected."
+    },
+    {
+      "ref": "L402",
+      "value": "3.9nH INITIAL",
+      "mpn": "LQG15HS3N9S02D",
+      "package": "0402",
+      "pins": {
+        "1": "ANT_T_MID",
+        "2": "ANT_FEED"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "populated": null,
+      "notes": "Johanson tee starting value; unvalidated on CuraLink.0ohm bypass possible."
+    },
+    {
+      "ref": "TP401",
+      "value": "ACQ_MARKER",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "ACQ_MARKER"
+      },
+      "pin_names": {
+        "1": "ACQ_MARKER"
+      },
+      "populated": null,
+      "notes": "Frame timing and ADC/RF calibration gap observation."
+    },
+    {
+      "ref": "TP402",
+      "value": "GPIO_TEST",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "GPIO_TEST"
+      },
+      "pin_names": {
+        "1": "GPIO_TEST"
+      },
+      "populated": null,
+      "notes": "Spare PB7 GPIO."
+    },
+    {
+      "ref": "TP403",
+      "value": "ADC_SPARE",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "ADC_SPARE"
+      },
+      "pin_names": {
+        "1": "ADC_SPARE"
+      },
+      "populated": null,
+      "notes": "9th externalADC PA3; not normal scan."
+    },
+    {
+      "ref": "TP404",
+      "value": "AVDD_3V0",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "AVDD_3V0"
+      },
+      "pin_names": {
+        "1": "AVDD_3V0"
+      },
+      "populated": null,
+      "notes": "Analog rail/noise."
+    },
+    {
+      "ref": "TP405",
+      "value": "DVDD_3V0",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "DVDD_3V0"
+      },
+      "pin_names": {
+        "1": "DVDD_3V0"
+      },
+      "populated": null,
+      "notes": "MCU rail."
+    },
+    {
+      "ref": "TP406",
+      "value": "GND",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "GND"
+      },
+      "pin_names": {
+        "1": "GND"
+      },
+      "populated": null,
+      "notes": "Scope ground."
+    },
+    {
+      "ref": "TP407",
+      "value": "NRST",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "NRST"
+      },
+      "pin_names": {
+        "1": "NRST"
+      },
+      "populated": null,
+      "notes": "Reset observation."
+    },
+    {
+      "ref": "TP408",
+      "value": "VCAP_OUT",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "VCAP_OUT"
+      },
+      "pin_names": {
+        "1": "VCAP_OUT"
+      },
+      "populated": null,
+      "notes": "Core output; no load."
+    },
+    {
+      "ref": "TP409",
+      "value": "VDDHPA_OUT",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "VDDHPA_OUT"
+      },
+      "pin_names": {
+        "1": "VDDHPA_OUT"
+      },
+      "populated": null,
+      "notes": "PA output; no load."
+    },
+    {
+      "ref": "TP410",
+      "value": "ADC_IN_1",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_1"
+      },
+      "pin_names": {
+        "1": "ADC_IN_1"
+      },
+      "populated": null,
+      "notes": "Low-C probe only; extra capacitance affects settling."
+    },
+    {
+      "ref": "TP411",
+      "value": "ADC_IN_2",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_2"
+      },
+      "pin_names": {
+        "1": "ADC_IN_2"
+      },
+      "populated": null,
+      "notes": "Low-C probe only; extra capacitance affects settling."
+    },
+    {
+      "ref": "TP412",
+      "value": "ADC_IN_3",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_3"
+      },
+      "pin_names": {
+        "1": "ADC_IN_3"
+      },
+      "populated": null,
+      "notes": "Low-C probe only; extra capacitance affects settling."
+    },
+    {
+      "ref": "TP413",
+      "value": "ADC_IN_4",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_4"
+      },
+      "pin_names": {
+        "1": "ADC_IN_4"
+      },
+      "populated": null,
+      "notes": "Low-C probe only; extra capacitance affects settling."
+    },
+    {
+      "ref": "TP414",
+      "value": "ADC_IN_5",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_5"
+      },
+      "pin_names": {
+        "1": "ADC_IN_5"
+      },
+      "populated": null,
+      "notes": "Low-C probe only; extra capacitance affects settling."
+    },
+    {
+      "ref": "TP415",
+      "value": "ADC_IN_6",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_6"
+      },
+      "pin_names": {
+        "1": "ADC_IN_6"
+      },
+      "populated": null,
+      "notes": "Low-C probe only; extra capacitance affects settling."
+    },
+    {
+      "ref": "TP416",
+      "value": "ADC_IN_7",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_7"
+      },
+      "pin_names": {
+        "1": "ADC_IN_7"
+      },
+      "populated": null,
+      "notes": "Low-C probe only; extra capacitance affects settling."
+    },
+    {
+      "ref": "TP417",
+      "value": "ADC_IN_8",
+      "mpn": "PCB copper",
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_8"
+      },
+      "pin_names": {
+        "1": "ADC_IN_8"
+      },
+      "populated": null,
+      "notes": "Low-C probe only; extra capacitance affects settling."
+    },
+    {
+      "ref": "J301",
+      "value": "18P FFC 0.5mm",
+      "mpn": "FPC 0.5-18P HYH2.0",
+      "package": "FFC 18P 0.5mm double-sided contacts right-angle",
+      "pins": {
+        "1": "FFC_CH1",
+        "2": "GND",
+        "3": "FFC_CH2",
+        "4": "GND",
+        "5": "FFC_CH3",
+        "6": "GND",
+        "7": "FFC_CH4",
+        "8": "GND",
+        "9": "FFC_CH5",
+        "10": "GND",
+        "11": "FFC_CH6",
+        "12": "GND",
+        "13": "FFC_CH7",
+        "14": "GND",
+        "15": "FFC_CH8",
+        "16": "GND",
+        "17": "FFC_REF",
+        "18": "GND",
+        "MP1": "GND",
+        "MP2": "GND"
+      },
+      "pin_names": null,
+      "populated": true,
+      "notes": "Same pin map on stimulus fixture. 50mm cable candidate C6936300. Confirm pin1 continuity and mounting-anchor pad numbering from vendor drawing; no electrode bias-drive conductor. Cable and board parasitics are part of input-loading budget."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+; Top Design: "MyLibrary_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Mutual:Mutual1  K=0.0662 M=60 nH Inductor1="L1" Inductor2="L2" 
+C:C5  Vin 0 C=438 pF tune{ 0 pF to 1000 pF by 43.800000000000004 pF } 
+"DIODEM1":DIODE1  0 VoutMatched Mode=1 Noise=yes 
+"DIODEM1":DIODE2  VoutMatched DCout Mode=1 Noise=yes 
+C:C6  VoutMatched IMPin C=1.05 nF 
+"DIODEM1":DIODE3  0 IMPin Mode=1 Noise=yes 
+"DIODEM1":DIODE4  IMPin DCout Mode=1 Noise=yes 
+
+Pin_dBm=10
+model DIODEM1 Diode Is=74 nA Rs=5ohm N=1.07 Tt=3 ps Cjo=138.5 fF Vj=0.224 V M=0.138 Fc=0.5 Bv=4.2 V Ibv=100 uA AllowScaling=0 Xti=1.5 
+HB:HB1 MaxOrder=4 Freq[1]=13.56 MHz Order[1]=7 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB1_Output" 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=13.56 MHz Order[1]=7 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+L:L1  VinMatched 0 L=2.49 uH R=1.8 Noise=yes  
+L:L2  IMPin Vout L=0.33 uH R=0.399 Noise=yes  
+C:C2  DCout 0 C=1000 nF tune{ 5 nF to 1000 nF by 1 nF } 
+C:C1  Vout VoutMatched C=673.3 pF 
+
+PWR=DCout
+Port:PORT1  Vin 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(Pin_dBm), 0) Freq[1]=13.56 MHz    Noise=yes Pac=polar(dbmtow(0),0) 
+C:C3  Vin VinMatched C=61.3 pF tune{ 30.65 pF to 91.94999999999999 pF by 6.13 pF } 
+R:R1  N__1 0 R=1 MOhm Noise=yes 
+Short:I_Probe1  DCout N__1 Mode=0 SaveCurrent=yes 

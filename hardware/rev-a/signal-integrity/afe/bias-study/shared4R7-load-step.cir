@@ -1,0 +1,23 @@
+* CuraLink study-only VMID comparison; ideal supply, nominal TI family models
+.include models/tlv9002-namespaced.lib
+.include models/tlv9052-namespaced.lib
+.options numdgt=7 plotwinsize=0
+.temp 27
+.include shared4R7-load.lib
+VDD AVDD_3V0 0 DC 3
+VCOMMON COMMON_SRC 0 DC 0 AC 0
+VCH1 SRC_CH1 COMMON_SRC DC 0 AC 0
+VCH2 SRC_CH2 COMMON_SRC DC 0 AC 0
+VCH3 SRC_CH3 COMMON_SRC DC 0 AC 0
+VCH4 SRC_CH4 COMMON_SRC DC 0 AC 0
+VCH5 SRC_CH5 COMMON_SRC DC 0 AC 0
+VCH6 SRC_CH6 COMMON_SRC DC 0 AC 0
+VCH7 SRC_CH7 COMMON_SRC DC 0 AC 0
+VCH8 SRC_CH8 COMMON_SRC DC 0 AC 0
+VREF SRC_REF COMMON_SRC DC 0 AC 0
+V_BIAS_COMMAND VMID_COMMAND VMID_RAW PULSE(0 5m 5u 20n 20n 50u 500u)
+I_LOAD_0 VMID_BUF 0 PULSE(0 500u 1m 20n 20n 25u 10m)
+.save V(VMID_COMMAND) V(VMID_RAW) V(VMID_BUF) V(VMID) V(AFE_OUT_1) V(AFE_OUT_2) I(VDD)
+.step param Cscale list 0.8 1.2
+.tran 0 1.5m 0 100n
+.end

@@ -1,0 +1,877 @@
+{
+  "status": "Engineering placement candidate, not fabrication release",
+  "checked_date": "2026-10-02",
+  "timezone": "America/New_York",
+  "source_snapshot_sha256": "b4783fd7902b334be20473bb06bde6dd24a31ccd87740e554982dca04ae29bae",
+  "moved_reference_count": 61,
+  "authorized_region_mm": [
+    60,
+    20,
+    79,
+    49
+  ],
+  "courtyard_separation_margin_mm": 0.075,
+  "overrides": {
+    "U401": {
+      "x_mm": 69,
+      "y_mm": 29,
+      "rotation_deg": 0,
+      "reason": "MCU center moved to provide local bypass/filter space on every side",
+      "courtyard_bounds_mm": [
+        65.055,
+        25.055,
+        72.945,
+        32.945
+      ]
+    },
+    "C410": {
+      "x_mm": 71,
+      "y_mm": 24,
+      "rotation_deg": 90,
+      "reason": "Local top-edge bypass/output capacitor at U401 physical pin 39",
+      "courtyard_bounds_mm": [
+        70.495,
+        23.045,
+        71.505,
+        24.955
+      ]
+    },
+    "C411": {
+      "x_mm": 69.5,
+      "y_mm": 24,
+      "rotation_deg": 90,
+      "reason": "Local top-edge bypass/output capacitor at U401 physical pin 42",
+      "courtyard_bounds_mm": [
+        68.995,
+        23.045,
+        70.005,
+        24.955
+      ]
+    },
+    "C404": {
+      "x_mm": 68.25,
+      "y_mm": 24,
+      "rotation_deg": 90,
+      "reason": "Local top-edge bypass/output capacitor at U401 physical pin 43",
+      "courtyard_bounds_mm": [
+        67.745,
+        23.045,
+        68.755,
+        24.955
+      ]
+    },
+    "C408": {
+      "x_mm": 66.75,
+      "y_mm": 23.25,
+      "rotation_deg": 90,
+      "reason": "Local top-edge bypass/output capacitor at U401 physical pin 44",
+      "courtyard_bounds_mm": [
+        65.975,
+        21.725,
+        67.525,
+        24.775
+      ]
+    },
+    "C409": {
+      "x_mm": 72.5,
+      "y_mm": 23.25,
+      "rotation_deg": 90,
+      "reason": "Local bypass/output capacitor at U401 physical pin 38",
+      "courtyard_bounds_mm": [
+        71.725,
+        21.725,
+        73.275,
+        24.775
+      ]
+    },
+    "C406": {
+      "x_mm": 64.0,
+      "y_mm": 28.75,
+      "rotation_deg": 180,
+      "reason": "Local bypass/output capacitor at U401 physical pin 6",
+      "courtyard_bounds_mm": [
+        63.045,
+        28.245,
+        64.955,
+        29.255
+      ]
+    },
+    "C401": {
+      "x_mm": 64.0,
+      "y_mm": 31.25,
+      "rotation_deg": 180,
+      "reason": "Local bypass/output capacitor at U401 physical pin 11",
+      "courtyard_bounds_mm": [
+        63.045,
+        30.745,
+        64.955,
+        31.755
+      ]
+    },
+    "C402": {
+      "x_mm": 70.75,
+      "y_mm": 34.0,
+      "rotation_deg": 270,
+      "reason": "Local bypass/output capacitor at U401 physical pin 22",
+      "courtyard_bounds_mm": [
+        70.245,
+        33.045,
+        71.255,
+        34.955
+      ]
+    },
+    "C403": {
+      "x_mm": 74.0,
+      "y_mm": 26.75,
+      "rotation_deg": 0,
+      "reason": "Local bypass/output capacitor at U401 physical pin 35",
+      "courtyard_bounds_mm": [
+        73.045,
+        26.245,
+        74.955,
+        27.255
+      ]
+    },
+    "C407": {
+      "x_mm": 63.25,
+      "y_mm": 27.25,
+      "rotation_deg": 180,
+      "reason": "VDDA bulk capacitance after local100nF bypass",
+      "courtyard_bounds_mm": [
+        61.725,
+        26.475,
+        64.775,
+        28.025
+      ]
+    },
+    "C413": {
+      "x_mm": 64.0,
+      "y_mm": 25.75,
+      "rotation_deg": 180,
+      "reason": "ADC1 shunt capacitor localized to physical pin 3",
+      "courtyard_bounds_mm": [
+        63.045,
+        25.245,
+        64.955,
+        26.255
+      ]
+    },
+    "C414": {
+      "x_mm": 64.0,
+      "y_mm": 30.0,
+      "rotation_deg": 180,
+      "reason": "ADC2 shunt capacitor localized to physical pin 4",
+      "courtyard_bounds_mm": [
+        63.045,
+        29.495,
+        64.955,
+        30.505
+      ]
+    },
+    "C415": {
+      "x_mm": 62.0,
+      "y_mm": 28.75,
+      "rotation_deg": 180,
+      "reason": "ADC3 shunt capacitor localized to physical pin 5",
+      "courtyard_bounds_mm": [
+        61.045,
+        28.245,
+        62.955,
+        29.255
+      ]
+    },
+    "C416": {
+      "x_mm": 62.0,
+      "y_mm": 30.0,
+      "rotation_deg": 180,
+      "reason": "ADC4 shunt capacitor localized to physical pin 7",
+      "courtyard_bounds_mm": [
+        61.045,
+        29.495,
+        62.955,
+        30.505
+      ]
+    },
+    "C417": {
+      "x_mm": 64.0,
+      "y_mm": 32.5,
+      "rotation_deg": 180,
+      "reason": "ADC5 shunt capacitor localized to physical pin 10",
+      "courtyard_bounds_mm": [
+        63.045,
+        31.995,
+        64.955,
+        33.005
+      ]
+    },
+    "C418": {
+      "x_mm": 64.0,
+      "y_mm": 33.75,
+      "rotation_deg": 180,
+      "reason": "ADC6 shunt capacitor localized to physical pin 12",
+      "courtyard_bounds_mm": [
+        63.045,
+        33.245,
+        64.955,
+        34.255
+      ]
+    },
+    "C419": {
+      "x_mm": 66.25,
+      "y_mm": 34.0,
+      "rotation_deg": 270,
+      "reason": "ADC7 shunt capacitor localized to physical pin 13",
+      "courtyard_bounds_mm": [
+        65.745,
+        33.045,
+        66.755,
+        34.955
+      ]
+    },
+    "C420": {
+      "x_mm": 66.75,
+      "y_mm": 36.0,
+      "rotation_deg": 270,
+      "reason": "ADC8 shunt capacitor localized to physical pin 14",
+      "courtyard_bounds_mm": [
+        66.245,
+        35.045,
+        67.255,
+        36.955
+      ]
+    },
+    "TP410": {
+      "x_mm": 64.25,
+      "y_mm": 24.5,
+      "rotation_deg": 0,
+      "reason": "Local ADC1 test land; keep branch at capacitor node",
+      "courtyard_bounds_mm": [
+        63.652461,
+        23.903737,
+        64.844997,
+        25.096262
+      ]
+    },
+    "TP411": {
+      "x_mm": 62.25,
+      "y_mm": 31.25,
+      "rotation_deg": 0,
+      "reason": "Local ADC2 test land; keep branch at capacitor node",
+      "courtyard_bounds_mm": [
+        61.652461,
+        30.653737,
+        62.844997,
+        31.846262
+      ]
+    },
+    "TP412": {
+      "x_mm": 61.0,
+      "y_mm": 27.5,
+      "rotation_deg": 0,
+      "reason": "Local ADC3 test land; keep branch at capacitor node",
+      "courtyard_bounds_mm": [
+        60.402461,
+        26.903737,
+        61.594997,
+        28.096262
+      ]
+    },
+    "TP413": {
+      "x_mm": 60.75,
+      "y_mm": 31.25,
+      "rotation_deg": 0,
+      "reason": "Local ADC4 test land; keep branch at capacitor node",
+      "courtyard_bounds_mm": [
+        60.152461,
+        30.653737,
+        61.344997,
+        31.846262
+      ]
+    },
+    "TP414": {
+      "x_mm": 62.25,
+      "y_mm": 32.75,
+      "rotation_deg": 0,
+      "reason": "Local ADC5 test land; keep branch at capacitor node",
+      "courtyard_bounds_mm": [
+        61.652461,
+        32.153737,
+        62.844997,
+        33.346262
+      ]
+    },
+    "TP415": {
+      "x_mm": 64.5,
+      "y_mm": 35.0,
+      "rotation_deg": 0,
+      "reason": "Local ADC6 test land; keep branch at capacitor node",
+      "courtyard_bounds_mm": [
+        63.902461,
+        34.403737,
+        65.094997,
+        35.596262
+      ]
+    },
+    "TP416": {
+      "x_mm": 67.5,
+      "y_mm": 33.75,
+      "rotation_deg": 0,
+      "reason": "Local ADC7 test land; keep branch at capacitor node",
+      "courtyard_bounds_mm": [
+        66.902461,
+        33.153737,
+        68.094997,
+        34.346262
+      ]
+    },
+    "TP417": {
+      "x_mm": 68.0,
+      "y_mm": 35.5,
+      "rotation_deg": 0,
+      "reason": "Local ADC8 test land; keep branch at capacitor node",
+      "courtyard_bounds_mm": [
+        67.402461,
+        34.903737,
+        68.594997,
+        36.096262
+      ]
+    },
+    "R401": {
+      "x_mm": 62.5,
+      "y_mm": 24.5,
+      "rotation_deg": 0,
+      "reason": "ADC1 series resistor beside its shunt capacitor",
+      "courtyard_bounds_mm": [
+        61.525,
+        23.985,
+        63.475,
+        25.015
+      ]
+    },
+    "R402": {
+      "x_mm": 61.0,
+      "y_mm": 33.0,
+      "rotation_deg": 90,
+      "reason": "ADC2 series resistor beside its shunt capacitor",
+      "courtyard_bounds_mm": [
+        60.485,
+        32.025,
+        61.515,
+        33.975
+      ]
+    },
+    "R403": {
+      "x_mm": 61.75,
+      "y_mm": 25.75,
+      "rotation_deg": 0,
+      "reason": "ADC3 series resistor beside its shunt capacitor",
+      "courtyard_bounds_mm": [
+        60.775,
+        25.235,
+        62.725,
+        26.265
+      ]
+    },
+    "R404": {
+      "x_mm": 62.25,
+      "y_mm": 34.5,
+      "rotation_deg": 90,
+      "reason": "ADC4 series resistor beside its shunt capacitor",
+      "courtyard_bounds_mm": [
+        61.735,
+        33.525,
+        62.765,
+        35.475
+      ]
+    },
+    "R405": {
+      "x_mm": 64.0,
+      "y_mm": 36.25,
+      "rotation_deg": 0,
+      "reason": "ADC5 series resistor beside its shunt capacitor",
+      "courtyard_bounds_mm": [
+        63.025,
+        35.735,
+        64.975,
+        36.765
+      ]
+    },
+    "R406": {
+      "x_mm": 62.25,
+      "y_mm": 36.75,
+      "rotation_deg": 90,
+      "reason": "ADC6 series resistor beside its shunt capacitor",
+      "courtyard_bounds_mm": [
+        61.735,
+        35.775,
+        62.765,
+        37.725
+      ]
+    },
+    "R407": {
+      "x_mm": 65.0,
+      "y_mm": 37.5,
+      "rotation_deg": 0,
+      "reason": "ADC7 series resistor beside its shunt capacitor",
+      "courtyard_bounds_mm": [
+        64.025,
+        36.985,
+        65.975,
+        38.015
+      ]
+    },
+    "R408": {
+      "x_mm": 66.75,
+      "y_mm": 38.25,
+      "rotation_deg": 90,
+      "reason": "ADC8 series resistor beside its shunt capacitor",
+      "courtyard_bounds_mm": [
+        66.235,
+        37.275,
+        67.265,
+        39.225
+      ]
+    },
+    "Y401": {
+      "x_mm": 70.0,
+      "y_mm": 21.75,
+      "rotation_deg": 0,
+      "reason": "HSE crystal loop close to top-edge oscillator pins",
+      "courtyard_bounds_mm": [
+        68.655,
+        20.555,
+        71.345,
+        22.945
+      ]
+    },
+    "Y402": {
+      "x_mm": 70.75,
+      "y_mm": 36.25,
+      "rotation_deg": 0,
+      "reason": "LSE crystal below bottom-edge oscillator pins",
+      "courtyard_bounds_mm": [
+        68.705,
+        35.055,
+        72.795,
+        37.445
+      ]
+    },
+    "C421": {
+      "x_mm": 73.5,
+      "y_mm": 35.75,
+      "rotation_deg": 90,
+      "reason": "LSE input load capacitor at crystal terminal1",
+      "courtyard_bounds_mm": [
+        72.995,
+        34.795,
+        74.005,
+        36.705
+      ]
+    },
+    "C422": {
+      "x_mm": 68.0,
+      "y_mm": 37.25,
+      "rotation_deg": 270,
+      "reason": "LSE output load capacitor at crystal terminal2",
+      "courtyard_bounds_mm": [
+        67.495,
+        36.295,
+        68.505,
+        38.205
+      ]
+    },
+    "C405": {
+      "x_mm": 75.75,
+      "y_mm": 34.0,
+      "rotation_deg": 0,
+      "reason": "MCU supply bulk capacitor",
+      "courtyard_bounds_mm": [
+        74.225,
+        33.225,
+        77.275,
+        34.775
+      ]
+    },
+    "C412": {
+      "x_mm": 70.5,
+      "y_mm": 44.0,
+      "rotation_deg": 180,
+      "reason": "Debug supply local capacitor",
+      "courtyard_bounds_mm": [
+        69.545,
+        43.495,
+        71.455,
+        44.505
+      ]
+    },
+    "J402": {
+      "x_mm": 70,
+      "y_mm": 42,
+      "rotation_deg": 0,
+      "reason": "Bench debug pogo/wire pad access",
+      "courtyard_bounds_mm": [
+        66.255,
+        41.255,
+        73.745,
+        42.745
+      ]
+    },
+    "J401": {
+      "x_mm": 73.25,
+      "y_mm": 45.5,
+      "rotation_deg": 0,
+      "reason": "Bench debug pogo/wire pad access",
+      "courtyard_bounds_mm": [
+        67.505,
+        44.755,
+        78.995,
+        46.245
+      ]
+    },
+    "J403": {
+      "x_mm": 71.0,
+      "y_mm": 47.25,
+      "rotation_deg": 0,
+      "reason": "Bench debug pogo/wire pad access",
+      "courtyard_bounds_mm": [
+        69.255,
+        46.505,
+        72.745,
+        47.995
+      ]
+    },
+    "R409": {
+      "x_mm": 73.5,
+      "y_mm": 44.0,
+      "rotation_deg": 180,
+      "reason": "Debug/control passive; outside oscillator and ADC local loops",
+      "courtyard_bounds_mm": [
+        72.525,
+        43.485,
+        74.475,
+        44.515
+      ]
+    },
+    "R410": {
+      "x_mm": 68.0,
+      "y_mm": 47.0,
+      "rotation_deg": 180,
+      "reason": "Debug/control passive; outside oscillator and ADC local loops",
+      "courtyard_bounds_mm": [
+        67.025,
+        46.485,
+        68.975,
+        47.515
+      ]
+    },
+    "R411": {
+      "x_mm": 67.5,
+      "y_mm": 48.25,
+      "rotation_deg": 180,
+      "reason": "Debug/control passive; outside oscillator and ADC local loops",
+      "courtyard_bounds_mm": [
+        66.525,
+        47.735,
+        68.475,
+        48.765
+      ]
+    },
+    "R412": {
+      "x_mm": 74.0,
+      "y_mm": 47.5,
+      "rotation_deg": 270,
+      "reason": "Debug/control passive; outside oscillator and ADC local loops",
+      "courtyard_bounds_mm": [
+        73.485,
+        46.525,
+        74.515,
+        48.475
+      ]
+    },
+    "R413": {
+      "x_mm": 64.5,
+      "y_mm": 46.0,
+      "rotation_deg": 180,
+      "reason": "Debug/control passive; outside oscillator and ADC local loops",
+      "courtyard_bounds_mm": [
+        63.525,
+        45.485,
+        65.475,
+        46.515
+      ]
+    },
+    "R414": {
+      "x_mm": 75.75,
+      "y_mm": 48.0,
+      "rotation_deg": 0,
+      "reason": "Debug/control passive; outside oscillator and ADC local loops",
+      "courtyard_bounds_mm": [
+        74.775,
+        47.485,
+        76.725,
+        48.515
+      ]
+    },
+    "R415": {
+      "x_mm": 77.5,
+      "y_mm": 47.5,
+      "rotation_deg": 270,
+      "reason": "Debug/control passive; outside oscillator and ADC local loops",
+      "courtyard_bounds_mm": [
+        76.985,
+        46.525,
+        78.015,
+        48.475
+      ]
+    },
+    "R416": {
+      "x_mm": 62.5,
+      "y_mm": 42.0,
+      "rotation_deg": 180,
+      "reason": "Debug/control passive; outside oscillator and ADC local loops",
+      "courtyard_bounds_mm": [
+        61.525,
+        41.485,
+        63.475,
+        42.515
+      ]
+    },
+    "TP401": {
+      "x_mm": 74.75,
+      "y_mm": 41.5,
+      "rotation_deg": 0,
+      "reason": "Debug/control test access",
+      "courtyard_bounds_mm": [
+        74.052457,
+        40.803734,
+        75.444997,
+        42.196265
+      ]
+    },
+    "TP402": {
+      "x_mm": 65.0,
+      "y_mm": 44.5,
+      "rotation_deg": 0,
+      "reason": "Debug/control test access",
+      "courtyard_bounds_mm": [
+        64.302457,
+        43.803734,
+        65.694997,
+        45.196265
+      ]
+    },
+    "TP403": {
+      "x_mm": 75.25,
+      "y_mm": 43.75,
+      "rotation_deg": 0,
+      "reason": "Debug/control test access",
+      "courtyard_bounds_mm": [
+        74.552457,
+        43.053734,
+        75.944997,
+        44.446265
+      ]
+    },
+    "TP404": {
+      "x_mm": 66.25,
+      "y_mm": 46.75,
+      "rotation_deg": 0,
+      "reason": "Debug/control test access",
+      "courtyard_bounds_mm": [
+        65.552457,
+        46.053734,
+        66.944997,
+        47.446265
+      ]
+    },
+    "TP405": {
+      "x_mm": 68.75,
+      "y_mm": 43.75,
+      "rotation_deg": 0,
+      "reason": "Debug/control test access",
+      "courtyard_bounds_mm": [
+        68.052457,
+        43.053734,
+        69.444997,
+        44.446265
+      ]
+    },
+    "TP406": {
+      "x_mm": 65.75,
+      "y_mm": 48.25,
+      "rotation_deg": 0,
+      "reason": "Debug/control test access",
+      "courtyard_bounds_mm": [
+        65.052457,
+        47.553734,
+        66.444997,
+        48.946265
+      ]
+    },
+    "TP407": {
+      "x_mm": 76.75,
+      "y_mm": 43.75,
+      "rotation_deg": 0,
+      "reason": "Debug/control test access",
+      "courtyard_bounds_mm": [
+        76.052457,
+        43.053734,
+        77.444997,
+        44.446265
+      ]
+    },
+    "TP408": {
+      "x_mm": 76.25,
+      "y_mm": 41.5,
+      "rotation_deg": 0,
+      "reason": "Debug/control test access",
+      "courtyard_bounds_mm": [
+        75.552457,
+        40.803734,
+        76.944997,
+        42.196265
+      ]
+    },
+    "TP409": {
+      "x_mm": 63.5,
+      "y_mm": 43.5,
+      "rotation_deg": 0,
+      "reason": "Debug/control test access",
+      "courtyard_bounds_mm": [
+        62.802457,
+        42.803734,
+        64.194997,
+        44.196265
+      ]
+    }
+  },
+  "bypass_measurements": {
+    "C410": {
+      "U401_pin": 39,
+      "signal_pad_to_pin_mm": 1.172
+    },
+    "C411": {
+      "U401_pin": 42,
+      "signal_pad_to_pin_mm": 1.172
+    },
+    "C408": {
+      "U401_pin": 44,
+      "signal_pad_to_pin_mm": 2.1932
+    },
+    "C409": {
+      "U401_pin": 38,
+      "signal_pad_to_pin_mm": 2.0304
+    },
+    "C406": {
+      "U401_pin": 6,
+      "signal_pad_to_pin_mm": 1.145
+    },
+    "C407": {
+      "U401_pin": 6,
+      "signal_pad_to_pin_mm": 2.1932
+    },
+    "C401": {
+      "U401_pin": 11,
+      "signal_pad_to_pin_mm": 1.145
+    },
+    "C402": {
+      "U401_pin": 22,
+      "signal_pad_to_pin_mm": 1.145
+    },
+    "C403": {
+      "U401_pin": 35,
+      "signal_pad_to_pin_mm": 1.145
+    },
+    "C404": {
+      "U401_pin": 43,
+      "signal_pad_to_pin_mm": 1.2494
+    }
+  },
+  "adc_measurements": [
+    {
+      "channel": 1,
+      "mcu_pin": 3,
+      "capacitor": "C413",
+      "resistor": "R401",
+      "testpoint": "TP410",
+      "capacitor_signal_pad_to_adc_pin_mm": 1.8871,
+      "resistor_output_pad_to_cap_signal_pad_mm": 1.9296,
+      "testpoint_pad_to_cap_signal_pad_mm": 1.271
+    },
+    {
+      "channel": 2,
+      "mcu_pin": 4,
+      "capacitor": "C414",
+      "resistor": "R402",
+      "testpoint": "TP411",
+      "capacitor_signal_pad_to_adc_pin_mm": 2.5246,
+      "resistor_output_pad_to_cap_signal_pad_mm": 4.2791,
+      "testpoint_pad_to_cap_signal_pad_mm": 2.5564
+    },
+    {
+      "channel": 3,
+      "mcu_pin": 5,
+      "capacitor": "C415",
+      "resistor": "R403",
+      "testpoint": "TP412",
+      "capacitor_signal_pad_to_adc_pin_mm": 3.1845,
+      "resistor_output_pad_to_cap_signal_pad_mm": 3.0081,
+      "testpoint_pad_to_cap_signal_pad_mm": 1.9372
+    },
+    {
+      "channel": 4,
+      "mcu_pin": 7,
+      "capacitor": "C416",
+      "resistor": "R404",
+      "testpoint": "TP413",
+      "capacitor_signal_pad_to_adc_pin_mm": 3.2332,
+      "resistor_output_pad_to_cap_signal_pad_mm": 3.9966,
+      "testpoint_pad_to_cap_signal_pad_mm": 2.1343
+    },
+    {
+      "channel": 5,
+      "mcu_pin": 10,
+      "capacitor": "C417",
+      "resistor": "R405",
+      "testpoint": "TP414",
+      "capacitor_signal_pad_to_adc_pin_mm": 2.0913,
+      "resistor_output_pad_to_cap_signal_pad_mm": 3.7501,
+      "testpoint_pad_to_cap_signal_pad_mm": 2.244
+    },
+    {
+      "channel": 6,
+      "mcu_pin": 12,
+      "capacitor": "C418",
+      "resistor": "R406",
+      "testpoint": "TP415",
+      "capacitor_signal_pad_to_adc_pin_mm": 2.3046,
+      "resistor_output_pad_to_cap_signal_pad_mm": 3.3426,
+      "testpoint_pad_to_cap_signal_pad_mm": 1.2502
+    },
+    {
+      "channel": 7,
+      "mcu_pin": 13,
+      "capacitor": "C419",
+      "resistor": "R407",
+      "testpoint": "TP416",
+      "capacitor_signal_pad_to_adc_pin_mm": 1.145,
+      "resistor_output_pad_to_cap_signal_pad_mm": 4.0482,
+      "testpoint_pad_to_cap_signal_pad_mm": 1.271
+    },
+    {
+      "channel": 8,
+      "mcu_pin": 14,
+      "capacitor": "C420",
+      "resistor": "R408",
+      "testpoint": "TP417",
+      "capacitor_signal_pad_to_adc_pin_mm": 3.145,
+      "resistor_output_pad_to_cap_signal_pad_mm": 2.22,
+      "testpoint_pad_to_cap_signal_pad_mm": 1.2502
+    }
+  ],
+  "limits": [
+    "These are pad-center Euclidean distances, not routed lengths or measured electrical performance.",
+    "Copper/clearance/mask/oscillator RF rules require native DRC and manual routing review.",
+    "The original board and canonical circuit remain untouched."
+  ]
+}

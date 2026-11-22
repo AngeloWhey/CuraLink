@@ -1,0 +1,103 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 17:01:13 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\bat54-joint-search-best_P26dBm_R470ohm_H7"
+      Process ID: 8676
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+HB HB1[1] <receiver.ckt>
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 360.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	260.377 kA  	100.0             
+1.0 	3.33861 kA  	100.0	912.182 V    
+        Samanskii-Newton iteration failed
+1.1*	3.33861 kA  	100.0	6.31012 V    
+2.0*	1.32899 kA  	100.0	5.78364 V    
+3.0 	572.046 A   	100.0	670.24 V     
+        Samanskii-Newton iteration failed
+3.1*	572.046 A   	100.0	5.50542 V    
+4.0*	329.335 A   	100.0	2.32003 V    
+5.0 	188.122 A   	100.0	3.31497 V    
+5.1 	71.6965 A   	100.0	1.23437 V    
+5.2 	3.85493 A   	100.0	53.6852 mV   
+5.3 	3.37176 A   	100.0	49.3795 mV   
+5.4*	3.05373 A   	100.0	5.19909 V    
+6.0 	1.97356 A   	100.0	216.022 mV   
+6.1 	1.84588 A   	100.0	232.008 mV   
+6.2 	1.74973 A   	100.0	230.091 mV   
+6.3 	1.66745 A   	100.0	223.271 mV   
+6.4*	1.59434 A   	100.0	5.76273 V    
+7.0 	907.581 mA  	100.0	1.58243 V    
+7.1 	691.072 mA  	100.0	803.98 mV    
+7.2 	631.902 mA  	100.0	345.827 mV   
+7.3 	591.629 mA  	100.0	187.98 mV    
+7.4 	558.894 mA  	100.0	118.467 mV   
+7.5 	530.832 mA  	100.0	81.7801 mV   
+7.6 	505.992 mA  	100.0	59.0759 mV   
+7.7*	483.572 mA  	100.0	2.20052 V    
+8.0 	166.477 mA  	100.0	32.3804 mV   
+8.1 	83.613 mA   	100.0	50.5687 mV   
+8.2 	46.6732 mA  	100.0	8.92813 mV   
+8.3 	27.2257 mA  	100.0	13.6234 mV   
+8.4 	16.3498 mA  	100.0	5.02069 mV   
+8.5 	10.1896 mA  	100.0	4.50965 mV   
+8.6 	6.28776 mA  	100.0	2.30579 mV   
+8.7 	4.03423 mA  	100.0	1.68191 mV   
+8.8 	2.53217 mA  	100.0	986.833 uV   
+8.9 	1.63437 mA  	100.0	664.488 uV   
+8.10 	1.03953 mA  	100.0	411.843 uV   
+8.11 	668.285 uA  	100.0	269.03 uV    
+8.12 	427.254 uA  	100.0	170.317 uV   
+8.13*	274.269 uA  	100.0	305.84 uV    
+9.0 	115.741 nA  	100.0	127.04 nV    
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+DIODE4.a                5.923e-04       >       3.791e-06
+DIODE2.a                5.923e-04       >       3.791e-06
+DIODE3.a                4.991e-04       >       1.022e-06
+DIODE1.a                4.991e-04       >       1.022e-06
+IMPin                   2.179e-04       >       3.813e-06
+
+o Number of waveforms violating the HB truncation error check:
+        6 out of 7 waveforms.
+o Estimated max HB truncation error: 5.923e-04 @ waveform DIODE4.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 3.791e-06 for this waveform.
+o A time-domain plot of the DCout waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     1.77 seconds.
+    Simulation stopwatch time =     0.30 seconds.
+    Total stopwatch time      =     1.67 seconds.
+
+    Memory used:  108 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

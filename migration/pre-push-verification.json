@@ -1,0 +1,19 @@
+{
+  "recorded_local_date": "2026-11-22",
+  "timezone": "America/New_York",
+  "scope": "File packaging and index checks only; no electrical simulation or fabrication qualification",
+  "checks": {
+    "required_files_present": true,
+    "mainboard_schematic_files": 17,
+    "local_footprint_files": 30,
+    "imported_artifacts_hash_verified": 20,
+    "unavailable_historical_temp_screenshots": 14,
+    "native_ads_oa_hash_verified": 5,
+    "indexed_files": 2696,
+    "ordinary_git_blobs_above_100MiB": [],
+    "largest_ordinary_git_blob_bytes": 11945343,
+    "excluded_tool_runtimes_absent_from_index": true,
+    "tracked_old_github_context_files_preserved": 6,
+    "staged_native_cad_bytes_match_working_sources": 54
+  }
+}

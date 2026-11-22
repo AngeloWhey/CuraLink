@@ -1,0 +1,107 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 16:59:10 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\bat54_joint_search_0025"
+      Process ID: 7412
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+HB HB1[1] <receiver.ckt>
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 360.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	156.802 kA  	100.0             
+1.0 	2.78131 kA  	100.0	807.037 V    
+        Samanskii-Newton iteration failed
+1.1*	2.78131 kA  	100.0	7.59674 V    
+2.0*	1.09227 kA  	100.0	3.44977 V    
+3.0 	522.34 A    	100.0	261.164 mV   
+3.1 	420.218 A   	100.0	418.206 mV   
+3.2*	370.397 A   	100.0	2.76866 V    
+4.0 	204.365 A   	100.0	1.32455 V    
+4.1 	174.004 A   	100.0	560.613 mV   
+4.2 	145.201 A   	100.0	709.748 mV   
+4.3 	116.205 A   	100.0	782.27 mV    
+4.4 	86.4739 A   	100.0	666.145 mV   
+4.5 	54.8116 A   	100.0	457.842 mV   
+4.6 	20.6014 A   	100.0	192.925 mV   
+4.7 	11.3605 A   	100.0	100.275 mV   
+4.8 	8.28374 A   	100.0	63.2434 mV   
+4.9 	6.62609 A   	100.0	42.8099 mV   
+4.10 	5.59485 A   	100.0	30.2876 mV   
+4.11 	4.86912 A   	100.0	21.9906 mV   
+4.12 	4.32883 A   	100.0	16.1307 mV   
+4.13*	3.91019 A   	100.0	2.16317 V    
+5.0 	1.68544 A   	100.0	95.7067 mV   
+5.1 	1.28814 A   	100.0	84.8369 mV   
+5.2 	1.09042 A   	100.0	78.0437 mV   
+5.3 	978.169 mA  	100.0	72.849 mV    
+5.4 	905.717 mA  	100.0	68.7501 mV   
+5.5 	856.859 mA  	100.0	67.3375 mV   
+5.6 	818.46 mA   	100.0	66.5785 mV   
+5.7*	785.544 mA  	100.0	2.07707 V    
+6.0 	275.532 mA  	100.0	537.575 mV   
+6.1 	151.078 mA  	100.0	173.176 mV   
+6.2 	90.1473 mA  	100.0	62.5568 mV   
+6.3 	57.8164 mA  	100.0	27.7998 mV   
+6.4 	38.6113 mA  	100.0	15.0399 mV   
+6.5 	26.3724 mA  	100.0	9.273 mV     
+6.6 	18.2538 mA  	100.0	6.13363 mV   
+6.7 	12.7399 mA  	100.0	4.20198 mV   
+6.8 	8.9402 mA   	100.0	2.93073 mV   
+6.9 	6.29704 mA  	100.0	2.06432 mV   
+6.10 	4.44672 mA  	100.0	1.4626 mV    
+6.11 	3.14578 mA  	100.0	1.04017 mV   
+6.12 	2.22832 mA  	100.0	741.61 uV    
+6.13*	1.57992 mA  	100.0	1.86081 mV   
+7.0 	3.28973 uA  	100.0	4.29769 uV   
+7.1 	17.5452 nA  	100.0	25.2162 nV   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+DIODE4.a                7.403e-04       >       3.055e-06
+DIODE2.a                7.403e-04       >       3.055e-06
+DIODE3.a                6.560e-04       >       1.031e-06
+DIODE1.a                6.560e-04       >       1.031e-06
+IMPin                   2.354e-04       >       3.085e-06
+
+o Number of waveforms violating the HB truncation error check:
+        6 out of 7 waveforms.
+o Estimated max HB truncation error: 7.403e-04 @ waveform DIODE4.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 3.055e-06 for this waveform.
+o A time-domain plot of the DCout waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     1.98 seconds.
+    Simulation stopwatch time =     0.33 seconds.
+    Total stopwatch time      =     1.98 seconds.
+
+    Memory used:  108 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

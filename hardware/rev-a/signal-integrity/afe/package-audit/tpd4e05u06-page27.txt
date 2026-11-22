@@ -1,0 +1,9 @@
+www.ti.com
+GENERIC PACKAGE VIEW
+This image is a representation of the package family, actual package may vary.Refer to the product data sheet for package details.USON - 0.55 mm max heightDQA 10 PLASTIC SMALL OUTLINE - NO LEAD1 x 2.5, 0.5 mm pitch
+4230320/A
+www.ti.com
+TPD1E05U06, TPD4E05U06, TPD6E05U06
+SLVSBO7O – DECEMBER 2012 – REVISED AUGUST 2024
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 27
+Product Folder Links: TPD1E05U06 TPD4E05U06 TPD6E05U06

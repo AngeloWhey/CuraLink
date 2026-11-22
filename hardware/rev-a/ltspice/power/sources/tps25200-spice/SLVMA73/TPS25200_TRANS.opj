@@ -1,0 +1,91 @@
+(ExpressProject "TPS25200_TRANS"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\tps25200_trans.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "tps25200_trans.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\tps25200_trans-pspicefiles\tps25200_turnonoff\trans.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tps25200_trans-pspicefiles\tps25200_turnonoff\trans.sim"
+        (DisplayName "TPS25200_TurnOnOff-TRANS")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\tps25200_trans.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\tps25200_trans.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (TPS25200_TRANS
+      (FullPartName "TPS25200_TRANS.Normal")
+      (LibraryName
+         "F:\TPS25200\RELEASE_KARMIC\PSPICE\TPS25200_PSPICE_TRANS\TPS25200_TRANS.OLB")
+      (DeviceIndex "0"))
+    (D1N957A
+      (FullPartName "D1N957A.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (D_D1
+      (FullPartName "D_D1.Normal")
+      (LibraryName
+         "D:\PSPICE\TPS40192\20080331 PRE-PACKAGED DEBUGGED\LIBRARY\TPS40192APP.OLB")
+      (DeviceIndex "0"))
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (p6smb20at3/ON
+      (FullPartName "p6smb20at3/ON.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_DIODE.OLB")
+      (DeviceIndex "0"))
+    (DbreakZ
+      (FullPartName "DbreakZ.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (ZbreakN
+      (FullPartName "ZbreakN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "adarsh")
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_16.0\tools\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -23 0 200 0 362"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 0 959 0 389")
+        (Scroll "0 276")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "F:\TPS25200\RELEASE_KARMIC\PSPICE\TPS25200_PSPICE_TRANS\TPS25200_TRANS.DSN")
+      (Schematic "TPS25200_TurnOnOff")
+      (Page "PAGE1"))))

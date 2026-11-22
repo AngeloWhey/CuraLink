@@ -1,0 +1,125 @@
+{
+  "recorded_local_date": "2026-11-22",
+  "timezone": "America/New_York",
+  "purpose": "Computer migration path portability only; no circuit value, case, stimulus or result changed",
+  "ltspice_executable": {
+    "override_environment_variable": "CURALINK_LTSPICE_EXE",
+    "default": "Join-Path $env:LOCALAPPDATA 'Programs/ADI/LTspice/LTspice.exe'",
+    "hidden_batch_behavior_preserved": true,
+    "case_lists_and_working_directories_preserved": true
+  },
+  "kicad_standard_footprints": {
+    "path_precedence": [
+      "CURALINK_KICAD_FOOTPRINT_DIR",
+      "KICAD9_FOOTPRINT_DIR",
+      "KICAD_FOOTPRINT_DIR"
+    ],
+    "windows_fallback": "%ProgramFiles%/KiCad/9.0/share/kicad/footprints",
+    "unix_fallback": "/usr/share/kicad/footprints",
+    "project_footprint_geometry_unchanged": true
+  },
+  "powershell_runner_syntax": [
+    {
+      "Path": "hardware/rev-a/ltspice/afe/run_ltspice_afe.ps1",
+      "PowerShellSyntax": "PASS",
+      "Simulated": false,
+      "sha256": "f937f349309f6e0dca2dc79e80998ac7176d16dfd818d7c31bcde20c3c6208d6"
+    },
+    {
+      "Path": "hardware/rev-a/ltspice/power/run-ltspice.ps1",
+      "PowerShellSyntax": "PASS",
+      "Simulated": false,
+      "sha256": "f37a81e8bccdba1d182294a0066fe195f9767fc8663429982edad67c226efcf5"
+    },
+    {
+      "Path": "hardware/rev-a/signal-integrity/power/run-sensitivity.ps1",
+      "PowerShellSyntax": "PASS",
+      "Simulated": false,
+      "sha256": "8f24ddc37b39e0624c5e6732db73efaf20228a62a05d9c18013ac28deaf590e5"
+    },
+    {
+      "Path": "hardware/rev-a/signal-integrity/afe/run_crosstalk.ps1",
+      "PowerShellSyntax": "PASS",
+      "Simulated": false,
+      "sha256": "bd4d906089b30467fdd10f1bb97c6ca85f008c93cffa71ba299d430c26a15bc0"
+    },
+    {
+      "Path": "hardware/rev-a/signal-integrity/afe/bias-study/run_bias_ac.ps1",
+      "PowerShellSyntax": "PASS",
+      "Simulated": false,
+      "sha256": "43d3f562f26f71537e32936b50621e84a0602455cdce91bde63090b6edb8a43f"
+    },
+    {
+      "Path": "hardware/rev-a/signal-integrity/afe/bias-study/run_bias_transients.ps1",
+      "PowerShellSyntax": "PASS",
+      "Simulated": false,
+      "sha256": "b1dac48d17759e83e1e298ae686e8cd65aa945193618ff133d490394edaea2bd"
+    }
+  ],
+  "python_source_syntax": [
+    {
+      "path": "hardware/rev-a/signal-integrity/afe/build_crosstalk.py",
+      "python_ast": "PASS",
+      "sha256": "f832b313f82292e5c8971c1db6f4f58a1563285577cd4f667aec7383fb9a6107"
+    },
+    {
+      "path": "hardware/rev-a/signal-integrity/afe/bias-study/build_bias_study.py",
+      "python_ast": "PASS",
+      "sha256": "3c1a63bb44e00d5b970c7ee8908426b6717e865bbbd0ca9252697f2e2e27f277"
+    },
+    {
+      "path": "hardware/rev-a/signal-integrity/afe/bias-study/build_bias_transients.py",
+      "python_ast": "PASS",
+      "sha256": "76292dc22f43a757af017e8d923a23671abb8632ba992e1126acc84eba2bae63"
+    },
+    {
+      "path": "hardware/rev-a/signal-integrity/mcu-rf/verify-critical-footprints.py",
+      "python_ast": "PASS",
+      "sha256": "29fc77e3d357bbe4b1c5d035e5101719072422ec9239fb69b5ca17a05a9bcf75"
+    }
+  ],
+  "generated_template_syntax_fixtures": [
+    {
+      "builder": "hardware/rev-a/signal-integrity/afe/build_crosstalk.py",
+      "syntax_fixture": "migration/cad-audit-template-build_crosstalk.ps1",
+      "case_list_placeholder": false
+    },
+    {
+      "builder": "hardware/rev-a/signal-integrity/afe/bias-study/build_bias_study.py",
+      "syntax_fixture": "migration/cad-audit-template-build_bias_study.ps1",
+      "case_list_placeholder": false
+    },
+    {
+      "builder": "hardware/rev-a/signal-integrity/afe/bias-study/build_bias_transients.py",
+      "syntax_fixture": "migration/cad-audit-template-build_bias_transients.ps1",
+      "case_list_placeholder": true
+    }
+  ],
+  "executed": {
+    "powershell_parser": true,
+    "python_ast": true,
+    "cad_regeneration": false,
+    "ltspice_runs": false,
+    "footprint_geometry_verification": false
+  },
+  "generated_template_powershell_syntax": [
+    {
+      "File": "cad-audit-template-build_bias_study.ps1",
+      "PowerShellTemplateSyntax": "PASS",
+      "Executed": false,
+      "ExecutionGuard": true
+    },
+    {
+      "File": "cad-audit-template-build_bias_transients.ps1",
+      "PowerShellTemplateSyntax": "PASS",
+      "Executed": false,
+      "ExecutionGuard": true
+    },
+    {
+      "File": "cad-audit-template-build_crosstalk.ps1",
+      "PowerShellTemplateSyntax": "PASS",
+      "Executed": false,
+      "ExecutionGuard": true
+    }
+  ]
+}

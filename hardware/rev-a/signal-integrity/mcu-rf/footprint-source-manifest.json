@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-02",
+  "records": [
+    {
+      "lcsc": "C19626860",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/afde85730b53530427ab5a3f91af284d.pdf?productCode=C19626860",
+      "product_model": "STM32WBA52CGU6",
+      "file": "hardware/rev-a/signal-integrity/mcu-rf/stm32wba52cg-lcsc.pdf",
+      "sha256": "ace2c5563315bd10d1212a94c013f6405691bce420006847d5b01f19535b2f1b",
+      "bytes": 2000062
+    },
+    {
+      "lcsc": "C22378853",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/46776f5bf44cc61a5ab5d955e0abc20e.pdf?productCode=C22378853",
+      "product_model": "MLPF-WB-04D3",
+      "file": "hardware/rev-a/signal-integrity/mcu-rf/mlpf-wb-04d3-lcsc.pdf",
+      "sha256": "cb5692b6f84325e6b28ddf169d6be304040d162ee79ec335115e92ee648d5edd",
+      "bytes": 2663103
+    },
+    {
+      "lcsc": "C6364663",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/49aea12409976e716898b25cdae6481e.pdf?productCode=C6364663",
+      "product_model": "FPC 0.5-18P HYH2.0",
+      "file": "hardware/rev-a/signal-integrity/mcu-rf/ffc18-hyh2-lcsc.pdf",
+      "sha256": "fcf489d7b8912addf42adcb17b40b8f2bfb96cd1d744d8e095c6ba3e4114f4a4",
+      "bytes": 1791291
+    },
+    {
+      "lcsc": "C843260",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/7d295f64f7c44230fecd37b1086251f1.pdf?productCode=C843260",
+      "product_model": "NX2016SA-32MHZ-STD-CZS-5",
+      "file": "hardware/rev-a/signal-integrity/mcu-rf/nx2016sa-lcsc.pdf",
+      "sha256": "88c24e07bef5f4782606a319e626a206152f6df8b49083f28df42a1a2379365a",
+      "bytes": 488772
+    },
+    {
+      "lcsc": "C528987",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/524bac56b55e65eca5bbcc5105004c56.pdf?productCode=C528987",
+      "product_model": "NX3215SA 32.768KHZ EXS00A-MU00525",
+      "file": "hardware/rev-a/signal-integrity/mcu-rf/nx3215sa-lcsc.pdf",
+      "sha256": "a806820f7277397c9aaf45c0375bf2aaeb2bb119cd9cdd6aff061f517c25e41e",
+      "bytes": 314268
+    },
+    {
+      "lcsc": "C88374",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/ade8681cf25347ad817fa65440db6a2c.pdf?productCode=C88374",
+      "product_model": "U.FL-R-SMT-1(80)",
+      "file": "hardware/rev-a/signal-integrity/mcu-rf/ufl-r-smt-lcsc.pdf",
+      "sha256": "3e7b368a3ae1167260baf0352c70629776490ea65e1e860824dac32a26db430a",
+      "bytes": 500362
+    }
+  ]
+}

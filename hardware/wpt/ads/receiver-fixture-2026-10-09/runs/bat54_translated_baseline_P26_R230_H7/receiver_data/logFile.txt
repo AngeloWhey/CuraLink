@@ -1,0 +1,109 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 16:57:59 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\bat54_translated_baseline_P26_R230_H7"
+      Process ID: 25336
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+HB HB1[1] <receiver.ckt>
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 360.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	122.362 kA  	100.0             
+1.0 	3.28172 kA  	100.0	336.865 mV   
+1.1 	2.32453 kA  	100.0	322.172 mV   
+1.2*	1.84121 kA  	100.0	1.22833 V    
+2.0 	774.861 A   	100.0	457.448 mV   
+2.1 	592.89 A    	100.0	341.599 mV   
+2.2 	503.239 A   	100.0	280.044 mV   
+2.3 	449.21 A    	100.0	240.159 mV   
+2.4*	413.053 A   	100.0	2.65067 V    
+3.0 	262.981 A   	100.0	706.745 mV   
+3.1 	213.894 A   	100.0	494.671 mV   
+3.2 	175.076 A   	100.0	402.168 mV   
+3.3 	144.825 A   	100.0	423.038 mV   
+3.4 	113.983 A   	100.0	409.234 mV   
+3.5 	81.9431 A   	100.0	319.259 mV   
+3.6 	47.0897 A   	100.0	166.587 mV   
+3.7 	18.3534 A   	100.0	41.2814 mV   
+3.8 	12.102 A    	100.0	29.1843 mV   
+3.9 	9.28049 A   	100.0	22.2104 mV   
+3.10 	7.65021 A   	100.0	17.7475 mV   
+3.11 	6.54843 A   	100.0	14.7365 mV   
+3.12 	5.74922 A   	100.0	12.6306 mV   
+3.13*	5.14455 A   	100.0	278.414 mV   
+4.0 	2.21755 A   	100.0	169.861 mV   
+4.1 	1.73743 A   	100.0	178.948 mV   
+4.2 	1.51575 A   	100.0	185.114 mV   
+4.3 	1.39636 A   	100.0	186.734 mV   
+4.4 	1.33247 A   	100.0	185.38 mV    
+4.5*	1.28018 A   	100.0	5.0575 V     
+5.0 	463.241 mA  	100.0	254.513 mV   
+5.1 	344.222 mA  	100.0	328.501 mV   
+5.2 	260.218 mA  	100.0	273.73 mV    
+5.3 	201.364 mA  	100.0	216.858 mV   
+5.4 	158.855 mA  	100.0	169.932 mV   
+5.5 	127.096 mA  	100.0	132.617 mV   
+5.6 	102.786 mA  	100.0	103.27 mV    
+5.7 	83.8499 mA  	100.0	80.3018 mV   
+5.8 	68.9033 mA  	100.0	62.3729 mV   
+5.9 	57.046 mA   	100.0	48.3975 mV   
+5.10 	47.6857 mA  	100.0	37.5124 mV   
+5.11 	40.4156 mA  	100.0	29.0385 mV   
+5.12 	34.435 mA   	100.0	22.4441 mV   
+5.13*	29.4412 mA  	100.0	71.6982 mV   
+6.0 	1.60135 mA  	100.0	1.96518 mV   
+6.1 	182.935 uA  	100.0	240.57 uV    
+6.2 	21.4614 uA  	100.0	28.6803 uV   
+6.3 	2.52443 uA  	100.0	3.3859 uV    
+6.4 	297.005 nA  	100.0	398.693 nV   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+DIODE2.a                9.309e-04       >       2.951e-06
+DIODE4.a                9.309e-04       >       2.951e-06
+DIODE3.a                8.299e-04       >       1.029e-06
+DIODE1.a                8.299e-04       >       1.029e-06
+VoutMatched             2.969e-04       >       2.980e-06
+
+o Number of waveforms violating the HB truncation error check:
+        6 out of 7 waveforms.
+o Estimated max HB truncation error: 9.309e-04 @ waveform DIODE2.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 2.951e-06 for this waveform.
+o A time-domain plot of the DCout waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     1.75 seconds.
+    Simulation stopwatch time =     0.27 seconds.
+    Total stopwatch time      =     1.65 seconds.
+
+    Memory used:  108 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

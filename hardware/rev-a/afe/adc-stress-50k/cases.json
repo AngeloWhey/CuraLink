@@ -1,0 +1,38 @@
+[
+  {
+    "name": "track_50k_1000Hz_adc5",
+    "freq_Hz": 1000,
+    "ADC_pF": 5,
+    "fs_Hz": 50000,
+    "Riso_ohm": 150,
+    "Creservoir_pF": 470,
+    "acquisition_us": 1.656
+  },
+  {
+    "name": "track_50k_1000Hz_adc10",
+    "freq_Hz": 1000,
+    "ADC_pF": 10,
+    "fs_Hz": 50000,
+    "Riso_ohm": 150,
+    "Creservoir_pF": 470,
+    "acquisition_us": 1.656
+  },
+  {
+    "name": "track_50k_7000Hz_adc5",
+    "freq_Hz": 7000,
+    "ADC_pF": 5,
+    "fs_Hz": 50000,
+    "Riso_ohm": 150,
+    "Creservoir_pF": 470,
+    "acquisition_us": 1.656
+  },
+  {
+    "name": "track_50k_7000Hz_adc10",
+    "freq_Hz": 7000,
+    "ADC_pF": 10,
+    "fs_Hz": 50000,
+    "Riso_ohm": 150,
+    "Creservoir_pF": 470,
+    "acquisition_us": 1.656
+  }
+]

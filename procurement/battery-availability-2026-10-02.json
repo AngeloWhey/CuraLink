@@ -1,0 +1,1708 @@
+{
+  "checked_date": "2026-10-02",
+  "date_source": "Client environment America/New_York",
+  "lcsc": "C19632326",
+  "mpn": "401020-55mah",
+  "manufacturer": "Taisko",
+  "status": "UNCONFIRMED_GLOBAL_LCSC_ORDERABILITY",
+  "stock_total": null,
+  "stock_immediate": null,
+  "minimum_order": null,
+  "order_multiple": null,
+  "foreign_onsale": null,
+  "foreign_display": null,
+  "product_model": null,
+  "unit_price_usd": null,
+  "raw_file": "procurement/battery-raw-2026-10-02/detail-C19632326.json",
+  "global_detail_url": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C19632326",
+  "global_page_url": "https://www.lcsc.com/product-detail/C19632326.html",
+  "global_page_http_status": 404,
+  "jlc_catalog_url": "https://jlcpcb.com/partdetail/Taisko-40102055mah/C19632326",
+  "jlc_catalog_stock_verified": false,
+  "jlc_separate_parts_shipping_permitted": false,
+  "manufacturer_specification": "https://atta.szlcsc.com/upload/public/pdf/source/20250905/9CA17359854FCF37A94D02BC391F6AF0.pdf",
+  "manufacturer_pdf_file": "procurement/battery-raw-2026-10-02/Taisko-PS-401020-01.pdf",
+  "manufacturer_pdf_sha256": "11c579c06bf6be02aa022336bc6fe7a7ce4de52c6c33d95e42e7189861dbd32a",
+  "stocked_qualified_replacement_found": false,
+  "canonical_changes": false,
+  "notes": [
+    "Null API result is unknown inventory, not a reported numeric stock of zero.",
+    "Exact model query returned an unrelated crystal; rejected by exact identity check.",
+    "JLCPCB catalog record does not establish an orderable global LCSC purchase.",
+    "Accepted electrical baseline retained; no cell substitution."
+  ],
+  "search_evidence": [
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/detail-C19632326.json",
+      "code": 200,
+      "total_count": null,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-302020_100mah.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-3_7V_battery.json",
+      "code": 200,
+      "total_count": 1384,
+      "category_matches": null,
+      "returned_products": [
+        {
+          "lcsc": "C964833",
+          "mpn": "MY-2032-12",
+          "stock": 11345,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C5239862",
+          "mpn": "BS-02-A1AJ010",
+          "stock": 66345,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C2988620",
+          "mpn": "BH-18650-B1BA002",
+          "stock": 3098,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical 18650 Cell SMD"
+        },
+        {
+          "lcsc": "C5290180",
+          "mpn": "BH-AA-A5BJ012",
+          "stock": 1937,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AA Cell"
+        },
+        {
+          "lcsc": "C5290175",
+          "mpn": "BH-18650-A1AJ006",
+          "stock": 2285,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C964752",
+          "mpn": "BS-05-A1BJ001",
+          "stock": 7860,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964723",
+          "mpn": "BS-12-B3AA003",
+          "stock": 31635,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C20606791",
+          "mpn": "BH-21700-B1BJ001",
+          "stock": 1243,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical SMD"
+        },
+        {
+          "lcsc": "C20606790",
+          "mpn": "MY-AA-06",
+          "stock": 1990,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell TH"
+        },
+        {
+          "lcsc": "C19184125",
+          "mpn": "MY-18650-04-J",
+          "stock": 2000,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 Cell TH"
+        },
+        {
+          "lcsc": "C19184084",
+          "mpn": "BH-18650-A6AJ012",
+          "stock": 3380,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical TH"
+        },
+        {
+          "lcsc": "C19184079",
+          "mpn": "MY-FJ-04-J-R",
+          "stock": 8555,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin SMD"
+        },
+        {
+          "lcsc": "C19184078",
+          "mpn": "MY-18650-03-J",
+          "stock": 7205,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C7525434",
+          "mpn": "MY-FJ-131-J-R",
+          "stock": 13870,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts RoHS"
+        },
+        {
+          "lcsc": "C5290176",
+          "mpn": "BH-18650-A1AJ005",
+          "stock": 4015,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C2979182",
+          "mpn": "MY-18650-02",
+          "stock": 10910,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 CR123A Cell SMD"
+        },
+        {
+          "lcsc": "C2979179",
+          "mpn": "MY-AA-04",
+          "stock": 18875,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell SMD"
+        },
+        {
+          "lcsc": "C964881",
+          "mpn": "BH-AAA-B5AA001",
+          "stock": 8482,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AAA Cell SMD"
+        },
+        {
+          "lcsc": "C964863",
+          "mpn": "MY-FJ-113LM",
+          "stock": 4425,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment SMD"
+        },
+        {
+          "lcsc": "C964859",
+          "mpn": "MY-ZJ-110",
+          "stock": 3630,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment CR110 Cell SMD"
+        },
+        {
+          "lcsc": "C964845",
+          "mpn": "MY-2450-01",
+          "stock": 5740,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2450 Cell SMD"
+        },
+        {
+          "lcsc": "C964798",
+          "mpn": "BS-10-B2AA010",
+          "stock": 4845,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C964750",
+          "mpn": "BS-04-A1BJ004",
+          "stock": 9455,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964745",
+          "mpn": "BS-02-A1AJ006",
+          "stock": 37005,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964729",
+          "mpn": "BS-12-B3AA011",
+          "stock": 9215,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C964727",
+          "mpn": "BS-12-B3AA009",
+          "stock": 6650,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C5457109",
+          "mpn": "MY-FJ-590",
+          "stock": 3655,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C5457108",
+          "mpn": "MY-FJ-130-G",
+          "stock": 43340,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C5457097",
+          "mpn": "MY-FJ-115II",
+          "stock": 2840,
+          "foreign_onsale": true,
+          "description": "Battery CR115 Cell SMD"
+        },
+        {
+          "lcsc": "C5290177",
+          "mpn": "BH-123A-A1CJ002",
+          "stock": 1630,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical CR123A Cell"
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-401020.json",
+      "code": 200,
+      "total_count": 84,
+      "category_matches": [
+        {
+          "catalogId": 788,
+          "catalogNameEn": "Arrays, Edge Type, Mezzanine (Board to Board)",
+          "parentId": 170,
+          "parentName": "Rectangular Connectors",
+          "level": 3,
+          "productNum": 34,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20230131_JILN-3511216BFSS0BNA1_C963730_front.jpg"
+        },
+        {
+          "catalogId": 794,
+          "catalogNameEn": "Headers, Specialty Pin",
+          "parentId": 170,
+          "parentName": "Rectangular Connectors",
+          "level": 3,
+          "productNum": 8,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20250325_Samtec-TS-106-T-A_C6886157_front.jpg"
+        },
+        {
+          "catalogId": 792,
+          "catalogNameEn": "Headers, Male Pins",
+          "parentId": 170,
+          "parentName": "Rectangular Connectors",
+          "level": 3,
+          "productNum": 6,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20230317_MOLEX-874381043_C99280_front.jpg"
+        },
+        {
+          "catalogId": 826,
+          "catalogNameEn": "PC Pin Receptacles, Socket Connectors",
+          "parentId": 177,
+          "parentName": "Terminals",
+          "level": 3,
+          "productNum": 6,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20250722_TE-Connectivity-284697-E_C7500513_front.jpg"
+        },
+        {
+          "catalogId": 806,
+          "catalogNameEn": "Barrier Blocks",
+          "parentId": 174,
+          "parentName": "Terminal Blocks",
+          "level": 3,
+          "productNum": 4,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20230331_Cixi-Kefa-Elec-KF78RM-13-0-10P_C964712_front.jpg"
+        },
+        {
+          "catalogId": 790,
+          "catalogNameEn": "Board Spacers, Stackers (Board to Board)",
+          "parentId": 170,
+          "parentName": "Rectangular Connectors",
+          "level": 3,
+          "productNum": 4,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20250702_HCTL-HC-PBB13C-50DP-0-35V-0-6-05_C49243223_front.jpg"
+        },
+        {
+          "catalogId": 791,
+          "catalogNameEn": "Free Hanging, Panel Mount",
+          "parentId": 170,
+          "parentName": "Rectangular Connectors",
+          "level": 3,
+          "productNum": 3,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20230104_Wcon-3121-30MG0BK00R1_C976795_front.jpg"
+        },
+        {
+          "catalogId": 808,
+          "catalogNameEn": "Headers, Plugs and Sockets",
+          "parentId": 174,
+          "parentName": "Terminal Blocks",
+          "level": 3,
+          "productNum": 3,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20230317_Ningbo-Kangnex-Elec-WJ15EDGKA-3-81-16P_C98640_front.jpg"
+        },
+        {
+          "catalogId": 1514,
+          "catalogNameEn": "Power, Line Cables and Extension Cords",
+          "parentId": 5,
+          "parentName": "Cable Assemblies",
+          "level": 2,
+          "productNum": 3,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 5,
+          "rootCatalogName": "Cable Assemblies",
+          "relationProductImage": null
+        },
+        {
+          "catalogId": 1518,
+          "catalogNameEn": "Video Cables (DVI, HDMI)",
+          "parentId": 5,
+          "parentName": "Cable Assemblies",
+          "level": 2,
+          "productNum": 3,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 5,
+          "rootCatalogName": "Cable Assemblies",
+          "relationProductImage": null
+        },
+        {
+          "catalogId": 730,
+          "catalogNameEn": "Edgeboard Connectors",
+          "parentId": 156,
+          "parentName": "Card Edge Connectors",
+          "level": 3,
+          "productNum": 2,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20260905_TE-Connectivity-1775838-2_C91936_front.jpg"
+        },
+        {
+          "catalogId": 1335,
+          "catalogNameEn": "Solderless Breadboards",
+          "parentId": 11,
+          "parentName": "Development Boards, Kits, Programmers",
+          "level": 2,
+          "productNum": 2,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 11,
+          "rootCatalogName": "Development Boards, Kits, Programmers",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20221231_CONNFLY-Elec-DS1136-06-830SNV_C93726_front.jpg"
+        }
+      ],
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-401020_55mah.json",
+      "code": 200,
+      "total_count": 1,
+      "category_matches": null,
+      "returned_products": [
+        {
+          "lcsc": "C5526774",
+          "mpn": "7V-45.835555MAHQ-T",
+          "stock": 0,
+          "foreign_onsale": true,
+          "description": "Crystal 45.835555MHz ±30ppm 10pF 60Ω SMD3225-4P"
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-C19632326.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-catalog-id-list.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-catalog-id.json",
+      "code": 200,
+      "total_count": 1384,
+      "category_matches": [
+        {
+          "catalogId": 1404,
+          "catalogNameEn": "Battery Holders, Clips, Contacts",
+          "parentId": 4,
+          "parentName": "Battery",
+          "level": 2,
+          "productNum": 731,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 4,
+          "rootCatalogName": "Battery",
+          "relationProductImage": null
+        },
+        {
+          "catalogId": 1741,
+          "catalogNameEn": "Battery Holders, Clips, Contacts",
+          "parentId": 1738,
+          "parentName": "Battery",
+          "level": 3,
+          "productNum": 483,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 1729,
+          "rootCatalogName": "Maintenance, Repair & Operations",
+          "relationProductImage": null
+        },
+        {
+          "catalogId": 1740,
+          "catalogNameEn": "Battery Chargers",
+          "parentId": 1738,
+          "parentName": "Battery",
+          "level": 3,
+          "productNum": 160,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 1729,
+          "rootCatalogName": "Maintenance, Repair & Operations",
+          "relationProductImage": null
+        },
+        {
+          "catalogId": 61,
+          "catalogNameEn": "Battery Product Accessories",
+          "parentId": 4,
+          "parentName": "Battery",
+          "level": 2,
+          "productNum": 6,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 4,
+          "rootCatalogName": "Battery",
+          "relationProductImage": null
+        },
+        {
+          "catalogId": 57,
+          "catalogNameEn": "Batteries Rechargeable (Secondary)",
+          "parentId": 4,
+          "parentName": "Battery",
+          "level": 2,
+          "productNum": 2,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 4,
+          "rootCatalogName": "Battery",
+          "relationProductImage": null
+        },
+        {
+          "catalogId": 56,
+          "catalogNameEn": "Batteries Non-Rechargeable (Primary)",
+          "parentId": 4,
+          "parentName": "Battery",
+          "level": 2,
+          "productNum": 1,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 4,
+          "rootCatalogName": "Battery",
+          "relationProductImage": null
+        },
+        {
+          "catalogId": 60,
+          "catalogNameEn": "Battery Chargers",
+          "parentId": 4,
+          "parentName": "Battery",
+          "level": 2,
+          "productNum": 1,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 4,
+          "rootCatalogName": "Battery",
+          "relationProductImage": null
+        }
+      ],
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-LiPo_battery.json",
+      "code": 200,
+      "total_count": 1384,
+      "category_matches": null,
+      "returned_products": [
+        {
+          "lcsc": "C964833",
+          "mpn": "MY-2032-12",
+          "stock": 11345,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C5239862",
+          "mpn": "BS-02-A1AJ010",
+          "stock": 66345,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C2988620",
+          "mpn": "BH-18650-B1BA002",
+          "stock": 3098,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical 18650 Cell SMD"
+        },
+        {
+          "lcsc": "C5290180",
+          "mpn": "BH-AA-A5BJ012",
+          "stock": 1937,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AA Cell"
+        },
+        {
+          "lcsc": "C5290175",
+          "mpn": "BH-18650-A1AJ006",
+          "stock": 2285,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C964752",
+          "mpn": "BS-05-A1BJ001",
+          "stock": 7860,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964723",
+          "mpn": "BS-12-B3AA003",
+          "stock": 31635,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C20606791",
+          "mpn": "BH-21700-B1BJ001",
+          "stock": 1243,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical SMD"
+        },
+        {
+          "lcsc": "C20606790",
+          "mpn": "MY-AA-06",
+          "stock": 1990,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell TH"
+        },
+        {
+          "lcsc": "C19184125",
+          "mpn": "MY-18650-04-J",
+          "stock": 2000,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 Cell TH"
+        },
+        {
+          "lcsc": "C19184084",
+          "mpn": "BH-18650-A6AJ012",
+          "stock": 3380,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical TH"
+        },
+        {
+          "lcsc": "C19184079",
+          "mpn": "MY-FJ-04-J-R",
+          "stock": 8555,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin SMD"
+        },
+        {
+          "lcsc": "C19184078",
+          "mpn": "MY-18650-03-J",
+          "stock": 7205,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C7525434",
+          "mpn": "MY-FJ-131-J-R",
+          "stock": 13870,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts RoHS"
+        },
+        {
+          "lcsc": "C5290176",
+          "mpn": "BH-18650-A1AJ005",
+          "stock": 4015,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C2979182",
+          "mpn": "MY-18650-02",
+          "stock": 10910,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 CR123A Cell SMD"
+        },
+        {
+          "lcsc": "C2979179",
+          "mpn": "MY-AA-04",
+          "stock": 18875,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell SMD"
+        },
+        {
+          "lcsc": "C964881",
+          "mpn": "BH-AAA-B5AA001",
+          "stock": 8482,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AAA Cell SMD"
+        },
+        {
+          "lcsc": "C964863",
+          "mpn": "MY-FJ-113LM",
+          "stock": 4425,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment SMD"
+        },
+        {
+          "lcsc": "C964859",
+          "mpn": "MY-ZJ-110",
+          "stock": 3630,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment CR110 Cell SMD"
+        },
+        {
+          "lcsc": "C964845",
+          "mpn": "MY-2450-01",
+          "stock": 5740,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2450 Cell SMD"
+        },
+        {
+          "lcsc": "C964798",
+          "mpn": "BS-10-B2AA010",
+          "stock": 4845,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C964750",
+          "mpn": "BS-04-A1BJ004",
+          "stock": 9455,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964745",
+          "mpn": "BS-02-A1AJ006",
+          "stock": 37005,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964729",
+          "mpn": "BS-12-B3AA011",
+          "stock": 9215,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C964727",
+          "mpn": "BS-12-B3AA009",
+          "stock": 6650,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C5457109",
+          "mpn": "MY-FJ-590",
+          "stock": 3655,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C5457108",
+          "mpn": "MY-FJ-130-G",
+          "stock": 43340,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C5457097",
+          "mpn": "MY-FJ-115II",
+          "stock": 2840,
+          "foreign_onsale": true,
+          "description": "Battery CR115 Cell SMD"
+        },
+        {
+          "lcsc": "C5290177",
+          "mpn": "BH-123A-A1CJ002",
+          "stock": 1630,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical CR123A Cell"
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-lithium_ion_battery.json",
+      "code": 200,
+      "total_count": 1384,
+      "category_matches": null,
+      "returned_products": [
+        {
+          "lcsc": "C964833",
+          "mpn": "MY-2032-12",
+          "stock": 11345,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C5239862",
+          "mpn": "BS-02-A1AJ010",
+          "stock": 66345,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C2988620",
+          "mpn": "BH-18650-B1BA002",
+          "stock": 3098,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical 18650 Cell SMD"
+        },
+        {
+          "lcsc": "C5290180",
+          "mpn": "BH-AA-A5BJ012",
+          "stock": 1937,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AA Cell"
+        },
+        {
+          "lcsc": "C5290175",
+          "mpn": "BH-18650-A1AJ006",
+          "stock": 2285,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C964752",
+          "mpn": "BS-05-A1BJ001",
+          "stock": 7860,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964723",
+          "mpn": "BS-12-B3AA003",
+          "stock": 31635,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C20606791",
+          "mpn": "BH-21700-B1BJ001",
+          "stock": 1243,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical SMD"
+        },
+        {
+          "lcsc": "C20606790",
+          "mpn": "MY-AA-06",
+          "stock": 1990,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell TH"
+        },
+        {
+          "lcsc": "C19184125",
+          "mpn": "MY-18650-04-J",
+          "stock": 2000,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 Cell TH"
+        },
+        {
+          "lcsc": "C19184084",
+          "mpn": "BH-18650-A6AJ012",
+          "stock": 3380,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical TH"
+        },
+        {
+          "lcsc": "C19184079",
+          "mpn": "MY-FJ-04-J-R",
+          "stock": 8555,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin SMD"
+        },
+        {
+          "lcsc": "C19184078",
+          "mpn": "MY-18650-03-J",
+          "stock": 7205,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C7525434",
+          "mpn": "MY-FJ-131-J-R",
+          "stock": 13870,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts RoHS"
+        },
+        {
+          "lcsc": "C5290176",
+          "mpn": "BH-18650-A1AJ005",
+          "stock": 4015,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C2979182",
+          "mpn": "MY-18650-02",
+          "stock": 10910,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 CR123A Cell SMD"
+        },
+        {
+          "lcsc": "C2979179",
+          "mpn": "MY-AA-04",
+          "stock": 18875,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell SMD"
+        },
+        {
+          "lcsc": "C964881",
+          "mpn": "BH-AAA-B5AA001",
+          "stock": 8482,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AAA Cell SMD"
+        },
+        {
+          "lcsc": "C964863",
+          "mpn": "MY-FJ-113LM",
+          "stock": 4425,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment SMD"
+        },
+        {
+          "lcsc": "C964859",
+          "mpn": "MY-ZJ-110",
+          "stock": 3630,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment CR110 Cell SMD"
+        },
+        {
+          "lcsc": "C964845",
+          "mpn": "MY-2450-01",
+          "stock": 5740,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2450 Cell SMD"
+        },
+        {
+          "lcsc": "C964798",
+          "mpn": "BS-10-B2AA010",
+          "stock": 4845,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C964750",
+          "mpn": "BS-04-A1BJ004",
+          "stock": 9455,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964745",
+          "mpn": "BS-02-A1AJ006",
+          "stock": 37005,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964729",
+          "mpn": "BS-12-B3AA011",
+          "stock": 9215,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C964727",
+          "mpn": "BS-12-B3AA009",
+          "stock": 6650,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C5457109",
+          "mpn": "MY-FJ-590",
+          "stock": 3655,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C5457108",
+          "mpn": "MY-FJ-130-G",
+          "stock": 43340,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C5457097",
+          "mpn": "MY-FJ-115II",
+          "stock": 2840,
+          "foreign_onsale": true,
+          "description": "Battery CR115 Cell SMD"
+        },
+        {
+          "lcsc": "C5290177",
+          "mpn": "BH-123A-A1CJ002",
+          "stock": 1630,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical CR123A Cell"
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-lithium_polymer_battery.json",
+      "code": 200,
+      "total_count": 1384,
+      "category_matches": null,
+      "returned_products": [
+        {
+          "lcsc": "C964833",
+          "mpn": "MY-2032-12",
+          "stock": 11345,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C5239862",
+          "mpn": "BS-02-A1AJ010",
+          "stock": 66345,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C2988620",
+          "mpn": "BH-18650-B1BA002",
+          "stock": 3098,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical 18650 Cell SMD"
+        },
+        {
+          "lcsc": "C5290180",
+          "mpn": "BH-AA-A5BJ012",
+          "stock": 1937,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AA Cell"
+        },
+        {
+          "lcsc": "C5290175",
+          "mpn": "BH-18650-A1AJ006",
+          "stock": 2285,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C964752",
+          "mpn": "BS-05-A1BJ001",
+          "stock": 7860,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964723",
+          "mpn": "BS-12-B3AA003",
+          "stock": 31635,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C20606791",
+          "mpn": "BH-21700-B1BJ001",
+          "stock": 1243,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical SMD"
+        },
+        {
+          "lcsc": "C20606790",
+          "mpn": "MY-AA-06",
+          "stock": 1990,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell TH"
+        },
+        {
+          "lcsc": "C19184125",
+          "mpn": "MY-18650-04-J",
+          "stock": 2000,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 Cell TH"
+        },
+        {
+          "lcsc": "C19184084",
+          "mpn": "BH-18650-A6AJ012",
+          "stock": 3380,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical TH"
+        },
+        {
+          "lcsc": "C19184079",
+          "mpn": "MY-FJ-04-J-R",
+          "stock": 8555,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin SMD"
+        },
+        {
+          "lcsc": "C19184078",
+          "mpn": "MY-18650-03-J",
+          "stock": 7205,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C7525434",
+          "mpn": "MY-FJ-131-J-R",
+          "stock": 13870,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts RoHS"
+        },
+        {
+          "lcsc": "C5290176",
+          "mpn": "BH-18650-A1AJ005",
+          "stock": 4015,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C2979182",
+          "mpn": "MY-18650-02",
+          "stock": 10910,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 CR123A Cell SMD"
+        },
+        {
+          "lcsc": "C2979179",
+          "mpn": "MY-AA-04",
+          "stock": 18875,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell SMD"
+        },
+        {
+          "lcsc": "C964881",
+          "mpn": "BH-AAA-B5AA001",
+          "stock": 8482,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AAA Cell SMD"
+        },
+        {
+          "lcsc": "C964863",
+          "mpn": "MY-FJ-113LM",
+          "stock": 4425,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment SMD"
+        },
+        {
+          "lcsc": "C964859",
+          "mpn": "MY-ZJ-110",
+          "stock": 3630,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment CR110 Cell SMD"
+        },
+        {
+          "lcsc": "C964845",
+          "mpn": "MY-2450-01",
+          "stock": 5740,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2450 Cell SMD"
+        },
+        {
+          "lcsc": "C964798",
+          "mpn": "BS-10-B2AA010",
+          "stock": 4845,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C964750",
+          "mpn": "BS-04-A1BJ004",
+          "stock": 9455,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964745",
+          "mpn": "BS-02-A1AJ006",
+          "stock": 37005,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964729",
+          "mpn": "BS-12-B3AA011",
+          "stock": 9215,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C964727",
+          "mpn": "BS-12-B3AA009",
+          "stock": 6650,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C5457109",
+          "mpn": "MY-FJ-590",
+          "stock": 3655,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C5457108",
+          "mpn": "MY-FJ-130-G",
+          "stock": 43340,
+          "foreign_onsale": true,
+          "description": "Battery Holders, Clips, Contacts "
+        },
+        {
+          "lcsc": "C5457097",
+          "mpn": "MY-FJ-115II",
+          "stock": 2840,
+          "foreign_onsale": true,
+          "description": "Battery CR115 Cell SMD"
+        },
+        {
+          "lcsc": "C5290177",
+          "mpn": "BH-123A-A1CJ002",
+          "stock": 1630,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical CR123A Cell"
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-secondary-title.json",
+      "code": 200,
+      "total_count": 2,
+      "category_matches": [
+        {
+          "catalogId": 57,
+          "catalogNameEn": "Batteries Rechargeable (Secondary)",
+          "parentId": 4,
+          "parentName": "Battery",
+          "level": 2,
+          "productNum": 2,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 4,
+          "rootCatalogName": "Battery",
+          "relationProductImage": null
+        }
+      ],
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-302020.json",
+      "code": 200,
+      "total_count": 19,
+      "category_matches": [
+        {
+          "catalogId": 792,
+          "catalogNameEn": "Headers, Male Pins",
+          "parentId": 170,
+          "parentName": "Rectangular Connectors",
+          "level": 3,
+          "productNum": 16,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20230317_MOLEX-874381043_C99280_front.jpg"
+        },
+        {
+          "catalogId": 798,
+          "catalogNameEn": "Rectangular Connector Housings",
+          "parentId": 170,
+          "parentName": "Rectangular Connectors",
+          "level": 3,
+          "productNum": 3,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 10,
+          "rootCatalogName": "Connectors, Interconnects",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20230317_BOOMELE-Boom-Precision-Elec-4-2-2-5Y_C98651_front.jpg"
+        }
+      ],
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-401230.json",
+      "code": 200,
+      "total_count": 2,
+      "category_matches": [
+        {
+          "catalogId": 1155,
+          "catalogNameEn": "Crystals",
+          "parentId": 496,
+          "parentName": "Crystals, Oscillators, Resonators",
+          "level": 3,
+          "productNum": 1,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 30,
+          "rootCatalogName": "Passives",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20180914_Hosonic-Elec-ESB8-00000F20E22_C99135_front.jpg"
+        },
+        {
+          "catalogId": 941,
+          "catalogNameEn": "Microcontrollers",
+          "parentId": 258,
+          "parentName": "Embedded",
+          "level": 3,
+          "productNum": 1,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 17,
+          "rootCatalogName": "Integrated Circuits (ICs)",
+          "relationProductImage": "https://assets.lcsc.com/images/lcsc/900x900/20221231_Microchip-Tech-PIC16F1615-E-ST_C99982_front.jpg"
+        }
+      ],
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-402020.json",
+      "code": 200,
+      "total_count": 1,
+      "category_matches": [
+        {
+          "catalogId": 2558,
+          "catalogNameEn": "Sockets",
+          "parentId": 2531,
+          "parentName": "Tools & Consumables",
+          "level": 3,
+          "productNum": 1,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 1729,
+          "rootCatalogName": "Maintenance, Repair & Operations",
+          "relationProductImage": null
+        }
+      ],
+      "returned_products": [
+        {
+          "lcsc": "C5154389",
+          "mpn": "402020",
+          "stock": 3,
+          "foreign_onsale": true,
+          "description": "Sockets "
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-402030.json",
+      "code": 200,
+      "total_count": 1,
+      "category_matches": [
+        {
+          "catalogId": 2558,
+          "catalogNameEn": "Sockets",
+          "parentId": 2531,
+          "parentName": "Tools & Consumables",
+          "level": 3,
+          "productNum": 1,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 1729,
+          "rootCatalogName": "Maintenance, Repair & Operations",
+          "relationProductImage": null
+        }
+      ],
+      "returned_products": [
+        {
+          "lcsc": "C5154395",
+          "mpn": "402030",
+          "stock": 3,
+          "foreign_onsale": true,
+          "description": "Sockets "
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-503040.json",
+      "code": 200,
+      "total_count": 1,
+      "category_matches": null,
+      "returned_products": [
+        {
+          "lcsc": "C3036664",
+          "mpn": "203040",
+          "stock": 13,
+          "foreign_onsale": true,
+          "description": "Electric Soldering Iron "
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-601235.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-C80909.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-LIR1632.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-LIR2032.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-Lithium-ion_Batteries.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-Lithium_Batteries.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-lithium_battery.json",
+      "code": 200,
+      "total_count": 463,
+      "category_matches": null,
+      "returned_products": [
+        {
+          "lcsc": "C964833",
+          "mpn": "MY-2032-12",
+          "stock": 11345,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C5239862",
+          "mpn": "BS-02-A1AJ010",
+          "stock": 66345,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C2988620",
+          "mpn": "BH-18650-B1BA002",
+          "stock": 3098,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical 18650 Cell SMD"
+        },
+        {
+          "lcsc": "C5290180",
+          "mpn": "BH-AA-A5BJ012",
+          "stock": 1937,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AA Cell"
+        },
+        {
+          "lcsc": "C5290175",
+          "mpn": "BH-18650-A1AJ006",
+          "stock": 2285,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C964752",
+          "mpn": "BS-05-A1BJ001",
+          "stock": 7860,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964723",
+          "mpn": "BS-12-B3AA003",
+          "stock": 31635,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C20606791",
+          "mpn": "BH-21700-B1BJ001",
+          "stock": 1243,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical SMD"
+        },
+        {
+          "lcsc": "C20606790",
+          "mpn": "MY-AA-06",
+          "stock": 1990,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell TH"
+        },
+        {
+          "lcsc": "C19184125",
+          "mpn": "MY-18650-04-J",
+          "stock": 2000,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 Cell TH"
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-Lithium_Polymer.json",
+      "code": 200,
+      "total_count": 7712,
+      "category_matches": null,
+      "returned_products": [
+        {
+          "lcsc": "C2682616",
+          "mpn": "MAX17048G+T10",
+          "stock": 24756,
+          "foreign_onsale": true,
+          "description": "I2C Lithium Battery DFN-8-EP(2x2) Battery Management RoHS"
+        },
+        {
+          "lcsc": "C424093",
+          "mpn": "MCP73831T-2ACI/OT",
+          "stock": 8910,
+          "foreign_onsale": true,
+          "description": "3.75V~6V 1 Lithium Battery 550mA SOT-23-5 Battery Chargers RoHS"
+        },
+        {
+          "lcsc": "C16581",
+          "mpn": "TP4056-42-ESOP8",
+          "stock": 65125,
+          "foreign_onsale": true,
+          "description": "Lithium Battery 1A ESOP-8 Battery Management RoHS"
+        },
+        {
+          "lcsc": "C46528106",
+          "mpn": "118EC454",
+          "stock": 23050,
+          "foreign_onsale": true,
+          "description": "100uF 35V Aluminum - Polymer Capacitors 10000hrs@105℃ Surface Mount D6.3xL7.7mm"
+        },
+        {
+          "lcsc": "C46528078",
+          "mpn": "118EC426",
+          "stock": 20155,
+          "foreign_onsale": true,
+          "description": "100uF 25V Aluminum - Polymer Capacitors 4000hrs@105℃ Surface Mount D6.3xL7.7mm"
+        },
+        {
+          "lcsc": "C5381776",
+          "mpn": "TP4054",
+          "stock": 299800,
+          "foreign_onsale": true,
+          "description": "Battery Charging IC Lithium-ion/Polymer SOT-23-5"
+        },
+        {
+          "lcsc": "C79111",
+          "mpn": "6TPE220MAZB",
+          "stock": 102562,
+          "foreign_onsale": true,
+          "description": "220uF ±20% 6.3V Tantalum Capacitors 35mΩ@100kHz"
+        },
+        {
+          "lcsc": "C15464",
+          "mpn": "BQ24075RGTR",
+          "stock": 17965,
+          "foreign_onsale": true,
+          "description": "4.35V~6.4V 1 Lithium Battery 1.5A QFN-16-EP(3x3) Battery Chargers RoHS"
+        },
+        {
+          "lcsc": "C42371885",
+          "mpn": "217EC0014",
+          "stock": 10750,
+          "foreign_onsale": true,
+          "description": "100uF ±20% 35V Through Hole,D6.3xL8mm 2000hrs@105℃"
+        },
+        {
+          "lcsc": "C42371878",
+          "mpn": "217EC0007",
+          "stock": 12490,
+          "foreign_onsale": true,
+          "description": "220uF ±20% 16V Through Hole,D5xL9mm 2000hrs@105℃"
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-LP401230.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-MS621FE-FL11E.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-PGEB201212.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-rechargeable_battery.json",
+      "code": 200,
+      "total_count": 463,
+      "category_matches": null,
+      "returned_products": [
+        {
+          "lcsc": "C964833",
+          "mpn": "MY-2032-12",
+          "stock": 11345,
+          "foreign_onsale": true,
+          "description": "Battery Clip Coin CR2032 Cell SMD"
+        },
+        {
+          "lcsc": "C5239862",
+          "mpn": "BS-02-A1AJ010",
+          "stock": 66345,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C2988620",
+          "mpn": "BH-18650-B1BA002",
+          "stock": 3098,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical 18650 Cell SMD"
+        },
+        {
+          "lcsc": "C5290180",
+          "mpn": "BH-AA-A5BJ012",
+          "stock": 1937,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical AA Cell"
+        },
+        {
+          "lcsc": "C5290175",
+          "mpn": "BH-18650-A1AJ006",
+          "stock": 2285,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical"
+        },
+        {
+          "lcsc": "C964752",
+          "mpn": "BS-05-A1BJ001",
+          "stock": 7860,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR2032 Cell TH"
+        },
+        {
+          "lcsc": "C964723",
+          "mpn": "BS-12-B3AA003",
+          "stock": 31635,
+          "foreign_onsale": true,
+          "description": "Battery Holder Coin CR1220 Cell SMD"
+        },
+        {
+          "lcsc": "C20606791",
+          "mpn": "BH-21700-B1BJ001",
+          "stock": 1243,
+          "foreign_onsale": true,
+          "description": "Battery Holder Cylindrical SMD"
+        },
+        {
+          "lcsc": "C20606790",
+          "mpn": "MY-AA-06",
+          "stock": 1990,
+          "foreign_onsale": true,
+          "description": "Battery AA Cell TH"
+        },
+        {
+          "lcsc": "C19184125",
+          "mpn": "MY-18650-04-J",
+          "stock": 2000,
+          "foreign_onsale": true,
+          "description": "Battery Contact/Spring Attachment 18650 Cell TH"
+        }
+      ]
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/search-stock-Taisko.json",
+      "code": 200,
+      "total_count": null,
+      "category_matches": null,
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/secondary-category-stock-false.json",
+      "code": 200,
+      "total_count": 2,
+      "category_matches": [
+        {
+          "catalogId": 57,
+          "catalogNameEn": "Batteries Rechargeable (Secondary)",
+          "parentId": 4,
+          "parentName": "Battery",
+          "level": 2,
+          "productNum": 2,
+          "hasExactMatch": null,
+          "childCatalogs": [],
+          "rootCatalogId": 4,
+          "rootCatalogName": "Battery",
+          "relationProductImage": null
+        }
+      ],
+      "returned_products": []
+    },
+    {
+      "raw_file": "procurement/battery-raw-2026-10-02/secondary-category-stock-true.json",
+      "code": 200,
+      "total_count": 0,
+      "category_matches": null,
+      "returned_products": []
+    }
+  ]
+}

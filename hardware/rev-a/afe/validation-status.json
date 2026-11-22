@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-01",
+  "afe-pin-nets.json": "Candidate physical connectivity; root BOM/footprint/PCB release audits required",
+  "afe-calculations.json": "Reproducible linear MNA calculation with stated idealizations; not measured",
+  "afe-channel-linear.cir": "Portable exported single-channel/reference linear model; no clipping/noise/real ADC sampling",
+  "vendor-ac.csv": "INVALID diagnostic: full-AFE vendor operating point did not validate; older wrong-operating-point CSV may remain after failed rerun",
+  "vendor-spike.csv": "INVALID diagnostic: full-AFE vendor operating point did not validate",
+  "vendor-offset.csv": "INVALID diagnostic: full-AFE vendor operating point did not validate",
+  "vendor-startup.csv": "UNQUALIFIED diagnostic: interconnected full-AFE vendor operating point could not be independently validated",
+  "vendor-vmid-standalone.log": "Isolated adapted TLV9002 family follower converged to 1.500398 V at a 3 V supply",
+  "vendor-adc-5p.csv": "Valid standalone adapted TLV9052 final-stage model test; initial 47 ohm / 1 nF / 1.2 us case fails quarter-LSB settling criterion",
+  "vendor-adc-10p.csv": "Valid standalone adapted TLV9052 final-stage model test; initial 47 ohm / 1 nF / 1.2 us case fails quarter-LSB settling criterion",
+  "adc-sweep/results.json": "Valid typical adapted final-stage family model RC/acquisition sweep",
+  "adc-stress/results.json": "Valid typical adapted final-stage family model polarity/passive-tolerance/time-window/periodic-track stress tests; no hardware or op-amp process-corner qualification",
+  "adc-stress-50k/results.json": "Valid typical adapted final-stage model 50 kS/s periodic tracking check; 85 samples after settling over 2 ms. Incremental settling passes quarter-LSB criterion, but 7 kHz / 10 pF total instantaneous error including tracking delay is 0.2687 LSB and does NOT pass quarter-LSB total-error criterion",
+  "vendor/combined-namespaced.lib": "Derived ngspice DC/AC/transient adapter: noise helper ports disabled. Must not be used for vendor-model noise analysis",
+  "vendor/sources.json": "Original TI family-model archive URLs and SHA256 hashes; originals preserved"
+}

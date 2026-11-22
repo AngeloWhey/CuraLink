@@ -1,0 +1,117 @@
+{
+  "checked_date": "2026-10-02",
+  "timezone": "America/New_York",
+  "scope": "Independent physical-pad and fault-boundary review; no canonical edits",
+  "manufacturer_sources": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tps25200.pdf",
+      "file": "hardware/rev-a/ltspice/sources/tps25200.pdf",
+      "bytes": 4579378,
+      "sha256": "fafdb867c456a2b24ef4fe5908e7d6da75703c0f24a36f984864d1d2daf9cd4a"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "file": "hardware/rev-a/ltspice/sources/bq25185.pdf",
+      "bytes": 1544774,
+      "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tps7a20.pdf",
+      "file": "hardware/rev-a/ltspice/sources/tps7a20.pdf",
+      "bytes": 8989493,
+      "sha256": "663a9ff5bca608643e711652cba00e7b8bf955c0993a9b86fa108d24d58b8ddc"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tlv3011b.pdf",
+      "file": "hardware/rev-a/ltspice/sources/tlv3011b.pdf",
+      "bytes": 1624948,
+      "sha256": "02993c016420887ee4f1ab2fa640e7596c9c1324a73f4f72bee3b32adec38df3"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+      "file": "hardware/rev-a/ltspice/sources/sn74lvc1g17.pdf",
+      "bytes": 3015318,
+      "sha256": "c76fa723fac4502423967a1aa087dd669106b52b8de620c024b26e56f5d59309"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "file": "hardware/rev-a/ltspice/sources/sn74lvc1g04.pdf",
+      "bytes": 2748219,
+      "sha256": "ac04a53de979125799e57ea5a6dff4138fe53e0eceebe45c31f57523669887d5"
+    },
+    {
+      "url": "https://www.diodes.com/datasheet/download/DMP2035U.pdf",
+      "file": "hardware/rev-a/ltspice/sources/dmp2035u.pdf",
+      "bytes": 531992,
+      "sha256": "8e34ec7fd49f1c2fdb94b1df5a1335e1cbf723899e0426a2cfc7b61d81246722"
+    },
+    {
+      "url": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
+      "file": "hardware/rev-a/ltspice/sources/ao3400a.pdf",
+      "bytes": 317848,
+      "sha256": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033"
+    },
+    {
+      "url": "https://www.diodes.com/datasheet/download/BAT54.pdf",
+      "file": "hardware/rev-a/ltspice/sources/bat54.pdf",
+      "bytes": 502635,
+      "sha256": "50b04e4e17bcf5db62164f6e5422e91546d0cace0ab2efed61660c3044b4fef0"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/bq2973.pdf",
+      "file": "hardware/rev-a/ltspice/sources/bq2973.pdf",
+      "bytes": 1500238,
+      "sha256": "33ecbecf2eca2276a7afa6cf41aa6f8016ef4a71572a52d6941dfba8f3def126"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tlv9004.pdf",
+      "file": "hardware/rev-a/ltspice/sources/tlv9004.pdf",
+      "bytes": 8043380,
+      "sha256": "e03eb2e84aec415cb205c8c48b369ea58ac074ad812cf3d8ff9476ca419455da"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tlv9054.pdf",
+      "file": "hardware/rev-a/ltspice/sources/tlv9054.pdf",
+      "bytes": 7127238,
+      "sha256": "9f143b3fc2e3768756cea227fadccecf7ead9bbd274f422621d05da7c5a448a4"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf",
+      "file": "hardware/rev-a/ltspice/sources/tpd4e05u06.pdf",
+      "bytes": 2801466,
+      "sha256": "c167cf1e72a5473a4d2c59b6a3c0251498701da05b7785919b9ceaae3b3e02c6"
+    }
+  ],
+  "canonical_snapshots": [
+    {
+      "file": "hardware/rev-a/power/power-components.json",
+      "bytes": 71204,
+      "sha256": "0748c5d8e91724a5e46c6828a1b2e90711eeb738edf3631d03383b399ea5ca06"
+    },
+    {
+      "file": "hardware/rev-a/afe/afe-pin-nets.json",
+      "bytes": 146259,
+      "sha256": "d5f6afce055657a79593d1d3863f9c2c3aaa4db0ea18dbab099045a57f387102"
+    },
+    {
+      "file": "hardware/rev-a/mcu/mcu-components.json",
+      "bytes": 53449,
+      "sha256": "341c120a1660569458471b7c45777aff846c7fe5294703ea73386229d31b6a1c"
+    }
+  ],
+  "remote_only_sources": [
+    {
+      "url": "https://www.onsemi.com/download/data-sheet/pdf/ss19-d.pdf",
+      "evidence": "Primary web PDF read succeeds; shell download HTTP403"
+    },
+    {
+      "url": "https://www.st.com/resource/en/datasheet/stm32wba52cg.pdf",
+      "evidence": "Primary web PDF read, DS14127 Rev10; Table1 includes selected STM32WBA52CG. Replaces variant-ambiguous WBA55UE alias."
+    },
+    {
+      "url": "https://www.st.com/resource/en/application_note/an4899-stm32-microcontroller-gpio-configuration-for-hardware-settings-and-lowpower-consumption-stmicroelectronics.pdf",
+      "evidence": "Previously verified primary source and MCU constraints; download retry timed out"
+    }
+  ],
+  "caution": "eFuse/D501 physical-pad and R511 resistor-range repairs happened during the review; snapshots are post-repair. Manufacturer SPICE pin order is not physical pad numbering."
+}

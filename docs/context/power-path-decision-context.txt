@@ -1,0 +1,394 @@
+Here’s a concise **Codex logging summary** of the latest CuraLink power-path decisions only.
+
+---
+
+# CuraLink Power Architecture Decision Update
+
+## 1. Charging and Runtime Modes
+
+**Decision: LOCKED BASELINE**
+
+CuraLink will **not operate while wireless charging is active**.
+
+Two mutually exclusive modes:
+
+### CHARGE mode
+
+* WPT active
+* RX coil active
+* Rectifier active
+* Battery charger active
+* Main CuraLink system OFF
+* AFE OFF
+* STM32/BLE OFF
+
+### RUN mode
+
+* WPT inactive
+* Battery powers CuraLink
+* AFE ON
+* STM32/BLE ON
+* Wireless charger inactive
+
+Important rule:
+
+$$
+\boxed{\text{WPT present} \Rightarrow \text{system disabled}}
+$$
+
+Do not automatically enable the system merely because charging is complete. If the external WPT field is still present, the system remains off.
+
+### Justification
+
+This is based on the neural signal-integrity FOC, not convenience.
+
+CuraLink targets µV-scale neural inputs and low input-referred noise. Wireless charging introduces:
+
+* strong magnetic field
+* resonant coil currents
+* rectifier switching/current pulses
+* charger current
+* supply/common-mode interference
+
+Since simultaneous charge-and-record operation is not required, keeping the system off during charging removes an avoidable interference source and simplifies verification.
+
+This also eliminates the need for charger/system load sharing during charging.
+
+---
+
+# 2. Power Path Functional Blocks
+
+Current receiver-side power path:
+
+```text
+RX PCB coil
+→ resonant tuning / matching
+→ rectifier
+→ reservoir capacitor
+→ overvoltage / input protection
+→ WPT_RAW
+→ 1S LiPo charger
+→ rechargeable battery
+→ system isolation switch
+→ regulated analog/digital rails
+→ CuraLink
+```
+
+Current nominal target:
+
+$$
+V_{WPT\_RAW}\approx5V
+$$
+
+This is a working target, not yet fabrication-locked.
+
+---
+
+# 3. Battery Architecture
+
+**Decision: BASELINE**
+
+Use a **single-cell rechargeable Li-ion/LiPo battery**.
+
+Battery capacity and exact chemistry/package remain open pending power-budget calculations.
+
+Because CuraLink does not run during charging, a full power-path charger is no longer required as a baseline.
+
+Required charger function:
+
+* safely charge 1S LiPo/Li-ion
+* CC/CV control
+* charge termination
+* protection/monitoring as appropriate
+
+---
+
+# 4. System Isolation During Charging
+
+**Decision: BASELINE**
+
+Battery-to-system connection should be physically interrupted when WPT is present.
+
+Preferred conceptual implementation:
+
+```text
+BATTERY
+   ↓
+high-side PMOS or load switch
+   ↓
+SYS_RAW
+```
+
+The switch is controlled by a **WPT_PRESENT / CHARGE_PRESENT** signal.
+
+Truth table:
+
+| WPT present | System switch | CuraLink |
+| ----------- | ------------- | -------- |
+| Yes         | OFF           | OFF      |
+| No          | ON            | ON       |
+
+Hardware control is preferred over firmware-only control.
+
+---
+
+# 5. PMOS Concept
+
+If a high-side PMOS is used:
+
+```text
+BATTERY → PMOS source
+PMOS drain → SYSTEM
+```
+
+For PMOS:
+
+$$
+V_{GS}=V_G-V_S
+$$
+
+### RUN
+
+Gate pulled low:
+
+$$
+V_G\approx0
+$$
+
+$$
+V_{GS}<0
+$$
+
+PMOS turns ON.
+
+### CHARGE
+
+Gate pulled up to approximately battery/source voltage:
+
+$$
+V_G\approx V_{BAT}
+$$
+
+$$
+V_{GS}\approx0
+$$
+
+PMOS turns OFF.
+
+Do **not** directly drive the PMOS gate from the ~5 V WPT_RAW node without checking absolute maximum ratings and source-relative gate voltage.
+
+Preferred implementation should generate gate control relative to the PMOS source.
+
+---
+
+# 6. PMOS Body-Diode / Reverse-Isolation Consideration
+
+A single PMOS may be acceptable if SYS_RAW is never externally driven above BAT.
+
+If true bidirectional isolation is required, consider:
+
+* back-to-back MOSFETs
+* dedicated load-switch IC with reverse-current blocking
+
+This remains open until the final system-power topology is selected.
+
+---
+
+# 7. Automatic Mode Transition
+
+Desired behavior:
+
+```text
+Place CuraLink on charger
+→ WPT_RAW appears
+→ system switch turns OFF
+→ charger charges battery
+
+Remove/disable charger
+→ WPT_RAW disappears
+→ system switch turns ON
+→ battery powers CuraLink automatically
+```
+
+This behavior should preferably be enforced in hardware.
+
+---
+
+# 8. WPT_RAW Functional Roles
+
+The rectified WPT node has two functions:
+
+1. supply the battery charger
+2. indicate that charging/WPT is present
+
+Conceptually:
+
+```text
+WPT_RAW
+├→ charger → battery
+└→ WPT_PRESENT detector → system-disable control
+```
+
+---
+
+# 9. Regulated Rails
+
+Current baseline system rails:
+
+$$
+\boxed{VDD_{ANA}\approx3.0V}
+$$
+
+$$
+\boxed{VDD_{DIG}\approx3.0V}
+$$
+
+Separate analog and digital LDOs are preferred.
+
+### Analog rail
+
+Powers:
+
+* neural AFE
+* analog spike detector/comparators
+* quiet bias/reference circuitry
+
+Primary FOCs:
+
+* low output noise
+* high PSRR
+* minimal coupling from BLE/MCU activity
+
+### Digital rail
+
+Powers:
+
+* STM32WBA52
+* BLE radio
+
+Primary FOCs:
+
+* adequate transient-current capability
+* low quiescent current
+* stable BLE burst handling
+
+Exact LDO parts remain open.
+
+---
+
+# 10. Analog Common-Mode
+
+Current baseline candidate:
+
+$$
+\boxed{V_{CM}\approx1.5V}
+$$
+
+for a 3.0 V analog rail.
+
+This common-mode/reference must be low noise because reference noise can directly contaminate the neural signal path.
+
+Exact generation method remains open.
+
+---
+
+# 11. Physical WPT Partition
+
+If using a separate RX-coil board, current preferred partition is:
+
+### Coil / power-receiver board
+
+* PCB RX coil
+* resonant capacitor
+* rectifier
+* reservoir capacitor
+* OVP/protection
+
+Output to main board:
+
+$$
+\boxed{DC\ WPT\_RAW}
+$$
+
+rather than high-Q RF.
+
+### Main CuraLink board
+
+* charger
+* battery
+* system isolation PMOS/load switch
+* analog LDO
+* digital LDO
+* AFE
+* STM32WBA52
+* BLE
+
+### Justification
+
+Keeping resonance and rectification physically close to the RX coil reduces:
+
+* connector parasitics inside the resonant loop
+* RF loss through mezzanine contacts
+* sensitivity of resonance to inter-board interconnect
+
+The board-to-board connector then carries DC rather than resonant RF.
+
+---
+
+# 12. Open Items
+
+Do not treat these as finalized:
+
+* exact WPT frequency
+* exact RX/TX coil geometry
+* resonant capacitor value
+* rectifier topology
+* OVP implementation
+* charger IC
+* battery capacity
+* battery protection implementation
+* PMOS vs dedicated load switch
+* exact WPT_PRESENT detector
+* exact analog LDO
+* exact digital LDO
+* exact VCM-generation circuit
+* exact board-to-board connector
+
+---
+
+# 13. Current Power Architecture Summary
+
+```text
+External WPT TX
+      ↓
+RX PCB coil
+      ↓
+resonant tuning
+      ↓
+rectifier
+      ↓
+reservoir / protection
+      ↓
+WPT_RAW ≈ 5 V nominal
+      ├────────→ 1S LiPo charger → battery
+      │
+      └────────→ WPT_PRESENT detector
+                           ↓
+                    SYSTEM DISABLE
+
+Battery
+  ↓
+PMOS / load switch
+  ↓
+SYS_RAW
+  ├→ 3.0 V analog LDO → AFE / analog detector
+  └→ 3.0 V digital LDO → STM32WBA52 / BLE
+```
+
+Operating policy:
+
+$$
+\boxed{\text{charge while OFF; run from battery only}}
+$$
+
+This is now the preferred CuraLink power architecture.

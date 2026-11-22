@@ -1,0 +1,39 @@
+{
+  "recorded_local_date": "2026-11-22",
+  "timezone": "America/New_York",
+  "purpose": "Git LFS lossless transport; restore before opening original large datasets",
+  "files": [
+    {
+      "destination": "MyWorkspace_wrk/data/cell_1.ds",
+      "compression": "gzip",
+      "concatenate_parts_in_order": true,
+      "original_bytes": 2345613824,
+      "original_sha256": "207fd8e9062126d4106c518daa69fce75c943b4a7e1c8da386c20dc90e2b6e4e",
+      "source_on_old_computer": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\cell_1.ds",
+      "parts": [
+        {
+          "path": "large-datasets/cell_1.ds.gz",
+          "bytes": 538481434,
+          "sha256": "171270105df9194ef07e2a2654a3e02d30746e07c46236f930423e7a86b541e2"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "destination": "MyWorkspace_wrk/data/__simdata125462.ds",
+      "compression": "gzip",
+      "concatenate_parts_in_order": true,
+      "original_bytes": 230537728,
+      "original_sha256": "ae72ec605bb6f4fb71e5f02cc23d8e9c5ab67975b0f040edad162fb1ed40f0be",
+      "source_on_old_computer": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\MyWorkspace_wrk\\data\\__simdata125462.ds",
+      "parts": [
+        {
+          "path": "large-datasets/__simdata125462.ds.gz",
+          "bytes": 41123899,
+          "sha256": "c1b6d76f1a53e8a9fddc4d8339e21af7b37e70e1c636283d45ba11e04e1d7bab"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    }
+  ]
+}

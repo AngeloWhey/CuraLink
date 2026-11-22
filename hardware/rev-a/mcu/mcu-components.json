@@ -1,0 +1,1721 @@
+{
+  "schema_version": 1,
+  "status": "Engineering recommendation; not fabrication-released",
+  "recorded_date": "2026-10-01",
+  "owner": "MCU/acquisition/RF",
+  "components": [
+    {
+      "ref": "U401",
+      "value": "STM32WBA52CGU6",
+      "mpn": "STM32WBA52CGU6",
+      "lcsc": "C19626860",
+      "package": "UFQFPN-48 7x7mm P0.5mm EP5.6x5.6mm",
+      "pins": {
+        "1": null,
+        "2": null,
+        "3": "ADC_IN_1",
+        "4": "ADC_IN_2",
+        "5": "ADC_IN_3",
+        "6": "AVDD_3V0",
+        "7": "ADC_IN_4",
+        "8": "ADC_SPARE",
+        "9": null,
+        "10": "ADC_IN_5",
+        "11": "DVDD_3V0",
+        "12": "ADC_IN_6",
+        "13": "ADC_IN_7",
+        "14": "ADC_IN_8",
+        "15": null,
+        "16": "LSE_OUT",
+        "17": "LSE_IN",
+        "18": null,
+        "19": "GPIO_TEST",
+        "20": "ACQ_MARKER",
+        "21": null,
+        "22": "DVDD_3V0",
+        "23": "UART_RX_MCU",
+        "24": "SWO_MCU",
+        "25": null,
+        "26": "SWCLK_MCU",
+        "27": "SWDIO_MCU",
+        "28": "UART_TX_MCU",
+        "29": null,
+        "30": null,
+        "31": null,
+        "32": null,
+        "33": null,
+        "34": "BOOT0",
+        "35": "DVDD_3V0",
+        "36": "NRST",
+        "37": "MCU_RF",
+        "38": "VDDHPA_OUT",
+        "39": "DVDD_3V0",
+        "40": "HSE_OUT",
+        "41": "HSE_IN",
+        "42": "DVDD_3V0",
+        "43": "DVDD_3V0",
+        "44": "VCAP_OUT",
+        "45": null,
+        "46": null,
+        "47": null,
+        "48": null,
+        "49": "GND"
+      },
+      "pin_names": {
+        "1": "PB12",
+        "2": "PB11",
+        "3": "PA8/ADC4_IN1",
+        "4": "PA7/ADC4_IN2",
+        "5": "PA6/ADC4_IN3",
+        "6": "VDDA",
+        "7": "PA5/ADC4_IN4",
+        "8": "PA3/ADC4_IN6",
+        "9": "PB10",
+        "10": "PA2/ADC4_IN7",
+        "11": "VDD",
+        "12": "PA1/ADC4_IN8",
+        "13": "PA0/ADC4_IN9",
+        "14": "PB9/ADC4_IN10",
+        "15": "PB8",
+        "16": "PC15/OSC32_OUT",
+        "17": "PC14/OSC32_IN",
+        "18": "PC13",
+        "19": "PB7",
+        "20": "PB6",
+        "21": "PB5",
+        "22": "VDD",
+        "23": "PB4/USART2_RX",
+        "24": "PB3/SWO",
+        "25": "PA15",
+        "26": "PA14/SWCLK",
+        "27": "PA13/SWDIO",
+        "28": "PA12/USART2_TX",
+        "29": "PA11",
+        "30": "PB2",
+        "31": "PB1",
+        "32": "PB0",
+        "33": "PB15",
+        "34": "PH3/BOOT0",
+        "35": "VDD",
+        "36": "NRST",
+        "37": "RF",
+        "38": "VDDHPA",
+        "39": "VDDRF",
+        "40": "OSC_OUT",
+        "41": "OSC_IN",
+        "42": "VDDRFPA",
+        "43": "VDD",
+        "44": "VCAP",
+        "45": "PA10",
+        "46": "PA9",
+        "47": "PB14",
+        "48": "PB13",
+        "49": "VSS/EP"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "NON-SMPS pin map. Pin38 VDDHPA is OUTPUT:470nF only. Pin44 VCAP is OUTPUT:4.7uF only. ADC reference internally VDDA. Null pins require NC markers. SWD-only debug preserves PB4 UART RX. PA3 spare not in normal scan.",
+      "pin_types": {
+        "1": "bidirectional",
+        "2": "bidirectional",
+        "3": "bidirectional",
+        "4": "bidirectional",
+        "5": "bidirectional",
+        "6": "power_in",
+        "7": "bidirectional",
+        "8": "bidirectional",
+        "9": "bidirectional",
+        "10": "bidirectional",
+        "11": "power_in",
+        "12": "bidirectional",
+        "13": "bidirectional",
+        "14": "bidirectional",
+        "15": "bidirectional",
+        "16": "bidirectional",
+        "17": "bidirectional",
+        "18": "bidirectional",
+        "19": "bidirectional",
+        "20": "bidirectional",
+        "21": "bidirectional",
+        "22": "power_in",
+        "23": "bidirectional",
+        "24": "bidirectional",
+        "25": "bidirectional",
+        "26": "bidirectional",
+        "27": "bidirectional",
+        "28": "bidirectional",
+        "29": "bidirectional",
+        "30": "bidirectional",
+        "31": "bidirectional",
+        "32": "bidirectional",
+        "33": "bidirectional",
+        "34": "bidirectional",
+        "35": "power_in",
+        "36": "input",
+        "37": "bidirectional",
+        "38": "power_out",
+        "39": "power_in",
+        "40": "bidirectional",
+        "41": "bidirectional",
+        "42": "power_in",
+        "43": "power_in",
+        "44": "power_out",
+        "45": "bidirectional",
+        "46": "bidirectional",
+        "47": "bidirectional",
+        "48": "bidirectional",
+        "49": "power_in"
+      },
+      "source": "https://www.st.com/resource/en/datasheet/stm32wba52cg.pdf",
+      "status": "engineering recommendation",
+      "stock": 9,
+      "stock_checked": "2026-10-01"
+    },
+    {
+      "ref": "U402",
+      "value": "MLPF-WB-04D3",
+      "mpn": "MLPF-WB-04D3",
+      "lcsc": "C22378853",
+      "package": "CSPG-6 1.6x1.0mm P0.5mm",
+      "pins": {
+        "A1": "MCU_RF",
+        "A2": "GND",
+        "A3": "RF_50OHM",
+        "B1": "GND",
+        "B2": "GND",
+        "B3": "GND"
+      },
+      "pin_names": {
+        "A1": "IN",
+        "A2": "GND4",
+        "A3": "OUT",
+        "B1": "GND3",
+        "B2": "GND2",
+        "B3": "GND1"
+      },
+      "page": "RF",
+      "notes": "MCU-to-filter63ohm, filter output50ohm. Replicate ST RF grounding/stackup. Do not also populate discrete MCU filter.",
+      "source": "https://www.st.com/resource/en/datasheet/mlpf-wb-04d3.pdf",
+      "stock": 192,
+      "stock_checked": "2026-10-01"
+    },
+    {
+      "ref": "Y401",
+      "value": "32MHz / CL8pF",
+      "mpn": "NX2016SA-32MHZ-STD-CZS-5",
+      "lcsc": "C843260",
+      "package": "SMD2016-4",
+      "pins": {
+        "1": "HSE_IN",
+        "2": "GND",
+        "3": "HSE_OUT",
+        "4": "GND"
+      },
+      "pin_names": {
+        "1": "XTAL",
+        "2": "CASE",
+        "3": "XTAL",
+        "4": "CASE"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "No external HSE load caps: use programmable internal banks. +/-10ppm initial,+/-25ppm temperature; trim/aging must meet radio tolerance.",
+      "source": "https://datasheet.lcsc.com/datasheet/pdf/7d295f64f7c44230fecd37b1086251f1.pdf?productCode=C843260",
+      "stock": 10115,
+      "stock_checked": "2026-10-01"
+    },
+    {
+      "ref": "Y402",
+      "value": "32.768kHz / CL6pF",
+      "mpn": "NX3215SA 32.768KHZ EXS00A-MU00525",
+      "lcsc": "C528987",
+      "package": "SMD3215-2",
+      "pins": {
+        "1": "LSE_IN",
+        "2": "LSE_OUT"
+      },
+      "pin_names": {
+        "1": "XTAL",
+        "2": "XTAL"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ESR<=70kohm,C0<=1.5pF family. C421/422 initial load values; startup/frequency/drive-level validation mandatory. Medium-high drive initial recommendation.",
+      "source": "https://www.ndk.com/images/products/catalog/c_NX3215SA_e.pdf",
+      "stock": 6095,
+      "stock_checked": "2026-10-01"
+    },
+    {
+      "ref": "AE401",
+      "value": "2.45GHz chip antenna",
+      "mpn": "2450AT18A0100001E",
+      "lcsc": "C17430588",
+      "package": "1206 3.2x1.6x1.3mm",
+      "pins": {
+        "1": "ANT_FEED",
+        "2": null
+      },
+      "pin_names": {
+        "1": "FEED",
+        "2": "NC_ANCHOR"
+      },
+      "page": "RF",
+      "notes": "Pad2 soldered to isolated mechanical anchor, never GND. Corner mount/all-layer keepout per manufacturer p3. Tee values only initial; PCB-specific match unverified.",
+      "source": "https://www.johansontechnology.com/docs/3827/Antenna-2450AT18A0100001E-Rev4.0.pdf",
+      "stock": 656,
+      "stock_checked": "2026-10-01"
+    },
+    {
+      "ref": "J401",
+      "value": "SWD/SWO pogo pads",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "6 pogo pads custom",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "SWDIO_DBG",
+        "3": "GND",
+        "4": "SWCLK_DBG",
+        "5": "NRST",
+        "6": "SWO_DBG"
+      },
+      "pin_names": {
+        "1": "VTREF_SENSE_ONLY",
+        "2": "SWDIO",
+        "3": "GND",
+        "4": "SWCLK",
+        "5": "NRST_OPEN_DRAIN",
+        "6": "SWO"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Nonstandard ordering must be labeled. VTREF is sense only, not power input. Debugger must tristate when target off. Series resistors do not prevent backfeed.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "J402",
+      "value": "UART pogo pads",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "4 pogo pads custom",
+      "pins": {
+        "1": "GND",
+        "2": "UART_TX_DBG",
+        "3": "UART_RX_DBG",
+        "4": "DVDD_3V0"
+      },
+      "pin_names": {
+        "1": "GND",
+        "2": "TARGET_TX",
+        "3": "TARGET_RX",
+        "4": "VTREF_SENSE_ONLY"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Target-referenced3.0V UART only; disconnect/tristate during WPT charge. No external power input.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "J403",
+      "value": "BOOT0 jumper OPEN",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "2-pad solder jumper",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "BOOT0"
+      },
+      "pin_names": {
+        "1": "DVDD",
+        "2": "BOOT0"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Default open;100kohm pulldown. Check option-byte boot behavior before recovery.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "J404",
+      "value": "U.FL RF test DNP",
+      "mpn": "U.FL-R-SMT-1(80)",
+      "lcsc": "C88374",
+      "package": "Hirose U.FL-R-SMT-1",
+      "pins": {
+        "1": "RF_COAX",
+        "2": "GND",
+        "3": "GND"
+      },
+      "pin_names": {
+        "1": "CONTACT",
+        "2": "SHELL",
+        "3": "SHELL"
+      },
+      "page": "RF",
+      "notes": "DNP. PROJECT pad mapping1 central contact,2/3 shell must be audited in footprint. Fit R418 and remove R417 for coax; never both.",
+      "dnp": true,
+      "stock": 82165,
+      "stock_checked": "2026-10-01",
+      "source": "https://datasheet.lcsc.com/lcsc/1811091710_HRS-Hirose-U-FL-R-SMT-1-80_C88374.pdf"
+    },
+    {
+      "ref": "C401",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "lcsc": "C71629",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Adjacent U401 VDD pin11.",
+      "sourcing": {
+        "mpn": "GRM155R71C104KA88D",
+        "lcsc": "C71629",
+        "package": "0402",
+        "tolerance": "10%",
+        "manufacturer": "muRata",
+        "source": "https://www.lcsc.com/product-detail/C71629.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/1c0e055aad254a09bfc0f6ba3f32eb9e.pdf?productCode=C71629",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 997700,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "C402",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "lcsc": "C71629",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Adjacent U401 VDD pin22.",
+      "sourcing": {
+        "mpn": "GRM155R71C104KA88D",
+        "lcsc": "C71629",
+        "package": "0402",
+        "tolerance": "10%",
+        "manufacturer": "muRata",
+        "source": "https://www.lcsc.com/product-detail/C71629.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/1c0e055aad254a09bfc0f6ba3f32eb9e.pdf?productCode=C71629",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 997700,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "C403",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "lcsc": "C71629",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Adjacent U401 VDD pin35.",
+      "sourcing": {
+        "mpn": "GRM155R71C104KA88D",
+        "lcsc": "C71629",
+        "package": "0402",
+        "tolerance": "10%",
+        "manufacturer": "muRata",
+        "source": "https://www.lcsc.com/product-detail/C71629.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/1c0e055aad254a09bfc0f6ba3f32eb9e.pdf?productCode=C71629",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 997700,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "C404",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "lcsc": "C71629",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Adjacent U401 VDD pin43.",
+      "sourcing": {
+        "mpn": "GRM155R71C104KA88D",
+        "lcsc": "C71629",
+        "package": "0402",
+        "tolerance": "10%",
+        "manufacturer": "muRata",
+        "source": "https://www.lcsc.com/product-detail/C71629.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/1c0e055aad254a09bfc0f6ba3f32eb9e.pdf?productCode=C71629",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 997700,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "C405",
+      "value": "10uF X5R >=10V",
+      "mpn": "CL10A106KP8NNNC",
+      "lcsc": "C19702",
+      "package": "0603",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "MCU bulk bypass; qualify effective capacitance.",
+      "sourcing": {
+        "mpn": "CL10A106KP8NNNC",
+        "lcsc": "C19702",
+        "package": "0603",
+        "tolerance": "10%",
+        "manufacturer": "Samsung Electro-Mechanics",
+        "source": "https://www.lcsc.com/product-detail/C19702.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 3507940,
+        "order_multiple": 20,
+        "minimum_order": 20,
+        "description": "10uF ±10% 10V Ceramic Capacitor X5R 0603",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "C406",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "lcsc": "C71629",
+      "package": "0402",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "VDDA pin6 quiet-ground local bypass.",
+      "sourcing": {
+        "mpn": "GRM155R71C104KA88D",
+        "lcsc": "C71629",
+        "package": "0402",
+        "tolerance": "10%",
+        "manufacturer": "muRata",
+        "source": "https://www.lcsc.com/product-detail/C71629.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/1c0e055aad254a09bfc0f6ba3f32eb9e.pdf?productCode=C71629",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 997700,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "C407",
+      "value": "1uF X7R >=10V",
+      "mpn": "CL10B105KO8NNNC",
+      "lcsc": "C59782",
+      "package": "0603",
+      "pins": {
+        "1": "AVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "VDDA/ADC reference bypass.",
+      "sourcing": {
+        "mpn": "CL10B105KO8NNNC",
+        "lcsc": "C59782",
+        "package": "0603",
+        "tolerance": "10%",
+        "manufacturer": "Samsung Electro-Mechanics",
+        "source": "https://www.lcsc.com/product-detail/C59782.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C59782",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 204950,
+        "order_multiple": 50,
+        "minimum_order": 50,
+        "description": "1uF ±10% 16V Ceramic Capacitor X7R 0603",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering. Preserve X7R and at least 10 V by changing the proposed 0402 footprint to 0603. Do not silently substitute X5R."
+      }
+    },
+    {
+      "ref": "C408",
+      "value": "4.7uF X5R >=10V",
+      "mpn": "CL10A475KP8NNNC",
+      "lcsc": "C1705",
+      "package": "0603",
+      "pins": {
+        "1": "VCAP_OUT",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "MANDATORY LDO core output cap; no other loads; qualify effective C/ESR.",
+      "sourcing": {
+        "mpn": "CL10A475KP8NNNC",
+        "lcsc": "C1705",
+        "package": "0603",
+        "tolerance": "10%",
+        "manufacturer": "Samsung Electro-Mechanics",
+        "source": "https://www.lcsc.com/product-detail/C1705.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1705",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 802100,
+        "order_multiple": 50,
+        "minimum_order": 50,
+        "description": "4.7uF ±10% 10V Ceramic Capacitor X5R 0603",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "C409",
+      "value": "470nF X7R >=10V",
+      "mpn": "CL10B474KA8NNNC",
+      "lcsc": "C1623",
+      "package": "0603",
+      "pins": {
+        "1": "VDDHPA_OUT",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "MANDATORY RF PA internal regulator output cap. Not3V supply.",
+      "sourcing": {
+        "mpn": "CL10B474KA8NNNC",
+        "lcsc": "C1623",
+        "package": "0603",
+        "tolerance": "10%",
+        "manufacturer": "Samsung Electro-Mechanics",
+        "source": "https://www.lcsc.com/product-detail/C1623.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1623",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 385160,
+        "order_multiple": 20,
+        "minimum_order": 20,
+        "description": "470nF ±10% 25V Ceramic Capacitor X7R 0603",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering. Preserve X7R and at least 10 V by changing the proposed 0402 footprint to 0603. Do not silently substitute X5R."
+      }
+    },
+    {
+      "ref": "C410",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "lcsc": "C71629",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "RF",
+      "notes": "RF VDDRF pin39 local bypass.",
+      "sourcing": {
+        "mpn": "GRM155R71C104KA88D",
+        "lcsc": "C71629",
+        "package": "0402",
+        "tolerance": "10%",
+        "manufacturer": "muRata",
+        "source": "https://www.lcsc.com/product-detail/C71629.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/1c0e055aad254a09bfc0f6ba3f32eb9e.pdf?productCode=C71629",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 997700,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "C411",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "lcsc": "C71629",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "RF",
+      "notes": "RF VDDRFPA pin42 local bypass.",
+      "sourcing": {
+        "mpn": "GRM155R71C104KA88D",
+        "lcsc": "C71629",
+        "package": "0402",
+        "tolerance": "10%",
+        "manufacturer": "muRata",
+        "source": "https://www.lcsc.com/product-detail/C71629.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/1c0e055aad254a09bfc0f6ba3f32eb9e.pdf?productCode=C71629",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 997700,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "C412",
+      "value": "100nF X7R >=10V",
+      "mpn": "GRM155R71C104KA88D",
+      "lcsc": "C71629",
+      "package": "0402",
+      "pins": {
+        "1": "NRST",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ST reset bypass at MCU.",
+      "sourcing": {
+        "mpn": "GRM155R71C104KA88D",
+        "lcsc": "C71629",
+        "package": "0402",
+        "tolerance": "10%",
+        "manufacturer": "muRata",
+        "source": "https://www.lcsc.com/product-detail/C71629.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/1c0e055aad254a09bfc0f6ba3f32eb9e.pdf?productCode=C71629",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 997700,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "100nF ±10% 16V Ceramic Capacitor X7R 0402",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R401",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "lcsc": "C852539",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_1",
+        "2": "ADC_IN_1"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain.",
+      "tolerance": "0.1%"
+    },
+    {
+      "ref": "C413",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "lcsc": "C75274",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_1",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation.",
+      "tolerance": "5%"
+    },
+    {
+      "ref": "R402",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "lcsc": "C852539",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_2",
+        "2": "ADC_IN_2"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain.",
+      "tolerance": "0.1%"
+    },
+    {
+      "ref": "C414",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "lcsc": "C75274",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_2",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation.",
+      "tolerance": "5%"
+    },
+    {
+      "ref": "R403",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "lcsc": "C852539",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_3",
+        "2": "ADC_IN_3"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain.",
+      "tolerance": "0.1%"
+    },
+    {
+      "ref": "C415",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "lcsc": "C75274",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_3",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation.",
+      "tolerance": "5%"
+    },
+    {
+      "ref": "R404",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "lcsc": "C852539",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_4",
+        "2": "ADC_IN_4"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain.",
+      "tolerance": "0.1%"
+    },
+    {
+      "ref": "C416",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "lcsc": "C75274",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_4",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation.",
+      "tolerance": "5%"
+    },
+    {
+      "ref": "R405",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "lcsc": "C852539",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_5",
+        "2": "ADC_IN_5"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain.",
+      "tolerance": "0.1%"
+    },
+    {
+      "ref": "C417",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "lcsc": "C75274",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_5",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation.",
+      "tolerance": "5%"
+    },
+    {
+      "ref": "R406",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "lcsc": "C852539",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_6",
+        "2": "ADC_IN_6"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain.",
+      "tolerance": "0.1%"
+    },
+    {
+      "ref": "C418",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "lcsc": "C75274",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_6",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation.",
+      "tolerance": "5%"
+    },
+    {
+      "ref": "R407",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "lcsc": "C852539",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_7",
+        "2": "ADC_IN_7"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain.",
+      "tolerance": "0.1%"
+    },
+    {
+      "ref": "C419",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "lcsc": "C75274",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_7",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation.",
+      "tolerance": "5%"
+    },
+    {
+      "ref": "R408",
+      "value": "150ohm 0.1%",
+      "mpn": "RT0402BRD07150RL",
+      "lcsc": "C852539",
+      "package": "0402",
+      "pins": {
+        "1": "AFE_OUT_8",
+        "2": "ADC_IN_8"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Series isolation for TLV9054 final driver. Model-tested with470pF C0G; require1.65625us acquisition at48MHz79.5cycles. Accuracy and aperture/noise gates remain.",
+      "tolerance": "0.1%"
+    },
+    {
+      "ref": "C420",
+      "value": "470pF C0G 5% 50V",
+      "mpn": "0402CG471J500NT",
+      "lcsc": "C75274",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_IN_8",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ADC charge reservoir at MCU pin; final tested typical model uses150ohm isolation. Addsno material7kHz anti-alias attenuation.",
+      "tolerance": "5%"
+    },
+    {
+      "ref": "C421",
+      "value": "4.7pF C0G +/-0.25pF 50V",
+      "mpn": "0402CG4R7C500NT",
+      "lcsc": "C1569",
+      "package": "0402",
+      "pins": {
+        "1": "LSE_IN",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "INITIAL load assumes equivalent stray3.65pF (internal3pFtyp+PCB0.65pF). Tune startup/frequency. Exact sourcing requires root check."
+    },
+    {
+      "ref": "C422",
+      "value": "4.7pF C0G +/-0.25pF 50V",
+      "mpn": "0402CG4R7C500NT",
+      "lcsc": "C1569",
+      "package": "0402",
+      "pins": {
+        "1": "LSE_OUT",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Match C421; no parallel crystal resistor."
+    },
+    {
+      "ref": "R409",
+      "value": "100kohm 1%",
+      "mpn": "0402WGF1003TCE",
+      "lcsc": "C25741",
+      "package": "0402",
+      "pins": {
+        "1": "BOOT0",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "ST reference normal boot pulldown.",
+      "sourcing": {
+        "mpn": "0402WGF1003TCE",
+        "lcsc": "C25741",
+        "package": "0402",
+        "tolerance": "1%",
+        "manufacturer": "UNI-ROYAL",
+        "source": "https://www.lcsc.com/product-detail/C25741.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 3938700,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "100kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R410",
+      "value": "10kohm 1%",
+      "mpn": "RT0402BRD0710KL",
+      "lcsc": "C190095",
+      "package": "0402",
+      "pins": {
+        "1": "DVDD_3V0",
+        "2": "NRST"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Additional reset pullup; MCU also permanent internal pullup.",
+      "sourcing": {
+        "mpn": "RT0402BRD0710KL",
+        "lcsc": "C190095",
+        "package": "0402",
+        "tolerance": "0.1%",
+        "manufacturer": "YAGEO",
+        "source": "https://www.lcsc.com/product-detail/C190095.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/46d7760c582640714d605308a25a220a.pdf?productCode=C190095",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 65050,
+        "order_multiple": 50,
+        "minimum_order": 50,
+        "description": "62.5mW 10kΩ 50V Thin Film Resistor ±25ppm/℃ ±0.1% 0402 Chip Resistor - Surface Mount RoHS",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R411",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "lcsc": "C25118",
+      "package": "0402",
+      "pins": {
+        "1": "SWDIO_MCU",
+        "2": "SWDIO_DBG"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Damping; no backfeed blocking.",
+      "sourcing": {
+        "mpn": "0402WGF470JTCE",
+        "lcsc": "C25118",
+        "package": "0402",
+        "tolerance": "1%",
+        "manufacturer": "UNI-ROYAL",
+        "source": "https://www.lcsc.com/product-detail/C25118.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25118",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 149400,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "47Ω ±1% 62.5mW 0402 Thick Film Resistor",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R412",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "lcsc": "C25118",
+      "package": "0402",
+      "pins": {
+        "1": "SWCLK_MCU",
+        "2": "SWCLK_DBG"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Damping; modest initial SWD clock.",
+      "sourcing": {
+        "mpn": "0402WGF470JTCE",
+        "lcsc": "C25118",
+        "package": "0402",
+        "tolerance": "1%",
+        "manufacturer": "UNI-ROYAL",
+        "source": "https://www.lcsc.com/product-detail/C25118.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25118",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 149400,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "47Ω ±1% 62.5mW 0402 Thick Film Resistor",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R413",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "lcsc": "C25118",
+      "package": "0402",
+      "pins": {
+        "1": "SWO_MCU",
+        "2": "SWO_DBG"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Optional observation/damping.",
+      "sourcing": {
+        "mpn": "0402WGF470JTCE",
+        "lcsc": "C25118",
+        "package": "0402",
+        "tolerance": "1%",
+        "manufacturer": "UNI-ROYAL",
+        "source": "https://www.lcsc.com/product-detail/C25118.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25118",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 149400,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "47Ω ±1% 62.5mW 0402 Thick Film Resistor",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R414",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "lcsc": "C25118",
+      "package": "0402",
+      "pins": {
+        "1": "UART_TX_MCU",
+        "2": "UART_TX_DBG"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "UART source damping.",
+      "sourcing": {
+        "mpn": "0402WGF470JTCE",
+        "lcsc": "C25118",
+        "package": "0402",
+        "tolerance": "1%",
+        "manufacturer": "UNI-ROYAL",
+        "source": "https://www.lcsc.com/product-detail/C25118.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25118",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 149400,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "47Ω ±1% 62.5mW 0402 Thick Film Resistor",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R415",
+      "value": "47ohm 1%",
+      "mpn": "0402WGF470JTCE",
+      "lcsc": "C25118",
+      "package": "0402",
+      "pins": {
+        "1": "UART_RX_DBG",
+        "2": "UART_RX_MCU"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Input damping; no off-state isolation.",
+      "sourcing": {
+        "mpn": "0402WGF470JTCE",
+        "lcsc": "C25118",
+        "package": "0402",
+        "tolerance": "1%",
+        "manufacturer": "UNI-ROYAL",
+        "source": "https://www.lcsc.com/product-detail/C25118.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25118",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 149400,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "47Ω ±1% 62.5mW 0402 Thick Film Resistor",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R416",
+      "value": "1Mohm 1%",
+      "mpn": "0402WGF1004TCE",
+      "lcsc": "C26083",
+      "package": "0402",
+      "pins": {
+        "1": "ADC_SPARE",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Bias spare PA3 for observation. Remove to repurpose.",
+      "sourcing": {
+        "mpn": "0402WGF1004TCE",
+        "lcsc": "C26083",
+        "package": "0402",
+        "tolerance": "1%",
+        "manufacturer": "UNI-ROYAL",
+        "source": "https://www.lcsc.com/product-detail/C26083.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C26083",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 1222500,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "1MΩ ±1% 62.5mW 0402 Thick Film Resistor",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R417",
+      "value": "0ohm",
+      "mpn": "0402WGF0000TCE",
+      "lcsc": "C17168",
+      "package": "0402",
+      "pins": {
+        "1": "RF_50OHM",
+        "2": "ANT_T_IN"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "RF",
+      "notes": "Default antenna selection. Never fit withR418.",
+      "sourcing": {
+        "mpn": "0402WGF0000TCE",
+        "lcsc": "C17168",
+        "package": "0402",
+        "tolerance": "1%",
+        "manufacturer": "UNI-ROYAL",
+        "source": "https://www.lcsc.com/product-detail/C17168.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17168",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 3357900,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "0Ω ±1% 62.5mW 0402 Thick Film Resistor",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "R418",
+      "value": "0ohm DNP",
+      "mpn": "0402WGF0000TCE",
+      "lcsc": "C17168",
+      "package": "0402",
+      "pins": {
+        "1": "RF_50OHM",
+        "2": "RF_COAX"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "RF",
+      "notes": "Coax selection. RemoveR417 before fit. Keep stubs minimal.",
+      "dnp": true,
+      "sourcing": {
+        "mpn": "0402WGF0000TCE",
+        "lcsc": "C17168",
+        "package": "0402",
+        "tolerance": "1%",
+        "manufacturer": "UNI-ROYAL",
+        "source": "https://www.lcsc.com/product-detail/C17168.html",
+        "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17168",
+        "stock_checked": "2026-10-01 America/New_York",
+        "stock": 3357900,
+        "order_multiple": 100,
+        "minimum_order": 100,
+        "description": "0Ω ±1% 62.5mW 0402 Thick Film Resistor",
+        "notes": "Sourced candidate; stock is a snapshot, not reserved. PCB-assembly library eligibility must be checked before ordering."
+      }
+    },
+    {
+      "ref": "L401",
+      "value": "2.7nH INITIAL",
+      "mpn": "LQG15HS2N7S02D",
+      "lcsc": "C77108",
+      "package": "0402",
+      "pins": {
+        "1": "ANT_T_MID",
+        "2": "GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "RF",
+      "notes": "Johanson antenna tee SHUNT inductor to GND; board-specific matching gate. DNP for bypass; NEVER substitute0ohm in the shunt position.",
+      "stock": 25600,
+      "stock_checked": "2026-10-01"
+    },
+    {
+      "ref": "C423",
+      "value": "1pF C0G +/-0.25pF 50V INITIAL",
+      "mpn": "0402CG1R0C500NT",
+      "lcsc": "C1550",
+      "package": "0402",
+      "pins": {
+        "1": "ANT_T_IN",
+        "2": "ANT_T_MID"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "RF",
+      "notes": "Antenna tee SERIES input capacitor; root verify RF model. Replace with0ohm for bypass; do not simply DNP or antenna is disconnected."
+    },
+    {
+      "ref": "L402",
+      "value": "3.9nH INITIAL",
+      "mpn": "LQG15HS3N9S02D",
+      "lcsc": "C77109",
+      "package": "0402",
+      "pins": {
+        "1": "ANT_T_MID",
+        "2": "ANT_FEED"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "page": "RF",
+      "notes": "Johanson tee starting value; unvalidated on CuraLink.0ohm bypass possible.",
+      "stock": 55350,
+      "stock_checked": "2026-10-01"
+    },
+    {
+      "ref": "TP401",
+      "value": "ACQ_MARKER",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "ACQ_MARKER"
+      },
+      "pin_names": {
+        "1": "ACQ_MARKER"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Frame timing and ADC/RF calibration gap observation.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP402",
+      "value": "GPIO_TEST",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "GPIO_TEST"
+      },
+      "pin_names": {
+        "1": "GPIO_TEST"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Spare PB7 GPIO.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP403",
+      "value": "ADC_SPARE",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "ADC_SPARE"
+      },
+      "pin_names": {
+        "1": "ADC_SPARE"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "9th externalADC PA3; not normal scan.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP404",
+      "value": "AVDD_3V0",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "AVDD_3V0"
+      },
+      "pin_names": {
+        "1": "AVDD_3V0"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Analog rail/noise.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP405",
+      "value": "DVDD_3V0",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "DVDD_3V0"
+      },
+      "pin_names": {
+        "1": "DVDD_3V0"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "MCU rail.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP406",
+      "value": "GND",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "GND"
+      },
+      "pin_names": {
+        "1": "GND"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Scope ground.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP407",
+      "value": "NRST",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "NRST"
+      },
+      "pin_names": {
+        "1": "NRST"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Reset observation.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP408",
+      "value": "VCAP_OUT",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "VCAP_OUT"
+      },
+      "pin_names": {
+        "1": "VCAP_OUT"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Core output; no load.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP409",
+      "value": "VDDHPA_OUT",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.8mm",
+      "pins": {
+        "1": "VDDHPA_OUT"
+      },
+      "pin_names": {
+        "1": "VDDHPA_OUT"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "PA output; no load.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP410",
+      "value": "ADC_IN_1",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_1"
+      },
+      "pin_names": {
+        "1": "ADC_IN_1"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Low-C probe only; extra capacitance affects settling.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP411",
+      "value": "ADC_IN_2",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_2"
+      },
+      "pin_names": {
+        "1": "ADC_IN_2"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Low-C probe only; extra capacitance affects settling.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP412",
+      "value": "ADC_IN_3",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_3"
+      },
+      "pin_names": {
+        "1": "ADC_IN_3"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Low-C probe only; extra capacitance affects settling.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP413",
+      "value": "ADC_IN_4",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_4"
+      },
+      "pin_names": {
+        "1": "ADC_IN_4"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Low-C probe only; extra capacitance affects settling.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP414",
+      "value": "ADC_IN_5",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_5"
+      },
+      "pin_names": {
+        "1": "ADC_IN_5"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Low-C probe only; extra capacitance affects settling.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP415",
+      "value": "ADC_IN_6",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_6"
+      },
+      "pin_names": {
+        "1": "ADC_IN_6"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Low-C probe only; extra capacitance affects settling.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP416",
+      "value": "ADC_IN_7",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_7"
+      },
+      "pin_names": {
+        "1": "ADC_IN_7"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Low-C probe only; extra capacitance affects settling.",
+      "bom_exclude": true
+    },
+    {
+      "ref": "TP417",
+      "value": "ADC_IN_8",
+      "mpn": "PCB copper",
+      "lcsc": null,
+      "package": "TestPoint_Pad_D0.6mm",
+      "pins": {
+        "1": "ADC_IN_8"
+      },
+      "pin_names": {
+        "1": "ADC_IN_8"
+      },
+      "page": "MCU_ACQUISITION",
+      "notes": "Low-C probe only; extra capacitance affects settling.",
+      "bom_exclude": true
+    }
+  ],
+  "notes": [
+    "Root standardizes ordinary passive exact MPN/LCSC after dielectric,effective-C,tolerance and footprint verification.",
+    "No firmware created. ADC/BLE ownership,Stop0,timing,power and anti-alias are release gates.",
+    "No RF matching/routing validation. Footprints,interconnect and antenna keepout require manual layout."
+  ],
+  "sources": [
+    "https://www.st.com/resource/en/datasheet/stm32wba52cg.pdf",
+    "https://www.st.com/resource/en/schematic_pack/mb1863-wba52cga-a03-schematic.pdf",
+    "https://www.st.com/resource/en/application_note/an5948-how-to-develop-rf-hardware-using-stm32wba-mcus-stmicroelectronics.pdf",
+    "https://www.st.com/resource/en/datasheet/mlpf-wb-04d3.pdf",
+    "https://www.johansontechnology.com/docs/3827/Antenna-2450AT18A0100001E-Rev4.0.pdf"
+  ]
+}

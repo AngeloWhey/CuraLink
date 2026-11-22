@@ -1,0 +1,71 @@
+{
+  "status": "Simulated typical adapted TLV9052-family final-stage model; not hardware or complete AFE validation",
+  "assumptions": "150 ohm / 470 pF, 1.656 us tracking, 1 kohm SAR switch, 5/10 pF sampling capacitor; previous-channel hold recharged to 2.8 V every 20 us; filter-input sine 0.15 V peak around 1.5 V; noiseless ideal 3 V supply; no real SAR conversion kickback, amplifier process corners or package coupling",
+  "interpretation": "Incremental error compares sampled channel with duplicate continuously tracked quiet reference. Instantaneous error additionally includes normal switch-capacitor track delay.",
+  "cases": [
+    {
+      "name": "track_50k_1000Hz_adc5",
+      "freq_Hz": 1000,
+      "ADC_pF": 5,
+      "fs_Hz": 50000,
+      "Riso_ohm": 150,
+      "Creservoir_pF": 470,
+      "acquisition_us": 1.656,
+      "samples_after_settling": 85,
+      "worst_settling_increment_uV": 1.4649724955351218,
+      "worst_instantaneous_error_including_track_delay_uV": 11.86761710791906,
+      "worst_settling_increment_12bit_LSB": 0.0020001757805706197,
+      "worst_instantaneous_error_including_track_delay_12bit_LSB": 0.01620325322467882,
+      "min_sample_V": 1.1600174892156863,
+      "max_sample_V": 1.8414228026504482
+    },
+    {
+      "name": "track_50k_1000Hz_adc10",
+      "freq_Hz": 1000,
+      "ADC_pF": 10,
+      "fs_Hz": 50000,
+      "Riso_ohm": 150,
+      "Creservoir_pF": 470,
+      "acquisition_us": 1.656,
+      "samples_after_settling": 85,
+      "worst_settling_increment_uV": 3.548407079723148,
+      "worst_instantaneous_error_including_track_delay_uV": 24.26071969696686,
+      "worst_settling_increment_12bit_LSB": 0.004844758466182005,
+      "worst_instantaneous_error_including_track_delay_12bit_LSB": 0.033123969292925416,
+      "min_sample_V": 1.1600228662536873,
+      "max_sample_V": 1.8414253330274135
+    },
+    {
+      "name": "track_50k_7000Hz_adc5",
+      "freq_Hz": 7000,
+      "ADC_pF": 5,
+      "fs_Hz": 50000,
+      "Riso_ohm": 150,
+      "Creservoir_pF": 470,
+      "acquisition_us": 1.656,
+      "samples_after_settling": 85,
+      "worst_settling_increment_uV": 1.6054198472836845,
+      "worst_instantaneous_error_including_track_delay_uV": 98.17301587311533,
+      "worst_settling_increment_12bit_LSB": 0.002191933231491324,
+      "worst_instantaneous_error_including_track_delay_12bit_LSB": 0.1340388910054268,
+      "min_sample_V": 1.0605093652688173,
+      "max_sample_V": 1.9409549701719901
+    },
+    {
+      "name": "track_50k_7000Hz_adc10",
+      "freq_Hz": 7000,
+      "ADC_pF": 10,
+      "fs_Hz": 50000,
+      "Riso_ohm": 150,
+      "Creservoir_pF": 470,
+      "acquisition_us": 1.656,
+      "samples_after_settling": 85,
+      "worst_settling_increment_uV": 4.301355060132295,
+      "worst_instantaneous_error_including_track_delay_uV": 196.82794848208118,
+      "worst_settling_increment_12bit_LSB": 0.005872783442100626,
+      "worst_instantaneous_error_including_track_delay_12bit_LSB": 0.2687357589942015,
+      "min_sample_V": 1.0605152376162097,
+      "max_sample_V": 1.9409570062851953
+    }
+  ]
+}

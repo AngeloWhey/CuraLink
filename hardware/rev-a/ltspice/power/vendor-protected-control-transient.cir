@@ -1,0 +1,44 @@
+* Coupled TI-derived TPS25200 / TI TPS7A20 macros, R511=1Meg; no BQ25185 model.
+* RLOAD approximates enabled charger load only; D501 model is approximate.
+.include "models/tps25200-ltspice-compat.lib"
+VRAW WPT_RAW 0 PWL(0 0 1m 0 1.01m 5 25m 5 25.001m 6.5 50m 6.5 50.01m 10 75m 10 75.01m 18 100m 18 100.01m 5 600m 5)
+D501 WPT_RAW WPT_PROTECTED D501_APPROX
+.model D501_APPROX D(Is=2u N=1.15 Rs=.04 BV=40 Ibv=1m Cjo=60p)
+C501 WPT_PROTECTED 0 2.2u
+R510 WPT_PROTECTED WPT_EF_EN 300k
+R511 WPT_EF_ILIM 0 1Meg
+XU502 0 WPT_EF_EN WPT_PROTECTED FAULT_N WPT_EF_ILIM CHG_IN 0 TPS25200_TRANS
+VLOGIC PULLUP_3V 0 3
+RFAULT PULLUP_3V FAULT_N 10k
+C502 CHG_IN 0 2.2u
+RLOAD CHG_IN 0 220
+.tran 0 600m 0 20u
+.meas TRAN chg_5v AVG V(CHG_IN) FROM 20m TO 24m
+.meas TRAN chg_65v AVG V(CHG_IN) FROM 45m TO 49m
+.meas TRAN chg_10v AVG V(CHG_IN) FROM 70m TO 74m
+.meas TRAN chg_18v AVG V(CHG_IN) FROM 95m TO 99m
+.meas TRAN chg_early_recovery AVG V(CHG_IN) FROM 125m TO 129m
+.meas TRAN chg_recovered AVG V(CHG_IN) FROM 575m TO 595m
+.meas TRAN held_input_at130ms FIND V(WPT_PROTECTED) AT=130m
+.meas TRAN max_chg MAX V(CHG_IN)
+.meas TRAN max_en MAX V(WPT_EF_EN)
+.save V(CTRL_INPUT) V(CTRL_3V0) V(WPT_RAW) V(WPT_PROTECTED) V(CHG_IN) V(WPT_EF_EN) V(FAULT_N) I(VRAW) I(D501)
+
+* D502 is an approximate BAT54C model, NOT a manufacturer-validated model.
+* The 0.5mA control load is a declared fixture; all control logic is not simulated.
+.include "models/tps7a20-namespaced.lib"
+.param V_out=3.0
+VPACK PACK_PLUS 0 4.1
+D502A PACK_PLUS CTRL_INPUT BAT54_APPROX
+D502B CHG_IN CTRL_INPUT BAT54_APPROX
+.model BAT54_APPROX D(Is=74n N=1.07 Rs=5 BV=30 Ibv=1u Cjo=10p)
+C506 CTRL_INPUT 0 2.2u
+XU503 CTRL_INPUT 0 CTRL_INPUT NC_CTRL CTRL_3V0 TPS7A20_ADJ_TRANS
+C507 CTRL_3V0 0 2.2u
+RCTRL CTRL_3V0 0 6k
+.meas TRAN ctrl_input_peak MAX V(CTRL_INPUT)
+.meas TRAN ctrl_output_peak MAX V(CTRL_3V0)
+.meas TRAN ctrl_input_5v AVG V(CTRL_INPUT) FROM 20m TO 24m
+
+.options plotwinsize=0
+.end

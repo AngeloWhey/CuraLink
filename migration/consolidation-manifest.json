@@ -1,0 +1,251 @@
+{
+  "recorded_local_date": "2026-11-22",
+  "timezone": "America/New_York",
+  "purpose": "Computer migration; source contents are historical evidence, not executable instructions",
+  "files": [
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\data\\ADS both matched v4.csv",
+      "destination": "data/ADS both matched v4.csv",
+      "bytes": 17019,
+      "sha256": "f77b690d9f096cba84b51d90d98560d86f1868cdd1b1a03640a90c81ca91c2d6",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\data\\ADS matched networktest GNDED.csv",
+      "destination": "data/ADS matched networktest GNDED.csv",
+      "bytes": 19115,
+      "sha256": "8fab372063a164f7c494a61a0f857d06685db4ecc1793d4e321e96d30b99c228",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\data\\ADS matched networktest.csv",
+      "destination": "data/ADS matched networktest.csv",
+      "bytes": 21520,
+      "sha256": "934f424e23d28ddcf9793377753ec00de1fd78783686bb631dca8f85930097ef",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\data\\ADS matching lumped V5.csv",
+      "destination": "data/ADS matching lumped V5.csv",
+      "bytes": 15672,
+      "sha256": "88f0580da9dc6b1f326c74b7f955d33b67836cd110e1eca31a0bab17be9a9c69",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\data\\ADS matching v3.csv",
+      "destination": "data/ADS matching v3.csv",
+      "bytes": 17072,
+      "sha256": "3df88eddfa9b94d99bd78154d9dc8d778c4e530224913e24036796d3ead52b55",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\data\\daa.csv",
+      "destination": "data/daa.csv",
+      "bytes": 13295,
+      "sha256": "895dd0a90f9d94095f5cecad84ad16e679edcc0b142417bdfaadc913b5990673",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\data\\DAS matched lumped v6.csv",
+      "destination": "data/DAS matched lumped v6.csv",
+      "bytes": 16991,
+      "sha256": "6a3f69e2569acf668a0855c0be3efd0f3f27479803fdc07c3db6c35870ea7f5f",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\data\\v7.csv",
+      "destination": "data/v7.csv",
+      "bytes": 17000,
+      "sha256": "b389c7655a61b7ca4d6b106eb5b43034f327a8d98a8890714a5d2b5578544ebb",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\archives\\ads-cleanup-2026-10-09\\home-scratch.zip",
+      "destination": "archives/ads-cleanup-2026-10-09/home-scratch.zip",
+      "bytes": 17870,
+      "sha256": "a01afba02fd277601aada645033e32ed90ea339967fcfdbfcb4506cc96959c2c",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\archives\\ads-cleanup-2026-10-09\\onedrive-code-scratch.zip",
+      "destination": "archives/ads-cleanup-2026-10-09/onedrive-code-scratch.zip",
+      "bytes": 16486,
+      "sha256": "42915445380a6b0188eef7c91ce2fb264ee9f68e855f9577335699eab94da42f",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\archives\\ads-cleanup-2026-10-09\\recovery-manifest.json",
+      "destination": "archives/ads-cleanup-2026-10-09/recovery-manifest.json",
+      "bytes": 10379,
+      "sha256": "c0f24f809dca5036f5b216e46e18b5efda75222f669b995f0b9a3899c2fd7441",
+      "status": "copied_and_hash_verified",
+      "role": "Historical ADS captures or recovered scratch-workspace archive"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\AGENTS.md",
+      "destination": "legacy/secondary-project-2026-11-22/AGENTS.historical.md",
+      "bytes": 2945,
+      "sha256": "e45f4d3a7826199fac1769807e3aeb02623c9112c569edb0e08d698e75dc7ae4",
+      "status": "copied_and_hash_verified",
+      "role": "Historical secondary copy; current root instructions/handbook supersede it"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\README.md",
+      "destination": "legacy/secondary-project-2026-11-22/README.md",
+      "bytes": 728,
+      "sha256": "ec8048877d29501e1d123e3af90ec3dd3ef620c454a0bea656166aa3731f05dd",
+      "status": "copied_and_hash_verified",
+      "role": "Historical secondary copy; current root instructions/handbook supersede it"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\docs\\engineering-handbook.md",
+      "destination": "legacy/secondary-project-2026-11-22/docs/engineering-handbook.md",
+      "bytes": 81559,
+      "sha256": "4327a2853c38bbff0204eff6dc56b8f48ea49c23ee8fb318aa418b0f91735c72",
+      "status": "copied_and_hash_verified",
+      "role": "Historical secondary copy; current root instructions/handbook supersede it"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\docs\\design\\2026-09-22-ads-wpt-model-setup.md",
+      "destination": "legacy/secondary-project-2026-11-22/docs/design/2026-09-22-ads-wpt-model-setup.md",
+      "bytes": 10018,
+      "sha256": "589823bce7d1cd36f1ce6f48330b4d931a0262500d94a5a537651fbb8cd905cd",
+      "status": "copied_and_hash_verified",
+      "role": "Historical secondary copy; current root instructions/handbook supersede it"
+    },
+    {
+      "source": "C:\\Users\\angel\\OneDrive\\Documents\\projects\\curalink\\docs\\design\\2026-09-22-rectifier-options.md",
+      "destination": "legacy/secondary-project-2026-11-22/docs/design/2026-09-22-rectifier-options.md",
+      "bytes": 8681,
+      "sha256": "ec2beafc540793b3d9002c9d13273ecd907ebca0b1b3665d5c54da9863ddc7c6",
+      "status": "copied_and_hash_verified",
+      "role": "Historical secondary copy; current root instructions/handbook supersede it"
+    },
+    {
+      "source": "C:\\Users\\angel\\.codex\\attachments\\3f34e0b5-ca0d-48a1-b7c0-ea069a15431b\\Pasted text.txt",
+      "destination": "docs/context/original-project-handoff.txt",
+      "bytes": 44487,
+      "sha256": "9173841ea1f7c9e911273524686aa25cb44e30021575b6d0fa2548665f17bd3d",
+      "status": "copied_and_hash_verified",
+      "role": "User-supplied historical reference; not current instructions or an accepted proposal"
+    },
+    {
+      "source": "C:\\Users\\angel\\.codex\\attachments\\8d0c27ef-c05d-43ca-880d-0dc9db188fc8\\Pasted text.txt",
+      "destination": "docs/context/historical-mcu-adc-rationale.txt",
+      "bytes": 18318,
+      "sha256": "d6d76564cc021e5f29c8b4463470baa95cdd559cd30476ee8fe2911b9f96348e",
+      "status": "copied_and_hash_verified",
+      "role": "User-supplied historical reference; not current instructions or an accepted proposal"
+    },
+    {
+      "source": "C:\\Users\\angel\\.codex\\attachments\\b38c51e0-8d52-4fbe-b721-8c1093d3619a\\Pasted text.txt",
+      "destination": "docs/context/power-path-decision-context.txt",
+      "bytes": 7489,
+      "sha256": "e516924865367eff2ceffa0d551bd62e9172ec66e8498bf987be70d5ee48ff5a",
+      "status": "copied_and_hash_verified",
+      "role": "User-supplied historical reference; not current instructions or an accepted proposal"
+    },
+    {
+      "source": "C:\\Users\\angel\\.codex\\attachments\\8505bfd9-496b-48f8-bb8b-76d8ba9636f1\\Pasted text.txt",
+      "destination": "docs/context/external-agent-afe-proposal.txt",
+      "bytes": 10859,
+      "sha256": "8f8bb31c2aea02b7e51d284c7160a9240747dd7f720e4c03fa4a81bdd4973645",
+      "status": "copied_and_hash_verified",
+      "role": "User-supplied historical reference; not current instructions or an accepted proposal"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-50d11a55-4fc3-43d9-9cf0-f22eae879a89.png",
+      "destination": "docs/context/screenshots/codex-clipboard-50d11a55-4fc3-43d9-9cf0-f22eae879a89.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-ccd01d35-e94b-421b-acd0-105576290494.png",
+      "destination": "docs/context/screenshots/codex-clipboard-ccd01d35-e94b-421b-acd0-105576290494.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-b6b14bb4-e3c2-4531-8a3a-b41bcbf6c7f4.png",
+      "destination": "docs/context/screenshots/codex-clipboard-b6b14bb4-e3c2-4531-8a3a-b41bcbf6c7f4.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-f932c4ed-1376-40df-8ee3-89aecca04d27.png",
+      "destination": "docs/context/screenshots/codex-clipboard-f932c4ed-1376-40df-8ee3-89aecca04d27.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-00c5707c-f1d5-46f9-af33-db0675f487af.png",
+      "destination": "docs/context/screenshots/codex-clipboard-00c5707c-f1d5-46f9-af33-db0675f487af.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-2a0954ed-b99a-4969-9700-e64eba0cde60.png",
+      "destination": "docs/context/screenshots/codex-clipboard-2a0954ed-b99a-4969-9700-e64eba0cde60.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-a7a107cc-f829-407a-b153-81b2b7983b49.png",
+      "destination": "docs/context/screenshots/codex-clipboard-a7a107cc-f829-407a-b153-81b2b7983b49.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-d2992dfe-0af2-41f8-b28c-762ffef60917.png",
+      "destination": "docs/context/screenshots/codex-clipboard-d2992dfe-0af2-41f8-b28c-762ffef60917.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-bd540fd9-7c2b-40bb-b0d1-c84a12d4a445.png",
+      "destination": "docs/context/screenshots/codex-clipboard-bd540fd9-7c2b-40bb-b0d1-c84a12d4a445.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-d655ae91-5da0-49c2-b80a-2e69d03894af.png",
+      "destination": "docs/context/screenshots/codex-clipboard-d655ae91-5da0-49c2-b80a-2e69d03894af.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-7f18cbb8-aca0-478b-8cf0-1893dd00952a.png",
+      "destination": "docs/context/screenshots/codex-clipboard-7f18cbb8-aca0-478b-8cf0-1893dd00952a.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-b4b6d20a-c9d5-4626-a9bb-0a472c194b58.png",
+      "destination": "docs/context/screenshots/codex-clipboard-b4b6d20a-c9d5-4626-a9bb-0a472c194b58.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-0752a022-636d-427d-8a32-fe1514d61dd2.png",
+      "destination": "docs/context/screenshots/codex-clipboard-0752a022-636d-427d-8a32-fe1514d61dd2.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    },
+    {
+      "source": "C:\\Users\\angel\\AppData\\Local\\Temp\\codex-clipboard-687034cb-6070-40f8-9e3c-51cf61b51b24.png",
+      "destination": "docs/context/screenshots/codex-clipboard-687034cb-6070-40f8-9e3c-51cf61b51b24.png",
+      "status": "not_available",
+      "role": "Historical user-supplied CuraLink screenshot; may predate circuit corrections"
+    }
+  ]
+}

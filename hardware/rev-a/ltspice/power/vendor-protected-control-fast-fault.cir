@@ -1,0 +1,40 @@
+* Coupled TI-derived TPS25200 / TI TPS7A20 macros, R511=1Meg; no BQ25185 model.
+* RLOAD approximates enabled charger load only; D501 model is approximate.
+.include "models/tps25200-ltspice-compat.lib"
+VRAW WPT_RAW 0 PWL(0 0 1m 0 1.01m 5 25m 5 {25m+SLEW_S} 18 35m 18 35.01m 5 60m 5)
+D501 WPT_RAW WPT_PROTECTED D501_APPROX
+.model D501_APPROX D(Is=2u N=1.15 Rs=.04 BV=40 Ibv=1m Cjo=60p)
+C501 WPT_PROTECTED 0 1u
+R510 WPT_PROTECTED WPT_EF_EN 300k
+R511 WPT_EF_ILIM 0 1Meg
+XU502 0 WPT_EF_EN WPT_PROTECTED FAULT_N WPT_EF_ILIM CHG_IN 0 TPS25200_TRANS
+VLOGIC PULLUP_3V 0 3
+RFAULT PULLUP_3V FAULT_N 10k
+C502 CHG_IN 0 1u
+RLOAD CHG_IN 0 220
+* 1uF effective C501/C502 is an assumed minimum, not validated DC-bias behavior.
+.step param SLEW_S list 1u 10u 1m
+.tran 0 60m 0 2u
+.meas TRAN chg_peak MAX V(CHG_IN)
+.meas TRAN protected_peak MAX V(WPT_PROTECTED)
+.meas TRAN en_peak MAX V(WPT_EF_EN)
+.save V(CTRL_INPUT) V(CTRL_3V0) V(WPT_RAW) V(WPT_PROTECTED) V(CHG_IN) V(WPT_EF_EN) V(FAULT_N) I(VRAW) I(D501)
+
+* D502 is an approximate BAT54C model, NOT a manufacturer-validated model.
+* The 0.5mA control load is a declared fixture; all control logic is not simulated.
+.include "models/tps7a20-namespaced.lib"
+.param V_out=3.0
+VPACK PACK_PLUS 0 4.1
+D502A PACK_PLUS CTRL_INPUT BAT54_APPROX
+D502B CHG_IN CTRL_INPUT BAT54_APPROX
+.model BAT54_APPROX D(Is=74n N=1.07 Rs=5 BV=30 Ibv=1u Cjo=10p)
+C506 CTRL_INPUT 0 2.2u
+XU503 CTRL_INPUT 0 CTRL_INPUT NC_CTRL CTRL_3V0 TPS7A20_ADJ_TRANS
+C507 CTRL_3V0 0 2.2u
+RCTRL CTRL_3V0 0 6k
+.meas TRAN ctrl_input_peak MAX V(CTRL_INPUT)
+.meas TRAN ctrl_output_peak MAX V(CTRL_3V0)
+.meas TRAN ctrl_input_5v AVG V(CTRL_INPUT) FROM 20m TO 24m
+
+.options plotwinsize=0
+.end

@@ -1,0 +1,24 @@
+* TI TPS25200_TRANS nominal macro; DC sweep cannot establish this transient model's gate state.
+* RLOAD approximates enabled charger load only; D501 model is approximate.
+.include "models/tps25200-ltspice-compat.lib"
+VRAW WPT_RAW 0 PWL(0 0 1m 0 1.01m {FAULT_V} 35m {FAULT_V})
+D501 WPT_RAW WPT_PROTECTED D501_APPROX
+.model D501_APPROX D(Is=2u N=1.15 Rs=.04 BV=40 Ibv=1m Cjo=60p)
+C501 WPT_PROTECTED 0 2.2u
+R510 WPT_PROTECTED WPT_EF_EN 300k
+R511 WPT_EF_ILIM 0 1Meg
+XU502 0 WPT_EF_EN WPT_PROTECTED FAULT_N WPT_EF_ILIM CHG_IN 0 TPS25200_TRANS
+VLOGIC PULLUP_3V 0 3
+RFAULT PULLUP_3V FAULT_N 10k
+C502 CHG_IN 0 2.2u
+RLOAD CHG_IN 0 220
+.step param FAULT_V list 5 6.5 8.5 10 18
+.tran 0 35m 0 20u
+.meas TRAN chg_steady AVG V(CHG_IN) FROM 30m TO 34m
+.meas TRAN protected_input AVG V(WPT_PROTECTED) FROM 30m TO 34m
+.meas TRAN output_peak MAX V(CHG_IN)
+.meas TRAN en_peak MAX V(WPT_EF_EN)
+.meas TRAN input_peak MAX V(WPT_PROTECTED)
+.save V(WPT_RAW) V(WPT_PROTECTED) V(CHG_IN) V(WPT_EF_EN) V(FAULT_N) I(VRAW) I(D501)
+.options plotwinsize=0
+.end

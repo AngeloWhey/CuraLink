@@ -1,0 +1,20 @@
+www.ti.com
+EXAMPLE BOARD LAYOUT
+0.07 MINALL AROUND0.07 MAXALL AROUND
+(R0.05) TYP(0.7)
+2X (0.5)
+2X (0.3)
+4224561/C   07/2024
+SYMM
+X1SON - 0.45 mm max heightDPY0002APLASTIC SMALL OUTLINE - NO LEAD 
+1 2SYMM
+LAND PATTERN EXAMPLEEXPOSED METAL SHOWNSCALE:60X
+NOTES: (continued)3.For more information, see Texas Instruments literature number SLUA271 (www.ti.com/lit/slua271).4.Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown on this view.It is recommended that vias under paste be filled, plugged or tented.
+SOLDER MASK DETAILS
+METAL EDGESOLDER MASKOPENINGEXPOSEDMETALNON SOLDER MASKDEFINED
+METAL UNDERSOLDER MASKSOLDER MASKOPENINGEXPOSEDMETALSOLDER MASKDEFINED(PREFERRED)
+www.ti.com
+TPD1E05U06, TPD4E05U06, TPD6E05U06
+SLVSBO7O – DECEMBER 2012 – REVISED AUGUST 2024
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 35
+Product Folder Links: TPD1E05U06 TPD4E05U06 TPD6E05U06

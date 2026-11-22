@@ -1,0 +1,103 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 17:01:03 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\bat54-joint-search-best_P26dBm_R208.333ohm_H7"
+      Process ID: 26556
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+HB HB1[1] <receiver.ckt>
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 360.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	260.377 kA  	100.0             
+1.0 	3.33974 kA  	100.0	789.729 V    
+        Samanskii-Newton iteration failed
+1.1*	3.33974 kA  	100.0	6.07399 V    
+2.0*	1.32899 kA  	100.0	5.78818 V    
+3.0 	572.725 A   	100.0	586.088 V    
+        Samanskii-Newton iteration failed
+3.1*	572.725 A   	100.0	5.11791 V    
+4.0*	329.432 A   	100.0	1.97453 V    
+5.0 	188.077 A   	100.0	3.35881 V    
+5.1 	71.8105 A   	100.0	1.26166 V    
+5.2 	3.69225 A   	100.0	28.7608 mV   
+5.3 	3.19935 A   	100.0	26.3436 mV   
+5.4*	2.8591 A    	100.0	3.24611 V    
+6.0 	1.67633 A   	100.0	150.143 mV   
+6.1 	1.55088 A   	100.0	164.823 mV   
+6.2 	1.46294 A   	100.0	166.591 mV   
+6.3 	1.38731 A   	100.0	163.706 mV   
+6.4*	1.31978 A   	100.0	3.40468 V    
+7.0 	908.968 mA  	100.0	1.02244 V    
+7.1 	627.17 mA   	100.0	801.798 mV   
+7.2 	459.464 mA  	100.0	286.881 mV   
+7.3 	422.847 mA  	100.0	122.642 mV   
+7.4 	392.165 mA  	100.0	83.3242 mV   
+7.5 	371.774 mA  	100.0	42.3508 mV   
+7.6 	353.719 mA  	100.0	40.3058 mV   
+7.7 	337.948 mA  	100.0	48.7446 mV   
+7.8*	323.478 mA  	100.0	1.60157 V    
+8.0 	77.6484 mA  	100.0	29.5629 mV   
+8.1 	28.3361 mA  	100.0	6.33749 mV   
+8.2 	11.3513 mA  	100.0	2.80248 mV   
+8.3 	4.76228 mA  	100.0	1.14626 mV   
+8.4 	2.00942 mA  	100.0	509.862 uV   
+8.5 	885.976 uA  	100.0	219.841 uV   
+8.6 	382.724 uA  	100.0	96.9639 uV   
+8.7 	169.103 uA  	100.0	42.3532 uV   
+8.8 	73.8808 uA  	100.0	18.6175 uV   
+8.9 	32.489 uA   	100.0	8.15968 uV   
+8.10 	14.2395 uA  	100.0	3.58269 uV   
+8.11 	6.25275 uA  	100.0	1.57167 uV   
+8.12 	2.74297 uA  	100.0	689.825 nV   
+8.13*	1.20395 uA  	100.0	539.415 nV   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+DIODE2.a                5.801e-04       >       3.081e-06
+DIODE4.a                5.801e-04       >       3.081e-06
+DIODE1.a                5.012e-04       >       1.034e-06
+DIODE3.a                5.012e-04       >       1.034e-06
+VoutMatched             1.845e-04       >       3.114e-06
+
+o Number of waveforms violating the HB truncation error check:
+        6 out of 7 waveforms.
+o Estimated max HB truncation error: 5.801e-04 @ waveform DIODE2.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 3.081e-06 for this waveform.
+o A time-domain plot of the DCout waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     1.78 seconds.
+    Simulation stopwatch time =     0.28 seconds.
+    Total stopwatch time      =     1.68 seconds.
+
+    Memory used:  108 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

@@ -1,0 +1,32 @@
+{
+  "recorded_date": "2026-10-09",
+  "timezone": "America/New_York",
+  "status": "ADS SDD DC netlist parsed and flattened; solving blocked by occupied license; DC/HB results unavailable",
+  "simulation_completed": false,
+  "dc_solver_attempts": 2,
+  "exit_code_each_attempt": 120,
+  "license_feature_requested": "b_pwad_inclusive1",
+  "reported_license_error": "Linear Simulator: Licensed number of users already reached for this feature",
+  "preserved_attempt_logs": ["runs/SDD_DC_IV/prior-simulator-1.log", "runs/SDD_DC_IV/simulator.log"],
+  "preserved_attempt_decks": ["runs/SDD_DC_IV/prior-deck-1.ckt", "runs/SDD_DC_IV/charger.ckt"],
+  "verified": ["Installed hpeesofsim -h SDD confirms SDD p1 n1 I[port,equation] native syntax", "Actual DC source parsed and flattened before license rejection", "Prepared DC and 7 HB decks exist"],
+  "unexecuted": ["DC current-sign check", "Zero-voltage current check", "DC I-V curve and 20.75mA plateau check", "All 7 charger-load receiver HB cases", "Derived CHG_IN 5.5V-domain check", "RF/DC energy-balance calculation for charger load"],
+  "prepared_cases": [
+    {"label": "CC_VBAT3p2_P23p5", "VBAT_V": 3.2, "Pin_dBm": 23.5, "charge_A": 0.020, "control_A": 0.0008},
+    {"label": "CC_VBAT3p7_P23p5", "VBAT_V": 3.7, "Pin_dBm": 23.5, "charge_A": 0.020, "control_A": 0.0008},
+    {"label": "CC_VBAT4p0_P23p5", "VBAT_V": 4.0, "Pin_dBm": 23.5, "charge_A": 0.020, "control_A": 0.0008},
+    {"label": "CC_high_VBAT4p0_P23p5", "VBAT_V": 4.0, "Pin_dBm": 23.5, "charge_A": 0.021212121212121215, "charger_IQ_A": 0.001, "control_A": 0.0015},
+    {"label": "CC_VBAT4p0_P23", "VBAT_V": 4.0, "Pin_dBm": 23.0, "charge_A": 0.020, "control_A": 0.0008},
+    {"label": "CC_VBAT4p0_path0p40_P23p5", "VBAT_V": 4.0, "Pin_dBm": 23.5, "charge_A": 0.020, "control_A": 0.0008, "path_drop_V": 0.40},
+    {"label": "CC_VBAT4p0_ctrl1p5mA_P23p5", "VBAT_V": 4.0, "Pin_dBm": 23.5, "charge_A": 0.020, "control_A": 0.0015}
+  ],
+  "default_path_drop_V": 0.28,
+  "default_charger_IQ_A": 0.00075,
+  "input_efuse_IQ_fixture_A": 0.000143,
+  "raw_field_divider_ohm": 110000,
+  "ideal_raw_reservoir_F": 0.000001,
+  "ideal_charger_input_cap_F": 0.0000022,
+  "HBorder": 31,
+  "matching_caps_pF": {"TX_series": 59.30046343474315, "TX_shunt": 374.73956378774636, "RX_series": 826.2058518327118, "RX_shunt": 773.5931919048533},
+  "no_app_closure_or_license_workaround": true
+}

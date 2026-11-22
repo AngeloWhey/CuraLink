@@ -1,0 +1,504 @@
+{
+  "date": "2026-10-02",
+  "kicad": "9.0.9",
+  "scope": "Syntax and generated geometry versus recorded maker dimensions; not fabrication/assembly approval",
+  "results": [
+    {
+      "footprint": "CuraLink:STM32WBA52CGU6",
+      "load": "PASS",
+      "physical_pad_set": "PASS",
+      "coordinates_and_copper_sizes": "PASS",
+      "physical_pad_count": 49,
+      "paste_only_pad_count": 16
+    },
+    {
+      "footprint": "CuraLink:MLPF-WB-04D3",
+      "load": "PASS",
+      "physical_pad_set": "PASS",
+      "coordinates_and_copper_sizes": "PASS",
+      "physical_pad_count": 6,
+      "paste_only_pad_count": 6
+    },
+    {
+      "footprint": "CuraLink:Johanson_2450AT18A0100001E",
+      "load": "PASS",
+      "physical_pad_set": "PASS",
+      "coordinates_and_copper_sizes": "PASS",
+      "physical_pad_count": 2,
+      "paste_only_pad_count": 0
+    },
+    {
+      "footprint": "CuraLink:FFC18P_HYH2.0",
+      "load": "PASS",
+      "physical_pad_set": "PASS",
+      "coordinates_and_copper_sizes": "PASS",
+      "physical_pad_count": 20,
+      "paste_only_pad_count": 0
+    },
+    {
+      "footprint": "CuraLink:NDK_NX2016SA_2.0x1.6mm",
+      "load": "PASS",
+      "physical_pad_set": "PASS",
+      "coordinates_and_copper_sizes": "PASS",
+      "physical_pad_count": 4,
+      "paste_only_pad_count": 0
+    }
+  ],
+  "official_library_comparison": [
+    {
+      "footprint": "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+      "file": "/usr/share/kicad/footprints/Package_DFN_QFN.pretty/QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm.kicad_mod",
+      "sha256": "c2ae2c92eeff018792cc1d4dd59cf2c88b5438fd39465e0ce6a443a938ceae1e",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -3.4375,
+          "y_mm": -2.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "2",
+          "x_mm": -3.4375,
+          "y_mm": -2.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "3",
+          "x_mm": -3.4375,
+          "y_mm": -1.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "4",
+          "x_mm": -3.4375,
+          "y_mm": -1.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "5",
+          "x_mm": -3.4375,
+          "y_mm": -0.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "6",
+          "x_mm": -3.4375,
+          "y_mm": -0.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "7",
+          "x_mm": -3.4375,
+          "y_mm": 0.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "8",
+          "x_mm": -3.4375,
+          "y_mm": 0.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "9",
+          "x_mm": -3.4375,
+          "y_mm": 1.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "10",
+          "x_mm": -3.4375,
+          "y_mm": 1.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "11",
+          "x_mm": -3.4375,
+          "y_mm": 2.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "12",
+          "x_mm": -3.4375,
+          "y_mm": 2.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "13",
+          "x_mm": -2.75,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "14",
+          "x_mm": -2.25,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "15",
+          "x_mm": -1.75,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "16",
+          "x_mm": -1.25,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "17",
+          "x_mm": -0.75,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "18",
+          "x_mm": -0.25,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "19",
+          "x_mm": 0.25,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "20",
+          "x_mm": 0.75,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "21",
+          "x_mm": 1.25,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "22",
+          "x_mm": 1.75,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "23",
+          "x_mm": 2.25,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "24",
+          "x_mm": 2.75,
+          "y_mm": 3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "25",
+          "x_mm": 3.4375,
+          "y_mm": 2.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "26",
+          "x_mm": 3.4375,
+          "y_mm": 2.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "27",
+          "x_mm": 3.4375,
+          "y_mm": 1.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "28",
+          "x_mm": 3.4375,
+          "y_mm": 1.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "29",
+          "x_mm": 3.4375,
+          "y_mm": 0.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "30",
+          "x_mm": 3.4375,
+          "y_mm": 0.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "31",
+          "x_mm": 3.4375,
+          "y_mm": -0.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "32",
+          "x_mm": 3.4375,
+          "y_mm": -0.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "33",
+          "x_mm": 3.4375,
+          "y_mm": -1.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "34",
+          "x_mm": 3.4375,
+          "y_mm": -1.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "35",
+          "x_mm": 3.4375,
+          "y_mm": -2.25,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "36",
+          "x_mm": 3.4375,
+          "y_mm": -2.75,
+          "w_mm": 0.875,
+          "h_mm": 0.25
+        },
+        {
+          "number": "37",
+          "x_mm": 2.75,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "38",
+          "x_mm": 2.25,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "39",
+          "x_mm": 1.75,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "40",
+          "x_mm": 1.25,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "41",
+          "x_mm": 0.75,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "42",
+          "x_mm": 0.25,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "43",
+          "x_mm": -0.25,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "44",
+          "x_mm": -0.75,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "45",
+          "x_mm": -1.25,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "46",
+          "x_mm": -1.75,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "47",
+          "x_mm": -2.25,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "48",
+          "x_mm": -2.75,
+          "y_mm": -3.4375,
+          "w_mm": 0.25,
+          "h_mm": 0.875
+        },
+        {
+          "number": "49",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "w_mm": 5.6,
+          "h_mm": 5.6
+        }
+      ]
+    },
+    {
+      "footprint": "RF_Antenna:Johanson_2450AT18x100",
+      "file": "/usr/share/kicad/footprints/RF_Antenna.pretty/Johanson_2450AT18x100.kicad_mod",
+      "sha256": "82a7214ab576b3668d9181c594222f485b33ad66fbb1d046f6d04f947a558c05",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -1.45,
+          "y_mm": 0.0,
+          "w_mm": 1.2,
+          "h_mm": 1.8
+        },
+        {
+          "number": "2",
+          "x_mm": 1.45,
+          "y_mm": 0.0,
+          "w_mm": 1.2,
+          "h_mm": 1.8
+        }
+      ]
+    },
+    {
+      "footprint": "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm",
+      "file": "/usr/share/kicad/footprints/Crystal.pretty/Crystal_SMD_2016-4Pin_2.0x1.6mm.kicad_mod",
+      "sha256": "ab96c35044c6594c08e78051b09f8ec4d4169cd5b595944e525810bfa0e14b98",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -0.7,
+          "y_mm": 0.55,
+          "w_mm": 0.9,
+          "h_mm": 0.8
+        },
+        {
+          "number": "2",
+          "x_mm": 0.7,
+          "y_mm": 0.55,
+          "w_mm": 0.9,
+          "h_mm": 0.8
+        },
+        {
+          "number": "3",
+          "x_mm": 0.7,
+          "y_mm": -0.55,
+          "w_mm": 0.9,
+          "h_mm": 0.8
+        },
+        {
+          "number": "4",
+          "x_mm": -0.7,
+          "y_mm": -0.55,
+          "w_mm": 0.9,
+          "h_mm": 0.8
+        }
+      ]
+    },
+    {
+      "footprint": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm",
+      "file": "/usr/share/kicad/footprints/Crystal.pretty/Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+      "sha256": "be7bb4d0d1ca63720a2543bc1babb8dbcb61f1289adb3de72aefb96bd2c43627",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": 1.25,
+          "y_mm": 0.0,
+          "w_mm": 1.0,
+          "h_mm": 1.8
+        },
+        {
+          "number": "2",
+          "x_mm": -1.25,
+          "y_mm": 0.0,
+          "w_mm": 1.0,
+          "h_mm": 1.8
+        }
+      ]
+    },
+    {
+      "footprint": "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+      "file": "/usr/share/kicad/footprints/Connector_Coaxial.pretty/U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod",
+      "sha256": "ccd686e3e0c2f74cea7236adaad05eafe5da2de547e58b4658fc4f5a1083850c",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -1.05,
+          "y_mm": 0.0,
+          "w_mm": 1.05,
+          "h_mm": 1.0
+        },
+        {
+          "number": "2",
+          "x_mm": 0.475,
+          "y_mm": -1.475,
+          "w_mm": 2.2,
+          "h_mm": 1.05
+        },
+        {
+          "number": "2",
+          "x_mm": 0.475,
+          "y_mm": 1.475,
+          "w_mm": 2.2,
+          "h_mm": 1.05
+        }
+      ]
+    }
+  ]
+}

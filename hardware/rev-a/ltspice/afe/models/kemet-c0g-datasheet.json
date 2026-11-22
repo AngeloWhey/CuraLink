@@ -1,0 +1,9 @@
+{
+  "source_url": "https://content.kemet.com/datasheets/kem_c1003_c0g_smd.pdf",
+  "file": "hardware/rev-a/ltspice/afe/models/kemet-c0g-datasheet.pdf",
+  "sha256": "02d179914aeb9585eb2229ba8e18ef9d6b01c77c056de2af295d6950a2a5cc0d",
+  "page": 4,
+  "IR_25C_ohm_for_10nF": 100000000000.0,
+  "post_environment_IR_ohm": 10000000000.0,
+  "note": "IR limit is min(1000 MOhm-uF / capacitance_uF,100 GOhm), measured rated voltage after 120+-5 seconds at25C; post-environment10% initial limit. Does not guarantee PCB surface leakage."
+}

@@ -1,0 +1,58 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 17:04:38 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\bat54_target_confirmation_P23.5_R208.333_H127"
+      Process ID: 26440
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+HB HB1[1] <receiver.ckt>
+    Number of tones:   1.
+    Number of frequencies:   128.
+    Number of time samples:  256.
+    Number of HB equations (problem size): 6120.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: Krylov (GS_GMRES) iters=150 loose=50.
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	41.1587 A   	100.0             
+1 	11.1105 A   	100.0	33.4341 V   	  3	1.124e-03   
+2 	4.12458 A   	100.0	106.294 mV  	  4	4.754e-02   
+3 	1.78364 A   	100.0	7.37993 V   	 25	4.605e-02   
+4 	947.414 mA  	100.0	4.37649 V   	 29	3.818e-02   
+5 	372.02 mA   	100.0	1.17217 V   	 26	3.592e-02   
+6 	98.9696 mA  	100.0	312.061 mV  	 19	3.265e-02   
+7 	14.1493 mA  	100.0	104.834 mV  	 25	3.154e-02   
+8 	1.16436 mA  	100.0	23.1547 mV  	 50	5.964e-02   
+9 	147.365 uA  	100.0	4.76625 mV  	 88	9.960e-02   
+10 	11.1289 uA  	100.0	884.302 uV  	150	1.439e-01   
+11 	4.64344 uA  	100.0	231.374 uV  	150	5.044e-01   
+12 	2.82914 uA  	100.0	183.015 uV  	150	4.247e-01   
+13 	1.25099 uA  	100.0	61.3746 uV  	150	4.692e-01   
+14 	769.461 nA  	100.0	58.3401 uV  	150	5.530e-01   
+15 	179.368 nA  	100.0	24.2694 uV  	150	2.516e-01   
+16 	39.848 nA   	100.0	2.86103 uV  	150	1.730e-01   
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     3.12 seconds.
+    Simulation stopwatch time =     1.64 seconds.
+    Total stopwatch time      =     3.02 seconds.
+
+    Memory used:  119 MBytes
+
+    Max threads used:  12
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

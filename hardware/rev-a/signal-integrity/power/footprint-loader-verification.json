@@ -1,0 +1,619 @@
+{
+  "kicad_version": "9.0.9-9.0.9~ubuntu24.04.1",
+  "date_local": "2026-10-02",
+  "footprints": [
+    {
+      "name": "BQ25185DLH_WSON10_2.2x2mm",
+      "load_status": "PASS",
+      "geometry_status": "PASS",
+      "physical_electrical_pad_count": 11,
+      "separate_paste_count": 1,
+      "numbered_pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -1.05,
+            -0.8
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -1.05,
+            -0.4
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -1.05,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            -1.05,
+            0.4
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            -1.05,
+            0.8
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            1.05,
+            0.8
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            1.05,
+            0.4
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "8",
+          "xy_mm": [
+            1.05,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "9",
+          "xy_mm": [
+            1.05,
+            -0.4
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "10",
+          "xy_mm": [
+            1.05,
+            -0.8
+          ],
+          "copper_size_mm": [
+            0.5,
+            0.2
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "11",
+          "xy_mm": [
+            0.0,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.9,
+            1.5
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        }
+      ],
+      "separate_paste_apertures": [
+        {
+          "number": "",
+          "xy_mm": [
+            0.0,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.85,
+            1.38
+          ],
+          "mask_margin_mm": null,
+          "layers": [
+            "F.Paste"
+          ]
+        }
+      ],
+      "minimum_rectangular_copper_gap": {
+        "pads": [
+          "1",
+          "2"
+        ],
+        "distance_lower_bound_mm": 0.2
+      },
+      "minimum_rectangular_mask_bridge": {
+        "pads": [
+          "1",
+          "2"
+        ],
+        "distance_lower_bound_mm": 0.1
+      },
+      "sha256": "8fe1d949c2c59e5cbfe1c4cf42d98b9f32adfcf4184aaaa9191b57334229a828"
+    },
+    {
+      "name": "TPS25200DRV_WSON6_2x2mm",
+      "load_status": "PASS",
+      "geometry_status": "PASS",
+      "physical_electrical_pad_count": 7,
+      "separate_paste_count": 2,
+      "numbered_pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.975,
+            -0.65
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.975,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -0.975,
+            0.65
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.975,
+            0.65
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.975,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            0.975,
+            -0.65
+          ],
+          "copper_size_mm": [
+            0.45,
+            0.3
+          ],
+          "mask_margin_mm": 0.07,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            0.0,
+            0.0
+          ],
+          "copper_size_mm": [
+            1.0,
+            1.6
+          ],
+          "mask_margin_mm": 0.07,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        }
+      ],
+      "separate_paste_apertures": [
+        {
+          "number": "",
+          "xy_mm": [
+            0.0,
+            -0.45
+          ],
+          "copper_size_mm": [
+            1.0,
+            0.7
+          ],
+          "mask_margin_mm": null,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.0,
+            0.45
+          ],
+          "copper_size_mm": [
+            1.0,
+            0.7
+          ],
+          "mask_margin_mm": null,
+          "layers": [
+            "F.Paste"
+          ]
+        }
+      ],
+      "minimum_rectangular_copper_gap": {
+        "pads": [
+          "1",
+          "7"
+        ],
+        "distance_lower_bound_mm": 0.25
+      },
+      "minimum_rectangular_mask_bridge": {
+        "pads": [
+          "1",
+          "7"
+        ],
+        "distance_lower_bound_mm": 0.11
+      },
+      "sha256": "98fc26affc6230fd0e9dbf10297fa62c7c43767db3a0ed05b54b4ac11459b4a1"
+    },
+    {
+      "name": "BQ29737DSE_WSON6_1.5x1.5mm",
+      "load_status": "PASS",
+      "geometry_status": "PASS",
+      "physical_electrical_pad_count": 6,
+      "separate_paste_count": 6,
+      "numbered_pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.55,
+            -0.5
+          ],
+          "copper_size_mm": [
+            0.9,
+            0.35
+          ],
+          "mask_margin_mm": -0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.6,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.8,
+            0.35
+          ],
+          "mask_margin_mm": -0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -0.6,
+            0.5
+          ],
+          "copper_size_mm": [
+            0.8,
+            0.35
+          ],
+          "mask_margin_mm": -0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.6,
+            0.5
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.6,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            0.6,
+            -0.5
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": 0.05,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        }
+      ],
+      "separate_paste_apertures": [
+        {
+          "number": "",
+          "xy_mm": [
+            -0.55,
+            -0.5
+          ],
+          "copper_size_mm": [
+            0.8,
+            0.25
+          ],
+          "mask_margin_mm": null,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.6,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": null,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.6,
+            0.5
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": null,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.6,
+            0.5
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": null,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.6,
+            0.0
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": null,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.6,
+            -0.5
+          ],
+          "copper_size_mm": [
+            0.7,
+            0.25
+          ],
+          "mask_margin_mm": null,
+          "layers": [
+            "F.Paste"
+          ]
+        }
+      ],
+      "minimum_rectangular_copper_gap": {
+        "pads": [
+          "1",
+          "2"
+        ],
+        "distance_lower_bound_mm": 0.15
+      },
+      "minimum_rectangular_mask_bridge": {
+        "pads": [
+          "4",
+          "5"
+        ],
+        "distance_lower_bound_mm": 0.15
+      },
+      "sha256": "68cb5301729a4432787a8716d86ccf810f3afe57b42ad71e41da717f8277add1"
+    }
+  ]
+}

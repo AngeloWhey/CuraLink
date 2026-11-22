@@ -1,0 +1,24 @@
+* Explicit static-bound behavioral TPS25200 fixture, typ / charger
+* NOT TI's model: only DC UVLO/OVLO/clamp/current-limit thresholds are represented.
+* R511=1.0Meg +/-1%; ILIM from datasheetEq1 approximate min/nom/max curves.
+* Thermal shutdown, startup, hysteresis, recovery, reverse leakage and overshoot excluded.
+* Input at WPT_PROTECTED (after D501); cannot clamp WPT_RAW/rectifier/coil/reservoir.
+.param VCLAMP=5.4 VOVLO=7.6 VUVLO=2.35 ILIMIT=0.09630541434535417 RON=.099
+VIN WPT_PROTECTED 0 5
+BTARGET TARGET 0 V={if(V(WPT_PROTECTED)<VUVLO,0,if(V(WPT_PROTECTED)>VOVLO,0,min(V(WPT_PROTECTED),VCLAMP)))}
+BPASS WPT_PROTECTED CHG_IN I={if(V(TARGET)>0,limit((V(TARGET)-V(CHG_IN))/RON,0,ILIMIT),0)}
+* IQ bound is only an illustrative input draw; published high-VIN maximum is 1.7mA at20V.
+BIQ WPT_PROTECTED 0 I={if(V(WPT_PROTECTED)>VOVLO,1.7m,if(V(WPT_PROTECTED)>VUVLO,.2m,0))}
+RLOAD CHG_IN 0 220
+C502 CHG_IN 0 2.2u
+BPOWER EFUSE_DISSIPATION_W 0 V={max(0,(V(WPT_PROTECTED)-V(CHG_IN))*I(BPASS)+V(WPT_PROTECTED)*I(BIQ))}
+.dc VIN 0 18 .005
+.meas DC max_chg MAX V(CHG_IN)
+.meas DC max_current MAX I(BPASS)
+.meas DC max_dissipation MAX V(EFUSE_DISSIPATION_W)
+.meas DC output_5v FIND V(CHG_IN) AT=5
+.meas DC output_65v FIND V(CHG_IN) AT=6.5
+.meas DC output_10v FIND V(CHG_IN) AT=10
+.save V(WPT_PROTECTED) V(CHG_IN) I(VIN) I(BPASS) V(EFUSE_DISSIPATION_W)
+.options plotwinsize=0
+.end

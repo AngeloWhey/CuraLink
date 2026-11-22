@@ -1,0 +1,21 @@
+NOTES: (continued)
+4. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+design recommendations.
+EXAMPLE STENCIL DESIGN
+4220584/A   05/2019
+www.ti.com
+X2QFN - 0.4 mm max heightRUC0014A
+PLASTIC QUAD FLAT PACK- NO LEAD
+SOLDER PASTE EXAMPLE
+BASED ON 0.100mm THICK STENCIL
+SCALE: 23X
+SYMM
+SYMM
+14X (0.2)
+14X (0.6)
+(1.6)
+(1.8)
+(R0.05)
+8X (0.4)
+2X (0.4)
+(1.8)

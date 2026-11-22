@@ -1,0 +1,27 @@
+* TI TPS25200_TRANS nominal macro; DC sweep cannot establish this transient model's gate state.
+* RLOAD approximates enabled charger load only; D501 model is approximate.
+.include "models/tps25200-ltspice-compat.lib"
+VRAW WPT_RAW 0 PWL(0 0 1m 0 1.01m 5 25m 5 25.001m 6.5 50m 6.5 50.01m 10 75m 10 75.01m 18 100m 18 100.01m 5 600m 5)
+D501 WPT_RAW WPT_PROTECTED D501_APPROX
+.model D501_APPROX D(Is=2u N=1.15 Rs=.04 BV=40 Ibv=1m Cjo=60p)
+C501 WPT_PROTECTED 0 2.2u
+R510 WPT_PROTECTED WPT_EF_EN 300k
+R511 WPT_EF_ILIM 0 1Meg
+XU502 0 WPT_EF_EN WPT_PROTECTED FAULT_N WPT_EF_ILIM CHG_IN 0 TPS25200_TRANS
+VLOGIC PULLUP_3V 0 3
+RFAULT PULLUP_3V FAULT_N 10k
+C502 CHG_IN 0 2.2u
+RLOAD CHG_IN 0 220
+.tran 0 600m 0 20u
+.meas TRAN chg_5v AVG V(CHG_IN) FROM 20m TO 24m
+.meas TRAN chg_65v AVG V(CHG_IN) FROM 45m TO 49m
+.meas TRAN chg_10v AVG V(CHG_IN) FROM 70m TO 74m
+.meas TRAN chg_18v AVG V(CHG_IN) FROM 95m TO 99m
+.meas TRAN chg_early_recovery AVG V(CHG_IN) FROM 125m TO 129m
+.meas TRAN chg_recovered AVG V(CHG_IN) FROM 575m TO 595m
+.meas TRAN held_input_at130ms FIND V(WPT_PROTECTED) AT=130m
+.meas TRAN max_chg MAX V(CHG_IN)
+.meas TRAN max_en MAX V(WPT_EF_EN)
+.save V(WPT_RAW) V(WPT_PROTECTED) V(CHG_IN) V(WPT_EF_EN) V(FAULT_N) I(VRAW) I(D501)
+.options plotwinsize=0
+.end

@@ -1,0 +1,100 @@
+[
+  {
+    "filename": "tps25200-datasheet.pdf",
+    "requested_url": "https://www.ti.com/lit/ds/symlink/tps25200.pdf",
+    "final_url": "https://www.ti.com/lit/ds/symlink/tps25200.pdf",
+    "bytes": 4579378,
+    "sha256": "fafdb867c456a2b24ef4fe5908e7d6da75703c0f24a36f984864d1d2daf9cd4a",
+    "retrieved_utc": "2026-10-02T13:52:45.713003+00:00"
+  },
+  {
+    "filename": "tps7a20-datasheet.pdf",
+    "requested_url": "https://www.ti.com/lit/ds/symlink/tps7a20.pdf",
+    "final_url": "https://www.ti.com/lit/ds/symlink/tps7a20.pdf",
+    "bytes": 8989493,
+    "sha256": "663a9ff5bca608643e711652cba00e7b8bf955c0993a9b86fa108d24d58b8ddc",
+    "retrieved_utc": "2026-10-02T13:52:45.593791+00:00"
+  },
+  {
+    "filename": "bq25185-datasheet.pdf",
+    "requested_url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+    "final_url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+    "bytes": 1544774,
+    "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+    "retrieved_utc": "2026-10-02T13:52:44.758100+00:00"
+  },
+  {
+    "filename": "tlv3012-datasheet.pdf",
+    "requested_url": "https://www.ti.com/lit/ds/symlink/tlv3012.pdf",
+    "final_url": "https://www.ti.com/lit/ds/symlink/tlv3012.pdf",
+    "bytes": 1624948,
+    "sha256": "02993c016420887ee4f1ab2fa640e7596c9c1324a73f4f72bee3b32adec38df3",
+    "retrieved_utc": "2026-10-02T13:52:45.159736+00:00"
+  },
+  {
+    "filename": "tps25200-spice.zip",
+    "requested_url": "https://www.ti.com/lit/zip/slvma73",
+    "final_url": "https://www.ti.com/lit/mo/slvma73a/slvma73a.zip?ts=1790949165140",
+    "bytes": 42863,
+    "sha256": "4f481abef239a156f85b3e0afdd04c3612b02f71941fce1ec749fd9b2c581951",
+    "retrieved_utc": "2026-10-02T13:52:45.612908+00:00",
+    "members": [
+      "SLVMA73/",
+      "SLVMA73/TPS25200_TRANS-PSpiceFiles/",
+      "SLVMA73/TPS25200_TRANS-PSpiceFiles/TPS25200_TurnOnOff/",
+      "SLVMA73/TPS25200_TRANS-PSpiceFiles/TPS25200_TurnOnOff/TRANS/",
+      "SLVMA73/TPS25200_TRANS-PSpiceFiles/TPS25200_TurnOnOff/TRANS.sim",
+      "SLVMA73/TPS25200_TRANS-PSpiceFiles/TPS25200_TurnOnOff/TRANS/trans.mrk",
+      "SLVMA73/TPS25200_TRANS-PSpiceFiles/TPS25200_TurnOnOff/TRANS/TRANS.prb",
+      "SLVMA73/TPS25200_TRANS.DSN",
+      "SLVMA73/tps25200_trans.lib",
+      "SLVMA73/TPS25200_TRANS.OLB",
+      "SLVMA73/TPS25200_TRANS.opj"
+    ]
+  },
+  {
+    "filename": "tps7a20-spice.zip",
+    "requested_url": "https://www.ti.com/lit/zip/sbvm961",
+    "final_url": "https://www.ti.com/lit/mo/sbvm961/sbvm961.zip?ts=1790877444125",
+    "bytes": 19591,
+    "sha256": "4db279371817cb0873e103b03ddf26c6a5a1ff2c4672093c0037c940dc8c8fd2",
+    "retrieved_utc": "2026-10-02T13:52:45.728763+00:00",
+    "members": [
+      "Additional Files/",
+      "Additional Files/TPS7A20-ADJ_TRANS.OLB",
+      "tps7a20-adj_trans.lib",
+      "tps7a20-adj_trans.libsig",
+      "TPS7A20_ADJ-PSpiceFiles/",
+      "TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/",
+      "TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/",
+      "TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/transient.1OP",
+      "TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/transient.cir",
+      "TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/transient.mif",
+      "TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/transient.mrk",
+      "TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/transient.out.1",
+      "TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient/transient.prb",
+      "TPS7A20_ADJ-PSpiceFiles/SCHEMATIC1/transient.sim",
+      "tps7a20_adj.dsn",
+      "tps7a20_adj.opj"
+    ]
+  },
+  {
+    "filename": "tlv3012b-spice.zip",
+    "requested_url": "https://www.ti.com/lit/zip/sbomce5",
+    "final_url": "https://www.ti.com/lit/mo/sbomce5/sbomce5.zip?ts=1790949165886",
+    "bytes": 17449,
+    "sha256": "d12d0ff0afcd706356312c3605a55371e8cdaf026235cb04d5a4f8ad225144ee",
+    "retrieved_utc": "2026-10-02T13:52:45.978978+00:00",
+    "members": [
+      "TLV3012B/",
+      "TLV3012B/library/",
+      "TLV3012B/library/tlv3012b.olb",
+      "TLV3012B/tlv3012b-PSpiceFiles/",
+      "TLV3012B/tlv3012b-PSpiceFiles/SCHEMATIC1/",
+      "TLV3012B/tlv3012b.dsn",
+      "TLV3012B/tlv3012b.LIB",
+      "TLV3012B/tlv3012b.LIBsig",
+      "TLV3012B/tlv3012b.opj"
+    ]
+  }
+]

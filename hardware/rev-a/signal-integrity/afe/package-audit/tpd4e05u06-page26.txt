@@ -1,0 +1,24 @@
+www.ti.com
+EXAMPLE STENCIL DESIGN
+2X (0.67)
+2X (0.4)
+(R0.05) TYP
+(1.48)
+SOT (SOD-523) - 0.77 mm max heightDYA0002A
+PLASTIC SMALL OUTLINE
+4224978/B   09/2021
+NOTES: (continued)
+7. Laser cutting apertures with trapezoidal walls and rounded corners may oﬀer better paste release. IPC-7525 may have alternate
+design recommendations.
+8. Board assembly site may have diﬀerent recommendations for stencil design.
+SOLDER PASTE EXAMPLE
+BASED ON 0.1 mm THICK STENCIL
+SCALE:40X
+SYMM
+SYMM
+1 2
+TPD1E05U06, TPD4E05U06, TPD6E05U06
+SLVSBO7O – DECEMBER 2012 – REVISED AUGUST 2024
+ www.ti.com
+26 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPD1E05U06 TPD4E05U06 TPD6E05U06

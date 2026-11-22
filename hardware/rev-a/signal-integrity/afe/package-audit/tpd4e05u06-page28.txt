@@ -1,0 +1,26 @@
+www.ti.com
+PACKAGE OUTLINE
+C
+8X 0.250.1510X 0.430.30
+2X24X 0.5
+0.55 MAX 0.050.00
+2X 0.450.35
+B1.10.9A
+2.62.4
+(0.13) TYP
+(R)0.125
+USON - 0.55 mm max heightDQA0010APLASTIC SMALL OUTLINE - NO LEAD
+4220328/A   12/2015
+PIN 1 INDEX AREA
+SEATING PLANE0.08C
+1
+5 6
+10(OPTIONAL)PIN 1 ID 0.1CAB0.05C
+0.1CAB0.05
+NOTES: 1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing    per ASME Y14.5M. 2. This drawing is subject to change without notice.
+SCALE  6.000
+TPD1E05U06, TPD4E05U06, TPD6E05U06
+SLVSBO7O – DECEMBER 2012 – REVISED AUGUST 2024
+ www.ti.com
+28 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPD1E05U06 TPD4E05U06 TPD6E05U06

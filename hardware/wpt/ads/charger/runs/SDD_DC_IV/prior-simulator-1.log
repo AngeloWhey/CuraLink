@@ -1,0 +1,55 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 17:08:52 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\charger\runs\SDD_DC_IV"
+      Process ID: 27484
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+***** Simulation finished at Fri Oct  9 17:08:52 2026
+
+
+Error detected by hpeesofsim during circuit set up.
+    An appropriate license for linear features is not available.  This
+    feature must be licensed before it can be used.
+    FlexLM error message:
+        Linear Simulator
+        
+        Licensed number of users already reached for this feature
+        
+        Possible Causes:
+        1. All licenses for the requested feature are in use, further requests cannot be granted at this time.
+        2. A process not terminated properly still has the feature checked out.
+        3. A node-locked license was configured on a license server not intended for remote use.
+        4. An options file was set up where the exclusion or reservations list is preventing the license request.
+        
+        Troubleshooting Tips:
+        1. Use a different license server with available licenses for this feature.
+        2. Verify that you are connecting to a floating license server rather than a node-locked local server.
+        3. Verify that you are not on the exclude list of the options file set by your license administrator.
+        4. Consult your license administrator to verify that the license server is running a floating license.
+        5. Consult your license administrator or Keysight sales representative to obtain more licenses.
+        6. Use the License Manager's Usage tab to view the licenses currently in use and try again later when the feature becomes available.
+        
+        License Requested:  b_pwad_inclusive1
+        License path:  C:\Users\angel\Downloads\24725808_20260512183845.lic
+
+
+
+Resource usage:
+    Total CPU time            =     1.73 seconds.
+    Simulation stopwatch time =     0.24 seconds.
+    Total stopwatch time      =     1.67 seconds.
+
+    Memory used:  105 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+Command line dataset name charger
+hpeesofsim terminated due to an error.

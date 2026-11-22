@@ -1,0 +1,197 @@
+
+Note: Compatibility modes selected: ps
+
+
+Circuit: * final actual sk stage, worst adjacent sample 2.8v -> 0.2v
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Note: Source stepping completed
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+avdd                                         3
+vmid                                       1.5
+prior                                  2.08036
+a                                      2.08036
+plus                                   2.08036
+out                                    2.80141
+minus                                  2.08098
+xfinal.esdn                            2.08098
+xfinal.mid                                 1.5
+xfinal.30                              2.08036
+xfinal.59                                311.5
+xfinal.60                               -308.5
+xfinal.53                                 51.5
+xfinal.54                                -48.5
+xfinal.50                              0.62351
+xfinal.vclp                            3.22351
+xfinal.58                              0.62351
+xfinal.49                              0.62351
+xfinal.48                              5.82351
+xfinal.57                              5.82351
+xfinal.47                              5.82351
+xfinal.42                              2.80141
+xfinal.79                           -0.0999985
+xfinal.vee_b                           1.5e-06
+xfinal.80                                  3.1
+xfinal.vcc_b                                 3
+xfinal.21                              2.97958
+xfinal.xclawp.g1_int1              2.04163e-05
+xfinal.xclawp.g1_int2                0.0580984
+xfinal.vimon                            1.5581
+xfinal.22                            0.0204178
+xfinal.xclawn.g1_int1              2.04163e-05
+xfinal.xclawn.g1_int2                0.0580984
+xfinal.23                              1.50001
+xfinal.24                              1.54643
+xfinal.esdp                            2.08036
+xfinal.25                                  1.5
+xfinal.26                              2.56725
+xfinal.27                              1.49999
+xfinal.28                            -0.871497
+xfinal.29                              2.08067
+xfinal.xu1.e1_int1                  0.00031261
+xfinal.clamp                           3.22351
+xfinal.xvccs_lim_2.g1_int1         1.72351e-06
+xfinal.31                              1.50004
+xfinal.32                              2.08097
+xfinal.xvos_vcm.1                      2.08067
+xfinal.xvos_vcm.e1_int1                 0.0003
+xfinal.xvos_vcm.e1_int2                0.91933
+xfinal.xvos_vcm.e2_int1                      0
+xfinal.xvos_vcm.e2_int2                2.08067
+xfinal.33                              3.22351
+xfinal.34                              39.0548
+xfinal.xzo.g1_int1                     37.5549
+xfinal.35                              5.25549
+xfinal.36                              39.0583
+xfinal.37                              39.0617
+xfinal.38                              39.0617
+xfinal.39                              39.0617
+xfinal.40                              3.58676
+xfinal.41                              39.0638
+xfinal.cl_clamp                        3.22351
+xfinal.43                                  1.5
+xfinal.44                                  1.5
+xfinal.45                                  1.5
+xfinal.46                                  1.5
+xfinal.vsense                          3.22351
+xfinal.xvccs_lim_1.g1_int1         4.34243e-11
+xfinal.52                              2.08098
+xfinal.51                              2.08098
+xfinal.xiqp.g1_int1                5.80984e-05
+xfinal.xiqn.g1_int1                          0
+xfinal.55                                  1.5
+xfinal.xcl_amp.gvo+_int1                     0
+xfinal.56                                  1.5
+xfinal.xcl_amp.gvo-_int1                     0
+xfinal.62                                  1.5
+xfinal.xgr_amp.gvo+_int1                     0
+xfinal.61                              3.22351
+xfinal.63                                  1.5
+xfinal.xgr_amp.gvo-_int1                     0
+xfinal.64                                  1.5
+xfinal.65                                  1.5
+xfinal.xgr_src.g1_int1                       0
+xfinal.66                                  1.5
+xfinal.67                                  1.5
+xfinal.xcl_src.g1_int1                       0
+xfinal.68                              2.97958
+xfinal.69                            0.0204178
+xfinal.vcc_clp                         2.97958
+xfinal.vee_clp                       0.0204178
+xfinal.70                                  1.5
+xfinal.xclaw_amp.gvo+_int1                   0
+xfinal.vout_s                          2.80141
+xfinal.71                                  1.5
+xfinal.xclaw_amp.gvo-_int1                   0
+xfinal.72                                  1.5
+xfinal.73                                  1.5
+xfinal.claw_clamp                      3.22351
+xfinal.xclaw_src.g1_int1                     0
+xfinal.sw_ol                               1.5
+xfinal.74                                  1.5
+xfinal.xol_sense.gsw+_int1                   0
+xfinal.75                               1.5581
+xfinal.76                              2.80141
+xfinal.77                              3.22351
+xfinal.78                              2.08098
+xfinal.xvcm_clamp.g1_int1             0.580986
+xfinal.81                              2.08098
+xfinal.82                                  1.5
+xfinal.83                           1.5015e-06
+xfinal.84                                    3
+xfinal.85                              2.08098
+xfinal.86                              2.08098
+adc                                    2.80141
+held                                       0.2
+prev                                       0.2
+cp                                           1
+ca                                           0
+b.xfinal.xvcm_clamp.bg1#branch               0
+b.xfinal.xol_sense.bgsw+#branch               0
+b.xfinal.xclaw_src.bg1#branch                0
+b.xfinal.xclaw_amp.bgvo-#branch               0
+b.xfinal.xclaw_amp.bgvo+#branch               0
+b.xfinal.xcl_src.bg1#branch                  0
+b.xfinal.xgr_src.bg1#branch                  0
+b.xfinal.xgr_amp.bgvo-#branch                0
+b.xfinal.xgr_amp.bgvo+#branch                0
+b.xfinal.xcl_amp.bgvo-#branch                0
+b.xfinal.xcl_amp.bgvo+#branch                0
+b.xfinal.xiqn.bg1#branch                     0
+b.xfinal.xiqp.bg1#branch                     0
+b.xfinal.xvccs_lim_1.bg1#branch               0
+b.xfinal.xzo.bg1#branch                      0
+b.xfinal.xvos_vcm.be2#branch                 0
+b.xfinal.xvos_vcm.be1#branch                 0
+b.xfinal.xvccs_lim_2.bg1#branch               0
+b.xfinal.xu1.be1#branch                      0
+b.xfinal.xclawn.bg1#branch                   0
+b.xfinal.xclawp.bg1#branch                   0
+h.xfinal.h1#branch                -5.80982e-14
+v.xfinal.v4#branch                 5.80984e-05
+h.xfinal.h3#branch                           0
+v.xfinal.v12#branch               -5.19984e-12
+h.xfinal.h2#branch                           0
+v.xfinal.v11#branch                5.19984e-12
+e.xfinal.e1#branch                 4.85501e-12
+e.xfinal.e4#branch                           0
+e.xfinal.e5#branch                -1.30141e-12
+e.xfinal.xvos_vcm.e2#branch       -1.58089e-13
+e.xfinal.xvos_vcm.e1#branch       -1.58089e-13
+e.xfinal.xu1.e1#branch            -1.58089e-13
+vca#branch                                   0
+vcp#branch                                   0
+vprev#branch                       2.60141e-12
+v.xfinal.xe_n.vzero#branch         2.15809e-12
+v.xfinal.vcm_max#branch               -1.6e-12
+v.xfinal.vcm_min#branch                1.6e-12
+v.xfinal.v_orp#branch                        0
+v.xfinal.v_orn#branch                        0
+v.xfinal.v_iscn#branch                   5e-11
+v.xfinal.v_iscp#branch                  -5e-11
+v.xfinal.v_grn#branch                  3.1e-10
+v.xfinal.v_grp#branch                 -3.1e-10
+vin#branch                        -5.03587e-12
+vmid#branch                        5.80984e-05
+vs#branch                         -0.000388098
+a.xfinal.xvos_vcm.ae2#branch_1_0               0
+a.xfinal.xvos_vcm.ae1#branch_1_0               0
+a.xfinal.xclawn.ag1#branch_1_0               0
+a.xfinal.xclawp.ag1#branch_1_0               0
+
+
+No. of Data Rows : 2049
+ngspice-42 done

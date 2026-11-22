@@ -1,0 +1,71 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-efuse-independent-faults.cir
+Start Time: Fri Oct  2 10:13:03 2026
+Options:plotwinsize=0
+
+.step fault_v=5
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+AsciiRawFile = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step fault_v=6.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step fault_v=8.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step fault_v=10
+Direct Newton iteration succeeded in finding operating point.
+
+.step fault_v=18
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 3.931 seconds.
+
+Files loaded:
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-efuse-independent-faults.cir
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\models\tps25200-ltspice-compat.lib
+
+
+Measurement: chg_steady
+  step	AVG(V(CHG_IN) )	FROM	TO
+     1	4.7216498233	0.03	0.034
+     2	5.39918201902	0.03	0.034
+     3	-1.07089612276e-10	0.03	0.034
+     4	-1.07089612276e-10	0.03	0.034
+     5	-1.07089612276e-10	0.03	0.034
+
+Measurement: protected_input
+  step	AVG(V(WPT_PROTECTED) )	FROM	TO
+     1	4.72288776916	0.03	0.034
+     2	6.37448525696	0.03	0.034
+     3	8.37312137377	0.03	0.034
+     4	9.87209613122	0.03	0.034
+     5	17.8671521163	0.03	0.034
+
+Measurement: output_peak
+  step	MAX(V(CHG_IN))	FROM	TO
+     1	4.72164983377	0	0.035
+     2	5.3991820616	0	0.035
+     3	-7.00996813324e-16	0	0.035
+     4	-7.00996813324e-16	0	0.035
+     5	-7.00996813324e-16	0	0.035
+
+Measurement: en_peak
+  step	MAX(V(WPT_EF_EN))	FROM	TO
+     1	4.87391671884	0	0.035
+     2	6.37448335448	0	0.035
+     3	6.45839513778	0	0.035
+     4	6.45988982525	0	0.035
+     5	6.46301206839	0	0.035
+
+Measurement: input_peak
+  step	MAX(V(WPT_PROTECTED))	FROM	TO
+     1	4.87391772625	0	0.035
+     2	6.37448525696	0	0.035
+     3	8.37312137377	0	0.035
+     4	9.87209613122	0	0.035
+     5	17.8671521163	0	0.035

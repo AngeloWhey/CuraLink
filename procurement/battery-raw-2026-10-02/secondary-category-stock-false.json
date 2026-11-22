@@ -1,0 +1,82 @@
+{
+  "code": 200,
+  "msg": null,
+  "result": {
+    "brandHomeVO": null,
+    "wmCatalogVOS": null,
+    "brandVOS": [
+      {
+        "brandId": 1061,
+        "brandNameEn": "MEAN WELL",
+        "productNum": 2
+      }
+    ],
+    "catalogVOS": [
+      {
+        "catalogId": 4,
+        "parentId": 1,
+        "parentName": null,
+        "catalogName": null,
+        "catalogNameEn": "Battery",
+        "childCatelogs": [
+          {
+            "catalogId": 57,
+            "parentId": 4,
+            "parentName": "Battery",
+            "catalogName": null,
+            "catalogNameEn": "Batteries Rechargeable (Secondary)",
+            "childCatelogs": [],
+            "productNum": 2,
+            "relationProductImage": null,
+            "level": 2,
+            "isLeaf": true
+          }
+        ],
+        "productNum": 2,
+        "relationProductImage": null,
+        "level": 1,
+        "isLeaf": false
+      }
+    ],
+    "productSearchResultVO": null,
+    "productTotalPage": null,
+    "isToDetail": null,
+    "isToBrand": null,
+    "isToCategory": true,
+    "tipProductDetailUrlVO": null,
+    "brandUrlMap": null,
+    "searchEngineProcess": {
+      "preprocessedContent": "Batteries Rechargeable (Secondary)",
+      "judgeProcess": "batteries rechargeable (secondary)->外贸目录\r\n",
+      "isNormal": null,
+      "searchValidWord": "batteries rechargeable (secondary)",
+      "searchValidWordLight": null,
+      "hasModelSuggest": null,
+      "againJudgeHasResult": null,
+      "hasReplaceKeyword": null,
+      "judgeSuccessType": [
+        "WM_CATALOG"
+      ],
+      "mappingCodeSet": null
+    },
+    "scene": "FULL_MATCH",
+    "totalCount": 2,
+    "exactMatchResult": null,
+    "topResults": [
+      {
+        "catalogId": 57,
+        "catalogNameEn": "Batteries Rechargeable (Secondary)",
+        "parentId": 4,
+        "parentName": "Battery",
+        "level": 2,
+        "productNum": 2,
+        "hasExactMatch": null,
+        "childCatalogs": [],
+        "rootCatalogId": 4,
+        "rootCatalogName": "Battery",
+        "relationProductImage": null
+      }
+    ]
+  },
+  "ok": true
+}

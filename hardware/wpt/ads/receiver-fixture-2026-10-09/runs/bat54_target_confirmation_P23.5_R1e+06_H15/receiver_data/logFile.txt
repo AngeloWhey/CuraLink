@@ -1,0 +1,126 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Fri Oct  9 17:02:09 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-fixture-2026-10-09\runs\bat54_target_confirmation_P23.5_R1e+06_H15"
+      Process ID: 12368
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+HB HB1[1] <receiver.ckt>
+    Number of tones:   1.
+    Number of frequencies:   16.
+    Number of time samples:  32.
+    Number of HB equations (problem size): 744.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	165.757 kA  	100.0             
+1.0 	3.77795 kA  	100.0	344.937 mV   
+1.1 	2.69199 kA  	100.0	189.583 mV   
+1.2*	2.13027 kA  	100.0	738.315 mV   
+2.0 	889.341 A   	100.0	341.367 mV   
+2.1 	678.568 A   	100.0	351.705 mV   
+2.2 	573.359 A   	100.0	297.185 mV   
+2.3 	509.658 A   	100.0	66.5212 mV   
+2.4*	467.823 A   	100.0	1.66979 V    
+3.0 	299.286 A   	100.0	934.833 mV   
+3.1 	252.505 A   	100.0	985.05 mV    
+3.2 	216.182 A   	100.0	1.00901 V    
+3.3 	178.81 A    	100.0	780.684 mV   
+3.4 	140.315 A   	100.0	541.847 mV   
+3.5 	100.243 A   	100.0	301.229 mV   
+3.6 	56.5699 A   	100.0	88.0479 mV   
+3.7 	21.6163 A   	100.0	123.456 mV   
+3.8 	14.4273 A   	100.0	146.151 mV   
+3.9 	11.0905 A   	100.0	147.249 mV   
+3.10 	9.14588 A   	100.0	141.449 mV   
+3.11 	7.83987 A   	100.0	133.08 mV    
+3.12 	6.89716 A   	100.0	123.864 mV   
+3.13 	6.2099 A    	100.0	114.589 mV   
+3.14 	5.70539 A   	100.0	105.639 mV   
+3.15 	5.30689 A   	100.0	97.2014 mV   
+3.16 	4.97835 A   	100.0	89.3613 mV   
+3.17 	4.70293 A   	100.0	82.1448 mV   
+3.18 	4.46882 A   	100.0	75.5459 mV   
+3.19*	4.26741 A   	100.0	2.06853 V    
+4.0 	2.15465 A   	100.0	852.371 mV   
+        Samanskii-Newton iteration failed
+4.1*	2.15465 A   	100.0	2.38243 V    
+5.0*	2.05973 A   	100.0	10.0819 V    
+6.0*	1.19632 A   	100.0	4.20785 V    
+7.0 	501.966 mA  	100.0	407.921 mV   
+7.1 	390.277 mA  	100.0	144.303 mV   
+7.2*	328.645 mA  	100.0	381.227 mV   
+8.0 	162.114 mA  	100.0	39.7872 mV   
+8.1 	120.687 mA  	100.0	30.715 mV    
+8.2 	97.2976 mA  	100.0	27.3296 mV   
+8.3 	81.8831 mA  	100.0	23.7754 mV   
+8.4 	70.3799 mA  	100.0	20.4197 mV   
+8.5 	61.3125 mA  	100.0	17.3817 mV   
+8.6 	53.9173 mA  	100.0	14.7071 mV   
+8.7 	47.7528 mA  	100.0	12.3957 mV   
+8.8 	42.5579 mA  	100.0	10.423 mV    
+8.9 	38.146 mA   	100.0	8.75341 mV   
+8.10 	34.3759 mA  	100.0	7.60794 mV   
+8.11 	31.137 mA   	100.0	6.97794 mV   
+8.12 	28.3406 mA  	100.0	6.42834 mV   
+8.13 	25.915 mA   	100.0	5.94592 mV   
+8.14*	23.8012 mA  	100.0	75.6219 mV   
+9.0 	11.3835 mA  	100.0	21.4085 mV   
+9.1 	7.79507 mA  	100.0	14.182 mV    
+9.2 	5.93448 mA  	100.0	10.6631 mV   
+9.3 	4.78179 mA  	100.0	8.53642 mV   
+9.4 	3.99315 mA  	100.0	7.10059 mV   
+9.5 	3.41808 mA  	100.0	6.06189 mV   
+9.6 	2.97948 mA  	100.0	5.27389 mV   
+9.7 	2.63362 mA  	100.0	4.65484 mV   
+9.8 	2.35373 mA  	100.0	4.15531 mV   
+9.9 	2.12251 mA  	100.0	3.74359 mV   
+9.10 	1.92825 mA  	100.0	3.39831 mV   
+9.11 	1.76274 mA  	100.0	3.10458 mV   
+9.12 	1.62005 mA  	100.0	2.85167 mV   
+9.13 	1.49582 mA  	100.0	2.63164 mV   
+9.14 	1.38668 mA  	100.0	2.43849 mV   
+9.15 	1.29003 mA  	100.0	2.26763 mV   
+9.16 	1.20388 mA  	100.0	2.11543 mV   
+9.17 	1.12662 mA  	100.0	1.97902 mV   
+9.18 	1.05695 mA  	100.0	1.85611 mV   
+9.19*	993.837 uA  	100.0	29.6341 mV   
+10.0 	242.394 uA  	100.0	6.75796 mV   
+10.1 	110.32 uA   	100.0	3.07098 mV   
+10.2 	55.4055 uA  	100.0	1.54173 mV   
+10.3 	28.974 uA   	100.0	806.104 uV   
+10.4 	15.4476 uA  	100.0	429.74 uV    
+10.5 	8.31755 uA  	100.0	231.378 uV   
+10.6 	4.50177 uA  	100.0	125.227 uV   
+10.7 	2.4433 uA   	100.0	67.9653 uV   
+10.8 	1.32807 uA  	100.0	36.9426 uV   
+10.9 	722.461 nA  	100.0	20.0965 uV   
+10.10 	393.188 nA  	100.0	10.9372 uV   
+10.11 	214.037 nA  	100.0	5.9538 uV    
+10.12 	116.53 nA   	100.0	3.24146 uV   
+10.13 	63.4473 nA  	100.0	1.76489 uV   
+10.14 	34.5467 nA  	100.0	960.972 nV   
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     1.86 seconds.
+    Simulation stopwatch time =     0.33 seconds.
+    Total stopwatch time      =     1.79 seconds.
+
+    Memory used:  108 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

@@ -1,0 +1,40 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-efuse-dc.cir
+Start Time: Fri Oct  2 10:17:13 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+AsciiRawFile = true
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+Singular matrix:  Check nodes xu502:x_u2_u646:eon#branch and xu502:u2_in1
+   Iteration No. 41
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 2.329 seconds.
+
+Files loaded:
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\vendor-efuse-dc.cir
+C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\rev-a\ltspice\power\models\tps25200-ltspice-compat.lib
+
+max_chg_in: MAX(V(CHG_IN))=-1.07089612276e-10 FROM 0 TO 18
+chg_in_5v: V(CHG_IN) =0 at 5
+chg_in_65v: V(CHG_IN) =0 at 6.5
+chg_in_10v: V(CHG_IN) =0 at 10
+max_en: MAX(V(WPT_EF_EN))=2.34948689421 FROM 0 TO 18
