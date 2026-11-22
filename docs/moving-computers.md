@@ -2,6 +2,8 @@
 
 **Handoff prepared 2026-11-22, America/New_York.** This guide transfers the saved engineering state. It does not record new electrical verification, current component stock or a manufacturing release. The [engineering handbook](engineering-handbook.md) remains the authority for requirements, status and accepted decisions; [the root README](../README.md) is the project map.
 
+A separate [same-day follow-up ADS review](../hardware/wpt/ads/review-2026-11-22/README.md) adds fresh fixed-coil power and translated AFE DC/AC evidence after the verified migration batch. Read it for the latest results; it leaves receiver regulation, input loading, shared bias and physical build gates open.
+
 ## 1. Clone with Git LFS
 
 Install Git and Git LFS, then clone [AngeloWhey/CuraLink](https://github.com/AngeloWhey/CuraLink) into a writable project directory. The migration is published on `main`, preserving the repository's earlier history.

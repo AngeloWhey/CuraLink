@@ -1,0 +1,39 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 17:17:14 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\review-2026-11-22\afe\gmin-sensitivity-run"
+      Process ID: 26180
+
+Parsing the netlist ...
+
+Warning detected by hpeesofsim during netlist parsing.
+    Unrecognizable scale factor `exactly' ignored
+
+
+Warning detected by hpeesofsim during netlist parsing.
+    Unrecognizable scale factor `reproduces' ignored
+
+
+Warning detected by hpeesofsim during netlist parsing.
+    Unrecognizable scale factor `source' ignored
+
+
+Warning detected by hpeesofsim during netlist parsing.
+    Unrecognizable scale factor `differential' ignored
+
+
+Error detected by hpeesofsim during netlist parsing.
+    ADS-syntax parser error in `C:/Users/angel/OneDrive/Documents/ChatGPT/curalink/hardware/wpt/ads/review-2026-11-22/afe/afe-dc-gmin-sensitivity.ckt', line 3:
+        syntax error, unexpected invalid token
+
+Flushing data (please wait) ...
+     ... data flush done.
+
+
+***** Simulation finished at Sun Nov 22 17:17:14 2026
+
+Command line dataset name gmin
+hpeesofsim terminated due to an error.

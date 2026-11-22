@@ -1,0 +1,288 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 17:17:48 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\review-2026-11-22\afe\gmin-sensitivity-run"
+      Process ID: 23484
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    The following nodes have no DC path to ground (topology corrected):
+      xu101_1._node33
+      xu101_1._node22
+      xu101_1._node21
+      xu101_1.xvos_vcm._node1
+      xu101_1._node81
+      xu101_1._node85
+      xu101_1._node86
+      xu101_2._node33
+      xu101_2._node22
+      xu101_2._node21
+      xu101_2.xvos_vcm._node1
+      xu101_2._node81
+      xu101_2._node85
+      xu101_2._node86
+      xu101_3._node33
+      xu101_3._node22
+      xu101_3._node21
+      xu101_3.xvos_vcm._node1
+      xu101_3._node81
+      xu101_3._node85
+      xu101_3._node86
+      xu101_4._node33
+      xu101_4._node22
+      xu101_4._node21
+      xu101_4.xvos_vcm._node1
+      xu101_4._node81
+      xu101_4._node85
+      xu101_4._node86
+      xu102_1._node33
+      xu102_1._node22
+      xu102_1._node21
+      xu102_1.xvos_vcm._node1
+      xu102_1._node81
+      xu102_1._node85
+      xu102_1._node86
+      xu102_2._node33
+      xu102_2._node22
+      xu102_2._node21
+      xu102_2.xvos_vcm._node1
+      xu102_2._node81
+      xu102_2._node85
+      xu102_2._node86
+      xu102_3._node33
+      xu102_3._node22
+      xu102_3._node21
+      xu102_3.xvos_vcm._node1
+      xu102_3._node81
+      xu102_3._node85
+      xu102_3._node86
+      xu102_4._node33
+      xu102_4._node22
+      xu102_4._node21
+      xu102_4.xvos_vcm._node1
+      xu102_4._node81
+      xu102_4._node85
+      xu102_4._node86
+      xu103_1._node33
+      xu103_1._node22
+      xu103_1._node21
+      xu103_1.xvos_vcm._node1
+      xu103_1._node81
+      xu103_1._node85
+      xu103_1._node86
+      xu103_2._node33
+      xu103_2._node22
+      xu103_2._node21
+      xu103_2.xvos_vcm._node1
+      xu103_2._node81
+      xu103_2._node85
+      xu103_2._node86
+      xu103_3._node33
+      xu103_3._node22
+      xu103_3._node21
+      xu103_3.xvos_vcm._node1
+      xu103_3._node81
+      xu103_3._node85
+      xu103_3._node86
+      xu103_4._node33
+      xu103_4._node22
+      xu103_4._node21
+      xu103_4.xvos_vcm._node1
+      xu103_4._node81
+      xu103_4._node85
+      xu103_4._node86
+      xu104_1._node33
+      xu104_1._node22
+      xu104_1._node21
+      xu104_1.xvos_vcm._node1
+      xu104_1._node81
+      xu104_1._node85
+      xu104_1._node86
+      xu104_2._node33
+      xu104_2._node22
+      xu104_2._node21
+      xu104_2.xvos_vcm._node1
+      xu104_2._node81
+      xu104_2._node85
+      xu104_2._node86
+      xu104_3._node33
+      xu104_3._node22
+      xu104_3._node21
+      xu104_3.xvos_vcm._node1
+      xu104_3._node81
+      xu104_3._node85
+      xu104_3._node86
+      xu104_4._node33
+      xu104_4._node22
+      xu104_4._node21
+      xu104_4.xvos_vcm._node1
+      xu104_4._node81
+      xu104_4._node85
+      xu104_4._node86
+      xu105_1._node33
+      xu105_1._node22
+      xu105_1._node21
+      xu105_1.xvos_vcm._node1
+      xu105_1._node81
+      xu105_1._node85
+      xu105_1._node86
+      xu105_2._node33
+      xu105_2._node22
+      xu105_2._node21
+      xu105_2.xvos_vcm._node1
+      xu105_2._node81
+      xu105_2._node85
+      xu105_2._node86
+      xu105_3._node33
+      xu105_3._node22
+      xu105_3._node21
+      xu105_3.xvos_vcm._node1
+      xu105_3._node81
+      xu105_3._node85
+      xu105_3._node86
+      xu105_4._node33
+      xu105_4._node22
+      xu105_4._node21
+      xu105_4.xvos_vcm._node1
+      xu105_4._node81
+      xu105_4._node85
+      xu105_4._node86
+      xu106_1._node33
+      xu106_1._node22
+      xu106_1._node21
+      xu106_1.xvos_vcm._node1
+      xu106_1._node81
+      xu106_1._node85
+      xu106_1._node86
+      xu106_2._node33
+      xu106_2._node22
+      xu106_2._node21
+      xu106_2.xvos_vcm._node1
+      xu106_2._node81
+      xu106_2._node85
+      xu106_2._node86
+      xu106_3._node33
+      xu106_3._node22
+      xu106_3._node21
+      xu106_3.xvos_vcm._node1
+      xu106_3._node81
+      xu106_3._node85
+      xu106_3._node86
+      xu106_4._node33
+      xu106_4._node22
+      xu106_4._node21
+      xu106_4.xvos_vcm._node1
+      xu106_4._node81
+      xu106_4._node85
+      xu106_4._node86
+      xu107_1._node30
+      xu107_1._node29
+      xu107_1._node32
+      xu107_1.xvos_vcm._node1
+      xu107_1._node81
+      xu107_1._node85
+      xu107_1._node86
+      xu107_2._node30
+      xu107_2._node29
+      xu107_2._node32
+      xu107_2.xvos_vcm._node1
+      xu107_2._node81
+      xu107_2._node85
+      xu107_2._node86
+      xu107_3._node30
+      xu107_3._node29
+      xu107_3._node32
+      xu107_3.xvos_vcm._node1
+      xu107_3._node81
+      xu107_3._node85
+      xu107_3._node86
+      xu107_4._node30
+      xu107_4._node29
+      xu107_4._node32
+      xu107_4.xvos_vcm._node1
+      xu107_4._node81
+      xu107_4._node85
+      xu107_4._node86
+      xu108_1._node30
+      xu108_1._node29
+      xu108_1._node32
+      xu108_1.xvos_vcm._node1
+      xu108_1._node81
+
+      xu108_1._node85
+      xu108_1._node86
+      xu108_2._node30
+      xu108_2._node29
+      xu108_2._node32
+      xu108_2.xvos_vcm._node1
+      xu108_2._node81
+      xu108_2._node85
+      xu108_2._node86
+      xu108_3._node30
+      xu108_3._node29
+      xu108_3._node32
+      xu108_3.xvos_vcm._node1
+      xu108_3._node81
+      xu108_3._node85
+      xu108_3._node86
+      xu108_4._node30
+      xu108_4._node29
+      xu108_4._node32
+      xu108_4.xvos_vcm._node1
+      xu108_4._node81
+      xu108_4._node85
+      xu108_4._node86
+      xu109_1._node33
+      xu109_1._node22
+      xu109_1._node21
+      xu109_1.xvos_vcm._node1
+      xu109_1._node81
+      xu109_1._node85
+      xu109_1._node86
+      xu109_2._node33
+      xu109_2._node22
+      xu109_2._node21
+      xu109_2.xvos_vcm._node1
+      xu109_2._node81
+      xu109_2._node85
+      xu109_2._node86
+      xu109_3._node33
+      xu109_3._node22
+      xu109_3._node21
+      xu109_3.xvos_vcm._node1
+      xu109_3._node81
+      xu109_3._node85
+      xu109_3._node86
+      xu109_4._node33
+      xu109_4._node22
+      xu109_4._node21
+      xu109_4.xvos_vcm._node1
+      xu109_4._node81
+      xu109_4._node85
+      xu109_4._node86
+
+CT SweepGmin[1] <afe-dc-gmin-sensitivity.ckt>   GMIN_LEVEL=(100e-15->1e-12)
+
+DC SweepGmin[1].DC1[1/2] <afe-dc-gmin-sensitivity.ckt>  GMIN_LEVEL=100e-15 
+
+DC SweepGmin[1].DC1[2/2] <afe-dc-gmin-sensitivity.ckt>  GMIN_LEVEL=1e-12 
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =   363.19 seconds.
+    Simulation stopwatch time =   101.81 seconds.
+    Total stopwatch time      =   103.41 seconds.
+
+    Memory used:  206 MBytes
+
+    Max threads used:  16
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

@@ -228,6 +228,16 @@ def write_rows(path, rows):
 def record_source():
     destination = HERE / "source-snapshot"
     destination.mkdir(exist_ok=True)
+    provenance = destination / "provenance.json"
+    if provenance.exists():
+        # This is historical evidence. A new run or computer must not relabel
+        # its source paths/dates as though the old dataset had just been copied.
+        for entry in json.loads(provenance.read_text(encoding="utf-8")):
+            name = Path(entry["snapshot"].replace("\\", "/")).name
+            archived = destination / name
+            if not archived.is_file() or hashlib.sha256(archived.read_bytes()).hexdigest() != entry["sha256"]:
+                raise RuntimeError(f"Historical source snapshot failed verification: {archived}")
+        return destination
     files = [SOURCE, SOURCE.parent / "data" / "cell_1.ds", SOURCE.parent / "data" / "cell_1_data" / "logFile.txt"]
     metadata = []
     for src in files:
@@ -347,7 +357,6 @@ def main():
     if a.mode == "prepare":
         prepare()
         return
-    prepare()
     simulator = ads.CircuitSimulator(hpeesof_dir=str(ADS_ROOT))
     if a.mode == "sweep":
         sweep(simulator, a.caps, a.label, a.order, diode=a.diode)

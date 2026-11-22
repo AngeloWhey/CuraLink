@@ -1,0 +1,13 @@
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no
+Port:P1 TX 0 Num=1 Z=50 Ohm Noise=no
+C:TX_SHUNT TX 0 C=438 pF
+C:TX_SERIES TX TX_COIL C=61.3 pF
+L:L1 TX_COIL 0 L=2.49 uH R=1.8 Noise=no
+L:L2 0 RX_COIL L=0.330 uH R=0.399 Noise=no
+Mutual:LINK K=0.0662 Inductor1="L1" Inductor2="L2"
+C:RX_SERIES RX_COIL RX C=673.3 pF
+C:RX_SHUNT RX 0 C=1050 pF
+Port:P2 RX 0 Num=2 Z=50 Ohm Noise=no
+S_Param:SP1 SweepVar="freq" SweepPlan="Carrier" OutputPlan="SP_Output"
+SweepPlan:Carrier Pt=13.56 MHz
+OutputPlan:SP_Output Type="Output" UseNodeNestLevel=yes NodeNestLevel=2

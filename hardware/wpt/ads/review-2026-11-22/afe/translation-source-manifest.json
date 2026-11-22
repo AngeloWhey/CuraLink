@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-22",
+  "source_file_sha256": {
+    "hardware\\rev-a\\ltspice\\afe\\afe-full-op.cir": "841b888c3b3fcdad429dee22df6d082ac38642d178a086e05e5921a05c0ca869",
+    "hardware\\rev-a\\ltspice\\afe\\models\\tlv9002-namespaced.lib": "22a5c4569fafceb2559ba048d2a2b3035059513988a9c1a2f0688630263cb66d",
+    "hardware\\rev-a\\ltspice\\afe\\models\\tlv9052-namespaced.lib": "21aa0f220b73bef615f2431e9b5f24606d618121215f766240b6bd29cabeab8e",
+    "hardware\\rev-a\\ltspice\\afe\\canonical-afe.lib": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f",
+    "hardware\\rev-a\\ltspice\\afe\\afe-ac-differential.cir": "f966ff5c9a764e6ce28fd5ed9730d9d76f362a7703b89ea385a76e1e4db06bda",
+    "hardware\\rev-a\\ltspice\\afe\\afe-ac-common.cir": "0d9e04ee8a397f11aab071710892618befbd79a3d542a9ac47f483e1302db188"
+  },
+  "method": "Only recursively expand include directives, retain all original TI model equations and circuit values, translate with ADS nettrans -lt -g",
+  "simulation_completed": false
+}

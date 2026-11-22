@@ -1,0 +1,1392 @@
+{
+  "recorded_local_date": "2026-11-22",
+  "timezone": "America/New_York",
+  "scope": "Read-only static DC return/feedback audit plus explicitly dated existing evidence; no new ADS or LTspice simulation",
+  "design_status": "D-024 Candidate ADC implementation; does not adopt it over accepted analog-event baseline",
+  "new_electrical_simulation_completed": false,
+  "source_hashes": {
+    "hardware\\rev-a\\ltspice\\afe\\canonical-afe.lib": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f"
+  },
+  "static_checks": {
+    "amplifier_units": 36,
+    "all_units_have_dc_return_and_resistive_negative_feedback": true,
+    "matched_recording_inputs": [
+      {
+        "channel": 1,
+        "connector": "FFC_CH1",
+        "series_R": {
+          "ref": "R1001",
+          "ohm": 5100.0
+        },
+        "coupling_C": {
+          "ref": "C1001",
+          "F": 1e-08
+        },
+        "bias_R": {
+          "ref": "R1002",
+          "ohm": 22000000.0
+        },
+        "bias_to_vmid": {
+          "anchor": "VMID",
+          "resistors": [
+            "R1002"
+          ]
+        },
+        "resistor_only_path_across_coupling_cap": null,
+        "adc_R_ohm": 150.0,
+        "adc_C_F": 4.7e-10
+      },
+      {
+        "channel": 2,
+        "connector": "FFC_CH2",
+        "series_R": {
+          "ref": "R1019",
+          "ohm": 5100.0
+        },
+        "coupling_C": {
+          "ref": "C1008",
+          "F": 1e-08
+        },
+        "bias_R": {
+          "ref": "R1020",
+          "ohm": 22000000.0
+        },
+        "bias_to_vmid": {
+          "anchor": "VMID",
+          "resistors": [
+            "R1020"
+          ]
+        },
+        "resistor_only_path_across_coupling_cap": null,
+        "adc_R_ohm": 150.0,
+        "adc_C_F": 4.7e-10
+      },
+      {
+        "channel": 3,
+        "connector": "FFC_CH3",
+        "series_R": {
+          "ref": "R1037",
+          "ohm": 5100.0
+        },
+        "coupling_C": {
+          "ref": "C1015",
+          "F": 1e-08
+        },
+        "bias_R": {
+          "ref": "R1038",
+          "ohm": 22000000.0
+        },
+        "bias_to_vmid": {
+          "anchor": "VMID",
+          "resistors": [
+            "R1038"
+          ]
+        },
+        "resistor_only_path_across_coupling_cap": null,
+        "adc_R_ohm": 150.0,
+        "adc_C_F": 4.7e-10
+      },
+      {
+        "channel": 4,
+        "connector": "FFC_CH4",
+        "series_R": {
+          "ref": "R1055",
+          "ohm": 5100.0
+        },
+        "coupling_C": {
+          "ref": "C1022",
+          "F": 1e-08
+        },
+        "bias_R": {
+          "ref": "R1056",
+          "ohm": 22000000.0
+        },
+        "bias_to_vmid": {
+          "anchor": "VMID",
+          "resistors": [
+            "R1056"
+          ]
+        },
+        "resistor_only_path_across_coupling_cap": null,
+        "adc_R_ohm": 150.0,
+        "adc_C_F": 4.7e-10
+      },
+      {
+        "channel": 5,
+        "connector": "FFC_CH5",
+        "series_R": {
+          "ref": "R1073",
+          "ohm": 5100.0
+        },
+        "coupling_C": {
+          "ref": "C1029",
+          "F": 1e-08
+        },
+        "bias_R": {
+          "ref": "R1074",
+          "ohm": 22000000.0
+        },
+        "bias_to_vmid": {
+          "anchor": "VMID",
+          "resistors": [
+            "R1074"
+          ]
+        },
+        "resistor_only_path_across_coupling_cap": null,
+        "adc_R_ohm": 150.0,
+        "adc_C_F": 4.7e-10
+      },
+      {
+        "channel": 6,
+        "connector": "FFC_CH6",
+        "series_R": {
+          "ref": "R1091",
+          "ohm": 5100.0
+        },
+        "coupling_C": {
+          "ref": "C1036",
+          "F": 1e-08
+        },
+        "bias_R": {
+          "ref": "R1092",
+          "ohm": 22000000.0
+        },
+        "bias_to_vmid": {
+          "anchor": "VMID",
+          "resistors": [
+            "R1092"
+          ]
+        },
+        "resistor_only_path_across_coupling_cap": null,
+        "adc_R_ohm": 150.0,
+        "adc_C_F": 4.7e-10
+      },
+      {
+        "channel": 7,
+        "connector": "FFC_CH7",
+        "series_R": {
+          "ref": "R1109",
+          "ohm": 5100.0
+        },
+        "coupling_C": {
+          "ref": "C1043",
+          "F": 1e-08
+        },
+        "bias_R": {
+          "ref": "R1110",
+          "ohm": 22000000.0
+        },
+        "bias_to_vmid": {
+          "anchor": "VMID",
+          "resistors": [
+            "R1110"
+          ]
+        },
+        "resistor_only_path_across_coupling_cap": null,
+        "adc_R_ohm": 150.0,
+        "adc_C_F": 4.7e-10
+      },
+      {
+        "channel": 8,
+        "connector": "FFC_CH8",
+        "series_R": {
+          "ref": "R1127",
+          "ohm": 5100.0
+        },
+        "coupling_C": {
+          "ref": "C1050",
+          "F": 1e-08
+        },
+        "bias_R": {
+          "ref": "R1128",
+          "ohm": 22000000.0
+        },
+        "bias_to_vmid": {
+          "anchor": "VMID",
+          "resistors": [
+            "R1128"
+          ]
+        },
+        "resistor_only_path_across_coupling_cap": null,
+        "adc_R_ohm": 150.0,
+        "adc_C_F": 4.7e-10
+      }
+    ],
+    "reference_input": {
+      "series_R_ohm": 5100.0,
+      "coupling_C_F": 1e-08,
+      "bias_R_ohm": 22000000.0,
+      "bias_to_vmid": {
+        "anchor": "VMID",
+        "resistors": [
+          "R1146"
+        ]
+      },
+      "dc_isolated_from_connector": true
+    },
+    "vmid": {
+      "R540_ohm": 10000.0,
+      "R541_ohm": 10000.0,
+      "C529_F": 2.2e-06,
+      "isolation_R1149_ohm": 47.0,
+      "bypass_C1058_F": 4.7e-06,
+      "feedback_before_isolation": true,
+      "unused_follower_units": [
+        "XU109_3",
+        "XU109_4"
+      ]
+    },
+    "amplifier_paths": [
+      {
+        "instance": "XU101_1",
+        "noninverting": "CH1_PLUS",
+        "inverting": "CH1_MINUS",
+        "output": "CH1_PRE",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1002",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH1_PRE",
+          "resistors": [
+            "R1004"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH1_PRE",
+          "resistors": [
+            "R1004"
+          ]
+        }
+      },
+      {
+        "instance": "XU101_2",
+        "noninverting": "CH2_PLUS",
+        "inverting": "CH2_MINUS",
+        "output": "CH2_PRE",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1020",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH2_PRE",
+          "resistors": [
+            "R1022"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH2_PRE",
+          "resistors": [
+            "R1022"
+          ]
+        }
+      },
+      {
+        "instance": "XU101_3",
+        "noninverting": "CH3_PLUS",
+        "inverting": "CH3_MINUS",
+        "output": "CH3_PRE",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1038",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH3_PRE",
+          "resistors": [
+            "R1040"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH3_PRE",
+          "resistors": [
+            "R1040"
+          ]
+        }
+      },
+      {
+        "instance": "XU101_4",
+        "noninverting": "CH4_PLUS",
+        "inverting": "CH4_MINUS",
+        "output": "CH4_PRE",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1056",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH4_PRE",
+          "resistors": [
+            "R1058"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH4_PRE",
+          "resistors": [
+            "R1058"
+          ]
+        }
+      },
+      {
+        "instance": "XU102_1",
+        "noninverting": "CH5_PLUS",
+        "inverting": "CH5_MINUS",
+        "output": "CH5_PRE",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1074",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH5_PRE",
+          "resistors": [
+            "R1076"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH5_PRE",
+          "resistors": [
+            "R1076"
+          ]
+        }
+      },
+      {
+        "instance": "XU102_2",
+        "noninverting": "CH6_PLUS",
+        "inverting": "CH6_MINUS",
+        "output": "CH6_PRE",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1092",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH6_PRE",
+          "resistors": [
+            "R1094"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH6_PRE",
+          "resistors": [
+            "R1094"
+          ]
+        }
+      },
+      {
+        "instance": "XU102_3",
+        "noninverting": "CH7_PLUS",
+        "inverting": "CH7_MINUS",
+        "output": "CH7_PRE",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1110",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH7_PRE",
+          "resistors": [
+            "R1112"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH7_PRE",
+          "resistors": [
+            "R1112"
+          ]
+        }
+      },
+      {
+        "instance": "XU102_4",
+        "noninverting": "CH8_PLUS",
+        "inverting": "CH8_MINUS",
+        "output": "CH8_PRE",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1128",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH8_PRE",
+          "resistors": [
+            "R1130"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH8_PRE",
+          "resistors": [
+            "R1130"
+          ]
+        }
+      },
+      {
+        "instance": "XU103_1",
+        "noninverting": "CH1_DIFF_PLUS",
+        "inverting": "CH1_DIFF_MINUS",
+        "output": "CH1_HP",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1009",
+            "R1010",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH1_HP",
+          "resistors": [
+            "R1007",
+            "R1006"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH1_HP",
+          "resistors": [
+            "R1007",
+            "R1006"
+          ]
+        }
+      },
+      {
+        "instance": "XU103_2",
+        "noninverting": "CH2_DIFF_PLUS",
+        "inverting": "CH2_DIFF_MINUS",
+        "output": "CH2_HP",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1027",
+            "R1028",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH2_HP",
+          "resistors": [
+            "R1025",
+            "R1024"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH2_HP",
+          "resistors": [
+            "R1025",
+            "R1024"
+          ]
+        }
+      },
+      {
+        "instance": "XU103_3",
+        "noninverting": "CH3_DIFF_PLUS",
+        "inverting": "CH3_DIFF_MINUS",
+        "output": "CH3_HP",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1045",
+            "R1046",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH3_HP",
+          "resistors": [
+            "R1043",
+            "R1042"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH3_HP",
+          "resistors": [
+            "R1043",
+            "R1042"
+          ]
+        }
+      },
+      {
+        "instance": "XU103_4",
+        "noninverting": "CH4_DIFF_PLUS",
+        "inverting": "CH4_DIFF_MINUS",
+        "output": "CH4_HP",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1063",
+            "R1064",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH4_HP",
+          "resistors": [
+            "R1061",
+            "R1060"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH4_HP",
+          "resistors": [
+            "R1061",
+            "R1060"
+          ]
+        }
+      },
+      {
+        "instance": "XU104_1",
+        "noninverting": "CH5_DIFF_PLUS",
+        "inverting": "CH5_DIFF_MINUS",
+        "output": "CH5_HP",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1081",
+            "R1082",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH5_HP",
+          "resistors": [
+            "R1079",
+            "R1078"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH5_HP",
+          "resistors": [
+            "R1079",
+            "R1078"
+          ]
+        }
+      },
+      {
+        "instance": "XU104_2",
+        "noninverting": "CH6_DIFF_PLUS",
+        "inverting": "CH6_DIFF_MINUS",
+        "output": "CH6_HP",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1099",
+            "R1100",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH6_HP",
+          "resistors": [
+            "R1097",
+            "R1096"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH6_HP",
+          "resistors": [
+            "R1097",
+            "R1096"
+          ]
+        }
+      },
+      {
+        "instance": "XU104_3",
+        "noninverting": "CH7_DIFF_PLUS",
+        "inverting": "CH7_DIFF_MINUS",
+        "output": "CH7_HP",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1117",
+            "R1118",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH7_HP",
+          "resistors": [
+            "R1115",
+            "R1114"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH7_HP",
+          "resistors": [
+            "R1115",
+            "R1114"
+          ]
+        }
+      },
+      {
+        "instance": "XU104_4",
+        "noninverting": "CH8_DIFF_PLUS",
+        "inverting": "CH8_DIFF_MINUS",
+        "output": "CH8_HP",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1135",
+            "R1136",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH8_HP",
+          "resistors": [
+            "R1133",
+            "R1132"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH8_HP",
+          "resistors": [
+            "R1133",
+            "R1132"
+          ]
+        }
+      },
+      {
+        "instance": "XU105_1",
+        "noninverting": "CH1_LP1_PLUS",
+        "inverting": "CH1_LP1_MINUS",
+        "output": "CH1_LP1_OUT",
+        "plus_dc_resistive_path": {
+          "anchor": "CH1_HP",
+          "resistors": [
+            "R1012",
+            "R1011"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH1_LP1_OUT",
+          "resistors": [
+            "R1014"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH1_LP1_OUT",
+          "resistors": [
+            "R1014"
+          ]
+        }
+      },
+      {
+        "instance": "XU105_2",
+        "noninverting": "CH2_LP1_PLUS",
+        "inverting": "CH2_LP1_MINUS",
+        "output": "CH2_LP1_OUT",
+        "plus_dc_resistive_path": {
+          "anchor": "CH2_HP",
+          "resistors": [
+            "R1030",
+            "R1029"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH2_LP1_OUT",
+          "resistors": [
+            "R1032"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH2_LP1_OUT",
+          "resistors": [
+            "R1032"
+          ]
+        }
+      },
+      {
+        "instance": "XU105_3",
+        "noninverting": "CH3_LP1_PLUS",
+        "inverting": "CH3_LP1_MINUS",
+        "output": "CH3_LP1_OUT",
+        "plus_dc_resistive_path": {
+          "anchor": "CH3_HP",
+          "resistors": [
+            "R1048",
+            "R1047"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH3_LP1_OUT",
+          "resistors": [
+            "R1050"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH3_LP1_OUT",
+          "resistors": [
+            "R1050"
+          ]
+        }
+      },
+      {
+        "instance": "XU105_4",
+        "noninverting": "CH4_LP1_PLUS",
+        "inverting": "CH4_LP1_MINUS",
+        "output": "CH4_LP1_OUT",
+        "plus_dc_resistive_path": {
+          "anchor": "CH4_HP",
+          "resistors": [
+            "R1066",
+            "R1065"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH4_LP1_OUT",
+          "resistors": [
+            "R1068"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH4_LP1_OUT",
+          "resistors": [
+            "R1068"
+          ]
+        }
+      },
+      {
+        "instance": "XU106_1",
+        "noninverting": "CH5_LP1_PLUS",
+        "inverting": "CH5_LP1_MINUS",
+        "output": "CH5_LP1_OUT",
+        "plus_dc_resistive_path": {
+          "anchor": "CH5_HP",
+          "resistors": [
+            "R1084",
+            "R1083"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH5_LP1_OUT",
+          "resistors": [
+            "R1086"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH5_LP1_OUT",
+          "resistors": [
+            "R1086"
+          ]
+        }
+      },
+      {
+        "instance": "XU106_2",
+        "noninverting": "CH6_LP1_PLUS",
+        "inverting": "CH6_LP1_MINUS",
+        "output": "CH6_LP1_OUT",
+        "plus_dc_resistive_path": {
+          "anchor": "CH6_HP",
+          "resistors": [
+            "R1102",
+            "R1101"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH6_LP1_OUT",
+          "resistors": [
+            "R1104"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH6_LP1_OUT",
+          "resistors": [
+            "R1104"
+          ]
+        }
+      },
+      {
+        "instance": "XU106_3",
+        "noninverting": "CH7_LP1_PLUS",
+        "inverting": "CH7_LP1_MINUS",
+        "output": "CH7_LP1_OUT",
+        "plus_dc_resistive_path": {
+          "anchor": "CH7_HP",
+          "resistors": [
+            "R1120",
+            "R1119"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH7_LP1_OUT",
+          "resistors": [
+            "R1122"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH7_LP1_OUT",
+          "resistors": [
+            "R1122"
+          ]
+        }
+      },
+      {
+        "instance": "XU106_4",
+        "noninverting": "CH8_LP1_PLUS",
+        "inverting": "CH8_LP1_MINUS",
+        "output": "CH8_LP1_OUT",
+        "plus_dc_resistive_path": {
+          "anchor": "CH8_HP",
+          "resistors": [
+            "R1138",
+            "R1137"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "CH8_LP1_OUT",
+          "resistors": [
+            "R1140"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "CH8_LP1_OUT",
+          "resistors": [
+            "R1140"
+          ]
+        }
+      },
+      {
+        "instance": "XU107_1",
+        "noninverting": "CH1_LP2_PLUS",
+        "inverting": "CH1_LP2_MINUS",
+        "output": "AFE_OUT_1",
+        "plus_dc_resistive_path": {
+          "anchor": "CH1_LP1_OUT",
+          "resistors": [
+            "R1016",
+            "R1015"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_OUT_1",
+          "resistors": [
+            "R1018"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_OUT_1",
+          "resistors": [
+            "R1018"
+          ]
+        }
+      },
+      {
+        "instance": "XU107_2",
+        "noninverting": "CH2_LP2_PLUS",
+        "inverting": "CH2_LP2_MINUS",
+        "output": "AFE_OUT_2",
+        "plus_dc_resistive_path": {
+          "anchor": "CH2_LP1_OUT",
+          "resistors": [
+            "R1034",
+            "R1033"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_OUT_2",
+          "resistors": [
+            "R1036"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_OUT_2",
+          "resistors": [
+            "R1036"
+          ]
+        }
+      },
+      {
+        "instance": "XU107_3",
+        "noninverting": "CH3_LP2_PLUS",
+        "inverting": "CH3_LP2_MINUS",
+        "output": "AFE_OUT_3",
+        "plus_dc_resistive_path": {
+          "anchor": "CH3_LP1_OUT",
+          "resistors": [
+            "R1052",
+            "R1051"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_OUT_3",
+          "resistors": [
+            "R1054"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_OUT_3",
+          "resistors": [
+            "R1054"
+          ]
+        }
+      },
+      {
+        "instance": "XU107_4",
+        "noninverting": "CH4_LP2_PLUS",
+        "inverting": "CH4_LP2_MINUS",
+        "output": "AFE_OUT_4",
+        "plus_dc_resistive_path": {
+          "anchor": "CH4_LP1_OUT",
+          "resistors": [
+            "R1070",
+            "R1069"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_OUT_4",
+          "resistors": [
+            "R1072"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_OUT_4",
+          "resistors": [
+            "R1072"
+          ]
+        }
+      },
+      {
+        "instance": "XU108_1",
+        "noninverting": "CH5_LP2_PLUS",
+        "inverting": "CH5_LP2_MINUS",
+        "output": "AFE_OUT_5",
+        "plus_dc_resistive_path": {
+          "anchor": "CH5_LP1_OUT",
+          "resistors": [
+            "R1088",
+            "R1087"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_OUT_5",
+          "resistors": [
+            "R1090"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_OUT_5",
+          "resistors": [
+            "R1090"
+          ]
+        }
+      },
+      {
+        "instance": "XU108_2",
+        "noninverting": "CH6_LP2_PLUS",
+        "inverting": "CH6_LP2_MINUS",
+        "output": "AFE_OUT_6",
+        "plus_dc_resistive_path": {
+          "anchor": "CH6_LP1_OUT",
+          "resistors": [
+            "R1106",
+            "R1105"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_OUT_6",
+          "resistors": [
+            "R1108"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_OUT_6",
+          "resistors": [
+            "R1108"
+          ]
+        }
+      },
+      {
+        "instance": "XU108_3",
+        "noninverting": "CH7_LP2_PLUS",
+        "inverting": "CH7_LP2_MINUS",
+        "output": "AFE_OUT_7",
+        "plus_dc_resistive_path": {
+          "anchor": "CH7_LP1_OUT",
+          "resistors": [
+            "R1124",
+            "R1123"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_OUT_7",
+          "resistors": [
+            "R1126"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_OUT_7",
+          "resistors": [
+            "R1126"
+          ]
+        }
+      },
+      {
+        "instance": "XU108_4",
+        "noninverting": "CH8_LP2_PLUS",
+        "inverting": "CH8_LP2_MINUS",
+        "output": "AFE_OUT_8",
+        "plus_dc_resistive_path": {
+          "anchor": "CH8_LP1_OUT",
+          "resistors": [
+            "R1142",
+            "R1141"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_OUT_8",
+          "resistors": [
+            "R1144"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_OUT_8",
+          "resistors": [
+            "R1144"
+          ]
+        }
+      },
+      {
+        "instance": "XU109_1",
+        "noninverting": "REF_PLUS",
+        "inverting": "REF_MINUS",
+        "output": "REF_PRE",
+        "plus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": [
+            "R1146",
+            "R1149"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "REF_PRE",
+          "resistors": [
+            "R1148"
+          ]
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "REF_PRE",
+          "resistors": [
+            "R1148"
+          ]
+        }
+      },
+      {
+        "instance": "XU109_2",
+        "noninverting": "VMID_RAW",
+        "inverting": "VMID_BUF",
+        "output": "VMID_BUF",
+        "plus_dc_resistive_path": {
+          "anchor": "AVDD_3V0",
+          "resistors": [
+            "R540"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "VMID_BUF",
+          "resistors": []
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "VMID_BUF",
+          "resistors": []
+        }
+      },
+      {
+        "instance": "XU109_3",
+        "noninverting": "VMID_RAW",
+        "inverting": "AFE_SPARE_C",
+        "output": "AFE_SPARE_C",
+        "plus_dc_resistive_path": {
+          "anchor": "AVDD_3V0",
+          "resistors": [
+            "R540"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_SPARE_C",
+          "resistors": []
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_SPARE_C",
+          "resistors": []
+        }
+      },
+      {
+        "instance": "XU109_4",
+        "noninverting": "VMID_RAW",
+        "inverting": "AFE_SPARE_D",
+        "output": "AFE_SPARE_D",
+        "plus_dc_resistive_path": {
+          "anchor": "AVDD_3V0",
+          "resistors": [
+            "R540"
+          ]
+        },
+        "minus_dc_resistive_path": {
+          "anchor": "AFE_SPARE_D",
+          "resistors": []
+        },
+        "output_to_minus_resistive_feedback": {
+          "anchor": "AFE_SPARE_D",
+          "resistors": []
+        }
+      }
+    ]
+  },
+  "first_principles_calculations": {
+    "input_bias_time_constant_s": 0.22,
+    "input_bias_RC_corner_Hz": 0.7234315595086152,
+    "midpoint_divider_current_A": 0.00015,
+    "midpoint_divider_thevenin_ohm": 5000,
+    "midpoint_raw_time_constant_s": 0.011000000000000001,
+    "quarter_ideal_ADC_LSB_V": 0.00018310546875,
+    "max_total_input_shunt_C_for_10Mohm_at7k_F": 2.0251864967108473e-12
+  },
+  "dated_simulation_evidence": {
+    "date": "2026-10-02",
+    "simulator": "26.0.2 for Windows",
+    "operating_point": {
+      "passed_all36_units": true,
+      "values": {
+        "V(AVDD_3V0)": 3.0,
+        "V(VMID_RAW)": 1.499999924999978,
+        "V(VMID_BUF)": 1.500398164670742,
+        "V(VMID)": 1.50059629197289,
+        "V(CH1_PRE)": 1.503767069514864,
+        "V(REF_PRE)": 1.503767069514864,
+        "V(CH1_HP)": 1.500990981099031,
+        "V(CH1_LP1_OUT)": 1.501508067792748,
+        "V(AFE_OUT_1)": 1.503360005042647,
+        "V(ADC_IN_1)": 1.503360005042647,
+        "I(VDD)": -0.004474216036389794
+      },
+      "supply_current_mA": 4.4742160363897945,
+      "max_amplifier_input_difference_uV": 398.38171470685245
+    },
+    "ac": {
+      "gain_at_1k_VV": 969.7435634576424,
+      "peak_gain_VV": 1006.2919623148555,
+      "peak_frequency_Hz": 2900.681198693225,
+      "sampled_peak_relative_minus3dB_band_Hz": [
+        316.2277660168443,
+        6878.599123088256
+      ],
+      "target_frequency_values_log_interpolated": [
+        {
+          "frequency_Hz": 0.01,
+          "gain_VV": 0.0023169388632428363,
+          "phase_deg": -79.9493718161745,
+          "gain_dB_vs1k": -112.43484662879962,
+          "common_gain_VV": 0.005851470830280499,
+          "nominal_CM_rejection_dB": -8.047009402683154
+        },
+        {
+          "frequency_Hz": 0.1,
+          "gain_VV": 0.0486530475776846,
+          "phase_deg": -35.198847958514946,
+          "gain_dB_vs1k": -85.99093712974111,
+          "common_gain_VV": 0.057420984000582896,
+          "nominal_CM_rejection_dB": -1.4392116266550636
+        },
+        {
+          "frequency_Hz": 1,
+          "gain_VV": 2.6126420108822757,
+          "phase_deg": -56.65855996541797,
+          "gain_dB_vs1k": -51.391539995051964,
+          "common_gain_VV": 0.2647814354370139,
+          "nominal_CM_rejection_dB": 19.88384747434097
+        },
+        {
+          "frequency_Hz": 10,
+          "gain_VV": 32.276674080385625,
+          "phase_deg": -88.14964238954703,
+          "gain_dB_vs1k": -29.55536257645168,
+          "common_gain_VV": 0.2972161334182683,
+          "nominal_CM_rejection_dB": 40.71632793771315
+        },
+        {
+          "frequency_Hz": 50,
+          "gain_VV": 159.86655055968455,
+          "phase_deg": -99.47915976276406,
+          "gain_dB_vs1k": -15.65798602840398,
+          "common_gain_VV": 0.3002177979910899,
+          "nominal_CM_rejection_dB": 54.526423381611934
+        },
+        {
+          "frequency_Hz": 60,
+          "gain_VV": 190.81220975647085,
+          "phase_deg": -101.62415358277617,
+          "gain_dB_vs1k": -14.121014893409928,
+          "common_gain_VV": 0.3012029325833006,
+          "nominal_CM_rejection_dB": 56.03493930193033
+        },
+        {
+          "frequency_Hz": 300,
+          "gain_VV": 702.6129613320686,
+          "phase_deg": -140.89214248079543,
+          "gain_dB_vs1k": -2.7988149721529303,
+          "common_gain_VV": 0.3342052608993327,
+          "nominal_CM_rejection_dB": 66.45405750071411
+        },
+        {
+          "frequency_Hz": 1000,
+          "gain_VV": 969.7435634576424,
+          "phase_deg": 172.93161960117465,
+          "gain_dB_vs1k": 0.0,
+          "common_gain_VV": 0.30634814867409693,
+          "nominal_CM_rejection_dB": 70.00883291133877
+        },
+        {
+          "frequency_Hz": 7000,
+          "gain_VV": 704.2973353605162,
+          "phase_deg": -18.83326570147942,
+          "gain_dB_vs1k": -2.778017208507735,
+          "common_gain_VV": 0.17583511304546023,
+          "nominal_CM_rejection_dB": 72.05300880617074
+        },
+        {
+          "frequency_Hz": 15000,
+          "gain_VV": 43.086899834488,
+          "phase_deg": -152.25815607453174,
+          "gain_dB_vs1k": -27.046233172433777,
+          "common_gain_VV": 0.01449422938313218,
+          "nominal_CM_rejection_dB": 69.46300233967726
+        },
+        {
+          "frequency_Hz": 23000,
+          "gain_VV": 6.760898984810246,
+          "phase_deg": 159.3424939125713,
+          "gain_dB_vs1k": -43.13304917116354,
+          "common_gain_VV": 0.014168074634546415,
+          "nominal_CM_rejection_dB": 53.573872223778935
+        },
+        {
+          "frequency_Hz": 43000,
+          "gain_VV": 0.3606865877743346,
+          "phase_deg": 90.658646510891,
+          "gain_dB_vs1k": -68.59053824892922,
+          "common_gain_VV": 0.007158904236738234,
+          "nominal_CM_rejection_dB": 34.045668805593806
+        },
+        {
+          "frequency_Hz": 100000.0,
+          "gain_VV": 0.005525003636610552,
+          "phase_deg": -38.33031545560762,
+          "gain_dB_vs1k": -104.88648674992903,
+          "common_gain_VV": 0.0016250429368858989,
+          "nominal_CM_rejection_dB": 10.629354556367545
+        },
+        {
+          "frequency_Hz": 1000000.0,
+          "gain_VV": 1.1382008843805154e-05,
+          "phase_deg": -88.96097873981134,
+          "gain_dB_vs1k": -158.608759739837,
+          "common_gain_VV": 3.952073266166646e-06,
+          "nominal_CM_rejection_dB": 9.187878629760883
+        },
+        {
+          "frequency_Hz": 10000000.0,
+          "gain_VV": 9.623674816562403e-11,
+          "phase_deg": -163.74794528028684,
+          "gain_dB_vs1k": -260.06631931834426,
+          "common_gain_VV": 2.383979669100897e-10,
+          "nominal_CM_rejection_dB": -7.879232151379572
+        }
+      ],
+      "limitation": "CMRR is nominal matched family model; tolerance/source/parasitic mismatch results from previous study still apply. Audio-band model cannot establish GHz RF immunity."
+    },
+    "startup": {
+      "source_case": "Grounded external CH/REF, 0-to-3V AFE supply ramp in1ms, LTspice startup initializes sources at0",
+      "dc_equilibrium_reference_V": 1.503360005042647,
+      "adc_residual_at_2s_uV": -531.2086021056483,
+      "adc_residual_at_2p4s_uV": -149.71359592408362,
+      "settling_to_1mV_s": 1.801055974692463,
+      "settling_to_quarter_LSB_s": 2.336172974693151,
+      "provisional_2s_quarter_LSB_startup_passed_this_nominal_case": false,
+      "preamp_last_time_below_0p2V_s": 0.583861974692532,
+      "VMID_at_0p3s_V": 1.4453427082438015,
+      "limits": "Family-model behavior below1.8V is not guaranteed; no regulator/interlock/MCU sequencing, process corners, or measured startup included"
+    },
+    "offset_recovery": {
+      "source_case": "CH1: 0,+100mV,0,-100mV,0; 1us edges at 10ms/600ms/1.2s/1.8s; others 0V; final quiet interval 2.2s",
+      "adc_min_V": 0.01489811405524633,
+      "adc_max_V": 2.985101506670219,
+      "outside_0p2_to_2p8_V": true,
+      "all_samples_within_0_to_3V": true,
+      "shared_vmid_min_V": 1.496463571083955,
+      "shared_vmid_max_V": 1.504439776996828,
+      "unexcited_channel2_min_V": 1.499225491289832,
+      "unexcited_channel2_max_V": 1.507205120101795,
+      "settling_after_last_event_to_1mV_s": 1.2025270000012709,
+      "settling_after_last_event_to_quarter_LSB_s": 1.5853400000020792,
+      "residual_at_0p6s_after_last_event_mV": 14.782902813973209,
+      "residual_at_2s_after_last_event_uV": 28.771762316859295,
+      "residual_at_end_uV": 11.243512977987535,
+      "provisional_2s_quarter_LSB_recovery_passed_this_nominal_case": true
+    }
+  },
+  "findings": [
+    {
+      "id": "SIG-01",
+      "severity": "Requirement failure / build gate",
+      "status": "Open",
+      "finding": "Current input capacitance fails the unchanged >=10 MOhm across-band target; existing declared 20 pF cable case gives 0.826 MOhm at 7 kHz.",
+      "action": "Redesign/qualify total input capacitance or explicitly obtain a requirement revision before release; another buffer after the cable does not remove upstream shunt capacitance."
+    },
+    {
+      "id": "SIG-02",
+      "severity": "Signal qualification gate",
+      "status": "Open",
+      "finding": "Shared VMID creates modeled quiet-channel coupling of -52.22 dB in the 300 Hz CH1-only case; the proposed -60 dB criterion is unaccepted.",
+      "action": "Define aggregate crosstalk acceptance and qualify bias impedance, stability and startup; retain canonical 47 Ohm until replacement tests complete."
+    },
+    {
+      "id": "SIG-03",
+      "severity": "Operational limitation",
+      "status": "Candidate mitigation",
+      "finding": "Offset steps rail downstream stages and couple an artifact to quiet channels; nominal startup requires 2.336 s and the existing 2 s check fails.",
+      "action": "Qualify 3 s blanking plus rail/baseline/clipping validity checks over operating conditions; preserve VMID, early-stage and output test access."
+    },
+    {
+      "id": "SIG-04",
+      "severity": "Protection and mode-isolation gate",
+      "status": "Open",
+      "finding": "The existing AFE fixture has an ideal 3 V rail and capacitance-only TVS and cannot prove off-state FFC/debug backfeed or input-fault survival.",
+      "action": "Prove power sequencing and rail injection with actual off-state conditions; prevent externally driven off interfaces until qualified."
+    },
+    {
+      "id": "SIG-05",
+      "severity": "Physicalimplementation gate",
+      "status": "Open",
+      "finding": "The recorded PCB has no completed signal routing or filled planes; logical GND labels do not prove physical return-path quality.",
+      "action": "Complete routing/connectivity and return-plane/coupling review before fabrication."
+    }
+  ],
+  "independent_saved_circuit_consistency": {
+    "report": "docs/reviews/2026-11-22-netlist-consistency.json",
+    "physical_passives_matched": 236,
+    "amplifier_units_matched": 36,
+    "targeted_native_schematic_pins_matched": 598,
+    "full_source_to_XML_pin_states_matched": 1137,
+    "physical_references": 446,
+    "intentional_NC_pins": 48,
+    "electrical_mismatches": 0,
+    "new_manufacturer_pin_requalification": false,
+    "new_ERC_or_simulation": false
+  }
+}

@@ -1,0 +1,57 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 17:08:19 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\review-2026-11-22\afe\run"
+      Process ID: 20984
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim during netlist flattening.
+    Instance `AC1':
+        `Start' is not a valid parameter for an instance of `AC'.  Ignoring it.
+
+
+Warning detected by hpeesofsim during netlist flattening.
+    Instance `AC1':
+        `Stop' is not a valid parameter for an instance of `AC'.  Ignoring it.
+
+
+Warning detected by hpeesofsim during netlist flattening.
+    Instance `AC1':
+        `Dec' is not a valid parameter for an instance of `AC'.  Ignoring it.
+
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 252
+
+Device Pin Current not saved for multiple pins of devices
+ connected together in circuit. Use a current probe instead.
+
+DC DC1[1] <afe-dc-ac.ckt>  
+
+CT SweepAC[1] <afe-dc-ac.ckt>   AC_STIM=(0->1)
+Device Pin Current not saved for multiple pins of devices
+ connected together in circuit. Use a current probe instead.
+
+AC SweepAC[1].AC1[1/2] <afe-dc-ac.ckt>  AC_STIM=0  freq=1 mHz
+
+AC SweepAC[1].AC1[2/2] <afe-dc-ac.ckt>  AC_STIM=1  freq=1 mHz
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =   230.20 seconds.
+    Simulation stopwatch time =    69.27 seconds.
+    Total stopwatch time      =    71.20 seconds.
+
+    Memory used:  263 MBytes
+
+    Max threads used:  14
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

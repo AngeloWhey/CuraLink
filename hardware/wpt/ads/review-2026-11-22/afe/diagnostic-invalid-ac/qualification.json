@@ -1,0 +1,5 @@
+{
+  "DC": "Completed numerical operating point; port corrections remain qualification limits",
+  "AC": "Rejected as frequency-response evidence: Start/Stop/Dec unsupported; only 1mHz per stimulus ran",
+  "date": "2026-11-22"
+}

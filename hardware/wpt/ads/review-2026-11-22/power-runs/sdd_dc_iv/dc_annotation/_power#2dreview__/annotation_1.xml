@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DCOPData Simulator="hpeesofsim" Time="Sun Nov 22 17:07:05 2026" Version="1.0">
+ <Controller name="DC1">
+  <SweepCondition>
+   <P>VIN_SWEEP: 0.0000000000000000e+00</P>
+  </SweepCondition>
+  <DC_OPDeclaration/>
+  <DC_Voltages>
+   <V>0: 0.0000000000000000e+00</V>
+   <V>CHG_IN: 0.0000000000000000e+00</V>
+   <V>CTRL_LOAD: 0.0000000000000000e+00</V>
+   <V>VIN: 0.0000000000000000e+00</V>
+   <GV>0: 0.0000000000000000e+00</GV>
+  </DC_Voltages>
+  <DC_PinCurrents>
+   <I>Charger: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+   <I>Charger_Probe: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+   <I>Control: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+   <I>Control_Probe: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+   <I>VTEST: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+  </DC_PinCurrents>
+  <DC_OPInstances/>
+ </Controller>
+</DCOPData>

@@ -1,0 +1,28 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 17:16:04 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\review-2026-11-22\power-runs\published_passive_link"
+      Process ID: 16288
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+SP SP1[1] <power-review.ckt>   freq=13.56 MHz
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     2.84 seconds.
+    Simulation stopwatch time =     0.48 seconds.
+    Total stopwatch time      =     2.66 seconds.
+
+    Memory used:  106 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+

@@ -1,0 +1,37 @@
+Netlist Translator (*) 640.shp Mar 23 2026
+ADS Netlist translation log
+
+Input format: LTSPICE
+Input filename: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\review-2026-11-22\afe\afe-full-op-flattened.cir
+
+Output format: ADS Netlist file
+Output filename: C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\review-2026-11-22\afe\afe-full-op.net
+
+Special options:
+    Processing first line as comment.
+
+Begin translation at Sun Nov 22 17:06:56 2026
+
+Creating netlist.
+Reading item definition file "C:\Program Files\Keysight\ADS2026_Update2/config\spctoiff.cfg"
+    Element name gvo+ changed to gvox
+    Element name gvo- changed to gvo1
+    Element name gvo+ changed to gvox
+    Element name gvo- changed to gvo1
+    Element name gsw+ changed to gswx
+    Element name gvo+ changed to gvox
+    Element name gvo- changed to gvo1
+    Element name gvo+ changed to gvox
+    Element name gvo- changed to gvo1
+    Element name gsw+ changed to gswx
+WARNING: Skipping unsupported statement ".OPTIONS numdgt", line 870.
+WARNING: Skipping unsupported statement ".OPTIONS plotwinsize", line 870.
+WARNING: Skipping unsupported statement ".save", line #1196.
+WARNING: Skipping unsupported statement ".op", line #1197.
+The following SPICE parameters from element tlv9002_r_noiseless in circuit tlv9002_tlv9002 were ignored in translation:
+    t_abs = -273.15
+The following SPICE parameters from element tlv9052_r_noiseless in circuit tlv9052_tlv9052 were ignored in translation:
+    t_abs = -273.15
+Subcircuits found in Spice Netlist:   35
+Subcircuits written to ADS Netlist:   35
+Translation completed at Sun Nov 22 17:06:56 2026.

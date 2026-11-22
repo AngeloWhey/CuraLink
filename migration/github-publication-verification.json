@@ -1,0 +1,32 @@
+{
+  "recorded_local_date": "2026-11-22",
+  "timezone": "America/New_York",
+  "repository": "https://github.com/AngeloWhey/CuraLink",
+  "commit": "a1193c42201dd7d52925ad7259a69e111141fb81",
+  "published_branch": "main",
+  "fast_forward_from": "54fe0ca0efbffd01c9e530dc9e83d9c6c300244a",
+  "git_files": 2697,
+  "lfs_unique_objects_uploaded_and_redownloaded": 218,
+  "lfs_unique_bytes": 837226102,
+  "local_lfs_fsck": "passed",
+  "fresh_remote_clone": "passed",
+  "fresh_clone_lfs_fsck": "passed",
+  "native_ads_oa_hashes_verified": 5,
+  "historical_context_capture_hashes_verified": 20,
+  "kicad_schematic_files": 17,
+  "local_footprint_files": 30,
+  "decoded_ads_dataset_verification": [
+    {
+      "name": "cell_1.ds",
+      "bytes": 2345613824,
+      "sha256": "207fd8e9062126d4106c518daa69fce75c943b4a7e1c8da386c20dc90e2b6e4e"
+    },
+    {
+      "name": "__simdata125462.ds",
+      "bytes": 230537728,
+      "sha256": "ae72ec605bb6f4fb71e5f02cc23d8e9c5ab67975b0f040edad162fb1ed40f0be"
+    }
+  ],
+  "scope": "Verified saved-file transfer through GitHub and lossless archives. No engineering, simulator, firmware, PCB or charging qualification claimed.",
+  "source_working_tree_edits_by_publication_agent": false
+}

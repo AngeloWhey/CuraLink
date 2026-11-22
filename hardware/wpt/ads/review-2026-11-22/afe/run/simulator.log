@@ -1,0 +1,42 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 17:11:58 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\review-2026-11-22\afe\run"
+      Process ID: 16132
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 252
+
+
+DC DC1[1] <afe-dc-ac.ckt>  
+
+CT SweepAC[1] <afe-dc-ac.ckt>   AC_STIM=(0->1)
+
+AC SweepAC[1].AC1[1/2] <afe-dc-ac.ckt>  AC_STIM=0  freq=(10 mHz->1 MHz)
+
+AC SweepAC[1].AC1[2/2] <afe-dc-ac.ckt>  AC_STIM=1  freq=(10 mHz->1 MHz)
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =   204.94 seconds.
+    Simulation stopwatch time =    60.63 seconds.
+    Total stopwatch time      =    62.44 seconds.
+
+    Memory used:  219 MBytes
+
+    Max threads used:  14
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Sun Nov 22 17:12:59 2026
+
+Command line dataset name afe

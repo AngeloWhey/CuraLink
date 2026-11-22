@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-22",
+  "new_ADS_simulation": true,
+  "fixed_coils": {
+    "frequency_Hz": 13560000.0,
+    "L_TX_H": 2.49e-06,
+    "R_TX_ohm": 1.8,
+    "L_RX_H": 3.3e-07,
+    "R_RX_ohm": 0.399,
+    "k": 0.0662
+  },
+  "SDD_DC_checks": {
+    "zero_voltage_charger_current_A": 0.0,
+    "zero_voltage_control_current_A": 0.0,
+    "weak_3V_charger_current_A": 2.4999999999999947e-05,
+    "5V_charger_current_A": 0.02075,
+    "5V_control_current_A": 0.0008,
+    "all_charger_currents_nonnegative": true
+  },
+  "matrix_points": 48,
+  "out_of_authored_voltage_domain_points": 32,
+  "max_absolute_RF_power_balance_residual_W": 6.765421556309548e-16,
+  "raw_receiver_OVP_in_model": false,
+  "actual_charger_or_cell_model": false,
+  "build_release": false,
+  "limits": "Static authored I-V, assumed 0.28V path drop, ideal capacitors and carrier-derived constant coil R/L/k. Outside-domain points are rejected diagnostics, not predictions of real high-voltage charger behavior.",
+  "representative_cases": [
+    {
+      "Pin_dBm": 23.0,
+      "battery_voltage_V": 4.1,
+      "BASE_PHASE_A": 0.0,
+      "OVERHEAD_sensitivity": 0.0,
+      "commanded_charge_current_A": 0.0,
+      "derived_charge_current_mean_A": 0.0,
+      "Vdc_V": 10.44485753215088,
+      "CHG_IN_V": 10.164857532150881,
+      "raw_average_power_W": 0.01867491697344927,
+      "out_of_model_domain": true
+    },
+    {
+      "Pin_dBm": 23.0,
+      "battery_voltage_V": 4.1,
+      "BASE_PHASE_A": 0.0,
+      "OVERHEAD_sensitivity": 1.0,
+      "commanded_charge_current_A": 0.0,
+      "derived_charge_current_mean_A": 0.0,
+      "Vdc_V": 10.151742769838261,
+      "CHG_IN_V": 9.871742769838262,
+      "raw_average_power_W": 0.027767945970364638,
+      "out_of_model_domain": true
+    },
+    {
+      "Pin_dBm": 23.5,
+      "battery_voltage_V": 4.1,
+      "BASE_PHASE_A": 0.0,
+      "OVERHEAD_sensitivity": 0.0,
+      "commanded_charge_current_A": 0.0,
+      "derived_charge_current_mean_A": 0.0,
+      "Vdc_V": 11.122180686877345,
+      "CHG_IN_V": 10.842180686877343,
+      "raw_average_power_W": 0.01995442375044316,
+      "out_of_model_domain": true
+    },
+    {
+      "Pin_dBm": 23.5,
+      "battery_voltage_V": 4.1,
+      "BASE_PHASE_A": 0.0,
+      "OVERHEAD_sensitivity": 1.0,
+      "commanded_charge_current_A": 0.0,
+      "derived_charge_current_mean_A": 0.0,
+      "Vdc_V": 10.82822765742026,
+      "CHG_IN_V": 10.548227657420261,
+      "raw_average_power_W": 0.029684919464025312,
+      "out_of_model_domain": true
+    },
+    {
+      "Pin_dBm": 23.0,
+      "battery_voltage_V": 4.1,
+      "BASE_PHASE_A": 0.02,
+      "OVERHEAD_sensitivity": 0.0,
+      "commanded_charge_current_A": 0.02,
+      "derived_charge_current_mean_A": 0.02,
+      "Vdc_V": 5.096844531297705,
+      "CHG_IN_V": 4.816844531297705,
+      "raw_average_power_W": 0.11080201045543475,
+      "out_of_model_domain": false
+    },
+    {
+      "Pin_dBm": 23.0,
+      "battery_voltage_V": 4.1,
+      "BASE_PHASE_A": 0.02,
+      "OVERHEAD_sensitivity": 1.0,
+      "commanded_charge_current_A": 0.021212121212121203,
+      "derived_charge_current_mean_A": 0.02004652966176027,
+      "Vdc_V": 4.851757602608162,
+      "CHG_IN_V": 4.571757602608161,
+      "raw_average_power_W": 0.1102980944301815,
+      "out_of_model_domain": false
+    },
+    {
+      "Pin_dBm": 23.5,
+      "battery_voltage_V": 4.1,
+      "BASE_PHASE_A": 0.02,
+      "OVERHEAD_sensitivity": 0.0,
+      "commanded_charge_current_A": 0.02,
+      "derived_charge_current_mean_A": 0.02,
+      "Vdc_V": 5.751437999339105,
+      "CHG_IN_V": 5.471437999339105,
+      "raw_average_power_W": 0.1250666630566032,
+      "out_of_model_domain": false
+    },
+    {
+      "Pin_dBm": 23.5,
+      "battery_voltage_V": 4.1,
+      "BASE_PHASE_A": 0.02,
+      "OVERHEAD_sensitivity": 1.0,
+      "commanded_charge_current_A": 0.021212121212121203,
+      "derived_charge_current_mean_A": 0.0212121212121212,
+      "Vdc_V": 5.217083323842194,
+      "CHG_IN_V": 4.937083323842193,
+      "raw_average_power_W": 0.12470159104955168,
+      "out_of_model_domain": false
+    }
+  ]
+}

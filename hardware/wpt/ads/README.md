@@ -16,7 +16,7 @@ WPT_RAW -> field detector -> recording-system hardware disable
 
 The resistor study stops at WPT_RAW. It includes no downstream protection, charger or cell. The separate charger fixture is an authored approximation of input demand, not a TI macro. Keep source available RF power, accepted RF power, receiver DC power and battery charging power distinct.
 
-**Charger-load execution status:** The standalone SDD source parsed and flattened in ADS, but both DC attempts exited 120 because the Linear Simulator license was in use. Its DC sign/compliance checks and seven prepared HB31 charge-load cases have **no solved results**. [Execution guidance and preserved logs](charger/SDD-execution-guidance.md) describe how to run them. This limitation does not apply to the completed resistor receiver simulations below.
+**Charger-load execution update, 2026-11-22:** The original October attempts were license-blocked, as preserved in [their execution record](charger/SDD-execution-guidance.md). A new [fixed-coil review](review-2026-11-22/README.md) has now completed the authored-law DC check and 48 HB31 demand cases, plus a fresh passive paper-link and translated AFE DC/AC check. Nominal full-current demand is feasible, but all taper/complete fixtures exceed the authored voltage domain without raw regulation. These new equivalent standalone fixtures are not a complete BQ25185/cell model or direct rerun of every historical/native case.
 
 ## Open the prepared native ADS circuit
 

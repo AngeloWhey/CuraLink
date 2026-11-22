@@ -1,0 +1,187 @@
+
+Set hpeesofsim options.
+
+Options [:Name] <parameter=value> ...
+Parameters:
+    Temp (deg C)     s---r Temperature.
+    Tnom (deg C)     s---r Default model temperature.
+    V_RelTol         smo-r Relative voltage convergence criterion.
+    V_AbsTol (V)     smo-r Absolute voltage convergence criterion.
+    I_RelTol         smo-r Relative current convergence criterion.
+    I_AbsTol (A)     smo-r Absolute current convergence criterion.
+    FreqRelTol       smo-r Relative frequency convergence criterion.
+    FreqAbsTol (Hz)  smo-r Absolute frequency convergence criterion.
+    PivotRelThresh   smo-r Relative pivot threshold.
+    PivotAbsThresh   smo-r Absolute pivot threshold.
+    Vmin (V)         smo-r Minimum voltage present in circuit.
+    Vmax (V)         smo-r Maximum voltage present in circuit.
+    ResourceUsage    s---i Print brief summary of resource usage.
+    TopologyCheck    sm--b Check circuit topology for degeneracies.
+    ASCII_Rawfile    s---b Generate ascii rawfile.
+    Verbose          sm--b Narrate the simulation.
+    GiveAllWarnings  sm--b Give all warning messages.
+    MaxWarnings      sm--i Maximum number of warning messages.
+    IgnoreShorts     sm--b Silently ignore shorted devices.
+    MaxDeltaV (V)    smo-r Maximum voltage step in DC analysis.
+    DC_ConvMode      s---i Convergence mode for DC analysis.
+    NumDigitsInRawfile sm--i ASCII rawfile precision.
+    NumDigits        sm--i Print precision.
+    UseNutmegFormat  s---b Use nutmeg raw-file format.
+    ScreenWidth      s---i Screen width.
+    OutputInternalNodes s---b Send internal node voltages to raw-file.
+    MaxSpectralSize  s---i This parameter is obsolete.
+    SaveBranchCurrents s---b Send all branch currents to raw-file.
+    ForceS_Params    s---b Force S-parameter calculations whereever possible.
+    MinEpsilon       smo-r Minimum epsilon in finite difference calculations.
+    UseM_Params      s---b Use M-parameter (RLCG) calculations wherever possible.
+    ForceM_Params    s---b Use M-parameter (RLCG) calculations wherever possible.
+    ScriptFileName   s---s File name for the post-processing script.
+    NeglectDispersion s---b Neglect Dispersion in transient simulation using M parameters.
+    TimeStep         smo-r timestep value for steady-state analyses.
+    EnvUseY_ForTL    s---b Use Y-parameters for TLs in Envelope.
+    TopDesignName    s---s Name of top-level design.
+    StatusDelay      s---i Minimum time delay between status output.
+    SuppressPassivityCheck s---b Suppresses all linear passivity checking.
+    StreamData       s---b Enable streaming data output to datasets.
+    MinNodalR (Ohms) s---r Resistors smaller than this add branch equation.
+    MinExtR (Ohms)   s---r Ignore parasitic resistors smaller than this..
+    DC_InitialGuessFile s---r File name for initial guess at DC solution.
+    DC_ReadInitialGuess s---b Read DC_InitialGuessFile prior to a DC solve.
+    DC_FinalSolutionFile s---s File name for saving final DC solution.
+    DC_WriteFinalSolution s---b Write last DC solution to DC_FinalSolutionFile.
+    InitialGuessAnnotation s---i Annotation level (0-2) when reading DC or HB File.
+    Census           s---b Print device count and matrix information.
+    FlickerNoise     s---b Enable flicker noise (default=yes).
+    ExtendedNoise    s---s Noise type: 0=Johnson, 1=Nyquist, 2=Nyquist+quantum.
+    PseudoTranDebugOutput s---b Output Pseudo transient data (internal use only).
+    PseudoTranStopTime s---r Stop time for Pseudo transient (internal use only).
+    PseudoTranMaxTimeStep s---r Maximum time step in Pseudo transient (internal use only).
+    PseudoTranCapacitance s---r Capacitance value used in Pseudo transient (internal use only).
+    PseudoTranInductance s---r Inductance value used in Pseudo transient (internal use only).
+    UseSingularMatrixHandler s---b Use new singular matrix handler (for internal use).
+    UseNewImaxDefault s---b Use new default value for explosion current (for internal use).
+    Imax (A)         smo-r Explosion current.
+    Ijth (A)         smo-r Mosfet (BSIM) Diode limiting current.
+    Gmin (S)         smo-r P-N junction parallel conductance.
+    Imelt (A)        smo-r Explosion current.
+    ShLoadVerbose    s---b Output verbose shlib load messages.
+    MaxExpArg        s---r Maximum argument value for sym exp() function.
+    EnableOscPolish  s---i Enable/disable the SS-HB solution polishing.
+    UserErrorTrap    s---b Enable user-compiled model error trapping.
+    TopologyCheckMessages sm--b Circuit topology messages mode.
+    DumpLevel        s---i Type of data to write to ModelDumpFile.
+    DumpFile         s---s File name for writing models.
+    DSblockSize      s---i Internal dataset block size.
+    DSdataBlocks     s---i Internal number of blocks to use for each dataset data allocation chunk.
+    MergedDSblockSize s---i Internal dataset block size for merged datasets.
+    MergedDSdataBlocks s---i Internal number of blocks to use for each dataset data allocation chunk for merged datasets.
+    DSversion        s---i Internal number.
+    RunImpulseWriter s---b Write impulse response to file.
+    SaveImpulseToDataset s---b Save impulse response to dataset.
+    NumThreads       s---i Number of threads to use (0=automatic).
+    GPU              s---i Use GPU for speedup.
+    EnableOptim      s---i Flag to Enable/Disable Optim: <0 - unspecified, 0-no, >0-yes.
+    DatasetMode      s---b Optimize dataset for faster DDS.
+    DSminVariablesForGrouping s---i Minimum number of variables before variable grouping can occur.
+    DSvariablesPerGroup s---i Number of variables per group when grouping is done.
+    DSmaxVariableGroups s---i Maximum number of variable groups when grouping is done.
+    DSoutputVariableGroupInfo s---b Display verbose variable grouping parameters.
+    ScaleFactor      s---r Additional scaling factor applied to instance geometry, to be set by PDKs only.
+    ReduceSport      s---b Reduce/Collapse large S-Port devices..
+    ReduceSportRatio s---r Reduction ratio (collapases the S-Port iff the ratio of (redcuible-ports)/ports is greater than this parameter..
+    doDeltaAC        s---i Use Fast Linear Sim (obsolete).
+    WarnSOA          sm--b Enable Safe Operating Area Warnings. Default = Yes.
+    MaxWarnSOA       sm--i Maximum number of Safe Operating Area warning messages. Default = 5.
+    Scale            s---r Device instance scaling factor.
+    SkinEffectModel  s---i Revert to a former skin effect model.
+    EthLevel         s---i Enable electrothermal simulation.
+    EthCellName      s---s Cell name for thermal simulation.
+    TvalInFile       s---s File to read containing Temp for various devices.
+    PvalOutFile      s---s File to write containing Pdiss for various devices.
+    EthDeltaPreltol  s---r Relative tolerance on power change for convergence.
+    EthDeltaTabstol (deg C) s---r Absolute tolernace on temperature change for convergence.
+    EthMaxIters      s---i Maximum number of electrothermal iterations.
+    EthSkipDC        s---i Skip ETH during DC.
+    EthTimestep (s)  s---r Thermal simulator timestep.
+    EthTmax (deg C)  s---r Maximum device temperature.
+    EthPscale        s---r Power dissipation scaling for duty cycle emulation.
+    EnableLinearCollapse sm-ri Enable linear network collpase: 0:OFF, 1:ON, 2:AUTO.
+    SimLogEnabled    sm--b Enable saving simulation log..
+    SimLogStatusLevel sm-ri Status level of the saved simulation log. 0 to turn off..
+    EthUsePkgFile    s---i Use file specified from user, not the one written by the simulator.
+    EthKambZtop      s---r Kambient temp Z axis top face.
+    EthKambZbottom   s---r Kambient temp Z axis bottom face.
+    EthTopLevelTestBench s---s File to read containing Temp for various devices.
+    PrintDeviceTemperatures s---i Print device temperatures.
+    EthMultifingerTcalc s---i Multiple Fingers temperature calculation : 0 average, 1: maximum, 2: minimum.
+    EthDeltaTdamp    s---r Damping factor to apply to temperature changes at each iteration.
+    EthDeltaTmax (deg C) s---r Maximum temperature change for a device at each iteration.
+    EthDisplayViewer s---i Open thermal viewer when simulation completes.
+    EthReuseFile     s---s Reuse thermal model (.rm, .rcm) or solution (.tvalx) from previous results .
+    EthTechFile      s---s Tech file name (*.tcl) from thermal PDK .
+    EthTechFileTopDir s---s Tech file directory from thermal PDK .
+    EthPersistent    s---i Use persistent thermal simulator.
+    PtDCStartingMethod s---i Use Pt as the DC starting method .
+    DcopOutputAllSweepPoints s---b Dcop Output All Sweep Points.
+    DcopOutputNodeVoltages s---b Dcop Output Node Voltages.
+    DcopOutputPinCurrents s---b Dcop Output Pin Currents.
+    DcopOutputDcopType s---i Dcop Output Operating Point.
+    ModelReductionSummary s---i Model Reduction Summary.
+    DuplicateParam   s---s Duplicate Param.
+    DuplicateFunc    s---s Duplicate Func.
+    DuplicateModel   s---s Duplicate Model.
+    DuplicateSubckt  s---s Duplicate Subckt.
+    DuplicateInstance s---s Duplicate Instance.
+    DuplicateAll     s---s Duplicate All.
+    LargeCapThreshold s---s Capacitors larger than this value use an alternate form.
+    EthCellInstanceName s---s Instance name of eth cell.
+    EthManualCellName s---s Manual name of eth cell.
+    MintOptions      s---s Pass arbitrary options to Mint models.
+    EnableAssertChecks s---b Enable Assert Checks.
+    DumpAssertChecks s---b Dump Assert Checks.
+    EnableAssertCompleteOutputs s---b Enable Assert Complete Outputs.
+    EthReuse         s---i Reuse thermal solution.
+    EthLogtSweep     s---i Use log(t) time sweep for thermal step response simulation.
+    ParallelInstsMergeMode s---i Parallel Instances Merging Mode.
+    EnableSpareRemoval s---b Enable Spare Removal.
+    OutputAM_NoiseDSB s---b Output HB AM noise results in DSB format.
+    AllowNoOutputToDataset s---b Allow no output to dataset and do not issue warnings.
+    EthSkipSweptGdaArchive s---b Skip saving gda file for each sweep point.
+    EnableIntrinsicIVOutput s---b Enable intrinsic IV outputs.
+    Mode             s---i Mode.
+    BinLimits        s---s Bin limits mode: ignore, warning, error.
+    ConvErr          s---r Convergence error.
+    EthLVSJobDirName s---s LVS Job Dir Name.
+    EthROMOrder      s---i Eth ROM Order.
+    ReportAeleExprResult s---b Report Aele Expr Result.
+    SmallResistor    s---r Short resistors smaller than this.
+    EthUseLVSNameMap s---b Use LVS Name Map.
+    SaveCircuitExcitation s---b If set to 1, save pin voltages of SPort and MomCmpt for RFPro fields visualization.
+    EthWorkDir       s---s Absolute path to electrothermal work directory (overrides ...simulation/library/cell/eth).
+    ExtendedNoise    s---s Noise type: 0=Johnson, 1=Nyquist, 2=Nyquist+quantum.
+    IgnoreSpectreSimulationContext s---b Ignore Spectre Simulation Context.
+    StatProcessIncludePrefixes s---s The included process prefixes for stat.
+    StatMismatchIncludePrefixes s---s The included mismatch prefixes.
+    StatProcessExcludePrefixes s---s The excluded process prefixes.
+    StatMismatchExcludePrefixes s---s The excluded mismatch prefixes.
+    EthRelativePowerSourceNames s---b Power source names are relative to EthCellInstanceName. Full hierarchical names are used by default.
+    ShowTokenLicenseSummary s---b Show why the simulator needs a certain number of licensing tokens to run.
+    EthTechProcName  s---s Name of tcl procedure in thermal techology file. Default is rephbtTech.
+    EthUseCenterTemp s---b Use temperature at the center of the source instead of default average temperature.
+    EthMeshAlgorithm s---i Mesh algorithm for thermal solver.
+    EthMeshResolution s---r Mesh resolution for thermal solver.
+    EthMeshRefinements s---i Number of mesh refinements for thermal solver.
+    EthInitGridSeed  s---i Initial gris seeding for thermal solver.
+    EthPowerLayerName s---s Power layer name.
+    EthPowerPropName s---s Power prop name.
+    EthPowerLayerNumber s---i Power layer number.
+    EthPowerExtraction s---b Power source extraction based on recognition or power layer.
+    EthLayoutView    s---s Layout view name.
+    EthExtractedView s---s Extracted view name.
+    EthPkgFileName   s---s Name of the explicit pkg.ini file.
+    EthXYScale       s---r XY scale factor.
+    EnableBsourceToVA s---b Enable Bsource to Veriloga.
+    EnableBsourceToVAIToV s---b Enable Bsource to Veriloga i to v.
+    OpticalPort      s---b Optical Port mode.
+    AnnotationFormat s---s Back Annotation format.
+

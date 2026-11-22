@@ -1,0 +1,6012 @@
+{
+  "audit_date": "2026-11-22 America/New_York",
+  "scope": "Independent static cross-check only; no simulation, source changes, hardware measurements, external technical claims or new design acceptance.",
+  "source_hashes": {
+    "hardware/rev-a/components-merged.json": "18654970547494c6eb7103410cd8fb1e54971d6c9ef4720aeec9f4312df949c4",
+    "hardware/rev-a/curalink-rev-a.net.xml": "4706dd7587f44a95522c22203a7d645637c5948b193daba721a5f9d1c2f410c4",
+    "hardware/rev-a/afe/afe-pin-nets.json": "d5f6afce055657a79593d1d3863f9c2c3aaa4db0ea18dbab099045a57f387102",
+    "hardware/rev-a/ltspice/afe/canonical-afe.lib": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f",
+    "hardware/rev-a/ltspice/afe/canonical-extraction.json": "8bb7f7404b44bb60240addd90e0a31fad44f2428115333be4a4be5582d197daf"
+  },
+  "full_merged_to_export": {
+    "merged_entries": 456,
+    "exported_components": 446,
+    "excluded_virtual_refs": [
+      "#FLG001",
+      "#FLG002",
+      "#FLG003",
+      "#FLG004",
+      "#FLG005",
+      "#FLG006",
+      "#FLG007",
+      "#FLG008",
+      "#FLG009",
+      "#FLG010"
+    ],
+    "unrecognized_export_refs": [],
+    "pin_checks": 1137,
+    "connected_pin_checks": 1089,
+    "NC_checks": 48,
+    "pin_mismatches": [],
+    "repeated_export_pins": [],
+    "raw_value_differences": [
+      {
+        "ref": "TP101",
+        "source": "CH1_PRE",
+        "xml": "CH1_PRE [DNP]"
+      },
+      {
+        "ref": "TP102",
+        "source": "CH1_HP",
+        "xml": "CH1_HP [DNP]"
+      },
+      {
+        "ref": "TP103",
+        "source": "AFE_OUT_1",
+        "xml": "AFE_OUT_1 [DNP]"
+      },
+      {
+        "ref": "TP104",
+        "source": "CH2_PRE",
+        "xml": "CH2_PRE [DNP]"
+      },
+      {
+        "ref": "TP105",
+        "source": "CH2_HP",
+        "xml": "CH2_HP [DNP]"
+      },
+      {
+        "ref": "TP106",
+        "source": "AFE_OUT_2",
+        "xml": "AFE_OUT_2 [DNP]"
+      },
+      {
+        "ref": "TP107",
+        "source": "CH3_PRE",
+        "xml": "CH3_PRE [DNP]"
+      },
+      {
+        "ref": "TP108",
+        "source": "CH3_HP",
+        "xml": "CH3_HP [DNP]"
+      },
+      {
+        "ref": "TP109",
+        "source": "AFE_OUT_3",
+        "xml": "AFE_OUT_3 [DNP]"
+      },
+      {
+        "ref": "TP110",
+        "source": "CH4_PRE",
+        "xml": "CH4_PRE [DNP]"
+      },
+      {
+        "ref": "TP111",
+        "source": "CH4_HP",
+        "xml": "CH4_HP [DNP]"
+      },
+      {
+        "ref": "TP112",
+        "source": "AFE_OUT_4",
+        "xml": "AFE_OUT_4 [DNP]"
+      },
+      {
+        "ref": "TP113",
+        "source": "CH5_PRE",
+        "xml": "CH5_PRE [DNP]"
+      },
+      {
+        "ref": "TP114",
+        "source": "CH5_HP",
+        "xml": "CH5_HP [DNP]"
+      },
+      {
+        "ref": "TP115",
+        "source": "AFE_OUT_5",
+        "xml": "AFE_OUT_5 [DNP]"
+      },
+      {
+        "ref": "TP116",
+        "source": "CH6_PRE",
+        "xml": "CH6_PRE [DNP]"
+      },
+      {
+        "ref": "TP117",
+        "source": "CH6_HP",
+        "xml": "CH6_HP [DNP]"
+      },
+      {
+        "ref": "TP118",
+        "source": "AFE_OUT_6",
+        "xml": "AFE_OUT_6 [DNP]"
+      },
+      {
+        "ref": "TP119",
+        "source": "CH7_PRE",
+        "xml": "CH7_PRE [DNP]"
+      },
+      {
+        "ref": "TP120",
+        "source": "CH7_HP",
+        "xml": "CH7_HP [DNP]"
+      },
+      {
+        "ref": "TP121",
+        "source": "AFE_OUT_7",
+        "xml": "AFE_OUT_7 [DNP]"
+      },
+      {
+        "ref": "TP122",
+        "source": "CH8_PRE",
+        "xml": "CH8_PRE [DNP]"
+      },
+      {
+        "ref": "TP123",
+        "source": "CH8_HP",
+        "xml": "CH8_HP [DNP]"
+      },
+      {
+        "ref": "TP124",
+        "source": "AFE_OUT_8",
+        "xml": "AFE_OUT_8 [DNP]"
+      },
+      {
+        "ref": "TP125",
+        "source": "REF_PRE",
+        "xml": "REF_PRE [DNP]"
+      },
+      {
+        "ref": "TP126",
+        "source": "VMID",
+        "xml": "VMID [DNP]"
+      },
+      {
+        "ref": "TP127",
+        "source": "REF_PRE",
+        "xml": "REF_PRE [DNP]"
+      },
+      {
+        "ref": "R505",
+        "source": "2k",
+        "xml": "2k [DNP]"
+      },
+      {
+        "ref": "R542",
+        "source": "0",
+        "xml": "0 [DNP]"
+      },
+      {
+        "ref": "C505",
+        "source": "4.7nF 50V C0G",
+        "xml": "4.7nF 50V C0G [DNP]"
+      },
+      {
+        "ref": "J502",
+        "source": "WPT receiver DC input",
+        "xml": "WPT receiver DC input [DNP]"
+      },
+      {
+        "ref": "R544",
+        "source": "0",
+        "xml": "0 [DNP]"
+      },
+      {
+        "ref": "U514",
+        "source": "BQ29737DSER",
+        "xml": "BQ29737DSER [DNP]"
+      },
+      {
+        "ref": "Q509",
+        "source": "AO3400A",
+        "xml": "AO3400A [DNP]"
+      },
+      {
+        "ref": "Q510",
+        "source": "AO3400A",
+        "xml": "AO3400A [DNP]"
+      },
+      {
+        "ref": "R545",
+        "source": "0",
+        "xml": "0 [DNP]"
+      },
+      {
+        "ref": "R546",
+        "source": "1.0",
+        "xml": "1.0 [DNP]"
+      },
+      {
+        "ref": "R547",
+        "source": "330",
+        "xml": "330 [DNP]"
+      },
+      {
+        "ref": "R548",
+        "source": "2.2k",
+        "xml": "2.2k [DNP]"
+      },
+      {
+        "ref": "C530",
+        "source": "100nF 10V X7R",
+        "xml": "100nF 10V X7R [DNP]"
+      },
+      {
+        "ref": "J504",
+        "source": "Bare cell only \u2014 PCM qualification required",
+        "xml": "Bare cell only \u2014 PCM qualification required [DNP]"
+      }
+    ],
+    "semantic_value_mismatches_after_DNP_suffix_removal": [],
+    "DNP_property_checks": 446,
+    "DNP_property_mismatches": [],
+    "raw_value_difference_explanation": "41 added [DNP] display suffixes; all semantic values and all 446 explicit XML DNP properties match. J404/R418 already include DNP in their source values and receive no added suffix, as build_reva.py:138 specifies."
+  },
+  "canonical": {
+    "physical_passives": 236,
+    "amplifier_units": 36,
+    "physical_refs": 245,
+    "fixture_only_elements": 36,
+    "passive_mismatches": [],
+    "amplifier_mismatches": [],
+    "manifest_membership_matches": true,
+    "source_hash_matches_manifest": true,
+    "passive_details": [
+      {
+        "ref": "R1001",
+        "line": 2,
+        "nodes": [
+          "FFC_CH1",
+          "CH1_LIMIT"
+        ],
+        "value_SI": 5100.0,
+        "source_value": "5.1k",
+        "pass": true
+      },
+      {
+        "ref": "C1001",
+        "line": 3,
+        "nodes": [
+          "CH1_LIMIT",
+          "CH1_PLUS"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1002",
+        "line": 4,
+        "nodes": [
+          "CH1_PLUS",
+          "VMID"
+        ],
+        "value_SI": 22000000.0,
+        "source_value": "22M",
+        "pass": true
+      },
+      {
+        "ref": "R1003",
+        "line": 5,
+        "nodes": [
+          "CH1_MINUS",
+          "VMID"
+        ],
+        "value_SI": 1000.0,
+        "source_value": "1k",
+        "pass": true
+      },
+      {
+        "ref": "R1004",
+        "line": 6,
+        "nodes": [
+          "CH1_PRE",
+          "CH1_MINUS"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "C1002",
+        "line": 7,
+        "nodes": [
+          "CH1_PRE",
+          "CH1_HP_CH"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1005",
+        "line": 8,
+        "nodes": [
+          "CH1_HP_CH",
+          "CH1_DIFF_MINUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1006",
+        "line": 9,
+        "nodes": [
+          "CH1_HP",
+          "CH1_DIFF_FB_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1007",
+        "line": 10,
+        "nodes": [
+          "CH1_DIFF_FB_MID",
+          "CH1_DIFF_MINUS"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "C1003",
+        "line": 11,
+        "nodes": [
+          "REF_PRE",
+          "CH1_HP_REF"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1008",
+        "line": 12,
+        "nodes": [
+          "CH1_HP_REF",
+          "CH1_DIFF_PLUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1009",
+        "line": 13,
+        "nodes": [
+          "CH1_DIFF_PLUS",
+          "CH1_DIFF_BAL_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1010",
+        "line": 14,
+        "nodes": [
+          "CH1_DIFF_BAL_MID",
+          "VMID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1011",
+        "line": 15,
+        "nodes": [
+          "CH1_HP",
+          "CH1_LP1_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1012",
+        "line": 16,
+        "nodes": [
+          "CH1_LP1_A",
+          "CH1_LP1_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1004",
+        "line": 17,
+        "nodes": [
+          "CH1_LP1_A",
+          "CH1_LP1_OUT"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1005",
+        "line": 18,
+        "nodes": [
+          "CH1_LP1_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1013",
+        "line": 19,
+        "nodes": [
+          "CH1_LP1_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1014",
+        "line": 20,
+        "nodes": [
+          "CH1_LP1_OUT",
+          "CH1_LP1_MINUS"
+        ],
+        "value_SI": 1500.0,
+        "source_value": "1.5k",
+        "pass": true
+      },
+      {
+        "ref": "R1015",
+        "line": 21,
+        "nodes": [
+          "CH1_LP1_OUT",
+          "CH1_LP2_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1016",
+        "line": 22,
+        "nodes": [
+          "CH1_LP2_A",
+          "CH1_LP2_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1006",
+        "line": 23,
+        "nodes": [
+          "CH1_LP2_A",
+          "AFE_OUT_1"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1007",
+        "line": 24,
+        "nodes": [
+          "CH1_LP2_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1017",
+        "line": 25,
+        "nodes": [
+          "CH1_LP2_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1018",
+        "line": 26,
+        "nodes": [
+          "AFE_OUT_1",
+          "CH1_LP2_MINUS"
+        ],
+        "value_SI": 12400.0,
+        "source_value": "12.4k",
+        "pass": true
+      },
+      {
+        "ref": "R1019",
+        "line": 27,
+        "nodes": [
+          "FFC_CH2",
+          "CH2_LIMIT"
+        ],
+        "value_SI": 5100.0,
+        "source_value": "5.1k",
+        "pass": true
+      },
+      {
+        "ref": "C1008",
+        "line": 28,
+        "nodes": [
+          "CH2_LIMIT",
+          "CH2_PLUS"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1020",
+        "line": 29,
+        "nodes": [
+          "CH2_PLUS",
+          "VMID"
+        ],
+        "value_SI": 22000000.0,
+        "source_value": "22M",
+        "pass": true
+      },
+      {
+        "ref": "R1021",
+        "line": 30,
+        "nodes": [
+          "CH2_MINUS",
+          "VMID"
+        ],
+        "value_SI": 1000.0,
+        "source_value": "1k",
+        "pass": true
+      },
+      {
+        "ref": "R1022",
+        "line": 31,
+        "nodes": [
+          "CH2_PRE",
+          "CH2_MINUS"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "C1009",
+        "line": 32,
+        "nodes": [
+          "CH2_PRE",
+          "CH2_HP_CH"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1023",
+        "line": 33,
+        "nodes": [
+          "CH2_HP_CH",
+          "CH2_DIFF_MINUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1024",
+        "line": 34,
+        "nodes": [
+          "CH2_HP",
+          "CH2_DIFF_FB_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1025",
+        "line": 35,
+        "nodes": [
+          "CH2_DIFF_FB_MID",
+          "CH2_DIFF_MINUS"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "C1010",
+        "line": 36,
+        "nodes": [
+          "REF_PRE",
+          "CH2_HP_REF"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1026",
+        "line": 37,
+        "nodes": [
+          "CH2_HP_REF",
+          "CH2_DIFF_PLUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1027",
+        "line": 38,
+        "nodes": [
+          "CH2_DIFF_PLUS",
+          "CH2_DIFF_BAL_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1028",
+        "line": 39,
+        "nodes": [
+          "CH2_DIFF_BAL_MID",
+          "VMID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1029",
+        "line": 40,
+        "nodes": [
+          "CH2_HP",
+          "CH2_LP1_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1030",
+        "line": 41,
+        "nodes": [
+          "CH2_LP1_A",
+          "CH2_LP1_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1011",
+        "line": 42,
+        "nodes": [
+          "CH2_LP1_A",
+          "CH2_LP1_OUT"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1012",
+        "line": 43,
+        "nodes": [
+          "CH2_LP1_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1031",
+        "line": 44,
+        "nodes": [
+          "CH2_LP1_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1032",
+        "line": 45,
+        "nodes": [
+          "CH2_LP1_OUT",
+          "CH2_LP1_MINUS"
+        ],
+        "value_SI": 1500.0,
+        "source_value": "1.5k",
+        "pass": true
+      },
+      {
+        "ref": "R1033",
+        "line": 46,
+        "nodes": [
+          "CH2_LP1_OUT",
+          "CH2_LP2_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1034",
+        "line": 47,
+        "nodes": [
+          "CH2_LP2_A",
+          "CH2_LP2_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1013",
+        "line": 48,
+        "nodes": [
+          "CH2_LP2_A",
+          "AFE_OUT_2"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1014",
+        "line": 49,
+        "nodes": [
+          "CH2_LP2_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1035",
+        "line": 50,
+        "nodes": [
+          "CH2_LP2_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1036",
+        "line": 51,
+        "nodes": [
+          "AFE_OUT_2",
+          "CH2_LP2_MINUS"
+        ],
+        "value_SI": 12400.0,
+        "source_value": "12.4k",
+        "pass": true
+      },
+      {
+        "ref": "R1037",
+        "line": 52,
+        "nodes": [
+          "FFC_CH3",
+          "CH3_LIMIT"
+        ],
+        "value_SI": 5100.0,
+        "source_value": "5.1k",
+        "pass": true
+      },
+      {
+        "ref": "C1015",
+        "line": 53,
+        "nodes": [
+          "CH3_LIMIT",
+          "CH3_PLUS"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1038",
+        "line": 54,
+        "nodes": [
+          "CH3_PLUS",
+          "VMID"
+        ],
+        "value_SI": 22000000.0,
+        "source_value": "22M",
+        "pass": true
+      },
+      {
+        "ref": "R1039",
+        "line": 55,
+        "nodes": [
+          "CH3_MINUS",
+          "VMID"
+        ],
+        "value_SI": 1000.0,
+        "source_value": "1k",
+        "pass": true
+      },
+      {
+        "ref": "R1040",
+        "line": 56,
+        "nodes": [
+          "CH3_PRE",
+          "CH3_MINUS"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "C1016",
+        "line": 57,
+        "nodes": [
+          "CH3_PRE",
+          "CH3_HP_CH"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1041",
+        "line": 58,
+        "nodes": [
+          "CH3_HP_CH",
+          "CH3_DIFF_MINUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1042",
+        "line": 59,
+        "nodes": [
+          "CH3_HP",
+          "CH3_DIFF_FB_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1043",
+        "line": 60,
+        "nodes": [
+          "CH3_DIFF_FB_MID",
+          "CH3_DIFF_MINUS"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "C1017",
+        "line": 61,
+        "nodes": [
+          "REF_PRE",
+          "CH3_HP_REF"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1044",
+        "line": 62,
+        "nodes": [
+          "CH3_HP_REF",
+          "CH3_DIFF_PLUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1045",
+        "line": 63,
+        "nodes": [
+          "CH3_DIFF_PLUS",
+          "CH3_DIFF_BAL_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1046",
+        "line": 64,
+        "nodes": [
+          "CH3_DIFF_BAL_MID",
+          "VMID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1047",
+        "line": 65,
+        "nodes": [
+          "CH3_HP",
+          "CH3_LP1_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1048",
+        "line": 66,
+        "nodes": [
+          "CH3_LP1_A",
+          "CH3_LP1_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1018",
+        "line": 67,
+        "nodes": [
+          "CH3_LP1_A",
+          "CH3_LP1_OUT"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1019",
+        "line": 68,
+        "nodes": [
+          "CH3_LP1_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1049",
+        "line": 69,
+        "nodes": [
+          "CH3_LP1_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1050",
+        "line": 70,
+        "nodes": [
+          "CH3_LP1_OUT",
+          "CH3_LP1_MINUS"
+        ],
+        "value_SI": 1500.0,
+        "source_value": "1.5k",
+        "pass": true
+      },
+      {
+        "ref": "R1051",
+        "line": 71,
+        "nodes": [
+          "CH3_LP1_OUT",
+          "CH3_LP2_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1052",
+        "line": 72,
+        "nodes": [
+          "CH3_LP2_A",
+          "CH3_LP2_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1020",
+        "line": 73,
+        "nodes": [
+          "CH3_LP2_A",
+          "AFE_OUT_3"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1021",
+        "line": 74,
+        "nodes": [
+          "CH3_LP2_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1053",
+        "line": 75,
+        "nodes": [
+          "CH3_LP2_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1054",
+        "line": 76,
+        "nodes": [
+          "AFE_OUT_3",
+          "CH3_LP2_MINUS"
+        ],
+        "value_SI": 12400.0,
+        "source_value": "12.4k",
+        "pass": true
+      },
+      {
+        "ref": "R1055",
+        "line": 77,
+        "nodes": [
+          "FFC_CH4",
+          "CH4_LIMIT"
+        ],
+        "value_SI": 5100.0,
+        "source_value": "5.1k",
+        "pass": true
+      },
+      {
+        "ref": "C1022",
+        "line": 78,
+        "nodes": [
+          "CH4_LIMIT",
+          "CH4_PLUS"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1056",
+        "line": 79,
+        "nodes": [
+          "CH4_PLUS",
+          "VMID"
+        ],
+        "value_SI": 22000000.0,
+        "source_value": "22M",
+        "pass": true
+      },
+      {
+        "ref": "R1057",
+        "line": 80,
+        "nodes": [
+          "CH4_MINUS",
+          "VMID"
+        ],
+        "value_SI": 1000.0,
+        "source_value": "1k",
+        "pass": true
+      },
+      {
+        "ref": "R1058",
+        "line": 81,
+        "nodes": [
+          "CH4_PRE",
+          "CH4_MINUS"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "C1023",
+        "line": 82,
+        "nodes": [
+          "CH4_PRE",
+          "CH4_HP_CH"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1059",
+        "line": 83,
+        "nodes": [
+          "CH4_HP_CH",
+          "CH4_DIFF_MINUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1060",
+        "line": 84,
+        "nodes": [
+          "CH4_HP",
+          "CH4_DIFF_FB_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1061",
+        "line": 85,
+        "nodes": [
+          "CH4_DIFF_FB_MID",
+          "CH4_DIFF_MINUS"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "C1024",
+        "line": 86,
+        "nodes": [
+          "REF_PRE",
+          "CH4_HP_REF"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1062",
+        "line": 87,
+        "nodes": [
+          "CH4_HP_REF",
+          "CH4_DIFF_PLUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1063",
+        "line": 88,
+        "nodes": [
+          "CH4_DIFF_PLUS",
+          "CH4_DIFF_BAL_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1064",
+        "line": 89,
+        "nodes": [
+          "CH4_DIFF_BAL_MID",
+          "VMID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1065",
+        "line": 90,
+        "nodes": [
+          "CH4_HP",
+          "CH4_LP1_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1066",
+        "line": 91,
+        "nodes": [
+          "CH4_LP1_A",
+          "CH4_LP1_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1025",
+        "line": 92,
+        "nodes": [
+          "CH4_LP1_A",
+          "CH4_LP1_OUT"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1026",
+        "line": 93,
+        "nodes": [
+          "CH4_LP1_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1067",
+        "line": 94,
+        "nodes": [
+          "CH4_LP1_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1068",
+        "line": 95,
+        "nodes": [
+          "CH4_LP1_OUT",
+          "CH4_LP1_MINUS"
+        ],
+        "value_SI": 1500.0,
+        "source_value": "1.5k",
+        "pass": true
+      },
+      {
+        "ref": "R1069",
+        "line": 96,
+        "nodes": [
+          "CH4_LP1_OUT",
+          "CH4_LP2_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1070",
+        "line": 97,
+        "nodes": [
+          "CH4_LP2_A",
+          "CH4_LP2_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1027",
+        "line": 98,
+        "nodes": [
+          "CH4_LP2_A",
+          "AFE_OUT_4"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1028",
+        "line": 99,
+        "nodes": [
+          "CH4_LP2_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1071",
+        "line": 100,
+        "nodes": [
+          "CH4_LP2_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1072",
+        "line": 101,
+        "nodes": [
+          "AFE_OUT_4",
+          "CH4_LP2_MINUS"
+        ],
+        "value_SI": 12400.0,
+        "source_value": "12.4k",
+        "pass": true
+      },
+      {
+        "ref": "R1073",
+        "line": 102,
+        "nodes": [
+          "FFC_CH5",
+          "CH5_LIMIT"
+        ],
+        "value_SI": 5100.0,
+        "source_value": "5.1k",
+        "pass": true
+      },
+      {
+        "ref": "C1029",
+        "line": 103,
+        "nodes": [
+          "CH5_LIMIT",
+          "CH5_PLUS"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1074",
+        "line": 104,
+        "nodes": [
+          "CH5_PLUS",
+          "VMID"
+        ],
+        "value_SI": 22000000.0,
+        "source_value": "22M",
+        "pass": true
+      },
+      {
+        "ref": "R1075",
+        "line": 105,
+        "nodes": [
+          "CH5_MINUS",
+          "VMID"
+        ],
+        "value_SI": 1000.0,
+        "source_value": "1k",
+        "pass": true
+      },
+      {
+        "ref": "R1076",
+        "line": 106,
+        "nodes": [
+          "CH5_PRE",
+          "CH5_MINUS"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "C1030",
+        "line": 107,
+        "nodes": [
+          "CH5_PRE",
+          "CH5_HP_CH"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1077",
+        "line": 108,
+        "nodes": [
+          "CH5_HP_CH",
+          "CH5_DIFF_MINUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1078",
+        "line": 109,
+        "nodes": [
+          "CH5_HP",
+          "CH5_DIFF_FB_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1079",
+        "line": 110,
+        "nodes": [
+          "CH5_DIFF_FB_MID",
+          "CH5_DIFF_MINUS"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "C1031",
+        "line": 111,
+        "nodes": [
+          "REF_PRE",
+          "CH5_HP_REF"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1080",
+        "line": 112,
+        "nodes": [
+          "CH5_HP_REF",
+          "CH5_DIFF_PLUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1081",
+        "line": 113,
+        "nodes": [
+          "CH5_DIFF_PLUS",
+          "CH5_DIFF_BAL_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1082",
+        "line": 114,
+        "nodes": [
+          "CH5_DIFF_BAL_MID",
+          "VMID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1083",
+        "line": 115,
+        "nodes": [
+          "CH5_HP",
+          "CH5_LP1_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1084",
+        "line": 116,
+        "nodes": [
+          "CH5_LP1_A",
+          "CH5_LP1_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1032",
+        "line": 117,
+        "nodes": [
+          "CH5_LP1_A",
+          "CH5_LP1_OUT"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1033",
+        "line": 118,
+        "nodes": [
+          "CH5_LP1_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1085",
+        "line": 119,
+        "nodes": [
+          "CH5_LP1_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1086",
+        "line": 120,
+        "nodes": [
+          "CH5_LP1_OUT",
+          "CH5_LP1_MINUS"
+        ],
+        "value_SI": 1500.0,
+        "source_value": "1.5k",
+        "pass": true
+      },
+      {
+        "ref": "R1087",
+        "line": 121,
+        "nodes": [
+          "CH5_LP1_OUT",
+          "CH5_LP2_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1088",
+        "line": 122,
+        "nodes": [
+          "CH5_LP2_A",
+          "CH5_LP2_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1034",
+        "line": 123,
+        "nodes": [
+          "CH5_LP2_A",
+          "AFE_OUT_5"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1035",
+        "line": 124,
+        "nodes": [
+          "CH5_LP2_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1089",
+        "line": 125,
+        "nodes": [
+          "CH5_LP2_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1090",
+        "line": 126,
+        "nodes": [
+          "AFE_OUT_5",
+          "CH5_LP2_MINUS"
+        ],
+        "value_SI": 12400.0,
+        "source_value": "12.4k",
+        "pass": true
+      },
+      {
+        "ref": "R1091",
+        "line": 127,
+        "nodes": [
+          "FFC_CH6",
+          "CH6_LIMIT"
+        ],
+        "value_SI": 5100.0,
+        "source_value": "5.1k",
+        "pass": true
+      },
+      {
+        "ref": "C1036",
+        "line": 128,
+        "nodes": [
+          "CH6_LIMIT",
+          "CH6_PLUS"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1092",
+        "line": 129,
+        "nodes": [
+          "CH6_PLUS",
+          "VMID"
+        ],
+        "value_SI": 22000000.0,
+        "source_value": "22M",
+        "pass": true
+      },
+      {
+        "ref": "R1093",
+        "line": 130,
+        "nodes": [
+          "CH6_MINUS",
+          "VMID"
+        ],
+        "value_SI": 1000.0,
+        "source_value": "1k",
+        "pass": true
+      },
+      {
+        "ref": "R1094",
+        "line": 131,
+        "nodes": [
+          "CH6_PRE",
+          "CH6_MINUS"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "C1037",
+        "line": 132,
+        "nodes": [
+          "CH6_PRE",
+          "CH6_HP_CH"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1095",
+        "line": 133,
+        "nodes": [
+          "CH6_HP_CH",
+          "CH6_DIFF_MINUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1096",
+        "line": 134,
+        "nodes": [
+          "CH6_HP",
+          "CH6_DIFF_FB_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1097",
+        "line": 135,
+        "nodes": [
+          "CH6_DIFF_FB_MID",
+          "CH6_DIFF_MINUS"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "C1038",
+        "line": 136,
+        "nodes": [
+          "REF_PRE",
+          "CH6_HP_REF"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1098",
+        "line": 137,
+        "nodes": [
+          "CH6_HP_REF",
+          "CH6_DIFF_PLUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1099",
+        "line": 138,
+        "nodes": [
+          "CH6_DIFF_PLUS",
+          "CH6_DIFF_BAL_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1100",
+        "line": 139,
+        "nodes": [
+          "CH6_DIFF_BAL_MID",
+          "VMID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1101",
+        "line": 140,
+        "nodes": [
+          "CH6_HP",
+          "CH6_LP1_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1102",
+        "line": 141,
+        "nodes": [
+          "CH6_LP1_A",
+          "CH6_LP1_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1039",
+        "line": 142,
+        "nodes": [
+          "CH6_LP1_A",
+          "CH6_LP1_OUT"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1040",
+        "line": 143,
+        "nodes": [
+          "CH6_LP1_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1103",
+        "line": 144,
+        "nodes": [
+          "CH6_LP1_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1104",
+        "line": 145,
+        "nodes": [
+          "CH6_LP1_OUT",
+          "CH6_LP1_MINUS"
+        ],
+        "value_SI": 1500.0,
+        "source_value": "1.5k",
+        "pass": true
+      },
+      {
+        "ref": "R1105",
+        "line": 146,
+        "nodes": [
+          "CH6_LP1_OUT",
+          "CH6_LP2_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1106",
+        "line": 147,
+        "nodes": [
+          "CH6_LP2_A",
+          "CH6_LP2_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1041",
+        "line": 148,
+        "nodes": [
+          "CH6_LP2_A",
+          "AFE_OUT_6"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1042",
+        "line": 149,
+        "nodes": [
+          "CH6_LP2_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1107",
+        "line": 150,
+        "nodes": [
+          "CH6_LP2_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1108",
+        "line": 151,
+        "nodes": [
+          "AFE_OUT_6",
+          "CH6_LP2_MINUS"
+        ],
+        "value_SI": 12400.0,
+        "source_value": "12.4k",
+        "pass": true
+      },
+      {
+        "ref": "R1109",
+        "line": 152,
+        "nodes": [
+          "FFC_CH7",
+          "CH7_LIMIT"
+        ],
+        "value_SI": 5100.0,
+        "source_value": "5.1k",
+        "pass": true
+      },
+      {
+        "ref": "C1043",
+        "line": 153,
+        "nodes": [
+          "CH7_LIMIT",
+          "CH7_PLUS"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1110",
+        "line": 154,
+        "nodes": [
+          "CH7_PLUS",
+          "VMID"
+        ],
+        "value_SI": 22000000.0,
+        "source_value": "22M",
+        "pass": true
+      },
+      {
+        "ref": "R1111",
+        "line": 155,
+        "nodes": [
+          "CH7_MINUS",
+          "VMID"
+        ],
+        "value_SI": 1000.0,
+        "source_value": "1k",
+        "pass": true
+      },
+      {
+        "ref": "R1112",
+        "line": 156,
+        "nodes": [
+          "CH7_PRE",
+          "CH7_MINUS"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "C1044",
+        "line": 157,
+        "nodes": [
+          "CH7_PRE",
+          "CH7_HP_CH"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1113",
+        "line": 158,
+        "nodes": [
+          "CH7_HP_CH",
+          "CH7_DIFF_MINUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1114",
+        "line": 159,
+        "nodes": [
+          "CH7_HP",
+          "CH7_DIFF_FB_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1115",
+        "line": 160,
+        "nodes": [
+          "CH7_DIFF_FB_MID",
+          "CH7_DIFF_MINUS"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "C1045",
+        "line": 161,
+        "nodes": [
+          "REF_PRE",
+          "CH7_HP_REF"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1116",
+        "line": 162,
+        "nodes": [
+          "CH7_HP_REF",
+          "CH7_DIFF_PLUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1117",
+        "line": 163,
+        "nodes": [
+          "CH7_DIFF_PLUS",
+          "CH7_DIFF_BAL_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1118",
+        "line": 164,
+        "nodes": [
+          "CH7_DIFF_BAL_MID",
+          "VMID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1119",
+        "line": 165,
+        "nodes": [
+          "CH7_HP",
+          "CH7_LP1_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1120",
+        "line": 166,
+        "nodes": [
+          "CH7_LP1_A",
+          "CH7_LP1_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1046",
+        "line": 167,
+        "nodes": [
+          "CH7_LP1_A",
+          "CH7_LP1_OUT"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1047",
+        "line": 168,
+        "nodes": [
+          "CH7_LP1_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1121",
+        "line": 169,
+        "nodes": [
+          "CH7_LP1_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1122",
+        "line": 170,
+        "nodes": [
+          "CH7_LP1_OUT",
+          "CH7_LP1_MINUS"
+        ],
+        "value_SI": 1500.0,
+        "source_value": "1.5k",
+        "pass": true
+      },
+      {
+        "ref": "R1123",
+        "line": 171,
+        "nodes": [
+          "CH7_LP1_OUT",
+          "CH7_LP2_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1124",
+        "line": 172,
+        "nodes": [
+          "CH7_LP2_A",
+          "CH7_LP2_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1048",
+        "line": 173,
+        "nodes": [
+          "CH7_LP2_A",
+          "AFE_OUT_7"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1049",
+        "line": 174,
+        "nodes": [
+          "CH7_LP2_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1125",
+        "line": 175,
+        "nodes": [
+          "CH7_LP2_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1126",
+        "line": 176,
+        "nodes": [
+          "AFE_OUT_7",
+          "CH7_LP2_MINUS"
+        ],
+        "value_SI": 12400.0,
+        "source_value": "12.4k",
+        "pass": true
+      },
+      {
+        "ref": "R1127",
+        "line": 177,
+        "nodes": [
+          "FFC_CH8",
+          "CH8_LIMIT"
+        ],
+        "value_SI": 5100.0,
+        "source_value": "5.1k",
+        "pass": true
+      },
+      {
+        "ref": "C1050",
+        "line": 178,
+        "nodes": [
+          "CH8_LIMIT",
+          "CH8_PLUS"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1128",
+        "line": 179,
+        "nodes": [
+          "CH8_PLUS",
+          "VMID"
+        ],
+        "value_SI": 22000000.0,
+        "source_value": "22M",
+        "pass": true
+      },
+      {
+        "ref": "R1129",
+        "line": 180,
+        "nodes": [
+          "CH8_MINUS",
+          "VMID"
+        ],
+        "value_SI": 1000.0,
+        "source_value": "1k",
+        "pass": true
+      },
+      {
+        "ref": "R1130",
+        "line": 181,
+        "nodes": [
+          "CH8_PRE",
+          "CH8_MINUS"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "C1051",
+        "line": 182,
+        "nodes": [
+          "CH8_PRE",
+          "CH8_HP_CH"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1131",
+        "line": 183,
+        "nodes": [
+          "CH8_HP_CH",
+          "CH8_DIFF_MINUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1132",
+        "line": 184,
+        "nodes": [
+          "CH8_HP",
+          "CH8_DIFF_FB_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1133",
+        "line": 185,
+        "nodes": [
+          "CH8_DIFF_FB_MID",
+          "CH8_DIFF_MINUS"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "C1052",
+        "line": 186,
+        "nodes": [
+          "REF_PRE",
+          "CH8_HP_REF"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1134",
+        "line": 187,
+        "nodes": [
+          "CH8_HP_REF",
+          "CH8_DIFF_PLUS"
+        ],
+        "value_SI": 51100.0,
+        "source_value": "51.1k",
+        "pass": true
+      },
+      {
+        "ref": "R1135",
+        "line": 188,
+        "nodes": [
+          "CH8_DIFF_PLUS",
+          "CH8_DIFF_BAL_MID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1136",
+        "line": 189,
+        "nodes": [
+          "CH8_DIFF_BAL_MID",
+          "VMID"
+        ],
+        "value_SI": 909000.0,
+        "source_value": "909k",
+        "pass": true
+      },
+      {
+        "ref": "R1137",
+        "line": 190,
+        "nodes": [
+          "CH8_HP",
+          "CH8_LP1_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1138",
+        "line": 191,
+        "nodes": [
+          "CH8_LP1_A",
+          "CH8_LP1_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1053",
+        "line": 192,
+        "nodes": [
+          "CH8_LP1_A",
+          "CH8_LP1_OUT"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1054",
+        "line": 193,
+        "nodes": [
+          "CH8_LP1_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1139",
+        "line": 194,
+        "nodes": [
+          "CH8_LP1_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1140",
+        "line": 195,
+        "nodes": [
+          "CH8_LP1_OUT",
+          "CH8_LP1_MINUS"
+        ],
+        "value_SI": 1500.0,
+        "source_value": "1.5k",
+        "pass": true
+      },
+      {
+        "ref": "R1141",
+        "line": 196,
+        "nodes": [
+          "CH8_LP1_OUT",
+          "CH8_LP2_A"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "R1142",
+        "line": 197,
+        "nodes": [
+          "CH8_LP2_A",
+          "CH8_LP2_PLUS"
+        ],
+        "value_SI": 22600.0,
+        "source_value": "22.6k",
+        "pass": true
+      },
+      {
+        "ref": "C1055",
+        "line": 198,
+        "nodes": [
+          "CH8_LP2_A",
+          "AFE_OUT_8"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "C1056",
+        "line": 199,
+        "nodes": [
+          "CH8_LP2_PLUS",
+          "VMID"
+        ],
+        "value_SI": 1e-09,
+        "source_value": "1nF",
+        "pass": true
+      },
+      {
+        "ref": "R1143",
+        "line": 200,
+        "nodes": [
+          "CH8_LP2_MINUS",
+          "VMID"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1144",
+        "line": 201,
+        "nodes": [
+          "AFE_OUT_8",
+          "CH8_LP2_MINUS"
+        ],
+        "value_SI": 12400.0,
+        "source_value": "12.4k",
+        "pass": true
+      },
+      {
+        "ref": "R1145",
+        "line": 202,
+        "nodes": [
+          "FFC_REF",
+          "REF_LIMIT"
+        ],
+        "value_SI": 5100.0,
+        "source_value": "5.1k",
+        "pass": true
+      },
+      {
+        "ref": "C1057",
+        "line": 203,
+        "nodes": [
+          "REF_LIMIT",
+          "REF_PLUS"
+        ],
+        "value_SI": 1e-08,
+        "source_value": "10nF",
+        "pass": true
+      },
+      {
+        "ref": "R1146",
+        "line": 204,
+        "nodes": [
+          "REF_PLUS",
+          "VMID"
+        ],
+        "value_SI": 22000000.0,
+        "source_value": "22M",
+        "pass": true
+      },
+      {
+        "ref": "R1147",
+        "line": 205,
+        "nodes": [
+          "REF_MINUS",
+          "VMID"
+        ],
+        "value_SI": 1000.0,
+        "source_value": "1k",
+        "pass": true
+      },
+      {
+        "ref": "R1148",
+        "line": 206,
+        "nodes": [
+          "REF_PRE",
+          "REF_MINUS"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R1149",
+        "line": 207,
+        "nodes": [
+          "VMID_BUF",
+          "VMID"
+        ],
+        "value_SI": 47.0,
+        "source_value": "47",
+        "pass": true
+      },
+      {
+        "ref": "C1058",
+        "line": 208,
+        "nodes": [
+          "VMID",
+          "0"
+        ],
+        "value_SI": 4.7e-06,
+        "source_value": "4.7uF",
+        "pass": true
+      },
+      {
+        "ref": "C1059",
+        "line": 213,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 1e-07,
+        "source_value": "100nF",
+        "pass": true
+      },
+      {
+        "ref": "C1060",
+        "line": 218,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 1e-07,
+        "source_value": "100nF",
+        "pass": true
+      },
+      {
+        "ref": "C1061",
+        "line": 223,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 1e-07,
+        "source_value": "100nF",
+        "pass": true
+      },
+      {
+        "ref": "C1062",
+        "line": 228,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 1e-07,
+        "source_value": "100nF",
+        "pass": true
+      },
+      {
+        "ref": "C1063",
+        "line": 233,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 1e-07,
+        "source_value": "100nF",
+        "pass": true
+      },
+      {
+        "ref": "C1064",
+        "line": 238,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 1e-07,
+        "source_value": "100nF",
+        "pass": true
+      },
+      {
+        "ref": "C1065",
+        "line": 243,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 1e-07,
+        "source_value": "100nF",
+        "pass": true
+      },
+      {
+        "ref": "C1066",
+        "line": 248,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 1e-07,
+        "source_value": "100nF",
+        "pass": true
+      },
+      {
+        "ref": "C1067",
+        "line": 253,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 1e-07,
+        "source_value": "100nF",
+        "pass": true
+      },
+      {
+        "ref": "C1068",
+        "line": 254,
+        "nodes": [
+          "AVDD_3V0",
+          "0"
+        ],
+        "value_SI": 4.7e-06,
+        "source_value": "4.7uF",
+        "pass": true
+      },
+      {
+        "ref": "R540",
+        "line": 255,
+        "nodes": [
+          "AVDD_3V0",
+          "VMID_RAW"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "R541",
+        "line": 256,
+        "nodes": [
+          "VMID_RAW",
+          "0"
+        ],
+        "value_SI": 10000.0,
+        "source_value": "10k",
+        "pass": true
+      },
+      {
+        "ref": "C529",
+        "line": 257,
+        "nodes": [
+          "VMID_RAW",
+          "0"
+        ],
+        "value_SI": 2.2e-06,
+        "source_value": "2.2uF 10V X7R",
+        "pass": true
+      },
+      {
+        "ref": "R401",
+        "line": 258,
+        "nodes": [
+          "AFE_OUT_1",
+          "ADC_IN_1"
+        ],
+        "value_SI": 150.0,
+        "source_value": "150ohm 0.1%",
+        "pass": true
+      },
+      {
+        "ref": "C413",
+        "line": 259,
+        "nodes": [
+          "ADC_IN_1",
+          "0"
+        ],
+        "value_SI": 4.7e-10,
+        "source_value": "470pF C0G 5% 50V",
+        "pass": true
+      },
+      {
+        "ref": "R402",
+        "line": 260,
+        "nodes": [
+          "AFE_OUT_2",
+          "ADC_IN_2"
+        ],
+        "value_SI": 150.0,
+        "source_value": "150ohm 0.1%",
+        "pass": true
+      },
+      {
+        "ref": "C414",
+        "line": 261,
+        "nodes": [
+          "ADC_IN_2",
+          "0"
+        ],
+        "value_SI": 4.7e-10,
+        "source_value": "470pF C0G 5% 50V",
+        "pass": true
+      },
+      {
+        "ref": "R403",
+        "line": 262,
+        "nodes": [
+          "AFE_OUT_3",
+          "ADC_IN_3"
+        ],
+        "value_SI": 150.0,
+        "source_value": "150ohm 0.1%",
+        "pass": true
+      },
+      {
+        "ref": "C415",
+        "line": 263,
+        "nodes": [
+          "ADC_IN_3",
+          "0"
+        ],
+        "value_SI": 4.7e-10,
+        "source_value": "470pF C0G 5% 50V",
+        "pass": true
+      },
+      {
+        "ref": "R404",
+        "line": 264,
+        "nodes": [
+          "AFE_OUT_4",
+          "ADC_IN_4"
+        ],
+        "value_SI": 150.0,
+        "source_value": "150ohm 0.1%",
+        "pass": true
+      },
+      {
+        "ref": "C416",
+        "line": 265,
+        "nodes": [
+          "ADC_IN_4",
+          "0"
+        ],
+        "value_SI": 4.7e-10,
+        "source_value": "470pF C0G 5% 50V",
+        "pass": true
+      },
+      {
+        "ref": "R405",
+        "line": 266,
+        "nodes": [
+          "AFE_OUT_5",
+          "ADC_IN_5"
+        ],
+        "value_SI": 150.0,
+        "source_value": "150ohm 0.1%",
+        "pass": true
+      },
+      {
+        "ref": "C417",
+        "line": 267,
+        "nodes": [
+          "ADC_IN_5",
+          "0"
+        ],
+        "value_SI": 4.7e-10,
+        "source_value": "470pF C0G 5% 50V",
+        "pass": true
+      },
+      {
+        "ref": "R406",
+        "line": 268,
+        "nodes": [
+          "AFE_OUT_6",
+          "ADC_IN_6"
+        ],
+        "value_SI": 150.0,
+        "source_value": "150ohm 0.1%",
+        "pass": true
+      },
+      {
+        "ref": "C418",
+        "line": 269,
+        "nodes": [
+          "ADC_IN_6",
+          "0"
+        ],
+        "value_SI": 4.7e-10,
+        "source_value": "470pF C0G 5% 50V",
+        "pass": true
+      },
+      {
+        "ref": "R407",
+        "line": 270,
+        "nodes": [
+          "AFE_OUT_7",
+          "ADC_IN_7"
+        ],
+        "value_SI": 150.0,
+        "source_value": "150ohm 0.1%",
+        "pass": true
+      },
+      {
+        "ref": "C419",
+        "line": 271,
+        "nodes": [
+          "ADC_IN_7",
+          "0"
+        ],
+        "value_SI": 4.7e-10,
+        "source_value": "470pF C0G 5% 50V",
+        "pass": true
+      },
+      {
+        "ref": "R408",
+        "line": 272,
+        "nodes": [
+          "AFE_OUT_8",
+          "ADC_IN_8"
+        ],
+        "value_SI": 150.0,
+        "source_value": "150ohm 0.1%",
+        "pass": true
+      },
+      {
+        "ref": "C420",
+        "line": 273,
+        "nodes": [
+          "ADC_IN_8",
+          "0"
+        ],
+        "value_SI": 4.7e-10,
+        "source_value": "470pF C0G 5% 50V",
+        "pass": true
+      }
+    ],
+    "amplifier_details": [
+      {
+        "instance": "XU101_1",
+        "line": 209,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "2",
+          "1",
+          "3",
+          "10",
+          "14"
+        ],
+        "nodes": [
+          "CH1_PLUS",
+          "CH1_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH1_PRE"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU101_2",
+        "line": 210,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "4",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        "nodes": [
+          "CH2_PLUS",
+          "CH2_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH2_PRE"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU101_3",
+        "line": 211,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "9",
+          "8",
+          "3",
+          "10",
+          "7"
+        ],
+        "nodes": [
+          "CH3_PLUS",
+          "CH3_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH3_PRE"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU101_4",
+        "line": 212,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "11",
+          "12",
+          "3",
+          "10",
+          "13"
+        ],
+        "nodes": [
+          "CH4_PLUS",
+          "CH4_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH4_PRE"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU102_1",
+        "line": 214,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "2",
+          "1",
+          "3",
+          "10",
+          "14"
+        ],
+        "nodes": [
+          "CH5_PLUS",
+          "CH5_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH5_PRE"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU102_2",
+        "line": 215,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "4",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        "nodes": [
+          "CH6_PLUS",
+          "CH6_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH6_PRE"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU102_3",
+        "line": 216,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "9",
+          "8",
+          "3",
+          "10",
+          "7"
+        ],
+        "nodes": [
+          "CH7_PLUS",
+          "CH7_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH7_PRE"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU102_4",
+        "line": 217,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "11",
+          "12",
+          "3",
+          "10",
+          "13"
+        ],
+        "nodes": [
+          "CH8_PLUS",
+          "CH8_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH8_PRE"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU103_1",
+        "line": 219,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "2",
+          "1",
+          "3",
+          "10",
+          "14"
+        ],
+        "nodes": [
+          "CH1_DIFF_PLUS",
+          "CH1_DIFF_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH1_HP"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU103_2",
+        "line": 220,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "4",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        "nodes": [
+          "CH2_DIFF_PLUS",
+          "CH2_DIFF_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH2_HP"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU103_3",
+        "line": 221,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "9",
+          "8",
+          "3",
+          "10",
+          "7"
+        ],
+        "nodes": [
+          "CH3_DIFF_PLUS",
+          "CH3_DIFF_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH3_HP"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU103_4",
+        "line": 222,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "11",
+          "12",
+          "3",
+          "10",
+          "13"
+        ],
+        "nodes": [
+          "CH4_DIFF_PLUS",
+          "CH4_DIFF_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH4_HP"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU104_1",
+        "line": 224,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "2",
+          "1",
+          "3",
+          "10",
+          "14"
+        ],
+        "nodes": [
+          "CH5_DIFF_PLUS",
+          "CH5_DIFF_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH5_HP"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU104_2",
+        "line": 225,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "4",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        "nodes": [
+          "CH6_DIFF_PLUS",
+          "CH6_DIFF_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH6_HP"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU104_3",
+        "line": 226,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "9",
+          "8",
+          "3",
+          "10",
+          "7"
+        ],
+        "nodes": [
+          "CH7_DIFF_PLUS",
+          "CH7_DIFF_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH7_HP"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU104_4",
+        "line": 227,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "11",
+          "12",
+          "3",
+          "10",
+          "13"
+        ],
+        "nodes": [
+          "CH8_DIFF_PLUS",
+          "CH8_DIFF_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH8_HP"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU105_1",
+        "line": 229,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "2",
+          "1",
+          "3",
+          "10",
+          "14"
+        ],
+        "nodes": [
+          "CH1_LP1_PLUS",
+          "CH1_LP1_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH1_LP1_OUT"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU105_2",
+        "line": 230,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "4",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        "nodes": [
+          "CH2_LP1_PLUS",
+          "CH2_LP1_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH2_LP1_OUT"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU105_3",
+        "line": 231,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "9",
+          "8",
+          "3",
+          "10",
+          "7"
+        ],
+        "nodes": [
+          "CH3_LP1_PLUS",
+          "CH3_LP1_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH3_LP1_OUT"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU105_4",
+        "line": 232,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "11",
+          "12",
+          "3",
+          "10",
+          "13"
+        ],
+        "nodes": [
+          "CH4_LP1_PLUS",
+          "CH4_LP1_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH4_LP1_OUT"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU106_1",
+        "line": 234,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "2",
+          "1",
+          "3",
+          "10",
+          "14"
+        ],
+        "nodes": [
+          "CH5_LP1_PLUS",
+          "CH5_LP1_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH5_LP1_OUT"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU106_2",
+        "line": 235,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "4",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        "nodes": [
+          "CH6_LP1_PLUS",
+          "CH6_LP1_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH6_LP1_OUT"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU106_3",
+        "line": 236,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "9",
+          "8",
+          "3",
+          "10",
+          "7"
+        ],
+        "nodes": [
+          "CH7_LP1_PLUS",
+          "CH7_LP1_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH7_LP1_OUT"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU106_4",
+        "line": 237,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "11",
+          "12",
+          "3",
+          "10",
+          "13"
+        ],
+        "nodes": [
+          "CH8_LP1_PLUS",
+          "CH8_LP1_MINUS",
+          "AVDD_3V0",
+          "0",
+          "CH8_LP1_OUT"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU107_1",
+        "line": 239,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "2",
+          "1",
+          "3",
+          "10",
+          "14"
+        ],
+        "nodes": [
+          "CH1_LP2_PLUS",
+          "CH1_LP2_MINUS",
+          "AVDD_3V0",
+          "0",
+          "AFE_OUT_1"
+        ],
+        "model": "TLV9052_TLV9052",
+        "pass": true
+      },
+      {
+        "instance": "XU107_2",
+        "line": 240,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "4",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        "nodes": [
+          "CH2_LP2_PLUS",
+          "CH2_LP2_MINUS",
+          "AVDD_3V0",
+          "0",
+          "AFE_OUT_2"
+        ],
+        "model": "TLV9052_TLV9052",
+        "pass": true
+      },
+      {
+        "instance": "XU107_3",
+        "line": 241,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "9",
+          "8",
+          "3",
+          "10",
+          "7"
+        ],
+        "nodes": [
+          "CH3_LP2_PLUS",
+          "CH3_LP2_MINUS",
+          "AVDD_3V0",
+          "0",
+          "AFE_OUT_3"
+        ],
+        "model": "TLV9052_TLV9052",
+        "pass": true
+      },
+      {
+        "instance": "XU107_4",
+        "line": 242,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "11",
+          "12",
+          "3",
+          "10",
+          "13"
+        ],
+        "nodes": [
+          "CH4_LP2_PLUS",
+          "CH4_LP2_MINUS",
+          "AVDD_3V0",
+          "0",
+          "AFE_OUT_4"
+        ],
+        "model": "TLV9052_TLV9052",
+        "pass": true
+      },
+      {
+        "instance": "XU108_1",
+        "line": 244,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "2",
+          "1",
+          "3",
+          "10",
+          "14"
+        ],
+        "nodes": [
+          "CH5_LP2_PLUS",
+          "CH5_LP2_MINUS",
+          "AVDD_3V0",
+          "0",
+          "AFE_OUT_5"
+        ],
+        "model": "TLV9052_TLV9052",
+        "pass": true
+      },
+      {
+        "instance": "XU108_2",
+        "line": 245,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "4",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        "nodes": [
+          "CH6_LP2_PLUS",
+          "CH6_LP2_MINUS",
+          "AVDD_3V0",
+          "0",
+          "AFE_OUT_6"
+        ],
+        "model": "TLV9052_TLV9052",
+        "pass": true
+      },
+      {
+        "instance": "XU108_3",
+        "line": 246,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "9",
+          "8",
+          "3",
+          "10",
+          "7"
+        ],
+        "nodes": [
+          "CH7_LP2_PLUS",
+          "CH7_LP2_MINUS",
+          "AVDD_3V0",
+          "0",
+          "AFE_OUT_7"
+        ],
+        "model": "TLV9052_TLV9052",
+        "pass": true
+      },
+      {
+        "instance": "XU108_4",
+        "line": 247,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "11",
+          "12",
+          "3",
+          "10",
+          "13"
+        ],
+        "nodes": [
+          "CH8_LP2_PLUS",
+          "CH8_LP2_MINUS",
+          "AVDD_3V0",
+          "0",
+          "AFE_OUT_8"
+        ],
+        "model": "TLV9052_TLV9052",
+        "pass": true
+      },
+      {
+        "instance": "XU109_1",
+        "line": 249,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "2",
+          "1",
+          "3",
+          "10",
+          "14"
+        ],
+        "nodes": [
+          "REF_PLUS",
+          "REF_MINUS",
+          "AVDD_3V0",
+          "0",
+          "REF_PRE"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU109_2",
+        "line": 250,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "4",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        "nodes": [
+          "VMID_RAW",
+          "VMID_BUF",
+          "AVDD_3V0",
+          "0",
+          "VMID_BUF"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU109_3",
+        "line": 251,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "9",
+          "8",
+          "3",
+          "10",
+          "7"
+        ],
+        "nodes": [
+          "VMID_RAW",
+          "AFE_SPARE_C",
+          "AVDD_3V0",
+          "0",
+          "AFE_SPARE_C"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      },
+      {
+        "instance": "XU109_4",
+        "line": 252,
+        "physical_pin_order_positive_negative_vplus_vminus_out": [
+          "11",
+          "12",
+          "3",
+          "10",
+          "13"
+        ],
+        "nodes": [
+          "VMID_RAW",
+          "AFE_SPARE_D",
+          "AVDD_3V0",
+          "0",
+          "AFE_SPARE_D"
+        ],
+        "model": "TLV9002_TLV9002",
+        "pass": true
+      }
+    ],
+    "fixture_elements": [
+      {
+        "tokens": [
+          "R_SOURCE_CH1",
+          "SRC_CH1",
+          "FFC_CH1",
+          "47k"
+        ],
+        "line": 275
+      },
+      {
+        "tokens": [
+          "C_FFC_CH1",
+          "FFC_CH1",
+          "0",
+          "20p"
+        ],
+        "line": 276
+      },
+      {
+        "tokens": [
+          "C_TRACE_CH1",
+          "FFC_CH1",
+          "0",
+          "2p"
+        ],
+        "line": 277
+      },
+      {
+        "tokens": [
+          "C_ESD_CH1",
+          "FFC_CH1",
+          "0",
+          "0.5p"
+        ],
+        "line": 278
+      },
+      {
+        "tokens": [
+          "R_SOURCE_CH2",
+          "SRC_CH2",
+          "FFC_CH2",
+          "47k"
+        ],
+        "line": 279
+      },
+      {
+        "tokens": [
+          "C_FFC_CH2",
+          "FFC_CH2",
+          "0",
+          "20p"
+        ],
+        "line": 280
+      },
+      {
+        "tokens": [
+          "C_TRACE_CH2",
+          "FFC_CH2",
+          "0",
+          "2p"
+        ],
+        "line": 281
+      },
+      {
+        "tokens": [
+          "C_ESD_CH2",
+          "FFC_CH2",
+          "0",
+          "0.5p"
+        ],
+        "line": 282
+      },
+      {
+        "tokens": [
+          "R_SOURCE_CH3",
+          "SRC_CH3",
+          "FFC_CH3",
+          "47k"
+        ],
+        "line": 283
+      },
+      {
+        "tokens": [
+          "C_FFC_CH3",
+          "FFC_CH3",
+          "0",
+          "20p"
+        ],
+        "line": 284
+      },
+      {
+        "tokens": [
+          "C_TRACE_CH3",
+          "FFC_CH3",
+          "0",
+          "2p"
+        ],
+        "line": 285
+      },
+      {
+        "tokens": [
+          "C_ESD_CH3",
+          "FFC_CH3",
+          "0",
+          "0.5p"
+        ],
+        "line": 286
+      },
+      {
+        "tokens": [
+          "R_SOURCE_CH4",
+          "SRC_CH4",
+          "FFC_CH4",
+          "47k"
+        ],
+        "line": 287
+      },
+      {
+        "tokens": [
+          "C_FFC_CH4",
+          "FFC_CH4",
+          "0",
+          "20p"
+        ],
+        "line": 288
+      },
+      {
+        "tokens": [
+          "C_TRACE_CH4",
+          "FFC_CH4",
+          "0",
+          "2p"
+        ],
+        "line": 289
+      },
+      {
+        "tokens": [
+          "C_ESD_CH4",
+          "FFC_CH4",
+          "0",
+          "0.5p"
+        ],
+        "line": 290
+      },
+      {
+        "tokens": [
+          "R_SOURCE_CH5",
+          "SRC_CH5",
+          "FFC_CH5",
+          "47k"
+        ],
+        "line": 291
+      },
+      {
+        "tokens": [
+          "C_FFC_CH5",
+          "FFC_CH5",
+          "0",
+          "20p"
+        ],
+        "line": 292
+      },
+      {
+        "tokens": [
+          "C_TRACE_CH5",
+          "FFC_CH5",
+          "0",
+          "2p"
+        ],
+        "line": 293
+      },
+      {
+        "tokens": [
+          "C_ESD_CH5",
+          "FFC_CH5",
+          "0",
+          "0.5p"
+        ],
+        "line": 294
+      },
+      {
+        "tokens": [
+          "R_SOURCE_CH6",
+          "SRC_CH6",
+          "FFC_CH6",
+          "47k"
+        ],
+        "line": 295
+      },
+      {
+        "tokens": [
+          "C_FFC_CH6",
+          "FFC_CH6",
+          "0",
+          "20p"
+        ],
+        "line": 296
+      },
+      {
+        "tokens": [
+          "C_TRACE_CH6",
+          "FFC_CH6",
+          "0",
+          "2p"
+        ],
+        "line": 297
+      },
+      {
+        "tokens": [
+          "C_ESD_CH6",
+          "FFC_CH6",
+          "0",
+          "0.5p"
+        ],
+        "line": 298
+      },
+      {
+        "tokens": [
+          "R_SOURCE_CH7",
+          "SRC_CH7",
+          "FFC_CH7",
+          "47k"
+        ],
+        "line": 299
+      },
+      {
+        "tokens": [
+          "C_FFC_CH7",
+          "FFC_CH7",
+          "0",
+          "20p"
+        ],
+        "line": 300
+      },
+      {
+        "tokens": [
+          "C_TRACE_CH7",
+          "FFC_CH7",
+          "0",
+          "2p"
+        ],
+        "line": 301
+      },
+      {
+        "tokens": [
+          "C_ESD_CH7",
+          "FFC_CH7",
+          "0",
+          "0.5p"
+        ],
+        "line": 302
+      },
+      {
+        "tokens": [
+          "R_SOURCE_CH8",
+          "SRC_CH8",
+          "FFC_CH8",
+          "47k"
+        ],
+        "line": 303
+      },
+      {
+        "tokens": [
+          "C_FFC_CH8",
+          "FFC_CH8",
+          "0",
+          "20p"
+        ],
+        "line": 304
+      },
+      {
+        "tokens": [
+          "C_TRACE_CH8",
+          "FFC_CH8",
+          "0",
+          "2p"
+        ],
+        "line": 305
+      },
+      {
+        "tokens": [
+          "C_ESD_CH8",
+          "FFC_CH8",
+          "0",
+          "0.5p"
+        ],
+        "line": 306
+      },
+      {
+        "tokens": [
+          "R_SOURCE_REF",
+          "SRC_REF",
+          "FFC_REF",
+          "47k"
+        ],
+        "line": 307
+      },
+      {
+        "tokens": [
+          "C_FFC_REF",
+          "FFC_REF",
+          "0",
+          "20p"
+        ],
+        "line": 308
+      },
+      {
+        "tokens": [
+          "C_TRACE_REF",
+          "FFC_REF",
+          "0",
+          "2p"
+        ],
+        "line": 309
+      },
+      {
+        "tokens": [
+          "C_ESD_REF",
+          "FFC_REF",
+          "0",
+          "0.5p"
+        ],
+        "line": 310
+      }
+    ],
+    "source_afe_to_merged_raw_pin_representation_differences": [
+      {
+        "ref": "U110",
+        "pin": "6",
+        "afe_source": "NC_ESD_0_PIN6",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U110",
+        "pin": "7",
+        "afe_source": "NC_ESD_0_PIN7",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U110",
+        "pin": "9",
+        "afe_source": "NC_ESD_0_PIN9",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U110",
+        "pin": "10",
+        "afe_source": "NC_ESD_0_PIN10",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U111",
+        "pin": "6",
+        "afe_source": "NC_ESD_1_PIN6",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U111",
+        "pin": "7",
+        "afe_source": "NC_ESD_1_PIN7",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U111",
+        "pin": "9",
+        "afe_source": "NC_ESD_1_PIN9",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U111",
+        "pin": "10",
+        "afe_source": "NC_ESD_1_PIN10",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U112",
+        "pin": "2",
+        "afe_source": "NC_ESD_2_1",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U112",
+        "pin": "4",
+        "afe_source": "NC_ESD_2_2",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U112",
+        "pin": "5",
+        "afe_source": "NC_ESD_2_3",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U112",
+        "pin": "6",
+        "afe_source": "NC_ESD_2_PIN6",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U112",
+        "pin": "7",
+        "afe_source": "NC_ESD_2_PIN7",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U112",
+        "pin": "9",
+        "afe_source": "NC_ESD_2_PIN9",
+        "merged": null,
+        "intentional_NC": true
+      },
+      {
+        "ref": "U112",
+        "pin": "10",
+        "afe_source": "NC_ESD_2_PIN10",
+        "merged": null,
+        "intentional_NC": true
+      }
+    ],
+    "source_afe_to_merged_semantic_mismatches": [],
+    "NC_normalization_evidence": "tools/hardware/build_reva.py:203-204 converts source NC_ placeholders to None; all 15 affected ESD pins are declared no_connect in the AFE source.",
+    "independently_expected_passives": {
+      "AFE_source": 217,
+      "VMID_power_divider_and_capacitor": 3,
+      "MCU_ADC_interface": 16,
+      "total": 236,
+      "missing": [],
+      "extra": []
+    },
+    "independently_expected_amplifier_units": {
+      "total": 36,
+      "missing": [],
+      "extra": []
+    }
+  },
+  "native_schematic_check": {
+    "method": "Custom S-expression parser; each targeted pin resolved from embedded native symbol unit pin coordinates through direct native wires to global labels; compared with merged and XML pin records. Targeted native instances have rotation 0 and no mirror. No KiCad re-export or ERC was run.",
+    "schematics": {
+      "hardware/rev-a/afe_ch1_1.kicad_sch": "dc239f32820dac26d34327beea7d3ee9a8a10097727e3b0f6f54744d5d5a8aaf",
+      "hardware/rev-a/afe_ch2_1.kicad_sch": "a4beeed7023153802e6380b8e51b6537fdf350b5663272803509cb5895a4b142",
+      "hardware/rev-a/afe_ch3_1.kicad_sch": "36ad671d1665a0288ab4fc2290ca467bd572d6c778f5a3cfe3253332c9f8d418",
+      "hardware/rev-a/afe_ch4_1.kicad_sch": "8cba4e7f530297246407a0cbdaff12058d0da11f03846dd61268f7e5d9599625",
+      "hardware/rev-a/afe_ch5_1.kicad_sch": "7b3f81f6b9fe919f57580eaaaa7cec0a7f4d070093fd0fd4bc1a053cfbe051bd",
+      "hardware/rev-a/afe_ch6_1.kicad_sch": "0347b5b1721d47f6484102386eb953099fd83e9f5afb4d2830b2dd342f735700",
+      "hardware/rev-a/afe_ch7_1.kicad_sch": "6cad6b477c71415ea578add2b820cfd9dbd0b7ff8fa25d17a81e29a02b9a592a",
+      "hardware/rev-a/afe_ch8_1.kicad_sch": "17e00f83cf47a8cd6b55bcb386b49c389a26c834c4c33ba04b20840c1a9e96bb",
+      "hardware/rev-a/afe_shared_1.kicad_sch": "bc186f94e09784e9918908e6c9f9d91981c4788f353b6c3552560ef0ee89ff41",
+      "hardware/rev-a/MCU_ACQUISITION_1.kicad_sch": "4c90014577cd6ee6b637490dd5d503fb59c0c799e52fa1eb4b71a81fee351fb6",
+      "hardware/rev-a/power_2.kicad_sch": "40ab797aa06780eab147c41a27b63cde42ed2c7d6d5cfa8840da31c671c7ac0e",
+      "hardware/rev-a/power_3.kicad_sch": "1f93f8b2f6d8306b2b8a3e45d38ad2596651d1e73adb2b6c5e8381e62f310ebe"
+    },
+    "symbol_units": 281,
+    "pin_checks": 598,
+    "unique_physical_pins": 598,
+    "duplicate_target_pin_instances": [],
+    "mismatches": [],
+    "unit_instances": [
+      {
+        "ref": "R1001",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "5.1k"
+      },
+      {
+        "ref": "C1001",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1002",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "22M"
+      },
+      {
+        "ref": "R1003",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "1k"
+      },
+      {
+        "ref": "R1004",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "C1002",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1005",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1006",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1007",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "C1003",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1008",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1009",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1010",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1011",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1012",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1004",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1005",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1013",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1014",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "1.5k"
+      },
+      {
+        "ref": "R1015",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1016",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1006",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1007",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1017",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1018",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "12.4k"
+      },
+      {
+        "ref": "U101",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U103",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U105",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U107",
+        "unit": 1,
+        "sheet": "afe_ch1_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "R1019",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "5.1k"
+      },
+      {
+        "ref": "C1008",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1020",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "22M"
+      },
+      {
+        "ref": "R1021",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "1k"
+      },
+      {
+        "ref": "R1022",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "C1009",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1023",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1024",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1025",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "C1010",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1026",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1027",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1028",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1029",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1030",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1011",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1012",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1031",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1032",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "1.5k"
+      },
+      {
+        "ref": "R1033",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1034",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1013",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1014",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1035",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1036",
+        "unit": 1,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "12.4k"
+      },
+      {
+        "ref": "U101",
+        "unit": 2,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U103",
+        "unit": 2,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U105",
+        "unit": 2,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U107",
+        "unit": 2,
+        "sheet": "afe_ch2_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "R1037",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "5.1k"
+      },
+      {
+        "ref": "C1015",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1038",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "22M"
+      },
+      {
+        "ref": "R1039",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "1k"
+      },
+      {
+        "ref": "R1040",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "C1016",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1041",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1042",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1043",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "C1017",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1044",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1045",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1046",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1047",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1048",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1018",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1019",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1049",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1050",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "1.5k"
+      },
+      {
+        "ref": "R1051",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1052",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1020",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1021",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1053",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1054",
+        "unit": 1,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "12.4k"
+      },
+      {
+        "ref": "U101",
+        "unit": 3,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U103",
+        "unit": 3,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U105",
+        "unit": 3,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U107",
+        "unit": 3,
+        "sheet": "afe_ch3_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "R1055",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "5.1k"
+      },
+      {
+        "ref": "C1022",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1056",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "22M"
+      },
+      {
+        "ref": "R1057",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "1k"
+      },
+      {
+        "ref": "R1058",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "C1023",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1059",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1060",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1061",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "C1024",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1062",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1063",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1064",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1065",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1066",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1025",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1026",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1067",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1068",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "1.5k"
+      },
+      {
+        "ref": "R1069",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1070",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1027",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1028",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1071",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1072",
+        "unit": 1,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "12.4k"
+      },
+      {
+        "ref": "U101",
+        "unit": 4,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U103",
+        "unit": 4,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U105",
+        "unit": 4,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U107",
+        "unit": 4,
+        "sheet": "afe_ch4_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "R1073",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "5.1k"
+      },
+      {
+        "ref": "C1029",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1074",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "22M"
+      },
+      {
+        "ref": "R1075",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "1k"
+      },
+      {
+        "ref": "R1076",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "C1030",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1077",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1078",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1079",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "C1031",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1080",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1081",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1082",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1083",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1084",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1032",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1033",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1085",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1086",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "1.5k"
+      },
+      {
+        "ref": "R1087",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1088",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1034",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1035",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1089",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1090",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "12.4k"
+      },
+      {
+        "ref": "U102",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U104",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U106",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U108",
+        "unit": 1,
+        "sheet": "afe_ch5_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "R1091",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "5.1k"
+      },
+      {
+        "ref": "C1036",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1092",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "22M"
+      },
+      {
+        "ref": "R1093",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "1k"
+      },
+      {
+        "ref": "R1094",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "C1037",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1095",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1096",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1097",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "C1038",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1098",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1099",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1100",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1101",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1102",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1039",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1040",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1103",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1104",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "1.5k"
+      },
+      {
+        "ref": "R1105",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1106",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1041",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1042",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1107",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1108",
+        "unit": 1,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "12.4k"
+      },
+      {
+        "ref": "U102",
+        "unit": 2,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U104",
+        "unit": 2,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U106",
+        "unit": 2,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U108",
+        "unit": 2,
+        "sheet": "afe_ch6_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "R1109",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "5.1k"
+      },
+      {
+        "ref": "C1043",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1110",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "22M"
+      },
+      {
+        "ref": "R1111",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "1k"
+      },
+      {
+        "ref": "R1112",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "C1044",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1113",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1114",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1115",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "C1045",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1116",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1117",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1118",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1119",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1120",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1046",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1047",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1121",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1122",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "1.5k"
+      },
+      {
+        "ref": "R1123",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1124",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1048",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1049",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1125",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1126",
+        "unit": 1,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "12.4k"
+      },
+      {
+        "ref": "U102",
+        "unit": 3,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U104",
+        "unit": 3,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U106",
+        "unit": 3,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U108",
+        "unit": 3,
+        "sheet": "afe_ch7_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "R1127",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "5.1k"
+      },
+      {
+        "ref": "C1050",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1128",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "22M"
+      },
+      {
+        "ref": "R1129",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "1k"
+      },
+      {
+        "ref": "R1130",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "C1051",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1131",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1132",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1133",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "C1052",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1134",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "51.1k"
+      },
+      {
+        "ref": "R1135",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1136",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "909k"
+      },
+      {
+        "ref": "R1137",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1138",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1053",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1054",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1139",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1140",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "1.5k"
+      },
+      {
+        "ref": "R1141",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "R1142",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "22.6k"
+      },
+      {
+        "ref": "C1055",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "C1056",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "1nF"
+      },
+      {
+        "ref": "R1143",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1144",
+        "unit": 1,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "12.4k"
+      },
+      {
+        "ref": "U102",
+        "unit": 4,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U104",
+        "unit": 4,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U106",
+        "unit": 4,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U108",
+        "unit": 4,
+        "sheet": "afe_ch8_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "R1145",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "5.1k"
+      },
+      {
+        "ref": "C1057",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "10nF"
+      },
+      {
+        "ref": "R1146",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "22M"
+      },
+      {
+        "ref": "R1147",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "1k"
+      },
+      {
+        "ref": "R1148",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R1149",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "47"
+      },
+      {
+        "ref": "C1058",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "4.7uF"
+      },
+      {
+        "ref": "U101",
+        "unit": 5,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "C1059",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "100nF"
+      },
+      {
+        "ref": "U102",
+        "unit": 5,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "C1060",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "100nF"
+      },
+      {
+        "ref": "U103",
+        "unit": 5,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "C1061",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "100nF"
+      },
+      {
+        "ref": "U104",
+        "unit": 5,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "C1062",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "100nF"
+      },
+      {
+        "ref": "U105",
+        "unit": 5,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "C1063",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "100nF"
+      },
+      {
+        "ref": "U106",
+        "unit": 5,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "C1064",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "100nF"
+      },
+      {
+        "ref": "U107",
+        "unit": 5,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "C1065",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "100nF"
+      },
+      {
+        "ref": "U108",
+        "unit": 5,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9054IRUCR"
+      },
+      {
+        "ref": "C1066",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "100nF"
+      },
+      {
+        "ref": "U109",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U109",
+        "unit": 2,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U109",
+        "unit": 3,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U109",
+        "unit": 4,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "U109",
+        "unit": 5,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "TLV9004IRUCR"
+      },
+      {
+        "ref": "C1067",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "100nF"
+      },
+      {
+        "ref": "C1068",
+        "unit": 1,
+        "sheet": "afe_shared_1.kicad_sch",
+        "value": "4.7uF"
+      },
+      {
+        "ref": "R401",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "150ohm 0.1%"
+      },
+      {
+        "ref": "C413",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "470pF C0G 5% 50V"
+      },
+      {
+        "ref": "R402",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "150ohm 0.1%"
+      },
+      {
+        "ref": "C414",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "470pF C0G 5% 50V"
+      },
+      {
+        "ref": "R403",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "150ohm 0.1%"
+      },
+      {
+        "ref": "C415",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "470pF C0G 5% 50V"
+      },
+      {
+        "ref": "R404",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "150ohm 0.1%"
+      },
+      {
+        "ref": "C416",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "470pF C0G 5% 50V"
+      },
+      {
+        "ref": "R405",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "150ohm 0.1%"
+      },
+      {
+        "ref": "C417",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "470pF C0G 5% 50V"
+      },
+      {
+        "ref": "R406",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "150ohm 0.1%"
+      },
+      {
+        "ref": "C418",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "470pF C0G 5% 50V"
+      },
+      {
+        "ref": "R407",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "150ohm 0.1%"
+      },
+      {
+        "ref": "C419",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "470pF C0G 5% 50V"
+      },
+      {
+        "ref": "R408",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "150ohm 0.1%"
+      },
+      {
+        "ref": "C420",
+        "unit": 1,
+        "sheet": "MCU_ACQUISITION_1.kicad_sch",
+        "value": "470pF C0G 5% 50V"
+      },
+      {
+        "ref": "R540",
+        "unit": 1,
+        "sheet": "power_2.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "R541",
+        "unit": 1,
+        "sheet": "power_2.kicad_sch",
+        "value": "10k"
+      },
+      {
+        "ref": "C529",
+        "unit": 1,
+        "sheet": "power_3.kicad_sch",
+        "value": "2.2uF 10V X7R"
+      }
+    ]
+  },
+  "input_path_checks": [
+    {
+      "channel": "CH1",
+      "limit": "R1001",
+      "coupling": "C1001",
+      "bias_return": "R1002",
+      "pass": true
+    },
+    {
+      "channel": "CH2",
+      "limit": "R1019",
+      "coupling": "C1008",
+      "bias_return": "R1020",
+      "pass": true
+    },
+    {
+      "channel": "CH3",
+      "limit": "R1037",
+      "coupling": "C1015",
+      "bias_return": "R1038",
+      "pass": true
+    },
+    {
+      "channel": "CH4",
+      "limit": "R1055",
+      "coupling": "C1022",
+      "bias_return": "R1056",
+      "pass": true
+    },
+    {
+      "channel": "CH5",
+      "limit": "R1073",
+      "coupling": "C1029",
+      "bias_return": "R1074",
+      "pass": true
+    },
+    {
+      "channel": "CH6",
+      "limit": "R1091",
+      "coupling": "C1036",
+      "bias_return": "R1092",
+      "pass": true
+    },
+    {
+      "channel": "CH7",
+      "limit": "R1109",
+      "coupling": "C1043",
+      "bias_return": "R1110",
+      "pass": true
+    },
+    {
+      "channel": "CH8",
+      "limit": "R1127",
+      "coupling": "C1050",
+      "bias_return": "R1128",
+      "pass": true
+    },
+    {
+      "channel": "REF",
+      "limit": "R1145",
+      "coupling": "C1057",
+      "bias_return": "R1146",
+      "pass": true
+    }
+  ],
+  "ADC_interface_checks": [
+    {
+      "channel": 1,
+      "resistor": "R401",
+      "capacitor": "C413",
+      "pass": true
+    },
+    {
+      "channel": 2,
+      "resistor": "R402",
+      "capacitor": "C414",
+      "pass": true
+    },
+    {
+      "channel": 3,
+      "resistor": "R403",
+      "capacitor": "C415",
+      "pass": true
+    },
+    {
+      "channel": 4,
+      "resistor": "R404",
+      "capacitor": "C416",
+      "pass": true
+    },
+    {
+      "channel": 5,
+      "resistor": "R405",
+      "capacitor": "C417",
+      "pass": true
+    },
+    {
+      "channel": 6,
+      "resistor": "R406",
+      "capacitor": "C418",
+      "pass": true
+    },
+    {
+      "channel": 7,
+      "resistor": "R407",
+      "capacitor": "C419",
+      "pass": true
+    },
+    {
+      "channel": 8,
+      "resistor": "R408",
+      "capacitor": "C420",
+      "pass": true
+    }
+  ],
+  "snapshot_provenance_checks": [
+    {
+      "source": "hardware/rev-a/ltspice/afe/canonical-afe.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/canonical-afe.lib",
+      "declared": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f",
+      "actual_source": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f",
+      "actual_snapshot": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f",
+      "pass": true
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/read_ltspice_raw.py",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/read_ltspice_raw.py",
+      "declared": "14c51be0e08a47dee7d1f28436aa12c79d565815d1b4e9ab1aa987329402b67b",
+      "actual_source": "14c51be0e08a47dee7d1f28436aa12c79d565815d1b4e9ab1aa987329402b67b",
+      "actual_snapshot": "14c51be0e08a47dee7d1f28436aa12c79d565815d1b4e9ab1aa987329402b67b",
+      "pass": true
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/tlv9002-namespaced.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/tlv9002-namespaced.lib",
+      "declared": "22a5c4569fafceb2559ba048d2a2b3035059513988a9c1a2f0688630263cb66d",
+      "actual_source": "22a5c4569fafceb2559ba048d2a2b3035059513988a9c1a2f0688630263cb66d",
+      "actual_snapshot": "22a5c4569fafceb2559ba048d2a2b3035059513988a9c1a2f0688630263cb66d",
+      "pass": true
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/tlv9002-original.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/tlv9002-original.lib",
+      "declared": "8d482d075395aa6d995354f6289f819120ba66126c88c23fb1113b8c14a81b18",
+      "actual_source": "8d482d075395aa6d995354f6289f819120ba66126c88c23fb1113b8c14a81b18",
+      "actual_snapshot": "8d482d075395aa6d995354f6289f819120ba66126c88c23fb1113b8c14a81b18",
+      "pass": true
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/tlv9052-namespaced.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/tlv9052-namespaced.lib",
+      "declared": "21aa0f220b73bef615f2431e9b5f24606d618121215f766240b6bd29cabeab8e",
+      "actual_source": "21aa0f220b73bef615f2431e9b5f24606d618121215f766240b6bd29cabeab8e",
+      "actual_snapshot": "21aa0f220b73bef615f2431e9b5f24606d618121215f766240b6bd29cabeab8e",
+      "pass": true
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/tlv9052-original.lib",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/tlv9052-original.lib",
+      "declared": "234eb546abe7ff88937387ecfe430014c9d4d6490cb4c56014f650d21b7376f4",
+      "actual_source": "234eb546abe7ff88937387ecfe430014c9d4d6490cb4c56014f650d21b7376f4",
+      "actual_snapshot": "234eb546abe7ff88937387ecfe430014c9d4d6490cb4c56014f650d21b7376f4",
+      "pass": true
+    },
+    {
+      "source": "hardware/rev-a/ltspice/afe/models/model-provenance.json",
+      "snapshot": "hardware/rev-a/signal-integrity/afe/models/model-provenance.json",
+      "declared": "a4b41ae16f8cf84f8e20b2494cda558c3314e39e1a07909d735323d4e7fb1fb6",
+      "actual_source": "a4b41ae16f8cf84f8e20b2494cda558c3314e39e1a07909d735323d4e7fb1fb6",
+      "actual_snapshot": "a4b41ae16f8cf84f8e20b2494cda558c3314e39e1a07909d735323d4e7fb1fb6",
+      "pass": true
+    }
+  ],
+  "model_file_provenance_hash_checks": [
+    {
+      "file": "hardware/rev-a/ltspice/afe/models/tlv9002-original.lib",
+      "declared": "8d482d075395aa6d995354f6289f819120ba66126c88c23fb1113b8c14a81b18",
+      "actual": "8d482d075395aa6d995354f6289f819120ba66126c88c23fb1113b8c14a81b18",
+      "pass": true
+    },
+    {
+      "file": "hardware/rev-a/ltspice/afe/models/tlv9002-namespaced.lib",
+      "declared": "22a5c4569fafceb2559ba048d2a2b3035059513988a9c1a2f0688630263cb66d",
+      "actual": "22a5c4569fafceb2559ba048d2a2b3035059513988a9c1a2f0688630263cb66d",
+      "pass": true
+    },
+    {
+      "file": "hardware/rev-a/ltspice/afe/models/tlv9052-original.lib",
+      "declared": "234eb546abe7ff88937387ecfe430014c9d4d6490cb4c56014f650d21b7376f4",
+      "actual": "234eb546abe7ff88937387ecfe430014c9d4d6490cb4c56014f650d21b7376f4",
+      "pass": true
+    },
+    {
+      "file": "hardware/rev-a/ltspice/afe/models/tlv9052-namespaced.lib",
+      "declared": "21aa0f220b73bef615f2431e9b5f24606d618121215f766240b6bd29cabeab8e",
+      "actual": "21aa0f220b73bef615f2431e9b5f24606d618121215f766240b6bd29cabeab8e",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Consistency is not independent manufacturer-pin correctness or analog performance qualification.",
+    "Family TLV9002/TLV9052 models represent selected TLV9004/TLV9054 amplifier units; package crosstalk/ground return geometry/ADC switching are not modeled.",
+    "Fixture-only 47k source resistances and 20pF FFC/2pF trace/0.5pF ESD capacitances are declared model assumptions, not physical CAD passives.",
+    "Static native connection check follows direct wire endpoints to global labels in these generated sheets; no fresh KiCad netlist, ERC, SPICE simulation, layout/plane/copper extraction or hardware test was performed."
+  ],
+  "all_eight_channel_amplifier_coverage": [
+    {
+      "channel": 1,
+      "instances": [
+        "XU101_1",
+        "XU103_1",
+        "XU105_1",
+        "XU107_1"
+      ]
+    },
+    {
+      "channel": 2,
+      "instances": [
+        "XU101_2",
+        "XU103_2",
+        "XU105_2",
+        "XU107_2"
+      ]
+    },
+    {
+      "channel": 3,
+      "instances": [
+        "XU101_3",
+        "XU103_3",
+        "XU105_3",
+        "XU107_3"
+      ]
+    },
+    {
+      "channel": 4,
+      "instances": [
+        "XU101_4",
+        "XU103_4",
+        "XU105_4",
+        "XU107_4"
+      ]
+    },
+    {
+      "channel": 5,
+      "instances": [
+        "XU102_1",
+        "XU104_1",
+        "XU106_1",
+        "XU108_1"
+      ]
+    },
+    {
+      "channel": 6,
+      "instances": [
+        "XU102_2",
+        "XU104_2",
+        "XU106_2",
+        "XU108_2"
+      ]
+    },
+    {
+      "channel": 7,
+      "instances": [
+        "XU102_3",
+        "XU104_3",
+        "XU106_3",
+        "XU108_3"
+      ]
+    },
+    {
+      "channel": 8,
+      "instances": [
+        "XU102_4",
+        "XU104_4",
+        "XU106_4",
+        "XU108_4"
+      ]
+    }
+  ],
+  "result": "PASS: no semantic component-value, pin-net, passive-node/value, amplifier-unit/pin-order, nine-input return-path, ADC-interface, native targeted connection or saved-provenance-hash mismatch found. Cosmetic DNP display suffixes and intentional NC placeholder normalization are classified separately."
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-22",
+  "fixed_coils": true,
+  "frequency_Hz": 13560000.0,
+  "source_and_measurement_ports_ohm": 50,
+  "secondary_load_seen_by_coil_ohm": {
+    "real": 2.380076784461855,
+    "imag": -28.078267609364055
+  },
+  "analytical_S21_power": 0.7187346178810524,
+  "analytical_S11_magnitude": 0.01212157376526386,
+  "actual_ADS_simulation": true,
+  "ADS_S21_power": 0.7187346178810524,
+  "ADS_S21_dB": -1.4343143682873243,
+  "ADS_input_return_loss_dB": 38.328819825837115,
+  "ADS_frequency_Hz": 13560000.0,
+  "analytical_power_agreement_absolute": 0.0,
+  "source_dataset": "C:\\Users\\angel\\OneDrive\\Documents\\ChatGPT\\curalink\\hardware\\wpt\\ads\\review-2026-11-22\\power-runs\\published_passive_link\\power-review.ds",
+  "limits": "Passive carrier-frequency R-L-M check, not rectifier/charger efficiency or hardware reproduction."
+}

@@ -2,7 +2,7 @@
 
 Eight-channel **benchtop neural-signal acquisition prototype** with a custom analog front end, STM32WBA52/BLE telemetry, and battery-buffered 13.56 MHz wireless charging. This repository is the engineering handoff for moving computers: editable schematics and PCB, ADS cells, circuit models, simulations, calculations, sourcing evidence and decision history belong together.
 
-**Migration handoff: 2026-11-22, America/New_York.** This date records packaging and documentation, not a new electrical test or inventory refresh. The latest recorded circuit/PCB checks are dated 2026-10-02 and 2026-10-09. The design is an engineering **Candidate**, with no fabrication release, completed firmware or recorded CuraLink hardware measurements.
+**Migration handoff and follow-up ADS review: 2026-11-22, America/New_York.** The complete migration batch was pushed and verified through a fresh GitHub/LFS download. A subsequent [fresh ADS review](hardware/wpt/ads/review-2026-11-22/README.md) checks the fixed paper coils, nonlinear power demand and translated AFE DC/AC behavior. Physical PCB checks remain dated October; stock was not refreshed. The design is an engineering **Candidate**, with no fabrication release, completed firmware or recorded CuraLink hardware measurements.
 
 ## Start here
 
@@ -39,6 +39,7 @@ Eight-channel **benchtop neural-signal acquisition prototype** with a custom ana
 | [hardware/rev-a/pcb/](hardware/rev-a/pcb/README.md) | Footprints, placement, connectivity checks and incomplete routing status. |
 | [ads/MyWorkspace_wrk/](ads/MyWorkspace_wrk) and [ADS migration notes](ads/README.md) | Native ADS workspace and `MyLibrary_lib`, large-dataset restoration and legacy model/display relocation. Open the whole workspace. |
 | [hardware/wpt/ads/](hardware/wpt/ads/README.md) | ADS setup, model provenance, standalone fixtures, search/sweep results and charger-load guidance. |
+| [2026-11-22 ADS verification](hardware/wpt/ads/review-2026-11-22/README.md) | Fresh 71.873% passive-link check, 48 authored-load HB cases, DC compliance and full AFE DC/AC evidence; explicit remaining build gates. |
 | [hardware/wpt/models/](hardware/wpt/models/README.md) | Calculated Touchstone derived from published nominal coil parameters; not original measured S2P data. |
 | [procurement/](procurement) and [Rev A procurement](hardware/rev-a/procurement) | Dated LCSC responses, sourcing checks and cost evidence. |
 | [tools/](tools) | CAD generation/verification, analysis and packaging scripts. Read their output paths before running generators. |

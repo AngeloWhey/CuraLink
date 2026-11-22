@@ -1,0 +1,12 @@
+{
+  "recorded_date": "2026-11-22",
+  "status": "TIMEOUT_INCOMPLETE",
+  "timeout_s": 180,
+  "Gmin_literal_S": 1e-13,
+  "topology_initialized_in_fresh_process": true,
+  "completed_DC_point": false,
+  "electrical_result_qualified": false,
+  "process_terminated_by": "Python subprocess.run timeout",
+  "remaining_hpeesofsim_process_observed": false,
+  "limits": "CPU-active solve exceeded the declared time bound. Partial .ds and empty spectra.raw do not establish convergence, failure of physical hardware, or GMIN insensitivity."
+}

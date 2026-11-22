@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-22",
+  "status": "PASS",
+  "source_sha256": "28082968035144f7a42597d3554211d27c68465b19f0807949ab058f4a25867f",
+  "passives_checked": 272,
+  "amplifier_pin_orders_checked": 36,
+  "mismatches": [],
+  "scope": "Exact top-level canonical passive nodes/values and five-pin family-macro mapping; does not itself validate nonlinear translation or physics",
+  "noise_not_qualified": "Nettrans drops R model T_ABS=-273.15, so noise analyses are excluded"
+}
