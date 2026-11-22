@@ -1,0 +1,256 @@
+{
+  "source_dBm_to_min_RECT_DC_V_for_each_load": {
+    "20": {
+      "full_120mW": 0.782828029026754,
+      "full_plus_5mA_status": 0.2929168190509971,
+      "full_plus_15mA_status": 0.1644656555785252,
+      "2mA_taper": 6.883192567082601,
+      "complete_field_on": 7.564627257976074,
+      "regulator_only": 8.461780185976524
+    },
+    "23": {
+      "full_120mW": 4.149106447542891,
+      "full_plus_5mA_status": 2.6957404252898325,
+      "full_plus_15mA_status": 0.46116509256546967,
+      "2mA_taper": 10.542383713945227,
+      "complete_field_on": 11.235993388234682,
+      "regulator_only": 12.146639525027272
+    },
+    "23.5": {
+      "full_120mW": 4.864562385867262,
+      "full_plus_5mA_status": 3.3901381599470133,
+      "full_plus_15mA_status": 0.8364379273797093,
+      "2mA_taper": 11.285314034181836,
+      "complete_field_on": 11.98165034710731,
+      "regulator_only": 12.894449351257329
+    },
+    "24": {
+      "full_120mW": 5.62733097153102,
+      "full_plus_5mA_status": 4.13841166878439,
+      "full_plus_15mA_status": 1.4342945582906244,
+      "2mA_taper": 12.072542162849183,
+      "complete_field_on": 12.771716719867023,
+      "regulator_only": 13.686629805335704
+    },
+    "25": {
+      "full_120mW": 7.310405809759818,
+      "full_plus_5mA_status": 5.785772236479026,
+      "full_plus_15mA_status": 2.9066033848234256,
+      "2mA_taper": 13.79074586256221,
+      "complete_field_on": 14.495674296806275,
+      "regulator_only": 15.414784862531706
+    },
+    "26": {
+      "full_120mW": 9.20063025367757,
+      "full_plus_5mA_status": 7.660012388019733,
+      "full_plus_15mA_status": 4.685991893114134,
+      "2mA_taper": 15.72031664046886,
+      "complete_field_on": 16.430602461606455,
+      "regulator_only": 17.35408502779834
+    },
+    "27": {
+      "full_120mW": 11.323749506885079,
+      "full_plus_5mA_status": 9.781999817754205,
+      "full_plus_15mA_status": 6.749286984870272,
+      "2mA_taper": 17.88740490600461,
+      "complete_field_on": 18.601962292880266,
+      "regulator_only": 19.53031078455869
+    }
+  },
+  "capacitor_tolerance_endpoints_at_25dBm_24mA": {
+    "2": {
+      "cases": 16,
+      "min_RECT_DC_V": 6.540045317780477,
+      "max_RECT_DC_V": 7.385061106388239,
+      "number_at_or_above_6V": 16
+    },
+    "5": {
+      "cases": 16,
+      "min_RECT_DC_V": 3.9271588824001875,
+      "max_RECT_DC_V": 7.203371587613209,
+      "number_at_or_above_6V": 6
+    }
+  },
+  "max_in_unclamped_matrix": {
+    "TX_series_Vpk": {
+      "value": 68.16646390953868,
+      "fixture": "coupling_0.0331_26_full_120mW"
+    },
+    "RX_series_Arms": {
+      "value": 0.8231540268976291,
+      "fixture": "demand_27_regulator_only"
+    },
+    "RX_shunt_Arms": {
+      "value": 0.8210977325913886,
+      "fixture": "demand_27_regulator_only"
+    },
+    "winding_RX_mW": {
+      "value": 270.35543824711533,
+      "fixture": "demand_27_regulator_only"
+    },
+    "bridge_reverse_peak_V": {
+      "value": 19.784558954339765,
+      "fixture": "demand_27_regulator_only"
+    },
+    "junction_forward_peak_mA": {
+      "value": 237.42549605572887,
+      "fixture": "demand_27_full_plus_15mA_status"
+    }
+  },
+  "harmonic_convergence": {
+    "demand_25_full_120mW": {
+      "RAW_mean_V": {
+        "HB15": 7.363062781578697,
+        "HB31": 7.34478778471326,
+        "HB63": 7.3458582369043075,
+        "31_to_63_difference": -0.0010704521910476217
+      },
+      "RAW_min_V": {
+        "HB15": 7.329296435853715,
+        "HB31": 7.310405809759818,
+        "HB63": 7.310563596454116,
+        "31_to_63_difference": -0.00015778669429789005
+      },
+      "bridge_reverse_peak_V": {
+        "HB15": 8.070665000603455,
+        "HB31": 8.062410118301724,
+        "HB63": 8.064687732757719,
+        "31_to_63_difference": -0.0022776144559948364
+      },
+      "junction_forward_peak_mA": {
+        "HB15": 165.5005136072087,
+        "HB31": 167.19637870856096,
+        "HB63": 167.6879305357518,
+        "31_to_63_difference": -0.4915518271908468
+      }
+    },
+    "demand_26_full_plus_5mA_status": {
+      "RAW_mean_V": {
+        "HB15": 7.724989115036935,
+        "HB31": 7.699580465132148,
+        "HB63": 7.70179086813817,
+        "31_to_63_difference": -0.0022104030060221547
+      },
+      "RAW_min_V": {
+        "HB15": 7.688950543394883,
+        "HB31": 7.660012388019733,
+        "HB63": 7.66200463500592,
+        "31_to_63_difference": -0.001992246986187496
+      },
+      "bridge_reverse_peak_V": {
+        "HB15": 8.477466794501154,
+        "HB31": 8.467223353501254,
+        "HB63": 8.470766722705827,
+        "31_to_63_difference": -0.00354336920457321
+      },
+      "junction_forward_peak_mA": {
+        "HB15": 191.36509776559774,
+        "HB31": 195.2578878713627,
+        "HB63": 196.5065353677069,
+        "31_to_63_difference": -1.248647496344205
+      }
+    },
+    "demand_27_regulator_only": {
+      "RAW_mean_V": {
+        "HB15": 19.48421598385021,
+        "HB31": 19.530649943786354,
+        "HB63": 19.529460457745262,
+        "31_to_63_difference": 0.001189486041091925
+      },
+      "RAW_min_V": {
+        "HB15": 19.483891587308143,
+        "HB31": 19.53031078455869,
+        "HB63": 19.52911082948285,
+        "31_to_63_difference": 0.0011999550758403643
+      },
+      "bridge_reverse_peak_V": {
+        "HB15": 19.761339861793516,
+        "HB31": 19.784558954339765,
+        "HB63": 19.783963992903452,
+        "31_to_63_difference": 0.0005949614363132127
+      },
+      "junction_forward_peak_mA": {
+        "HB15": 1.5856849283447711,
+        "HB31": 1.5757469821781076,
+        "HB63": 1.5762259556534692,
+        "31_to_63_difference": -0.0004789734753616326
+      }
+    },
+    "demand_27_full_plus_15mA_status": {
+      "RAW_mean_V": {
+        "HB15": 6.791476796245505,
+        "HB31": 6.7871154437826124,
+        "HB63": 6.784235540877112,
+        "31_to_63_difference": 0.002879902905500664
+      },
+      "RAW_min_V": {
+        "HB15": 6.75705801956905,
+        "HB31": 6.749286984870272,
+        "HB63": 6.746117438766952,
+        "31_to_63_difference": 0.003169546103320542
+      },
+      "bridge_reverse_peak_V": {
+        "HB15": 7.615190882614009,
+        "HB31": 7.6207865745585925,
+        "HB63": 7.619819297052885,
+        "31_to_63_difference": 0.0009672775057074645
+      },
+      "junction_forward_peak_mA": {
+        "HB15": 234.1023731025368,
+        "HB31": 237.42549605572887,
+        "HB63": 238.29958325826087,
+        "31_to_63_difference": -0.8740872025319959
+      }
+    },
+    "cap_5pct_1110": {
+      "RAW_mean_V": {
+        "HB15": 3.9352569185297552,
+        "HB31": 3.9482876986189708,
+        "HB63": 3.9495248761634816,
+        "31_to_63_difference": -0.0012371775445108035
+      },
+      "RAW_min_V": {
+        "HB15": 3.9139682041984187,
+        "HB31": 3.9271588824001875,
+        "HB63": 3.928265034083385,
+        "31_to_63_difference": -0.0011061516831976093
+      },
+      "bridge_reverse_peak_V": {
+        "HB15": 4.594366299179686,
+        "HB31": 4.610527837219653,
+        "HB63": 4.612222547069413,
+        "31_to_63_difference": -0.0016947098497599455
+      },
+      "junction_forward_peak_mA": {
+        "HB15": 141.27061353418142,
+        "HB31": 142.69114601290178,
+        "HB63": 142.71079263557328,
+        "31_to_63_difference": -0.019646622671501746
+      }
+    }
+  },
+  "TVS_near_open": {
+    "fitted_cases": 18,
+    "without_tvs_cases": 9,
+    "largest_clamped_RAW_peak_V": {
+      "value": 18.507857935133384,
+      "fixture": "TVS_18.5_27_0.0662"
+    },
+    "largest_unclamped_RAW_peak_V": {
+      "value": 19.530749291605215,
+      "fixture": "TVS_100.0_27_0.0662"
+    },
+    "largest_TVS_steady_dissipation_mW": {
+      "value": 123.0467008889324,
+      "fixture": "TVS_16.7_27_0.0662"
+    },
+    "largest_TVS_steady_current_mA": {
+      "value": 7.364436445885067,
+      "fixture": "TVS_16.7_27_0.0662"
+    },
+    "largest_winding_loss_with_TVS_mW": {
+      "value": 253.5577614746674,
+      "fixture": "TVS_18.5_27_0.0662"
+    }
+  }
+}

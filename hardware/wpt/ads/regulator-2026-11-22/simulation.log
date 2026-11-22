@@ -1,0 +1,55 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 17:38:11 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\regulator-2026-11-22"
+      Process ID: 9212
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 8
+
+xxxxxxxxxxxxx
+xxx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+
+
+TRAN T1[1] <regulator.ckt>   time=(0 s->20 ms)
+t=2.000e-02  100%
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =     2.16 seconds.
+    Simulation stopwatch time =     0.76 seconds.
+    Total stopwatch time      =     2.28 seconds.
+
+    Memory used:  108 MBytes
+
+    Max threads used:  8
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Sun Nov 22 17:38:12 2026
+
+Command line dataset name regulator

@@ -1,0 +1,1244 @@
+[
+  {
+    "label": "iv_25_0.001",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_0.5",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 0.5,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_1",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 1,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_2",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 2,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_3",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 3,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_5",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 5,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_7",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 7,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_10",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 10,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_15",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 15,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_20",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 20,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_24",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 24,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_29",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 29,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_32",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 32,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_35",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 35,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_39",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 39,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_42",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 42,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_45",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 45,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_50",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 50,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_55",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 55,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_60",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 60,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_70",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 70,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_90",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 90,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_25_120",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 120,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_0.001",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_0.5",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 0.5,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_1",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 1,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_2",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 2,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_3",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 3,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_5",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 5,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_7",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 7,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_10",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 10,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_15",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 15,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_20",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 20,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_24",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 24,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_29",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 29,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_32",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 32,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_35",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 35,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_39",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 39,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_42",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 42,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_45",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 45,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_50",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 50,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_55",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 55,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_60",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 60,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_70",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 70,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_90",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 90,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_26_120",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 120,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_0.001",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_0.5",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 0.5,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_1",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 1,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_2",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 2,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_3",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 3,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_5",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 5,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_7",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 7,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_10",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 10,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_15",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 15,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_20",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 20,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_24",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 24,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_29",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 29,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_32",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 32,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_35",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 35,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_39",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 39,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_42",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 42,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_45",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 45,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_50",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 50,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_55",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 55,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_60",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 60,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_70",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 70,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_90",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 90,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "iv_27_120",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "voltage_compliant_DC_load",
+    "mA": 120,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  }
+]

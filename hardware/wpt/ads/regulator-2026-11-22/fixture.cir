@@ -1,0 +1,13 @@
+CuraLink rectifier reservoir emulator, TPS70950 load and line transitions
+* Input ramps 0->6.5 V, sags to 5.2, rises to 12 V at light load, returns to 0.
+* Conductance fixture is 24mA or 2mA at nominal 5V; finite load at startup.
+VREC src 0 PWL(0 0 0.1m 0 0.3m 6.5 4m 6.5 4.05m 5.2 6m 5.2 6.05m 6.5 8m 6.5 8.1m 12 11m 12 11.5m 0 20m 0)
+Rsrc src rect 0.2
+Cin rect 0 1u
+Venable en 0 2
+* Static EN models the internally enabled hardware state. TI macro lacks pull-up.
+Vload cmd 0 PWL(0 0 3m 0 3.002m 1 7.997m 1 8m 0 20m 0)
+Gload wpt 0 VALUE={V(wpt)*(0.0004+V(cmd)*0.0044)}
+Rcesr wpt cap 0.02
+Cout cap 0 4.7u
+Xreg rect 0 en wpt TPS70950

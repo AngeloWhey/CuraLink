@@ -1,0 +1,22 @@
+Netlist Translator (*) 640.shp Mar 23 2026
+ADS Netlist translation log
+
+Input format: PSpice
+Input filename: C:\Users\angel\AppData\Local\Temp\curalink-tps70950-20261122\combined.cir
+
+Output format: ADS Netlist file
+Output filename: complete.net
+
+Special options:
+    Processing first line as comment.
+
+Begin translation at Sun Nov 22 17:37:06 2026
+
+Creating netlist.
+Reading item definition file "C:\Program Files\Keysight\ADS2026_Update2/config\spctoiff.cfg"
+WARNING: Appended "_n" to node rect due to a conflict with a reserved word.
+WARNING: Appended "_n" to node rect due to a conflict with a reserved word.
+WARNING: Appended "_n" to node rect due to a conflict with a reserved word.
+Subcircuits found in Spice Netlist:   2
+Subcircuits written to ADS Netlist:   2
+Translation completed at Sun Nov 22 17:37:06 2026.

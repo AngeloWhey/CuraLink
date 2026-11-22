@@ -1,0 +1,277 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 17:41:08 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-ic-review-2026-11-22\bridge-runs\search"
+      Process ID: 25764
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    'Batch[1].HB1[4/81]' ( IDX=3 ) did not converge -- associated data will be identified with '<invalid>' flag in the dataset.
+
+
+--------------------------
+Solver convergence summary:
+--------------------------
+RHS:
+1.152e-09  A at node P4, harmonic index (2)
+1.114e-09  A at node P4, harmonic index (0)
+8.442e-10  A at node P4, harmonic index (4)
+
+Update:
+1.316e-07  V at node AC2, harmonic index (4)
+1.313e-07  V at node P3, harmonic index (4)
+1.313e-07  V at node A4, harmonic index (4)
+
+Solution:
+4.233      V at node TXCOIL, harmonic index (1)
+0.5485     V at node RS, harmonic index (1)
+0.5479     V at node RXPLUS, harmonic index (1)
+--------------------------
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Convergence hints:
+    o Use sweep in HB controller (internal sweep) if it is not frequency related.
+    o Enable Regenerate Initial Guess for ParamSweep.
+    o Try TAHB (transient assisted HB).
+    o Set Matrix Re-use to Robust with the direct solver.
+    o Select the Krylov solver.
+    o Increase the Fundamental Oversample.
+    o Check the circuit/devices around the nodes in solver convergence summary.
+    o Act upon warning messages and topology errors.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    'Batch[1].HB1[10/81]' ( IDX=9 ) did not converge -- associated data will be identified with '<invalid>' flag in the dataset.
+
+
+--------------------------
+Solver convergence summary:
+--------------------------
+RHS:
+1.741e-05  A at node GEN, harmonic index (1)
+5.298e-07  A at node P2, harmonic index (28)
+4.844e-07  A at node P3, harmonic index (28)
+
+Update:
+3.534e-05  V at node TXCOIL, harmonic index (1)
+5.731e-06  V at node RXPLUS, harmonic index (1)
+5.731e-06  V at node RX, harmonic index (1)
+
+Solution:
+5.718      V at node TXCOIL, harmonic index (1)
+0.6681     V at node RXPLUS, harmonic index (1)
+0.6681     V at node RX, harmonic index (1)
+--------------------------
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Convergence hints:
+    o Use sweep in HB controller (internal sweep) if it is not frequency related.
+    o Enable Regenerate Initial Guess for ParamSweep.
+    o Try TAHB (transient assisted HB).
+    o Set Matrix Re-use to Robust with the direct solver.
+    o Select the Krylov solver.
+    o Increase the Fundamental Oversample.
+    o Check the circuit/devices around the nodes in solver convergence summary.
+    o Act upon warning messages and topology errors.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    'Batch[1].HB1[19/81]' ( IDX=18 ) did not converge -- associated data will be identified with '<invalid>' flag in the dataset.
+
+
+--------------------------
+Solver convergence summary:
+--------------------------
+RHS:
+2.867e-12  A at node P4, harmonic index (1)
+2.547e-12  A at node D3.a, harmonic index (1)
+2.547e-12  A at node P3, harmonic index (1)
+
+Update:
+2.601e-10  V at node AC1, harmonic index (0)
+2.601e-10  V at node RH, harmonic index (0)
+2.601e-10  V at node AC1A, harmonic index (0)
+
+Solution:
+3.658      V at node TXCOIL, harmonic index (1)
+0.5678     V at node RXPLUS, harmonic index (1)
+0.5678     V at node RX, harmonic index (1)
+--------------------------
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Convergence hints:
+    o Use sweep in HB controller (internal sweep) if it is not frequency related.
+    o Enable Regenerate Initial Guess for ParamSweep.
+    o Try TAHB (transient assisted HB).
+    o Set Matrix Re-use to Robust with the direct solver.
+    o Select the Krylov solver.
+    o Increase the Fundamental Oversample.
+    o Check the circuit/devices around the nodes in solver convergence summary.
+    o Act upon warning messages and topology errors.
+
+
+Warning detected by hpeesofsim in arc-length continuation during HB analysis `HB1'.
+    Value of `sourceLevel' went out of range during sourceLevel arc-length continuation.
+    Convergence hints:
+    o Change the convergence mode and re-simulate.
+    o Double the fundamental oversample and re-simulate.
+    o Increase the order and re-simulate.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Unable to sweep `¾ò3 6' to specified levels.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    'Batch[1].HB1[28/81]' ( IDX=27 ) did not converge -- associated data will be identified with '<invalid>' flag in the dataset.
+
+
+--------------------------
+Solver convergence summary:
+--------------------------
+RHS:
+1.048e-07  A at node P3, harmonic index (2)
+1.017e-07  A at node P3, harmonic index (25)
+1.014e-07  A at node P3, harmonic index (1)
+
+Update:
+2.295e-06  V at node AC2, harmonic index (2)
+2.295e-06  V at node D4.a, harmonic index (2)
+2.294e-06  V at node P3, harmonic index (2)
+
+Solution:
+5.327      V at node TXCOIL, harmonic index (1)
+0.6442     V at node RXPLUS, harmonic index (1)
+0.6442     V at node RX, harmonic index (1)
+--------------------------
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Convergence hints:
+    o Use sweep in HB controller (internal sweep) if it is not frequency related.
+    o Enable Regenerate Initial Guess for ParamSweep.
+    o Try TAHB (transient assisted HB).
+    o Set Matrix Re-use to Robust with the direct solver.
+    o Select the Krylov solver.
+    o Increase the Fundamental Oversample.
+    o Check the circuit/devices around the nodes in solver convergence summary.
+    o Act upon warning messages and topology errors.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    'Batch[1].HB1[29/81]' ( IDX=28 ) did not converge -- associated data will be identified with '<invalid>' flag in the dataset.
+
+
+--------------------------
+Solver convergence summary:
+--------------------------
+RHS:
+0.0002367  A at node P3, harmonic index (31)
+0.0002234  A at node P2, harmonic index (31)
+0.0001287  A at node P3, harmonic index (30)
+
+Update:
+0.002998   V at node TXCOIL, harmonic index (1)
+0.001377   V at node AC2, harmonic index (4)
+0.001377   V at node D4.a, harmonic index (4)
+
+Solution:
+5.238      V at node TXCOIL, harmonic index (1)
+0.7843     V at node RS, harmonic index (1)
+0.7838     V at node RXPLUS, harmonic index (1)
+--------------------------
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Convergence hints:
+    o Use sweep in HB controller (internal sweep) if it is not frequency related.
+    o Enable Regenerate Initial Guess for ParamSweep.
+    o Try TAHB (transient assisted HB).
+    o Increase the order (number of harmonics) to reduce truncation error.
+    o Set Matrix Re-use to Robust with the direct solver.
+    o Select the Krylov solver.
+    o Increase the Fundamental Oversample.
+    o Check the circuit/devices around the nodes in solver convergence summary.
+    o Act upon warning messages and topology errors.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    'Batch[1].HB1[37/81]' ( IDX=36 ) did not converge -- associated data will be identified with '<invalid>' flag in the dataset.
+
+
+--------------------------
+Solver convergence summary:
+--------------------------
+RHS:
+4.424e-06  A at node P4, harmonic index (28)
+3.678e-06  A at node P4, harmonic index (29)
+3.634e-06  A at node P4, harmonic index (31)
+
+Update:
+0.005064   V at node TXCOIL, harmonic index (1)
+0.0007557  V at node RXPLUS, harmonic index (1)
+0.0007557  V at node RX, harmonic index (1)
+
+Solution:
+5.449      V at node TXCOIL, harmonic index (1)
+0.5958     V at node RXPLUS, harmonic index (1)
+0.5958     V at node RX, harmonic index (1)
+--------------------------
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Convergence hints:
+    o Use sweep in HB controller (internal sweep) if it is not frequency related.
+    o Enable Regenerate Initial Guess for ParamSweep.
+    o Try TAHB (transient assisted HB).
+    o Set Matrix Re-use to Robust with the direct solver.
+    o Select the Krylov solver.
+    o Increase the Fundamental Oversample.
+    o Check the circuit/devices around the nodes in solver convergence summary.
+    o Act upon warning messages and topology errors.
+
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =    62.67 seconds.
+    Simulation stopwatch time =    57.33 seconds.
+    Total stopwatch time      =    58.90 seconds.
+
+    Memory used:  111 MBytes
+
+    Max threads used:  11
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Sun Nov 22 17:42:05 2026
+
+Command line dataset name bas4002a

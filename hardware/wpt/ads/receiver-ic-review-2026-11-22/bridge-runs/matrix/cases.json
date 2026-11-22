@@ -1,0 +1,2486 @@
+[
+  {
+    "label": "demand_20_full_120mW",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_nominal_CC",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "nominal_CC",
+    "mA": 21.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_2mA_taper",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "2mA_taper",
+    "mA": 3.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_complete_field_on",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "complete_field_on",
+    "mA": 1.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_regulator_only",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_full_plus_5mA_status",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "full_plus_5mA_status",
+    "mA": 29.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_full_plus_15mA_status",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "full_plus_15mA_status",
+    "mA": 39.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_taper_plus_5mA_status",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "taper_plus_5mA_status",
+    "mA": 8.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_taper_plus_15mA_status",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "taper_plus_15mA_status",
+    "mA": 18.740000000000002,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_complete_plus_5mA_status",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "complete_plus_5mA_status",
+    "mA": 6.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_20_complete_plus_15mA_status",
+    "pin": 20,
+    "k": 0.0662,
+    "load": "complete_plus_15mA_status",
+    "mA": 16.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_full_120mW",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_nominal_CC",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "nominal_CC",
+    "mA": 21.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_2mA_taper",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "2mA_taper",
+    "mA": 3.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_complete_field_on",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "complete_field_on",
+    "mA": 1.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_regulator_only",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_full_plus_5mA_status",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "full_plus_5mA_status",
+    "mA": 29.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_full_plus_15mA_status",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "full_plus_15mA_status",
+    "mA": 39.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_taper_plus_5mA_status",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "taper_plus_5mA_status",
+    "mA": 8.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_taper_plus_15mA_status",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "taper_plus_15mA_status",
+    "mA": 18.740000000000002,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_complete_plus_5mA_status",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "complete_plus_5mA_status",
+    "mA": 6.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23_complete_plus_15mA_status",
+    "pin": 23,
+    "k": 0.0662,
+    "load": "complete_plus_15mA_status",
+    "mA": 16.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_full_120mW",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_nominal_CC",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "nominal_CC",
+    "mA": 21.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_2mA_taper",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "2mA_taper",
+    "mA": 3.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_complete_field_on",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "complete_field_on",
+    "mA": 1.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_regulator_only",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_full_plus_5mA_status",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "full_plus_5mA_status",
+    "mA": 29.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_full_plus_15mA_status",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "full_plus_15mA_status",
+    "mA": 39.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_taper_plus_5mA_status",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "taper_plus_5mA_status",
+    "mA": 8.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_taper_plus_15mA_status",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "taper_plus_15mA_status",
+    "mA": 18.740000000000002,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_complete_plus_5mA_status",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "complete_plus_5mA_status",
+    "mA": 6.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_23.5_complete_plus_15mA_status",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "complete_plus_15mA_status",
+    "mA": 16.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_full_120mW",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_nominal_CC",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "nominal_CC",
+    "mA": 21.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_2mA_taper",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "2mA_taper",
+    "mA": 3.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_complete_field_on",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "complete_field_on",
+    "mA": 1.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_regulator_only",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_full_plus_5mA_status",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "full_plus_5mA_status",
+    "mA": 29.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_full_plus_15mA_status",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "full_plus_15mA_status",
+    "mA": 39.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_taper_plus_5mA_status",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "taper_plus_5mA_status",
+    "mA": 8.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_taper_plus_15mA_status",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "taper_plus_15mA_status",
+    "mA": 18.740000000000002,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_complete_plus_5mA_status",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "complete_plus_5mA_status",
+    "mA": 6.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_24_complete_plus_15mA_status",
+    "pin": 24,
+    "k": 0.0662,
+    "load": "complete_plus_15mA_status",
+    "mA": 16.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_full_120mW",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_nominal_CC",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "nominal_CC",
+    "mA": 21.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_2mA_taper",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "2mA_taper",
+    "mA": 3.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_complete_field_on",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "complete_field_on",
+    "mA": 1.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_regulator_only",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_full_plus_5mA_status",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_plus_5mA_status",
+    "mA": 29.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_full_plus_15mA_status",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_plus_15mA_status",
+    "mA": 39.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_taper_plus_5mA_status",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "taper_plus_5mA_status",
+    "mA": 8.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_taper_plus_15mA_status",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "taper_plus_15mA_status",
+    "mA": 18.740000000000002,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_complete_plus_5mA_status",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "complete_plus_5mA_status",
+    "mA": 6.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_25_complete_plus_15mA_status",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "complete_plus_15mA_status",
+    "mA": 16.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_full_120mW",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_nominal_CC",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "nominal_CC",
+    "mA": 21.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_2mA_taper",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "2mA_taper",
+    "mA": 3.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_complete_field_on",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "complete_field_on",
+    "mA": 1.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_regulator_only",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_full_plus_5mA_status",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "full_plus_5mA_status",
+    "mA": 29.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_full_plus_15mA_status",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "full_plus_15mA_status",
+    "mA": 39.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_taper_plus_5mA_status",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "taper_plus_5mA_status",
+    "mA": 8.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_taper_plus_15mA_status",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "taper_plus_15mA_status",
+    "mA": 18.740000000000002,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_complete_plus_5mA_status",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "complete_plus_5mA_status",
+    "mA": 6.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_complete_plus_15mA_status",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "complete_plus_15mA_status",
+    "mA": 16.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_full_120mW",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_nominal_CC",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "nominal_CC",
+    "mA": 21.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_2mA_taper",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "2mA_taper",
+    "mA": 3.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_complete_field_on",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "complete_field_on",
+    "mA": 1.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_regulator_only",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_full_plus_5mA_status",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "full_plus_5mA_status",
+    "mA": 29.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_full_plus_15mA_status",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "full_plus_15mA_status",
+    "mA": 39.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_taper_plus_5mA_status",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "taper_plus_5mA_status",
+    "mA": 8.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_taper_plus_15mA_status",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "taper_plus_15mA_status",
+    "mA": 18.740000000000002,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_complete_plus_5mA_status",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "complete_plus_5mA_status",
+    "mA": 6.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_complete_plus_15mA_status",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "complete_plus_15mA_status",
+    "mA": 16.74,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.0331_23.5_full_120mW",
+    "pin": 23.5,
+    "k": 0.0331,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.0331_23.5_regulator_only",
+    "pin": 23.5,
+    "k": 0.0331,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.0331_25_full_120mW",
+    "pin": 25,
+    "k": 0.0331,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.0331_25_regulator_only",
+    "pin": 25,
+    "k": 0.0331,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.0331_26_full_120mW",
+    "pin": 26,
+    "k": 0.0331,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.0331_26_regulator_only",
+    "pin": 26,
+    "k": 0.0331,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.04965_23.5_full_120mW",
+    "pin": 23.5,
+    "k": 0.04965,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.04965_23.5_regulator_only",
+    "pin": 23.5,
+    "k": 0.04965,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.04965_25_full_120mW",
+    "pin": 25,
+    "k": 0.04965,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.04965_25_regulator_only",
+    "pin": 25,
+    "k": 0.04965,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.04965_26_full_120mW",
+    "pin": 26,
+    "k": 0.04965,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.04965_26_regulator_only",
+    "pin": 26,
+    "k": 0.04965,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.08275_23.5_full_120mW",
+    "pin": 23.5,
+    "k": 0.08275,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.08275_23.5_regulator_only",
+    "pin": 23.5,
+    "k": 0.08275,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.08275_25_full_120mW",
+    "pin": 25,
+    "k": 0.08275,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.08275_25_regulator_only",
+    "pin": 25,
+    "k": 0.08275,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.08275_26_full_120mW",
+    "pin": 26,
+    "k": 0.08275,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "coupling_0.08275_26_regulator_only",
+    "pin": 26,
+    "k": 0.08275,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "loss_fit_23.5_1_500",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 1,
+    "q": 500,
+    "lead_nH": 1,
+    "winding_R_factor": 1,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "loss_fit_23.5_0_250",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 250,
+    "lead_nH": 2,
+    "winding_R_factor": 1.25,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "loss_fit_23.5_1_250",
+    "pin": 23.5,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 1,
+    "q": 250,
+    "lead_nH": 2,
+    "winding_R_factor": 1.25,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "loss_fit_25_1_500",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 1,
+    "q": 500,
+    "lead_nH": 1,
+    "winding_R_factor": 1,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "loss_fit_25_0_250",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 250,
+    "lead_nH": 2,
+    "winding_R_factor": 1.25,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "loss_fit_25_1_250",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 1,
+    "q": 250,
+    "lead_nH": 2,
+    "winding_R_factor": 1.25,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "loss_fit_26_1_500",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 1,
+    "q": 500,
+    "lead_nH": 1,
+    "winding_R_factor": 1,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "loss_fit_26_0_250",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 250,
+    "lead_nH": 2,
+    "winding_R_factor": 1.25,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "loss_fit_26_1_250",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 1,
+    "q": 250,
+    "lead_nH": 2,
+    "winding_R_factor": 1.25,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_0000",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.8,
+      367.5,
+      980.0,
+      666.4
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_0001",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      61.2,
+      367.5,
+      980.0,
+      666.4
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_0010",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.8,
+      382.5,
+      980.0,
+      666.4
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_0011",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      61.2,
+      382.5,
+      980.0,
+      666.4
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_0100",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.8,
+      367.5,
+      1020.0,
+      666.4
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_0101",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      61.2,
+      367.5,
+      1020.0,
+      666.4
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_0110",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.8,
+      382.5,
+      1020.0,
+      666.4
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_0111",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      61.2,
+      382.5,
+      1020.0,
+      666.4
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_1000",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.8,
+      367.5,
+      980.0,
+      693.6
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_1001",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      61.2,
+      367.5,
+      980.0,
+      693.6
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_1010",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.8,
+      382.5,
+      980.0,
+      693.6
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_1011",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      61.2,
+      382.5,
+      980.0,
+      693.6
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_1100",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.8,
+      367.5,
+      1020.0,
+      693.6
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_1101",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      61.2,
+      367.5,
+      1020.0,
+      693.6
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_1110",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.8,
+      382.5,
+      1020.0,
+      693.6
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_2pct_1111",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      61.2,
+      382.5,
+      1020.0,
+      693.6
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_0000",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      57.0,
+      356.25,
+      950.0,
+      646.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_0001",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      63.0,
+      356.25,
+      950.0,
+      646.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_0010",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      57.0,
+      393.75,
+      950.0,
+      646.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_0011",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      63.0,
+      393.75,
+      950.0,
+      646.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_0100",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      57.0,
+      356.25,
+      1050.0,
+      646.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_0101",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      63.0,
+      356.25,
+      1050.0,
+      646.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_0110",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      57.0,
+      393.75,
+      1050.0,
+      646.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_0111",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      63.0,
+      393.75,
+      1050.0,
+      646.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_1000",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      57.0,
+      356.25,
+      950.0,
+      714.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_1001",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      63.0,
+      356.25,
+      950.0,
+      714.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_1010",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      57.0,
+      393.75,
+      950.0,
+      714.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_1011",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      63.0,
+      393.75,
+      950.0,
+      714.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_1100",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      57.0,
+      356.25,
+      1050.0,
+      714.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_1101",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      63.0,
+      356.25,
+      1050.0,
+      714.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_1110",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      57.0,
+      393.75,
+      1050.0,
+      714.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_1111",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      63.0,
+      393.75,
+      1050.0,
+      714.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "small_reservoir",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 0.47
+  },
+  {
+    "label": "paper_network_50ohm_reference",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      61.3,
+      438,
+      673.3,
+      1050
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  }
+]

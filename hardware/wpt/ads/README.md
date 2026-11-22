@@ -4,6 +4,8 @@ Recorded **2026-10-09**, America/New_York. Actual ADS 2026 Update 2 simulations;
 
 ## Objective and boundaries
 
+For the current four-coax board and live BLE charge-status loads, use the [packaged-bridge runs](receiver-ic-review-2026-11-22/README.md) and [builder handoff](../../../docs/BUILD-NEXT.txt). The original discrete-bridge exercise below predates the telemetry rail.
+
 Optimize useful DC delivery into the charging circuit, then constrain voltage, current and heating over its operating envelope. Start around **5 V at WPT_RAW**, with **120 mW** as the initial board-input qualification allocation. This includes charging and control/protection consumption. The AFE, MCU and BLE are OFF during CHARGE. No-load voltage, S11 or the paper's 70% coil-link efficiency alone establishes charging capability.
 
 ```text

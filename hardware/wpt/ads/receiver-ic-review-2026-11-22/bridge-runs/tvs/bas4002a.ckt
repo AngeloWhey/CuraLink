@@ -1,0 +1,61 @@
+Options Temp=25 ResourceUsage=yes UseNutmegFormat=no EnableOptim=no
+IDX=0
+PinR=25+(1)*max(0,min(1,min(IDX-9+1,17+1-IDX)))+(2)*max(0,min(1,min(IDX-18+1,26+1-IDX)))
+LinkK=0.0662+(0.0338)*max(0,min(1,min(IDX-3+1,5+1-IDX)))+(0.0638)*max(0,min(1,min(IDX-6+1,8+1-IDX)))+(0.0338)*max(0,min(1,min(IDX-12+1,14+1-IDX)))+(0.0638)*max(0,min(1,min(IDX-15+1,17+1-IDX)))+(0.0338)*max(0,min(1,min(IDX-21+1,23+1-IDX)))+(0.0638)*max(0,min(1,min(IDX-24+1,26+1-IDX)))
+ILOADmA=0.001
+QCAP=500
+LEADnH=1
+RWIND=1
+CUF=1
+CTS=60
+CTH=375
+CRS=1000
+CRH=680
+ISFIT=1.16603251135e-10
+NFIT=0.8043801630717
+RSFIT=1.252429491587
+C0FIT=5.896543968227
+VBRK=16.7+(1.8)*max(0,1-abs(IDX-1))+(83.3)*max(0,1-abs(IDX-2))+(1.8)*max(0,1-abs(IDX-4))+(83.3)*max(0,1-abs(IDX-5))+(1.8)*max(0,1-abs(IDX-7))+(83.3)*max(0,1-abs(IDX-8))+(1.8)*max(0,1-abs(IDX-10))+(83.3)*max(0,1-abs(IDX-11))+(1.8)*max(0,1-abs(IDX-13))+(83.3)*max(0,1-abs(IDX-14))+(1.8)*max(0,1-abs(IDX-16))+(83.3)*max(0,1-abs(IDX-17))+(1.8)*max(0,1-abs(IDX-19))+(83.3)*max(0,1-abs(IDX-20))+(1.8)*max(0,1-abs(IDX-22))+(83.3)*max(0,1-abs(IDX-23))+(1.8)*max(0,1-abs(IDX-25))+(83.3)*max(0,1-abs(IDX-26))
+OMEGA=85199992.7653552
+Port:PORT1 GEN 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(PinR),0) Freq[1]=13.56 MHz Noise=no
+Short:PTX GEN TX Mode=0 SaveCurrent=yes
+R:RTH TX TH R=(1/(OMEGA*CTH*1e-12*QCAP)) Noise=no
+C:CTH TH 0 C=(CTH*1e-12)
+R:RTS TX TS R=(1/(OMEGA*CTS*1e-12*QCAP)) Noise=no
+C:CTS TS TXCOIL C=(CTS*1e-12)
+L:L1 TXCOIL 0 L=2.49 uH R=(1.8*RWIND) Noise=no
+L:L2 AC2 RXPLUS L=.330 uH R=(.399*RWIND) Noise=no
+Mutual:LINK K=LinkK Inductor1="L1" Inductor2="L2"
+Short:PRX RXPLUS RX Mode=0 SaveCurrent=yes
+R:RRS RX RS R=(1/(OMEGA*CRS*1e-12*QCAP)) Noise=no
+C:CRS RS AC1 C=(CRS*1e-12)
+R:RRH AC1 RH R=(1/(OMEGA*CRH*1e-12*QCAP)) Noise=no
+C:CRH RH AC2 C=(CRH*1e-12)
+; Package pin 1 DC-, pins 2,3 AC, pin 4 DC+. No RF input pin is grounded.
+Short:PACKAGE_I AC1 AC1A Mode=0 SaveCurrent=yes
+L:lead2 AC1A P2 L=(LEADnH*1e-9) R=.008 Noise=no
+L:lead3 AC2 P3 L=(LEADnH*1e-9) R=.008 Noise=no
+L:lead4 P4 RAW L=(LEADnH*1e-9) R=.008 Noise=no
+L:lead1 0 P1 L=(LEADnH*1e-9) R=.008 Noise=no
+model BASFIT Diode Is=ISFIT N=NFIT Rs=RSFIT Cjo=(C0FIT*1e-12) Vj=.65 M=.5 Fc=.5 Tnom=25 Imax=100
+Short:ID1 P1 A1 Mode=0 SaveCurrent=yes
+Short:ID2 P2 A2 Mode=0 SaveCurrent=yes
+Short:ID3 P1 A3 Mode=0 SaveCurrent=yes
+Short:ID4 P3 A4 Mode=0 SaveCurrent=yes
+"BASFIT":D1 A1 P2 Mode=1 Noise=no
+"BASFIT":D2 A2 P4 Mode=1 Noise=no
+"BASFIT":D3 A3 P3 Mode=1 Noise=no
+"BASFIT":D4 A4 P4 Mode=1 Noise=no
+; Assumed reservoir ESR/ESL; RF lead estimates and Q explain the sensitivity.
+L:LRES RAW RR L=.7 nH R=.05 Noise=no
+C:CRES RR 0 C=(CUF*1e-6)
+Short:IDC RAW OUT Mode=0 SaveCurrent=yes
+; Smooth compliance eliminates unphysical negative-voltage current demand.
+; Above 2 V the current demand equals the named load to better than 5e-9 relative.
+SDD:LOAD OUT 0 I[1,0]=(ILOADmA*1e-3*tanh(_v1/.2))
+Short:CTVS RAW TVS Mode=0 SaveCurrent=yes
+SDD:CLAMP TVS 0 I[1,0]=(min(1, max(0, (100-VBRK)))*(5e-6*min(1,max(0,_v1/15))+.000995*min(1,max(0,(_v1-15)/(VBRK-15)))+max(0,_v1-VBRK)*16.399/max(1,24.4-VBRK)))
+HB:HB1 MaxOrder=31 Freq[1]=13.56 MHz Order[1]=31 StatusLevel=0 OutputPlan="OUTP"
+OutputPlan:OUTP Type="Output" UseNodeNestLevel=yes NodeNestLevel=1 UseCurrentNestLevel=yes CurrentNestLevel=1
+SweepPlan:CASES Start=0 Stop=26 Step=1
+ParamSweep:Batch SimInstanceName[1]="HB1" SweepVar="IDX" SweepPlan="CASES" StatusLevel=0

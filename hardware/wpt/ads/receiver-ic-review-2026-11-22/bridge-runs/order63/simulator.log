@@ -1,0 +1,50 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 18:01:43 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-ic-review-2026-11-22\bridge-runs\order63"
+      Process ID: 11272
+
+Parsing the netlist ...
+Flattening the netlist ...
+    Switching to source-stepping...
+    Attempting solution for `sourceLevel' value of 0.5:
+    Solution succeeded  for `sourceLevel' value of 0.5.
+
+    Attempting solution for `sourceLevel' value of 1:
+    Solution succeeded  for `sourceLevel' value of 1.
+
+    Switching to source-stepping...
+    Attempting solution for `sourceLevel' value of 0.5:
+    Solution succeeded  for `sourceLevel' value of 0.5.
+
+    Attempting solution for `sourceLevel' value of 1:
+    *** Solution FAILED for `sourceLevel' value of 1.
+
+    Attempting solution for `sourceLevel' value of 0.75:
+    Solution succeeded  for `sourceLevel' value of 0.75.
+
+    Attempting solution for `sourceLevel' value of 1:
+    Solution succeeded  for `sourceLevel' value of 1.
+
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =    76.11 seconds.
+    Simulation stopwatch time =    69.93 seconds.
+    Total stopwatch time      =    72.55 seconds.
+
+    Memory used:  120 MBytes
+
+    Max threads used:  14
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Sun Nov 22 18:02:53 2026
+
+Command line dataset name bas4002a

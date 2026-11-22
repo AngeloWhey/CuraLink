@@ -1,0 +1,515 @@
+[
+  {
+    "label": "TVS_16.7_25_0.0662",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 16.7
+  },
+  {
+    "label": "TVS_18.5_25_0.0662",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 18.5
+  },
+  {
+    "label": "TVS_100.0_25_0.0662",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 100.0
+  },
+  {
+    "label": "TVS_16.7_25_0.1",
+    "pin": 25,
+    "k": 0.1,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 16.7
+  },
+  {
+    "label": "TVS_18.5_25_0.1",
+    "pin": 25,
+    "k": 0.1,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 18.5
+  },
+  {
+    "label": "TVS_100.0_25_0.1",
+    "pin": 25,
+    "k": 0.1,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 100.0
+  },
+  {
+    "label": "TVS_16.7_25_0.13",
+    "pin": 25,
+    "k": 0.13,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 16.7
+  },
+  {
+    "label": "TVS_18.5_25_0.13",
+    "pin": 25,
+    "k": 0.13,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 18.5
+  },
+  {
+    "label": "TVS_100.0_25_0.13",
+    "pin": 25,
+    "k": 0.13,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 100.0
+  },
+  {
+    "label": "TVS_16.7_26_0.0662",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 16.7
+  },
+  {
+    "label": "TVS_18.5_26_0.0662",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 18.5
+  },
+  {
+    "label": "TVS_100.0_26_0.0662",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 100.0
+  },
+  {
+    "label": "TVS_16.7_26_0.1",
+    "pin": 26,
+    "k": 0.1,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 16.7
+  },
+  {
+    "label": "TVS_18.5_26_0.1",
+    "pin": 26,
+    "k": 0.1,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 18.5
+  },
+  {
+    "label": "TVS_100.0_26_0.1",
+    "pin": 26,
+    "k": 0.1,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 100.0
+  },
+  {
+    "label": "TVS_16.7_26_0.13",
+    "pin": 26,
+    "k": 0.13,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 16.7
+  },
+  {
+    "label": "TVS_18.5_26_0.13",
+    "pin": 26,
+    "k": 0.13,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 18.5
+  },
+  {
+    "label": "TVS_100.0_26_0.13",
+    "pin": 26,
+    "k": 0.13,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 100.0
+  },
+  {
+    "label": "TVS_16.7_27_0.0662",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 16.7
+  },
+  {
+    "label": "TVS_18.5_27_0.0662",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 18.5
+  },
+  {
+    "label": "TVS_100.0_27_0.0662",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 100.0
+  },
+  {
+    "label": "TVS_16.7_27_0.1",
+    "pin": 27,
+    "k": 0.1,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 16.7
+  },
+  {
+    "label": "TVS_18.5_27_0.1",
+    "pin": 27,
+    "k": 0.1,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 18.5
+  },
+  {
+    "label": "TVS_100.0_27_0.1",
+    "pin": 27,
+    "k": 0.1,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 100.0
+  },
+  {
+    "label": "TVS_16.7_27_0.13",
+    "pin": 27,
+    "k": 0.13,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 16.7
+  },
+  {
+    "label": "TVS_18.5_27_0.13",
+    "pin": 27,
+    "k": 0.13,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 18.5
+  },
+  {
+    "label": "TVS_100.0_27_0.13",
+    "pin": 27,
+    "k": 0.13,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0,
+    "Vbr1mA": 100.0
+  }
+]

@@ -1,0 +1,8 @@
+__pycache__/
+**/dc_annotation/
+**/*_data/
+**/spectra.raw
+**/simLog.*
+/bridge-runs/startup/startup.ds
+/bridge-runs/startup/*.partial
+/passive-runs/illustrative_100ohm_25pF/

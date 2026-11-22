@@ -1,0 +1,21 @@
+{
+  "tx": {
+    "references": 13,
+    "physical_pins": 22,
+    "unpopulated_trim": [
+      "C707",
+      "C708",
+      "C709"
+    ],
+    "verified": true
+  },
+  "rx": {
+    "references": 14,
+    "physical_pins": 28,
+    "unpopulated_trim": [
+      "C715",
+      "C716"
+    ],
+    "verified": true
+  }
+}

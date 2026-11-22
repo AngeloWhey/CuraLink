@@ -1,0 +1,34 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 18:09:47 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-ic-review-2026-11-22\bridge-runs\delayed_load"
+      Process ID: 13924
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 39
+
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =    54.78 seconds.
+    Simulation stopwatch time =    15.88 seconds.
+    Total stopwatch time      =    17.69 seconds.
+
+    Memory used:  114 MBytes
+
+    Max threads used:  12
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Sun Nov 22 18:10:03 2026
+
+Command line dataset name delayed

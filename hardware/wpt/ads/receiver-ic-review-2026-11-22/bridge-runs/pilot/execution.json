@@ -1,0 +1,58 @@
+{
+  "source": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-bas4002aseries-ds-en.pdf",
+  "junction_model_provenance": "CuraLink fit, no supplier SPICE",
+  "fit_parameters": [
+    {
+      "label": "typical",
+      "Is": 1.1660325113502742e-10,
+      "n": 0.8043801630717382,
+      "Rs": 1.2524294915868988,
+      "Cj0_pF": 5.896543968226707,
+      "Vj": 0.65,
+      "M": 0.5,
+      "C5_pF": 2,
+      "datasheet_p2_V": [
+        0.39,
+        0.49,
+        0.55,
+        0.69
+      ],
+      "reproduced_V": [
+        0.39004261995945755,
+        0.48969367234568406,
+        0.5503478813312586,
+        0.6899158266808878
+      ],
+      "max_fit_error_V": 0.00034788133125851495
+    },
+    {
+      "label": "p2_max_sensitivity",
+      "Is": 1.6125348866105615e-13,
+      "n": 0.6646915833081543,
+      "Rs": 1.5712371522871253,
+      "Cj0_pF": 14.741359920566769,
+      "Vj": 0.65,
+      "M": 0.5,
+      "C5_pF": 5,
+      "datasheet_p2_V": [
+        0.44,
+        0.55,
+        0.62,
+        0.79
+      ],
+      "reproduced_V": [
+        0.44010248805228885,
+        0.5492633708104185,
+        0.6208365535666784,
+        0.7897975875709752
+      ],
+      "max_fit_error_V": 0.000836553566678444
+    }
+  ],
+  "actual_ADS_exit_code": 0,
+  "points": 3,
+  "highest_harmonic": 31,
+  "deck_sha256": "ed223cc2eed6f789a1ecd13f89eba0880c143d0621defa66b5aeb6a76b217f02",
+  "dataset_sha256": "786f23fa7a526a50b20263682e2c3f5bb0b4e0fc1db9cc1a2331bdbd7ec095f4",
+  "max_power_residual_W": 9.938474739359937e-16
+}

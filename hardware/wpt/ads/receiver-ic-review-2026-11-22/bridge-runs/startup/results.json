@@ -1,0 +1,56 @@
+{
+  "points": 6836613,
+  "stop_us": 1050.0,
+  "source_dBm": 26,
+  "raw_min_V": -0.0016354649340808755,
+  "raw_max_V": 6.604045389151895,
+  "WPT_max_V": 5.0045963587896996,
+  "first_4p75V_us": 980.3147527970282,
+  "assumptions": "nominal 25C fit, assumed Q500 and pin L=1nH, fixed k=0.0662, ideal 50-ohm source, TI typical LDO transient model, output conductance fixture, static 2V enable, no cell/mode/status controller dynamics",
+  "last_windows": [
+    {
+      "t_start_us": 330,
+      "t_stop_us": 340,
+      "raw_min_V": 3.0993547962822188,
+      "raw_mean_V": 3.1576634335112734,
+      "raw_max_V": 3.239510807355911,
+      "WPT_min_V": 2.3232366683477834,
+      "WPT_mean_V": 2.352649768742997,
+      "WPT_max_V": 2.3820586951498077,
+      "load_mean_mA": 11.292718889966384
+    },
+    {
+      "t_start_us": 580,
+      "t_stop_us": 590,
+      "raw_min_V": 4.193462617694259,
+      "raw_mean_V": 4.271630745345346,
+      "raw_max_V": 4.373266978929954,
+      "WPT_min_V": 3.4487673984755065,
+      "WPT_mean_V": 3.4668982512617705,
+      "WPT_max_V": 3.485119282963319,
+      "load_mean_mA": 20.10800985731827
+    },
+    {
+      "t_start_us": 830,
+      "t_stop_us": 840,
+      "raw_min_V": 4.671995620972353,
+      "raw_mean_V": 4.749327226084466,
+      "raw_max_V": 4.8546477610235055,
+      "WPT_min_V": 3.937251927880529,
+      "WPT_mean_V": 3.944571851416095,
+      "WPT_max_V": 3.952053555397447,
+      "load_mean_mA": 30.76766044104554
+    },
+    {
+      "t_start_us": 1040,
+      "t_stop_us": 1050,
+      "raw_min_V": 6.221799069882399,
+      "raw_mean_V": 6.401107128779859,
+      "raw_max_V": 6.604045389151895,
+      "WPT_min_V": 5.003328276879625,
+      "WPT_mean_V": 5.003994989348361,
+      "WPT_max_V": 5.0045963587896996,
+      "load_mean_mA": 3.742988252032575
+    }
+  ]
+}

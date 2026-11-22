@@ -1,0 +1,3 @@
+Options ResourceUsage=yes UseNutmegFormat=no TopDesignName="CuraLink:Regulator:schematic"
+#include "complete.net"
+Tran:T1 StopTime=20 msec MaxTimeStep=2 usec

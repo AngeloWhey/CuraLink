@@ -1,0 +1,9 @@
+{
+  "dataset": "startup.ds",
+  "original_bytes": 821275136,
+  "original_sha256": "1104d9d6dc5d169ad886ecf8c6254c42f125eab14acf85b352cadfea160ea83a",
+  "archive": "startup.ds.gz",
+  "compressed_bytes": 144784442,
+  "compressed_sha256": "bed799e4555ab66f294f3b270403fe18f151948e94328bfe63ab1991f652ea65",
+  "round_trip_verified": true
+}

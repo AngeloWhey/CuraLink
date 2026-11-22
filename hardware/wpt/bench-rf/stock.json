@@ -1,0 +1,112 @@
+[
+  {
+    "lcsc": "C5375920",
+    "mpn": "TCC0805COG300J101BT",
+    "matched": true,
+    "required": 2,
+    "order": 5,
+    "immediate": 70,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C5375920",
+    "checked_utc": "2026-11-22T22:48:52.533763+00:00"
+  },
+  {
+    "lcsc": "C5375897",
+    "mpn": "TCC0805COG121J101BT",
+    "matched": true,
+    "required": 3,
+    "order": 50,
+    "immediate": 2950,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C5375897",
+    "checked_utc": "2026-11-22T22:48:52.506734+00:00"
+  },
+  {
+    "lcsc": "C696891",
+    "mpn": "TCC0603COG150J101CT",
+    "matched": true,
+    "required": 1,
+    "order": 100,
+    "immediate": 6500,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C696891",
+    "checked_utc": "2026-11-22T22:48:52.506734+00:00"
+  },
+  {
+    "lcsc": "C507408",
+    "mpn": "0603CG102F500NT",
+    "matched": true,
+    "required": 1,
+    "order": 20,
+    "immediate": 47460,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C507408",
+    "checked_utc": "2026-11-22T22:48:52.509757+00:00"
+  },
+  {
+    "lcsc": "C1835",
+    "mpn": "0805CG681J500NT",
+    "matched": true,
+    "required": 1,
+    "order": 50,
+    "immediate": 6700,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C1835",
+    "checked_utc": "2026-11-22T22:48:52.688428+00:00"
+  },
+  {
+    "lcsc": "C3589694",
+    "mpn": "BAS4002ARPPE6327HTSA1",
+    "matched": true,
+    "required": 1,
+    "order": 1,
+    "immediate": 483,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C3589694",
+    "checked_utc": "2026-11-22T22:48:52.732722+00:00"
+  },
+  {
+    "lcsc": "C77083",
+    "mpn": "GRM21BR71H105KA12L",
+    "matched": true,
+    "required": 1,
+    "order": 10,
+    "immediate": 75200,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C77083",
+    "checked_utc": "2026-11-22T22:48:52.734753+00:00"
+  },
+  {
+    "lcsc": "C110520",
+    "mpn": "SMAJ15A-13-F",
+    "matched": true,
+    "required": 1,
+    "order": 5,
+    "immediate": 11705,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C110520",
+    "checked_utc": "2026-11-22T22:48:52.766854+00:00"
+  },
+  {
+    "lcsc": "C96028",
+    "mpn": "TPS70950DBVR",
+    "matched": true,
+    "required": 1,
+    "order": 1,
+    "immediate": 11331,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C96028",
+    "checked_utc": "2026-11-22T22:48:52.932151+00:00"
+  },
+  {
+    "lcsc": "C86040",
+    "mpn": "GRM21BR71C475KA73L",
+    "matched": true,
+    "required": 1,
+    "order": 10,
+    "immediate": 6020,
+    "sufficient": true,
+    "source": "https://wmsc.lcsc.com/ftps/wm/product/detail?productCode=C86040",
+    "checked_utc": "2026-11-22T22:48:52.981307+00:00"
+  }
+]

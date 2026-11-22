@@ -1,0 +1,78 @@
+; Translated with ADS Netlist Translator (*) 640.shp Mar 23 2026
+;
+;Mapping SPICE functions file to the Netlist
+#ifndef SPCFUNCTIONS_FILE
+#define SPCFUNCTIONS_FILE
+#include "$HPEESOF_DIR/links/spice/spicefunctions.net"
+#endif
+;
+;**
+;$
+; TPS70950 Model
+;****************************************************************************
+; (C) Copyright 2012 Texas Instruments Incorporated. All rights reserved.
+;****************************************************************************
+;* This model is designed as an aid for customers of Texas Instruments.
+;* TI and its licensors and suppliers make no warrenties, either expressed
+;* or implied, with respect to this model, including the warranties of
+;* merchantability or fitness for a particular purpose. The model is
+;* provided solely on an "as is" basis. The entire risk as to its quality
+;* and performance is with the customer
+;****************************************************************************
+;
+;* Released by: WEBENCH Design Center, Texas Instruments Inc.
+; Part: TPS70950
+; Date: 04/16/2012
+; Model Type: TRANSIENT
+; Simulator: PSPICE
+; Simulator Version: 16.0.0.p001
+; EVM Order Number:
+; EVM Users Guide:
+; Datasheet: SBVS186 �MARCH 2012
+;
+; Model Version: Final 1.00
+;
+;****************************************************************************
+;
+; Updates:
+;
+; Final 1.00
+; Release to Web.
+;
+;****************************************************************************
+; source TPS70950
+define tps70950 ( in gnd en out)
+R:r1 in vxx R=1.000e+7
+C:c1 in vxx C=6.369e-11
+R:r2 drv vxx R=3.162e+3
+C:c2 drv vxx C=5.036e-9
+R:r3 out fbk R=3.800e+6
+R:r4 fbk gnd R=1.200e+6
+R:r5 vyy vzz R=1.330e-1
+SDD:e1 ref1 0 in_good 0 en_good 0 F[1,0]=((if(_v2>0.5&&_v3>0.5) then (1.200e+0) else (0) endif))-_v1 \
+      I[2,0]=0 I[3,0]=0
+R:rref ref1 ref R=10
+C:cref ref 0 C=1n
+SDD:e2 des1 0 ref 0 out 0 fbk 0 F[1,0]=(_v2*_v3/(_v4+1e-6))-_v1 I[2,0]=0 I[3,0]=0 I[4,0]=0
+R:rdes des1 des R=10
+C:cdes des 0 C=1n
+SDD:e3 vyy1 0 vxx 0 vzz 0 F[1,0]=(min(_v2,_v3+3.990e-2))-_v1 I[2,0]=0 I[3,0]=0
+R:rvyy vyy1 vyy R=10
+C:cvyy vyy 0 C=1n
+SDD:e4 drv1 0 des 0 in 0 F[1,0]=(min(_v2,max(_v3-8.000e-1,0)))-_v1 I[2,0]=0 I[3,0]=0
+R:rdrv drv1 drv R=10
+C:cdrv drv 0 C=1n
+SDD:f1 in vyy I[1,0]=1*_c1 C[1]="v1"
+V_Source:v1 vzz out Vdc=0
+V_Source:venab enab_val 0 Vdc=0.9
+V_Source:vthresh thresh 0 Vdc=2.4
+comp_hys_basic:x1_comp_hys en_good en enab_val vhys=0.05 td=0.0 tt=2e-9
+comp_hys_basic:x2_comp_hys in_good in thresh vhys=0.05 td=0.0 tt=2e-9
+end tps70950
+define comp_hys_basic ( out inp inn)
+parameters  vhys=0.05 td=0.00 tt=2e-9
+SDD:e1 n1 0 inp 0 out 0 inn 0 F[1,0]=((if(_v2+_v3*vhys>_v4) then (1) else (0) endif))-_v1 \
+      I[2,0]=0 I[3,0]=0 I[4,0]=0
+R:r1 n1 out R=10
+C:c1 out 0 C=(td+0.5*tt)/6.93
+end comp_hys_basic

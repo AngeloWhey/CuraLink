@@ -1,0 +1,81 @@
+
+hpeesofsim (*) 640.shp Mar 23 2026, MINT version 5
+    (64-bit windows built: Tue Mar 24, 2026 04:31:30 +0000)
+
+***** Simulation started at Sun Nov 22 18:04:01 2026
+      Running on host: "LAPTOP-GNS91DS2"
+      In Directory: "C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\ads\receiver-ic-review-2026-11-22\bridge-runs\tx_trim"
+      Process ID: 27032
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim in arc-length continuation during HB analysis `HB1'.
+    Value of `sourceLevel' went out of range during sourceLevel arc-length continuation.
+    Convergence hints:
+    o Change the convergence mode and re-simulate.
+    o Double the fundamental oversample and re-simulate.
+    o Increase the order and re-simulate.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Unable to sweep `¾¶Cí' to specified levels.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    'Batch[1].HB1[17/40]' ( IDX=16 ) did not converge -- associated data will be identified with '<invalid>' flag in the dataset.
+
+
+--------------------------
+Solver convergence summary:
+--------------------------
+RHS:
+1.019e-06  A at node P3, harmonic index (28)
+7.79e-07   A at node P2, harmonic index (28)
+6.315e-07  A at node P3, harmonic index (29)
+
+Update:
+3.762e-05  V at node TXCOIL, harmonic index (1)
+7.703e-06  V at node RXPLUS, harmonic index (2)
+7.703e-06  V at node RX, harmonic index (2)
+
+Solution:
+4.814      V at node TXCOIL, harmonic index (1)
+0.7026     V at node RXPLUS, harmonic index (1)
+0.7026     V at node RX, harmonic index (1)
+--------------------------
+
+
+Warning detected by hpeesofsim during HB analysis `HB1'.
+    Convergence hints:
+    o Use sweep in HB controller (internal sweep) if it is not frequency related.
+    o Enable Regenerate Initial Guess for ParamSweep.
+    o Try TAHB (transient assisted HB).
+    o Set Matrix Re-use to Robust with the direct solver.
+    o Select the Krylov solver.
+    o Increase the Fundamental Oversample.
+    o Check the circuit/devices around the nodes in solver convergence summary.
+    o Act upon warning messages and topology errors.
+
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+
+Resource usage:
+    Total CPU time            =    30.42 seconds.
+    Simulation stopwatch time =    25.10 seconds.
+    Total stopwatch time      =    27.55 seconds.
+
+    Memory used:  111 MBytes
+
+    Max threads used:  9
+        (NOTE: max threads includes very-low-CPU-usage support threads,
+         as well as high-CPU-usage computational threads.)
+
+
+***** Simulation finished at Sun Nov 22 18:04:26 2026
+
+Command line dataset name bas4002a

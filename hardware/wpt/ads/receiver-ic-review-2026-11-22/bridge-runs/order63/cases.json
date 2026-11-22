@@ -1,0 +1,92 @@
+[
+  {
+    "label": "demand_25_full_120mW",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_26_full_plus_5mA_status",
+    "pin": 26,
+    "k": 0.0662,
+    "load": "full_plus_5mA_status",
+    "mA": 29.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_regulator_only",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "demand_27_full_plus_15mA_status",
+    "pin": 27,
+    "k": 0.0662,
+    "load": "full_plus_15mA_status",
+    "mA": 39.0,
+    "caps": [
+      60.0,
+      375.0,
+      1000.0,
+      680.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "cap_5pct_1110",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      57.0,
+      393.75,
+      1050.0,
+      714.0
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  }
+]

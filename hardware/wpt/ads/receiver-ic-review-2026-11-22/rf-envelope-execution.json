@@ -1,0 +1,18 @@
+{
+  "runs": [
+    {
+      "deck": "passive-runs/paper_50ohm/envelope.ckt",
+      "dataset": "passive-runs/paper_50ohm/envelope.ds",
+      "dataset_sha256": "bd9d1b612c21fa9548bdadd27484630fb7cd33db5c8a196c0dcbe2929df676c4",
+      "carrier_points": 54,
+      "completed_log": true
+    }
+  ],
+  "carrier_points": 54,
+  "source_dBm": 23.5,
+  "load_boundary": "Linear differential R parallel C at the receiver IC RF pins; independent test loads, not silicon models",
+  "design_target_board_mW": 120,
+  "frequency_Hz": 13560000.0,
+  "max_power_residual_W": 4.926614671774132e-16,
+  "max_crosscheck_error_V": 2.8457249041605284e-14
+}

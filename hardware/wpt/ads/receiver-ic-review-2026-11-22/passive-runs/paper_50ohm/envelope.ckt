@@ -1,0 +1,34 @@
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no
+RIN=50
+CINPF=25
+COUPLING=0.0662
+Port:PORT1 TX 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(23.5),0) Freq[1]=13.56 MHz Noise=no
+C:TXSH TX 0 C=438 pF
+C:TXSER TX TXCOIL C=61.3 pF
+L:L1 TXCOIL 0 L=2.49 uH R=1.8 Noise=no
+L:L2 0 RXCOIL L=0.330 uH R=0.399 Noise=no
+Mutual:LINK K=COUPLING Inductor1="L1" Inductor2="L2"
+C:RXSER RXCOIL RFIC C=673.3 pF
+C:RXSH RFIC 0 C=1050 pF
+C:PIN_C RFIC 0 C=(CINPF*1e-12)
+R:PIN_R RFIC 0 R=RIN Noise=no
+HB:HB1 MaxOrder=1 Freq[1]=13.56 MHz Order[1]=1 StatusLevel=0 OutputPlan="OUT"
+OutputPlan:OUT Type="Output" UseNodeNestLevel=yes NodeNestLevel=1
+SweepPlan:Plan0 SweepPlan[1]="Plan0_0" SweepPlan[2]="Plan0_1" SweepPlan[3]="Plan0_2" SweepPlan[4]="Plan0_3" SweepPlan[5]="Plan0_4" SweepPlan[6]="Plan0_5"
+SweepPlan:Plan0_0 Pt=25
+SweepPlan:Plan0_1 Pt=50
+SweepPlan:Plan0_2 Pt=100
+SweepPlan:Plan0_3 Pt=200
+SweepPlan:Plan0_4 Pt=400
+SweepPlan:Plan0_5 Pt=1000
+ParamSweep:Sweep0 SimInstanceName[1]="HB1" SweepVar="RIN" SweepPlan="Plan0" StatusLevel=0
+SweepPlan:Plan1 SweepPlan[1]="Plan1_0" SweepPlan[2]="Plan1_1" SweepPlan[3]="Plan1_2"
+SweepPlan:Plan1_0 Pt=0
+SweepPlan:Plan1_1 Pt=25
+SweepPlan:Plan1_2 Pt=100
+ParamSweep:Sweep1 SimInstanceName[1]="Sweep0" SweepVar="CINPF" SweepPlan="Plan1" StatusLevel=0
+SweepPlan:Plan2 SweepPlan[1]="Plan2_0" SweepPlan[2]="Plan2_1" SweepPlan[3]="Plan2_2"
+SweepPlan:Plan2_0 Pt=0.0331
+SweepPlan:Plan2_1 Pt=0.04965
+SweepPlan:Plan2_2 Pt=0.0662
+ParamSweep:Sweep2 SimInstanceName[1]="Sweep1" SweepVar="COUPLING" SweepPlan="Plan2" StatusLevel=0

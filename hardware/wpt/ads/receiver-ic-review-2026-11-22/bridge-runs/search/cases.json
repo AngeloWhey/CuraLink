@@ -1,0 +1,1460 @@
+[
+  {
+    "label": "tune_58.2_330_820_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      330,
+      820,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_330_820_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      330,
+      820,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_330_820_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      330,
+      820,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_330_910_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      330,
+      910,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_330_910_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      330,
+      910,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_330_910_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      330,
+      910,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_330_1000_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      330,
+      1000,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_330_1000_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      330,
+      1000,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_330_1000_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      330,
+      1000,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_375_820_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      375,
+      820,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_375_820_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      375,
+      820,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_375_820_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      375,
+      820,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_375_910_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      375,
+      910,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_375_910_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      375,
+      910,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_375_910_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      375,
+      910,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_375_1000_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      375,
+      1000,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_375_1000_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      375,
+      1000,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_375_1000_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      375,
+      1000,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_420_820_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      420,
+      820,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_420_820_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      420,
+      820,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_420_820_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      420,
+      820,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_420_910_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      420,
+      910,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_420_910_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      420,
+      910,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_420_910_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      420,
+      910,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_420_1000_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      420,
+      1000,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_420_1000_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      420,
+      1000,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_58.2_420_1000_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      58.2,
+      420,
+      1000,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_330_820_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      330,
+      820,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_330_820_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      330,
+      820,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_330_820_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      330,
+      820,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_330_910_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      330,
+      910,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_330_910_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      330,
+      910,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_330_910_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      330,
+      910,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_330_1000_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      330,
+      1000,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_330_1000_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      330,
+      1000,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_330_1000_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      330,
+      1000,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_375_820_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      820,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_375_820_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      820,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_375_820_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      820,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_375_910_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      910,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_375_910_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      910,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_375_910_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      910,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_375_1000_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      1000,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_375_1000_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      1000,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_375_1000_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      1000,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_420_820_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      420,
+      820,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_420_820_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      420,
+      820,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_420_820_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      420,
+      820,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_420_910_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      420,
+      910,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_420_910_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      420,
+      910,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_420_910_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      420,
+      910,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_420_1000_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      420,
+      1000,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_420_1000_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      420,
+      1000,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_59.3_420_1000_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      420,
+      1000,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_330_820_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      330,
+      820,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_330_820_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      330,
+      820,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_330_820_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      330,
+      820,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_330_910_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      330,
+      910,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_330_910_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      330,
+      910,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_330_910_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      330,
+      910,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_330_1000_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      330,
+      1000,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_330_1000_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      330,
+      1000,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_330_1000_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      330,
+      1000,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_375_820_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      375,
+      820,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_375_820_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      375,
+      820,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_375_820_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      375,
+      820,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_375_910_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      375,
+      910,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_375_910_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      375,
+      910,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_375_910_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      375,
+      910,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_375_1000_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      375,
+      1000,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_375_1000_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      375,
+      1000,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_375_1000_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      375,
+      1000,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_420_820_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      420,
+      820,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_420_820_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      420,
+      820,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_420_820_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      420,
+      820,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_420_910_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      420,
+      910,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_420_910_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      420,
+      910,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_420_910_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      420,
+      910,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_420_1000_680",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      420,
+      1000,
+      680
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_420_1000_750",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      420,
+      1000,
+      750
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "tune_60.4_420_1000_820",
+    "pin": 25,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      60.4,
+      420,
+      1000,
+      820
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  }
+]

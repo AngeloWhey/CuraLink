@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\angel\OneDrive\Documents\ChatGPT\curalink\hardware\wpt\bench-rf\rx\rx-matching.kicad_sch</source>
+    <date>2026-11-22T18:06:31</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>rx-matching.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BR711">
+      <value>BAS4002A-RPP</value>
+      <footprint>Package_TO_SOT_SMD:SOT-143</footprint>
+      <fields>
+        <field name="LCSC">C3589694</field>
+        <field name="MPN">BAS4002ARPPE6327HTSA1</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-143</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="BAS4002ARPPE6327HTSA1" description=""/>
+      <property name="LCSC" value="C3589694"/>
+      <property name="MPN" value="BAS4002ARPPE6327HTSA1"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c181848-bb9f-50db-8d52-542c14ce6552</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C711">
+      <value>1 nF 50 V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C507408</field>
+        <field name="MPN">0603CG102F500NT</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="Capacitor" description=""/>
+      <property name="LCSC" value="C507408"/>
+      <property name="MPN" value="0603CG102F500NT"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f0fb9ef-79f1-54b1-889e-00532a0a71f1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C712">
+      <value>680 pF 50 V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C1835</field>
+        <field name="MPN">0805CG681J500NT</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="Capacitor" description=""/>
+      <property name="LCSC" value="C1835"/>
+      <property name="MPN" value="0805CG681J500NT"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b5198bb-9eb6-5bc9-8af6-0fb4b00403a4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C713">
+      <value>1 uF 50 V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C77083</field>
+        <field name="MPN">GRM21BR71H105KA12L</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="Capacitor" description=""/>
+      <property name="LCSC" value="C77083"/>
+      <property name="MPN" value="GRM21BR71H105KA12L"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1d2dbc91-ccfa-5864-af11-4b46937114eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C714">
+      <value>4.7 uF 16 V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C86040</field>
+        <field name="MPN">GRM21BR71C475KA73L</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="Capacitor" description=""/>
+      <property name="LCSC" value="C86040"/>
+      <property name="MPN" value="GRM21BR71C475KA73L"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f386370c-30e1-5842-a8bb-744c61f69ccc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C715">
+      <value>RX series trim [DNP]</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC"/>
+        <field name="MPN"/>
+        <field name="DNP">yes</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="Capacitor" description=""/>
+      <property name="LCSC" value=""/>
+      <property name="MPN" value=""/>
+      <property name="DNP" value="yes"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7439dfc-ab9f-5e40-828b-1ff69950ab43</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C716">
+      <value>RX shunt trim [DNP]</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC"/>
+        <field name="MPN"/>
+        <field name="DNP">yes</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="Capacitor" description=""/>
+      <property name="LCSC" value=""/>
+      <property name="MPN" value=""/>
+      <property name="DNP" value="yes"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>807da9c5-1c53-5a97-9062-256ebdd4be59</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D711">
+      <value>SMAJ15A</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="LCSC">C110520</field>
+        <field name="MPN">SMAJ15A-13-F</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">Diode_SMD:D_SMA</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="SMAJ15A_13_F" description=""/>
+      <property name="LCSC" value="C110520"/>
+      <property name="MPN" value="SMAJ15A-13-F"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>02da1172-258c-5829-b4e0-493021239598</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP711">
+      <value>RX spiral start</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="LCSC"/>
+        <field name="MPN">Copper pad</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="TestPad" description=""/>
+      <property name="LCSC" value=""/>
+      <property name="MPN" value="Copper pad"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b7d18de-9bb0-5a53-bfec-af3e5e090231</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP712">
+      <value>RX spiral return</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="LCSC"/>
+        <field name="MPN">Copper pad</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="TestPad" description=""/>
+      <property name="LCSC" value=""/>
+      <property name="MPN" value="Copper pad"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe4eb655-11e0-5e86-98a2-01c2e76343ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP713">
+      <value>Reservoir probe</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="LCSC"/>
+        <field name="MPN">Copper pad</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="TestPad" description=""/>
+      <property name="LCSC" value=""/>
+      <property name="MPN" value="Copper pad"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37992984-9eb7-5ab4-a329-4ed08fce668d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP714">
+      <value>To mainboard receiver +</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="LCSC"/>
+        <field name="MPN">Copper pad</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="TestPad" description=""/>
+      <property name="LCSC" value=""/>
+      <property name="MPN" value="Copper pad"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a076046-4b5c-5f95-8fee-10be81428e63</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP715">
+      <value>To mainboard receiver return</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="LCSC"/>
+        <field name="MPN">Copper pad</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="TestPad" description=""/>
+      <property name="LCSC" value=""/>
+      <property name="MPN" value="Copper pad"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>153ad0cf-cee2-52ca-ba09-d4b139709670</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U711">
+      <value>TPS70950 5 V</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="LCSC">C96028</field>
+        <field name="MPN">TPS70950DBVR</field>
+        <field name="DNP">no</field>
+        <field name="Assembly">PCB_SMT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CuraLink" part="TPS70950DBVR" description=""/>
+      <property name="LCSC" value="C96028"/>
+      <property name="MPN" value="TPS70950DBVR"/>
+      <property name="DNP" value="no"/>
+      <property name="Assembly" value="PCB_SMT"/>
+      <property name="Sheetname" value="rx-matching"/>
+      <property name="Sheetfile" value="rx-matching.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1d12e77-5e25-5ac3-b3d1-e6c1cdb9c2d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CuraLink" part="BAS4002ARPPE6327HTSA1">
+      <fields>
+        <field name="Reference">BR</field>
+        <field name="Value">BAS4002ARPPE6327HTSA1</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="DC-" type="passive"/>
+        <pin num="2" name="AC1" type="passive"/>
+        <pin num="3" name="AC2" type="passive"/>
+        <pin num="4" name="DC+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CuraLink" part="Capacitor">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitor</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CuraLink" part="SMAJ15A_13_F">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMAJ15A_13_F</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CuraLink" part="TPS70950DBVR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS70950DBVR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="EN" type="passive"/>
+        <pin num="4" name="NC" type="passive"/>
+        <pin num="5" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CuraLink" part="TestPad">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPad</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CuraLink">
+      <uri>${KIPRJMOD}/CuraLink.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="BR_AC1" class="Default">
+      <node ref="BR711" pin="2" pinfunction="AC1_2" pintype="passive"/>
+      <node ref="C711" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C712" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C715" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C716" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="2" name="RECT_DC" class="Default">
+      <node ref="BR711" pin="4" pinfunction="DC+_4" pintype="passive"/>
+      <node ref="C713" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D711" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="TP713" pin="1" pintype="passive"/>
+      <node ref="U711" pin="1" pinfunction="IN_1" pintype="passive"/>
+    </net>
+    <net code="3" name="RX_GND" class="Default">
+      <node ref="BR711" pin="1" pinfunction="DC-_1" pintype="passive"/>
+      <node ref="C713" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C714" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="D711" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="TP715" pin="1" pintype="passive"/>
+      <node ref="U711" pin="2" pinfunction="GND_2" pintype="passive"/>
+    </net>
+    <net code="4" name="RX_HI" class="Default">
+      <node ref="C711" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C715" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP711" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="RX_LO" class="Default">
+      <node ref="BR711" pin="3" pinfunction="AC2_3" pintype="passive"/>
+      <node ref="C712" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C716" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP712" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="WPT_RX_DC" class="Default">
+      <node ref="C714" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP714" pin="1" pintype="passive"/>
+      <node ref="U711" pin="5" pinfunction="OUT_5" pintype="passive"/>
+    </net>
+    <net code="7" name="unconnected-(U711-EN-Pad3)" class="Default">
+      <node ref="U711" pin="3" pinfunction="EN_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="8" name="unconnected-(U711-NC-Pad4)" class="Default">
+      <node ref="U711" pin="4" pinfunction="NC_4" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

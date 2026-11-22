@@ -1,0 +1,56 @@
+[
+  {
+    "label": "loaded",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      826.8,
+      772
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "near_open",
+    "pin": 25.0,
+    "k": 0.0662,
+    "load": "regulator_only",
+    "mA": 0.001,
+    "caps": [
+      59.3,
+      375,
+      826.8,
+      772
+    ],
+    "model": 0,
+    "q": 500.0,
+    "lead_nH": 1.0,
+    "winding_R_factor": 1.0,
+    "res_cap_uF": 1.0
+  },
+  {
+    "label": "weak",
+    "pin": 25.0,
+    "k": 0.04965,
+    "load": "full_120mW",
+    "mA": 24.0,
+    "caps": [
+      59.3,
+      375,
+      826.8,
+      772
+    ],
+    "model": 1,
+    "q": 250,
+    "lead_nH": 2,
+    "winding_R_factor": 1.25,
+    "res_cap_uF": 1.0
+  }
+]
